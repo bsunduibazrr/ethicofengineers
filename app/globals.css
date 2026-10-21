@@ -1,0 +1,1741 @@
+:root {
+  --paper: #ffffff;
+  --ink: #111522;
+  --ink2: #3e4659;
+  --muted: #7c8496;
+  --rule: #e3e6ed;
+  --navy: #13296b;
+  --blue: #2c55c8;
+  --tint: #f3f5fa;
+  --red: #b4233c;
+  --green: #1f7a52;
+  --serif: var(--font-serif), Georgia, serif;
+  --sans: var(--font-sans), system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: var(--sans);
+  -webkit-font-smoothing: antialiased;
+  user-select: none;
+}
+
+b {
+  font-weight: 600;
+  color: var(--ink);
+}
+
+button {
+  font: inherit;
+  color: inherit;
+}
+
+img {
+  display: block;
+}
+
+/* ───────────── Тайз ───────────── */
+
+.viewport {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  background: var(--paper);
+}
+
+.stage {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 1920px;
+  height: 1080px;
+  overflow: hidden;
+  transform-origin: center;
+  transition: opacity 0.4s;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  padding: 92px 120px 150px;
+  background: var(--paper);
+  box-shadow: -40px 0 80px rgba(17, 21, 34, 0.08);
+  will-change: transform;
+}
+
+.slide > div {
+  height: 100%;
+}
+
+.progress {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 4px;
+  background: var(--navy);
+  transform-origin: left;
+  z-index: 10;
+}
+
+.footer {
+  position: absolute;
+  left: 120px;
+  right: 120px;
+  bottom: 34px;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  padding-top: 16px;
+  border-top: 1px solid var(--rule);
+  font-size: 15px;
+  color: var(--muted);
+  z-index: 10;
+}
+
+.footer-brand i {
+  font-family: var(--serif);
+  font-size: 17px;
+  color: var(--ink);
+}
+
+.footer-section {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.footer-nav {
+  justify-self: end;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.footer-nav button {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid var(--rule);
+  background: var(--paper);
+  color: var(--ink);
+  font-size: 17px;
+  cursor: pointer;
+  transition: border-color 0.25s, background 0.25s, color 0.25s;
+}
+
+.footer-nav button:hover:not(:disabled) {
+  background: var(--navy);
+  border-color: var(--navy);
+  color: #fff;
+}
+
+.footer-nav button:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+.page-no {
+  font-family: var(--serif);
+  font-size: 19px;
+  color: var(--ink);
+  font-variant-numeric: tabular-nums;
+  min-width: 70px;
+  text-align: center;
+}
+
+.page-no em {
+  font-style: normal;
+  color: var(--muted);
+}
+
+.notes {
+  position: fixed;
+  left: 50%;
+  bottom: 24px;
+  width: min(1100px, 92vw);
+  margin-left: max(-550px, -46vw);
+  padding: 18px 24px 20px;
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  border-radius: 10px;
+  box-shadow: 0 20px 50px rgba(17, 21, 34, 0.18);
+  z-index: 20;
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--ink2);
+}
+
+.notes-head {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--blue);
+  margin-bottom: 6px;
+}
+
+.timer {
+  font-variant-numeric: tabular-nums;
+}
+
+/* ───────────── Нийтлэг ───────────── */
+
+.header {
+  margin-bottom: 40px;
+}
+
+.kicker,
+.label {
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--blue);
+}
+
+.label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.title {
+  margin-top: 14px;
+  font-family: var(--serif);
+  font-size: 58px;
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--ink);
+}
+
+.sub {
+  margin-top: 14px;
+  max-width: 1320px;
+  font-size: 24px;
+  line-height: 1.5;
+  color: var(--ink2);
+}
+
+.photo {
+  margin: 0;
+}
+
+.photo-frame {
+  width: 100%;
+  overflow: hidden;
+  background: var(--tint);
+}
+
+.photo-frame img {
+  width: 100%;
+  height: 100%;
+}
+
+.photo figcaption {
+  margin-top: 8px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.book-cover {
+  border-radius: 2px;
+  box-shadow: 0 28px 50px rgba(17, 21, 34, 0.22), 0 6px 14px rgba(17, 21, 34, 0.12);
+}
+
+.panel {
+  padding: 26px 30px;
+  border: 1px solid var(--rule);
+  background: var(--paper);
+}
+
+.panel.accent {
+  border: none;
+  border-left: 4px solid var(--navy);
+  background: var(--tint);
+}
+
+.panel h3,
+.col h3 {
+  font-family: var(--serif);
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.panel p,
+.col p {
+  margin-top: 8px;
+  font-size: 21px;
+  line-height: 1.5;
+  color: var(--ink2);
+}
+
+.numlist {
+  display: flex;
+  flex-direction: column;
+}
+
+.num-item {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  padding: 22px 0;
+  border-top: 1px solid var(--rule);
+}
+
+.num-item > b {
+  font-family: var(--serif);
+  font-size: 30px;
+  line-height: 1;
+  color: var(--navy);
+}
+
+.num-item h3 {
+  font-family: var(--serif);
+  font-size: 27px;
+  font-weight: 700;
+}
+
+.num-item p {
+  margin-top: 6px;
+  font-size: 21px;
+  line-height: 1.45;
+  color: var(--ink2);
+}
+
+.wave {
+  animation: wave 6s linear infinite;
+}
+
+@keyframes wave {
+  to {
+    transform: translateX(-200px);
+  }
+}
+
+/* ───────────── 1. Нүүр ───────────── */
+
+.cover {
+  display: grid;
+  grid-template-columns: 1fr 720px;
+  align-items: center;
+}
+
+.cover-title {
+  margin-top: 26px;
+  font-family: var(--serif);
+  font-size: 150px;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--navy);
+  letter-spacing: -0.01em;
+}
+
+.cover-title span {
+  color: var(--blue);
+}
+
+.cover-sub {
+  margin-top: 22px;
+  font-family: var(--serif);
+  font-size: 40px;
+  color: var(--ink);
+}
+
+.cover-en {
+  margin-top: 10px;
+  font-size: 20px;
+  font-style: italic;
+  color: var(--muted);
+}
+
+.cover-meta {
+  display: flex;
+  gap: 60px;
+  margin-top: 64px;
+  padding-top: 28px;
+  border-top: 1px solid var(--rule);
+}
+
+.cover-meta small {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.cover-meta b {
+  font-size: 24px;
+}
+
+.cover-books {
+  position: relative;
+  height: 760px;
+}
+
+.cb-back {
+  position: absolute;
+  left: 30px;
+  top: 30px;
+  width: 360px;
+}
+
+.cb-front {
+  position: absolute;
+  left: 290px;
+  top: 150px;
+  width: 380px;
+}
+
+/* ───────────── 2. Зохиолч ───────────── */
+
+.author {
+  display: grid;
+  grid-template-columns: 580px 1fr;
+  gap: 80px;
+}
+
+.author-photo .photo-frame {
+  height: 812px;
+}
+
+.author .sub {
+  font-size: 22px;
+}
+
+.dl-row {
+  display: grid;
+  grid-template-columns: 190px 1fr;
+  padding: 18px 0;
+  border-top: 1px solid var(--rule);
+}
+
+.dl-row span {
+  padding-top: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.dl-row p {
+  font-size: 23px;
+  line-height: 1.45;
+}
+
+.author-books {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: 30px;
+}
+
+.author-books img {
+  height: 140px;
+  box-shadow: 0 12px 24px rgba(17, 21, 34, 0.18);
+}
+
+.author-books div {
+  margin-left: 14px;
+}
+
+.author-books p {
+  font-size: 21px;
+  line-height: 1.5;
+  color: var(--ink2);
+}
+
+/* ───────────── 3. Хэвлэлүүд ───────────── */
+
+.editions .header {
+  margin-bottom: 34px;
+}
+
+.ed-row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 36px;
+}
+
+.ed-img {
+  height: 340px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.ed-img img {
+  max-height: 340px;
+  max-width: 100%;
+  box-shadow: 0 20px 36px rgba(17, 21, 34, 0.2), 0 4px 10px rgba(17, 21, 34, 0.1);
+}
+
+.ed-cap {
+  margin-top: 20px;
+  padding-top: 14px;
+  border-top: 1px solid var(--rule);
+}
+
+.ed-cap b {
+  display: block;
+  font-family: var(--serif);
+  font-size: 26px;
+  color: var(--navy);
+}
+
+.ed-cap span {
+  display: block;
+  margin-top: 2px;
+  font-size: 21px;
+  font-weight: 600;
+}
+
+.ed-cap small {
+  display: block;
+  margin-top: 2px;
+  font-size: 17px;
+  color: var(--muted);
+}
+
+.ed.mn .ed-cap {
+  border-top: 3px solid var(--navy);
+}
+
+.ed-bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  margin-top: 40px;
+}
+
+.ed-block p {
+  font-size: 21px;
+  line-height: 1.55;
+  color: var(--ink2);
+}
+
+/* ───────────── 4. Бүтэц ───────────── */
+
+.structure {
+  display: grid;
+  grid-template-columns: 1fr 760px;
+  gap: 100px;
+  align-items: center;
+}
+
+.big-question {
+  padding-left: 32px;
+  border-left: 4px solid var(--navy);
+  font-family: var(--serif);
+  font-size: 40px;
+  line-height: 1.35;
+  color: var(--ink);
+}
+
+.big-question em {
+  color: var(--navy);
+}
+
+.structure .sub {
+  margin-top: 34px;
+  font-size: 22px;
+}
+
+.toc-head {
+  padding-bottom: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--blue);
+}
+
+.toc-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 13px 14px;
+  border-top: 1px solid var(--rule);
+  font-size: 21px;
+  color: var(--ink2);
+}
+
+.toc-n {
+  width: 30px;
+  font-family: var(--serif);
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--muted);
+}
+
+.toc-t {
+  flex: 1;
+}
+
+.toc-row.hl {
+  background: var(--tint);
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.toc-row.hl .toc-n {
+  color: var(--navy);
+}
+
+.toc-tag {
+  padding: 4px 10px;
+  border: 1px solid var(--navy);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--navy);
+}
+
+/* ───────────── Бүлгийн нүүр ───────────── */
+
+.divider {
+  display: grid;
+  grid-template-columns: 1fr 740px;
+  gap: 90px;
+}
+
+.div-body {
+  align-self: center;
+}
+
+.div-num {
+  font-family: var(--serif);
+  font-size: 150px;
+  font-weight: 700;
+  line-height: 0.9;
+  color: var(--navy);
+  margin-bottom: 26px;
+}
+
+.div-title {
+  margin-top: 14px;
+  font-family: var(--serif);
+  font-size: 62px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.div-en {
+  margin-top: 14px;
+  font-size: 21px;
+  font-style: italic;
+  color: var(--muted);
+}
+
+.epigraph {
+  margin-top: 30px;
+  font-family: var(--serif);
+  font-size: 27px;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--ink2);
+}
+
+.epigraph small {
+  display: block;
+  margin-top: 6px;
+  font-family: var(--sans);
+  font-style: normal;
+  font-size: 17px;
+  color: var(--muted);
+}
+
+.div-list {
+  margin-top: 40px;
+}
+
+.div-item {
+  display: flex;
+  gap: 20px;
+  padding: 16px 0;
+  border-top: 1px solid var(--rule);
+  font-size: 25px;
+}
+
+.div-item b {
+  width: 24px;
+  font-family: var(--serif);
+  color: var(--navy);
+}
+
+.div-photo {
+  position: relative;
+  margin: -92px -120px 0 0;
+}
+
+.div-photo .photo-frame {
+  height: 960px;
+}
+
+.div-photo figcaption {
+  position: absolute;
+  left: 22px;
+  bottom: 18px;
+  margin: 0;
+  padding: 5px 10px;
+  background: rgba(0, 0, 0, 0.45);
+  color: #fff;
+}
+
+/* ───────────── 6. Түүх ───────────── */
+
+.history {
+  display: grid;
+  grid-template-columns: 600px 1fr;
+  gap: 90px;
+  align-items: center;
+}
+
+.history-photo .photo-frame {
+  height: 600px;
+  background: #000;
+}
+
+.history .sub {
+  font-size: 22px;
+}
+
+.history .header {
+  margin-bottom: 30px;
+}
+
+.vtl {
+  position: relative;
+  padding-left: 36px;
+}
+
+.vtl-line {
+  position: absolute;
+  left: 5px;
+  top: 22px;
+  bottom: 22px;
+  width: 2px;
+  background: var(--navy);
+  transform-origin: top;
+}
+
+.vtl-item {
+  position: relative;
+  display: flex;
+  gap: 24px;
+  padding: 10px 0;
+  font-size: 23px;
+}
+
+.vtl-item::before {
+  content: '';
+  position: absolute;
+  left: -36px;
+  top: 17px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--paper);
+  border: 2px solid var(--navy);
+}
+
+.vtl-item.now::before {
+  background: var(--navy);
+}
+
+.vtl-item b {
+  width: 300px;
+  flex: none;
+}
+
+.vtl-item span {
+  color: var(--ink2);
+}
+
+.definition {
+  margin-top: 28px;
+  padding: 22px 28px;
+  border-left: 4px solid var(--navy);
+  background: var(--tint);
+}
+
+.definition p {
+  font-size: 22px;
+  line-height: 1.55;
+  color: var(--ink2);
+}
+
+/* ───────────── 7. Гурван үе шат ───────────── */
+
+.stages .header {
+  margin-bottom: 34px;
+}
+
+.stages .sub {
+  font-size: 21px;
+}
+
+.stage-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px;
+}
+
+.stage-photo .photo-frame {
+  height: 320px;
+}
+
+.stage-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-top: 18px;
+}
+
+.stage-head h3 {
+  font-family: var(--serif);
+  font-size: 34px;
+  font-weight: 700;
+  color: var(--navy);
+}
+
+.stage-head span {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--blue);
+}
+
+.stage-rows {
+  margin-top: 12px;
+}
+
+.stage-rows > div {
+  display: flex;
+  justify-content: space-between;
+  padding: 9px 0;
+  border-top: 1px solid var(--rule);
+  font-size: 19px;
+  color: var(--ink2);
+}
+
+.stage-rows b {
+  font-weight: 500;
+  color: var(--muted);
+}
+
+.stage-rows b.self {
+  font-weight: 700;
+  color: var(--navy);
+}
+
+.stage-d {
+  padding-top: 12px;
+  border-top: 1px solid var(--rule);
+  font-size: 21px;
+  line-height: 1.45;
+  color: var(--ink2);
+}
+
+/* ───────────── 8. Яагаад 2.0 ───────────── */
+
+.why2-grid {
+  display: grid;
+  grid-template-columns: 620px 1fr;
+  gap: 90px;
+}
+
+.stat {
+  padding-top: 18px;
+  margin-bottom: 36px;
+  border-top: 2px solid var(--ink);
+}
+
+.stat-n {
+  font-family: var(--serif);
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 1.05;
+  color: var(--navy);
+}
+
+.stat p {
+  margin-top: 4px;
+  font-size: 22px;
+  color: var(--ink2);
+}
+
+.bar {
+  margin-top: 16px;
+  height: 8px;
+  background: var(--tint);
+}
+
+.bar i {
+  display: block;
+  height: 100%;
+  background: var(--navy);
+}
+
+.stat-note {
+  font-family: var(--serif);
+  font-size: 22px;
+  font-style: italic;
+  line-height: 1.45;
+  color: var(--ink2);
+}
+
+/* ───────────── 9. Урсгалууд ───────────── */
+
+.camps-grid {
+  display: grid;
+  grid-template-columns: 720px 1fr;
+  gap: 70px;
+}
+
+.axis-t {
+  font-size: 16px;
+  fill: var(--muted);
+}
+
+.axis-h {
+  font-size: 17px;
+  font-weight: 600;
+  fill: var(--navy);
+}
+
+.bubble-t {
+  font-family: var(--serif);
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.camp {
+  display: flex;
+  gap: 26px;
+  align-items: flex-start;
+  padding: 26px 0;
+  border-top: 1px solid var(--rule);
+}
+
+.camp img {
+  flex: none;
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 50% 25%;
+}
+
+.camp h3 {
+  font-family: var(--serif);
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.camp p {
+  margin-top: 6px;
+  font-size: 22px;
+  line-height: 1.45;
+  color: var(--ink2);
+}
+
+.camp small {
+  display: block;
+  margin-top: 6px;
+  font-size: 15px;
+  color: var(--muted);
+}
+
+.camp-b h3 {
+  color: var(--blue);
+}
+
+/* ───────────── 10. Напа ───────────── */
+
+.napa-grid {
+  display: grid;
+  grid-template-columns: 1fr 700px;
+  gap: 80px;
+}
+
+.debate-people {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.person-photo .photo-frame {
+  height: 400px;
+}
+
+.person-q {
+  margin-top: 12px;
+  font-family: var(--serif);
+  font-size: 24px;
+  font-style: italic;
+  line-height: 1.45;
+  color: var(--ink);
+}
+
+.person-q b {
+  display: block;
+  margin-bottom: 4px;
+  font-family: var(--sans);
+  font-style: normal;
+  font-size: 14px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--blue);
+}
+
+.debate-end {
+  margin-top: 26px;
+  padding: 18px 24px;
+  border-left: 4px solid var(--navy);
+  background: var(--tint);
+  font-size: 22px;
+  line-height: 1.5;
+  color: var(--ink2);
+}
+
+.terms-head {
+  margin-bottom: 16px;
+  font-size: 22px;
+  line-height: 1.5;
+  color: var(--ink2);
+}
+
+.term {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  padding: 18px 0;
+  border-top: 1px solid var(--rule);
+}
+
+.term b {
+  font-family: var(--serif);
+  font-size: 23px;
+  font-weight: 700;
+  color: var(--navy);
+}
+
+.term span {
+  font-size: 21px;
+  line-height: 1.4;
+  color: var(--ink2);
+}
+
+/* ───────────── 11–12. Домог ───────────── */
+
+.myths-slide .header {
+  margin-bottom: 30px;
+}
+
+.mrow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  padding: 38px 0;
+  border-top: 1px solid var(--rule);
+}
+
+.mrow.mhead {
+  padding: 0 0 12px;
+  border-top: none;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.mhead span:first-child {
+  color: var(--red);
+}
+
+.mhead span:last-child {
+  color: var(--navy);
+}
+
+.mrow p {
+  position: relative;
+  padding-left: 34px;
+  font-size: 26px;
+  line-height: 1.45;
+}
+
+.mrow p::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-weight: 700;
+}
+
+.mrow p.m {
+  color: var(--ink2);
+}
+
+.mrow p.m::before {
+  content: '✕';
+  color: var(--red);
+}
+
+.mrow p.f {
+  color: var(--ink);
+  font-weight: 500;
+}
+
+.mrow p.f::before {
+  content: '✓';
+  color: var(--navy);
+}
+
+.footnote {
+  margin-top: 26px;
+  padding-top: 18px;
+  border-top: 1px solid var(--rule);
+  font-size: 20px;
+  color: var(--muted);
+}
+
+.footnote b {
+  color: var(--navy);
+}
+
+.pull-quote {
+  margin-top: 30px;
+  padding-left: 30px;
+  border-left: 4px solid var(--navy);
+}
+
+.pull-quote p {
+  font-family: var(--serif);
+  font-size: 28px;
+  font-style: italic;
+  line-height: 1.45;
+}
+
+.pull-quote small {
+  display: block;
+  margin-top: 10px;
+  font-size: 17px;
+  color: var(--blue);
+}
+
+/* ───────────── 14. Оюун ухаан ───────────── */
+
+.intel .title {
+  font-size: 50px;
+}
+
+.intel .header {
+  margin-bottom: 30px;
+}
+
+.spectrum {
+  margin-bottom: 26px;
+}
+
+.spec-ends {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 14px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.spec-track {
+  position: relative;
+  height: 110px;
+  margin: 0 40px;
+}
+
+.spec-fill {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 7px;
+  height: 4px;
+  background: var(--navy);
+  transform-origin: left;
+}
+
+.spec-mark {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.spec-mark i {
+  width: 18px;
+  height: 18px;
+  margin-bottom: 12px;
+  border-radius: 50%;
+  background: var(--paper);
+  border: 3px solid var(--navy);
+}
+
+.spec-mark b {
+  font-family: var(--serif);
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.spec-mark small {
+  margin-top: 2px;
+  font-size: 16px;
+  color: var(--muted);
+}
+
+.spec-mark.hot i {
+  background: var(--blue);
+  border-color: var(--blue);
+}
+
+.spec-mark.hot b {
+  color: var(--blue);
+}
+
+.intel-grid {
+  display: grid;
+  grid-template-columns: 480px 1fr;
+  gap: 60px;
+}
+
+.intel-photo .photo-frame {
+  height: 480px;
+}
+
+.intel-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.col {
+  padding-top: 18px;
+  border-top: 2px solid var(--ink);
+}
+
+.col.accent {
+  border-top-color: var(--blue);
+}
+
+.col.accent h3 {
+  color: var(--blue);
+}
+
+/* ───────────── 15. Ландшафт ───────────── */
+
+.land .header {
+  margin-bottom: 14px;
+}
+
+.land-wrap svg {
+  display: block;
+  width: 1680px;
+  height: 580px;
+}
+
+.peak-t {
+  font-size: 20px;
+  font-weight: 600;
+  fill: var(--ink);
+  paint-order: stroke;
+  stroke: #fff;
+  stroke-width: 6px;
+}
+
+.peak-t.flag {
+  font-family: var(--serif);
+  font-size: 24px;
+  font-weight: 700;
+  fill: var(--red);
+}
+
+.water-t {
+  font-size: 17px;
+  font-weight: 700;
+  fill: var(--navy);
+}
+
+.land-notes {
+  display: flex;
+  gap: 50px;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--rule);
+  font-size: 21px;
+  color: var(--ink2);
+}
+
+/* ───────────── 16. Санах ой ───────────── */
+
+.mem-grid {
+  display: grid;
+  grid-template-columns: 600px 1fr;
+  gap: 50px;
+  align-items: start;
+}
+
+.mem-well svg {
+  display: block;
+  margin: 18px auto 10px;
+}
+
+.mem-well p {
+  font-size: 21px;
+  color: var(--ink2);
+}
+
+.bit-t {
+  font-family: var(--serif);
+  font-size: 30px;
+  font-weight: 700;
+  fill: var(--navy);
+}
+
+.mem-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.tags span {
+  padding: 6px 14px;
+  border: 1px solid var(--rule);
+  font-size: 19px;
+  color: var(--ink2);
+}
+
+.mem-compare {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 36px;
+}
+
+.hopfield {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 24px;
+  align-items: center;
+}
+
+.hop-photo .photo-frame {
+  height: 240px;
+}
+
+.hop-photo figcaption {
+  font-size: 11px;
+}
+
+.hop-text {
+  font-size: 21px;
+  line-height: 1.5;
+  color: var(--ink2);
+}
+
+/* ───────────── 17. Тооцоолол ───────────── */
+
+.comp-grid {
+  display: grid;
+  grid-template-columns: 680px 1fr;
+  gap: 50px;
+  align-items: start;
+}
+
+.nand-body {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+  margin: 16px 0 18px;
+}
+
+.gate-t {
+  font-family: var(--serif);
+  font-size: 22px;
+  font-weight: 700;
+  fill: var(--navy);
+}
+
+.io-t {
+  font-size: 18px;
+  font-weight: 700;
+  fill: var(--muted);
+}
+
+.truth {
+  border-collapse: collapse;
+  font-family: var(--serif);
+  font-size: 26px;
+}
+
+.truth th {
+  padding: 0 16px 8px;
+  font-family: var(--sans);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.truth td {
+  padding: 9px 22px;
+  text-align: center;
+  color: var(--ink2);
+  border-top: 1px solid var(--rule);
+}
+
+.truth td b {
+  color: var(--navy);
+}
+
+.truth tbody tr td {
+  animation: rowFlash 3.6s ease-in-out infinite;
+  animation-delay: inherit;
+}
+
+@keyframes rowFlash {
+  0%,
+  30%,
+  100% {
+    background: transparent;
+  }
+  10%,
+  20% {
+    background: #dfe6f7;
+  }
+}
+
+.nand p {
+  font-size: 21px;
+  color: var(--ink2);
+}
+
+.def-line {
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid var(--rule);
+  font-size: 21px;
+  line-height: 1.5;
+  color: var(--ink2);
+}
+
+.comp-right {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.turing {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 30px;
+  align-items: start;
+}
+
+.turing-photo .photo-frame {
+  height: 310px;
+}
+
+.turing-text h3 {
+  font-family: var(--serif);
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.turing-text p {
+  margin-top: 8px;
+  font-size: 22px;
+  line-height: 1.5;
+  color: var(--ink2);
+}
+
+/* ───────────── 18. Суралцах ───────────── */
+
+.learning .header {
+  margin-bottom: 30px;
+}
+
+.learn-grid {
+  display: grid;
+  grid-template-columns: 620px 1fr;
+  gap: 70px;
+}
+
+.learn-photo .photo-frame {
+  height: 580px;
+  background: #000;
+}
+
+.equation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 30px;
+  font-family: var(--serif);
+  font-size: 24px;
+}
+
+.equation span {
+  padding: 10px 22px;
+  border: 1px solid var(--rule);
+}
+
+.equation span.hot {
+  background: var(--navy);
+  border-color: var(--navy);
+  color: #fff;
+  font-weight: 700;
+}
+
+.equation i {
+  font-style: normal;
+  color: var(--muted);
+}
+
+/* ───────────── 19. Кейс ───────────── */
+
+.case .title {
+  font-size: 52px;
+}
+
+.case .header {
+  margin-bottom: 32px;
+}
+
+.case-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr 0.8fr;
+  gap: 50px;
+}
+
+.case-photo .photo-frame {
+  height: 340px;
+}
+
+.case-p {
+  margin-top: 14px;
+  font-size: 21px;
+  line-height: 1.5;
+  color: var(--ink2);
+}
+
+.goal {
+  margin-top: 16px;
+  padding: 18px 22px;
+  border-left: 4px solid var(--navy);
+  background: var(--tint);
+  font-family: var(--serif);
+  font-size: 27px;
+  line-height: 1.4;
+}
+
+.col-h {
+  padding-bottom: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--blue);
+}
+
+.outcome {
+  display: flex;
+  gap: 16px;
+  padding: 15px 0;
+  border-top: 1px solid var(--rule);
+}
+
+.outcome i {
+  flex: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  background: var(--red);
+  color: #fff;
+}
+
+.outcome.ok i {
+  background: var(--green);
+}
+
+.outcome p {
+  font-size: 21px;
+  line-height: 1.45;
+}
+
+.case-note {
+  padding-top: 16px;
+  border-top: 1px solid var(--rule);
+  font-family: var(--serif);
+  font-size: 21px;
+  font-style: italic;
+  line-height: 1.45;
+  color: var(--navy);
+}
+
+.link-row {
+  padding: 14px 0;
+  border-top: 1px solid var(--rule);
+}
+
+.link-row small {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.link-row h3 {
+  margin-top: 2px;
+  font-family: var(--serif);
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.link-row p {
+  font-size: 19px;
+  color: var(--ink2);
+}
+
+/* ───────────── 20. Асуулт хариулт ───────────── */
+
+.qa .header {
+  margin-bottom: 30px;
+}
+
+.qa .sub {
+  font-size: 21px;
+}
+
+.qa-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.qa-card {
+  width: 100%;
+  height: 262px;
+  display: flex;
+  gap: 24px;
+  padding: 26px 30px;
+  text-align: left;
+  border: 1px solid var(--rule);
+  background: var(--paper);
+  cursor: pointer;
+  transition: border-color 0.3s, background 0.3s;
+}
+
+.qa-card:hover {
+  border-color: var(--muted);
+}
+
+.qa-card.open {
+  border-color: var(--navy);
+  background: var(--tint);
+}
+
+.qa-n {
+  font-family: var(--serif);
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--navy);
+}
+
+.qa-card h3 {
+  font-family: var(--serif);
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.qa-a {
+  margin-top: 12px;
+  font-size: 20px;
+  line-height: 1.5;
+  color: var(--ink2);
+}
+
+.qa-hint {
+  display: block;
+  margin-top: 16px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--blue);
+}
+
+.thanks {
+  margin-top: 32px;
+  text-align: center;
+  font-family: var(--serif);
+  font-size: 34px;
+  font-weight: 700;
+  color: var(--navy);
+}
+
+.thanks span {
+  margin-left: 10px;
+  font-family: var(--sans);
+  font-size: 21px;
+  font-weight: 400;
+  color: var(--ink2);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wave,
+  .truth tbody tr td {
+    animation: none !important;
+  }
+}
+
+.campmap {
+  width: 720px;
+  height: 585px;
+}
