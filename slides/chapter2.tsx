@@ -193,20 +193,20 @@ export function Landscape() {
               />
             </g>
             <text x="24" y="585" className="water-t">
-              Усны түвшин — AI-н чадвар (2017)
+              AI-н түвшин, 2017 он
             </text>
           </motion.g>
         </svg>
       </R>
       <Group className="land-notes">
         <R>
-          <b>Усанд автсан:</b> арифметик, шатар, Го, яриа таних
+          <b>Аль хэдийн усанд автсан:</b> арифметик, шатар, Го, яриа таних
         </R>
         <R>
-          <b>Зөвлөмж:</b> «эргийн» мэргэжлээс зайлсхий
+          <b>Тегмаркийн зөвлөгөө:</b> эрэг орчмын мэргэжлээс болгоомжил
         </R>
         <R>
-          <b>Ус «AI дизайн» оргилд хүрвэл</b> → оюун ухааны тэсрэлт?
+          <b>Ус «AI дизайн»-д хүрвэл</b> AI өөрийгөө сайжруулж эхэлнэ
         </R>
       </Group>
     </div>
@@ -218,10 +218,10 @@ export function Landscape() {
 export function Memory() {
   return (
     <div className="memory">
-      <Header kicker="2-р бүлэг · Санах ой" title="Мэдээллийг матери хэрхэн хадгалдаг вэ?" />
+      <Header kicker="2-р бүлэг" title="Санах ой" />
       <div className="mem-grid">
         <R className="panel mem-well">
-          <span className="label">Санах ой = олон тогтвортой төлөвтэй физик объект</span>
+          <span className="label">Санах ой гэж юу вэ?</span>
           <svg viewBox="0 0 500 250" width="500" height="250">
             <path
               d="M0 60 C 60 60, 70 200, 140 200 C 210 200, 210 90, 250 90 C 290 90, 290 200, 360 200 C 430 200, 440 60, 500 60"
@@ -237,7 +237,12 @@ export function Memory() {
                 cx: [250, 200, 140, 140, 200, 250, 300, 360, 360, 300, 250],
                 cy: [74, 132, 185, 185, 132, 74, 132, 185, 185, 132, 74],
               }}
-              transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut', delay: 1.2 }}
+              transition={{
+                duration: 6,
+                repeat: Infinity,
+                ease: "easeInOut",
+                delay: 1.2,
+              }}
             />
             <text x="140" y="240" textAnchor="middle" className="bit-t">
               0
@@ -246,35 +251,47 @@ export function Memory() {
               1
             </text>
           </svg>
-          <p>Хоёр «хөндий» = 1 бит. Бөмбөг аль хөндийд байгаа нь — мэдээлэл.</p>
+          <p>
+            Хэд хэдэн тогтвортой төлөвтэй аливаа зүйл мэдээлэл хадгалж чадна.
+            Хоёр хотгортой гадаргуу дээрх бөмбөг гэхэд л 1 бит хадгална.
+          </p>
         </R>
         <div className="mem-right">
           <R className="panel">
-            <span className="label">Матери хамаагүй</span>
-            <h3>Ижил мэдээлэл — өөр өөр тээгч</h3>
+            <span className="label">Материал нь хамаагүй</span>
+            <h3>Нэг мэдээллийг юун дээр ч хадгалж болно</h3>
             <div className="tags">
-              {['Чулуун бичээс', 'Цаас', 'Соронзон диск', 'Флаш санах ой', 'ДНХ', 'Синапс'].map((s) => (
-                <span key={s}>{s}</span>
-              ))}
+              {["Чулуу", "Цаас", "Хатуу диск", "Флаш", "ДНХ", "Тархины синапс"].map(
+                (s) => (
+                  <span key={s}>{s}</span>
+                ),
+              )}
             </div>
           </R>
           <R className="panel mem-compare">
             <div>
               <span className="label">Компьютер</span>
-              <h3>Хаягаар хайна</h3>
-              <p>«№2048 хаягт юу байна?»</p>
+              <h3>Хаягаар хайдаг</h3>
+              <p>«2048 дугаар хаягт юу байна?» гэж асууна.</p>
             </div>
             <div>
               <span className="label">Тархи</span>
-              <h3>Холбоогоор сэргээнэ</h3>
-              <p>Дууны эхний мөрийг сонсоход үргэлжлэл нь санагдана.</p>
+              <h3>Холбоогоор санадаг</h3>
+              <p>Дууны эхний мөрийг сонсоход үргэлжлэл нь өөрөө санаанд ордог.</p>
             </div>
           </R>
           <div className="hopfield">
-            <Photo src="/img/hopfield.jpg" alt="Жон Хопфилд" className="hop-photo" pos="50% 20%" credit="Jay Dixit, CC BY-SA 4.0" />
+            <Photo
+              src="/img/hopfield.jpg"
+              alt="Жон Хопфилд"
+              className="hop-photo"
+              pos="50% 20%"
+              credit="Jay Dixit, CC BY-SA 4.0"
+            />
             <R className="hop-text">
-              <b>Жон Хопфилд</b> холбоот санах ойг <b>1982</b> онд нейрон сүлжээгээр загварчилсан — 2024 онд физикийн
-              Нобелийн шагнал хүртсэн.
+              Тархины энэ төрлийн санах ойг <b>Жон Хопфилд</b> 1982 онд нейрон
+              сүлжээгээр загварчилсан. Энэ ажлаараа 2024 онд физикийн Нобелийн
+              шагнал авсан.
             </R>
           </div>
         </div>
@@ -295,15 +312,20 @@ const nandRows = [
 export function Computation() {
   return (
     <div className="compute">
-      <Header kicker="2-р бүлэг · Тооцоолол" title="Матери тооцоолж чаддаг" />
+      <Header kicker="2-р бүлэг" title="Тооцоолол" />
       <div className="comp-grid">
         <R className="panel nand">
-          <span className="label">Бүх тооцооллын «тоосго»</span>
+          <span className="label">NAND хаалга</span>
           <div className="nand-body">
             <svg viewBox="0 0 260 160" width="260" height="160">
               <line x1="10" y1="55" x2="70" y2="55" stroke="#13296b" strokeWidth="3" />
               <line x1="10" y1="105" x2="70" y2="105" stroke="#13296b" strokeWidth="3" />
-              <path d="M70 25 H130 A55 55 0 0 1 130 135 H70 Z" fill="#ffffff" stroke="#13296b" strokeWidth="3" />
+              <path
+                d="M70 25 H130 A55 55 0 0 1 130 135 H70 Z"
+                fill="#ffffff"
+                stroke="#13296b"
+                strokeWidth="3"
+              />
               <circle cx="196" cy="80" r="9" fill="#fff" stroke="#13296b" strokeWidth="3" />
               <line x1="205" y1="80" x2="250" y2="80" stroke="#13296b" strokeWidth="3" />
               <text x="104" y="87" textAnchor="middle" className="gate-t">
@@ -338,30 +360,39 @@ export function Computation() {
             </table>
           </div>
           <p>
-            NAND хаалгыг давтан холбох замаар <b>дурын</b> тооцоолол бүтээж болно.
+            Ийм энгийн хаалгыг олноор нь холбоод <b>ямар ч</b> тооцоолол хийж
+            болно.
           </p>
           <div className="def-line">
-            <b>Тооцоолол</b> = санах ойн нэг төлөвийг нөгөөд хувиргах, өөрөөр хэлбэл функц: оролт → гаралт.
+            Тооцоолол гэдэг нь нэг төлөвийг нөгөөд хувиргах, өөрөөр хэлбэл
+            оролтоос гаралт гаргах үйл явц.
           </div>
         </R>
         <div className="comp-right">
           <div className="turing">
-            <Photo src="/img/turing.jpg" alt="Алан Тьюринг" className="turing-photo" pos="50% 25%" credit="Elliott & Fry, 1951 · нийтийн өмч" />
+            <Photo
+              src="/img/turing.jpg"
+              alt="Алан Тьюринг"
+              className="turing-photo"
+              pos="50% 25%"
+              credit="Elliott & Fry, 1951"
+            />
             <R className="turing-text">
-              <span className="label">1936 · Алан Тьюринг</span>
-              <h3>Универсал компьютер</h3>
+              <span className="label">1936 он</span>
+              <h3>Алан Тьюринг</h3>
               <p>
-                Хангалттай санах ой, хугацаа өгвөл аливаа тооцоог гүйцэтгэж чадна. Ийм материйг Тегмарк{' '}
-                <b>«компьютрониум»</b> гэж нэрлэдэг.
+                Хангалттай санах ой, хугацаа өгвөл ямар ч тооцоо хийж чадах
+                машин бүтээж болохыг баталсан. Тегмарк ийм чадвартай материйг
+                «компьютрониум» гэж нэрлэдэг.
               </p>
             </R>
           </div>
           <R className="panel accent">
-            <span className="label">Суурь хамааралгүй байдал</span>
-            <h3>Матери биш — хэв маяг чухал</h3>
+            <span className="label">Хамгийн гол санаа</span>
+            <h3>Тооцоолол материалаас хамаардаггүй</h3>
             <p>
-              Долгион ус, агаар, хатуу биетэд адилхан тархдаг шиг тооцоолол ч ямар материал дээр хийгдэх нь хамаагүй. Тиймээс
-              оюун ухаан цахиур дээр ч бий болж болно.
+              Долгион усанд ч, агаарт ч адилхан тархдаг. Үүнтэй адил тооцоолол
+              цахиур дээр ч, тархинд ч хийгдэж болно.
             </p>
           </R>
         </div>
@@ -375,53 +406,56 @@ export function Computation() {
 export function Learning() {
   return (
     <div className="learning">
-      <Header kicker="2-р бүлэг · Суралцах" title="Матери суралцаж чаддаг" />
+      <Header kicker="2-р бүлэг" title="Суралцах" />
       <div className="learn-grid">
         <Photo
           src="/img/neurons.jpg"
           alt="Нейронууд"
           className="learn-photo"
-          credit="Флуоресцент нейронууд · ManuelSchottdorf, CC BY-SA 4.0"
+          credit="Микроскопоор харсан нейронууд, ManuelSchottdorf, CC BY-SA 4.0"
         />
         <Group className="numlist">
           <R className="num-item">
             <b>1</b>
             <div>
               <h3>Хеббийн дүрэм</h3>
-              <p>«Хамт идэвхждэг нейронууд хоорондоо холбогддог.» Холбоосын хүч туршлагаар өөрчлөгдөнө.</p>
+              <p>
+                Хамт идэвхждэг нейронуудын холбоо улам хүчтэй болдог. Тархи ингэж
+                суралцдаг.
+              </p>
             </div>
           </R>
           <R className="num-item">
             <b>2</b>
             <div>
-              <h3>Тархи ≈ 100 тэрбум нейрон</h3>
-              <p>Тус бүр ≈ 1000 синапстай — бүгд суралцах явцад тохируулагдана.</p>
+              <h3>100 тэрбум орчим нейрон</h3>
+              <p>Тус бүр нь мянга орчим бусад нейронтой холбогддог.</p>
             </div>
           </R>
           <R className="num-item">
             <b>3</b>
             <div>
-              <h3>Нейрон сүлжээ — универсал</h3>
-              <p>Хангалттай том сүлжээ бараг аливаа функцийг ойролцоолж чадна → гүн сургалт.</p>
+              <h3>Хиймэл нейрон сүлжээ</h3>
+              <p>
+                Холбоосоо тохируулж суралцдаг. Хангалттай том бол бараг ямар ч
+                функцийг сурч чадна.
+              </p>
             </div>
           </R>
           <R className="num-item">
             <b>4</b>
             <div>
-              <h3>Тооцоолол улам хямдарна</h3>
-              <p>Мурын хууль: тооцооллын өртөг ойролцоогоор хоёр жил тутам хоёр дахин буурсаар.</p>
+              <h3>Тооцоолол хямдарсаар</h3>
+              <p>
+                Мурын хуулиар тооцооллын өртөг хоёр жил орчимд хоёр дахин буурдаг.
+              </p>
             </div>
           </R>
         </Group>
       </div>
-      <R className="equation">
-        <span>Санах ой</span>
-        <i>+</i>
-        <span>Тооцоолол</span>
-        <i>+</i>
-        <span>Суралцах</span>
-        <i>=</i>
-        <span className="hot">Ухаалаг матери</span>
+      <R className="footnote summary">
+        <b>Бүлгийн дүгнэлт:</b> санах ой, тооцоолол, суралцах гурвын аль нь ч
+        биологиос хамаардаггүй. Тиймээс оюун ухаан зөвхөн хүнд байх албагүй.
       </R>
     </div>
   );
