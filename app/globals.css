@@ -1230,7 +1230,7 @@ img {
 }
 
 .intel-photo .photo-frame {
-  height: 480px;
+  height: 420px;
 }
 
 .intel-cols {
@@ -1499,7 +1499,7 @@ img {
 }
 
 .learn-photo .photo-frame {
-  height: 580px;
+  height: 560px;
   background: #000;
 }
 
@@ -1738,4 +1738,11 @@ img {
 .campmap {
   width: 720px;
   height: 585px;
+}
+
+.footnote.summary {
+  margin-top: 22px;
+  font-size: 21px;
+  line-height: 1.5;
+  color: var(--ink2);
 }
