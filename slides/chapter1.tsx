@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
-import { EASE, Group, Header, Photo, R } from '@/components/ui';
+import { motion } from "framer-motion";
+import { EASE, Group, Header, Photo, R } from "@/components/ui";
 
 /* ───────────── Бүлгийн нүүр (давтан ашиглана) ───────────── */
 
@@ -35,7 +35,7 @@ export function Divider({
         <R className="div-en">{en}</R>
         {epigraph && (
           <R className="epigraph">
-            «{epigraph.text}»<small>— {epigraph.who}</small>
+            «{epigraph.text}»<small>{epigraph.who}</small>
           </R>
         )}
         <Group className="div-list">
@@ -59,21 +59,25 @@ export function Ch1Divider() {
       label="1-р бүлэг"
       title="Бидний цаг үеийн хамгийн чухал яриа"
       en="Welcome to the Most Important Conversation of Our Time"
-      pills={['Амьдралын гурван үе шат', 'Маргаан ба урсгалууд', 'Буруу ойлголтууд']}
+      pills={[
+        "Амьдралын гурван үе шат",
+        "AI-ийн талаарх маргаан",
+        "Түгээмэл буруу ойлголтууд",
+      ]}
       img="/img/deep-field.jpg"
-      credit="Hubble Ultra Deep Field · NASA/ESA, нийтийн өмч"
+      credit="Hubble Ultra Deep Field, NASA/ESA"
     />
   );
 }
 
-/* ───────────── 6. Нарийн төвөгшлийн товч түүх ───────────── */
+/* ───────────── 6. Орчлонгийн товч түүх ───────────── */
 
 const history = [
-  { t: '13.8 тэрбум жилийн өмнө', d: 'Их тэсрэлт — орчлон үүсэв' },
-  { t: 'Од, галактик', d: 'Атомууд нэгдэж, нарийн бүтэц үүсэв' },
-  { t: '≈ 4 тэрбум жилийн өмнө', d: 'Дэлхий дээр анхны амьдрал' },
-  { t: '≈ 300 000 жилийн өмнө', d: 'Хомо сапиенс — хэл, соёл' },
-  { t: 'Өнөөдөр', d: 'Технологи ба хиймэл оюун' },
+  { t: "13.8 тэрбум жилийн өмнө", d: "Их тэсрэлт болж, орчлон үүссэн" },
+  { t: "Дараа нь", d: "Атом, од, галактик бий болсон" },
+  { t: "≈ 4 тэрбум жилийн өмнө", d: "Дэлхий дээр анхны амьдрал" },
+  { t: "≈ 300 000 жилийн өмнө", d: "Хомо сапиенс, хэл ба соёл" },
+  { t: "Өнөөдөр", d: "Технологи, хиймэл оюун ухаан" },
 ];
 
 export function History() {
@@ -83,13 +87,13 @@ export function History() {
         src="/img/earth.jpg"
         alt="Дэлхий"
         className="history-photo"
-        credit="«Цэнхэр бөмбөлөг», Аполло 17 · NASA, нийтийн өмч"
+        credit="Аполло 17-оос авсан зураг, NASA"
       />
       <div>
         <Header
-          kicker="1-р бүлэг · Нарийн төвөгшлийн товч түүх"
-          title="Орчлон «сэрж» эхэлсэн нь"
-          sub="13.8 тэрбум жилийн дараа манай орчлон өөрийгөө ухамсарлаж эхэлжээ — бид бол тэр сэрэлт."
+          kicker="1-р бүлэг"
+          title="Их тэсрэлтээс өнөөдрийг хүртэл"
+          sub="Тегмарк номоо орчлонгийн түүхээс эхэлдэг. Түүний бодлоор 13.8 тэрбум жилийн дараа орчлон өөрийгөө танин мэдэх чадвартай амьтдыг бий болгосон, тэр нь бид."
         />
         <div className="vtl">
           <motion.i
@@ -100,7 +104,10 @@ export function History() {
           />
           <Group>
             {history.map((h, i) => (
-              <R className={`vtl-item${i === history.length - 1 ? ' now' : ''}`} key={h.t}>
+              <R
+                className={`vtl-item${i === history.length - 1 ? " now" : ""}`}
+                key={h.t}
+              >
                 <b>{h.t}</b>
                 <span>{h.d}</span>
               </R>
@@ -108,11 +115,11 @@ export function History() {
           </Group>
         </div>
         <R className="definition">
-          <span className="label">Тегмаркийн тодорхойлолт</span>
+          <span className="label">Амьдрал гэж юу вэ?</span>
           <p>
-            <b>Амьдрал</b> — өөрийн нарийн бүтцийг хадгалж, хуулбарлан үржих чадвартай процесс. Үүнд{' '}
-            <b>тоног төхөөрөмж</b> (бие, матери) ба <b>програм хангамж</b> (мэдээлэл, мэдлэг, ур чадвар) гэсэн хоёр тал
-            бий.
+            Тегмаркийн тодорхойлсноор амьдрал бол өөрийн бүтцийг хадгалж,
+            үржиж чаддаг процесс. Үүнийг <b>бие</b> (hardware) ба{" "}
+            <b>мэдлэг, чадвар</b> (software) гэж хоёр хувааж үздэг.
           </p>
         </R>
       </div>
@@ -124,31 +131,31 @@ export function History() {
 
 const stages = [
   {
-    v: '1.0',
-    name: 'Биологийн үе',
-    img: '/img/life1-ecoli.jpg',
-    credit: 'E. coli бактери · USDA, нийтийн өмч',
+    v: "1.0",
+    name: "Биологийн",
+    img: "/img/life1-ecoli.jpg",
+    credit: "E. coli бактери, USDA",
     hw: false,
     sw: false,
-    d: 'Насан туршдаа шинэ зүйл сурч чадахгүй — зөвхөн үе дамжсан хувьслаар өөрчлөгдөнө.',
+    d: "Бактери насан туршдаа шинэ юм сурдаггүй. Өөрчлөгдөх ганц арга нь олон үе дамжсан хувьсал.",
   },
   {
-    v: '2.0',
-    name: 'Соёлын үе',
-    img: '/img/life2-child.jpg',
-    credit: 'Зураг: Widad.sirkhotte, CC BY 4.0',
+    v: "2.0",
+    name: "Соёлын",
+    img: "/img/life2-child.jpg",
+    credit: "Зураг: Widad.sirkhotte, CC BY 4.0",
     hw: false,
     sw: true,
-    d: 'Бие нь хувьслаар бий болдог ч хэл, мэдлэг, ур чадвараа суралцаж өөрөө «суулгадаг».',
+    d: "Бие нь хувьслаар заяадаг ч хэл, мэдлэг, ур чадвараа хүн өөрөө сурч эзэмшдэг.",
   },
   {
-    v: '3.0',
-    name: 'Технологийн үе',
-    img: '/img/life3-asimo.jpg',
-    credit: 'ASIMO робот · Vanillase, CC BY-SA 3.0',
+    v: "3.0",
+    name: "Технологийн",
+    img: "/img/life3-asimo.jpg",
+    credit: "ASIMO робот, Vanillase, CC BY-SA 3.0",
     hw: true,
     sw: true,
-    d: 'Биеэ ч, програмаа ч өөрөө зохион бүтээнэ — хувьслын хязгаараас ангид.',
+    d: "Биеэ ч, оюун ухаанаа ч өөрөө зохион бүтээнэ. Одоогоор ийм амьдрал байхгүй.",
   },
 ];
 
@@ -156,31 +163,36 @@ export function ThreeStages() {
   return (
     <div className="stages">
       <Header
-        kicker="1-р бүлэг · Гол санаа"
+        kicker="1-р бүлэг"
         title="Амьдралын гурван үе шат"
-        sub={
-          <>
-            Өнөөдөр бид магадгүй <b>«Амьдрал 2.1»</b> — хиймэл шүд, өвдөгний үе, зүрхний аппаратаар биеэ бага зэрэг
-            «шинэчилж» эхэлсэн.
-          </>
-        }
+        sub="Номын нэр эндээс гаралтай. Тегмарк хошигнож бид одоо «Амьдрал 2.1» гэдэг, учир нь хиймэл шүд, зүрхний аппарат зэргээр биеэ бага зэрэг сайжруулж эхэлсэн."
       />
       <div className="stage-cols">
         {stages.map((s) => (
           <div className="stage-col" key={s.v}>
-            <Photo src={s.img} alt={s.name} className="stage-photo" credit={s.credit} pos="50% 35%" />
+            <Photo
+              src={s.img}
+              alt={s.name}
+              className="stage-photo"
+              credit={s.credit}
+              pos="50% 35%"
+            />
             <R className="stage-head">
               <h3>Амьдрал {s.v}</h3>
               <span>{s.name}</span>
             </R>
             <R className="stage-rows">
               <div>
-                <span>Бие (hardware)</span>
-                <b className={s.hw ? 'self' : ''}>{s.hw ? 'Өөрөө бүтээнэ' : 'Хувьслаар'}</b>
+                <span>Бие</span>
+                <b className={s.hw ? "self" : ""}>
+                  {s.hw ? "Өөрөө бүтээнэ" : "Хувьслаар"}
+                </b>
               </div>
               <div>
-                <span>Програм (software)</span>
-                <b className={s.sw ? 'self' : ''}>{s.sw ? 'Өөрөө бүтээнэ' : 'Хувьслаар'}</b>
+                <span>Мэдлэг, чадвар</span>
+                <b className={s.sw ? "self" : ""}>
+                  {s.sw ? "Өөрөө сурна" : "Хувьслаар"}
+                </b>
               </div>
             </R>
             <R className="stage-d">{s.d}</R>
