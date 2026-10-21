@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import { BookCover, Group, Header, Photo, R } from '@/components/ui';
-import { COURSE, PRESENTER } from '@/deck.config';
+import { BookCover, Group, Header, Photo, R } from "@/components/ui";
+import { COURSE, PRESENTER } from "@/deck.config";
 
 /* ───────────── 1. Нүүр ───────────── */
 
@@ -9,22 +9,24 @@ export function Cover() {
   return (
     <div className="cover">
       <div className="cover-text">
-        <R className="kicker">{COURSE} · Номын танилцуулга</R>
+        <R className="kicker">{COURSE}</R>
         <R>
           <h1 className="cover-title">
             Амьдрал <span>3.0</span>
           </h1>
         </R>
         <R className="cover-sub">Хиймэл оюуны эринд хүн байхуй</R>
-        <R className="cover-en">Life 3.0: Being Human in the Age of Artificial Intelligence</R>
+        <R className="cover-en">
+          Life 3.0: Being Human in the Age of Artificial Intelligence
+        </R>
         <Group className="cover-meta">
           <R>
             <small>Зохиолч</small>
             <b>Макс Тегмарк</b>
           </R>
           <R>
-            <small>Хамрах хүрээ</small>
-            <b>1 ба 2-р бүлэг</b>
+            <small>Сэдэв</small>
+            <b>Номын 1, 2-р бүлэг</b>
           </R>
           <R>
             <small>Илтгэгч</small>
@@ -33,8 +35,18 @@ export function Cover() {
         </Group>
       </div>
       <div className="cover-books">
-        <BookCover src="/img/cover-us-2017.jpg" alt="Life 3.0, анхны хэвлэл" className="cb-back" style={{ rotate: -5 }} />
-        <BookCover src="/img/cover-mn.jpg" alt="Амьдрал 3.0, монгол хэвлэл" className="cb-front" style={{ rotate: 4 }} />
+        <BookCover
+          src="/img/cover-us-2017.jpg"
+          alt="Life 3.0, анхны хэвлэл"
+          className="cb-back"
+          style={{ rotate: -5 }}
+        />
+        <BookCover
+          src="/img/cover-mn.jpg"
+          alt="Амьдрал 3.0, монгол хэвлэл"
+          className="cb-front"
+          style={{ rotate: 4 }}
+        />
       </div>
     </div>
   );
@@ -43,11 +55,20 @@ export function Cover() {
 /* ───────────── 2. Зохиолч ───────────── */
 
 const facts = [
-  { k: 'Төрсөн', v: '1967 оны 5-р сарын 5, Стокгольм (Швед)' },
-  { k: 'Боловсрол', v: 'Стокгольмын Эдийн засгийн сургууль, KTH; UC Berkeley — PhD (1994)' },
-  { k: 'Ажил', v: 'MIT-ийн физикийн профессор (2004 оноос); сансар судлал, AI' },
-  { k: 'Байгууллага', v: 'Future of Life Institute — 2014 онд хамтран үүсгэн байгуулж, ерөнхийлөгч нь' },
-  { k: 'Шагнал', v: 'TIME100 AI (2023); Шведийн Инженерийн ШУА-ийн алтан медаль (2019)' },
+  { k: "Төрсөн", v: "1967 онд Шведийн Стокгольм хотод" },
+  {
+    k: "Боловсрол",
+    v: "Стокгольмд эдийн засаг, физик сурч, 1994 онд UC Berkeley-д доктор хамгаалсан",
+  },
+  { k: "Ажил", v: "2004 оноос MIT-д физикийн профессороор ажиллаж байна" },
+  {
+    k: "Байгууллага",
+    v: "2014 онд Future of Life Institute-ийг хамтран байгуулж, ерөнхийлөгч нь болсон",
+  },
+  {
+    k: "Шагнал",
+    v: "TIME сэтгүүлийн AI салбарын нөлөөтэй 100 хүн (2023), Шведийн Инженерийн ШУА-ийн алтан медаль (2019)",
+  },
 ];
 
 export function Author() {
