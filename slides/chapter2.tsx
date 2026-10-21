@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
-import { EASE, Group, Header, Photo, R } from '@/components/ui';
-import { Divider } from './chapter1';
+import { motion } from "framer-motion";
+import { EASE, Group, Header, Photo, R } from "@/components/ui";
+import { Divider } from "./chapter1";
 
 export function Ch2Divider() {
   return (
@@ -11,27 +11,34 @@ export function Ch2Divider() {
       label="2-р бүлэг"
       title="Матери ухаалаг болох нь"
       en="Matter Turns Intelligent"
-      epigraph={{ text: 'Устөрөгчид хангалттай хугацаа өгвөл хүн болж хувирдаг.', who: 'Эдвард Роберт Харрисон' }}
-      pills={['Оюун ухаан', 'Санах ой', 'Тооцоолол', 'Суралцах']}
+      epigraph={{
+        text: "Устөрөгчид хангалттай хугацаа өгвөл хүн болж хувирдаг.",
+        who: "Эдвард Роберт Харрисон",
+      }}
+      pills={["Оюун ухаан", "Санах ой", "Тооцоолол", "Суралцах"]}
       img="/img/chip-die.jpg"
-      credit="Intel 80486 процессорын цөм, 1.2 сая транзистор · нийтийн өмч"
+      credit="Intel 80486 процессорын цөм, 1.2 сая транзистортой"
     />
   );
 }
 
-/* ───────────── 14. Оюун ухаан гэж юу вэ ───────────── */
+/* ───────────── 14. Оюун ухаан ───────────── */
 
 const spectrum = [
-  { x: 5, t: 'Тооцоолуур', d: 'арифметик' },
-  { x: 32, t: 'Deep Blue', d: 'шатар, 1997' },
-  { x: 62, t: 'Хүн', d: 'өргөн оюун ухаан' },
-  { x: 93, t: 'AGI ?', d: 'бараг бүх зорилго', hot: true },
+  { x: 5, t: "Тооцоолуур", d: "зөвхөн тоо боддог" },
+  { x: 32, t: "Deep Blue", d: "зөвхөн шатар" },
+  { x: 62, t: "Хүн", d: "олон зүйл чаддаг" },
+  { x: 93, t: "AGI", d: "бараг бүгдийг", hot: true },
 ];
 
 export function Intelligence() {
   return (
     <div className="intel">
-      <Header kicker="2-р бүлэг · Оюун ухаан гэж юу вэ" title="Оюун ухаан = нарийн төвөгтэй зорилгод хүрэх чадвар" />
+      <Header
+        kicker="2-р бүлэг"
+        title="Оюун ухаан гэж юу вэ?"
+        sub="Тегмарк үүнийг «нарийн төвөгтэй зорилгод хүрэх чадвар» гэж маш өргөн утгаар тодорхойлдог. Ингэхээр хүн, амьтан, машин бүгд хамаарна."
+      />
       <R className="spectrum">
         <div className="spec-ends">
           <span>← Нарийн</span>
@@ -47,8 +54,8 @@ export function Intelligence() {
           {spectrum.map((s, i) => (
             <motion.div
               key={s.t}
-              className={`spec-mark${s.hot ? ' hot' : ''}`}
-              style={{ left: `${s.x}%`, x: '-50%' }}
+              className={`spec-mark${s.hot ? " hot" : ""}`}
+              style={{ left: `${s.x}%`, x: "-50%" }}
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.1 + i * 0.22, duration: 0.6, ease: EASE }}
@@ -61,22 +68,37 @@ export function Intelligence() {
         </div>
       </R>
       <div className="intel-grid">
-        <Photo src="/img/deep-blue.jpg" alt="Deep Blue" className="intel-photo" pos="50% 40%" credit="IBM Deep Blue · Anton Chiang, CC BY 2.0" />
+        <Photo
+          src="/img/deep-blue.jpg"
+          alt="Deep Blue"
+          className="intel-photo"
+          pos="50% 40%"
+          credit="IBM Deep Blue, Anton Chiang, CC BY 2.0"
+        />
         <Group className="intel-cols">
           <R className="col">
-            <span className="label">Ганц тоо биш</span>
-            <h3>IQ-гээр хэмжиж болохгүй</h3>
-            <p>Оюун ухаан бол олон чадварын спектр. Тооцоолуур арифметикт биднээс давна, гэхдээ өөр юу ч чадахгүй.</p>
+            <span className="label">IQ хангалтгүй</span>
+            <h3>Нэг тоогоор хэмжихгүй</h3>
+            <p>
+              Тооцоолуур биднээс хурдан тоо боддог ч өөр юу ч чаддаггүй. Оюун
+              ухаан олон төрлийн чадвараас бүрддэг.
+            </p>
           </R>
           <R className="col">
-            <span className="label">Нарийн ба өргөн</span>
-            <h3>Өнөөгийн AI ихэвчлэн нарийн</h3>
-            <p>Deep Blue 1997 онд Каспаровыг шатраар ялсан ч шатраас өөр юу ч хийж чадахгүй байв.</p>
+            <span className="label">Нарийн AI</span>
+            <h3>Ганц ажилд л сайн</h3>
+            <p>
+              Deep Blue 1997 онд Каспаровыг хожсон. Гэхдээ шатраас өөр юм мэддэггүй
+              байсан.
+            </p>
           </R>
           <R className="col accent">
             <span className="label">AGI</span>
-            <h3>Ерөнхий хиймэл оюун ухаан</h3>
-            <p>Суралцахыг оролцуулан бараг аливаа зорилгод хүнээс дутуугүй хүрэх чадвар.</p>
+            <h3>Ерөнхий оюун ухаан</h3>
+            <p>
+              Шинэ зүйл сурахыг оролцуулаад бараг ямар ч ажлыг хүнээс дутахгүй
+              хийж чадах AI.
+            </p>
           </R>
         </Group>
       </div>
@@ -87,23 +109,23 @@ export function Intelligence() {
 /* ───────────── 15. Моравецын ландшафт ───────────── */
 
 const peaks = [
-  { x: 120, y: 470, t: 'Арифметик' },
-  { x: 285, y: 486, t: 'Шатар' },
-  { x: 430, y: 455, t: 'Го' },
-  { x: 575, y: 476, t: 'Яриа таних' },
-  { x: 740, y: 352, t: 'Жолоодлого' },
-  { x: 905, y: 372, t: 'Орчуулга' },
-  { x: 1070, y: 228, t: 'Программчлал' },
-  { x: 1215, y: 262, t: 'Ном бичих' },
-  { x: 1385, y: 92, t: 'AI дизайн', flag: true },
-  { x: 1540, y: 212, t: 'Шинжлэх ухаан' },
+  { x: 120, y: 470, t: "Арифметик" },
+  { x: 285, y: 486, t: "Шатар" },
+  { x: 430, y: 455, t: "Го" },
+  { x: 575, y: 476, t: "Яриа таних" },
+  { x: 740, y: 352, t: "Жолоодлого" },
+  { x: 905, y: 372, t: "Орчуулга" },
+  { x: 1070, y: 228, t: "Программчлал" },
+  { x: 1215, y: 262, t: "Ном бичих" },
+  { x: 1385, y: 92, t: "AI дизайн", flag: true },
+  { x: 1540, y: 212, t: "Шинжлэх ухаан" },
 ];
 
 const MOUNTAIN =
-  'M0 600 L0 505 C 60 470, 150 470, 210 492 C 250 506, 300 510, 340 492 C 380 474, 400 455, 440 460 ' +
-  'C 490 466, 520 492, 570 484 C 630 474, 660 380, 720 366 C 770 354, 800 392, 850 392 C 890 392, 900 380, 930 384 ' +
-  'C 990 392, 1010 262, 1070 244 C 1120 230, 1150 282, 1210 278 C 1260 274, 1320 112, 1380 102 ' +
-  'C 1430 94, 1470 200, 1520 222 C 1570 244, 1610 290, 1640 300 L1640 600 Z';
+  "M0 600 L0 505 C 60 470, 150 470, 210 492 C 250 506, 300 510, 340 492 C 380 474, 400 455, 440 460 " +
+  "C 490 466, 520 492, 570 484 C 630 474, 660 380, 720 366 C 770 354, 800 392, 850 392 C 890 392, 900 380, 930 384 " +
+  "C 990 392, 1010 262, 1070 244 C 1120 230, 1150 282, 1210 278 C 1260 274, 1320 112, 1380 102 " +
+  "C 1430 94, 1470 200, 1520 222 C 1570 244, 1610 290, 1640 300 L1640 600 Z";
 
 export function Landscape() {
   return (
@@ -111,16 +133,18 @@ export function Landscape() {
       <Header
         kicker="2-р бүлэг · Ханс Моравецын санаа"
         title="Хүний чадварын ландшафт"
-        sub={
-          <>
-            Өндөр = машинд хэр хэцүү вэ. <b>Усны түвшин = өнөөгийн AI.</b> Ус жил ирэх тусам нэмэгдсээр.
-          </>
-        }
+        sub="Уул өндөр байх тусам тэр ажил машинд хэцүү. Ус бол өнөөгийн AI-н түвшин, жил ирэх тусам нэмэгдсээр байна."
       />
       <R className="land-wrap">
         <svg viewBox="0 0 1640 600" width="1640" height="520">
           <defs>
-            <pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+            <pattern
+              id="hatch"
+              width="8"
+              height="8"
+              patternUnits="userSpaceOnUse"
+              patternTransform="rotate(45)"
+            >
               <line x1="0" y1="0" x2="0" y2="8" stroke="#d9dee9" strokeWidth="2" />
             </pattern>
           </defs>
@@ -130,16 +154,35 @@ export function Landscape() {
               <circle cx={p.x} cy={p.y} r="5" fill="#13296b" />
               {p.flag && (
                 <g>
-                  <line x1={p.x} y1={p.y} x2={p.x} y2={p.y - 64} stroke="#13296b" strokeWidth="2.5" />
-                  <path d={`M${p.x} ${p.y - 64} L${p.x + 40} ${p.y - 53} L${p.x} ${p.y - 42} Z`} fill="#b4233c" />
+                  <line
+                    x1={p.x}
+                    y1={p.y}
+                    x2={p.x}
+                    y2={p.y - 64}
+                    stroke="#13296b"
+                    strokeWidth="2.5"
+                  />
+                  <path
+                    d={`M${p.x} ${p.y - 64} L${p.x + 40} ${p.y - 53} L${p.x} ${p.y - 42} Z`}
+                    fill="#b4233c"
+                  />
                 </g>
               )}
-              <text x={p.x} y={p.y - (p.flag ? 76 : 16)} textAnchor="middle" className={`peak-t${p.flag ? ' flag' : ''}`}>
+              <text
+                x={p.x}
+                y={p.y - (p.flag ? 76 : 16)}
+                textAnchor="middle"
+                className={`peak-t${p.flag ? " flag" : ""}`}
+              >
                 {p.t}
               </text>
             </g>
           ))}
-          <motion.g initial={{ y: 170 }} animate={{ y: 0 }} transition={{ delay: 1, duration: 3, ease: [0.33, 1, 0.68, 1] }}>
+          <motion.g
+            initial={{ y: 170 }}
+            animate={{ y: 0 }}
+            transition={{ delay: 1, duration: 3, ease: [0.33, 1, 0.68, 1] }}
+          >
             <g className="wave">
               <path
                 d="M-200 440 q 50 -12 100 0 t 100 0 t 100 0 t 100 0 t 100 0 t 100 0 t 100 0 t 100 0 t 100 0 t 100 0 t 100 0 t 100 0 t 100 0 t 100 0 t 100 0 t 100 0 t 100 0 t 100 0 t 100 0 t 100 0 V 700 H -200 Z"
