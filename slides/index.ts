@@ -1,5 +1,5 @@
-import type { ComponentType } from 'react';
-import { Case, QA } from './case';
+import type { ComponentType } from "react";
+import { Case, QA } from "./case";
 import {
   Camps,
   Ch1Divider,
