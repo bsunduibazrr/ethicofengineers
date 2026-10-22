@@ -16,9 +16,8 @@ const sans = IBM_Plex_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Амьдрал 3.0 — Макс Тегмарк",
-  description:
-    'Макс Тегмаркийн "Амьдрал 3.0" номын эхний хоёр бүлгийн танилцуулга',
+  title: "life3.0",
+  description: "life3.0",
 };
 
 export const viewport: Viewport = {

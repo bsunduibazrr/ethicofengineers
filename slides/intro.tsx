@@ -140,50 +140,79 @@ const editions = [
     t: "Зөөлөн хавтас",
     d: "Penguin, Их Британи",
   },
-  {
-    src: "/img/cover-mn.jpg",
-    y: "МН",
-    t: "Монгол хэвлэл",
-    d: "Монсудар, 356 хуудас",
-    mn: true,
-  },
+];
+
+const mnInfo = [
+  { k: "Орчуулсан", v: "Г. Үүрдмандах" },
+  { k: "Редактор", v: "М. Бямбасайхан" },
+  { k: "Хэвлэлийн газар", v: "Монсудар" },
+  { k: "Хэмжээ", v: "356 хуудас" },
+];
+
+const reception = [
+  { k: "New York Times", v: "Бестселлер болсон" },
+  { k: "Барак Обама", v: "2018 оны дуртай номынхоо жагсаалтад оруулсан" },
+  { k: "Илон Маск", v: "Уншихыг зөвлөсөн" },
 ];
 
 export function Book() {
   return (
     <div className="editions">
-      <Header kicker="Ном" title="Номын хэвлэлүүд" />
-      <Group className="ed-row">
-        {editions.map((e) => (
-          <R className={`ed${e.mn ? " mn" : ""}`} key={e.src}>
-            <div className="ed-img">
-              <img src={e.src} alt={e.t} />
-            </div>
-            <div className="ed-cap">
-              <b>{e.y}</b>
-              <span>{e.t}</span>
-              <small>{e.d}</small>
-            </div>
-          </R>
-        ))}
-      </Group>
-      <Group className="ed-bottom">
-        <R className="ed-block">
-          <span className="label">Монгол орчуулга</span>
-          <p>
-            "Амьдрал 3.0: Хиймэл оюуны эринд хүн байхуй". Орчуулсан Г.
-            Үүрдмандах, редактор М. Бямбасайхан. Монсудар хэвлэлийн газар.
-          </p>
+      <div className="ed-hero">
+        <BookCover
+          src="/img/cover-mn.jpg"
+          alt="Амьдрал 3.0, монгол хэвлэл"
+          className="ed-hero-cover"
+        />
+        <R className="ed-hero-cap">
+          <i>Амьдрал 3.0</i> · Монгол хэвлэл
         </R>
-        <R className="ed-block">
-          <span className="label">Ном хэр их уншигдсан бэ</span>
-          <p>
-            New York Times-ийн бестселлер болсон. Барак Обама 2018 оны дуртай
-            номынхоо жагсаалтад оруулж, Илон Маск уншихыг зөвлөсөн. Орос,
-            герман, испани, хятад, япон зэрэг олон хэлээр орчуулагдсан.
+      </div>
+
+      <div className="ed-main">
+        <Header kicker="Ном" title="Номын хэвлэлүүд" />
+
+        <R className="ed-mn">
+          <p className="ed-mn-title">
+            «Амьдрал 3.0: Хиймэл оюуны эринд хүн байхуй»
           </p>
+          <dl className="ed-mn-info">
+            {mnInfo.map((f) => (
+              <div key={f.k}>
+                <dt>{f.k}</dt>
+                <dd>{f.v}</dd>
+              </div>
+            ))}
+          </dl>
         </R>
-      </Group>
+
+        <div className="ed-intl">
+          <R className="label">Эх хэвлэлүүд</R>
+          <Group className="ed-row">
+            {editions.map((e) => (
+              <R className="ed" key={e.src}>
+                <div className="ed-img">
+                  <img src={e.src} alt={e.t} />
+                </div>
+                <div className="ed-cap">
+                  <b>{e.y}</b>
+                  <span>{e.t}</span>
+                  <small>{e.d}</small>
+                </div>
+              </R>
+            ))}
+          </Group>
+        </div>
+
+        <Group className="ed-reception">
+          {reception.map((r) => (
+            <R key={r.k}>
+              <b>{r.k}</b>
+              <span>{r.v}</span>
+            </R>
+          ))}
+        </Group>
+      </div>
     </div>
   );
 }

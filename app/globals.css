@@ -466,70 +466,147 @@ img {
 
 /* ───────────── 3. Хэвлэлүүд ───────────── */
 
+.editions {
+  display: grid;
+  grid-template-columns: 640px 1fr;
+  gap: 96px;
+}
+
+/* Монгол хэвлэл — зүүн талын тод самбар, дээд/зүүн ирмэг хүртэл */
+.ed-hero {
+  margin: -92px 0 0 -120px;
+  padding-left: 120px;
+  background: var(--tint);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 34px;
+}
+
+.ed-hero-cover {
+  height: 600px;
+  width: auto;
+}
+
+.ed-hero-cap {
+  font-size: 17px;
+  color: var(--muted);
+}
+
+.ed-hero-cap i {
+  font-family: var(--serif);
+  font-size: 20px;
+  color: var(--ink);
+}
+
+.ed-main {
+  display: flex;
+  flex-direction: column;
+}
+
 .editions .header {
-  margin-bottom: 34px;
+  margin-bottom: 26px;
+}
+
+.ed-mn-title {
+  font-family: var(--serif);
+  font-size: 26px;
+  font-style: italic;
+  line-height: 1.35;
+  color: var(--navy);
+}
+
+.ed-mn-info {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  justify-content: start;
+  column-gap: 44px;
+  margin-top: 18px;
+}
+
+.ed-mn-info dt {
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.ed-mn-info dd {
+  margin-top: 2px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.ed-intl {
+  margin-top: 44px;
+  padding-top: 22px;
+  border-top: 1px solid var(--rule);
 }
 
 .ed-row {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 36px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-top: 8px;
 }
 
 .ed-img {
-  height: 340px;
+  height: 250px;
   display: flex;
   align-items: flex-end;
-  justify-content: center;
 }
 
 .ed-img img {
-  max-height: 340px;
-  max-width: 100%;
-  box-shadow: 0 20px 36px rgba(17, 21, 34, 0.2), 0 4px 10px rgba(17, 21, 34, 0.1);
+  height: 250px;
+  width: auto;
+  box-shadow: 0 14px 26px rgba(17, 21, 34, 0.18), 0 3px 8px rgba(17, 21, 34, 0.1);
 }
 
 .ed-cap {
-  margin-top: 20px;
-  padding-top: 14px;
-  border-top: 1px solid var(--rule);
+  margin-top: 16px;
 }
 
 .ed-cap b {
-  display: block;
   font-family: var(--serif);
-  font-size: 26px;
+  font-size: 22px;
   color: var(--navy);
 }
 
 .ed-cap span {
-  display: block;
-  margin-top: 2px;
-  font-size: 21px;
+  margin-left: 10px;
+  font-size: 17px;
   font-weight: 600;
 }
 
 .ed-cap small {
   display: block;
   margin-top: 2px;
-  font-size: 17px;
+  font-size: 15px;
   color: var(--muted);
 }
 
-.ed.mn .ed-cap {
-  border-top: 3px solid var(--navy);
-}
-
-.ed-bottom {
+.ed-reception {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
-  margin-top: 40px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: auto;
 }
 
-.ed-block p {
-  font-size: 21px;
-  line-height: 1.55;
+.ed-reception > div {
+  padding-left: 18px;
+  border-left: 3px solid var(--navy);
+}
+
+.ed-reception b {
+  display: block;
+  font-family: var(--serif);
+  font-size: 22px;
+}
+
+.ed-reception span {
+  display: block;
+  margin-top: 4px;
+  font-size: 17px;
+  line-height: 1.45;
   color: var(--ink2);
 }
 
