@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import { motion, type MotionStyle, type Variants } from 'framer-motion';
-import type { CSSProperties, ReactNode } from 'react';
+import { motion, type MotionStyle, type Variants } from "framer-motion";
+import type { CSSProperties, ReactNode } from "react";
 
 export const EASE = [0.16, 1, 0.3, 1] as const;
 export const EASE_IN = [0.7, 0, 0.84, 0] as const;
@@ -14,10 +14,13 @@ export const itemV: Variants = {
   exit: {},
 };
 
-// Зураг дээрээс доош «нээгдэж», дотроо бага зэрэг томролтоос буурна
+// Зураг дээрээс доош "нээгдэж", дотроо бага зэрэг томролтоос буурна
 const photoV: Variants = {
-  enter: { clipPath: 'inset(0% 0% 100% 0%)' },
-  center: { clipPath: 'inset(0% 0% 0% 0%)', transition: { duration: 1.1, ease: EASE } },
+  enter: { clipPath: "inset(0% 0% 100% 0%)" },
+  center: {
+    clipPath: "inset(0% 0% 0% 0%)",
+    transition: { duration: 1.1, ease: EASE },
+  },
   exit: {},
 };
 
@@ -33,7 +36,11 @@ const groupV: Variants = {
   exit: {},
 };
 
-type BoxProps = { children?: ReactNode; className?: string; style?: CSSProperties };
+type BoxProps = {
+  children?: ReactNode;
+  className?: string;
+  style?: CSSProperties;
+};
 
 /** Reveal — ээлжлэн гарч ирэх блок */
 export function R({ children, className, style }: BoxProps) {
@@ -60,7 +67,7 @@ export function Photo({
   className,
   style,
   pos,
-  fit = 'cover',
+  fit = "cover",
 }: {
   src: string;
   alt: string;
@@ -68,12 +75,18 @@ export function Photo({
   className?: string;
   style?: CSSProperties;
   pos?: string;
-  fit?: 'cover' | 'contain';
+  fit?: "cover" | "contain";
 }) {
   return (
-    <figure className={`photo ${className ?? ''}`} style={style}>
+    <figure className={`photo ${className ?? ""}`} style={style}>
       <motion.div className="photo-frame" variants={photoV}>
-        <motion.img src={src} alt={alt} variants={photoImgV} style={{ objectFit: fit, objectPosition: pos }} draggable={false} />
+        <motion.img
+          src={src}
+          alt={alt}
+          variants={photoImgV}
+          style={{ objectFit: fit, objectPosition: pos }}
+          draggable={false}
+        />
       </motion.div>
       {credit && <figcaption>{credit}</figcaption>}
     </figure>
@@ -81,12 +94,22 @@ export function Photo({
 }
 
 /** Номын хавтас — сүүдэртэй, зөөлөн гарч ирнэ */
-export function BookCover({ src, alt, className, style }: { src: string; alt: string; className?: string; style?: MotionStyle }) {
+export function BookCover({
+  src,
+  alt,
+  className,
+  style,
+}: {
+  src: string;
+  alt: string;
+  className?: string;
+  style?: MotionStyle;
+}) {
   return (
     <motion.img
       src={src}
       alt={alt}
-      className={`book-cover ${className ?? ''}`}
+      className={`book-cover ${className ?? ""}`}
       style={style}
       variants={itemV}
       draggable={false}
@@ -94,7 +117,15 @@ export function BookCover({ src, alt, className, style }: { src: string; alt: st
   );
 }
 
-export function Header({ kicker, title, sub }: { kicker: string; title: ReactNode; sub?: ReactNode }) {
+export function Header({
+  kicker,
+  title,
+  sub,
+}: {
+  kicker: string;
+  title: ReactNode;
+  sub?: ReactNode;
+}) {
   return (
     <div className="header">
       <R className="kicker">{kicker}</R>

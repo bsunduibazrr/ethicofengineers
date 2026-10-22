@@ -122,9 +122,24 @@ const editions = [
     t: "Анхны хэвлэл",
     d: "Alfred A. Knopf, АНУ",
   },
-  { src: "/img/cover-uk-2017.jpg", y: "2017", t: "Их Британи", d: "Allen Lane" },
-  { src: "/img/cover-us-2018.jpg", y: "2018", t: "Зөөлөн хавтас", d: "Vintage, АНУ" },
-  { src: "/img/cover-uk-2018.jpg", y: "2018", t: "Зөөлөн хавтас", d: "Penguin, Их Британи" },
+  {
+    src: "/img/cover-uk-2017.jpg",
+    y: "2017",
+    t: "Их Британи",
+    d: "Allen Lane",
+  },
+  {
+    src: "/img/cover-us-2018.jpg",
+    y: "2018",
+    t: "Зөөлөн хавтас",
+    d: "Vintage, АНУ",
+  },
+  {
+    src: "/img/cover-uk-2018.jpg",
+    y: "2018",
+    t: "Зөөлөн хавтас",
+    d: "Penguin, Их Британи",
+  },
   {
     src: "/img/cover-mn.jpg",
     y: "МН",
@@ -156,7 +171,7 @@ export function Book() {
         <R className="ed-block">
           <span className="label">Монгол орчуулга</span>
           <p>
-            «Амьдрал 3.0: Хиймэл оюуны эринд хүн байхуй». Орчуулсан Г.
+            "Амьдрал 3.0: Хиймэл оюуны эринд хүн байхуй". Орчуулсан Г.
             Үүрдмандах, редактор М. Бямбасайхан. Монсудар хэвлэлийн газар.
           </p>
         </R>

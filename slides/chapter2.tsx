@@ -37,7 +37,7 @@ export function Intelligence() {
       <Header
         kicker="2-р бүлэг"
         title="Оюун ухаан гэж юу вэ?"
-        sub="Тегмарк үүнийг «нарийн төвөгтэй зорилгод хүрэх чадвар» гэж маш өргөн утгаар тодорхойлдог. Ингэхээр хүн, амьтан, машин бүгд хамаарна."
+        sub="Тегмарк үүнийг нарийн төвөгтэй зорилгод хүрэх чадвар гэж маш өргөн утгаар тодорхойлдог. Ингэхээр хүн, амьтан, машин бүгд хамаарна."
       />
       <R className="spectrum">
         <div className="spec-ends">
@@ -88,8 +88,8 @@ export function Intelligence() {
             <span className="label">Нарийн AI</span>
             <h3>Ганц ажилд л сайн</h3>
             <p>
-              Deep Blue 1997 онд Каспаровыг хожсон. Гэхдээ шатраас өөр юм мэддэггүй
-              байсан.
+              Deep Blue 1997 онд Каспаровыг хожсон. Гэхдээ шатраас өөр юм
+              мэддэггүй байсан.
             </p>
           </R>
           <R className="col accent">
@@ -145,10 +145,22 @@ export function Landscape() {
               patternUnits="userSpaceOnUse"
               patternTransform="rotate(45)"
             >
-              <line x1="0" y1="0" x2="0" y2="8" stroke="#d9dee9" strokeWidth="2" />
+              <line
+                x1="0"
+                y1="0"
+                x2="0"
+                y2="8"
+                stroke="#d9dee9"
+                strokeWidth="2"
+              />
             </pattern>
           </defs>
-          <path d={MOUNTAIN} fill="url(#hatch)" stroke="#13296b" strokeWidth="2.5" />
+          <path
+            d={MOUNTAIN}
+            fill="url(#hatch)"
+            stroke="#13296b"
+            strokeWidth="2.5"
+          />
           {peaks.map((p) => (
             <g key={p.t}>
               <circle cx={p.x} cy={p.y} r="5" fill="#13296b" />
@@ -206,7 +218,7 @@ export function Landscape() {
           <b>Тегмаркийн зөвлөгөө:</b> эрэг орчмын мэргэжлээс болгоомжил
         </R>
         <R>
-          <b>Ус «AI дизайн»-д хүрвэл</b> AI өөрийгөө сайжруулж эхэлнэ
+          <b>Ус "AI дизайн"-д хүрвэл</b> AI өөрийгөө сайжруулж эхэлнэ
         </R>
       </Group>
     </div>
@@ -261,23 +273,30 @@ export function Memory() {
             <span className="label">Материал нь хамаагүй</span>
             <h3>Нэг мэдээллийг юун дээр ч хадгалж болно</h3>
             <div className="tags">
-              {["Чулуу", "Цаас", "Хатуу диск", "Флаш", "ДНХ", "Тархины синапс"].map(
-                (s) => (
-                  <span key={s}>{s}</span>
-                ),
-              )}
+              {[
+                "Чулуу",
+                "Цаас",
+                "Хатуу диск",
+                "Флаш",
+                "ДНХ",
+                "Тархины синапс",
+              ].map((s) => (
+                <span key={s}>{s}</span>
+              ))}
             </div>
           </R>
           <R className="panel mem-compare">
             <div>
               <span className="label">Компьютер</span>
               <h3>Хаягаар хайдаг</h3>
-              <p>«2048 дугаар хаягт юу байна?» гэж асууна.</p>
+              <p>"2048 дугаар хаягт юу байна?" гэж асууна.</p>
             </div>
             <div>
               <span className="label">Тархи</span>
               <h3>Холбоогоор санадаг</h3>
-              <p>Дууны эхний мөрийг сонсоход үргэлжлэл нь өөрөө санаанд ордог.</p>
+              <p>
+                Дууны эхний мөрийг сонсоход үргэлжлэл нь өөрөө санаанд ордог.
+              </p>
             </div>
           </R>
           <div className="hopfield">
@@ -318,16 +337,44 @@ export function Computation() {
           <span className="label">NAND хаалга</span>
           <div className="nand-body">
             <svg viewBox="0 0 260 160" width="260" height="160">
-              <line x1="10" y1="55" x2="70" y2="55" stroke="#13296b" strokeWidth="3" />
-              <line x1="10" y1="105" x2="70" y2="105" stroke="#13296b" strokeWidth="3" />
+              <line
+                x1="10"
+                y1="55"
+                x2="70"
+                y2="55"
+                stroke="#13296b"
+                strokeWidth="3"
+              />
+              <line
+                x1="10"
+                y1="105"
+                x2="70"
+                y2="105"
+                stroke="#13296b"
+                strokeWidth="3"
+              />
               <path
                 d="M70 25 H130 A55 55 0 0 1 130 135 H70 Z"
                 fill="#ffffff"
                 stroke="#13296b"
                 strokeWidth="3"
               />
-              <circle cx="196" cy="80" r="9" fill="#fff" stroke="#13296b" strokeWidth="3" />
-              <line x1="205" y1="80" x2="250" y2="80" stroke="#13296b" strokeWidth="3" />
+              <circle
+                cx="196"
+                cy="80"
+                r="9"
+                fill="#fff"
+                stroke="#13296b"
+                strokeWidth="3"
+              />
+              <line
+                x1="205"
+                y1="80"
+                x2="250"
+                y2="80"
+                stroke="#13296b"
+                strokeWidth="3"
+              />
               <text x="104" y="87" textAnchor="middle" className="gate-t">
                 NAND
               </text>
@@ -383,7 +430,7 @@ export function Computation() {
               <p>
                 Хангалттай санах ой, хугацаа өгвөл ямар ч тооцоо хийж чадах
                 машин бүтээж болохыг баталсан. Тегмарк ийм чадвартай материйг
-                «компьютрониум» гэж нэрлэдэг.
+                "компьютрониум" гэж нэрлэдэг.
               </p>
             </R>
           </div>
@@ -420,8 +467,8 @@ export function Learning() {
             <div>
               <h3>Хеббийн дүрэм</h3>
               <p>
-                Хамт идэвхждэг нейронуудын холбоо улам хүчтэй болдог. Тархи ингэж
-                суралцдаг.
+                Хамт идэвхждэг нейронуудын холбоо улам хүчтэй болдог. Тархи
+                ингэж суралцдаг.
               </p>
             </div>
           </R>
@@ -447,7 +494,8 @@ export function Learning() {
             <div>
               <h3>Тооцоолол хямдарсаар</h3>
               <p>
-                Мурын хуулиар тооцооллын өртөг хоёр жил орчимд хоёр дахин буурдаг.
+                Мурын хуулиар тооцооллын өртөг хоёр жил орчимд хоёр дахин
+                буурдаг.
               </p>
             </div>
           </R>

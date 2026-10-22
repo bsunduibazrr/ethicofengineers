@@ -1,21 +1,28 @@
-'use client';
+"use client";
 
-import { AnimatePresence, MotionConfig, motion, type Variants } from 'framer-motion';
-import { useCallback, useEffect, useRef, useState } from 'react';
-import { slides } from '@/slides';
-import { EASE, EASE_IN_OUT } from './ui';
+import {
+  AnimatePresence,
+  MotionConfig,
+  motion,
+  type Variants,
+} from "framer-motion";
+import { useCallback, useEffect, useRef, useState } from "react";
+import { slides } from "@/slides";
+import { EASE, EASE_IN_OUT } from "./ui";
 
 const W = 1920;
 const H = 1080;
 const PUSH = { duration: 0.95, ease: EASE_IN_OUT };
 
-// Keynote-ын «Push» маягийн шилжилт: шинэ слайд дээрээс нь гулсаж орж,
+// Keynote-ын "Push" маягийн шилжилт: шинэ слайд дээрээс нь гулсаж орж,
 // хуучин слайд арагшаа бага зэрэг хөдөлж бүдгэрнэ.
 const slideV: Variants = {
   enter: (d: number) =>
-    d > 0 ? { x: '100%', opacity: 1, zIndex: 2 } : { x: '-28%', opacity: 0.4, zIndex: 1 },
+    d > 0
+      ? { x: "100%", opacity: 1, zIndex: 2 }
+      : { x: "-28%", opacity: 0.4, zIndex: 1 },
   center: {
-    x: '0%',
+    x: "0%",
     opacity: 1,
     zIndex: 2,
     transition: {
@@ -27,11 +34,21 @@ const slideV: Variants = {
   },
   exit: (d: number) =>
     d > 0
-      ? { x: '-28%', opacity: 0.4, zIndex: 1, transition: { ...PUSH, zIndex: { duration: 0 } } }
-      : { x: '100%', opacity: 1, zIndex: 3, transition: { ...PUSH, zIndex: { duration: 0 } } },
+      ? {
+          x: "-28%",
+          opacity: 0.4,
+          zIndex: 1,
+          transition: { ...PUSH, zIndex: { duration: 0 } },
+        }
+      : {
+          x: "100%",
+          opacity: 1,
+          zIndex: 3,
+          transition: { ...PUSH, zIndex: { duration: 0 } },
+        },
 };
 
-const pad = (n: number) => String(n).padStart(2, '0');
+const pad = (n: number) => String(n).padStart(2, "0");
 
 export default function Deck() {
   const total = slides.length;
@@ -69,21 +86,22 @@ export default function Deck() {
 
   // Эхлэхдээ URL-ын #дугаараас слайдаа сэргээнэ
   useEffect(() => {
-    const n = parseInt(window.location.hash.replace('#', ''), 10);
+    const n = parseInt(window.location.hash.replace("#", ""), 10);
     if (!Number.isNaN(n)) setPage([Math.max(0, Math.min(total - 1, n - 1)), 1]);
     setReady(true);
   }, [total]);
 
   useEffect(() => {
-    if (ready) window.history.replaceState(null, '', `#${index + 1}`);
+    if (ready) window.history.replaceState(null, "", `#${index + 1}`);
   }, [index, ready]);
 
   // 1920×1080 тайзыг цонхонд яг багтаана — агуулга хэзээ ч слайдаас халихгүй
   useEffect(() => {
-    const fit = () => setScale(Math.min(window.innerWidth / W, window.innerHeight / H));
+    const fit = () =>
+      setScale(Math.min(window.innerWidth / W, window.innerHeight / H));
     fit();
-    window.addEventListener('resize', fit);
-    return () => window.removeEventListener('resize', fit);
+    window.addEventListener("resize", fit);
+    return () => window.removeEventListener("resize", fit);
   }, []);
 
   useEffect(() => {
@@ -91,44 +109,44 @@ export default function Deck() {
       if (e.metaKey || e.ctrlKey || e.altKey) return;
       const onButton = e.target instanceof HTMLButtonElement;
       switch (e.key) {
-        case 'ArrowRight':
-        case 'ArrowDown':
-        case 'PageDown':
+        case "ArrowRight":
+        case "ArrowDown":
+        case "PageDown":
           e.preventDefault();
           step(1);
           break;
-        case ' ':
-        case 'Enter':
+        case " ":
+        case "Enter":
           if (onButton) return;
           e.preventDefault();
           step(1);
           break;
-        case 'ArrowLeft':
-        case 'ArrowUp':
-        case 'PageUp':
-        case 'Backspace':
+        case "ArrowLeft":
+        case "ArrowUp":
+        case "PageUp":
+        case "Backspace":
           e.preventDefault();
           step(-1);
           break;
-        case 'Home':
+        case "Home":
           goTo(0);
           break;
-        case 'End':
+        case "End":
           goTo(total - 1);
           break;
-        case 'f':
-        case 'F':
+        case "f":
+        case "F":
           if (document.fullscreenElement) document.exitFullscreen();
           else document.documentElement.requestFullscreen?.();
           break;
-        case 'n':
-        case 'N':
+        case "n":
+        case "N":
           setShowNotes((v) => !v);
           break;
       }
     };
-    window.addEventListener('keydown', onKey);
-    return () => window.removeEventListener('keydown', onKey);
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
   }, [step, goTo, total]);
 
   useEffect(() => {
@@ -142,9 +160,28 @@ export default function Deck() {
   useEffect(() => {
     if (!ready) return;
     const srcs = [
-      'tegmark', 'cover-us-2017', 'cover-uk-2017', 'cover-us-2018', 'cover-uk-2018', 'cover-mn', 'cover-omu',
-      'deep-field', 'earth', 'life1-ecoli', 'life2-child', 'life3-asimo', 'larry-page', 'elon-musk', 'andrew-ng',
-      'stuart-russell', 'chip-die', 'deep-blue', 'hopfield', 'turing', 'neurons', 'ub-traffic',
+      "tegmark",
+      "cover-us-2017",
+      "cover-uk-2017",
+      "cover-us-2018",
+      "cover-uk-2018",
+      "cover-mn",
+      "cover-omu",
+      "deep-field",
+      "earth",
+      "life1-ecoli",
+      "life2-child",
+      "life3-asimo",
+      "larry-page",
+      "elon-musk",
+      "andrew-ng",
+      "stuart-russell",
+      "chip-die",
+      "deep-blue",
+      "hopfield",
+      "turing",
+      "neurons",
+      "ub-traffic",
     ];
     srcs.forEach((s) => {
       const img = new Image();
@@ -154,7 +191,9 @@ export default function Deck() {
 
   const current = slides[index];
   const Current = current.Component;
-  const elapsed = startedAt ? Math.max(0, Math.floor((now - startedAt) / 1000)) : 0;
+  const elapsed = startedAt
+    ? Math.max(0, Math.floor((now - startedAt) / 1000))
+    : 0;
 
   return (
     <MotionConfig reducedMotion="user">
@@ -170,7 +209,10 @@ export default function Deck() {
       >
         <div
           className="stage"
-          style={{ transform: `translate(-50%, -50%) scale(${scale})`, opacity: ready ? 1 : 0 }}
+          style={{
+            transform: `translate(-50%, -50%) scale(${scale})`,
+            opacity: ready ? 1 : 0,
+          }}
         >
           <AnimatePresence custom={dir}>
             {ready && (
