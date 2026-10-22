@@ -35,7 +35,7 @@ export function Divider({
         <R className="div-en">{en}</R>
         {epigraph && (
           <R className="epigraph">
-            «{epigraph.text}»<small>{epigraph.who}</small>
+            "{epigraph.text}"<small>{epigraph.who}</small>
           </R>
         )}
         <Group className="div-list">
@@ -117,8 +117,8 @@ export function History() {
         <R className="definition">
           <span className="label">Амьдрал гэж юу вэ?</span>
           <p>
-            Тегмаркийн тодорхойлсноор амьдрал бол өөрийн бүтцийг хадгалж,
-            үржиж чаддаг процесс. Үүнийг <b>бие</b> (hardware) ба{" "}
+            Тегмаркийн тодорхойлсноор амьдрал бол өөрийн бүтцийг хадгалж, үржиж
+            чаддаг процесс. Үүнийг <b>бие</b> (hardware) ба{" "}
             <b>мэдлэг, чадвар</b> (software) гэж хоёр хувааж үздэг.
           </p>
         </R>
@@ -165,7 +165,7 @@ export function ThreeStages() {
       <Header
         kicker="1-р бүлэг"
         title="Амьдралын гурван үе шат"
-        sub="Номын нэр эндээс гаралтай. Тегмарк хошигнож бид одоо «Амьдрал 2.1» гэдэг, учир нь хиймэл шүд, зүрхний аппарат зэргээр биеэ бага зэрэг сайжруулж эхэлсэн."
+        sub="Номын нэр эндээс гаралтай. Тегмарк хошигнож бид одоо Амьдрал 2.1 гэдэг, учир нь хиймэл шүд, зүрхний аппарат зэргээр биеэ бага зэрэг сайжруулж эхэлсэн."
       />
       <div className="stage-cols">
         {stages.map((s) => (
@@ -244,7 +244,9 @@ export function WhyLife2() {
             <b>1</b>
             <div>
               <h3>Бактери сурч чаддаггүй</h3>
-              <p>Шинэ зан төлөв гарахын тулд олон мянган үе солигдох хэрэгтэй.</p>
+              <p>
+                Шинэ зан төлөв гарахын тулд олон мянган үе солигдох хэрэгтэй.
+              </p>
             </div>
           </R>
           <R className="num-item">
@@ -313,8 +315,22 @@ function CampMap() {
   return (
     <svg viewBox="0 0 640 520" width="640" height="520" className="campmap">
       <rect x="60" y="20" width="560" height="440" fill="#f6f7fa" />
-      <line x1="60" y1="240" x2="620" y2="240" stroke="#d5d9e2" strokeDasharray="4 6" />
-      <line x1="340" y1="20" x2="340" y2="460" stroke="#d5d9e2" strokeDasharray="4 6" />
+      <line
+        x1="60"
+        y1="240"
+        x2="620"
+        y2="240"
+        stroke="#d5d9e2"
+        strokeDasharray="4 6"
+      />
+      <line
+        x1="340"
+        y1="20"
+        x2="340"
+        y2="460"
+        stroke="#d5d9e2"
+        strokeDasharray="4 6"
+      />
       <text x="62" y="490" className="axis-t">
         Удахгүй
       </text>
@@ -324,7 +340,13 @@ function CampMap() {
       <text x="340" y="515" textAnchor="middle" className="axis-h">
         AGI хэзээ бий болох вэ? →
       </text>
-      <text x="36" y="24" className="axis-t" transform="rotate(-90 36 24)" textAnchor="end">
+      <text
+        x="36"
+        y="24"
+        className="axis-t"
+        transform="rotate(-90 36 24)"
+        textAnchor="end"
+      >
         Сайн
       </text>
       <text x="36" y="460" className="axis-t" transform="rotate(-90 36 460)">
@@ -336,10 +358,27 @@ function CampMap() {
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: b.delay, duration: 0.8, ease: EASE }}
-          style={{ transformOrigin: `${b.x}px ${b.y}px`, transformBox: "view-box" }}
+          style={{
+            transformOrigin: `${b.x}px ${b.y}px`,
+            transformBox: "view-box",
+          }}
         >
-          <circle cx={b.x} cy={b.y} r={b.r} fill={b.c} fillOpacity=".1" stroke={b.c} strokeWidth="2" />
-          <text x={b.x} y={b.y + 7} textAnchor="middle" className="bubble-t" fill={b.c}>
+          <circle
+            cx={b.x}
+            cy={b.y}
+            r={b.r}
+            fill={b.c}
+            fillOpacity=".1"
+            stroke={b.c}
+            strokeWidth="2"
+          />
+          <text
+            x={b.x}
+            y={b.y + 7}
+            textAnchor="middle"
+            className="bubble-t"
+            fill={b.c}
+          >
             {b.label}
           </text>
         </motion.g>
@@ -387,7 +426,10 @@ const terms = [
 export function Napa() {
   return (
     <div className="napa">
-      <Header kicker="1-р бүлэг · 2015 он, Калифорни" title="Пейж, Маск хоёрын маргаан" />
+      <Header
+        kicker="1-р бүлэг · 2015 он, Калифорни"
+        title="Пейж, Маск хоёрын маргаан"
+      />
       <div className="napa-grid">
         <div className="debate">
           <div className="debate-people">
@@ -420,7 +462,7 @@ export function Napa() {
             </div>
           </div>
           <R className="debate-end">
-            Маргааны үеэр Пейж Маскыг «speciesist» буюу зөвхөн хүн төрөлхтнийг
+            Маргааны үеэр Пейж Маскыг "speciesist" буюу зөвхөн хүн төрөлхтнийг
             илүүд үздэг хүн гэж нэрлэсэн гэдэг.
           </R>
         </div>
@@ -496,7 +538,10 @@ export function Myths1() {
 export function Myths2() {
   return (
     <div className="myths-slide">
-      <Header kicker="1-р бүлэг" title="Түгээмэл буруу ойлголтууд (үргэлжлэл)" />
+      <Header
+        kicker="1-р бүлэг"
+        title="Түгээмэл буруу ойлголтууд (үргэлжлэл)"
+      />
       <MythTable
         rows={[
           {
@@ -515,8 +560,9 @@ export function Myths2() {
       />
       <R className="pull-quote">
         <p>
-          «Та шоргоолжийг үзэн ядаад гишгэдэггүй. Гэхдээ таны барих усан цахилгаан
-          станцын талбайд шоргоолжны үүр байвал шоргоолжинд л муу хэрэг.»
+          "Та шоргоолжийг үзэн ядаад гишгэдэггүй. Гэхдээ таны барих усан
+          цахилгаан станцын талбайд шоргоолжны үүр байвал шоргоолжинд л муу
+          хэрэг."
         </p>
         <small>
           Өөрөөр хэлбэл AI биднийг үзэн ядахгүй ч бидэнд хор хүргэж болно.
