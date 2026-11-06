@@ -8,6 +8,7 @@ import {
 } from "framer-motion";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { slides } from "@/slides";
+import { chapter3AssetPaths } from "@/slides/chapter3-data";
 import { EASE, EASE_IN_OUT } from "./ui";
 
 const W = 1920;
@@ -186,6 +187,10 @@ export default function Deck() {
     srcs.forEach((s) => {
       const img = new Image();
       img.src = `/img/${s}.jpg`;
+    });
+    chapter3AssetPaths.forEach((src) => {
+      const img = new Image();
+      img.src = src;
     });
   }, [ready]);
 
