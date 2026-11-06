@@ -1,2 +1,1 @@
-export const chapter3SlideData: unknown[] = [];
-export const chapter3AssetPaths: string[] = [];
+import slide21 from "./chapter3-data/slide-21";\n\nexport const chapter3SlideData = [\n  slide21,\n] as const;\n\nexport const chapter3AssetPaths = Array.from(\n  new Set(\n    chapter3SlideData.flatMap((slide) =>\n      slide.nodes.flatMap((node) => ("src" in node ? [node.src] : [])),\n    ),\n  ),\n);\n
