@@ -1,1 +1,21 @@
-import slide21 from "./chapter3-data/slide-21";\nimport slide22 from "./chapter3-data/slide-22";\nimport slide23 from "./chapter3-data/slide-23";\nimport slide24 from "./chapter3-data/slide-24";\nimport slide25 from "./chapter3-data/slide-25";\nimport slide26 from "./chapter3-data/slide-26";\nimport slide27 from "./chapter3-data/slide-27";\nimport slide28 from "./chapter3-data/slide-28";\nimport slide29 from "./chapter3-data/slide-29";\n\nexport const chapter3SlideData = [\n  slide21,\n  slide22,\n  slide23,\n  slide24,\n  slide25,\n  slide26,\n  slide27,\n  slide28,\n  slide29,\n] as const;\n\nexport const chapter3AssetPaths = Array.from(\n  new Set(\n    chapter3SlideData.flatMap((slide) =>\n      slide.nodes.flatMap((node) => ("src" in node ? [node.src] : [])),\n    ),\n  ),\n);\n
+import slide21 from "./chapter3-data/slide-21";
+import slide22 from "./chapter3-data/slide-22";
+import slide23 from "./chapter3-data/slide-23";
+import slide24 from "./chapter3-data/slide-24";
+import slide25 from "./chapter3-data/slide-25";
+
+export const chapter3SlideData = [
+  slide21,
+  slide22,
+  slide23,
+  slide24,
+  slide25,
+] as const;
+
+export const chapter3AssetPaths = Array.from(
+  new Set(
+    chapter3SlideData.flatMap((slide) =>
+      slide.nodes.flatMap((node) => ("src" in node ? [node.src] : [])),
+    ),
+  ),
+);
