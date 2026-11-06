@@ -6,6 +6,7 @@ import slide25 from "./chapter3-data/slide-25";
 import slide26 from "./chapter3-data/slide-26";
 import slide27 from "./chapter3-data/slide-27";
 import slide28 from "./chapter3-data/slide-28";
+import slide29 from "./chapter3-data/slide-29";
 
 export const chapter3SlideData = [
   slide21,
@@ -16,6 +17,7 @@ export const chapter3SlideData = [
   slide26,
   slide27,
   slide28,
+  slide29,
 ] as const;
 
 export const chapter3AssetPaths = Array.from(
