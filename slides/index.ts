@@ -25,6 +25,7 @@ export type SlideDef = {
   section: string;
   Component: ComponentType;
   notes: string;
+  transition?: "morph";
 };
 
 // Слайдын дараалал, нийт 20. Илтгэлийн үеэр N товчоор тэмдэглэлийг харна.
