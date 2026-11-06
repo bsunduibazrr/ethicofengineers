@@ -19,6 +19,18 @@ import {
   Memory,
 } from "./chapter2";
 import { Author, Book, Cover, Structure } from "./intro";
+import {
+  Chapter3Slide1,
+  Chapter3Slide2,
+  Chapter3Slide3,
+  Chapter3Slide4,
+  Chapter3Slide5,
+  Chapter3Slide6,
+  Chapter3Slide7,
+  Chapter3Slide8,
+  Chapter3Slide9,
+  Chapter3Slide10,
+} from "./chapter3";
 
 export type SlideDef = {
   id: string;
@@ -28,7 +40,7 @@ export type SlideDef = {
   transition?: "morph";
 };
 
-// Слайдын дараалал, нийт 20. Илтгэлийн үеэр N товчоор тэмдэглэлийг харна.
+// Слайдын дараалал. Илтгэлийн үеэр N товчоор тэмдэглэлийг харна.
 export const slides: SlideDef[] = [
   {
     id: "cover",
@@ -169,5 +181,75 @@ export const slides: SlideDef[] = [
     Component: QA,
     notes:
       "Асуулт бүрийг уншаад 2–3 хүнээс санал сонсох, дараа нь картан дээр дарж хариултыг нээх. Цаг дутвал 1, 2-р асуултыг л ярих. Төгсгөлд баярлалаа гэх.",
+  },
+  {
+    id: "chapter3-01",
+    section: "3-р бүлэг",
+    Component: Chapter3Slide1,
+    notes: "",
+    transition: "morph",
+  },
+  {
+    id: "chapter3-02",
+    section: "3-р бүлэг",
+    Component: Chapter3Slide2,
+    notes: "",
+    transition: "morph",
+  },
+  {
+    id: "chapter3-03",
+    section: "3-р бүлэг",
+    Component: Chapter3Slide3,
+    notes: "",
+    transition: "morph",
+  },
+  {
+    id: "chapter3-04",
+    section: "3-р бүлэг",
+    Component: Chapter3Slide4,
+    notes: "",
+    transition: "morph",
+  },
+  {
+    id: "chapter3-05",
+    section: "3-р бүлэг",
+    Component: Chapter3Slide5,
+    notes: "",
+    transition: "morph",
+  },
+  {
+    id: "chapter3-06",
+    section: "3-р бүлэг",
+    Component: Chapter3Slide6,
+    notes: "",
+    transition: "morph",
+  },
+  {
+    id: "chapter3-07",
+    section: "3-р бүлэг",
+    Component: Chapter3Slide7,
+    notes: "",
+    transition: "morph",
+  },
+  {
+    id: "chapter3-08",
+    section: "3-р бүлэг",
+    Component: Chapter3Slide8,
+    notes: "",
+    transition: "morph",
+  },
+  {
+    id: "chapter3-09",
+    section: "3-р бүлэг",
+    Component: Chapter3Slide9,
+    notes: "",
+    transition: "morph",
+  },
+  {
+    id: "chapter3-10",
+    section: "3-р бүлэг",
+    Component: Chapter3Slide10,
+    notes: "",
+    transition: "morph",
   },
 ];

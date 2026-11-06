@@ -14,38 +14,46 @@ import { EASE, EASE_IN_OUT } from "./ui";
 
 const W = 1920;
 const H = 1080;
-const PUSH = { duration: 0.95, ease: EASE_IN_OUT };
+const PUSH = { duration: 0.7, ease: EASE_IN_OUT };
 const MORPH = { duration: 2, ease: "easeInOut" as const };
 
-// Keynote-ын "Push" маягийн шилжилт: шинэ слайд дээрээс нь гулсаж орж,
-// хуучин слайд арагшаа бага зэрэг хөдөлж бүдгэрнэ.
+// Cinematic depth-based slide transition with blur
 const slideV: Variants = {
   enter: (d: number) =>
     d > 0
-      ? { x: "100%", opacity: 1, zIndex: 2 }
-      : { x: "-28%", opacity: 0.4, zIndex: 1 },
+      ? { x: "5%", opacity: 0, scale: 0.96, filter: "blur(8px)", zIndex: 2 }
+      : { x: "-5%", opacity: 0, scale: 0.96, filter: "blur(8px)", zIndex: 1 },
   center: {
     x: "0%",
     opacity: 1,
+    scale: 1,
+    filter: "blur(0px)",
     zIndex: 2,
     transition: {
       ...PUSH,
+      opacity: { duration: 0.5, ease: EASE },
+      scale: { type: "spring", stiffness: 180, damping: 26, mass: 0.9 },
+      filter: { duration: 0.6, ease: EASE },
       zIndex: { duration: 0 },
-      delayChildren: 0.4,
+      delayChildren: 0.35,
       staggerChildren: 0.06,
     },
   },
   exit: (d: number) =>
     d > 0
       ? {
-          x: "-28%",
-          opacity: 0.4,
+          x: "-5%",
+          opacity: 0,
+          scale: 0.96,
+          filter: "blur(8px)",
           zIndex: 1,
           transition: { ...PUSH, zIndex: { duration: 0 } },
         }
       : {
-          x: "100%",
-          opacity: 1,
+          x: "5%",
+          opacity: 0,
+          scale: 0.96,
+          filter: "blur(8px)",
           zIndex: 3,
           transition: { ...PUSH, zIndex: { duration: 0 } },
         },
@@ -58,18 +66,59 @@ const morphV: Variants = {
     scale: 1,
     filter: "blur(0px)",
     zIndex: 2,
-    transition: { ...MORPH, zIndex: { duration: 0 } },
+    transition: {
+      ...MORPH,
+      zIndex: { duration: 0 },
+    },
   },
   exit: {
     opacity: 0,
     scale: 1.015,
     filter: "blur(2px)",
     zIndex: 1,
-    transition: { ...MORPH, zIndex: { duration: 0 } },
+    transition: {
+      ...MORPH,
+      zIndex: { duration: 0 },
+    },
   },
 };
 
 const pad = (n: number) => String(n).padStart(2, "0");
+
+/* SVG chevron arrow icons */
+function ChevronLeft() {
+  return (
+    <svg
+      width="18"
+      height="18"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <polyline points="15 18 9 12 15 6" />
+    </svg>
+  );
+}
+
+function ChevronRight() {
+  return (
+    <svg
+      width="18"
+      height="18"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <polyline points="9 6 15 12 9 18" />
+    </svg>
+  );
+}
 
 export default function Deck() {
   const total = slides.length;
@@ -242,6 +291,28 @@ export default function Deck() {
           touchX.current = null;
         }}
       >
+        {/* Subtle animated background gradient */}
+        <motion.div
+          className="viewport-bg"
+          style={{
+            position: "absolute",
+            inset: 0,
+            zIndex: 0,
+            pointerEvents: "none",
+            background:
+              "radial-gradient(ellipse at 30% 20%, rgba(30,58,138,0.15) 0%, transparent 60%), radial-gradient(ellipse at 70% 80%, rgba(88,28,135,0.1) 0%, transparent 60%)",
+          }}
+          animate={{
+            opacity: [0.6, 1, 0.6],
+          }}
+          transition={{
+            duration: 8,
+            ease: "easeInOut",
+            repeat: Infinity,
+            repeatType: "loop",
+          }}
+        />
+
         <div
           className="stage"
           style={{
@@ -274,7 +345,10 @@ export default function Deck() {
           <motion.div
             className="progress"
             animate={{ scaleX: (index + 1) / total }}
-            transition={{ duration: 0.95, ease: EASE_IN_OUT }}
+            transition={{ duration: 0.7, ease: EASE_IN_OUT }}
+            style={{
+              boxShadow: "0 0 8px 2px rgba(96,165,250,0.35)",
+            }}
           />
 
           <footer className="footer">
@@ -294,29 +368,35 @@ export default function Deck() {
               </motion.span>
             </AnimatePresence>
             <div className="footer-nav">
-              <button
+              <motion.button
                 aria-label="Өмнөх слайд"
                 disabled={index === 0}
                 onClick={(e) => {
                   step(-1);
                   e.currentTarget.blur();
                 }}
+                whileHover={{ scale: 1.15 }}
+                whileTap={{ scale: 0.9 }}
+                transition={{ duration: 0.2 }}
               >
-                ←
-              </button>
+                <ChevronLeft />
+              </motion.button>
               <span className="page-no">
                 {pad(index + 1)} <em>/ {pad(total)}</em>
               </span>
-              <button
+              <motion.button
                 aria-label="Дараах слайд"
                 disabled={index === total - 1}
                 onClick={(e) => {
                   step(1);
                   e.currentTarget.blur();
                 }}
+                whileHover={{ scale: 1.15 }}
+                whileTap={{ scale: 0.9 }}
+                transition={{ duration: 0.2 }}
               >
-                →
-              </button>
+                <ChevronRight />
+              </motion.button>
             </div>
           </footer>
         </div>
