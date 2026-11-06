@@ -1823,3 +1823,92 @@ img {
   line-height: 1.5;
   color: var(--ink2);
 }
+
+/* ═══════════════════════════════════════════════════════
+   IMPORTED CHAPTER 3 SLIDES
+   ═══════════════════════════════════════════════════════ */
+
+.slide.chapter3-slide {
+  padding: 0;
+  background: transparent;
+  background-image: none;
+  box-shadow: none;
+}
+
+.chapter3-canvas {
+  position: absolute;
+  inset: 0;
+  width: 1920px;
+  height: 1080px;
+  overflow: hidden;
+  color: #fff;
+}
+
+.chapter3-node {
+  position: absolute;
+}
+
+.chapter3-image-node {
+  overflow: visible;
+}
+
+.chapter3-image-node img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.chapter3-text {
+  color: #fff;
+  line-height: 1.12;
+  white-space: pre-wrap;
+}
+
+.chapter3-paragraph {
+  position: relative;
+  flex: 0 0 auto;
+  width: 100%;
+  margin-bottom: 14px;
+  line-height: 1.12;
+  white-space: pre-wrap;
+}
+
+.chapter3-paragraph:last-child {
+  margin-bottom: 0;
+}
+
+.chapter3-bullet {
+  position: absolute;
+  top: 0;
+  white-space: pre;
+}
+
+.chapter3-table {
+  overflow: hidden;
+}
+
+.chapter3-table-row {
+  position: absolute;
+  left: 0;
+  display: flex;
+  width: 100%;
+}
+
+.chapter3-table-cell {
+  position: relative;
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 8px 12px;
+  border: 1px solid #bb99ff;
+  color: #000;
+  text-align: center;
+  line-height: 1.05;
+}
+
+.chapter3-shape.is-line {
+  border-width: 0 0 1px 0 !important;
+}
