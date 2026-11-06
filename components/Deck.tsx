@@ -2,6 +2,7 @@
 
 import {
   AnimatePresence,
+  LayoutGroup,
   MotionConfig,
   motion,
   type Variants,
@@ -14,6 +15,7 @@ import { EASE, EASE_IN_OUT } from "./ui";
 const W = 1920;
 const H = 1080;
 const PUSH = { duration: 0.95, ease: EASE_IN_OUT };
+const MORPH = { duration: 2, ease: "easeInOut" as const };
 
 // Keynote-ын "Push" маягийн шилжилт: шинэ слайд дээрээс нь гулсаж орж,
 // хуучин слайд арагшаа бага зэрэг хөдөлж бүдгэрнэ.
@@ -49,12 +51,32 @@ const slideV: Variants = {
         },
 };
 
+const morphV: Variants = {
+  enter: { opacity: 0, scale: 0.985, filter: "blur(2px)", zIndex: 2 },
+  center: {
+    opacity: 1,
+    scale: 1,
+    filter: "blur(0px)",
+    zIndex: 2,
+    transition: { ...MORPH, zIndex: { duration: 0 } },
+  },
+  exit: {
+    opacity: 0,
+    scale: 1.015,
+    filter: "blur(2px)",
+    zIndex: 1,
+    transition: { ...MORPH, zIndex: { duration: 0 } },
+  },
+};
+
 const pad = (n: number) => String(n).padStart(2, "0");
 
 export default function Deck() {
   const total = slides.length;
   const [ready, setReady] = useState(false);
   const [[index, dir], setPage] = useState<[number, number]>([0, 1]);
+  const [morphNav, setMorphNav] = useState(false);
+  const [initialIndex, setInitialIndex] = useState<number | null>(null);
   const [scale, setScale] = useState(1);
   const [showNotes, setShowNotes] = useState(false);
   const [startedAt, setStartedAt] = useState<number | null>(null);
@@ -63,32 +85,40 @@ export default function Deck() {
 
   const goTo = useCallback(
     (target: number) => {
+      const t = Math.max(0, Math.min(total - 1, target));
+      setMorphNav(index >= 20 || t >= 20);
       setPage((prev) => {
-        const t = Math.max(0, Math.min(total - 1, target));
         if (t === prev[0]) return prev;
         return [t, t > prev[0] ? 1 : -1];
       });
       setStartedAt((s) => s ?? Date.now());
     },
-    [total],
+    [index, total],
   );
 
   const step = useCallback(
     (delta: number) => {
+      const target = Math.max(0, Math.min(total - 1, index + delta));
+      setMorphNav(index >= 20 || target >= 20);
       setPage((prev) => {
-        const t = Math.max(0, Math.min(total - 1, prev[0] + delta));
-        if (t === prev[0]) return prev;
-        return [t, delta > 0 ? 1 : -1];
+        const next = Math.max(0, Math.min(total - 1, prev[0] + delta));
+        if (next === prev[0]) return prev;
+        return [next, delta > 0 ? 1 : -1];
       });
       setStartedAt((s) => s ?? Date.now());
     },
-    [total],
+    [index, total],
   );
 
   // Эхлэхдээ URL-ын #дугаараас слайдаа сэргээнэ
   useEffect(() => {
     const n = parseInt(window.location.hash.replace("#", ""), 10);
-    if (!Number.isNaN(n)) setPage([Math.max(0, Math.min(total - 1, n - 1)), 1]);
+    if (!Number.isNaN(n)) {
+      const target = Math.max(0, Math.min(total - 1, n - 1));
+      setPage([target, 1]);
+      setMorphNav(target >= 20);
+      setInitialIndex(target);
+    } else setInitialIndex(0);
     setReady(true);
   }, [total]);
 
@@ -219,21 +249,27 @@ export default function Deck() {
             opacity: ready ? 1 : 0,
           }}
         >
-          <AnimatePresence custom={dir}>
-            {ready && (
-              <motion.section
-                key={index}
-                className={`slide slide-${current.id}`}
-                custom={dir}
-                variants={slideV}
-                initial="enter"
-                animate="center"
-                exit="exit"
-              >
-                <Current />
-              </motion.section>
-            )}
-          </AnimatePresence>
+          <LayoutGroup id="presentation-morph">
+            <AnimatePresence custom={dir}>
+              {ready && (
+                <motion.section
+                  key={index}
+                  className={`slide slide-${current.id}${current.id.startsWith("chapter3-") ? " chapter3-slide" : ""}`}
+                  custom={dir}
+                  variants={morphNav ? morphV : slideV}
+                  initial={
+                    current.transition === "morph" && index === initialIndex
+                      ? false
+                      : "enter"
+                  }
+                  animate="center"
+                  exit="exit"
+                >
+                  <Current />
+                </motion.section>
+              )}
+            </AnimatePresence>
+          </LayoutGroup>
 
           <motion.div
             className="progress"
