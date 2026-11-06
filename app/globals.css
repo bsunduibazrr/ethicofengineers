@@ -1,17 +1,39 @@
+/* ═══════════════════════════════════════════════════════
+   ETHIC OF ENGINEER — Premium Dark Blue Presentation
+   ═══════════════════════════════════════════════════════ */
+
 :root {
-  --paper: #ffffff;
-  --ink: #111522;
-  --ink2: #3e4659;
-  --muted: #7c8496;
-  --rule: #e3e6ed;
-  --navy: #13296b;
-  --blue: #2c55c8;
-  --tint: #f3f5fa;
-  --red: #b4233c;
-  --green: #1f7a52;
+  --bg-deep: #060b18;
+  --bg: #0a0f1e;
+  --bg-card: #0f1629;
+  --bg-glass: rgba(15, 22, 41, 0.7);
+  --border: rgba(59, 130, 246, 0.15);
+  --border-glow: rgba(59, 130, 246, 0.3);
+  --text: #e8edf5;
+  --text-secondary: #8b9cc7;
+  --text-muted: #4a5578;
+  --accent: #3b82f6;
+  --accent-bright: #60a5fa;
+  --accent-glow: rgba(59, 130, 246, 0.2);
+  --navy: #1e3a8a;
+  --gradient-start: #1e3a8a;
+  --gradient-end: #3b82f6;
+  --red: #ef4444;
+  --green: #22c55e;
   --serif: var(--font-serif), Georgia, serif;
   --sans: var(--font-sans), system-ui, sans-serif;
+
+  /* Legacy aliases — keeps old var() refs working */
+  --paper: var(--bg);
+  --ink: var(--text);
+  --ink2: var(--text-secondary);
+  --muted: var(--text-muted);
+  --rule: var(--border);
+  --blue: var(--accent);
+  --tint: var(--bg-card);
 }
+
+/* ───────────── Global Reset ───────────── */
 
 * {
   box-sizing: border-box;
@@ -19,23 +41,84 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   height: 100%;
   overflow: hidden;
-  background: var(--paper);
-  color: var(--ink);
+  background: var(--bg-deep);
+  color: var(--text);
 }
 
 body {
   font-family: var(--sans);
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   user-select: none;
 }
 
+/* ───────────── Selection ───────────── */
+
+::selection {
+  background: rgba(59, 130, 246, 0.35);
+  color: #fff;
+}
+
+::-moz-selection {
+  background: rgba(59, 130, 246, 0.35);
+  color: #fff;
+}
+
+/* ───────────── Focus Visible ───────────── */
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* ───────────── Custom Scrollbar ───────────── */
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-deep);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--navy);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
+
+/* ───────────── Utility Classes ───────────── */
+
+.glow {
+  box-shadow:
+    0 0 15px var(--accent-glow),
+    0 0 30px rgba(59, 130, 246, 0.1);
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, var(--accent-bright), var(--accent), var(--navy));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ───────────── Base Elements ───────────── */
+
 b {
   font-weight: 600;
-  color: var(--ink);
+  color: var(--text);
 }
 
 button {
@@ -47,13 +130,19 @@ img {
   display: block;
 }
 
-/* ───────────── Тайз ───────────── */
+/* ═══════════════════════════════════════════════════════
+   VIEWPORT / STAGE / SLIDE SYSTEM
+   ═══════════════════════════════════════════════════════ */
 
 .viewport {
   position: fixed;
   inset: 0;
   overflow: hidden;
-  background: var(--paper);
+  background: var(--bg-deep);
+  /* Subtle noise texture */
+  background-image:
+    radial-gradient(ellipse at 20% 50%, rgba(30, 58, 138, 0.15) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 20%, rgba(59, 130, 246, 0.08) 0%, transparent 50%);
 }
 
 .stage {
@@ -64,21 +153,29 @@ img {
   height: 1080px;
   overflow: hidden;
   transform-origin: center;
-  transition: opacity 0.4s;
+  transition: opacity 0.5s ease;
 }
 
 .slide {
   position: absolute;
   inset: 0;
   padding: 92px 120px 150px;
-  background: var(--paper);
-  box-shadow: -40px 0 80px rgba(17, 21, 34, 0.08);
+  background: var(--bg);
+  box-shadow:
+    -40px 0 80px rgba(0, 0, 0, 0.3),
+    0 0 120px rgba(59, 130, 246, 0.03);
   will-change: transform;
+  /* Very subtle noise pattern */
+  background-image:
+    radial-gradient(ellipse at 70% 10%, rgba(59, 130, 246, 0.04) 0%, transparent 60%),
+    radial-gradient(ellipse at 10% 90%, rgba(30, 58, 138, 0.05) 0%, transparent 50%);
 }
 
 .slide > div {
   height: 100%;
 }
+
+/* ───────────── Progress Bar ───────────── */
 
 .progress {
   position: absolute;
@@ -86,10 +183,21 @@ img {
   top: 0;
   width: 100%;
   height: 4px;
-  background: var(--navy);
+  background: linear-gradient(90deg, var(--gradient-start), var(--gradient-end));
   transform-origin: left;
   z-index: 10;
+  box-shadow:
+    0 0 12px rgba(59, 130, 246, 0.4),
+    0 0 24px rgba(59, 130, 246, 0.15);
+  animation: progressGlow 3s ease-in-out infinite alternate;
 }
+
+@keyframes progressGlow {
+  0% { box-shadow: 0 0 12px rgba(59, 130, 246, 0.4), 0 0 24px rgba(59, 130, 246, 0.15); }
+  100% { box-shadow: 0 0 18px rgba(59, 130, 246, 0.6), 0 0 36px rgba(59, 130, 246, 0.25); }
+}
+
+/* ───────────── Footer ───────────── */
 
 .footer {
   position: absolute;
@@ -100,16 +208,18 @@ img {
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
   padding-top: 16px;
-  border-top: 1px solid var(--rule);
+  border-top: 1px solid var(--border);
   font-size: 15px;
-  color: var(--muted);
+  color: var(--text-muted);
   z-index: 10;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 }
 
 .footer-brand i {
   font-family: var(--serif);
   font-size: 17px;
-  color: var(--ink);
+  color: var(--text);
 }
 
 .footer-section {
@@ -117,6 +227,7 @@ img {
   font-weight: 600;
   letter-spacing: 0.16em;
   text-transform: uppercase;
+  color: var(--text-muted);
 }
 
 .footer-nav {
@@ -130,29 +241,38 @@ img {
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  border: 1px solid var(--rule);
-  background: var(--paper);
-  color: var(--ink);
+  border: 1px solid var(--border);
+  background: var(--bg-glass);
+  color: var(--text);
   font-size: 17px;
   cursor: pointer;
-  transition: border-color 0.25s, background 0.25s, color 0.25s;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition:
+    border-color 0.3s ease,
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .footer-nav button:hover:not(:disabled) {
-  background: var(--navy);
-  border-color: var(--navy);
+  background: var(--accent);
+  border-color: var(--accent);
   color: #fff;
+  transform: scale(1.1);
+  box-shadow: 0 0 20px var(--accent-glow);
 }
 
 .footer-nav button:disabled {
-  opacity: 0.3;
+  opacity: 0.25;
   cursor: default;
 }
 
 .page-no {
   font-family: var(--serif);
   font-size: 19px;
-  color: var(--ink);
+  color: var(--text);
   font-variant-numeric: tabular-nums;
   min-width: 70px;
   text-align: center;
@@ -160,8 +280,10 @@ img {
 
 .page-no em {
   font-style: normal;
-  color: var(--muted);
+  color: var(--text-muted);
 }
+
+/* ───────────── Notes Panel ───────────── */
 
 .notes {
   position: fixed;
@@ -170,14 +292,18 @@ img {
   width: min(1100px, 92vw);
   margin-left: max(-550px, -46vw);
   padding: 18px 24px 20px;
-  background: var(--paper);
-  border: 1px solid var(--rule);
-  border-radius: 10px;
-  box-shadow: 0 20px 50px rgba(17, 21, 34, 0.18);
+  background: var(--bg-glass);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--border-glow);
+  border-radius: 14px;
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.5),
+    0 0 30px var(--accent-glow);
   z-index: 20;
   font-size: 17px;
   line-height: 1.6;
-  color: var(--ink2);
+  color: var(--text-secondary);
 }
 
 .notes-head {
@@ -187,7 +313,7 @@ img {
   font-weight: 600;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--blue);
+  color: var(--accent);
   margin-bottom: 6px;
 }
 
@@ -195,7 +321,9 @@ img {
   font-variant-numeric: tabular-nums;
 }
 
-/* ───────────── Нийтлэг ───────────── */
+/* ═══════════════════════════════════════════════════════
+   SHARED COMPONENTS
+   ═══════════════════════════════════════════════════════ */
 
 .header {
   margin-bottom: 40px;
@@ -207,7 +335,7 @@ img {
   font-weight: 600;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--blue);
+  color: var(--accent);
 }
 
 .label {
@@ -221,7 +349,10 @@ img {
   font-size: 58px;
   font-weight: 700;
   line-height: 1.1;
-  color: var(--ink);
+  background: linear-gradient(135deg, #fff 0%, var(--accent-bright) 50%, var(--accent) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .sub {
@@ -229,8 +360,10 @@ img {
   max-width: 1320px;
   font-size: 24px;
   line-height: 1.5;
-  color: var(--ink2);
+  color: var(--text-secondary);
 }
+
+/* ───────────── Photo ───────────── */
 
 .photo {
   margin: 0;
@@ -239,35 +372,81 @@ img {
 .photo-frame {
   width: 100%;
   overflow: hidden;
-  background: var(--tint);
+  background: var(--bg-card);
+  border-radius: 4px;
+  transition:
+    box-shadow 0.4s ease,
+    transform 0.4s ease;
+}
+
+.photo-frame:hover {
+  box-shadow: 0 0 30px var(--accent-glow);
+  transform: scale(1.01);
 }
 
 .photo-frame img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.photo-frame:hover img {
+  transform: scale(1.03);
 }
 
 .photo figcaption {
   margin-top: 8px;
   font-size: 13px;
-  color: var(--muted);
+  color: var(--text-muted);
 }
 
+/* ───────────── Book Cover ───────────── */
+
 .book-cover {
-  border-radius: 2px;
-  box-shadow: 0 28px 50px rgba(17, 21, 34, 0.22), 0 6px 14px rgba(17, 21, 34, 0.12);
+  border-radius: 4px;
+  box-shadow:
+    0 28px 50px rgba(0, 0, 0, 0.5),
+    0 6px 14px rgba(0, 0, 0, 0.3),
+    0 0 40px rgba(59, 130, 246, 0.15);
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
 }
+
+.book-cover:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow:
+    0 34px 60px rgba(0, 0, 0, 0.6),
+    0 8px 18px rgba(0, 0, 0, 0.4),
+    0 0 60px rgba(59, 130, 246, 0.25);
+}
+
+/* ───────────── Panel ───────────── */
 
 .panel {
   padding: 26px 30px;
-  border: 1px solid var(--rule);
-  background: var(--paper);
+  border: 1px solid var(--border);
+  background: var(--bg-glass);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 8px;
+  transition:
+    border-color 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.panel:hover {
+  border-color: var(--border-glow);
+  transform: scale(1.02);
+  box-shadow: 0 0 30px var(--accent-glow);
 }
 
 .panel.accent {
   border: none;
-  border-left: 4px solid var(--navy);
-  background: var(--tint);
+  border-left: 4px solid var(--accent);
+  background: var(--bg-card);
 }
 
 .panel h3,
@@ -276,6 +455,7 @@ img {
   font-size: 28px;
   font-weight: 700;
   line-height: 1.25;
+  color: var(--text);
 }
 
 .panel p,
@@ -283,8 +463,10 @@ img {
   margin-top: 8px;
   font-size: 21px;
   line-height: 1.5;
-  color: var(--ink2);
+  color: var(--text-secondary);
 }
+
+/* ───────────── Numbered List ───────────── */
 
 .numlist {
   display: flex;
@@ -295,31 +477,43 @@ img {
   display: grid;
   grid-template-columns: 50px 1fr;
   padding: 22px 0;
-  border-top: 1px solid var(--rule);
+  border-top: 1px solid var(--border);
+  transition: background 0.3s ease;
+}
+
+.num-item:hover {
+  background: rgba(59, 130, 246, 0.04);
 }
 
 .num-item > b {
   font-family: var(--serif);
   font-size: 30px;
   line-height: 1;
-  color: var(--navy);
+  background: linear-gradient(135deg, var(--accent-bright), var(--navy));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .num-item h3 {
   font-family: var(--serif);
   font-size: 27px;
   font-weight: 700;
+  color: var(--text);
 }
 
 .num-item p {
   margin-top: 6px;
   font-size: 21px;
   line-height: 1.45;
-  color: var(--ink2);
+  color: var(--text-secondary);
 }
+
+/* ───────────── Wave Animation ───────────── */
 
 .wave {
   animation: wave 6s linear infinite;
+  filter: drop-shadow(0 0 6px rgba(59, 130, 246, 0.3));
 }
 
 @keyframes wave {
@@ -328,7 +522,9 @@ img {
   }
 }
 
-/* ───────────── 1. Нүүр ───────────── */
+/* ═══════════════════════════════════════════════════════
+   1. COVER SLIDE
+   ═══════════════════════════════════════════════════════ */
 
 .cover {
   display: grid;
@@ -342,26 +538,39 @@ img {
   font-size: 150px;
   font-weight: 700;
   line-height: 1;
-  color: var(--navy);
   letter-spacing: -0.01em;
+  background: linear-gradient(135deg, #fff 0%, var(--accent-bright) 40%, var(--accent) 70%, var(--navy) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: coverTitleShimmer 8s ease-in-out infinite alternate;
+}
+
+@keyframes coverTitleShimmer {
+  0% { filter: brightness(1); }
+  50% { filter: brightness(1.15); }
+  100% { filter: brightness(1); }
 }
 
 .cover-title span {
-  color: var(--blue);
+  background: linear-gradient(135deg, var(--accent-bright), var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .cover-sub {
   margin-top: 22px;
   font-family: var(--serif);
   font-size: 40px;
-  color: var(--ink);
+  color: var(--text);
 }
 
 .cover-en {
   margin-top: 10px;
   font-size: 20px;
   font-style: italic;
-  color: var(--muted);
+  color: var(--text-muted);
 }
 
 .cover-meta {
@@ -369,7 +578,7 @@ img {
   gap: 60px;
   margin-top: 64px;
   padding-top: 28px;
-  border-top: 1px solid var(--rule);
+  border-top: 1px solid var(--border);
 }
 
 .cover-meta small {
@@ -379,11 +588,12 @@ img {
   font-weight: 600;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--muted);
+  color: var(--text-muted);
 }
 
 .cover-meta b {
   font-size: 24px;
+  color: var(--text);
 }
 
 .cover-books {
@@ -396,6 +606,12 @@ img {
   left: 30px;
   top: 30px;
   width: 360px;
+  animation: floatBack 6s ease-in-out infinite;
+}
+
+@keyframes floatBack {
+  0%, 100% { transform: translateY(0) rotate(-1deg); }
+  50% { transform: translateY(-12px) rotate(0deg); }
 }
 
 .cb-front {
@@ -403,9 +619,17 @@ img {
   left: 290px;
   top: 150px;
   width: 380px;
+  animation: floatFront 7s ease-in-out infinite;
 }
 
-/* ───────────── 2. Зохиолч ───────────── */
+@keyframes floatFront {
+  0%, 100% { transform: translateY(0) rotate(0.5deg); }
+  50% { transform: translateY(-16px) rotate(-0.5deg); }
+}
+
+/* ═══════════════════════════════════════════════════════
+   2. AUTHOR
+   ═══════════════════════════════════════════════════════ */
 
 .author {
   display: grid;
@@ -425,7 +649,12 @@ img {
   display: grid;
   grid-template-columns: 190px 1fr;
   padding: 18px 0;
-  border-top: 1px solid var(--rule);
+  border-top: 1px solid var(--border);
+  transition: background 0.3s ease;
+}
+
+.dl-row:hover {
+  background: rgba(59, 130, 246, 0.04);
 }
 
 .dl-row span {
@@ -434,12 +663,13 @@ img {
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--muted);
+  color: var(--text-muted);
 }
 
 .dl-row p {
   font-size: 23px;
   line-height: 1.45;
+  color: var(--text);
 }
 
 .author-books {
@@ -451,7 +681,14 @@ img {
 
 .author-books img {
   height: 140px;
-  box-shadow: 0 12px 24px rgba(17, 21, 34, 0.18);
+  box-shadow:
+    0 12px 24px rgba(0, 0, 0, 0.4),
+    0 0 20px rgba(59, 130, 246, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.author-books img:hover {
+  transform: scale(1.05);
 }
 
 .author-books div {
@@ -461,10 +698,12 @@ img {
 .author-books p {
   font-size: 21px;
   line-height: 1.5;
-  color: var(--ink2);
+  color: var(--text-secondary);
 }
 
-/* ───────────── 3. Хэвлэлүүд ───────────── */
+/* ═══════════════════════════════════════════════════════
+   3. EDITIONS
+   ═══════════════════════════════════════════════════════ */
 
 .editions {
   display: grid;
@@ -472,11 +711,10 @@ img {
   gap: 96px;
 }
 
-/* Монгол хэвлэл — зүүн талын тод самбар, дээд/зүүн ирмэг хүртэл */
 .ed-hero {
   margin: -92px 0 0 -120px;
   padding-left: 120px;
-  background: var(--tint);
+  background: linear-gradient(180deg, var(--bg-card) 0%, rgba(15, 22, 41, 0.9) 100%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -487,17 +725,22 @@ img {
 .ed-hero-cover {
   height: 600px;
   width: auto;
+  transition: transform 0.5s ease;
+}
+
+.ed-hero-cover:hover {
+  transform: scale(1.03);
 }
 
 .ed-hero-cap {
   font-size: 17px;
-  color: var(--muted);
+  color: var(--text-muted);
 }
 
 .ed-hero-cap i {
   font-family: var(--serif);
   font-size: 20px;
-  color: var(--ink);
+  color: var(--text);
 }
 
 .ed-main {
@@ -514,7 +757,7 @@ img {
   font-size: 26px;
   font-style: italic;
   line-height: 1.35;
-  color: var(--navy);
+  color: var(--accent-bright);
 }
 
 .ed-mn-info {
@@ -527,19 +770,20 @@ img {
 
 .ed-mn-info dt {
   font-size: 14px;
-  color: var(--muted);
+  color: var(--text-muted);
 }
 
 .ed-mn-info dd {
   margin-top: 2px;
   font-size: 20px;
   font-weight: 600;
+  color: var(--text);
 }
 
 .ed-intl {
   margin-top: 44px;
   padding-top: 22px;
-  border-top: 1px solid var(--rule);
+  border-top: 1px solid var(--border);
 }
 
 .ed-row {
@@ -558,7 +802,14 @@ img {
 .ed-img img {
   height: 250px;
   width: auto;
-  box-shadow: 0 14px 26px rgba(17, 21, 34, 0.18), 0 3px 8px rgba(17, 21, 34, 0.1);
+  box-shadow:
+    0 14px 26px rgba(0, 0, 0, 0.4),
+    0 3px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.ed-img img:hover {
+  transform: scale(1.05) translateY(-4px);
 }
 
 .ed-cap {
@@ -568,20 +819,21 @@ img {
 .ed-cap b {
   font-family: var(--serif);
   font-size: 22px;
-  color: var(--navy);
+  color: var(--accent-bright);
 }
 
 .ed-cap span {
   margin-left: 10px;
   font-size: 17px;
   font-weight: 600;
+  color: var(--text);
 }
 
 .ed-cap small {
   display: block;
   margin-top: 2px;
   font-size: 15px;
-  color: var(--muted);
+  color: var(--text-muted);
 }
 
 .ed-reception {
@@ -593,13 +845,19 @@ img {
 
 .ed-reception > div {
   padding-left: 18px;
-  border-left: 3px solid var(--navy);
+  border-left: 3px solid var(--accent);
+  transition: border-color 0.3s ease;
+}
+
+.ed-reception > div:hover {
+  border-left-color: var(--accent-bright);
 }
 
 .ed-reception b {
   display: block;
   font-family: var(--serif);
   font-size: 22px;
+  color: var(--text);
 }
 
 .ed-reception span {
@@ -607,10 +865,12 @@ img {
   margin-top: 4px;
   font-size: 17px;
   line-height: 1.45;
-  color: var(--ink2);
+  color: var(--text-secondary);
 }
 
-/* ───────────── 4. Бүтэц ───────────── */
+/* ═══════════════════════════════════════════════════════
+   4. STRUCTURE / TOC
+   ═══════════════════════════════════════════════════════ */
 
 .structure {
   display: grid;
@@ -621,15 +881,16 @@ img {
 
 .big-question {
   padding-left: 32px;
-  border-left: 4px solid var(--navy);
+  border-left: 4px solid var(--accent);
   font-family: var(--serif);
   font-size: 40px;
   line-height: 1.35;
-  color: var(--ink);
+  color: var(--text);
 }
 
 .big-question em {
-  color: var(--navy);
+  color: var(--accent-bright);
+  font-style: italic;
 }
 
 .structure .sub {
@@ -643,7 +904,7 @@ img {
   font-weight: 600;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--blue);
+  color: var(--accent);
 }
 
 .toc-row {
@@ -651,9 +912,16 @@ img {
   align-items: center;
   gap: 16px;
   padding: 13px 14px;
-  border-top: 1px solid var(--rule);
+  border-top: 1px solid var(--border);
   font-size: 21px;
-  color: var(--ink2);
+  color: var(--text-secondary);
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+}
+
+.toc-row:hover {
+  background: rgba(59, 130, 246, 0.05);
 }
 
 .toc-n {
@@ -661,7 +929,7 @@ img {
   font-family: var(--serif);
   font-size: 22px;
   font-weight: 700;
-  color: var(--muted);
+  color: var(--text-muted);
 }
 
 .toc-t {
@@ -669,26 +937,39 @@ img {
 }
 
 .toc-row.hl {
-  background: var(--tint);
-  color: var(--ink);
+  background: var(--bg-card);
+  color: var(--text);
   font-weight: 600;
+  border-left: 3px solid var(--accent);
 }
 
 .toc-row.hl .toc-n {
-  color: var(--navy);
+  color: var(--accent);
 }
 
 .toc-tag {
   padding: 4px 10px;
-  border: 1px solid var(--navy);
+  border: 1px solid var(--accent);
+  border-radius: 20px;
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--navy);
+  color: var(--accent);
+  background: var(--accent-glow);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
-/* ───────────── Бүлгийн нүүр ───────────── */
+.toc-tag:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 12px var(--accent-glow);
+}
+
+/* ═══════════════════════════════════════════════════════
+   CHAPTER DIVIDER SLIDES
+   ═══════════════════════════════════════════════════════ */
 
 .divider {
   display: grid;
@@ -705,8 +986,12 @@ img {
   font-size: 150px;
   font-weight: 700;
   line-height: 0.9;
-  color: var(--navy);
   margin-bottom: 26px;
+  background: linear-gradient(135deg, var(--accent-bright) 0%, var(--accent) 40%, var(--navy) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(0 0 30px rgba(59, 130, 246, 0.2));
 }
 
 .div-title {
@@ -715,13 +1000,14 @@ img {
   font-size: 62px;
   font-weight: 700;
   line-height: 1.1;
+  color: var(--text);
 }
 
 .div-en {
   margin-top: 14px;
   font-size: 21px;
   font-style: italic;
-  color: var(--muted);
+  color: var(--text-muted);
 }
 
 .epigraph {
@@ -730,7 +1016,9 @@ img {
   font-size: 27px;
   font-style: italic;
   line-height: 1.4;
-  color: var(--ink2);
+  color: var(--text-secondary);
+  padding-left: 24px;
+  border-left: 2px solid var(--border-glow);
 }
 
 .epigraph small {
@@ -739,7 +1027,7 @@ img {
   font-family: var(--sans);
   font-style: normal;
   font-size: 17px;
-  color: var(--muted);
+  color: var(--text-muted);
 }
 
 .div-list {
@@ -750,14 +1038,20 @@ img {
   display: flex;
   gap: 20px;
   padding: 16px 0;
-  border-top: 1px solid var(--rule);
+  border-top: 1px solid var(--border);
   font-size: 25px;
+  color: var(--text);
+  transition: background 0.3s ease;
+}
+
+.div-item:hover {
+  background: rgba(59, 130, 246, 0.04);
 }
 
 .div-item b {
   width: 24px;
   font-family: var(--serif);
-  color: var(--navy);
+  color: var(--accent);
 }
 
 .div-photo {
@@ -775,11 +1069,16 @@ img {
   bottom: 18px;
   margin: 0;
   padding: 5px 10px;
-  background: rgba(0, 0, 0, 0.45);
+  background: rgba(6, 11, 24, 0.7);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   color: #fff;
+  border-radius: 4px;
 }
 
-/* ───────────── 6. Түүх ───────────── */
+/* ═══════════════════════════════════════════════════════
+   6. HISTORY / TIMELINE
+   ═══════════════════════════════════════════════════════ */
 
 .history {
   display: grid;
@@ -790,7 +1089,7 @@ img {
 
 .history-photo .photo-frame {
   height: 600px;
-  background: #000;
+  background: var(--bg-deep);
 }
 
 .history .sub {
@@ -800,6 +1099,8 @@ img {
 .history .header {
   margin-bottom: 30px;
 }
+
+/* ───────────── Vertical Timeline ───────────── */
 
 .vtl {
   position: relative;
@@ -812,8 +1113,9 @@ img {
   top: 22px;
   bottom: 22px;
   width: 2px;
-  background: var(--navy);
+  background: linear-gradient(180deg, var(--accent), var(--navy));
   transform-origin: top;
+  box-shadow: 0 0 8px var(--accent-glow);
 }
 
 .vtl-item {
@@ -822,47 +1124,71 @@ img {
   gap: 24px;
   padding: 10px 0;
   font-size: 23px;
+  color: var(--text);
+  transition: background 0.3s ease;
+}
+
+.vtl-item:hover {
+  background: rgba(59, 130, 246, 0.04);
 }
 
 .vtl-item::before {
-  content: '';
+  content: "";
   position: absolute;
   left: -36px;
   top: 17px;
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: var(--paper);
-  border: 2px solid var(--navy);
+  background: var(--bg);
+  border: 2px solid var(--accent);
+  transition:
+    background 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.vtl-item:hover::before {
+  box-shadow: 0 0 10px var(--accent-glow);
 }
 
 .vtl-item.now::before {
-  background: var(--navy);
+  background: var(--accent);
+  box-shadow: 0 0 12px var(--accent-glow);
+  animation: dotPulse 2s ease-in-out infinite;
+}
+
+@keyframes dotPulse {
+  0%, 100% { box-shadow: 0 0 8px var(--accent-glow); }
+  50% { box-shadow: 0 0 20px rgba(59, 130, 246, 0.5); }
 }
 
 .vtl-item b {
   width: 300px;
   flex: none;
+  color: var(--text);
 }
 
 .vtl-item span {
-  color: var(--ink2);
+  color: var(--text-secondary);
 }
 
 .definition {
   margin-top: 28px;
   padding: 22px 28px;
-  border-left: 4px solid var(--navy);
-  background: var(--tint);
+  border-left: 4px solid var(--accent);
+  background: var(--bg-card);
+  border-radius: 0 8px 8px 0;
 }
 
 .definition p {
   font-size: 22px;
   line-height: 1.55;
-  color: var(--ink2);
+  color: var(--text-secondary);
 }
 
-/* ───────────── 7. Гурван үе шат ───────────── */
+/* ═══════════════════════════════════════════════════════
+   7. STAGES (Three-column)
+   ═══════════════════════════════════════════════════════ */
 
 .stages .header {
   margin-bottom: 34px;
@@ -893,7 +1219,7 @@ img {
   font-family: var(--serif);
   font-size: 34px;
   font-weight: 700;
-  color: var(--navy);
+  color: var(--accent-bright);
 }
 
 .stage-head span {
@@ -901,7 +1227,7 @@ img {
   font-weight: 600;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--blue);
+  color: var(--accent);
 }
 
 .stage-rows {
@@ -912,30 +1238,37 @@ img {
   display: flex;
   justify-content: space-between;
   padding: 9px 0;
-  border-top: 1px solid var(--rule);
+  border-top: 1px solid var(--border);
   font-size: 19px;
-  color: var(--ink2);
+  color: var(--text-secondary);
+  transition: background 0.3s ease;
+}
+
+.stage-rows > div:hover {
+  background: rgba(59, 130, 246, 0.04);
 }
 
 .stage-rows b {
   font-weight: 500;
-  color: var(--muted);
+  color: var(--text-muted);
 }
 
 .stage-rows b.self {
   font-weight: 700;
-  color: var(--navy);
+  color: var(--accent);
 }
 
 .stage-d {
   padding-top: 12px;
-  border-top: 1px solid var(--rule);
+  border-top: 1px solid var(--border);
   font-size: 21px;
   line-height: 1.45;
-  color: var(--ink2);
+  color: var(--text-secondary);
 }
 
-/* ───────────── 8. Яагаад 2.0 ───────────── */
+/* ═══════════════════════════════════════════════════════
+   8. WHY 2.0 / STATS
+   ═══════════════════════════════════════════════════════ */
 
 .why2-grid {
   display: grid;
@@ -946,7 +1279,7 @@ img {
 .stat {
   padding-top: 18px;
   margin-bottom: 36px;
-  border-top: 2px solid var(--ink);
+  border-top: 2px solid var(--border-glow);
 }
 
 .stat-n {
@@ -954,25 +1287,40 @@ img {
   font-size: 96px;
   font-weight: 700;
   line-height: 1.05;
-  color: var(--navy);
+  background: linear-gradient(135deg, var(--accent-bright), var(--accent), var(--navy));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .stat p {
   margin-top: 4px;
   font-size: 22px;
-  color: var(--ink2);
+  color: var(--text-secondary);
 }
+
+/* ───────────── Progress Bar (stat) ───────────── */
 
 .bar {
   margin-top: 16px;
   height: 8px;
-  background: var(--tint);
+  background: var(--bg-card);
+  border-radius: 4px;
+  overflow: hidden;
 }
 
 .bar i {
   display: block;
   height: 100%;
-  background: var(--navy);
+  background: linear-gradient(90deg, var(--navy), var(--accent));
+  border-radius: 4px;
+  box-shadow: 0 0 12px var(--accent-glow);
+  animation: barGlow 3s ease-in-out infinite alternate;
+}
+
+@keyframes barGlow {
+  0% { box-shadow: 0 0 8px var(--accent-glow); }
+  100% { box-shadow: 0 0 18px rgba(59, 130, 246, 0.4); }
 }
 
 .stat-note {
@@ -980,10 +1328,12 @@ img {
   font-size: 22px;
   font-style: italic;
   line-height: 1.45;
-  color: var(--ink2);
+  color: var(--text-secondary);
 }
 
-/* ───────────── 9. Урсгалууд ───────────── */
+/* ═══════════════════════════════════════════════════════
+   9. CAMPS / CURRENTS
+   ═══════════════════════════════════════════════════════ */
 
 .camps-grid {
   display: grid;
@@ -993,19 +1343,20 @@ img {
 
 .axis-t {
   font-size: 16px;
-  fill: var(--muted);
+  fill: var(--text-muted);
 }
 
 .axis-h {
   font-size: 17px;
   font-weight: 600;
-  fill: var(--navy);
+  fill: var(--accent);
 }
 
 .bubble-t {
   font-family: var(--serif);
   font-size: 19px;
   font-weight: 700;
+  fill: var(--text);
 }
 
 .camp {
@@ -1013,7 +1364,12 @@ img {
   gap: 26px;
   align-items: flex-start;
   padding: 26px 0;
-  border-top: 1px solid var(--rule);
+  border-top: 1px solid var(--border);
+  transition: background 0.3s ease;
+}
+
+.camp:hover {
+  background: rgba(59, 130, 246, 0.04);
 }
 
 .camp img {
@@ -1023,33 +1379,45 @@ img {
   border-radius: 50%;
   object-fit: cover;
   object-position: 50% 25%;
+  border: 2px solid var(--border);
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.camp:hover img {
+  border-color: var(--accent);
+  box-shadow: 0 0 20px var(--accent-glow);
 }
 
 .camp h3 {
   font-family: var(--serif);
   font-size: 30px;
   font-weight: 700;
+  color: var(--text);
 }
 
 .camp p {
   margin-top: 6px;
   font-size: 22px;
   line-height: 1.45;
-  color: var(--ink2);
+  color: var(--text-secondary);
 }
 
 .camp small {
   display: block;
   margin-top: 6px;
   font-size: 15px;
-  color: var(--muted);
+  color: var(--text-muted);
 }
 
 .camp-b h3 {
-  color: var(--blue);
+  color: var(--accent-bright);
 }
 
-/* ───────────── 10. Напа ───────────── */
+/* ═══════════════════════════════════════════════════════
+   10. NAPA / DEBATE
+   ═══════════════════════════════════════════════════════ */
 
 .napa-grid {
   display: grid;
@@ -1073,7 +1441,7 @@ img {
   font-size: 24px;
   font-style: italic;
   line-height: 1.45;
-  color: var(--ink);
+  color: var(--text);
 }
 
 .person-q b {
@@ -1084,47 +1452,55 @@ img {
   font-size: 14px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--blue);
+  color: var(--accent);
 }
 
 .debate-end {
   margin-top: 26px;
   padding: 18px 24px;
-  border-left: 4px solid var(--navy);
-  background: var(--tint);
+  border-left: 4px solid var(--accent);
+  background: var(--bg-card);
   font-size: 22px;
   line-height: 1.5;
-  color: var(--ink2);
+  color: var(--text-secondary);
+  border-radius: 0 8px 8px 0;
 }
 
 .terms-head {
   margin-bottom: 16px;
   font-size: 22px;
   line-height: 1.5;
-  color: var(--ink2);
+  color: var(--text-secondary);
 }
 
 .term {
   display: grid;
   grid-template-columns: 220px 1fr;
   padding: 18px 0;
-  border-top: 1px solid var(--rule);
+  border-top: 1px solid var(--border);
+  transition: background 0.3s ease;
+}
+
+.term:hover {
+  background: rgba(59, 130, 246, 0.04);
 }
 
 .term b {
   font-family: var(--serif);
   font-size: 23px;
   font-weight: 700;
-  color: var(--navy);
+  color: var(--accent-bright);
 }
 
 .term span {
   font-size: 21px;
   line-height: 1.4;
-  color: var(--ink2);
+  color: var(--text-secondary);
 }
 
-/* ───────────── 11–12. Домог ───────────── */
+/* ═══════════════════════════════════════════════════════
+   11–12. MYTHS TABLE
+   ═══════════════════════════════════════════════════════ */
 
 .myths-slide .header {
   margin-bottom: 30px;
@@ -1135,7 +1511,12 @@ img {
   grid-template-columns: 1fr 1fr;
   gap: 70px;
   padding: 38px 0;
-  border-top: 1px solid var(--rule);
+  border-top: 1px solid var(--border);
+  transition: background 0.3s ease;
+}
+
+.mrow:hover {
+  background: rgba(59, 130, 246, 0.03);
 }
 
 .mrow.mhead {
@@ -1152,7 +1533,7 @@ img {
 }
 
 .mhead span:last-child {
-  color: var(--navy);
+  color: var(--accent);
 }
 
 .mrow p {
@@ -1170,40 +1551,42 @@ img {
 }
 
 .mrow p.m {
-  color: var(--ink2);
+  color: var(--text-secondary);
 }
 
 .mrow p.m::before {
-  content: '✕';
+  content: "✕";
   color: var(--red);
+  text-shadow: 0 0 10px rgba(239, 68, 68, 0.4);
 }
 
 .mrow p.f {
-  color: var(--ink);
+  color: var(--text);
   font-weight: 500;
 }
 
 .mrow p.f::before {
-  content: '✓';
-  color: var(--navy);
+  content: "✓";
+  color: var(--green);
+  text-shadow: 0 0 10px rgba(34, 197, 94, 0.4);
 }
 
 .footnote {
   margin-top: 26px;
   padding-top: 18px;
-  border-top: 1px solid var(--rule);
+  border-top: 1px solid var(--border);
   font-size: 20px;
-  color: var(--muted);
+  color: var(--text-muted);
 }
 
 .footnote b {
-  color: var(--navy);
+  color: var(--accent);
 }
 
 .pull-quote {
   margin-top: 30px;
   padding-left: 30px;
-  border-left: 4px solid var(--navy);
+  border-left: 4px solid var(--accent);
 }
 
 .pull-quote p {
@@ -1211,16 +1594,19 @@ img {
   font-size: 28px;
   font-style: italic;
   line-height: 1.45;
+  color: var(--text);
 }
 
 .pull-quote small {
   display: block;
   margin-top: 10px;
   font-size: 17px;
-  color: var(--blue);
+  color: var(--accent);
 }
 
-/* ───────────── 14. Оюун ухаан ───────────── */
+/* ═══════════════════════════════════════════════════════
+   14. INTELLIGENCE / SPECTRUM
+   ═══════════════════════════════════════════════════════ */
 
 .intel .title {
   font-size: 50px;
@@ -1242,7 +1628,7 @@ img {
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--muted);
+  color: var(--text-muted);
 }
 
 .spec-track {
@@ -1257,8 +1643,9 @@ img {
   right: 0;
   top: 7px;
   height: 4px;
-  background: var(--navy);
+  background: linear-gradient(90deg, var(--navy), var(--accent));
   transform-origin: left;
+  box-shadow: 0 0 8px var(--accent-glow);
 }
 
 .spec-mark {
@@ -1275,29 +1662,36 @@ img {
   height: 18px;
   margin-bottom: 12px;
   border-radius: 50%;
-  background: var(--paper);
-  border: 3px solid var(--navy);
+  background: var(--bg);
+  border: 3px solid var(--accent);
+  transition: box-shadow 0.3s ease;
+}
+
+.spec-mark:hover i {
+  box-shadow: 0 0 12px var(--accent-glow);
 }
 
 .spec-mark b {
   font-family: var(--serif);
   font-size: 22px;
   font-weight: 700;
+  color: var(--text);
 }
 
 .spec-mark small {
   margin-top: 2px;
   font-size: 16px;
-  color: var(--muted);
+  color: var(--text-muted);
 }
 
 .spec-mark.hot i {
-  background: var(--blue);
-  border-color: var(--blue);
+  background: var(--accent);
+  border-color: var(--accent);
+  box-shadow: 0 0 12px var(--accent-glow);
 }
 
 .spec-mark.hot b {
-  color: var(--blue);
+  color: var(--accent-bright);
 }
 
 .intel-grid {
@@ -1318,18 +1712,20 @@ img {
 
 .col {
   padding-top: 18px;
-  border-top: 2px solid var(--ink);
+  border-top: 2px solid var(--border-glow);
 }
 
 .col.accent {
-  border-top-color: var(--blue);
+  border-top-color: var(--accent);
 }
 
 .col.accent h3 {
-  color: var(--blue);
+  color: var(--accent-bright);
 }
 
-/* ───────────── 15. Ландшафт ───────────── */
+/* ═══════════════════════════════════════════════════════
+   15. LANDSCAPE
+   ═══════════════════════════════════════════════════════ */
 
 .land .header {
   margin-bottom: 14px;
@@ -1344,9 +1740,9 @@ img {
 .peak-t {
   font-size: 20px;
   font-weight: 600;
-  fill: var(--ink);
+  fill: var(--text);
   paint-order: stroke;
-  stroke: #fff;
+  stroke: var(--bg);
   stroke-width: 6px;
 }
 
@@ -1360,7 +1756,7 @@ img {
 .water-t {
   font-size: 17px;
   font-weight: 700;
-  fill: var(--navy);
+  fill: var(--accent);
 }
 
 .land-notes {
@@ -1368,12 +1764,14 @@ img {
   gap: 50px;
   margin-top: 16px;
   padding-top: 16px;
-  border-top: 1px solid var(--rule);
+  border-top: 1px solid var(--border);
   font-size: 21px;
-  color: var(--ink2);
+  color: var(--text-secondary);
 }
 
-/* ───────────── 16. Санах ой ───────────── */
+/* ═══════════════════════════════════════════════════════
+   16. MEMORY
+   ═══════════════════════════════════════════════════════ */
 
 .mem-grid {
   display: grid;
@@ -1389,14 +1787,14 @@ img {
 
 .mem-well p {
   font-size: 21px;
-  color: var(--ink2);
+  color: var(--text-secondary);
 }
 
 .bit-t {
   font-family: var(--serif);
   font-size: 30px;
   font-weight: 700;
-  fill: var(--navy);
+  fill: var(--accent);
 }
 
 .mem-right {
@@ -1404,6 +1802,8 @@ img {
   flex-direction: column;
   gap: 20px;
 }
+
+/* ───────────── Tags ───────────── */
 
 .tags {
   display: flex;
@@ -1414,9 +1814,25 @@ img {
 
 .tags span {
   padding: 6px 14px;
-  border: 1px solid var(--rule);
+  border: 1px solid var(--border);
+  border-radius: 20px;
   font-size: 19px;
-  color: var(--ink2);
+  color: var(--text-secondary);
+  background: var(--bg-glass);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  transition:
+    border-color 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    color 0.3s ease;
+}
+
+.tags span:hover {
+  border-color: var(--border-glow);
+  transform: scale(1.05);
+  box-shadow: 0 0 12px var(--accent-glow);
+  color: var(--text);
 }
 
 .mem-compare {
@@ -1443,10 +1859,12 @@ img {
 .hop-text {
   font-size: 21px;
   line-height: 1.5;
-  color: var(--ink2);
+  color: var(--text-secondary);
 }
 
-/* ───────────── 17. Тооцоолол ───────────── */
+/* ═══════════════════════════════════════════════════════
+   17. COMPUTATION / TURING
+   ═══════════════════════════════════════════════════════ */
 
 .comp-grid {
   display: grid;
@@ -1466,14 +1884,16 @@ img {
   font-family: var(--serif);
   font-size: 22px;
   font-weight: 700;
-  fill: var(--navy);
+  fill: var(--accent);
 }
 
 .io-t {
   font-size: 18px;
   font-weight: 700;
-  fill: var(--muted);
+  fill: var(--text-muted);
 }
+
+/* ───────────── Truth Table ───────────── */
 
 .truth {
   border-collapse: collapse;
@@ -1488,18 +1908,22 @@ img {
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--muted);
+  color: var(--text-muted);
 }
 
 .truth td {
   padding: 9px 22px;
   text-align: center;
-  color: var(--ink2);
-  border-top: 1px solid var(--rule);
+  color: var(--text-secondary);
+  border-top: 1px solid var(--border);
 }
 
 .truth td b {
-  color: var(--navy);
+  color: var(--accent-bright);
+}
+
+.truth tbody tr:hover td {
+  background: rgba(59, 130, 246, 0.08);
 }
 
 .truth tbody tr td {
@@ -1515,22 +1939,22 @@ img {
   }
   10%,
   20% {
-    background: #dfe6f7;
+    background: rgba(59, 130, 246, 0.1);
   }
 }
 
 .nand p {
   font-size: 21px;
-  color: var(--ink2);
+  color: var(--text-secondary);
 }
 
 .def-line {
   margin-top: 18px;
   padding-top: 16px;
-  border-top: 1px solid var(--rule);
+  border-top: 1px solid var(--border);
   font-size: 21px;
   line-height: 1.5;
-  color: var(--ink2);
+  color: var(--text-secondary);
 }
 
 .comp-right {
@@ -1554,16 +1978,19 @@ img {
   font-family: var(--serif);
   font-size: 30px;
   font-weight: 700;
+  color: var(--text);
 }
 
 .turing-text p {
   margin-top: 8px;
   font-size: 22px;
   line-height: 1.5;
-  color: var(--ink2);
+  color: var(--text-secondary);
 }
 
-/* ───────────── 18. Суралцах ───────────── */
+/* ═══════════════════════════════════════════════════════
+   18. LEARNING
+   ═══════════════════════════════════════════════════════ */
 
 .learning .header {
   margin-bottom: 30px;
@@ -1577,7 +2004,7 @@ img {
 
 .learn-photo .photo-frame {
   height: 560px;
-  background: #000;
+  background: var(--bg-deep);
 }
 
 .equation {
@@ -1588,26 +2015,40 @@ img {
   margin-top: 30px;
   font-family: var(--serif);
   font-size: 24px;
+  color: var(--text);
 }
 
 .equation span {
   padding: 10px 22px;
-  border: 1px solid var(--rule);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg-glass);
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.equation span:hover {
+  border-color: var(--border-glow);
+  box-shadow: 0 0 12px var(--accent-glow);
 }
 
 .equation span.hot {
-  background: var(--navy);
-  border-color: var(--navy);
+  background: linear-gradient(135deg, var(--navy), var(--accent));
+  border-color: var(--accent);
   color: #fff;
   font-weight: 700;
+  box-shadow: 0 0 15px var(--accent-glow);
 }
 
 .equation i {
   font-style: normal;
-  color: var(--muted);
+  color: var(--text-muted);
 }
 
-/* ───────────── 19. Кейс ───────────── */
+/* ═══════════════════════════════════════════════════════
+   19. CASE STUDY
+   ═══════════════════════════════════════════════════════ */
 
 .case .title {
   font-size: 52px;
@@ -1631,17 +2072,19 @@ img {
   margin-top: 14px;
   font-size: 21px;
   line-height: 1.5;
-  color: var(--ink2);
+  color: var(--text-secondary);
 }
 
 .goal {
   margin-top: 16px;
   padding: 18px 22px;
-  border-left: 4px solid var(--navy);
-  background: var(--tint);
+  border-left: 4px solid var(--accent);
+  background: var(--bg-card);
   font-family: var(--serif);
   font-size: 27px;
   line-height: 1.4;
+  color: var(--text);
+  border-radius: 0 8px 8px 0;
 }
 
 .col-h {
@@ -1650,14 +2093,19 @@ img {
   font-weight: 600;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--blue);
+  color: var(--accent);
 }
 
 .outcome {
   display: flex;
   gap: 16px;
   padding: 15px 0;
-  border-top: 1px solid var(--rule);
+  border-top: 1px solid var(--border);
+  transition: background 0.3s ease;
+}
+
+.outcome:hover {
+  background: rgba(59, 130, 246, 0.04);
 }
 
 .outcome i {
@@ -1672,30 +2120,38 @@ img {
   font-size: 15px;
   background: var(--red);
   color: #fff;
+  box-shadow: 0 0 10px rgba(239, 68, 68, 0.3);
 }
 
 .outcome.ok i {
   background: var(--green);
+  box-shadow: 0 0 10px rgba(34, 197, 94, 0.3);
 }
 
 .outcome p {
   font-size: 21px;
   line-height: 1.45;
+  color: var(--text);
 }
 
 .case-note {
   padding-top: 16px;
-  border-top: 1px solid var(--rule);
+  border-top: 1px solid var(--border);
   font-family: var(--serif);
   font-size: 21px;
   font-style: italic;
   line-height: 1.45;
-  color: var(--navy);
+  color: var(--accent-bright);
 }
 
 .link-row {
   padding: 14px 0;
-  border-top: 1px solid var(--rule);
+  border-top: 1px solid var(--border);
+  transition: background 0.3s ease;
+}
+
+.link-row:hover {
+  background: rgba(59, 130, 246, 0.04);
 }
 
 .link-row small {
@@ -1703,7 +2159,7 @@ img {
   font-weight: 600;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--muted);
+  color: var(--text-muted);
 }
 
 .link-row h3 {
@@ -1711,14 +2167,17 @@ img {
   font-family: var(--serif);
   font-size: 24px;
   font-weight: 700;
+  color: var(--text);
 }
 
 .link-row p {
   font-size: 19px;
-  color: var(--ink2);
+  color: var(--text-secondary);
 }
 
-/* ───────────── 20. Асуулт хариулт ───────────── */
+/* ═══════════════════════════════════════════════════════
+   20. Q&A
+   ═══════════════════════════════════════════════════════ */
 
 .qa .header {
   margin-bottom: 30px;
@@ -1741,19 +2200,31 @@ img {
   gap: 24px;
   padding: 26px 30px;
   text-align: left;
-  border: 1px solid var(--rule);
-  background: var(--paper);
+  border: 1px solid var(--border);
+  background: var(--bg-glass);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 10px;
   cursor: pointer;
-  transition: border-color 0.3s, background 0.3s;
+  transition:
+    border-color 0.3s ease,
+    background 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .qa-card:hover {
-  border-color: var(--muted);
+  border-color: var(--border-glow);
+  transform: scale(1.02);
+  box-shadow: 0 0 25px var(--accent-glow);
 }
 
 .qa-card.open {
-  border-color: var(--navy);
-  background: var(--tint);
+  border-color: var(--accent);
+  background: var(--bg-card);
+  box-shadow:
+    0 0 30px var(--accent-glow),
+    inset 0 0 30px rgba(59, 130, 246, 0.05);
 }
 
 .qa-n {
@@ -1761,7 +2232,10 @@ img {
   font-size: 46px;
   font-weight: 700;
   line-height: 1;
-  color: var(--navy);
+  background: linear-gradient(135deg, var(--accent-bright), var(--navy));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .qa-card h3 {
@@ -1769,13 +2243,14 @@ img {
   font-size: 26px;
   font-weight: 700;
   line-height: 1.35;
+  color: var(--text);
 }
 
 .qa-a {
   margin-top: 12px;
   font-size: 20px;
   line-height: 1.5;
-  color: var(--ink2);
+  color: var(--text-secondary);
 }
 
 .qa-hint {
@@ -1785,8 +2260,12 @@ img {
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--blue);
+  color: var(--accent);
 }
+
+/* ═══════════════════════════════════════════════════════
+   THANKS / CLOSING
+   ═══════════════════════════════════════════════════════ */
 
 .thanks {
   margin-top: 32px;
@@ -1794,7 +2273,10 @@ img {
   font-family: var(--serif);
   font-size: 34px;
   font-weight: 700;
-  color: var(--navy);
+  background: linear-gradient(135deg, var(--accent-bright), var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .thanks span {
@@ -1802,15 +2284,12 @@ img {
   font-family: var(--sans);
   font-size: 21px;
   font-weight: 400;
-  color: var(--ink2);
+  -webkit-text-fill-color: var(--text-secondary);
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .wave,
-  .truth tbody tr td {
-    animation: none !important;
-  }
-}
+/* ═══════════════════════════════════════════════════════
+   CAMP MAP
+   ═══════════════════════════════════════════════════════ */
 
 .campmap {
   width: 720px;
@@ -1821,5 +2300,122 @@ img {
   margin-top: 22px;
   font-size: 21px;
   line-height: 1.5;
-  color: var(--ink2);
+  color: var(--text-secondary);
+}
+
+/* ═══════════════════════════════════════════════════════
+   REDUCED MOTION
+   ═══════════════════════════════════════════════════════ */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .wave,
+  .truth tbody tr td {
+    animation: none !important;
+  }
+
+  .cb-back,
+  .cb-front {
+    animation: none !important;
+  }
+
+  .progress {
+    animation: none !important;
+  }
+}
+
+/* ═══════════════════════════════════════════════════════
+   IMPORTED CHAPTER 3 SLIDES
+   ═══════════════════════════════════════════════════════ */
+
+.slide.chapter3-slide {
+  padding: 0;
+  background: transparent;
+  background-image: none;
+  box-shadow: none;
+}
+
+.chapter3-canvas {
+  position: absolute;
+  inset: 0;
+  width: 1920px;
+  height: 1080px;
+  overflow: hidden;
+  color: #fff;
+}
+
+.chapter3-node {
+  position: absolute;
+}
+
+.chapter3-image-node {
+  overflow: visible;
+}
+
+.chapter3-image-node img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.chapter3-text {
+  color: #fff;
+  line-height: 1.12;
+  white-space: pre-wrap;
+}
+
+.chapter3-paragraph {
+  position: relative;
+  flex: 0 0 auto;
+  width: 100%;
+  margin-bottom: 14px;
+  line-height: 1.12;
+  white-space: pre-wrap;
+}
+
+.chapter3-paragraph:last-child {
+  margin-bottom: 0;
+}
+
+.chapter3-bullet {
+  position: absolute;
+  top: 0;
+  white-space: pre;
+}
+
+.chapter3-table {
+  overflow: hidden;
+}
+
+.chapter3-table-row {
+  position: absolute;
+  left: 0;
+  display: flex;
+  width: 100%;
+}
+
+.chapter3-table-cell {
+  position: relative;
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 8px 12px;
+  border: 1px solid #bb99ff;
+  color: #000;
+  text-align: center;
+  line-height: 1.05;
+}
+
+.chapter3-shape.is-line {
+  border-width: 0 0 1px 0 !important;
 }
