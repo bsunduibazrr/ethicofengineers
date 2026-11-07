@@ -330,3 +330,6 @@ export function Chapter3Slide9() {
 export function Chapter3Slide10() {
   return <PptxSlide data={sourceSlides[9]} />;
 }
+export function Chapter3Slide11() {
+  return <PptxSlide data={sourceSlides[10]} />;
+}
