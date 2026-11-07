@@ -30,6 +30,7 @@ import {
   Chapter3Slide8,
   Chapter3Slide9,
   Chapter3Slide10,
+  Chapter3Slide11,
 } from "./chapter3";
 
 export type SlideDef = {
@@ -249,6 +250,13 @@ export const slides: SlideDef[] = [
     id: "chapter3-10",
     section: "3-р бүлэг",
     Component: Chapter3Slide10,
+    notes: "",
+    transition: "morph",
+  },
+  {
+    id: "chapter3-11",
+    section: "3-р бүлэг",
+    Component: Chapter3Slide11,
     notes: "",
     transition: "morph",
   },
