@@ -9,7 +9,7 @@ import {
 } from "framer-motion";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { slides } from "@/slides";
-import { chapter3AssetPaths } from "@/slides/chapter3-data";
+import { importedAssetsBySlide } from "@/slides/imported";
 import { EASE, EASE_IN_OUT } from "./ui";
 
 const W = 1920;
@@ -267,11 +267,14 @@ export default function Deck() {
       const img = new Image();
       img.src = `/img/${s}.jpg`;
     });
-    chapter3AssetPaths.forEach((src) => {
+    const nearbyAssets = [slides[index], slides[index + 1]]
+      .filter(Boolean)
+      .flatMap((slide) => importedAssetsBySlide[slide.id] ?? []);
+    nearbyAssets.forEach((src) => {
       const img = new Image();
       img.src = src;
     });
-  }, [ready]);
+  }, [ready, index]);
 
   const current = slides[index];
   const Current = current.Component;
@@ -325,7 +328,7 @@ export default function Deck() {
               {ready && (
                 <motion.section
                   key={index}
-                  className={`slide slide-${current.id}${current.id.startsWith("chapter3-") ? " chapter3-slide" : ""}`}
+                  className={`slide slide-${current.id}${current.transition === "morph" ? " chapter3-slide" : ""}`}
                   custom={dir}
                   variants={morphNav ? morphV : slideV}
                   initial={
