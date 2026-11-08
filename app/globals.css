@@ -31,6 +31,7 @@
   --rule: var(--border);
   --blue: var(--accent);
   --tint: var(--bg-card);
+  --card-radius: 8px;
 }
 
 /* ───────────── Global Reset ───────────── */
@@ -2332,7 +2333,7 @@ img {
 }
 
 /* ═══════════════════════════════════════════════════════
-   IMPORTED CHAPTER 3 SLIDES
+   IMPORTED PRESENTATION SLIDES
    ═══════════════════════════════════════════════════════ */
 
 .slide.chapter3-slide {
@@ -2348,7 +2349,9 @@ img {
   width: 1920px;
   height: 1080px;
   overflow: hidden;
-  color: #fff;
+  color: var(--text);
+  background-color: var(--bg);
+  font-family: var(--sans);
 }
 
 .chapter3-node {
@@ -2356,28 +2359,43 @@ img {
 }
 
 .chapter3-image-node {
-  overflow: visible;
+  overflow: hidden;
+  border-radius: 4px;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.28);
 }
 
 .chapter3-image-node img {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: fill;
+  object-fit: cover;
 }
 
 .chapter3-text {
-  color: #fff;
-  line-height: 1.12;
+  color: var(--text);
+  font-family: var(--sans);
+  line-height: 1.38;
   white-space: pre-wrap;
+}
+
+.chapter3-text.is-heading {
+  letter-spacing: -0.025em;
+  text-shadow: 0 0 32px rgba(59, 130, 246, 0.12);
+}
+
+.chapter3-heading-run {
+  background: linear-gradient(135deg, #fff 0%, var(--accent-bright) 58%, var(--accent) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .chapter3-paragraph {
   position: relative;
   flex: 0 0 auto;
   width: 100%;
-  margin-bottom: 14px;
-  line-height: 1.12;
+  margin-bottom: 4px;
+  line-height: inherit;
   white-space: pre-wrap;
 }
 
@@ -2393,6 +2411,9 @@ img {
 
 .chapter3-table {
   overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: var(--card-radius);
+  background: var(--bg-card);
 }
 
 .chapter3-table-row {
@@ -2410,10 +2431,14 @@ img {
   justify-content: center;
   overflow: hidden;
   padding: 8px 12px;
-  border: 1px solid #bb99ff;
-  color: #000;
+  border: 1px solid var(--border);
+  color: var(--text);
   text-align: center;
-  line-height: 1.05;
+  line-height: 1.3;
+}
+
+.chapter3-shape:not(.is-line) {
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.16);
 }
 
 .chapter3-shape.is-line {

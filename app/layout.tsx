@@ -1,19 +1,6 @@
 import type { Metadata, Viewport } from "next";
-import { IBM_Plex_Sans, PT_Serif } from "next/font/google";
+import "./fonts.css";
 import "./globals.css";
-
-const serif = PT_Serif({
-  subsets: ["latin", "cyrillic", "cyrillic-ext"],
-  weight: ["400", "700"],
-  style: ["normal", "italic"],
-  variable: "--font-serif",
-});
-
-const sans = IBM_Plex_Sans({
-  subsets: ["latin", "cyrillic", "cyrillic-ext"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--font-sans",
-});
 
 export const metadata: Metadata = {
   title: "life3.0",
@@ -30,7 +17,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="mn" className={`${serif.variable} ${sans.variable}`}>
+    <html lang="mn">
       <body>{children}</body>
     </html>
   );
