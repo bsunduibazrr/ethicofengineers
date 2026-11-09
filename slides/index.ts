@@ -18,7 +18,17 @@ import {
   Learning,
   Memory,
 } from "./chapter2";
-import { Author, Book, Cover, Structure } from "./intro";
+import {
+  Author,
+  Book,
+  Cover,
+  StructureCh1,
+  StructureCh2,
+  StructureCh3,
+  StructureCh4,
+  StructureCh6,
+  StructureCh8,
+} from "./intro";
 import {
   importedChapter3Slides,
   importedChapter4Slides,
@@ -60,7 +70,7 @@ export const slides: SlideDef[] = [
   {
     id: "structure",
     section: "Номын бүтэц",
-    Component: Structure,
+    Component: StructureCh1,
     notes:
       "Удиртгал, найман бүлэг, төгсгөлтэй. Бүх ном хоёр асуултын тухай: AI ирээдүйг яаж өөрчлөх вэ, бид ямар ирээдүй хүсэж байна вэ. Би 1, 2-р бүлгийг ярина: эхнийх нь яагаад ярих ёстойг, хоёр дахь нь оюун ухааныг физикийн талаас тайлбарладаг.",
   },
@@ -121,6 +131,13 @@ export const slides: SlideDef[] = [
       "Робот биш, оюун ухаан нь асуудал. Ухаантай нь удирддаг, бар жишээ. Пуужин хүртэл зорилготой. Шоргоолжны жишээг уншаад, кейс дээр дахин эргэж ирнэ гэж хэлэх.",
   },
   {
+    id: "structure-ch2",
+    section: "2-р бүлэг",
+    Component: StructureCh2,
+    notes:
+      "2-р бүлэг рүү шилжиж байна: Матери ухаалаг болох нь. Оюун ухааныг физикийн талаас тайлбарлана.",
+  },
+  {
     id: "ch2",
     section: "2-р бүлэг",
     Component: Ch2Divider,
@@ -176,8 +193,36 @@ export const slides: SlideDef[] = [
     notes:
       "Асуулт бүрийг уншаад 2–3 хүнээс санал сонсох, дараа нь картан дээр дарж хариултыг нээх. Цаг дутвал 1, 2-р асуултыг л ярих. Төгсгөлд баярлалаа гэх.",
   },
+  {
+    id: "structure-ch3",
+    section: "3-р бүлэг",
+    Component: StructureCh3,
+    notes:
+      "3-р бүлэг рүү шилжиж байна: Ойрын ирээдүй: нээлт, алдаа, хууль, зэвсэг, ажил.",
+  },
   ...importedChapter3Slides,
+  {
+    id: "structure-ch4",
+    section: "4-р бүлэг",
+    Component: StructureCh4,
+    notes:
+      "4-р бүлэг рүү шилжиж байна: Оюун ухааны тэсрэлт болох уу?",
+  },
   ...importedChapter4Slides,
+  {
+    id: "structure-ch6",
+    section: "6-р бүлэг",
+    Component: StructureCh6,
+    notes:
+      "6-р бүлэг рүү шилжиж байна: Дараагийн тэрбум жил ба түүнээс цааш.",
+  },
   ...importedChapter6Slides,
+  {
+    id: "structure-ch8",
+    section: "Ухамсар",
+    Component: StructureCh8,
+    notes:
+      "8-р бүлэг рүү шилжиж байна: Ухамсар.",
+  },
   ...importedConsciousnessSlides,
 ];

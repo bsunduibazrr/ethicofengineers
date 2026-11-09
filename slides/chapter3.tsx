@@ -245,7 +245,6 @@ function rectStyle(rect: Rect): CSSProperties {
 }
 
 function SharedNode({
-  morphId,
   children,
   className,
   style,
@@ -258,11 +257,11 @@ function SharedNode({
   return (
     <motion.div
       className={className}
-      layout={morphId ? true : undefined}
-      layoutId={morphId}
+      initial={{ opacity: 0, y: 10 }}
+      animate={{ opacity: 1, y: 0 }}
       transition={{
-        layout: { duration: 2, ease: "easeInOut" },
-        opacity: { duration: 2, ease: "easeInOut" },
+        duration: 0.45,
+        ease: [0.16, 1, 0.3, 1],
       }}
       style={style}
     >

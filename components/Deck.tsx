@@ -2,7 +2,6 @@
 
 import {
   AnimatePresence,
-  LayoutGroup,
   MotionConfig,
   motion,
   type Variants,
@@ -10,94 +9,49 @@ import {
 import { useCallback, useEffect, useRef, useState } from "react";
 import { slides } from "@/slides";
 import { importedAssetsBySlide } from "@/slides/imported";
-import { EASE, EASE_IN_OUT } from "./ui";
 
 const W = 1920;
 const H = 1080;
-const PUSH = { duration: 0.7, ease: EASE_IN_OUT };
-const MORPH = { duration: 2, ease: "easeInOut" as const };
 
-// Cinematic depth-based slide transition with blur
+// Crisp, luxury Apple Keynote depth-slide transition
 const slideV: Variants = {
-  enter: (d: number) =>
-    d > 0
-      ? { x: "5%", opacity: 0, scale: 0.96, filter: "blur(8px)", zIndex: 2 }
-      : { x: "-5%", opacity: 0, scale: 0.96, filter: "blur(8px)", zIndex: 1 },
+  enter: (d: number) => ({
+    x: d > 0 ? "8%" : "-8%",
+    opacity: 0,
+    scale: 0.985,
+    zIndex: 2,
+  }),
   center: {
     x: "0%",
     opacity: 1,
     scale: 1,
-    filter: "blur(0px)",
     zIndex: 2,
     transition: {
-      ...PUSH,
-      opacity: { duration: 0.5, ease: EASE },
-      scale: { type: "spring", stiffness: 180, damping: 26, mass: 0.9 },
-      filter: { duration: 0.6, ease: EASE },
-      zIndex: { duration: 0 },
-      delayChildren: 0.35,
-      staggerChildren: 0.06,
+      duration: 0.45,
+      ease: [0.16, 1, 0.3, 1],
+      opacity: { duration: 0.32, ease: [0.16, 1, 0.3, 1] },
+      scale: { duration: 0.45, ease: [0.16, 1, 0.3, 1] },
     },
   },
-  exit: (d: number) =>
-    d > 0
-      ? {
-          x: "-5%",
-          opacity: 0,
-          scale: 0.96,
-          filter: "blur(8px)",
-          zIndex: 1,
-          transition: { ...PUSH, zIndex: { duration: 0 } },
-        }
-      : {
-          x: "5%",
-          opacity: 0,
-          scale: 0.96,
-          filter: "blur(8px)",
-          zIndex: 3,
-          transition: { ...PUSH, zIndex: { duration: 0 } },
-        },
-};
-
-const morphV: Variants = {
-  enter: { opacity: 0, scale: 0.985, filter: "blur(2px)", zIndex: 2 },
-  center: {
-    opacity: 1,
-    scale: 1,
-    filter: "blur(0px)",
-    zIndex: 2,
-    transition: {
-      ...MORPH,
-      zIndex: { duration: 0 },
-    },
-  },
-  exit: {
+  exit: (d: number) => ({
+    x: d > 0 ? "-8%" : "8%",
     opacity: 0,
-    scale: 1.015,
-    filter: "blur(2px)",
+    scale: 0.985,
     zIndex: 1,
     transition: {
-      ...MORPH,
-      zIndex: { duration: 0 },
+      duration: 0.38,
+      ease: [0.16, 1, 0.3, 1],
+      opacity: { duration: 0.28, ease: [0.16, 1, 0.3, 1] },
     },
-  },
+  }),
 };
 
 const pad = (n: number) => String(n).padStart(2, "0");
 
-/* SVG chevron arrow icons */
+/* SVG Icons */
 function ChevronLeft() {
   return (
-    <svg
-      width="18"
-      height="18"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2.5"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
       <polyline points="15 18 9 12 15 6" />
     </svg>
   );
@@ -105,17 +59,28 @@ function ChevronLeft() {
 
 function ChevronRight() {
   return (
-    <svg
-      width="18"
-      height="18"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2.5"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
       <polyline points="9 6 15 12 9 18" />
+    </svg>
+  );
+}
+
+function NotesIcon() {
+  return (
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+      <polyline points="14 2 14 8 20 8" />
+      <line x1="16" y1="13" x2="8" y2="13" />
+      <line x1="16" y1="17" x2="8" y2="17" />
+      <polyline points="10 9 9 9 8 9" />
+    </svg>
+  );
+}
+
+function FullscreenIcon() {
+  return (
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3" />
     </svg>
   );
 }
@@ -124,8 +89,6 @@ export default function Deck() {
   const total = slides.length;
   const [ready, setReady] = useState(false);
   const [[index, dir], setPage] = useState<[number, number]>([0, 1]);
-  const [morphNav, setMorphNav] = useState(false);
-  const [initialIndex, setInitialIndex] = useState<number | null>(null);
   const [scale, setScale] = useState(1);
   const [showNotes, setShowNotes] = useState(false);
   const [startedAt, setStartedAt] = useState<number | null>(null);
@@ -135,20 +98,17 @@ export default function Deck() {
   const goTo = useCallback(
     (target: number) => {
       const t = Math.max(0, Math.min(total - 1, target));
-      setMorphNav(index >= 20 || t >= 20);
       setPage((prev) => {
         if (t === prev[0]) return prev;
         return [t, t > prev[0] ? 1 : -1];
       });
       setStartedAt((s) => s ?? Date.now());
     },
-    [index, total],
+    [total],
   );
 
   const step = useCallback(
     (delta: number) => {
-      const target = Math.max(0, Math.min(total - 1, index + delta));
-      setMorphNav(index >= 20 || target >= 20);
       setPage((prev) => {
         const next = Math.max(0, Math.min(total - 1, prev[0] + delta));
         if (next === prev[0]) return prev;
@@ -156,18 +116,16 @@ export default function Deck() {
       });
       setStartedAt((s) => s ?? Date.now());
     },
-    [index, total],
+    [total],
   );
 
-  // Эхлэхдээ URL-ын #дугаараас слайдаа сэргээнэ
+  // URL hash sync
   useEffect(() => {
     const n = parseInt(window.location.hash.replace("#", ""), 10);
     if (!Number.isNaN(n)) {
       const target = Math.max(0, Math.min(total - 1, n - 1));
       setPage([target, 1]);
-      setMorphNav(target >= 20);
-      setInitialIndex(target);
-    } else setInitialIndex(0);
+    }
     setReady(true);
   }, [total]);
 
@@ -175,7 +133,7 @@ export default function Deck() {
     if (ready) window.history.replaceState(null, "", `#${index + 1}`);
   }, [index, ready]);
 
-  // 1920×1080 тайзыг цонхонд яг багтаана — агуулга хэзээ ч слайдаас халихгүй
+  // Exact 1920×1080 stage fitting
   useEffect(() => {
     const fit = () =>
       setScale(Math.min(window.innerWidth / W, window.innerHeight / H));
@@ -184,6 +142,7 @@ export default function Deck() {
     return () => window.removeEventListener("resize", fit);
   }, []);
 
+  // Keyboard navigation
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if (e.metaKey || e.ctrlKey || e.altKey) return;
@@ -236,7 +195,7 @@ export default function Deck() {
     return () => clearInterval(id);
   }, [showNotes]);
 
-  // Зургуудыг урьдчилан ачаална — шилжилтийн үед гацахгүй
+  // Preload nearby images
   useEffect(() => {
     if (!ready) return;
     const srcs = [
@@ -267,7 +226,7 @@ export default function Deck() {
       const img = new Image();
       img.src = `/img/${s}.jpg`;
     });
-    const nearbyAssets = [slides[index], slides[index + 1]]
+    const nearbyAssets = [slides[index], slides[index + 1], slides[index - 1]]
       .filter(Boolean)
       .flatMap((slide) => importedAssetsBySlide[slide.id] ?? []);
     nearbyAssets.forEach((src) => {
@@ -294,28 +253,10 @@ export default function Deck() {
           touchX.current = null;
         }}
       >
-        {/* Subtle animated background gradient */}
-        <motion.div
-          className="viewport-bg"
-          style={{
-            position: "absolute",
-            inset: 0,
-            zIndex: 0,
-            pointerEvents: "none",
-            background:
-              "radial-gradient(ellipse at 30% 20%, rgba(30,58,138,0.15) 0%, transparent 60%), radial-gradient(ellipse at 70% 80%, rgba(88,28,135,0.1) 0%, transparent 60%)",
-          }}
-          animate={{
-            opacity: [0.6, 1, 0.6],
-          }}
-          transition={{
-            duration: 8,
-            ease: "easeInOut",
-            repeat: Infinity,
-            repeatType: "loop",
-          }}
-        />
+        {/* Subtle architectural ambient lighting */}
+        <div className="viewport-ambient" />
 
+        {/* 1920×1080 Presentation Canvas */}
         <div
           className="stage"
           style={{
@@ -323,105 +264,134 @@ export default function Deck() {
             opacity: ready ? 1 : 0,
           }}
         >
-          <LayoutGroup id="presentation-morph">
-            <AnimatePresence custom={dir}>
-              {ready && (
-                <motion.section
-                  key={index}
-                  className={`slide slide-${current.id}${current.transition === "morph" ? " chapter3-slide" : ""}`}
-                  custom={dir}
-                  variants={morphNav ? morphV : slideV}
-                  initial={
-                    current.transition === "morph" && index === initialIndex
-                      ? false
-                      : "enter"
-                  }
-                  animate="center"
-                  exit="exit"
-                >
-                  <Current />
-                </motion.section>
-              )}
-            </AnimatePresence>
-          </LayoutGroup>
+          {/* Top Progress Line */}
+          <div className="progress-track">
+            <motion.div
+              className="progress-bar"
+              animate={{ scaleX: (index + 1) / total }}
+              transition={{ duration: 0.45, ease: [0.16, 1, 0.3, 1] }}
+            />
+          </div>
 
-          <motion.div
-            className="progress"
-            animate={{ scaleX: (index + 1) / total }}
-            transition={{ duration: 0.7, ease: EASE_IN_OUT }}
-            style={{
-              boxShadow: "0 0 8px 2px rgba(96,165,250,0.35)",
-            }}
-          />
+          <AnimatePresence mode="popLayout" custom={dir}>
+            {ready && (
+              <motion.section
+                key={index}
+                className={`slide slide-${current.id}${current.id.startsWith("chapter") || current.id.startsWith("consciousness") ? " chapter3-slide" : ""}`}
+                custom={dir}
+                variants={slideV}
+                initial="enter"
+                animate="center"
+                exit="exit"
+              >
+                <Current />
+              </motion.section>
+            )}
+          </AnimatePresence>
+        </div>
 
-          <footer className="footer">
-            <span className="footer-brand">
-              <i>Амьдрал 3.0</i> · Макс Тегмарк
-            </span>
+        {/* Floating Keynote Presentation HUD Controls */}
+        <nav className="keynote-hud">
+          <div className="hud-pill">
+            <div className="hud-brand">
+              <span className="hud-brand-title">Амьдрал 3.0</span>
+              <span className="hud-brand-sep">·</span>
+              <span className="hud-brand-author">Макс Тегмарк</span>
+            </div>
+
+            <div className="hud-divider" />
+
             <AnimatePresence mode="wait">
               <motion.span
                 key={current.section}
-                className="footer-section"
-                initial={{ opacity: 0, y: 6 }}
+                className="hud-section"
+                initial={{ opacity: 0, y: 4 }}
                 animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -6 }}
-                transition={{ duration: 0.4, ease: EASE }}
+                exit={{ opacity: 0, y: -4 }}
+                transition={{ duration: 0.25 }}
               >
                 {current.section}
               </motion.span>
             </AnimatePresence>
-            <div className="footer-nav">
-              <motion.button
+
+            <div className="hud-divider" />
+
+            <div className="hud-nav">
+              <button
+                type="button"
+                className="hud-btn"
                 aria-label="Өмнөх слайд"
                 disabled={index === 0}
-                onClick={(e) => {
-                  step(-1);
-                  e.currentTarget.blur();
-                }}
-                whileHover={{ scale: 1.15 }}
-                whileTap={{ scale: 0.9 }}
-                transition={{ duration: 0.2 }}
+                onClick={() => step(-1)}
               >
                 <ChevronLeft />
-              </motion.button>
-              <span className="page-no">
-                {pad(index + 1)} <em>/ {pad(total)}</em>
+              </button>
+
+              <span className="hud-counter">
+                <b>{pad(index + 1)}</b>
+                <span className="hud-counter-total">/ {pad(total)}</span>
               </span>
-              <motion.button
+
+              <button
+                type="button"
+                className="hud-btn"
                 aria-label="Дараах слайд"
                 disabled={index === total - 1}
-                onClick={(e) => {
-                  step(1);
-                  e.currentTarget.blur();
-                }}
-                whileHover={{ scale: 1.15 }}
-                whileTap={{ scale: 0.9 }}
-                transition={{ duration: 0.2 }}
+                onClick={() => step(1)}
               >
                 <ChevronRight />
-              </motion.button>
+              </button>
             </div>
-          </footer>
-        </div>
 
+            <div className="hud-divider" />
+
+            <div className="hud-tools">
+              <button
+                type="button"
+                className={`hud-tool-btn${showNotes ? " is-active" : ""}`}
+                aria-label="Тэмдэглэл харах (N)"
+                title="Илтгэгчийн тэмдэглэл (N)"
+                onClick={() => setShowNotes((v) => !v)}
+              >
+                <NotesIcon />
+                <span>Тэмдэглэл</span>
+              </button>
+
+              <button
+                type="button"
+                className="hud-tool-btn"
+                aria-label="Бүтэн дэлгэц (F)"
+                title="Бүтэн дэлгэц (F)"
+                onClick={() => {
+                  if (document.fullscreenElement) document.exitFullscreen();
+                  else document.documentElement.requestFullscreen?.();
+                }}
+              >
+                <FullscreenIcon />
+              </button>
+            </div>
+          </div>
+        </nav>
+
+        {/* Presenter Notes Panel */}
         <AnimatePresence>
           {showNotes && (
             <motion.aside
               className="notes"
-              initial={{ opacity: 0, y: 24 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: 24 }}
-              transition={{ duration: 0.4, ease: EASE }}
+              initial={{ opacity: 0, y: 24, scale: 0.98 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
+              exit={{ opacity: 0, y: 24, scale: 0.98 }}
+              transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
             >
               <div className="notes-head">
-                <span>
-                  Илтгэгчийн тэмдэглэл · {index + 1}/{total}
+                <span className="notes-badge">
+                  Илтгэгчийн тэмдэглэл · {index + 1} / {total}
                 </span>
                 <span className="timer">
                   {Math.floor(elapsed / 60)}:{pad(elapsed % 60)}
                 </span>
               </div>
-              <p>{current.notes}</p>
+              <p className="notes-body">{current.notes}</p>
             </motion.aside>
           )}
         </AnimatePresence>
