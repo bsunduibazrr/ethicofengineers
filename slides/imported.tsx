@@ -9,7 +9,7 @@ type ImportedSlideDef = {
   section: string;
   Component: ComponentType;
   notes: string;
-  transition: "morph";
+  transition?: "morph";
 };
 
 const decks = importedPptxData as Record<ImportedDeckKey, SlideData[]>;
@@ -23,7 +23,6 @@ function makeSlides(deckKey: ImportedDeckKey, section: string, idPrefix: string)
       section,
       Component,
       notes: data.notes ?? "",
-      transition: "morph",
     };
   });
 }

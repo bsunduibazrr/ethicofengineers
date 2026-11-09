@@ -221,8 +221,8 @@ export function Book() {
 
 const parts = [
   { n: "", t: "Удиртгал. Омега багийн түүх" },
-  { n: "1", t: "Бидний цаг үеийн хамгийн чухал яриа", hl: true },
-  { n: "2", t: "Матери ухаалаг болох нь", hl: true },
+  { n: "1", t: "Бидний цаг үеийн хамгийн чухал яриа" },
+  { n: "2", t: "Матери ухаалаг болох нь" },
   { n: "3", t: "Ойрын ирээдүй: нээлт, алдаа, хууль, зэвсэг, ажил" },
   { n: "4", t: "Оюун ухааны тэсрэлт болох уу?" },
   { n: "5", t: "Дараагийн 10 000 жил" },
@@ -232,7 +232,9 @@ const parts = [
   { n: "", t: "Төгсгөл. FLI багийн түүх" },
 ];
 
-export function Structure() {
+const presentedChapters = ["1", "2", "3", "4", "6", "8"];
+
+export function Structure({ activeChapter = "1" }: { activeChapter?: string }) {
   return (
     <div className="structure">
       <div>
@@ -248,14 +250,44 @@ export function Structure() {
       </div>
       <Group className="toc">
         <R className="toc-head">Агуулга</R>
-        {parts.map((p, i) => (
-          <R className={`toc-row${p.hl ? " hl" : ""}`} key={i}>
-            <span className="toc-n">{p.n}</span>
-            <span className="toc-t">{p.t}</span>
-            {p.hl && <span className="toc-tag">Өнөөдөр</span>}
-          </R>
-        ))}
+        {parts.map((p, i) => {
+          const isPresented = presentedChapters.includes(p.n);
+          const isActive = p.n === activeChapter;
+          return (
+            <R
+              className={`toc-row${isPresented ? " hl" : ""}${isActive ? " is-active" : ""}`}
+              key={i}
+            >
+              <span className="toc-n">{p.n}</span>
+              <span className="toc-t">{p.t}</span>
+              {isPresented && (
+                <span className={`toc-tag${isActive ? " is-current" : ""}`}>
+                  Өнөөдөр
+                </span>
+              )}
+            </R>
+          );
+        })}
       </Group>
     </div>
   );
+}
+
+export function StructureCh1() {
+  return <Structure activeChapter="1" />;
+}
+export function StructureCh2() {
+  return <Structure activeChapter="2" />;
+}
+export function StructureCh3() {
+  return <Structure activeChapter="3" />;
+}
+export function StructureCh4() {
+  return <Structure activeChapter="4" />;
+}
+export function StructureCh6() {
+  return <Structure activeChapter="6" />;
+}
+export function StructureCh8() {
+  return <Structure activeChapter="8" />;
 }
