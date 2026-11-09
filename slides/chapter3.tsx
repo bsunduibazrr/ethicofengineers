@@ -271,6 +271,14 @@ function SharedNode({
   );
 }
 
+function getDeckKicker(id: string): string {
+  if (id.startsWith("chapter3")) return "3-р бүлэг · Ойрын ирээдүй";
+  if (id.startsWith("chapter4")) return "4-р бүлэг · Оюун ухааны тэсрэлт";
+  if (id.startsWith("chapter6")) return "6-р бүлэг · Дараагийн тэрбум жил";
+  if (id.startsWith("consciousness")) return "8-р бүлэг · Ухамсар";
+  return "Амьдрал 3.0";
+}
+
 function TextNode({ node }: { node: Extract<PptxNode, { kind: "text" }> }) {
   const heading = isDisplayHeading(node);
   const fontSize = fittedFontSize(node, heading);
@@ -279,6 +287,12 @@ function TextNode({ node }: { node: Extract<PptxNode, { kind: "text" }> }) {
   )
     ? 0.62
     : 1;
+
+  const delay = Math.min(
+    0.45,
+    0.06 + (node.rect.y / 1080) * 0.25 + (node.rect.x / 1920) * 0.08,
+  );
+
   const style: CSSProperties = {
     ...rectStyle(node.rect),
     width: node.rect.w / condensed,
@@ -301,15 +315,26 @@ function TextNode({ node }: { node: Extract<PptxNode, { kind: "text" }> }) {
     fontFamily: heading ? "var(--serif), Georgia, serif" : fontStack(),
     fontSize,
     fontWeight: heading ? 700 : 400,
-    lineHeight: heading ? 1.16 : 1.38,
+    lineHeight: heading ? 1.18 : 1.45,
+    letterSpacing: heading ? "-0.015em" : "normal",
   };
 
   return (
-    <SharedNode
-      morphId={node.morphId}
+    <motion.div
       className={`chapter3-node chapter3-text${heading ? " is-heading" : ""}`}
       style={style}
+      initial={{ opacity: 0, y: heading ? -18 : 18, scale: heading ? 0.98 : 1 }}
+      animate={{ opacity: 1, y: 0, scale: 1 }}
+      transition={{ duration: 0.6, delay, ease: [0.16, 1, 0.3, 1] }}
     >
+      {heading && (
+        <div className="kicker-wrapper" style={{ marginBottom: 12 }}>
+          <div className="kicker-pill">
+            <span className="kicker-diamond">◆</span>
+            <span className="kicker-label">{getDeckKicker(node.id)}</span>
+          </div>
+        </div>
+      )}
       <div
         className="chapter3-text-content"
         style={{
@@ -327,15 +352,21 @@ function TextNode({ node }: { node: Extract<PptxNode, { kind: "text" }> }) {
               marginLeft: paragraph.marginLeft,
               textIndent: paragraph.indent,
               marginBottom: paragraph.spacingAfter ?? 8,
+              position: "relative",
             }}
           >
             {paragraph.bullet && (
               <span
-                className="chapter3-bullet"
+                className="kicker-diamond"
                 aria-hidden="true"
-                style={{ left: paragraph.indent }}
+                style={{
+                  display: "inline-block",
+                  marginRight: 10,
+                  fontSize: 10,
+                  verticalAlign: "middle",
+                }}
               >
-                {paragraph.bullet}
+                ◆
               </span>
             )}
             {paragraph.runs.map((run, runIndex) => (
@@ -344,7 +375,6 @@ function TextNode({ node }: { node: Extract<PptxNode, { kind: "text" }> }) {
                 className={heading ? "chapter3-heading-run" : "chapter3-body-run"}
                 style={{
                   fontFamily: heading ? "var(--serif), Georgia, serif" : fontStack(),
-                  fontSize: undefined,
                   fontWeight: heading ? 700 : (run.style.fontWeight as CSSProperties["fontWeight"]),
                   fontStyle: run.style.fontStyle as CSSProperties["fontStyle"],
                   textDecoration: run.style.textDecoration as CSSProperties["textDecoration"],
@@ -357,14 +387,24 @@ function TextNode({ node }: { node: Extract<PptxNode, { kind: "text" }> }) {
           </div>
         ))}
       </div>
-    </SharedNode>
+    </motion.div>
   );
 }
 
 function TableNode({ node }: { node: Extract<PptxNode, { kind: "table" }> }) {
   let top = 0;
+  const delay = Math.min(
+    0.45,
+    0.08 + (node.rect.y / 1080) * 0.25 + (node.rect.x / 1920) * 0.08,
+  );
   return (
-    <div className="chapter3-node chapter3-table" style={rectStyle(node.rect)}>
+    <motion.div
+      className="chapter3-node chapter3-table"
+      style={rectStyle(node.rect)}
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, delay, ease: [0.16, 1, 0.3, 1] }}
+    >
       {node.rows.map((row, rowIndex) => {
         const rowTop = top;
         top += row.h;
@@ -418,17 +458,25 @@ function TableNode({ node }: { node: Extract<PptxNode, { kind: "table" }> }) {
           </div>
         );
       })}
-    </div>
+    </motion.div>
   );
 }
 
 function PptxNodeView({ node }: { node: PptxNode }) {
+  const delay = Math.min(
+    0.45,
+    0.05 + (node.rect.y / 1080) * 0.25 + (node.rect.x / 1920) * 0.08,
+  );
+
   if (node.kind === "image") {
     return (
-      <SharedNode
-        morphId={node.morphId}
+      <motion.div
         className="chapter3-node chapter3-image-node"
         style={rectStyle(node.rect)}
+        initial={{ opacity: 0, scale: 1.04 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.7, delay, ease: [0.16, 1, 0.3, 1] }}
+        whileHover={{ scale: 1.02 }}
       >
         <img
           src={node.src}
@@ -440,7 +488,7 @@ function PptxNodeView({ node }: { node: PptxNode }) {
             opacity: node.opacity,
           }}
         />
-      </SharedNode>
+      </motion.div>
     );
   }
 
@@ -448,34 +496,75 @@ function PptxNodeView({ node }: { node: PptxNode }) {
   if (node.kind === "table") return <TableNode node={node} />;
 
   const isLine = node.preset === "line";
+  const rawFill = node.fill?.toLowerCase() ?? "";
+  const isRed = rawFill === "#c00000" || rawFill === "#ef4444";
+  const isGreen = rawFill === "#22c55e" || rawFill === "#34d399";
+  const isAmber = rawFill === "#fbbf24" || rawFill === "#d97706";
+
+  let shapeBackground: string | undefined;
+  let shapeBorder: string | undefined;
+  let shapeBoxShadow: string | undefined;
+
+  if (isLine) {
+    shapeBackground = "linear-gradient(90deg, transparent, rgba(0, 240, 255, 0.6), transparent)";
+    shapeBoxShadow = "0 0 14px rgba(0, 240, 255, 0.4)";
+  } else if (isRed) {
+    shapeBackground = "linear-gradient(135deg, rgba(45, 12, 22, 0.8) 0%, rgba(20, 8, 14, 0.9) 100%)";
+    shapeBorder = "1px solid rgba(244, 63, 94, 0.45)";
+    shapeBoxShadow = "0 20px 48px -12px rgba(0, 0, 0, 0.8), 0 0 30px rgba(244, 63, 94, 0.18), inset 0 1px 0 rgba(255, 255, 255, 0.1)";
+  } else if (isGreen) {
+    shapeBackground = "linear-gradient(135deg, rgba(8, 38, 25, 0.8) 0%, rgba(6, 20, 15, 0.9) 100%)";
+    shapeBorder = "1px solid rgba(16, 185, 129, 0.45)";
+    shapeBoxShadow = "0 20px 48px -12px rgba(0, 0, 0, 0.8), 0 0 30px rgba(16, 185, 129, 0.18), inset 0 1px 0 rgba(255, 255, 255, 0.1)";
+  } else if (isAmber) {
+    shapeBackground = "linear-gradient(135deg, rgba(42, 30, 8, 0.8) 0%, rgba(22, 16, 6, 0.9) 100%)";
+    shapeBorder = "1px solid rgba(245, 158, 11, 0.45)";
+    shapeBoxShadow = "0 20px 48px -12px rgba(0, 0, 0, 0.8), 0 0 30px rgba(245, 158, 11, 0.18), inset 0 1px 0 rgba(255, 255, 255, 0.1)";
+  } else if (node.preset === "roundRect" || node.preset === "rect") {
+    shapeBackground = "linear-gradient(135deg, rgba(14, 20, 36, 0.72) 0%, rgba(8, 12, 24, 0.82) 100%)";
+    shapeBorder = "1px solid rgba(255, 255, 255, 0.09)";
+    shapeBoxShadow = "0 20px 48px -12px rgba(0, 0, 0, 0.8), 0 0 30px -5px rgba(0, 240, 255, 0.06), inset 0 1px 0 0 rgba(255, 255, 255, 0.14)";
+  } else {
+    shapeBackground = themedShapeColor(node.fill, "fill");
+    shapeBorder = node.stroke
+      ? `${Math.max(node.strokeWidth, 1)}px solid ${themedShapeColor(node.stroke, "stroke")}`
+      : undefined;
+  }
+
   return (
-    <div
+    <motion.div
       className={`chapter3-node chapter3-shape${isLine ? " is-line" : ""}`}
       style={{
         ...rectStyle(node.rect),
         minHeight: isLine ? Math.max(node.strokeWidth, 1) : undefined,
-        background: themedShapeColor(node.fill, "fill"),
-        border: node.stroke
-          ? `${Math.max(node.strokeWidth, 1)}px solid ${themedShapeColor(node.stroke, "stroke")}`
-          : undefined,
+        background: shapeBackground,
+        border: shapeBorder,
+        boxShadow: shapeBoxShadow,
+        backdropFilter: isLine ? undefined : "blur(16px)",
+        WebkitBackdropFilter: isLine ? undefined : "blur(16px)",
         borderRadius:
           node.preset === "ellipse"
             ? "50%"
-            : node.preset === "roundRect"
-              ? 8
-              : "var(--card-radius)",
+            : isLine
+              ? 0
+              : 16,
         clipPath:
           node.preset === "triangle"
             ? "polygon(50% 0, 100% 100%, 0 100%)"
             : undefined,
       }}
+      initial={{ opacity: 0, y: isLine ? 0 : 20, scale: isLine ? 1 : 0.97 }}
+      animate={{ opacity: 1, y: 0, scale: 1 }}
+      transition={{ duration: 0.55, delay, ease: [0.16, 1, 0.3, 1] }}
     />
   );
 }
 
 export function PptxSlideView({ data }: { data: SlideData }) {
   return (
-    <div className="chapter3-canvas" style={canvasStyle}>
+    <div className="chapter3-canvas">
+      <div className="canvas-ambient-glow" />
+      <div className="canvas-grid-pattern" />
       {data.nodes.map((node, index) => (
         <PptxNodeView key={`${node.id}-${index}`} node={node} />
       ))}

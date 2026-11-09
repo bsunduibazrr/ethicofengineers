@@ -14,73 +14,51 @@ import { EASE, EASE_IN_OUT } from "./ui";
 
 const W = 1920;
 const H = 1080;
-const PUSH = { duration: 0.7, ease: EASE_IN_OUT };
-const MORPH = { duration: 2, ease: "easeInOut" as const };
 
-// Cinematic depth-based slide transition with blur
+// Ultra-premium 3D cinematic spatial slide transition
 const slideV: Variants = {
-  enter: (d: number) =>
-    d > 0
-      ? { x: "5%", opacity: 0, scale: 0.96, filter: "blur(8px)", zIndex: 2 }
-      : { x: "-5%", opacity: 0, scale: 0.96, filter: "blur(8px)", zIndex: 1 },
+  enter: (d: number) => ({
+    x: d > 0 ? "14%" : "-14%",
+    rotateY: d > 0 ? -7 : 7,
+    z: -120,
+    scale: 0.91,
+    opacity: 0,
+    filter: "blur(14px)",
+    zIndex: 2,
+  }),
   center: {
     x: "0%",
-    opacity: 1,
+    rotateY: 0,
+    z: 0,
     scale: 1,
+    opacity: 1,
     filter: "blur(0px)",
     zIndex: 2,
     transition: {
-      ...PUSH,
-      opacity: { duration: 0.5, ease: EASE },
-      scale: { type: "spring", stiffness: 180, damping: 26, mass: 0.9 },
-      filter: { duration: 0.6, ease: EASE },
-      zIndex: { duration: 0 },
-      delayChildren: 0.35,
-      staggerChildren: 0.06,
+      duration: 0.68,
+      ease: [0.19, 1, 0.22, 1],
+      opacity: { duration: 0.45, ease: [0.19, 1, 0.22, 1] },
+      scale: { type: "spring", stiffness: 240, damping: 28, mass: 0.8 },
+      filter: { duration: 0.52, ease: [0.19, 1, 0.22, 1] },
+      delayChildren: 0.12,
+      staggerChildren: 0.05,
     },
   },
-  exit: (d: number) =>
-    d > 0
-      ? {
-          x: "-5%",
-          opacity: 0,
-          scale: 0.96,
-          filter: "blur(8px)",
-          zIndex: 1,
-          transition: { ...PUSH, zIndex: { duration: 0 } },
-        }
-      : {
-          x: "5%",
-          opacity: 0,
-          scale: 0.96,
-          filter: "blur(8px)",
-          zIndex: 3,
-          transition: { ...PUSH, zIndex: { duration: 0 } },
-        },
-};
-
-const morphV: Variants = {
-  enter: { opacity: 0, scale: 0.985, filter: "blur(2px)", zIndex: 2 },
-  center: {
-    opacity: 1,
-    scale: 1,
-    filter: "blur(0px)",
-    zIndex: 2,
-    transition: {
-      ...MORPH,
-      zIndex: { duration: 0 },
-    },
-  },
-  exit: {
+  exit: (d: number) => ({
+    x: d > 0 ? "-14%" : "14%",
+    rotateY: d > 0 ? 7 : -7,
+    z: -120,
+    scale: 0.91,
     opacity: 0,
-    scale: 1.015,
-    filter: "blur(2px)",
+    filter: "blur(14px)",
     zIndex: 1,
     transition: {
-      ...MORPH,
-      zIndex: { duration: 0 },
+      duration: 0.52,
+      ease: [0.65, 0, 0.35, 1],
+      opacity: { duration: 0.35 },
+      filter: { duration: 0.45 },
     },
-  },
+  }),
 };
 
 const pad = (n: number) => String(n).padStart(2, "0");
@@ -124,8 +102,6 @@ export default function Deck() {
   const total = slides.length;
   const [ready, setReady] = useState(false);
   const [[index, dir], setPage] = useState<[number, number]>([0, 1]);
-  const [morphNav, setMorphNav] = useState(false);
-  const [initialIndex, setInitialIndex] = useState<number | null>(null);
   const [scale, setScale] = useState(1);
   const [showNotes, setShowNotes] = useState(false);
   const [startedAt, setStartedAt] = useState<number | null>(null);
@@ -135,20 +111,17 @@ export default function Deck() {
   const goTo = useCallback(
     (target: number) => {
       const t = Math.max(0, Math.min(total - 1, target));
-      setMorphNav(index >= 20 || t >= 20);
       setPage((prev) => {
         if (t === prev[0]) return prev;
         return [t, t > prev[0] ? 1 : -1];
       });
       setStartedAt((s) => s ?? Date.now());
     },
-    [index, total],
+    [total],
   );
 
   const step = useCallback(
     (delta: number) => {
-      const target = Math.max(0, Math.min(total - 1, index + delta));
-      setMorphNav(index >= 20 || target >= 20);
       setPage((prev) => {
         const next = Math.max(0, Math.min(total - 1, prev[0] + delta));
         if (next === prev[0]) return prev;
@@ -156,7 +129,7 @@ export default function Deck() {
       });
       setStartedAt((s) => s ?? Date.now());
     },
-    [index, total],
+    [total],
   );
 
   // Эхлэхдээ URL-ын #дугаараас слайдаа сэргээнэ
@@ -165,9 +138,7 @@ export default function Deck() {
     if (!Number.isNaN(n)) {
       const target = Math.max(0, Math.min(total - 1, n - 1));
       setPage([target, 1]);
-      setMorphNav(target >= 20);
-      setInitialIndex(target);
-    } else setInitialIndex(0);
+    }
     setReady(true);
   }, [total]);
 
@@ -294,83 +265,102 @@ export default function Deck() {
           touchX.current = null;
         }}
       >
-        {/* Subtle animated background gradient */}
-        <motion.div
-          className="viewport-bg"
-          style={{
-            position: "absolute",
-            inset: 0,
-            zIndex: 0,
-            pointerEvents: "none",
-            background:
-              "radial-gradient(ellipse at 30% 20%, rgba(30,58,138,0.15) 0%, transparent 60%), radial-gradient(ellipse at 70% 80%, rgba(88,28,135,0.1) 0%, transparent 60%)",
-          }}
-          animate={{
-            opacity: [0.6, 1, 0.6],
-          }}
-          transition={{
-            duration: 8,
-            ease: "easeInOut",
-            repeat: Infinity,
-            repeatType: "loop",
-          }}
-        />
+        {/* Ambient cosmic void with dynamic volumetric aura */}
+        <div className="viewport-cosmos" aria-hidden="true">
+          <motion.div
+            className="cosmos-orb cosmos-orb-cyan"
+            animate={{
+              x: [-40, 50, -20, -40],
+              y: [-30, 40, -50, -30],
+              scale: [1, 1.15, 0.95, 1],
+              opacity: [0.35, 0.55, 0.35],
+            }}
+            transition={{
+              duration: 18,
+              repeat: Infinity,
+              ease: "easeInOut",
+            }}
+          />
+          <motion.div
+            className="cosmos-orb cosmos-orb-violet"
+            animate={{
+              x: [30, -40, 20, 30],
+              y: [40, -30, 30, 40],
+              scale: [0.95, 1.2, 1, 0.95],
+              opacity: [0.3, 0.5, 0.3],
+            }}
+            transition={{
+              duration: 22,
+              repeat: Infinity,
+              ease: "easeInOut",
+            }}
+          />
+          <div className="cosmos-stars" />
+        </div>
 
         <div
           className="stage"
           style={{
             transform: `translate(-50%, -50%) scale(${scale})`,
             opacity: ready ? 1 : 0,
+            perspective: 1800,
           }}
         >
-          <LayoutGroup id="presentation-morph">
-            <AnimatePresence custom={dir}>
-              {ready && (
-                <motion.section
-                  key={index}
-                  className={`slide slide-${current.id}${current.transition === "morph" ? " chapter3-slide" : ""}`}
-                  custom={dir}
-                  variants={morphNav ? morphV : slideV}
-                  initial={
-                    current.transition === "morph" && index === initialIndex
-                      ? false
-                      : "enter"
-                  }
-                  animate="center"
-                  exit="exit"
-                >
-                  <Current />
-                </motion.section>
-              )}
-            </AnimatePresence>
-          </LayoutGroup>
+          {/* Futuristic Stage Corner Accents */}
+          <div className="stage-corner stage-corner-tl" />
+          <div className="stage-corner stage-corner-tr" />
+          <div className="stage-corner stage-corner-bl" />
+          <div className="stage-corner stage-corner-br" />
 
-          <motion.div
-            className="progress"
-            animate={{ scaleX: (index + 1) / total }}
-            transition={{ duration: 0.7, ease: EASE_IN_OUT }}
-            style={{
-              boxShadow: "0 0 8px 2px rgba(96,165,250,0.35)",
-            }}
-          />
+          <AnimatePresence mode="popLayout" custom={dir}>
+            {ready && (
+              <motion.section
+                key={index}
+                className={`slide slide-${current.id}${current.id.startsWith("chapter") || current.id.startsWith("consciousness") ? " chapter3-slide" : ""}`}
+                custom={dir}
+                variants={slideV}
+                initial="enter"
+                animate="center"
+                exit="exit"
+              >
+                <Current />
+              </motion.section>
+            )}
+          </AnimatePresence>
+
+          <div className="progress-container">
+            <motion.div
+              className="progress"
+              animate={{ scaleX: (index + 1) / total }}
+              transition={{ duration: 0.5, ease: [0.19, 1, 0.22, 1] }}
+            />
+            <motion.div
+              className="progress-beacon"
+              animate={{ left: `${((index + 1) / total) * 100}%` }}
+              transition={{ duration: 0.5, ease: [0.19, 1, 0.22, 1] }}
+            />
+          </div>
 
           <footer className="footer">
-            <span className="footer-brand">
-              <i>Амьдрал 3.0</i> · Макс Тегмарк
-            </span>
+            <div className="footer-brand">
+              <span className="brand-dot" />
+              <i>Амьдрал 3.0</i> <span className="brand-sep">/</span> <span>Макс Тегмарк</span>
+            </div>
             <AnimatePresence mode="wait">
-              <motion.span
+              <motion.div
                 key={current.section}
-                className="footer-section"
-                initial={{ opacity: 0, y: 6 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -6 }}
-                transition={{ duration: 0.4, ease: EASE }}
+                className="footer-section-pill"
+                initial={{ opacity: 0, y: 8, scale: 0.95 }}
+                animate={{ opacity: 1, y: 0, scale: 1 }}
+                exit={{ opacity: 0, y: -8, scale: 0.95 }}
+                transition={{ duration: 0.35, ease: [0.19, 1, 0.22, 1] }}
               >
-                {current.section}
-              </motion.span>
+                <span className="pill-dot" />
+                <span className="footer-section">{current.section}</span>
+              </motion.div>
             </AnimatePresence>
             <div className="footer-nav">
+              <span className="footer-hint">← / → Гүйлгэх</span>
               <motion.button
                 aria-label="Өмнөх слайд"
                 disabled={index === 0}
@@ -380,7 +370,7 @@ export default function Deck() {
                 }}
                 whileHover={{ scale: 1.15 }}
                 whileTap={{ scale: 0.9 }}
-                transition={{ duration: 0.2 }}
+                transition={{ duration: 0.15 }}
               >
                 <ChevronLeft />
               </motion.button>
@@ -396,7 +386,7 @@ export default function Deck() {
                 }}
                 whileHover={{ scale: 1.15 }}
                 whileTap={{ scale: 0.9 }}
-                transition={{ duration: 0.2 }}
+                transition={{ duration: 0.15 }}
               >
                 <ChevronRight />
               </motion.button>
