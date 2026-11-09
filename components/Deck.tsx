@@ -19,6 +19,15 @@ const slideV: Variants = {
     x: d > 0 ? "8%" : "-8%",
     opacity: 0,
     scale: 0.985,
+// Ultra-premium 3D cinematic spatial slide transition
+const slideV: Variants = {
+  enter: (d: number) => ({
+    x: d > 0 ? "14%" : "-14%",
+    rotateY: d > 0 ? -7 : 7,
+    z: -120,
+    scale: 0.91,
+    opacity: 0,
+    filter: "blur(14px)",
     zIndex: 2,
   }),
   center: {
@@ -42,6 +51,35 @@ const slideV: Variants = {
       duration: 0.38,
       ease: [0.16, 1, 0.3, 1],
       opacity: { duration: 0.28, ease: [0.16, 1, 0.3, 1] },
+    rotateY: 0,
+    z: 0,
+    scale: 1,
+    opacity: 1,
+    filter: "blur(0px)",
+    zIndex: 2,
+    transition: {
+      duration: 0.68,
+      ease: [0.19, 1, 0.22, 1],
+      opacity: { duration: 0.45, ease: [0.19, 1, 0.22, 1] },
+      scale: { type: "spring", stiffness: 240, damping: 28, mass: 0.8 },
+      filter: { duration: 0.52, ease: [0.19, 1, 0.22, 1] },
+      delayChildren: 0.12,
+      staggerChildren: 0.05,
+    },
+  },
+  exit: (d: number) => ({
+    x: d > 0 ? "-14%" : "14%",
+    rotateY: d > 0 ? 7 : -7,
+    z: -120,
+    scale: 0.91,
+    opacity: 0,
+    filter: "blur(14px)",
+    zIndex: 1,
+    transition: {
+      duration: 0.52,
+      ease: [0.65, 0, 0.35, 1],
+      opacity: { duration: 0.35 },
+      filter: { duration: 0.45 },
     },
   }),
 };
@@ -255,6 +293,38 @@ export default function Deck() {
       >
         {/* Subtle architectural ambient lighting */}
         <div className="viewport-ambient" />
+        {/* Ambient cosmic void with dynamic volumetric aura */}
+        <div className="viewport-cosmos" aria-hidden="true">
+          <motion.div
+            className="cosmos-orb cosmos-orb-cyan"
+            animate={{
+              x: [-40, 50, -20, -40],
+              y: [-30, 40, -50, -30],
+              scale: [1, 1.15, 0.95, 1],
+              opacity: [0.35, 0.55, 0.35],
+            }}
+            transition={{
+              duration: 18,
+              repeat: Infinity,
+              ease: "easeInOut",
+            }}
+          />
+          <motion.div
+            className="cosmos-orb cosmos-orb-violet"
+            animate={{
+              x: [30, -40, 20, 30],
+              y: [40, -30, 30, 40],
+              scale: [0.95, 1.2, 1, 0.95],
+              opacity: [0.3, 0.5, 0.3],
+            }}
+            transition={{
+              duration: 22,
+              repeat: Infinity,
+              ease: "easeInOut",
+            }}
+          />
+          <div className="cosmos-stars" />
+        </div>
 
         {/* 1920×1080 Presentation Canvas */}
         <div
@@ -262,6 +332,7 @@ export default function Deck() {
           style={{
             transform: `translate(-50%, -50%) scale(${scale})`,
             opacity: ready ? 1 : 0,
+            perspective: 1800,
           }}
         >
           {/* Top Progress Line */}
@@ -272,6 +343,11 @@ export default function Deck() {
               transition={{ duration: 0.45, ease: [0.16, 1, 0.3, 1] }}
             />
           </div>
+          {/* Futuristic Stage Corner Accents */}
+          <div className="stage-corner stage-corner-tl" />
+          <div className="stage-corner stage-corner-tr" />
+          <div className="stage-corner stage-corner-bl" />
+          <div className="stage-corner stage-corner-br" />
 
           <AnimatePresence mode="popLayout" custom={dir}>
             {ready && (
@@ -301,17 +377,42 @@ export default function Deck() {
 
             <div className="hud-divider" />
 
+
+          <div className="progress-container">
+            <motion.div
+              className="progress"
+              animate={{ scaleX: (index + 1) / total }}
+              transition={{ duration: 0.5, ease: [0.19, 1, 0.22, 1] }}
+            />
+            <motion.div
+              className="progress-beacon"
+              animate={{ left: `${((index + 1) / total) * 100}%` }}
+              transition={{ duration: 0.5, ease: [0.19, 1, 0.22, 1] }}
+            />
+          </div>
+
+          <footer className="footer">
+            <div className="footer-brand">
+              <span className="brand-dot" />
+              <i>Амьдрал 3.0</i> <span className="brand-sep">/</span> <span>Макс Тегмарк</span>
+            </div>
             <AnimatePresence mode="wait">
-              <motion.span
+              <motion.div
                 key={current.section}
                 className="hud-section"
                 initial={{ opacity: 0, y: 4 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -4 }}
                 transition={{ duration: 0.25 }}
+                className="footer-section-pill"
+                initial={{ opacity: 0, y: 8, scale: 0.95 }}
+                animate={{ opacity: 1, y: 0, scale: 1 }}
+                exit={{ opacity: 0, y: -8, scale: 0.95 }}
+                transition={{ duration: 0.35, ease: [0.19, 1, 0.22, 1] }}
               >
-                {current.section}
-              </motion.span>
+                <span className="pill-dot" />
+                <span className="footer-section">{current.section}</span>
+              </motion.div>
             </AnimatePresence>
 
             <div className="hud-divider" />
@@ -323,6 +424,18 @@ export default function Deck() {
                 aria-label="Өмнөх слайд"
                 disabled={index === 0}
                 onClick={() => step(-1)}
+            <div className="footer-nav">
+              <span className="footer-hint">← / → Гүйлгэх</span>
+              <motion.button
+                aria-label="Өмнөх слайд"
+                disabled={index === 0}
+                onClick={(e) => {
+                  step(-1);
+                  e.currentTarget.blur();
+                }}
+                whileHover={{ scale: 1.15 }}
+                whileTap={{ scale: 0.9 }}
+                transition={{ duration: 0.15 }}
               >
                 <ChevronLeft />
               </button>
@@ -338,6 +451,13 @@ export default function Deck() {
                 aria-label="Дараах слайд"
                 disabled={index === total - 1}
                 onClick={() => step(1)}
+                onClick={(e) => {
+                  step(1);
+                  e.currentTarget.blur();
+                }}
+                whileHover={{ scale: 1.15 }}
+                whileTap={{ scale: 0.9 }}
+                transition={{ duration: 0.15 }}
               >
                 <ChevronRight />
               </button>

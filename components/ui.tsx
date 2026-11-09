@@ -3,22 +3,24 @@
 import { motion, type MotionStyle, type Variants } from "framer-motion";
 import type { CSSProperties, ReactNode } from "react";
 
-export const EASE = [0.16, 1, 0.3, 1] as const;
+export const EASE = [0.19, 1, 0.22, 1] as const;
 export const EASE_IN = [0.7, 0, 0.84, 0] as const;
 export const EASE_IN_OUT = [0.65, 0, 0.35, 1] as const;
 
 // Слайдын доторх элементүүд ээлжлэн, зөөлөн гарч ирнэ
 export const itemV: Variants = {
-  enter: { opacity: 0, y: 40, scale: 0.95 },
+  enter: { opacity: 0, y: 32, scale: 0.97, filter: "blur(6px)" },
   center: {
     opacity: 1,
     y: 0,
     scale: 1,
+    filter: "blur(0px)",
     transition: {
-      duration: 0.9,
+      duration: 0.75,
       ease: EASE,
-      opacity: { duration: 0.7 },
-      scale: { type: "spring", stiffness: 200, damping: 24, mass: 0.8 },
+      opacity: { duration: 0.5 },
+      scale: { type: "spring", stiffness: 220, damping: 24, mass: 0.8 },
+      filter: { duration: 0.5 },
     },
   },
   exit: {},
@@ -201,27 +203,11 @@ export function Header({
 }) {
   return (
     <div className="header">
-      <R className="kicker">
-        <motion.span
-          className="kicker-bar"
-          style={{
-            display: "block",
-            width: 40,
-            height: 3,
-            marginBottom: 12,
-            borderRadius: 2,
-            background: "linear-gradient(90deg, #60a5fa, #a78bfa)",
-          }}
-          variants={{
-            enter: { scaleX: 0, originX: 0 },
-            center: {
-              scaleX: 1,
-              transition: { duration: 0.7, ease: EASE },
-            },
-            exit: {},
-          }}
-        />
-        {kicker}
+      <R className="kicker-wrapper">
+        <div className="kicker-pill">
+          <span className="kicker-diamond">◆</span>
+          <span className="kicker-label">{kicker}</span>
+        </div>
       </R>
       <R>
         <h2 className="title">{title}</h2>

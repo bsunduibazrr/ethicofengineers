@@ -22,6 +22,7 @@ import {
   Author,
   Book,
   Cover,
+  Structure,
   StructureCh1,
   StructureCh2,
   StructureCh3,
