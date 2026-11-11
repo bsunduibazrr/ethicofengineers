@@ -1,0 +1,432 @@
+{
+  "date": "2026-11-11",
+  "method": "fontTools TTFont.getBestCmap inspected from bundled WOFF2 font files; WOFF2 Brotli decompression via Node zlib",
+  "requiredCharacters": "ӨөҮүЁёЪъЬь",
+  "fontCss": "app/fonts.css",
+  "fontCssSha256": "62d9b55b3d9c421852ffc2ea822c367dc1f16a389adb63e0931febe8cce6b8d2",
+  "families": {
+    "IBM Plex Sans": {
+      "Ө": true,
+      "ө": true,
+      "Ү": true,
+      "ү": true,
+      "Ё": true,
+      "ё": true,
+      "Ъ": true,
+      "ъ": true,
+      "Ь": true,
+      "ь": true
+    },
+    "PT Serif": {
+      "Ө": true,
+      "ө": true,
+      "Ү": true,
+      "ү": true,
+      "Ё": true,
+      "ё": true,
+      "Ъ": true,
+      "ъ": true,
+      "Ь": true,
+      "ь": true
+    }
+  },
+  "passed": true,
+  "fonts": [
+    {
+      "file": "public/fonts/03fc1b4a8d284b5e-s.p.0wiir8udbzjvx.woff2",
+      "sha256": "056e4e2459f57a0033c8c9c844ff19d6e42ac8602027803d4345823bcc939818",
+      "family": "IBM Plex Sans",
+      "style": "Regular",
+      "requiredGlyphs": {
+        "Ө": false,
+        "ө": false,
+        "Ү": false,
+        "ү": false,
+        "Ё": false,
+        "ё": false,
+        "Ъ": false,
+        "ъ": false,
+        "Ь": false,
+        "ь": false
+      }
+    },
+    {
+      "file": "public/fonts/1bcd0e671759a44c-s.p.2qt3tdwt-y9x_.woff2",
+      "sha256": "5bac72520e0a9a5669e08b15fa1e15be6f4da74aa0b2d4315a97c11e1465120a",
+      "family": "IBM Plex Sans",
+      "style": "Regular",
+      "requiredGlyphs": {
+        "Ө": false,
+        "ө": false,
+        "Ү": false,
+        "ү": false,
+        "Ё": true,
+        "ё": true,
+        "Ъ": true,
+        "ъ": true,
+        "Ь": true,
+        "ь": true
+      }
+    },
+    {
+      "file": "public/fonts/35597f1def34002a-s.p.15jyn9s6-kaki.woff2",
+      "sha256": "8e7689d802131334ff5e4e36bd5235f23dc7962306356123fbc55bc221b67d03",
+      "family": "PT Serif",
+      "style": "Bold",
+      "requiredGlyphs": {
+        "Ө": false,
+        "ө": false,
+        "Ү": false,
+        "ү": false,
+        "Ё": true,
+        "ё": true,
+        "Ъ": true,
+        "ъ": true,
+        "Ь": true,
+        "ь": true
+      }
+    },
+    {
+      "file": "public/fonts/4ef259ff0c2d5fc1-s.p.3qag5m9j10l3t.woff2",
+      "sha256": "574d529d6a766c01add523948f50b2791dd9632af6eef1f9222543be0108b21a",
+      "family": "PT Serif",
+      "style": "Italic",
+      "requiredGlyphs": {
+        "Ө": true,
+        "ө": true,
+        "Ү": true,
+        "ү": true,
+        "Ё": false,
+        "ё": false,
+        "Ъ": false,
+        "ъ": false,
+        "Ь": false,
+        "ь": false
+      }
+    },
+    {
+      "file": "public/fonts/57215795b8570f5c-s.2rixgazldzomk.woff2",
+      "sha256": "ae1d854fefa1167a79071f1afe01d4d51b60c5840c1be36dd74bd5fe7375b405",
+      "family": "IBM Plex Sans",
+      "style": "Regular",
+      "requiredGlyphs": {
+        "Ө": false,
+        "ө": false,
+        "Ү": false,
+        "ү": false,
+        "Ё": false,
+        "ё": false,
+        "Ъ": false,
+        "ъ": false,
+        "Ь": false,
+        "ь": false
+      }
+    },
+    {
+      "file": "public/fonts/6ab71d031fe7ae3b-s.p.141jscyq52bjf.woff2",
+      "sha256": "219a8e6238f7f0b4bbd73b68ee78d0211d44c7808510fa5b9da6a1621bf63e6d",
+      "family": "PT Serif",
+      "style": "Italic",
+      "requiredGlyphs": {
+        "Ө": false,
+        "ө": false,
+        "Ү": false,
+        "ү": false,
+        "Ё": false,
+        "ё": false,
+        "Ъ": false,
+        "ъ": false,
+        "Ь": false,
+        "ь": false
+      }
+    },
+    {
+      "file": "public/fonts/753335dc41989450-s.p.31dxb4o1frf77.woff2",
+      "sha256": "74e166eb49862f3d8ea001d625b67993437e1d663c6f132aed3a20a42c8cac51",
+      "family": "PT Serif",
+      "style": "Bold Italic",
+      "requiredGlyphs": {
+        "Ө": true,
+        "ө": true,
+        "Ү": true,
+        "ү": true,
+        "Ё": false,
+        "ё": false,
+        "Ъ": false,
+        "ъ": false,
+        "Ь": false,
+        "ь": false
+      }
+    },
+    {
+      "file": "public/fonts/7fea77d1d19108bf-s.p.2y65deuc30pmy.woff2",
+      "sha256": "c01b3de8c8058462caadd044a6b874a9f4d7098d7d71d6c70e6a278096b8640e",
+      "family": "IBM Plex Sans",
+      "style": "Regular",
+      "requiredGlyphs": {
+        "Ө": true,
+        "ө": true,
+        "Ү": true,
+        "ү": true,
+        "Ё": false,
+        "ё": false,
+        "Ъ": false,
+        "ъ": false,
+        "Ь": false,
+        "ь": false
+      }
+    },
+    {
+      "file": "public/fonts/80bb744e92754df7-s.p.2eihtoujcoclr.woff2",
+      "sha256": "202b8aa6108ec44ba8f3d717b0c9f7f94c7f4d76f01943104eaadaf6cf3da602",
+      "family": "PT Serif",
+      "style": "Regular",
+      "requiredGlyphs": {
+        "Ө": false,
+        "ө": false,
+        "Ү": false,
+        "ү": false,
+        "Ё": false,
+        "ё": false,
+        "Ъ": false,
+        "ъ": false,
+        "Ь": false,
+        "ь": false
+      }
+    },
+    {
+      "file": "public/fonts/8fe616373cda781a-s.p.2o66go2_90jnc.woff2",
+      "sha256": "3a7b3ec02adf72947410474afcffe77d8049cb725cc36728dbd12706477d4fcf",
+      "family": "PT Serif",
+      "style": "Regular",
+      "requiredGlyphs": {
+        "Ө": true,
+        "ө": true,
+        "Ү": true,
+        "ү": true,
+        "Ё": false,
+        "ё": false,
+        "Ъ": false,
+        "ъ": false,
+        "Ь": false,
+        "ь": false
+      }
+    },
+    {
+      "file": "public/fonts/90c51ce8fb754fe8-s.02z5rrbg5nt92.woff2",
+      "sha256": "526a4dd36c3af41f73a623e852302d8947d7fd4c00ee3026d82ef1f24a412fcd",
+      "family": "IBM Plex Sans",
+      "style": "Regular",
+      "requiredGlyphs": {
+        "Ө": false,
+        "ө": false,
+        "Ү": false,
+        "ү": false,
+        "Ё": false,
+        "ё": false,
+        "Ъ": false,
+        "ъ": false,
+        "Ь": false,
+        "ь": false
+      }
+    },
+    {
+      "file": "public/fonts/ac972b96b88588e0-s.p.0u9hc_fqg-qvm.woff2",
+      "sha256": "a60d74d7dc6d8344914e202cee779bf29d92f2514dd86e87978b2aa401256d8c",
+      "family": "PT Serif",
+      "style": "Regular",
+      "requiredGlyphs": {
+        "Ө": false,
+        "ө": false,
+        "Ү": false,
+        "ү": false,
+        "Ё": true,
+        "ё": true,
+        "Ъ": true,
+        "ъ": true,
+        "Ь": true,
+        "ь": true
+      }
+    },
+    {
+      "file": "public/fonts/b85b15db928600ba-s.19sks3do5w_eg.woff2",
+      "sha256": "b0b1062d323a222dc43d23539526183b2f208317f79aa905aa89f98e8113c69a",
+      "family": "PT Serif",
+      "style": "Bold Italic",
+      "requiredGlyphs": {
+        "Ө": false,
+        "ө": false,
+        "Ү": false,
+        "ү": false,
+        "Ё": false,
+        "ё": false,
+        "Ъ": false,
+        "ъ": false,
+        "Ь": false,
+        "ь": false
+      }
+    },
+    {
+      "file": "public/fonts/be22fa5a631c612a-s.p.2h23__klh7p4r.woff2",
+      "sha256": "6c04cd23c5718f92a6f240f24db8af16082ceeb4ac8abfa29ddbb0fb4a5ac64e",
+      "family": "PT Serif",
+      "style": "Italic",
+      "requiredGlyphs": {
+        "Ө": false,
+        "ө": false,
+        "Ү": false,
+        "ү": false,
+        "Ё": true,
+        "ё": true,
+        "Ъ": true,
+        "ъ": true,
+        "Ь": true,
+        "ь": true
+      }
+    },
+    {
+      "file": "public/fonts/bec5c09c262b1b7f-s.p.3axch3fp2h9wp.woff2",
+      "sha256": "57d3ae6c4b78cc2d5b568212e1fcd75e5a0be45e6249e55750ba77d22e22bc3b",
+      "family": "PT Serif",
+      "style": "Bold",
+      "requiredGlyphs": {
+        "Ө": false,
+        "ө": false,
+        "Ү": false,
+        "ү": false,
+        "Ё": false,
+        "ё": false,
+        "Ъ": false,
+        "ъ": false,
+        "Ь": false,
+        "ь": false
+      }
+    },
+    {
+      "file": "public/fonts/c313dc4eda25f719-s.p.2bry8-mbc5ri0.woff2",
+      "sha256": "c4ccc041f7601de446b71e38de328ff979696476f9e10d20e5df8d511691ceae",
+      "family": "PT Serif",
+      "style": "Bold Italic",
+      "requiredGlyphs": {
+        "Ө": false,
+        "ө": false,
+        "Ү": false,
+        "ү": false,
+        "Ё": false,
+        "ё": false,
+        "Ъ": false,
+        "ъ": false,
+        "Ь": false,
+        "ь": false
+      }
+    },
+    {
+      "file": "public/fonts/d0ea3402e6e0063f-s.1w5nocn3fi8i3.woff2",
+      "sha256": "6ca06514dc77d3461b1cbc85d5693fc1042cba121a574c0b8155f63f5c0e7efd",
+      "family": "PT Serif",
+      "style": "Italic",
+      "requiredGlyphs": {
+        "Ө": false,
+        "ө": false,
+        "Ү": false,
+        "ү": false,
+        "Ё": false,
+        "ё": false,
+        "Ъ": false,
+        "ъ": false,
+        "Ь": false,
+        "ь": false
+      }
+    },
+    {
+      "file": "public/fonts/d7c80d408cfc89af-s.227lsm-i-u5c5.woff2",
+      "sha256": "1895f8fe0add5c53f4d9450430e4907cd2e2bf1c1f31f9974e3f51722e519389",
+      "family": "PT Serif",
+      "style": "Bold",
+      "requiredGlyphs": {
+        "Ө": false,
+        "ө": false,
+        "Ү": false,
+        "ү": false,
+        "Ё": false,
+        "ё": false,
+        "Ъ": false,
+        "ъ": false,
+        "Ь": false,
+        "ь": false
+      }
+    },
+    {
+      "file": "public/fonts/ddbd854add8353d7-s.p.1ht_rhgwo8zdn.woff2",
+      "sha256": "117410c3c0e4fb2cb5e78fcbff0c5a232cfde3481da825437013f26959c77524",
+      "family": "PT Serif",
+      "style": "Bold",
+      "requiredGlyphs": {
+        "Ө": true,
+        "ө": true,
+        "Ү": true,
+        "ү": true,
+        "Ё": false,
+        "ё": false,
+        "Ъ": false,
+        "ъ": false,
+        "Ь": false,
+        "ь": false
+      }
+    },
+    {
+      "file": "public/fonts/e0056d9a15a9b92a-s.p.1nqvxv2d6huul.woff2",
+      "sha256": "c28540eacdd511c61f954bec63e76e9ee5fac1100eaeb2ac2eac9269a69daa9c",
+      "family": "PT Serif",
+      "style": "Bold Italic",
+      "requiredGlyphs": {
+        "Ө": false,
+        "ө": false,
+        "Ү": false,
+        "ү": false,
+        "Ё": true,
+        "ё": true,
+        "Ъ": true,
+        "ъ": true,
+        "Ь": true,
+        "ь": true
+      }
+    },
+    {
+      "file": "public/fonts/e15f58668ad64cb8-s.3cvcemwuzoywn.woff2",
+      "sha256": "a29d4e6345cdb7e2b6daabf4961a6dcafcbc7ed1eac26186ca4a004cd32d64d8",
+      "family": "IBM Plex Sans",
+      "style": "Regular",
+      "requiredGlyphs": {
+        "Ө": false,
+        "ө": false,
+        "Ү": false,
+        "ү": false,
+        "Ё": false,
+        "ё": false,
+        "Ъ": false,
+        "ъ": false,
+        "Ь": false,
+        "ь": false
+      }
+    },
+    {
+      "file": "public/fonts/ea95a6c50203df72-s.3-wuczr-njsez.woff2",
+      "sha256": "3a274c5ae6fd7bcbd384a080bc8cf124c9a5ba524fc8ae77f12da84b2e455bbf",
+      "family": "PT Serif",
+      "style": "Regular",
+      "requiredGlyphs": {
+        "Ө": false,
+        "ө": false,
+        "Ү": false,
+        "ү": false,
+        "Ё": false,
+        "ё": false,
+        "Ъ": false,
+        "ъ": false,
+        "Ь": false,
+        "ь": false
+      }
+    }
+  ]
+}

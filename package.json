@@ -5,7 +5,11 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "export:html": "node scripts/extract-content.cjs --check && node scripts/build-design.cjs && node scripts/export-html.cjs",
+    "verify:content": "node scripts/extract-content.cjs --check",
+    "verify:browser": "node scripts/verify-browser.cjs",
+    "design": "node scripts/build-design.cjs"
   },
   "dependencies": {
     "framer-motion": "^14.5.0",

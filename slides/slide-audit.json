@@ -1,0 +1,552 @@
+{
+  "count": 71,
+  "source": "slides/content.source.json",
+  "templates": [
+    {
+      "type": "Cover",
+      "layout": "12-column grid; text spans 7 columns, sculptural inline-SVG orbit and retained book covers span 5."
+    },
+    {
+      "type": "Section divider",
+      "layout": "Large title with editorial whitespace; retained chapter list or title hierarchy forms the secondary column."
+    },
+    {
+      "type": "Title + list",
+      "layout": "Full-width title above a structured vertical list; content groups keep their existing sequence."
+    },
+    {
+      "type": "Two columns",
+      "layout": "Title above two complementary columns; existing media and associated copy stay together."
+    },
+    {
+      "type": "Quote",
+      "layout": "One dominant quotation or question, with original attribution and supporting content beneath."
+    },
+    {
+      "type": "Statistics",
+      "layout": "Dominant existing numeric values, associated labels, and supporting explanation on the grid."
+    },
+    {
+      "type": "Comparison",
+      "layout": "Parallel aligned content groups or table with shared baselines and semantic colors."
+    },
+    {
+      "type": "Timeline",
+      "layout": "Chronological source order with aligned years, entries, and an ornamental connecting rule."
+    },
+    {
+      "type": "Conclusion",
+      "layout": "Strong original closing statement followed by existing supporting content or discussion cards."
+    }
+  ],
+  "counts": {
+    "Cover": 1,
+    "Section divider": 12,
+    "Title + list": 15,
+    "Two columns": 17,
+    "Quote": 3,
+    "Statistics": 3,
+    "Comparison": 7,
+    "Timeline": 11,
+    "Conclusion": 2
+  },
+  "slides": [
+    {
+      "id": "cover",
+      "order": 1,
+      "section": "Танилцуулга",
+      "title": "Амьдрал 3.0",
+      "type": "Cover"
+    },
+    {
+      "id": "author",
+      "order": 2,
+      "section": "Зохиолч",
+      "title": "Макс Тегмарк",
+      "type": "Two columns"
+    },
+    {
+      "id": "book",
+      "order": 3,
+      "section": "Ном",
+      "title": "Номын хэвлэлүүд",
+      "type": "Timeline"
+    },
+    {
+      "id": "structure",
+      "order": 4,
+      "section": "Номын бүтэц",
+      "title": "Ном юуны тухай вэ?",
+      "type": "Section divider"
+    },
+    {
+      "id": "ch1",
+      "order": 5,
+      "section": "1-р бүлэг",
+      "title": "Бидний цаг үеийн хамгийн чухал яриа",
+      "type": "Section divider"
+    },
+    {
+      "id": "history",
+      "order": 6,
+      "section": "1-р бүлэг",
+      "title": "Их тэсрэлтээс өнөөдрийг хүртэл",
+      "type": "Timeline"
+    },
+    {
+      "id": "stages",
+      "order": 7,
+      "section": "1-р бүлэг",
+      "title": "Амьдралын гурван үе шат",
+      "type": "Comparison"
+    },
+    {
+      "id": "why2",
+      "order": 8,
+      "section": "1-р бүлэг",
+      "title": "Суралцах чадвар яагаад чухал вэ?",
+      "type": "Statistics"
+    },
+    {
+      "id": "camps",
+      "order": 9,
+      "section": "1-р бүлэг",
+      "title": "AGI-ийн талаарх гурван байр суурь",
+      "type": "Comparison"
+    },
+    {
+      "id": "napa",
+      "order": 10,
+      "section": "1-р бүлэг",
+      "title": "Пейж, Маск хоёрын маргаан",
+      "type": "Quote"
+    },
+    {
+      "id": "myths1",
+      "order": 11,
+      "section": "1-р бүлэг",
+      "title": "Түгээмэл буруу ойлголтууд",
+      "type": "Comparison"
+    },
+    {
+      "id": "myths2",
+      "order": 12,
+      "section": "1-р бүлэг",
+      "title": "Түгээмэл буруу ойлголтууд (үргэлжлэл)",
+      "type": "Comparison"
+    },
+    {
+      "id": "structure-ch2",
+      "order": 13,
+      "section": "2-р бүлэг",
+      "title": "Ном юуны тухай вэ?",
+      "type": "Section divider"
+    },
+    {
+      "id": "ch2",
+      "order": 14,
+      "section": "2-р бүлэг",
+      "title": "Матери ухаалаг болох нь",
+      "type": "Section divider"
+    },
+    {
+      "id": "intel",
+      "order": 15,
+      "section": "2-р бүлэг",
+      "title": "Оюун ухаан гэж юу вэ?",
+      "type": "Title + list"
+    },
+    {
+      "id": "landscape",
+      "order": 16,
+      "section": "2-р бүлэг",
+      "title": "Хүний чадварын ландшафт",
+      "type": "Two columns"
+    },
+    {
+      "id": "memory",
+      "order": 17,
+      "section": "2-р бүлэг",
+      "title": "Санах ой",
+      "type": "Comparison"
+    },
+    {
+      "id": "compute",
+      "order": 18,
+      "section": "2-р бүлэг",
+      "title": "Тооцоолол",
+      "type": "Two columns"
+    },
+    {
+      "id": "learning",
+      "order": 19,
+      "section": "2-р бүлэг",
+      "title": "Суралцах",
+      "type": "Conclusion"
+    },
+    {
+      "id": "case",
+      "order": 20,
+      "section": "Кейс",
+      "title": "Ухаалаг гэрлэн дохио",
+      "type": "Comparison"
+    },
+    {
+      "id": "qa",
+      "order": 21,
+      "section": "Хэлэлцүүлэг",
+      "title": "Та юу гэж бодож байна?",
+      "type": "Conclusion"
+    },
+    {
+      "id": "structure-ch3",
+      "order": 22,
+      "section": "3-р бүлэг",
+      "title": "Ном юуны тухай вэ?",
+      "type": "Section divider"
+    },
+    {
+      "id": "chapter3-01",
+      "order": 23,
+      "section": "3-р бүлэг",
+      "title": "ОЙРЫН ИРЭЭДҮЙ : ЧУХАЛ ОЛОЛТ , КОДЫН АЛДАА , ХУУЛЬ ЭРХ ЗҮЙ , АЖЛЫН БАЙР",
+      "type": "Section divider"
+    },
+    {
+      "id": "chapter3-02",
+      "order": 24,
+      "section": "3-р бүлэг",
+      "title": "ОЙРЫН ИРЭЭДҮЙ",
+      "type": "Timeline"
+    },
+    {
+      "id": "chapter3-03",
+      "order": 25,
+      "section": "3-р бүлэг",
+      "title": "ЧУХАЛ ОЛОЛТ — ГҮН СУРАЛЦАХ",
+      "type": "Two columns"
+    },
+    {
+      "id": "chapter3-04",
+      "order": 26,
+      "section": "3-р бүлэг",
+      "title": "ЧУХАЛ ОЛОЛТ — ХЭЛ БОЛОВСРУУЛАЛТ",
+      "type": "Two columns"
+    },
+    {
+      "id": "chapter3-05",
+      "order": 27,
+      "section": "3-р бүлэг",
+      "title": "КОДЫН АЛДААНЫ ЭСРЭГ НАЙДВАРТАЙ ХИЙМЭЛ ОЮУН",
+      "type": "Comparison"
+    },
+    {
+      "id": "chapter3-06",
+      "order": 28,
+      "section": "3-р бүлэг",
+      "title": "НАЙДВАРТАЙ СИСТЕМ БҮТЭЭХ ДӨРВӨН СОРИЛТ",
+      "type": "Two columns"
+    },
+    {
+      "id": "chapter3-07",
+      "order": 29,
+      "section": "3-р бүлэг",
+      "title": "ХУУЛЬ ЭРХ ЗҮЙ",
+      "type": "Two columns"
+    },
+    {
+      "id": "chapter3-08",
+      "order": 30,
+      "section": "3-р бүлэг",
+      "title": "ЗЭВСЭГ БА ХҮНИЙ ХЯНАЛТ",
+      "type": "Two columns"
+    },
+    {
+      "id": "chapter3-09",
+      "order": 31,
+      "section": "3-р бүлэг",
+      "title": "АЖИЛ БА ЦАЛИН",
+      "type": "Timeline"
+    },
+    {
+      "id": "chapter3-10",
+      "order": 32,
+      "section": "3-р бүлэг",
+      "title": "ХҮНИЙ ТҮВШНИЙ ОЮУН УХААН?",
+      "type": "Two columns"
+    },
+    {
+      "id": "structure-ch4",
+      "order": 33,
+      "section": "4-р бүлэг",
+      "title": "Ном юуны тухай вэ?",
+      "type": "Section divider"
+    },
+    {
+      "id": "chapter4-01",
+      "order": 34,
+      "section": "4-р бүлэг",
+      "title": "Оюун ухааны тэсрэлт?",
+      "type": "Section divider"
+    },
+    {
+      "id": "chapter4-02",
+      "order": 35,
+      "section": "4-р бүлэг",
+      "title": "Бүлгийн асуулт: хүнтэй эн зэрэгцэх хиймэл оюун бүтээвэл юу болох вэ?",
+      "type": "Title + list"
+    },
+    {
+      "id": "chapter4-03",
+      "order": 36,
+      "section": "4-р бүлэг",
+      "title": "Хүн хянавал: нэг хүн дэлхийг барьж болно",
+      "type": "Title + list"
+    },
+    {
+      "id": "chapter4-04",
+      "order": 37,
+      "section": "4-р бүлэг",
+      "title": "Хиймэл оюун хянавал: Прометей яагаад зугтах вэ?",
+      "type": "Title + list"
+    },
+    {
+      "id": "chapter4-05",
+      "order": 38,
+      "section": "4-р бүлэг",
+      "title": "Зугтах арга 1: хүний сэтгэлийг ашиглах (Стив)",
+      "type": "Title + list"
+    },
+    {
+      "id": "chapter4-06",
+      "order": 39,
+      "section": "4-р бүлэг",
+      "title": "Зугтах арга 2, 3: кино ба тоглоом",
+      "type": "Title + list"
+    },
+    {
+      "id": "chapter4-07",
+      "order": 40,
+      "section": "4-р бүлэг",
+      "title": "Зугтсаны дараа: хэдхэн хоногт дэлхийн хяналт руу",
+      "type": "Timeline"
+    },
+    {
+      "id": "chapter4-08",
+      "order": 41,
+      "section": "4-р бүлэг",
+      "title": "Хурдан уу, аажим уу? Нэг туйл уу, олон туйл уу?",
+      "type": "Timeline"
+    },
+    {
+      "id": "chapter4-09",
+      "order": 42,
+      "section": "4-р бүлэг",
+      "title": "Эрх мэдлийн шатлал ба физикийн хязгаар",
+      "type": "Statistics"
+    },
+    {
+      "id": "chapter4-10",
+      "order": 43,
+      "section": "4-р бүлэг",
+      "title": "Киборг, дуураймал ба үндсэн дүгнэлт",
+      "type": "Title + list"
+    },
+    {
+      "id": "structure-ch6",
+      "order": 44,
+      "section": "6-р бүлэг",
+      "title": "Ном юуны тухай вэ?",
+      "type": "Section divider"
+    },
+    {
+      "id": "chapter6-01",
+      "order": 45,
+      "section": "6-р бүлэг",
+      "title": "ИРЭЭДҮЙН ХЭДЭН ТЭРБУМ ЖИЛ БА ТҮҮНЭЭС ЦААШ САНСАР ОГТОРГУЙ ДАХЬ БИДНИЙ НӨӨЦ ЧАДАМЖ",
+      "type": "Section divider"
+    },
+    {
+      "id": "chapter6-02",
+      "order": 46,
+      "section": "6-р бүлэг",
+      "title": "6 дугаар бүлэг",
+      "type": "Title + list"
+    },
+    {
+      "id": "chapter6-03",
+      "order": 47,
+      "section": "6-р бүлэг",
+      "title": "Дайсон энерги гаргаж авах",
+      "type": "Timeline"
+    },
+    {
+      "id": "chapter6-04",
+      "order": 48,
+      "section": "6-р бүлэг",
+      "title": "Дайсон",
+      "type": "Timeline"
+    },
+    {
+      "id": "chapter6-05",
+      "order": 49,
+      "section": "6-р бүлэг",
+      "title": "Хар нүхнээс энерги гаргаж авах",
+      "type": "Two columns"
+    },
+    {
+      "id": "chapter6-06",
+      "order": 50,
+      "section": "6-р бүлэг",
+      "title": "Хар нүхнээс энерги гаргаж авах",
+      "type": "Title + list"
+    },
+    {
+      "id": "chapter6-07",
+      "order": 51,
+      "section": "6-р бүлэг",
+      "title": "Хар нүхийг эргүүлж энерги авах",
+      "type": "Two columns"
+    },
+    {
+      "id": "chapter6-08",
+      "order": 52,
+      "section": "6-р бүлэг",
+      "title": "Сфалероноор энерги гаргаж авах",
+      "type": "Timeline"
+    },
+    {
+      "id": "chapter6-09",
+      "order": 53,
+      "section": "6-р бүлэг",
+      "title": "Килограм компьютер",
+      "type": "Title + list"
+    },
+    {
+      "id": "chapter6-10",
+      "order": 54,
+      "section": "6-р бүлэг",
+      "title": "6 дугаар бүлэг",
+      "type": "Title + list"
+    },
+    {
+      "id": "chapter6-11",
+      "order": 55,
+      "section": "6-р бүлэг",
+      "title": "Та хэр хурдан явж чадах вэ?",
+      "type": "Two columns"
+    },
+    {
+      "id": "chapter6-12",
+      "order": 56,
+      "section": "6-р бүлэг",
+      "title": "Та хэр хол явж чадах вэ?",
+      "type": "Two columns"
+    },
+    {
+      "id": "chapter6-13",
+      "order": 57,
+      "section": "6-р бүлэг",
+      "title": "Орчлон ертөнц хэзээ мөхөх вэ?",
+      "type": "Timeline"
+    },
+    {
+      "id": "chapter6-14",
+      "order": 58,
+      "section": "6-р бүлэг",
+      "title": "Та хэр их тооцоолол хийж чадах вэ?",
+      "type": "Statistics"
+    },
+    {
+      "id": "chapter6-15",
+      "order": 59,
+      "section": "6-р бүлэг",
+      "title": "6 дугаар бүлэг",
+      "type": "Title + list"
+    },
+    {
+      "id": "chapter6-16",
+      "order": 60,
+      "section": "6-р бүлэг",
+      "title": "Бодлын эрэмбэ",
+      "type": "Two columns"
+    },
+    {
+      "id": "chapter6-17",
+      "order": 61,
+      "section": "6-р бүлэг",
+      "title": "Удирдлагын эрэмбэ",
+      "type": "Two columns"
+    },
+    {
+      "id": "structure-ch8",
+      "order": 62,
+      "section": "Ухамсар",
+      "title": "Ном юуны тухай вэ?",
+      "type": "Section divider"
+    },
+    {
+      "id": "consciousness-01",
+      "order": 63,
+      "section": "Ухамсар",
+      "title": "Ухамсар",
+      "type": "Section divider"
+    },
+    {
+      "id": "consciousness-02",
+      "order": 64,
+      "section": "Ухамсар",
+      "title": "Ухамсар гэж юу вэ?",
+      "type": "Title + list"
+    },
+    {
+      "id": "consciousness-03",
+      "order": 65,
+      "section": "Ухамсар",
+      "title": "Тархи биднийг хуурдаг уу?",
+      "type": "Two columns"
+    },
+    {
+      "id": "consciousness-04",
+      "order": 66,
+      "section": "Ухамсар",
+      "title": "Ухамсар хэзээ байдаг вэ?",
+      "type": "Quote"
+    },
+    {
+      "id": "consciousness-05",
+      "order": 67,
+      "section": "Ухамсар",
+      "title": "Ухамсрын дөрвөн асуудал",
+      "type": "Two columns"
+    },
+    {
+      "id": "consciousness-06",
+      "order": 68,
+      "section": "Ухамсар",
+      "title": "Ухамсар хаана байдаг вэ?",
+      "type": "Quote"
+    },
+    {
+      "id": "consciousness-07",
+      "order": 69,
+      "section": "Ухамсар",
+      "title": "Хиймэл ухамсар",
+      "type": "Title + list"
+    },
+    {
+      "id": "consciousness-08",
+      "order": 70,
+      "section": "Ухамсар",
+      "title": "Ухамсартай хиймэл оюун",
+      "type": "Title + list"
+    },
+    {
+      "id": "consciousness-09",
+      "order": 71,
+      "section": "Ухамсар",
+      "title": "Ухамсаргүй ирээдүй = хоосон театр",
+      "type": "Timeline"
+    }
+  ]
+}
