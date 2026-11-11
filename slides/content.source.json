@@ -9,10 +9,10 @@
     "body": [],
     "list": [],
     "quote": "",
-    "notes": "Сайн байна уу. Өнөөдөр Макс Тегмаркийн Амьдрал 3.0 номын эхний хоёр бүлгийг танилцуулна. Ном хиймэл оюун ухаан хүн төрөлхтөнд юу авчрах вэ гэдгийг асуудаг. Инженерийн ёс зүйтэй шууд холбоотой гэж бодоод сонгосон.",
-    "html": "<div class=\"cover\"><div class=\"cover-text\"><div class=\"kicker\">Инженерийн ёс зүй</div><div><h1 class=\"cover-title\">Амьдрал <span>3.0</span></h1></div><div class=\"cover-sub\">Хиймэл оюуны эринд хүн байхуй</div><div class=\"cover-en\">Life 3.0: Being Human in the Age of Artificial Intelligence</div><div class=\"cover-meta\"><div><small>Зохиолч</small><b>Макс Тегмарк</b></div><div><small>Сэдэв</small><b>Номын 1, 2-р бүлэг</b></div><div><small>Илтгэгч</small><b>Илтгэгчийн нэр</b></div></div></div><div class=\"cover-books\"><img src=\"/img/cover-us-2017.jpg\" alt=\"Life 3.0, анхны хэвлэл\" class=\"book-cover cb-back\" style=\"rotate:-5px\" draggable=\"false\"/><img src=\"/img/cover-mn.jpg\" alt=\"Амьдрал 3.0, монгол хэвлэл\" class=\"book-cover cb-front\" style=\"rotate:4px\" draggable=\"false\"/></div></div>",
+    "notes": "Сайн байна уу. Өнөөдөр Макс Тегмаркийн Амьдрал 3.0 номын эхний хоёр бүлгийг танилцуулна. Ном хиймэл оюун ухаан хүн төрөлхтөнд юу авчрах вэ гэдгийг асуудаг.  тэй шууд холбоотой гэж бодоод сонгосон.",
+    "html": "<div class=\"cover\"><div class=\"cover-text\"><div class=\"kicker\"> </div><div><h1 class=\"cover-title\">Амьдрал <span>3.0</span></h1></div><div class=\"cover-sub\">Хиймэл оюуны эринд хүн байхуй</div><div class=\"cover-en\">Life 3.0: Being Human in the Age of Artificial Intelligence</div><div class=\"cover-meta\"><div><small>Зохиолч</small><b>Макс Тегмарк</b></div><div><small>Сэдэв</small><b>Номын 1, 2, 3, 4, 6, 8-р бүлэг</b></div><div><small>  </small><b> </b></div></div></div><div class=\"cover-books\"><img src=\"/img/cover-us-2017.jpg\" alt=\"Life 3.0, анхны хэвлэл\" class=\"book-cover cb-back\" style=\"rotate:-5px\" draggable=\"false\"/><img src=\"/img/cover-mn.jpg\" alt=\"Амьдрал 3.0, монгол хэвлэл\" class=\"book-cover cb-front\" style=\"rotate:4px\" draggable=\"false\"/></div></div>",
     "textNodes": [
-      "Инженерийн ёс зүй",
+      " ",
       "Амьдрал ",
       "3.0",
       "Хиймэл оюуны эринд хүн байхуй",
@@ -20,11 +20,11 @@
       "Зохиолч",
       "Макс Тегмарк",
       "Сэдэв",
-      "Номын 1, 2-р бүлэг",
-      "Илтгэгч",
-      "Илтгэгчийн нэр"
+      "Номын 1, 2, 3, 4, 6, 8-р бүлэг",
+      "  ",
+      " "
     ],
-    "text": "Инженерийн ёс зүйАмьдрал 3.0Хиймэл оюуны эринд хүн байхуйLife 3.0: Being Human in the Age of Artificial IntelligenceЗохиолчМакс ТегмаркСэдэвНомын 1, 2-р бүлэгИлтгэгчИлтгэгчийн нэр",
+    "text": " Амьдрал 3.0Хиймэл оюуны эринд хүн байхуйLife 3.0: Being Human in the Age of Artificial IntelligenceЗохиолчМакс ТегмаркСэдэвНомын 1, 2, 3, 4, 6, 8-р бүлэг   ",
     "sha256": "acd2c521464e1a7b2255954e0098c1fc70281668da0e3ecaebc7baf61d468475"
   },
   {
@@ -86,9 +86,7 @@
     "type": "Timeline",
     "title": "Номын хэвлэлүүд",
     "subtitle": "",
-    "body": [
-      "«Амьдрал 3.0: Хиймэл оюуны эринд хүн байхуй»"
-    ],
+    "body": ["«Амьдрал 3.0: Хиймэл оюуны эринд хүн байхуй»"],
     "list": [],
     "quote": "",
     "notes": "2017 онд Knopf-оос анх гарсан, 2018 онд зөөлөн хавтастай нь гарсан. NYT бестселлер, Обама жагсаалтдаа оруулсан, Маск зөвлөсөн. Монгол хувилбарыг Г. Үүрдмандах орчуулж, Монсудар хэвлэсэн.",
@@ -200,9 +198,7 @@
     "type": "Section divider",
     "title": "Бидний цаг үеийн хамгийн чухал яриа",
     "subtitle": "",
-    "body": [
-      "Hubble Ultra Deep Field, NASA/ESA"
-    ],
+    "body": ["Hubble Ultra Deep Field, NASA/ESA"],
     "list": [],
     "quote": "",
     "notes": "1-р бүлэг. Гурван зүйл ярина: амьдралын гурван үе шат, AI-ийн талаарх маргаан, түгээмэл буруу ойлголтууд.",
@@ -408,10 +404,7 @@
     "type": "Quote",
     "title": "Пейж, Маск хоёрын маргаан",
     "subtitle": "",
-    "body": [
-      "Stansfield PL, CC BY-SA 3.0",
-      "Gage Skidmore, CC BY-SA 4.0"
-    ],
+    "body": ["Stansfield PL, CC BY-SA 3.0", "Gage Skidmore, CC BY-SA 4.0"],
     "list": [],
     "quote": "",
     "notes": "2015 онд Маскийн төрсөн өдөр дээр Пейж, Маск хоёр маргалдсан. Пейж Маскыг speciesist гэж нэрлэсэн. Ийм маргаан нэг үгийг өөр ойлгосноос болдог тул Тегмарк нэр томьёогоо эхлээд тодорхойлдог.",
@@ -589,9 +582,7 @@
     "type": "Section divider",
     "title": "Матери ухаалаг болох нь",
     "subtitle": "",
-    "body": [
-      "Intel 80486 процессорын цөм, 1.2 сая транзистортой"
-    ],
+    "body": ["Intel 80486 процессорын цөм, 1.2 сая транзистортой"],
     "list": [],
     "quote": "",
     "notes": "2-р бүлэг. Харрисоны ишлэлийг уншина. Гол асуулт: атомаас бүтсэн юм яаж ухаантай болдог вэ? Дөрвөн хэсэг: оюун ухаан, санах ой, тооцоолол, суралцах.",
@@ -2017,9 +2008,7 @@
     "type": "Comparison",
     "title": "КОДЫН АЛДААНЫ ЭСРЭГ НАЙДВАРТАЙ ХИЙМЭЛ ОЮУН",
     "subtitle": "",
-    "body": [
-      "КОДЫН АЛДААНЫ ЭСРЭГ НАЙДВАРТАЙ ХИЙМЭЛ ОЮУН"
-    ],
+    "body": ["КОДЫН АЛДААНЫ ЭСРЭГ НАЙДВАРТАЙ ХИЙМЭЛ ОЮУН"],
     "list": [],
     "quote": "",
     "notes": "",
@@ -2082,11 +2071,7 @@
           "w": 1034.9821522309712,
           "h": 511.1202099737533
         },
-        "cols": [
-          0.01919042166973223,
-          0.03283801020935375,
-          0.05663111166222333
-        ],
+        "cols": [0.01919042166973223, 0.03283801020935375, 0.05663111166222333],
         "rows": [
           {
             "h": 0.010217201589958735,
@@ -10973,18 +10958,12 @@
     "type": "Timeline",
     "title": "Дайсон",
     "subtitle": "",
-    "body": [
-      "Дайсон"
-    ],
+    "body": ["Дайсон"],
     "list": [],
     "quote": "",
     "notes": "",
     "html": "<div class=\"chapter3-canvas\"><div class=\"canvas-ambient-glow\"></div><div class=\"canvas-grid-pattern\"></div><div class=\"chapter3-node chapter3-text is-heading\" style=\"position:absolute;left:100.8px;top:57.599999999999994px;width:1713.6px;height:144px;display:flex;flex-direction:column;justify-content:center;padding-left:0;padding-right:0;padding-top:0;padding-bottom:0;overflow:hidden;transform-origin:left top;font-family:var(--serif), Georgia, serif;font-size:48px;font-weight:700;line-height:1.18;letter-spacing:-0.015em\"><div class=\"kicker-wrapper\" style=\"margin-bottom:12px\"><div class=\"kicker-pill\"><span class=\"kicker-diamond\">◆</span><span class=\"kicker-label\">6-р бүлэг · Дараагийн тэрбум жил</span></div></div><div class=\"chapter3-text-content\" style=\"width:100%;transform-origin:left top\"><div class=\"chapter3-paragraph\" style=\"text-align:left;margin-left:0;text-indent:0;margin-bottom:8px;position:relative\"><span class=\"chapter3-heading-run\" style=\"font-family:var(--serif), Georgia, serif;font-weight:700;color:var(--text)\">Дайсон</span></div></div></div><div class=\"chapter3-node chapter3-image-node\" style=\"position:absolute;left:100.8px;top:330.40708661417324px;width:1713.6px;height:548.7858267716535px\"><img src=\"/slides/imported/chapter6/image2.png\" alt=\"Дайсоны цагираг, сүрэг, бөмбөрцөг, бүрхүүлийн зураглал\" draggable=\"false\" style=\"object-fit:cover;object-position:50% 50%\"/></div></div>",
-    "textNodes": [
-      "◆",
-      "6-р бүлэг · Дараагийн тэрбум жил",
-      "Дайсон"
-    ],
+    "textNodes": ["◆", "6-р бүлэг · Дараагийн тэрбум жил", "Дайсон"],
     "text": "◆6-р бүлэг · Дараагийн тэрбум жилДайсон",
     "sha256": "f86dd06ad4e123b0a4eef3cd4786e17c12a1c896b5f380f940a43c5fba2fb76d",
     "nodes": [
