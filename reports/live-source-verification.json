@@ -1,0 +1,507 @@
+{
+  "sourceUrl": "https://ethicofengineers-1.vercel.app/",
+  "capturedDate": "2026-11-11",
+  "compared": "Per-slide DOM textContent, character-for-character; no whitespace normalization",
+  "sourceCount": 71,
+  "liveCount": 71,
+  "differences": 0,
+  "slides": [
+    {
+      "order": 1,
+      "id": "cover",
+      "sourceTextSha256": "a91b84620ef351e2301486cb325d7a56ad48292156d706fde329830a8a47a1ec",
+      "liveTextSha256": "a91b84620ef351e2301486cb325d7a56ad48292156d706fde329830a8a47a1ec",
+      "matches": true
+    },
+    {
+      "order": 2,
+      "id": "author",
+      "sourceTextSha256": "910d2280d69bdd8e737a3c41e0b6a83e4f5f72561c407ba624754189c84ed48a",
+      "liveTextSha256": "910d2280d69bdd8e737a3c41e0b6a83e4f5f72561c407ba624754189c84ed48a",
+      "matches": true
+    },
+    {
+      "order": 3,
+      "id": "book",
+      "sourceTextSha256": "148c302da13241a3c9c7a6d301e74b6cc1e8d8daab4feb1a8649c5bfdb742f7c",
+      "liveTextSha256": "148c302da13241a3c9c7a6d301e74b6cc1e8d8daab4feb1a8649c5bfdb742f7c",
+      "matches": true
+    },
+    {
+      "order": 4,
+      "id": "structure",
+      "sourceTextSha256": "b946f60fcfb3edad5537977af30cc20299d7e65053e532534640efd36a513e45",
+      "liveTextSha256": "b946f60fcfb3edad5537977af30cc20299d7e65053e532534640efd36a513e45",
+      "matches": true
+    },
+    {
+      "order": 5,
+      "id": "ch1",
+      "sourceTextSha256": "a30da6d60b4e36fecf15801e2c45dd4849c76916eea4af6401b6a1344b5b04ae",
+      "liveTextSha256": "a30da6d60b4e36fecf15801e2c45dd4849c76916eea4af6401b6a1344b5b04ae",
+      "matches": true
+    },
+    {
+      "order": 6,
+      "id": "history",
+      "sourceTextSha256": "10087b773a90e2e98cb7e8578954a6a6135787c76cc753607a4fd0fa17b9bfec",
+      "liveTextSha256": "10087b773a90e2e98cb7e8578954a6a6135787c76cc753607a4fd0fa17b9bfec",
+      "matches": true
+    },
+    {
+      "order": 7,
+      "id": "stages",
+      "sourceTextSha256": "b3b79f50e2e8f4eb55309eee3669a4cd561bdc6d674968fbb24424db914342ef",
+      "liveTextSha256": "b3b79f50e2e8f4eb55309eee3669a4cd561bdc6d674968fbb24424db914342ef",
+      "matches": true
+    },
+    {
+      "order": 8,
+      "id": "why2",
+      "sourceTextSha256": "a64608eea20c21cdbbf571ff741908dff976a5233930dbf66c19de1d0d4f4acf",
+      "liveTextSha256": "a64608eea20c21cdbbf571ff741908dff976a5233930dbf66c19de1d0d4f4acf",
+      "matches": true
+    },
+    {
+      "order": 9,
+      "id": "camps",
+      "sourceTextSha256": "3dd3d44453f19bdd56172d93edd8a04fef2f763e1d5820f52dbdcbda0ebd1d67",
+      "liveTextSha256": "3dd3d44453f19bdd56172d93edd8a04fef2f763e1d5820f52dbdcbda0ebd1d67",
+      "matches": true
+    },
+    {
+      "order": 10,
+      "id": "napa",
+      "sourceTextSha256": "fa58ff643fb5e4ab7a5d11a03eeda6afdcd0995f71e946592171840cd770a54c",
+      "liveTextSha256": "fa58ff643fb5e4ab7a5d11a03eeda6afdcd0995f71e946592171840cd770a54c",
+      "matches": true
+    },
+    {
+      "order": 11,
+      "id": "myths1",
+      "sourceTextSha256": "6aa9c0f3a9cda59e53b70121ca42f9dd53a1a74c3a0675f686d2e86350b6bbd3",
+      "liveTextSha256": "6aa9c0f3a9cda59e53b70121ca42f9dd53a1a74c3a0675f686d2e86350b6bbd3",
+      "matches": true
+    },
+    {
+      "order": 12,
+      "id": "myths2",
+      "sourceTextSha256": "829ab727ab9d7a72a2208db33ca474a2904dd46bfdd97bd2f7aeb9f95a163dd9",
+      "liveTextSha256": "829ab727ab9d7a72a2208db33ca474a2904dd46bfdd97bd2f7aeb9f95a163dd9",
+      "matches": true
+    },
+    {
+      "order": 13,
+      "id": "structure-ch2",
+      "sourceTextSha256": "b946f60fcfb3edad5537977af30cc20299d7e65053e532534640efd36a513e45",
+      "liveTextSha256": "b946f60fcfb3edad5537977af30cc20299d7e65053e532534640efd36a513e45",
+      "matches": true
+    },
+    {
+      "order": 14,
+      "id": "ch2",
+      "sourceTextSha256": "1378cd58f980f2902593e3d11d07ae707340c80b99b667416cd6ec7894d00784",
+      "liveTextSha256": "1378cd58f980f2902593e3d11d07ae707340c80b99b667416cd6ec7894d00784",
+      "matches": true
+    },
+    {
+      "order": 15,
+      "id": "intel",
+      "sourceTextSha256": "e5ae4d2f57144b80c8b711d4462834a65ff4700719edfaa131f0534e1505cac8",
+      "liveTextSha256": "e5ae4d2f57144b80c8b711d4462834a65ff4700719edfaa131f0534e1505cac8",
+      "matches": true
+    },
+    {
+      "order": 16,
+      "id": "landscape",
+      "sourceTextSha256": "6cf36181caace9253e14c59acd14c03f32a4fa8630f66b81c4b4fa8b86873376",
+      "liveTextSha256": "6cf36181caace9253e14c59acd14c03f32a4fa8630f66b81c4b4fa8b86873376",
+      "matches": true
+    },
+    {
+      "order": 17,
+      "id": "memory",
+      "sourceTextSha256": "6ce75bb7dddc1f611ffb2c34f3ed3cb2175ef28d19df349aa8ee9b3e168fe125",
+      "liveTextSha256": "6ce75bb7dddc1f611ffb2c34f3ed3cb2175ef28d19df349aa8ee9b3e168fe125",
+      "matches": true
+    },
+    {
+      "order": 18,
+      "id": "compute",
+      "sourceTextSha256": "12084cf20a854c0c6fea294285cfb08bd8e6e1ab567c5efe6e689d4e16964f1a",
+      "liveTextSha256": "12084cf20a854c0c6fea294285cfb08bd8e6e1ab567c5efe6e689d4e16964f1a",
+      "matches": true
+    },
+    {
+      "order": 19,
+      "id": "learning",
+      "sourceTextSha256": "2abbcd056772d709cb7c0935ec2e513c24f3dd64d3b3a8e11c52b975f9ffe4fb",
+      "liveTextSha256": "2abbcd056772d709cb7c0935ec2e513c24f3dd64d3b3a8e11c52b975f9ffe4fb",
+      "matches": true
+    },
+    {
+      "order": 20,
+      "id": "case",
+      "sourceTextSha256": "052fcbf71fc1aff9d6e8e82f9c0b51f9bb50ebf86b9fdf0b413c242f75bb19d1",
+      "liveTextSha256": "052fcbf71fc1aff9d6e8e82f9c0b51f9bb50ebf86b9fdf0b413c242f75bb19d1",
+      "matches": true
+    },
+    {
+      "order": 21,
+      "id": "qa",
+      "sourceTextSha256": "f8fd9c00f41084834452e8bca3823d35867b453b7e80fbfd816a68f0447a95d6",
+      "liveTextSha256": "f8fd9c00f41084834452e8bca3823d35867b453b7e80fbfd816a68f0447a95d6",
+      "matches": true
+    },
+    {
+      "order": 22,
+      "id": "structure-ch3",
+      "sourceTextSha256": "b946f60fcfb3edad5537977af30cc20299d7e65053e532534640efd36a513e45",
+      "liveTextSha256": "b946f60fcfb3edad5537977af30cc20299d7e65053e532534640efd36a513e45",
+      "matches": true
+    },
+    {
+      "order": 23,
+      "id": "chapter3-01",
+      "sourceTextSha256": "e90b6f62d6fbb0e1082cb44da7bdd08fd3e6b2922d83474d53e1aa2205fff80c",
+      "liveTextSha256": "e90b6f62d6fbb0e1082cb44da7bdd08fd3e6b2922d83474d53e1aa2205fff80c",
+      "matches": true
+    },
+    {
+      "order": 24,
+      "id": "chapter3-02",
+      "sourceTextSha256": "4579f309e2cb2acc50175b435a4174f81fba8fc838b4ccaa83228f1b92b315c4",
+      "liveTextSha256": "4579f309e2cb2acc50175b435a4174f81fba8fc838b4ccaa83228f1b92b315c4",
+      "matches": true
+    },
+    {
+      "order": 25,
+      "id": "chapter3-03",
+      "sourceTextSha256": "472948b9ef6df9c7d1f86d99a445db5b9b3c3dc0cbc811c75faf174abc74eb56",
+      "liveTextSha256": "472948b9ef6df9c7d1f86d99a445db5b9b3c3dc0cbc811c75faf174abc74eb56",
+      "matches": true
+    },
+    {
+      "order": 26,
+      "id": "chapter3-04",
+      "sourceTextSha256": "2267e739b823ba51c53634619d95c699b69dd62a6038e59b9f939591824321cc",
+      "liveTextSha256": "2267e739b823ba51c53634619d95c699b69dd62a6038e59b9f939591824321cc",
+      "matches": true
+    },
+    {
+      "order": 27,
+      "id": "chapter3-05",
+      "sourceTextSha256": "9f7fb8f466fc2cdd1bb81c580833eca068fdd70f47afdce4d8b5f9df069cb9a5",
+      "liveTextSha256": "9f7fb8f466fc2cdd1bb81c580833eca068fdd70f47afdce4d8b5f9df069cb9a5",
+      "matches": true
+    },
+    {
+      "order": 28,
+      "id": "chapter3-06",
+      "sourceTextSha256": "c3936568a125667fbdd18ab230de9769dd23aa3c21bc186f357f9406ec9fb2ed",
+      "liveTextSha256": "c3936568a125667fbdd18ab230de9769dd23aa3c21bc186f357f9406ec9fb2ed",
+      "matches": true
+    },
+    {
+      "order": 29,
+      "id": "chapter3-07",
+      "sourceTextSha256": "080273a518daf9e6ac67cb777c49143156f7f99efdaa952f68b88dfdf020f37d",
+      "liveTextSha256": "080273a518daf9e6ac67cb777c49143156f7f99efdaa952f68b88dfdf020f37d",
+      "matches": true
+    },
+    {
+      "order": 30,
+      "id": "chapter3-08",
+      "sourceTextSha256": "85ec8595b2597e720b379cecbb03cbca6ef151cd29e729ce9dbd43f7a64e4f89",
+      "liveTextSha256": "85ec8595b2597e720b379cecbb03cbca6ef151cd29e729ce9dbd43f7a64e4f89",
+      "matches": true
+    },
+    {
+      "order": 31,
+      "id": "chapter3-09",
+      "sourceTextSha256": "452b5a4e764882915dc8c5ebda8e7133d6afe6b43af00a8977ca6238748cfa71",
+      "liveTextSha256": "452b5a4e764882915dc8c5ebda8e7133d6afe6b43af00a8977ca6238748cfa71",
+      "matches": true
+    },
+    {
+      "order": 32,
+      "id": "chapter3-10",
+      "sourceTextSha256": "1a3c8c4a320a3f12096751504e67d9e23f2f060df0f4b025019bb2cf3d6fcf3a",
+      "liveTextSha256": "1a3c8c4a320a3f12096751504e67d9e23f2f060df0f4b025019bb2cf3d6fcf3a",
+      "matches": true
+    },
+    {
+      "order": 33,
+      "id": "structure-ch4",
+      "sourceTextSha256": "b946f60fcfb3edad5537977af30cc20299d7e65053e532534640efd36a513e45",
+      "liveTextSha256": "b946f60fcfb3edad5537977af30cc20299d7e65053e532534640efd36a513e45",
+      "matches": true
+    },
+    {
+      "order": 34,
+      "id": "chapter4-01",
+      "sourceTextSha256": "fa4b8b9d4f32b0ea80c4e3d73956713c113216a14883bf2e77e13815265921bc",
+      "liveTextSha256": "fa4b8b9d4f32b0ea80c4e3d73956713c113216a14883bf2e77e13815265921bc",
+      "matches": true
+    },
+    {
+      "order": 35,
+      "id": "chapter4-02",
+      "sourceTextSha256": "04c2911d745b3ed5d7f4377806b7f0ff83598c57d06e683339d369f141802511",
+      "liveTextSha256": "04c2911d745b3ed5d7f4377806b7f0ff83598c57d06e683339d369f141802511",
+      "matches": true
+    },
+    {
+      "order": 36,
+      "id": "chapter4-03",
+      "sourceTextSha256": "3787060126c1c56dc0caf50b9b63d54036f4fb3d2897b5ff12f725cf24a31d1c",
+      "liveTextSha256": "3787060126c1c56dc0caf50b9b63d54036f4fb3d2897b5ff12f725cf24a31d1c",
+      "matches": true
+    },
+    {
+      "order": 37,
+      "id": "chapter4-04",
+      "sourceTextSha256": "929f842c99d14cc42dfcf1258e2858bfd347199c8bd3ea9d49db16b8b8bfd1bb",
+      "liveTextSha256": "929f842c99d14cc42dfcf1258e2858bfd347199c8bd3ea9d49db16b8b8bfd1bb",
+      "matches": true
+    },
+    {
+      "order": 38,
+      "id": "chapter4-05",
+      "sourceTextSha256": "9c73bf3bd6c4be1365f278e8adc94343eb271e0c5f76ff5c19146728fa0bf24e",
+      "liveTextSha256": "9c73bf3bd6c4be1365f278e8adc94343eb271e0c5f76ff5c19146728fa0bf24e",
+      "matches": true
+    },
+    {
+      "order": 39,
+      "id": "chapter4-06",
+      "sourceTextSha256": "57500a1f5afcec2f1c81eef3af24d5b3698b50ea938491f52efec54bd735ee31",
+      "liveTextSha256": "57500a1f5afcec2f1c81eef3af24d5b3698b50ea938491f52efec54bd735ee31",
+      "matches": true
+    },
+    {
+      "order": 40,
+      "id": "chapter4-07",
+      "sourceTextSha256": "4011929e304d365cc70dd38922c12bc7f3c6e39fa03d7c425b75cac6575021a7",
+      "liveTextSha256": "4011929e304d365cc70dd38922c12bc7f3c6e39fa03d7c425b75cac6575021a7",
+      "matches": true
+    },
+    {
+      "order": 41,
+      "id": "chapter4-08",
+      "sourceTextSha256": "c0df59e569f91c27b26993580776a4ef9eb7b561eb836d2b35e1f8721c7e75e2",
+      "liveTextSha256": "c0df59e569f91c27b26993580776a4ef9eb7b561eb836d2b35e1f8721c7e75e2",
+      "matches": true
+    },
+    {
+      "order": 42,
+      "id": "chapter4-09",
+      "sourceTextSha256": "a13b8f3e8f4f087419c03d44fee16ccd18ce4ed9fd116a8fbb67878aff8f2cde",
+      "liveTextSha256": "a13b8f3e8f4f087419c03d44fee16ccd18ce4ed9fd116a8fbb67878aff8f2cde",
+      "matches": true
+    },
+    {
+      "order": 43,
+      "id": "chapter4-10",
+      "sourceTextSha256": "68932c17e970a7c6b8bf75eb67850c60f1a78024c179ba0c8e61d889700e29ed",
+      "liveTextSha256": "68932c17e970a7c6b8bf75eb67850c60f1a78024c179ba0c8e61d889700e29ed",
+      "matches": true
+    },
+    {
+      "order": 44,
+      "id": "structure-ch6",
+      "sourceTextSha256": "b946f60fcfb3edad5537977af30cc20299d7e65053e532534640efd36a513e45",
+      "liveTextSha256": "b946f60fcfb3edad5537977af30cc20299d7e65053e532534640efd36a513e45",
+      "matches": true
+    },
+    {
+      "order": 45,
+      "id": "chapter6-01",
+      "sourceTextSha256": "4559c6d8ba82b28d81a88ba708c35b1ec0a2b197d3b41c70028bdfa62e7b128a",
+      "liveTextSha256": "4559c6d8ba82b28d81a88ba708c35b1ec0a2b197d3b41c70028bdfa62e7b128a",
+      "matches": true
+    },
+    {
+      "order": 46,
+      "id": "chapter6-02",
+      "sourceTextSha256": "afe7e8628e4387c7d1c878eac0c7c036155d35dd7df6e40b482ca24503cb63a8",
+      "liveTextSha256": "afe7e8628e4387c7d1c878eac0c7c036155d35dd7df6e40b482ca24503cb63a8",
+      "matches": true
+    },
+    {
+      "order": 47,
+      "id": "chapter6-03",
+      "sourceTextSha256": "42061810bdcaf79c191829974bb20d846f982502c1079ce97ead0e09332ed482",
+      "liveTextSha256": "42061810bdcaf79c191829974bb20d846f982502c1079ce97ead0e09332ed482",
+      "matches": true
+    },
+    {
+      "order": 48,
+      "id": "chapter6-04",
+      "sourceTextSha256": "95faff0ec9fb88f418fa72934add8e3dae4f8d29e27a6d27f86e698ff594be7a",
+      "liveTextSha256": "95faff0ec9fb88f418fa72934add8e3dae4f8d29e27a6d27f86e698ff594be7a",
+      "matches": true
+    },
+    {
+      "order": 49,
+      "id": "chapter6-05",
+      "sourceTextSha256": "8145d2a6bfd09f5d3bb0c17bf65b9f6a4bba9f7b10c5951ffa6ce255d5536e3d",
+      "liveTextSha256": "8145d2a6bfd09f5d3bb0c17bf65b9f6a4bba9f7b10c5951ffa6ce255d5536e3d",
+      "matches": true
+    },
+    {
+      "order": 50,
+      "id": "chapter6-06",
+      "sourceTextSha256": "d68c20a52c1f5b18720143f4009b1672bc159cd2488908946a5eace87e329257",
+      "liveTextSha256": "d68c20a52c1f5b18720143f4009b1672bc159cd2488908946a5eace87e329257",
+      "matches": true
+    },
+    {
+      "order": 51,
+      "id": "chapter6-07",
+      "sourceTextSha256": "8f8f1436e05f3d462f49aa335593c60b4341d58ec54a160cb640f28a7d497081",
+      "liveTextSha256": "8f8f1436e05f3d462f49aa335593c60b4341d58ec54a160cb640f28a7d497081",
+      "matches": true
+    },
+    {
+      "order": 52,
+      "id": "chapter6-08",
+      "sourceTextSha256": "5aeda949d54e4267609ccd2f12afe28fc2197504b9917e1afa7519b14617b5ea",
+      "liveTextSha256": "5aeda949d54e4267609ccd2f12afe28fc2197504b9917e1afa7519b14617b5ea",
+      "matches": true
+    },
+    {
+      "order": 53,
+      "id": "chapter6-09",
+      "sourceTextSha256": "3e043d1584f44947b8deda5c280b7b7c58a6a1efabe959f3d27011500722a1a4",
+      "liveTextSha256": "3e043d1584f44947b8deda5c280b7b7c58a6a1efabe959f3d27011500722a1a4",
+      "matches": true
+    },
+    {
+      "order": 54,
+      "id": "chapter6-10",
+      "sourceTextSha256": "afe7e8628e4387c7d1c878eac0c7c036155d35dd7df6e40b482ca24503cb63a8",
+      "liveTextSha256": "afe7e8628e4387c7d1c878eac0c7c036155d35dd7df6e40b482ca24503cb63a8",
+      "matches": true
+    },
+    {
+      "order": 55,
+      "id": "chapter6-11",
+      "sourceTextSha256": "a015c4f9bff2fea50777daeb162529bac1e19fea2e16530019ac229862983875",
+      "liveTextSha256": "a015c4f9bff2fea50777daeb162529bac1e19fea2e16530019ac229862983875",
+      "matches": true
+    },
+    {
+      "order": 56,
+      "id": "chapter6-12",
+      "sourceTextSha256": "49e9dd523575db36b618095f4058b7c90cc5929f58343754aa7cfb21deaeab72",
+      "liveTextSha256": "49e9dd523575db36b618095f4058b7c90cc5929f58343754aa7cfb21deaeab72",
+      "matches": true
+    },
+    {
+      "order": 57,
+      "id": "chapter6-13",
+      "sourceTextSha256": "d73787e7948a25371bbfc9f743fe932597e3ad956f5c0435e6ab6a38594c0a3f",
+      "liveTextSha256": "d73787e7948a25371bbfc9f743fe932597e3ad956f5c0435e6ab6a38594c0a3f",
+      "matches": true
+    },
+    {
+      "order": 58,
+      "id": "chapter6-14",
+      "sourceTextSha256": "8aa89dcc8f44b7bb2d82caa5e6403b4b7accdf756f9ceb6756fc40aaba74bebc",
+      "liveTextSha256": "8aa89dcc8f44b7bb2d82caa5e6403b4b7accdf756f9ceb6756fc40aaba74bebc",
+      "matches": true
+    },
+    {
+      "order": 59,
+      "id": "chapter6-15",
+      "sourceTextSha256": "afe7e8628e4387c7d1c878eac0c7c036155d35dd7df6e40b482ca24503cb63a8",
+      "liveTextSha256": "afe7e8628e4387c7d1c878eac0c7c036155d35dd7df6e40b482ca24503cb63a8",
+      "matches": true
+    },
+    {
+      "order": 60,
+      "id": "chapter6-16",
+      "sourceTextSha256": "f3ec7916e2869b457552c4aba7eda40461175d52914cc50b74db59a23996fad5",
+      "liveTextSha256": "f3ec7916e2869b457552c4aba7eda40461175d52914cc50b74db59a23996fad5",
+      "matches": true
+    },
+    {
+      "order": 61,
+      "id": "chapter6-17",
+      "sourceTextSha256": "dc723e9b2a7d813b6c75b89f2f47c57a4b35b3e716d8fc9368de8b1e321f4077",
+      "liveTextSha256": "dc723e9b2a7d813b6c75b89f2f47c57a4b35b3e716d8fc9368de8b1e321f4077",
+      "matches": true
+    },
+    {
+      "order": 62,
+      "id": "structure-ch8",
+      "sourceTextSha256": "b946f60fcfb3edad5537977af30cc20299d7e65053e532534640efd36a513e45",
+      "liveTextSha256": "b946f60fcfb3edad5537977af30cc20299d7e65053e532534640efd36a513e45",
+      "matches": true
+    },
+    {
+      "order": 63,
+      "id": "consciousness-01",
+      "sourceTextSha256": "e0303e806166179a6be6f9c957d93ac0915e014bf712434da9cce87dd108fce3",
+      "liveTextSha256": "e0303e806166179a6be6f9c957d93ac0915e014bf712434da9cce87dd108fce3",
+      "matches": true
+    },
+    {
+      "order": 64,
+      "id": "consciousness-02",
+      "sourceTextSha256": "69ec4e2e8a0050be959e7a33fcb7e09aad7aa02a7c0a60d659e8ccd945a4f51f",
+      "liveTextSha256": "69ec4e2e8a0050be959e7a33fcb7e09aad7aa02a7c0a60d659e8ccd945a4f51f",
+      "matches": true
+    },
+    {
+      "order": 65,
+      "id": "consciousness-03",
+      "sourceTextSha256": "0d3d60f8357b16ad4b0712fd4f15de35567eef2ea936708bc43bd5c769711431",
+      "liveTextSha256": "0d3d60f8357b16ad4b0712fd4f15de35567eef2ea936708bc43bd5c769711431",
+      "matches": true
+    },
+    {
+      "order": 66,
+      "id": "consciousness-04",
+      "sourceTextSha256": "ec06ebb4391e612cb9e2c8926e82f96323d1c317f0748ac5eaa8ada7da2b1417",
+      "liveTextSha256": "ec06ebb4391e612cb9e2c8926e82f96323d1c317f0748ac5eaa8ada7da2b1417",
+      "matches": true
+    },
+    {
+      "order": 67,
+      "id": "consciousness-05",
+      "sourceTextSha256": "154d593b44cf2189c2fad8b5420855981d98269f977d5e9d82beb23ba23bb77e",
+      "liveTextSha256": "154d593b44cf2189c2fad8b5420855981d98269f977d5e9d82beb23ba23bb77e",
+      "matches": true
+    },
+    {
+      "order": 68,
+      "id": "consciousness-06",
+      "sourceTextSha256": "369372387147bb4d0b37a0662b85c0a9a21a1a2870300a265dba0b56349fc30a",
+      "liveTextSha256": "369372387147bb4d0b37a0662b85c0a9a21a1a2870300a265dba0b56349fc30a",
+      "matches": true
+    },
+    {
+      "order": 69,
+      "id": "consciousness-07",
+      "sourceTextSha256": "ae09be25d4393a09abfcf68430c0c113ca165a613d7a0ce97c0c8d27f2473fee",
+      "liveTextSha256": "ae09be25d4393a09abfcf68430c0c113ca165a613d7a0ce97c0c8d27f2473fee",
+      "matches": true
+    },
+    {
+      "order": 70,
+      "id": "consciousness-08",
+      "sourceTextSha256": "9c8c0d1efc4fdbb0195413c381c7c30633af16dc9a9a535ee3b5276dfa9a55c5",
+      "liveTextSha256": "9c8c0d1efc4fdbb0195413c381c7c30633af16dc9a9a535ee3b5276dfa9a55c5",
+      "matches": true
+    },
+    {
+      "order": 71,
+      "id": "consciousness-09",
+      "sourceTextSha256": "8e5e13878cb731a566533a230d4ce538f0736db16dd7671b37e4d3e0147a3b13",
+      "liveTextSha256": "8e5e13878cb731a566533a230d4ce538f0736db16dd7671b37e4d3e0147a3b13",
+      "matches": true
+    }
+  ]
+}
