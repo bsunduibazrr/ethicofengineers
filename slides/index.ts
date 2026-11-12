@@ -1,5 +1,7 @@
 import type { ComponentType } from "react";
 import { Case, QA } from "./case";
+import { Closing } from "./closing";
+import { Chapter3Research, Chapter3Conclusion } from "./chapter3-updates";
 import {
   Camps,
   Ch1Divider,
@@ -201,7 +203,25 @@ export const slides: SlideDef[] = [
     notes:
       "3-р бүлэг рүү шилжиж байна: Ойрын ирээдүй: нээлт, алдаа, хууль, зэвсэг, ажил.",
   },
-  ...importedChapter3Slides,
+  // chapter3-06 (дөрвөн сорилт) нь chapter3-05 (кодын алдааны хүснэгт)-ээс өмнө орно.
+  ...importedChapter3Slides.slice(0, 4),
+  importedChapter3Slides[5],
+  importedChapter3Slides[4],
+  ...importedChapter3Slides.slice(6),
+  {
+    id: "ch3-research",
+    section: "3-р бүлэг",
+    Component: Chapter3Research,
+    notes:
+      "Олон улсын дэмжлэгтэй тайлан болон GPT-4o-г шүүгчдийн туршилттай төстэй нөхцөлд шалгасан судалгааны гол үр дүнг танилцуулна.",
+  },
+  {
+    id: "ch3-conclusion",
+    section: "3-р бүлэг",
+    Component: Chapter3Conclusion,
+    notes:
+      "Хиймэл оюуны боломж, сорилт, нийгмийн асуудлыг нэгтгэнэ. Гол асуулт: Бид хиймэл оюуны ирээдүйг зүгээр хүлээж авах уу, эсвэл өөрсдөө зөв чиглүүлэх үү?",
+  },
   {
     id: "structure-ch4",
     section: "4-р бүлэг",
@@ -223,4 +243,11 @@ export const slides: SlideDef[] = [
     notes: "8-р бүлэг рүү шилжиж байна: Ухамсар.",
   },
   ...importedConsciousnessSlides,
+  {
+    id: "thanks",
+    section: "Төгсгөл",
+    Component: Closing,
+    notes:
+      "Анхаарал хандуулсанд баярлалаа. Амьдрал 3.0 номын агуулгыг бататгах хоёр үгийн сүлжээг /ajilbar хуудаснаас бөглөөрэй. Сүлжээ бүр хөндлөн гурван, босоо гурван үгтэй.",
+  },
 ];

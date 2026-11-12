@@ -1,0 +1,274 @@
+.page {
+  height: 100vh;
+  height: 100dvh;
+  overflow: auto;
+  background: #f6f7fb;
+  color: var(--ink);
+  user-select: text;
+  -webkit-overflow-scrolling: touch;
+}
+
+.shell {
+  max-width: 1248px;
+  margin: 0 auto;
+  padding: 0 48px;
+}
+
+.page a {
+  text-decoration: none;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 96px;
+  border-bottom: 1px solid var(--rule);
+}
+
+.brand {
+  color: var(--navy);
+  font-family: var(--serif);
+  font-size: 25px;
+  font-style: italic;
+}
+
+.brand span { font-style: normal; }
+
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 0 12px 12px;
+  color: var(--ink2);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.backLink svg,
+.checkButton svg { width: 20px; height: 20px; flex: none; }
+.backLink:hover { color: var(--blue); }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 48px;
+  padding: 54px 0 38px;
+}
+
+.eyebrow,
+.smallLabel {
+  color: var(--blue);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .17em;
+}
+
+.eyebrow { display: flex; gap: 10px; align-items: center; }
+.eyebrow span { font-size: 8px; }
+
+.header h1 {
+  margin-top: 14px;
+  font-family: var(--serif);
+  font-size: clamp(40px, 5vw, 64px);
+  font-weight: 700;
+  line-height: 1.13;
+  letter-spacing: -.035em;
+}
+
+.description {
+  margin-top: 18px;
+  color: var(--ink2);
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.headerNote { display: flex; align-items: center; gap: 18px; padding-bottom: 4px; }
+.headerNote p { max-width: 215px; }
+.headerNote strong { display: block; color: var(--navy); font-size: 14px; font-weight: 600; }
+.headerNote p span { display: block; color: var(--muted); font-size: 12px; line-height: 1.6; margin-top: 5px; }
+.gridMark { display: grid; grid-template-columns: repeat(3, 11px); gap: 3px; transform: rotate(-8deg); }
+.gridMark i { width: 11px; height: 11px; background: var(--navy); }
+.gridMark i:nth-child(2), .gridMark i:nth-child(6), .gridMark i:nth-child(7) { background: #d7deef; }
+
+.tabs {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  min-height: 88px;
+  padding: 18px 22px;
+  border: 1px solid #dce1ec;
+  background: transparent;
+  color: var(--ink2);
+  cursor: pointer;
+  text-align: left;
+  transition: border-color .15s, background .15s;
+}
+
+.tab:hover { border-color: var(--blue); }
+.tab > span:nth-child(2) { font-size: 16px; font-weight: 600; line-height: 1.35; }
+.tab small { display: block; margin-top: 6px; font-size: 11px; font-weight: 400; letter-spacing: .02em; color: var(--muted); }
+.tabNumber { font-family: var(--serif); font-size: 30px; color: #8b96b0; }
+.tabArrow { margin-left: auto; padding-left: 4px; color: var(--muted); font-size: 20px; }
+.activeTab { background: var(--navy); border-color: var(--navy); color: #fff; }
+.activeTab small { color: #c3cde7; }
+.activeTab .tabNumber, .activeTab .tabArrow { color: #dce6ff; }
+
+.exercise {
+  padding: 34px 36px 30px;
+  background: #fff;
+  border: 1px solid var(--rule);
+  box-shadow: 0 8px 36px rgba(19, 41, 107, .035);
+}
+
+.exerciseHeading { display: flex; align-items: center; justify-content: space-between; gap: 30px; padding-bottom: 27px; border-bottom: 1px solid var(--rule); }
+.smallLabel { font-size: 9px; letter-spacing: .16em; }
+.exerciseHeading h2 { font-family: var(--serif); font-size: 29px; line-height: 1.25; margin-top: 10px; letter-spacing: -.015em; }
+.subtitle { color: var(--muted); font-size: 13px; line-height: 1.6; margin-top: 8px; max-width: 540px; }
+.progress { min-width: 112px; text-align: right; }
+.progress > span:first-child { display: block; color: var(--muted); font-size: 15px; white-space: nowrap; }
+.progress strong { font-size: 30px; color: var(--navy); font-family: var(--serif); font-weight: 400; }
+.progressLabel { display: block; font-size: 10px; color: var(--muted); margin-top: 3px; }
+.progressTrack { height: 3px; margin-top: 12px; background: #e8edf5; }
+.progressTrack > div { height: 100%; background: var(--blue); transition: width .2s ease; }
+
+.workspace { display: grid; grid-template-columns: minmax(0, 1.12fr) minmax(0, 1fr); gap: 40px; padding-top: 27px; }
+.boardColumn { min-width: 0; }
+.activeClue { display: flex; align-items: flex-start; gap: 12px; min-height: 90px; margin-bottom: 18px; }
+.activeClueNumber { display: flex; justify-content: center; align-items: center; background: #eef2fb; color: var(--navy); width: 30px; height: 30px; flex: 0 0 30px; font-size: 14px; font-weight: 600; }
+.directionLabel { display: block; color: var(--blue); text-transform: uppercase; font-size: 10px; letter-spacing: .06em; font-weight: 600; padding-top: 1px; }
+.activeClue p { margin-top: 7px; font-size: 13px; line-height: 1.65; color: var(--ink2); }
+.gridScroll { overflow-x: auto; padding: 3px 3px 6px; margin: -3px -3px 0; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(var(--columns), minmax(0, 1fr));
+  gap: 2px;
+  width: min(100%, calc(var(--columns) * 43px));
+  min-width: calc(var(--columns) * 30px);
+  background: #e5eaf3;
+  border: 2px solid #e5eaf3;
+}
+
+.cell,
+.block { display: block; position: relative; aspect-ratio: 1; min-width: 0; }
+.block { background: #e5eaf3; }
+.cell { background: #fff; box-shadow: inset 0 0 0 1px #cbd3e2; }
+.cell input { display: block; width: 100%; height: 100%; border: 0; border-radius: 0; padding: 9px 1px 2px; background: transparent; color: var(--navy); font-family: var(--sans); font-size: clamp(16px, 2vw, 23px); font-weight: 600; line-height: 1; text-align: center; text-transform: uppercase; outline: none; caret-color: var(--blue); user-select: text; -webkit-appearance: none; }
+.cellNumber { position: absolute; top: 3px; left: 4px; color: var(--ink2); font-size: 9px; font-weight: 600; line-height: 1; pointer-events: none; z-index: 1; }
+.inWord { background: #edf2ff; }
+.correct { background: #e8f5ef; box-shadow: inset 0 0 0 1px #70ab90; }
+.incorrect { background: #fff0f1; box-shadow: inset 0 0 0 1.5px #c52c4b; }
+.incorrect input { color: #a11b36; }
+.selected { background: var(--navy); box-shadow: inset 0 0 0 1px var(--navy); }
+.selected input, .selected .cellNumber { color: #fff; caret-color: #fff; }
+.selected:focus-within { outline: 2px solid #7797f1; outline-offset: 1px; z-index: 2; }
+.keyboardHelp { max-width: 450px; color: var(--muted); margin-top: 15px; font-size: 11px; line-height: 1.65; }
+.actions { display: flex; flex-wrap: wrap; align-items: center; gap: 15px; margin-top: 22px; }
+.checkButton { min-height: 44px; border: 1px solid var(--navy); background: var(--navy); color: #fff; padding: 11px 16px; display: inline-flex; align-items: center; gap: 18px; font-size: 13px; font-weight: 500; cursor: pointer; }
+.checkButton:hover { background: #213e89; border-color: #213e89; }
+.resetButton { min-height: 44px; border: 0; background: transparent; color: var(--ink2); font-size: 12px; padding: 10px 0; text-decoration: underline; text-underline-offset: 4px; cursor: pointer; }
+.feedback { min-height: 43px; color: var(--muted); font-size: 12px; line-height: 1.65; margin-top: 15px; }
+.success { color: #176340; font-weight: 500; }
+
+.clues { border-left: 1px solid var(--rule); padding-left: 30px; min-width: 0; }
+.clueSection + .clueSection { margin-top: 25px; }
+.clueSection h3 { display: flex; align-items: center; gap: 9px; font-size: 16px; font-weight: 600; color: var(--navy); padding-bottom: 12px; border-bottom: 1px solid var(--rule); }
+.clueSection h3 > span { font-size: 20px; font-weight: 400; }
+.clueSection h3 small { margin-left: auto; font-size: 10px; font-weight: 400; color: var(--muted); }
+.clueSection ol { list-style: none; padding: 6px 0 0; }
+.clueSection li + li { margin-top: 2px; }
+.clueButton { display: flex; align-items: flex-start; gap: 10px; width: 100%; border: 0; background: transparent; color: var(--ink2); text-align: left; padding: 11px 9px; cursor: pointer; font-size: 12px; line-height: 1.6; transition: background .15s; }
+.clueButton:hover { background: #f5f7fc; }
+.clueNumber { flex: 0 0 17px; color: var(--navy); font-family: var(--serif); font-weight: 700; font-size: 16px; line-height: 1.3; }
+.letterCount { display: block; color: var(--muted); font-size: 10px; margin-top: 5px; }
+.activeClueButton { background: #edf2ff; color: var(--navy); }
+.activeClueButton:hover { background: #e8efff; }
+.revealArea { display: flex; flex-wrap: wrap; align-items: center; gap: 5px 12px; margin-top: 28px; padding-top: 17px; border-top: 1px solid var(--rule); font-size: 10px; color: var(--muted); }
+.revealArea button { min-height: 36px; padding: 5px 0; background: transparent; border: 0; color: var(--blue); text-decoration: underline; text-underline-offset: 3px; cursor: pointer; font-size: 11px; }
+.footer { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; padding: 28px 0 35px; color: var(--muted); font-size: 11px; }
+
+.page button:focus-visible,
+.page a:focus-visible { outline: 2px solid var(--blue); outline-offset: 4px; }
+
+@media (max-width: 1000px) {
+  .shell { padding: 0 30px; }
+  .header { gap: 28px; }
+  .headerNote { gap: 14px; }
+  .headerNote p { max-width: 160px; }
+  .exercise { padding: 28px 25px; }
+  .workspace { gap: 25px; }
+  .clues { padding-left: 20px; }
+}
+
+@media (max-width: 760px) {
+  .shell { padding: 0 22px; }
+  .topbar { min-height: 78px; }
+  .brand { font-size: 22px; }
+  .backLink { font-size: 12px; gap: 5px; }
+  .backLink svg { width: 17px; }
+  .header { padding: 35px 0 27px; display: block; }
+  .header h1 { margin-top: 13px; }
+  .description { margin-top: 15px; font-size: 14px; }
+  .headerNote { margin-top: 24px; gap: 14px; }
+  .headerNote p { max-width: none; }
+  .headerNote strong { font-size: 12px; }
+  .headerNote p span { font-size: 11px; margin-top: 2px; }
+  .gridMark { grid-template-columns: repeat(3, 8px); gap: 2px; }
+  .gridMark i { width: 8px; height: 8px; }
+  .tabs { gap: 8px; margin-bottom: 15px; }
+  .tab { gap: 10px; padding: 15px 12px; min-height: 90px; align-items: flex-start; }
+  .tab > span:nth-child(2) { font-size: 12px; padding-top: 3px; }
+  .tab small { font-size: 9px; line-height: 1.5; margin-top: 5px; }
+  .tabNumber { font-size: 25px; }
+  .tabArrow { display: none; }
+  .exercise { padding: 24px 20px; }
+  .exerciseHeading { padding-bottom: 22px; gap: 15px; align-items: flex-start; }
+  .exerciseHeading h2 { font-size: 25px; }
+  .subtitle { font-size: 12px; }
+  .progress { min-width: 74px; }
+  .progress strong { font-size: 26px; }
+  .progress > span:first-child { font-size: 12px; }
+  .progressLabel { font-size: 8px; }
+  .smallLabel { font-size: 8px; letter-spacing: .09em; }
+  .workspace { grid-template-columns: minmax(0, 1fr); gap: 26px; padding-top: 23px; }
+  .activeClue { min-height: 0; margin-bottom: 22px; }
+  .grid { margin: 0 auto; }
+  .cell input { font-size: 21px; }
+  .cellNumber { font-size: 8px; top: 3px; left: 3px; }
+  .keyboardHelp { margin-top: 13px; }
+  .clues { border-left: 0; border-top: 1px solid var(--rule); padding: 25px 0 0; display: grid; grid-template-columns: 1fr 1fr; gap: 23px; }
+  .clueSection + .clueSection { margin-top: 0; }
+  .clueSection h3 { font-size: 15px; }
+  .clueButton { font-size: 12px; padding: 11px 3px; gap: 7px; }
+  .revealArea { grid-column: 1 / -1; margin-top: 0; }
+  .feedback { min-height: 20px; }
+  .footer { font-size: 10px; padding: 23px 0 28px; }
+}
+
+@media (max-width: 430px) {
+  .shell { padding: 0 16px; }
+  .desktopBreak { display: none; }
+  .exercise { padding: 22px 14px; }
+  .exerciseHeading h2 { font-size: 23px; }
+  .exerciseHeading { gap: 10px; }
+  .progress { min-width: 65px; }
+  .tab { padding: 13px 10px; gap: 8px; }
+  .tabNumber { font-size: 23px; }
+  .clues { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .clueButton { padding: 12px 7px; font-size: 13px; }
+  .cell input { font-size: 18px; }
+  .resetButton { font-size: 11px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page * { transition: none; }
+}

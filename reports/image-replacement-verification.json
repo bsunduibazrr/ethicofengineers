@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-12",
+  "passed": true,
+  "checks": [
+    {
+      "id": "chapter6-01",
+      "order": 50,
+      "originalOrder": 45,
+      "image": "shibo.png",
+      "side": "right",
+      "imageLoaded": true,
+      "fullImageVisible": true,
+      "embeddedOffline": true,
+      "toolbarAbsent": true
+    },
+    {
+      "id": "chapter6-06",
+      "order": 55,
+      "originalOrder": 50,
+      "image": "shibo2.png",
+      "side": "left",
+      "imageLoaded": true,
+      "fullImageVisible": true,
+      "embeddedOffline": true,
+      "toolbarAbsent": true
+    }
+  ],
+  "pageErrors": []
+}

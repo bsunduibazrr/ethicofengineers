@@ -13,12 +13,6 @@ export type SourceSlide = {
 };
 
 const paths: Record<string, string> = {
-  previous: '<path d="M15 6l-6 6 6 6"/>',
-  next: '<path d="M9 6l6 6-6 6"/>',
-  overview:
-    '<rect x="4" y="4" width="6.5" height="6.5" rx="1"/><rect x="13.5" y="4" width="6.5" height="6.5" rx="1"/><rect x="4" y="13.5" width="6.5" height="6.5" rx="1"/><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1"/>',
-  fullscreen: '<path d="M9 4H4v5m11-5h5v5M4 15v5h5m11-5v5h-5"/>',
-  notes: '<path d="M6 4h9l3 3v13H6z"/><path d="M9 10h6M9 13.5h6M9 17h4"/>',
   close: '<path d="m6 6 12 12M6 18 18 6"/>',
 };
 const icon = (name: string) =>
@@ -100,17 +94,25 @@ const REVEAL = [
   ".xasks > *",
   ".xgrid4 > *",
   ".closing > *",
+  ".closing-copy > *",
+  ".closing-art",
   ".xfull .xfig",
   ".xart",
   ".kg",
+  ".chapter3-research > :first-child",
+  ".chapter3-study",
+  ".chapter3-conclusion > :first-child",
+  ".chapter3-conclusion-copy > *",
+  ".chapter3-conclusion-art",
+  ".chapter3-conclusion-sources",
 ].join(",");
 
 const EASE = "cubic-bezier(.77,0,.18,1)";
 const EASE_OUT = "cubic-bezier(.16,1,.3,1)";
 
 export function mountDeck(root: HTMLElement, slides: SourceSlide[]) {
-  if (slides.length !== 71)
-    throw new Error(`Expected 71 slides, received ${slides.length}`);
+  if (!slides.length)
+    throw new Error("The presentation must contain at least one slide.");
   const total = slides.length;
   const pad = (n: number) => String(n).padStart(2, "0");
   const reduced = window.matchMedia("(prefers-reduced-motion: reduce)");
@@ -130,13 +132,13 @@ export function mountDeck(root: HTMLElement, slides: SourceSlide[]) {
     timers.add(timer);
   };
 
+  root.tabIndex = -1;
   root.innerHTML = `<div class="viewport"><div class="stage"><div class="slide-host"></div><div class="curtain" aria-hidden="true"><div class="curtain-in"><span class="curtain-num"></span><span class="curtain-label"></span></div></div><footer class="deck-hud"><div class="hud-brand"><i>Амьдрал 3.0</i><span class="hud-section"></span></div><div class="hud-progress" role="progressbar" aria-label="Слайдын явц" aria-valuemin="1" aria-valuemax="${total}"><i></i></div></footer></div><aside class="speaker-notes" hidden></aside><dialog class="overview" aria-label="Слайдын жагсаалт"><button class="overview-close hud-btn" data-action="close-overview" aria-label="Хаах">${icon("close")}</button><div class="overview-grid"></div></dialog></div>`;
   const get = <T extends HTMLElement = HTMLElement>(q: string) =>
     root.querySelector<T>(q)!;
   const viewport = get(".viewport"),
     stage = get(".stage"),
-    host = get(".slide-host"),
-    hud = get(".deck-hud");
+    host = get(".slide-host");
   const progress = get(".hud-progress"),
     fill = get(".hud-progress i"),
     sectionLabel = get(".hud-section");
@@ -182,13 +184,15 @@ export function mountDeck(root: HTMLElement, slides: SourceSlide[]) {
   };
 
   function resize() {
-    const scale = Math.min(viewport.clientWidth / 1920, viewport.clientHeight / 1080);
+    const scale = Math.min(
+      viewport.clientWidth / 1920,
+      viewport.clientHeight / 1080,
+    );
     stage.style.transform = `translate(-50%, -50%) scale(${scale})`;
     stage.style.top = "50%";
     viewport.dataset.portrait = String(
       viewport.clientHeight > viewport.clientWidth,
     );
-    if (hud.parentElement !== stage) stage.append(hud);
   }
 
   function fitContent(slide: HTMLElement) {
@@ -448,14 +452,20 @@ export function mountDeck(root: HTMLElement, slides: SourceSlide[]) {
 
   function closeOverview() {
     overview.close();
-    returnFocus?.focus();
+    (returnFocus?.isConnected ? returnFocus : root).focus({
+      preventScroll: true,
+    });
   }
   function toggleOverview() {
     if (overview.open) {
       closeOverview();
       return;
     }
-    returnFocus = document.activeElement as HTMLElement;
+    returnFocus =
+      document.activeElement instanceof HTMLElement &&
+      root.contains(document.activeElement)
+        ? document.activeElement
+        : root;
     overview.showModal();
     const active = cards[index];
     active.focus();
@@ -466,7 +476,7 @@ export function mountDeck(root: HTMLElement, slides: SourceSlide[]) {
       if (document.fullscreenElement) await document.exitFullscreen();
       else if (root.requestFullscreen) await root.requestFullscreen();
     } catch {
-      /* fullscreen not allowed */
+      /* Fullscreen may be unavailable in an embedded browser. */
     }
   }
   function toggleNotes() {
@@ -480,26 +490,11 @@ export function mountDeck(root: HTMLElement, slides: SourceSlide[]) {
       closeOverview();
       return;
     }
-    switch (target.closest<HTMLElement>("[data-action]")?.dataset.action) {
-      case "previous":
-        goTo(index - 1);
-        break;
-      case "next":
-        goTo(index + 1);
-        break;
-      case "overview":
-        toggleOverview();
-        break;
-      case "close-overview":
-        closeOverview();
-        break;
-      case "fullscreen":
-        void toggleFullscreen();
-        break;
-      case "notes":
-        toggleNotes();
-        break;
-    }
+    if (
+      target.closest<HTMLElement>("[data-action]")?.dataset.action ===
+      "close-overview"
+    )
+      closeOverview();
   }
   function onKey(event: KeyboardEvent) {
     if (event.ctrlKey || event.metaKey || event.altKey) return;
@@ -558,7 +553,7 @@ export function mountDeck(root: HTMLElement, slides: SourceSlide[]) {
     touch = null;
     if (
       event.pointerType === "touch" &&
-      !(event.target as Element).closest("button,dialog,aside")
+      !(event.target as Element).closest("a,button,dialog,aside")
     )
       touch = { x: event.clientX, y: event.clientY };
   }

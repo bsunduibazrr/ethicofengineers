@@ -98,14 +98,16 @@ function staticHtml(Component, expanded = false) {
 
 const { slides } = require(path.join(root, 'slides/index.ts'));
 const imported = require(path.join(root, 'slides/imported-pptx.json'));
-if (slides.length !== 71) throw new Error(`Expected exactly 71 slides; found ${slides.length}.`);
+if (!slides.length) throw new Error('The presentation must contain at least one slide.');
 const explicitTypes = {
   cover: 'Cover', author: 'Two columns', book: 'Timeline', structure: 'Section divider',
   ch1: 'Section divider', history: 'Timeline', stages: 'Comparison', why2: 'Statistics',
   camps: 'Comparison', napa: 'Quote', myths1: 'Comparison', myths2: 'Comparison',
   'structure-ch2': 'Section divider', ch2: 'Section divider', intel: 'Title + list',
   landscape: 'Two columns', memory: 'Comparison', compute: 'Two columns', learning: 'Conclusion',
-  case: 'Comparison', qa: 'Conclusion',
+  case: 'Comparison', qa: 'Conclusion', thanks: 'Conclusion',
+  'ch3-research': 'Title + list', 'ch3-conclusion': 'Conclusion',
+  'chapter4-13': 'Conclusion',
 };
 function classify(slide, title, nodes) {
   if (explicitTypes[slide.id]) return explicitTypes[slide.id];
@@ -129,7 +131,7 @@ const extracted = slides.map((slide, index) => {
   const headingCopy = headingNode && hasClass(headingNode, 'chapter3-text')
     ? all.find((node) => hasClass(node, 'chapter3-text-content') && headingNode.children.includes(node)) ?? headingNode
     : headingNode;
-  const title = headingCopy ? textOf(headingCopy) : slide.section;
+  let title = headingCopy ? textOf(headingCopy) : slide.section;
   const subtitleNode = all.find((node) => hasClass(node, 'cover-sub') || hasClass(node, 'sub'));
   const body = all.filter((node) => ['p', 'figcaption', 'blockquote'].includes(node.tag) || ['chapter3-paragraph', 'case-p', 'big-question'].some((name) => hasClass(node, name))).map(textOf);
   const list = all.filter((node) => node.tag === 'li' || ['toc-row', 'dl-row', 'outcome', 'link-row'].some((name) => hasClass(node, name))).map(textOf);
@@ -138,6 +140,10 @@ const extracted = slides.map((slide, index) => {
   let sourceNodes;
   const deckKey = slide.id.startsWith('chapter3-') ? 'chapter3' : slide.id.startsWith('chapter4-') ? 'chapter4' : slide.id.startsWith('chapter6-') ? 'chapter6' : slide.id.startsWith('consciousness-') ? 'consciousness' : null;
   if (deckKey) sourceNodes = imported[deckKey][Number(slide.id.slice(-2)) - 1].nodes;
+  if (deckKey === 'chapter4') {
+    const paragraphs = sourceNodes.filter(node => node.kind === 'text').flatMap(node => node.text.paragraphs.map(paragraph => paragraph.runs.map(run => run.text).join('')));
+    title = slide.id === 'chapter4-01' ? paragraphs.slice(1, 3).join(' ') : paragraphs[1];
+  }
   const snapshot = {
     id: slide.id, order: index + 1, section: slide.section,
     type: classify(slide, title, sourceNodes),
@@ -179,7 +185,7 @@ const audit = { count: extracted.length, source: 'slides/content.source.json', t
 if (process.argv.includes('--check')) {
   const frozen = JSON.parse(fs.readFileSync(outputPath, 'utf8'));
   const differences = [];
-  if (frozen.length !== 71) differences.push(`Frozen count is ${frozen.length}`);
+  if (frozen.length !== slides.length) differences.push(`Frozen count is ${frozen.length}; expected ${slides.length}`);
   for (let index = 0; index < Math.max(frozen.length, extracted.length); index++) {
     const expected = frozen[index]; const actual = extracted[index];
     if (!expected || !actual) { differences.push(`Missing slide ${index + 1}`); continue; }

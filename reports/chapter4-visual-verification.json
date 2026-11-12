@@ -1,0 +1,144 @@
+{
+  "date": "2026-11-12",
+  "passed": true,
+  "slideCount": 13,
+  "sourceParagraphsExact": 114,
+  "sharedChapterOpener": true,
+  "picturesOnlyOnCover": true,
+  "picturePanels": 1,
+  "checks": [
+    {
+      "id": "chapter4-01",
+      "order": 36,
+      "sourceParagraphsExact": true,
+      "paragraphs": 7,
+      "images": [
+        "/img/ch4-intelligence.png"
+      ],
+      "icons": 0,
+      "imagesLoaded": true,
+      "embeddedOffline": true
+    },
+    {
+      "id": "chapter4-02",
+      "order": 37,
+      "sourceParagraphsExact": true,
+      "paragraphs": 8,
+      "images": [],
+      "icons": 1,
+      "imagesLoaded": true,
+      "embeddedOffline": true
+    },
+    {
+      "id": "chapter4-03",
+      "order": 38,
+      "sourceParagraphsExact": true,
+      "paragraphs": 9,
+      "images": [],
+      "icons": 5,
+      "imagesLoaded": true,
+      "embeddedOffline": true
+    },
+    {
+      "id": "chapter4-04",
+      "order": 39,
+      "sourceParagraphsExact": true,
+      "paragraphs": 8,
+      "images": [],
+      "icons": 4,
+      "imagesLoaded": true,
+      "embeddedOffline": true
+    },
+    {
+      "id": "chapter4-05",
+      "order": 40,
+      "sourceParagraphsExact": true,
+      "paragraphs": 9,
+      "images": [],
+      "icons": 5,
+      "imagesLoaded": true,
+      "embeddedOffline": true
+    },
+    {
+      "id": "chapter4-06",
+      "order": 41,
+      "sourceParagraphsExact": true,
+      "paragraphs": 9,
+      "images": [],
+      "icons": 5,
+      "imagesLoaded": true,
+      "embeddedOffline": true
+    },
+    {
+      "id": "chapter4-07",
+      "order": 42,
+      "sourceParagraphsExact": true,
+      "paragraphs": 9,
+      "images": [],
+      "icons": 5,
+      "imagesLoaded": true,
+      "embeddedOffline": true
+    },
+    {
+      "id": "chapter4-08",
+      "order": 43,
+      "sourceParagraphsExact": true,
+      "paragraphs": 9,
+      "images": [],
+      "icons": 5,
+      "imagesLoaded": true,
+      "embeddedOffline": true
+    },
+    {
+      "id": "chapter4-09",
+      "order": 44,
+      "sourceParagraphsExact": true,
+      "paragraphs": 9,
+      "images": [],
+      "icons": 5,
+      "imagesLoaded": true,
+      "embeddedOffline": true
+    },
+    {
+      "id": "chapter4-10",
+      "order": 45,
+      "sourceParagraphsExact": true,
+      "paragraphs": 9,
+      "images": [],
+      "icons": 4,
+      "imagesLoaded": true,
+      "embeddedOffline": true
+    },
+    {
+      "id": "chapter4-11",
+      "order": 46,
+      "sourceParagraphsExact": true,
+      "paragraphs": 9,
+      "images": [],
+      "icons": 3,
+      "imagesLoaded": true,
+      "embeddedOffline": true
+    },
+    {
+      "id": "chapter4-12",
+      "order": 47,
+      "sourceParagraphsExact": true,
+      "paragraphs": 9,
+      "images": [],
+      "icons": 5,
+      "imagesLoaded": true,
+      "embeddedOffline": true
+    },
+    {
+      "id": "chapter4-13",
+      "order": 48,
+      "sourceParagraphsExact": true,
+      "paragraphs": 10,
+      "images": [],
+      "icons": 1,
+      "imagesLoaded": true,
+      "embeddedOffline": true
+    }
+  ],
+  "pageErrors": []
+}
