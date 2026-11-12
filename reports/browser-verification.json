@@ -4,11 +4,11 @@
   "sourceCount": 77,
   "contrastMethod": "Computed CSS text color or SVG text fill, alpha-composited ancestor backgrounds. Existing image pixels and decorative SVG backgrounds are not treated as DOM text.",
   "inputSha256": {
-    "slides/content.source.json": "9733df2f9cd05802ce228d0e236218a5656d5a3b9732df815943c3a0778d3aa1",
-    "app/globals.css": "70bf42138b93d67752ced493dedfceb2af48deb323aa86be563c23c67616fdbe",
-    "slides/design.json": "b9cf7317f7fee6f39f9c4dc6cf4688ad081f78895adf3048e0dbda50dda9d30b",
-    "components/deck-runtime.ts": "7a0d69b8f9eaf982c52b19090f7b5daf83df4993c1ad0c57f80c16440953b303",
-    "dist/life3.html": "437d2f291e36affdbbb7094fe37d8951a806719da526e606a2d5e06e12f9fd60"
+    "slides/content.source.json": "b4a3789e0e69624fb73c0e5182aebb2a45937185455c73729a77488296f274a7",
+    "app/globals.css": "2e139dfa6d3c3f3d63b0f852a646f0fd0c67f162338c332c4c929000f547c160",
+    "slides/design.json": "b484e31d2b8ae7bbe076a3dfbac79f63bc372a170b750fbb6e32d36397e53211",
+    "components/deck-runtime.ts": "085b0402e3ce913020156666f5b17910962a2ca7308383905c6ac8433bcd88e5",
+    "dist/life3.html": "ba5229c2e117a3236cbb0b3d8ede0e716ec490020b6d37e33c3c865044be3898"
   },
   "checks": [
     {
@@ -145,23 +145,11 @@
         {
           "id": "author",
           "index": 1,
-          "textRangeCount": 24,
+          "textRangeCount": 23,
           "hidden": [],
           "clipping": [],
           "overlaps": [],
           "contrast": [
-            {
-              "ratio": 5.328,
-              "foreground": "rgb(100, 107, 125)",
-              "background": [
-                255,
-                255,
-                255
-              ],
-              "opacity": 1,
-              "example": "Зураг: Web Summit, CC BY 4.0",
-              "element": "figcaption"
-            },
             {
               "ratio": 6.48,
               "foreground": "rgb(44, 85, 200)",
@@ -197,12 +185,24 @@
               "opacity": 1,
               "example": "Швед гаралтай Америкийн физикч. Анх сансар судлаач байсан ч сүүлийн жилүүдэд хий",
               "element": "div.sub"
+            },
+            {
+              "ratio": 5.328,
+              "foreground": "rgb(100, 107, 125)",
+              "background": [
+                255,
+                255,
+                255
+              ],
+              "opacity": 1,
+              "example": "Төрсөн",
+              "element": "span"
             }
           ],
           "activeAnimations": 0,
           "stageScale": 1,
           "fit": "1",
-          "lowestText": 931,
+          "lowestText": 907.046875,
           "differences": []
         },
         {
@@ -394,7 +394,7 @@
         {
           "id": "ch1",
           "index": 4,
-          "textRangeCount": 12,
+          "textRangeCount": 11,
           "hidden": [],
           "clipping": [],
           "overlaps": [],
@@ -446,46 +446,22 @@
               "opacity": 1,
               "example": "Welcome to the Most Important Conversation of Our Time",
               "element": "div.div-en"
-            },
-            {
-              "ratio": 7.87,
-              "foreground": "rgb(255, 255, 255)",
-              "background": [
-                78.60000000000001,
-                81.48,
-                90.12
-              ],
-              "opacity": 1,
-              "example": "Hubble Ultra Deep Field, NASA/ESA",
-              "element": "figcaption"
             }
           ],
           "activeAnimations": 0,
           "stageScale": 1,
           "fit": "1",
-          "lowestText": 936,
+          "lowestText": 819.1875,
           "differences": []
         },
         {
           "id": "history",
           "index": 5,
-          "textRangeCount": 23,
+          "textRangeCount": 22,
           "hidden": [],
           "clipping": [],
           "overlaps": [],
           "contrast": [
-            {
-              "ratio": 5.328,
-              "foreground": "rgb(100, 107, 125)",
-              "background": [
-                255,
-                255,
-                255
-              ],
-              "opacity": 1,
-              "example": "Аполло 17-оос авсан зураг, NASA",
-              "element": "figcaption"
-            },
             {
               "ratio": 6.48,
               "foreground": "rgb(44, 85, 200)",
@@ -562,13 +538,13 @@
           "activeAnimations": 0,
           "stageScale": 1,
           "fit": "1",
-          "lowestText": 824.5,
+          "lowestText": 800.390625,
           "differences": []
         },
         {
           "id": "stages",
           "index": 6,
-          "textRangeCount": 32,
+          "textRangeCount": 29,
           "hidden": [],
           "clipping": [],
           "overlaps": [],
@@ -610,18 +586,6 @@
               "element": "div.sub"
             },
             {
-              "ratio": 5.328,
-              "foreground": "rgb(100, 107, 125)",
-              "background": [
-                255,
-                255,
-                255
-              ],
-              "opacity": 1,
-              "example": "E. coli бактери, USDA",
-              "element": "figcaption"
-            },
-            {
               "ratio": 13.486,
               "foreground": "rgb(19, 41, 107)",
               "background": [
@@ -632,12 +596,24 @@
               "opacity": 1,
               "example": "Амьдрал 1.0",
               "element": "h3"
+            },
+            {
+              "ratio": 5.328,
+              "foreground": "rgb(100, 107, 125)",
+              "background": [
+                255,
+                255,
+                255
+              ],
+              "opacity": 1,
+              "example": "Хувьслаар",
+              "element": "b"
             }
           ],
           "activeAnimations": 0,
           "stageScale": 1,
           "fit": "1",
-          "lowestText": 883.234375,
+          "lowestText": 856.234375,
           "differences": []
         },
         {
@@ -805,7 +781,7 @@
         {
           "id": "napa",
           "index": 9,
-          "textRangeCount": 28,
+          "textRangeCount": 26,
           "hidden": [],
           "clipping": [],
           "overlaps": [],
@@ -833,18 +809,6 @@
               "opacity": 1,
               "example": "Пейж, Маск хоёрын маргаан",
               "element": "h2.title"
-            },
-            {
-              "ratio": 5.328,
-              "foreground": "rgb(100, 107, 125)",
-              "background": [
-                255,
-                255,
-                255
-              ],
-              "opacity": 1,
-              "example": "Stansfield PL, CC BY-SA 3.0",
-              "element": "figcaption"
             },
             {
               "ratio": 8.652,
@@ -886,7 +850,7 @@
           "activeAnimations": 0,
           "stageScale": 1,
           "fit": "1",
-          "lowestText": 907.484375,
+          "lowestText": 880.484375,
           "differences": []
         },
         {
@@ -1141,7 +1105,7 @@
         {
           "id": "ch2",
           "index": 13,
-          "textRangeCount": 15,
+          "textRangeCount": 14,
           "hidden": [],
           "clipping": [],
           "overlaps": [],
@@ -1205,30 +1169,18 @@
               "opacity": 1,
               "example": "\"Устөрөгчид хангалттай хугацаа өгвөл хүн болж хувирдаг.\"",
               "element": "div.epigraph"
-            },
-            {
-              "ratio": 7.87,
-              "foreground": "rgb(255, 255, 255)",
-              "background": [
-                78.60000000000001,
-                81.48,
-                90.12
-              ],
-              "opacity": 1,
-              "example": "Intel 80486 процессорын цөм, 1.2 сая транзистортой",
-              "element": "figcaption"
             }
           ],
           "activeAnimations": 0,
           "stageScale": 1,
           "fit": "1",
-          "lowestText": 936,
+          "lowestText": 866.890625,
           "differences": []
         },
         {
           "id": "intel",
           "index": 14,
-          "textRangeCount": 32,
+          "textRangeCount": 31,
           "hidden": [],
           "clipping": [],
           "overlaps": [],
@@ -1285,7 +1237,7 @@
           "activeAnimations": 0,
           "stageScale": 1,
           "fit": "1",
-          "lowestText": 914,
+          "lowestText": 682.5,
           "differences": []
         },
         {
@@ -1366,7 +1318,7 @@
         {
           "id": "memory",
           "index": 16,
-          "textRangeCount": 29,
+          "textRangeCount": 28,
           "hidden": [],
           "clipping": [],
           "overlaps": [],
@@ -1418,30 +1370,18 @@
               "opacity": 1,
               "example": "Хэд хэдэн тогтвортой төлөвтэй аливаа зүйл мэдээлэл хадгалж чадна. Хоёр хотгортой",
               "element": "p"
-            },
-            {
-              "ratio": 5.328,
-              "foreground": "rgb(100, 107, 125)",
-              "background": [
-                255,
-                255,
-                255
-              ],
-              "opacity": 1,
-              "example": "Jay Dixit, CC BY-SA 4.0",
-              "element": "figcaption"
             }
           ],
           "activeAnimations": 0,
           "stageScale": 1,
           "fit": "1",
-          "lowestText": 894.796875,
+          "lowestText": 779.796875,
           "differences": []
         },
         {
           "id": "compute",
           "index": 17,
-          "textRangeCount": 38,
+          "textRangeCount": 37,
           "hidden": [],
           "clipping": [],
           "overlaps": [],
@@ -1546,13 +1486,13 @@
           "activeAnimations": 0,
           "stageScale": 1,
           "fit": "1",
-          "lowestText": 757.296875,
+          "lowestText": 730.296875,
           "differences": []
         },
         {
           "id": "learning",
           "index": 18,
-          "textRangeCount": 18,
+          "textRangeCount": 17,
           "hidden": [],
           "clipping": [],
           "overlaps": [],
@@ -1582,18 +1522,6 @@
               "element": "h2.title"
             },
             {
-              "ratio": 5.328,
-              "foreground": "rgb(100, 107, 125)",
-              "background": [
-                255,
-                255,
-                255
-              ],
-              "opacity": 1,
-              "example": "Микроскопоор харсан нейронууд, ManuelSchottdorf, CC BY-SA 4.0",
-              "element": "figcaption"
-            },
-            {
               "ratio": 13.486,
               "foreground": "rgb(19, 41, 107)",
               "background": [
@@ -1621,13 +1549,13 @@
           "activeAnimations": 0,
           "stageScale": 1,
           "fit": "1",
-          "lowestText": 878.796875,
+          "lowestText": 851.796875,
           "differences": []
         },
         {
           "id": "case",
           "index": 19,
-          "textRangeCount": 37,
+          "textRangeCount": 36,
           "hidden": [],
           "clipping": [],
           "overlaps": [],
@@ -1655,18 +1583,6 @@
               "opacity": 1,
               "example": "Ухаалаг гэрлэн дохио",
               "element": "h2.title"
-            },
-            {
-              "ratio": 5.328,
-              "foreground": "rgb(100, 107, 125)",
-              "background": [
-                255,
-                255,
-                255
-              ],
-              "opacity": 1,
-              "example": "Улаанбаатар, Orgio89, CC0",
-              "element": "figcaption"
             },
             {
               "ratio": 9.438,
@@ -1727,12 +1643,24 @@
               "opacity": 1,
               "example": "Хэн ч муу санаагүй. AI хэлснийг нь л хийсэн.",
               "element": "div.case-note"
+            },
+            {
+              "ratio": 5.328,
+              "foreground": "rgb(100, 107, 125)",
+              "background": [
+                255,
+                255,
+                255
+              ],
+              "opacity": 1,
+              "example": "1-р бүлэг",
+              "element": "small"
             }
           ],
           "activeAnimations": 0,
           "stageScale": 1,
           "fit": "1",
-          "lowestText": 768.984375,
+          "lowestText": 741.984375,
           "differences": []
         },
         {
@@ -5089,7 +5017,7 @@
         {
           "id": "consciousness-03",
           "index": 69,
-          "textRangeCount": 8,
+          "textRangeCount": 7,
           "hidden": [],
           "clipping": [],
           "overlaps": [],
@@ -5117,18 +5045,6 @@
               "opacity": 1,
               "example": "Тархи биднийг хуурдаг уу?",
               "element": "h2.title"
-            },
-            {
-              "ratio": 5.328,
-              "foreground": "rgb(100, 107, 125)",
-              "background": [
-                255,
-                255,
-                255
-              ],
-              "opacity": 1,
-              "example": "Зураг 8.4, «Амьдрал 3.0»",
-              "element": "figcaption"
             },
             {
               "ratio": 9.438,
@@ -5518,23 +5434,11 @@
         {
           "id": "thanks",
           "index": 76,
-          "textRangeCount": 11,
+          "textRangeCount": 3,
           "hidden": [],
           "clipping": [],
           "overlaps": [],
           "contrast": [
-            {
-              "ratio": 6.48,
-              "foreground": "rgb(44, 85, 200)",
-              "background": [
-                255,
-                255,
-                255
-              ],
-              "opacity": 1,
-              "example": "◆",
-              "element": "span"
-            },
             {
               "ratio": 18.194,
               "foreground": "rgb(17, 21, 34)",
@@ -5558,60 +5462,12 @@
               "opacity": 1,
               "example": "баярлалаа",
               "element": "em"
-            },
-            {
-              "ratio": 9.438,
-              "foreground": "rgb(62, 70, 89)",
-              "background": [
-                255,
-                255,
-                255
-              ],
-              "opacity": 1,
-              "example": "Ирээдүйг хамтдаа бүтээнэ.",
-              "element": "div.closing-message"
-            },
-            {
-              "ratio": 13.486,
-              "foreground": "rgb(255, 255, 255)",
-              "background": [
-                19,
-                41,
-                107
-              ],
-              "opacity": 1,
-              "example": "Мэдлэгээ бататгая",
-              "element": "small"
-            },
-            {
-              "ratio": 5.328,
-              "foreground": "rgb(100, 107, 125)",
-              "background": [
-                255,
-                255,
-                255
-              ],
-              "opacity": 1,
-              "example": "/ajilbar",
-              "element": "span.closing-shorturl"
-            },
-            {
-              "ratio": 18.077,
-              "foreground": "rgb(255, 255, 255)",
-              "background": [
-                7,
-                22,
-                45
-              ],
-              "opacity": 1,
-              "example": "Хүн · Оюун ухаан · Ирээдүй",
-              "element": "span.closing-art-caption"
             }
           ],
           "activeAnimations": 0,
           "stageScale": 1,
           "fit": "1",
-          "lowestText": 885,
+          "lowestText": 676.765625,
           "differences": []
         }
       ]
@@ -5750,23 +5606,11 @@
         {
           "id": "author",
           "index": 1,
-          "textRangeCount": 24,
+          "textRangeCount": 23,
           "hidden": [],
           "clipping": [],
           "overlaps": [],
           "contrast": [
-            {
-              "ratio": 5.328,
-              "foreground": "rgb(100, 107, 125)",
-              "background": [
-                255,
-                255,
-                255
-              ],
-              "opacity": 1,
-              "example": "Зураг: Web Summit, CC BY 4.0",
-              "element": "figcaption"
-            },
             {
               "ratio": 6.48,
               "foreground": "rgb(44, 85, 200)",
@@ -5802,12 +5646,24 @@
               "opacity": 1,
               "example": "Швед гаралтай Америкийн физикч. Анх сансар судлаач байсан ч сүүлийн жилүүдэд хий",
               "element": "div.sub"
+            },
+            {
+              "ratio": 5.328,
+              "foreground": "rgb(100, 107, 125)",
+              "background": [
+                255,
+                255,
+                255
+              ],
+              "opacity": 1,
+              "example": "Төрсөн",
+              "element": "span"
             }
           ],
           "activeAnimations": 0,
           "stageScale": 0.7111111958821614,
           "fit": "1",
-          "lowestText": 930.9998737573775,
+          "lowestText": 907.0467630569026,
           "differences": []
         },
         {
@@ -5999,7 +5855,7 @@
         {
           "id": "ch1",
           "index": 4,
-          "textRangeCount": 12,
+          "textRangeCount": 11,
           "hidden": [],
           "clipping": [],
           "overlaps": [],
@@ -6051,46 +5907,22 @@
               "opacity": 1,
               "example": "Welcome to the Most Important Conversation of Our Time",
               "element": "div.div-en"
-            },
-            {
-              "ratio": 7.87,
-              "foreground": "rgb(255, 255, 255)",
-              "background": [
-                78.60000000000001,
-                81.48,
-                90.12
-              ],
-              "opacity": 1,
-              "example": "Hubble Ultra Deep Field, NASA/ESA",
-              "element": "figcaption"
             }
           ],
           "activeAnimations": 0,
           "stageScale": 0.7111111958821614,
           "fit": "1",
-          "lowestText": 935.9999399185252,
+          "lowestText": 819.1873909011614,
           "differences": []
         },
         {
           "id": "history",
           "index": 5,
-          "textRangeCount": 23,
+          "textRangeCount": 22,
           "hidden": [],
           "clipping": [],
           "overlaps": [],
           "contrast": [
-            {
-              "ratio": 5.328,
-              "foreground": "rgb(100, 107, 125)",
-              "background": [
-                255,
-                255,
-                255
-              ],
-              "opacity": 1,
-              "example": "Аполло 17-оос авсан зураг, NASA",
-              "element": "figcaption"
-            },
             {
               "ratio": 6.48,
               "foreground": "rgb(44, 85, 200)",
@@ -6167,13 +5999,13 @@
           "activeAnimations": 0,
           "stageScale": 0.7111111958821614,
           "fit": "1",
-          "lowestText": 824.49988073112,
+          "lowestText": 800.3905581962397,
           "differences": []
         },
         {
           "id": "stages",
           "index": 6,
-          "textRangeCount": 32,
+          "textRangeCount": 29,
           "hidden": [],
           "clipping": [],
           "overlaps": [],
@@ -6215,18 +6047,6 @@
               "element": "div.sub"
             },
             {
-              "ratio": 5.328,
-              "foreground": "rgb(100, 107, 125)",
-              "background": [
-                255,
-                255,
-                255
-              ],
-              "opacity": 1,
-              "example": "E. coli бактери, USDA",
-              "element": "figcaption"
-            },
-            {
               "ratio": 13.486,
               "foreground": "rgb(19, 41, 107)",
               "background": [
@@ -6237,12 +6057,24 @@
               "opacity": 1,
               "example": "Амьдрал 1.0",
               "element": "h3"
+            },
+            {
+              "ratio": 5.328,
+              "foreground": "rgb(100, 107, 125)",
+              "background": [
+                255,
+                255,
+                255
+              ],
+              "opacity": 1,
+              "example": "Хувьслаар",
+              "element": "b"
             }
           ],
           "activeAnimations": 0,
           "stageScale": 0.7111111958821614,
           "fit": "1",
-          "lowestText": 883.2343288380708,
+          "lowestText": 856.2343148905856,
           "differences": []
         },
         {
@@ -6410,7 +6242,7 @@
         {
           "id": "napa",
           "index": 9,
-          "textRangeCount": 28,
+          "textRangeCount": 26,
           "hidden": [],
           "clipping": [],
           "overlaps": [],
@@ -6438,18 +6270,6 @@
               "opacity": 1,
               "example": "Пейж, Маск хоёрын маргаан",
               "element": "h2.title"
-            },
-            {
-              "ratio": 5.328,
-              "foreground": "rgb(100, 107, 125)",
-              "background": [
-                255,
-                255,
-                255
-              ],
-              "opacity": 1,
-              "example": "Stansfield PL, CC BY-SA 3.0",
-              "element": "figcaption"
             },
             {
               "ratio": 8.652,
@@ -6491,7 +6311,7 @@
           "activeAnimations": 0,
           "stageScale": 0.7111111958821614,
           "fit": "1",
-          "lowestText": 907.4843278545943,
+          "lowestText": 880.484313907109,
           "differences": []
         },
         {
@@ -6746,7 +6566,7 @@
         {
           "id": "ch2",
           "index": 13,
-          "textRangeCount": 15,
+          "textRangeCount": 14,
           "hidden": [],
           "clipping": [],
           "overlaps": [],
@@ -6810,30 +6630,18 @@
               "opacity": 1,
               "example": "\"Устөрөгчид хангалттай хугацаа өгвөл хүн болж хувирдаг.\"",
               "element": "div.epigraph"
-            },
-            {
-              "ratio": 7.87,
-              "foreground": "rgb(255, 255, 255)",
-              "background": [
-                78.60000000000001,
-                81.48,
-                90.12
-              ],
-              "opacity": 1,
-              "example": "Intel 80486 процессорын цөм, 1.2 сая транзистортой",
-              "element": "figcaption"
             }
           ],
           "activeAnimations": 0,
           "stageScale": 0.7111111958821614,
           "fit": "1",
-          "lowestText": 935.9999399185252,
+          "lowestText": 866.8905369173841,
           "differences": []
         },
         {
           "id": "intel",
           "index": 14,
-          "textRangeCount": 32,
+          "textRangeCount": 31,
           "hidden": [],
           "clipping": [],
           "overlaps": [],
@@ -6890,7 +6698,7 @@
           "activeAnimations": 0,
           "stageScale": 0.7111111958821614,
           "fit": "1",
-          "lowestText": 913.9999063015097,
+          "lowestText": 682.4999329447827,
           "differences": []
         },
         {
@@ -6971,7 +6779,7 @@
         {
           "id": "memory",
           "index": 16,
-          "textRangeCount": 29,
+          "textRangeCount": 28,
           "hidden": [],
           "clipping": [],
           "overlaps": [],
@@ -7023,30 +6831,18 @@
               "opacity": 1,
               "example": "Хэд хэдэн тогтвортой төлөвтэй аливаа зүйл мэдээлэл хадгалж чадна. Хоёр хотгортой",
               "element": "p"
-            },
-            {
-              "ratio": 5.328,
-              "foreground": "rgb(100, 107, 125)",
-              "background": [
-                255,
-                255,
-                255
-              ],
-              "opacity": 1,
-              "example": "Jay Dixit, CC BY-SA 4.0",
-              "element": "figcaption"
             }
           ],
           "activeAnimations": 0,
           "stageScale": 0.7111111958821614,
           "fit": "1",
-          "lowestText": 894.7967511657773,
+          "lowestText": 779.7967744115861,
           "differences": []
         },
         {
           "id": "compute",
           "index": 17,
-          "textRangeCount": 38,
+          "textRangeCount": 37,
           "hidden": [],
           "clipping": [],
           "overlaps": [],
@@ -7151,13 +6947,13 @@
           "activeAnimations": 0,
           "stageScale": 0.7111111958821614,
           "fit": "1",
-          "lowestText": 757.2967770937947,
+          "lowestText": 730.2967631463096,
           "differences": []
         },
         {
           "id": "learning",
           "index": 18,
-          "textRangeCount": 18,
+          "textRangeCount": 17,
           "hidden": [],
           "clipping": [],
           "overlaps": [],
@@ -7187,18 +6983,6 @@
               "element": "h2.title"
             },
             {
-              "ratio": 5.328,
-              "foreground": "rgb(100, 107, 125)",
-              "background": [
-                255,
-                255,
-                255
-              ],
-              "opacity": 1,
-              "example": "Микроскопоор харсан нейронууд, ManuelSchottdorf, CC BY-SA 4.0",
-              "element": "figcaption"
-            },
-            {
               "ratio": 13.486,
               "foreground": "rgb(19, 41, 107)",
               "background": [
@@ -7226,13 +7010,13 @@
           "activeAnimations": 0,
           "stageScale": 0.7111111958821614,
           "fit": "1",
-          "lowestText": 878.796796942139,
+          "lowestText": 851.7967829946539,
           "differences": []
         },
         {
           "id": "case",
           "index": 19,
-          "textRangeCount": 37,
+          "textRangeCount": 36,
           "hidden": [],
           "clipping": [],
           "overlaps": [],
@@ -7260,18 +7044,6 @@
               "opacity": 1,
               "example": "Ухаалаг гэрлэн дохио",
               "element": "h2.title"
-            },
-            {
-              "ratio": 5.328,
-              "foreground": "rgb(100, 107, 125)",
-              "background": [
-                255,
-                255,
-                255
-              ],
-              "opacity": 1,
-              "example": "Улаанбаатар, Orgio89, CC0",
-              "element": "figcaption"
             },
             {
               "ratio": 9.438,
@@ -7332,12 +7104,24 @@
               "opacity": 1,
               "example": "Хэн ч муу санаагүй. AI хэлснийг нь л хийсэн.",
               "element": "div.case-note"
+            },
+            {
+              "ratio": 5.328,
+              "foreground": "rgb(100, 107, 125)",
+              "background": [
+                255,
+                255,
+                255
+              ],
+              "opacity": 1,
+              "example": "1-р бүлэг",
+              "element": "small"
             }
           ],
           "activeAnimations": 0,
           "stageScale": 0.7111111958821614,
           "fit": "1",
-          "lowestText": 768.9843405503821,
+          "lowestText": 741.9843266028969,
           "differences": []
         },
         {
@@ -10694,7 +10478,7 @@
         {
           "id": "consciousness-03",
           "index": 69,
-          "textRangeCount": 8,
+          "textRangeCount": 7,
           "hidden": [],
           "clipping": [],
           "overlaps": [],
@@ -10722,18 +10506,6 @@
               "opacity": 1,
               "example": "Тархи биднийг хуурдаг уу?",
               "element": "h2.title"
-            },
-            {
-              "ratio": 5.328,
-              "foreground": "rgb(100, 107, 125)",
-              "background": [
-                255,
-                255,
-                255
-              ],
-              "opacity": 1,
-              "example": "Зураг 8.4, «Амьдрал 3.0»",
-              "element": "figcaption"
             },
             {
               "ratio": 9.438,
@@ -11123,23 +10895,11 @@
         {
           "id": "thanks",
           "index": 76,
-          "textRangeCount": 11,
+          "textRangeCount": 3,
           "hidden": [],
           "clipping": [],
           "overlaps": [],
           "contrast": [
-            {
-              "ratio": 6.48,
-              "foreground": "rgb(44, 85, 200)",
-              "background": [
-                255,
-                255,
-                255
-              ],
-              "opacity": 1,
-              "example": "◆",
-              "element": "span"
-            },
             {
               "ratio": 18.194,
               "foreground": "rgb(17, 21, 34)",
@@ -11163,60 +10923,12 @@
               "opacity": 1,
               "example": "баярлалаа",
               "element": "em"
-            },
-            {
-              "ratio": 9.438,
-              "foreground": "rgb(62, 70, 89)",
-              "background": [
-                255,
-                255,
-                255
-              ],
-              "opacity": 1,
-              "example": "Ирээдүйг хамтдаа бүтээнэ.",
-              "element": "div.closing-message"
-            },
-            {
-              "ratio": 13.486,
-              "foreground": "rgb(255, 255, 255)",
-              "background": [
-                19,
-                41,
-                107
-              ],
-              "opacity": 1,
-              "example": "Мэдлэгээ бататгая",
-              "element": "small"
-            },
-            {
-              "ratio": 5.328,
-              "foreground": "rgb(100, 107, 125)",
-              "background": [
-                255,
-                255,
-                255
-              ],
-              "opacity": 1,
-              "example": "/ajilbar",
-              "element": "span.closing-shorturl"
-            },
-            {
-              "ratio": 18.077,
-              "foreground": "rgb(255, 255, 255)",
-              "background": [
-                7,
-                22,
-                45
-              ],
-              "opacity": 1,
-              "example": "Хүн · Оюун ухаан · Ирээдүй",
-              "element": "span.closing-art-caption"
             }
           ],
           "activeAnimations": 0,
           "stageScale": 0.7111111958821614,
           "fit": "1",
-          "lowestText": 884.9999517202435,
+          "lowestText": 676.7655424159119,
           "differences": []
         }
       ]
@@ -11363,23 +11075,11 @@
         {
           "id": "author",
           "index": 1,
-          "textRangeCount": 24,
+          "textRangeCount": 23,
           "hidden": [],
           "clipping": [],
           "overlaps": [],
           "contrast": [
-            {
-              "ratio": 5.328,
-              "foreground": "rgb(100, 107, 125)",
-              "background": [
-                255,
-                255,
-                255
-              ],
-              "opacity": 1,
-              "example": "Зураг: Web Summit, CC BY 4.0",
-              "element": "figcaption"
-            },
             {
               "ratio": 6.48,
               "foreground": "rgb(44, 85, 200)",
@@ -11415,12 +11115,24 @@
               "opacity": 1,
               "example": "Швед гаралтай Америкийн физикч. Анх сансар судлаач байсан ч сүүлийн жилүүдэд хий",
               "element": "div.sub"
+            },
+            {
+              "ratio": 5.328,
+              "foreground": "rgb(100, 107, 125)",
+              "background": [
+                255,
+                255,
+                255
+              ],
+              "opacity": 1,
+              "example": "Төрсөн",
+              "element": "span"
             }
           ],
           "activeAnimations": 0,
           "stageScale": 0.203125,
           "fit": "1",
-          "lowestText": 931,
+          "lowestText": 907.046875,
           "differences": []
         },
         {
@@ -11612,7 +11324,7 @@
         {
           "id": "ch1",
           "index": 4,
-          "textRangeCount": 12,
+          "textRangeCount": 11,
           "hidden": [],
           "clipping": [],
           "overlaps": [],
@@ -11664,46 +11376,22 @@
               "opacity": 1,
               "example": "Welcome to the Most Important Conversation of Our Time",
               "element": "div.div-en"
-            },
-            {
-              "ratio": 7.87,
-              "foreground": "rgb(255, 255, 255)",
-              "background": [
-                78.60000000000001,
-                81.48,
-                90.12
-              ],
-              "opacity": 1,
-              "example": "Hubble Ultra Deep Field, NASA/ESA",
-              "element": "figcaption"
             }
           ],
           "activeAnimations": 0,
           "stageScale": 0.203125,
           "fit": "1",
-          "lowestText": 936,
+          "lowestText": 819.1875,
           "differences": []
         },
         {
           "id": "history",
           "index": 5,
-          "textRangeCount": 23,
+          "textRangeCount": 22,
           "hidden": [],
           "clipping": [],
           "overlaps": [],
           "contrast": [
-            {
-              "ratio": 5.328,
-              "foreground": "rgb(100, 107, 125)",
-              "background": [
-                255,
-                255,
-                255
-              ],
-              "opacity": 1,
-              "example": "Аполло 17-оос авсан зураг, NASA",
-              "element": "figcaption"
-            },
             {
               "ratio": 6.48,
               "foreground": "rgb(44, 85, 200)",
@@ -11780,13 +11468,13 @@
           "activeAnimations": 0,
           "stageScale": 0.203125,
           "fit": "1",
-          "lowestText": 824.5,
+          "lowestText": 800.390625,
           "differences": []
         },
         {
           "id": "stages",
           "index": 6,
-          "textRangeCount": 32,
+          "textRangeCount": 29,
           "hidden": [],
           "clipping": [],
           "overlaps": [],
@@ -11828,18 +11516,6 @@
               "element": "div.sub"
             },
             {
-              "ratio": 5.328,
-              "foreground": "rgb(100, 107, 125)",
-              "background": [
-                255,
-                255,
-                255
-              ],
-              "opacity": 1,
-              "example": "E. coli бактери, USDA",
-              "element": "figcaption"
-            },
-            {
               "ratio": 13.486,
               "foreground": "rgb(19, 41, 107)",
               "background": [
@@ -11850,12 +11526,24 @@
               "opacity": 1,
               "example": "Амьдрал 1.0",
               "element": "h3"
+            },
+            {
+              "ratio": 5.328,
+              "foreground": "rgb(100, 107, 125)",
+              "background": [
+                255,
+                255,
+                255
+              ],
+              "opacity": 1,
+              "example": "Хувьслаар",
+              "element": "b"
             }
           ],
           "activeAnimations": 0,
           "stageScale": 0.203125,
           "fit": "1",
-          "lowestText": 883.234375,
+          "lowestText": 856.234375,
           "differences": []
         },
         {
@@ -12023,7 +11711,7 @@
         {
           "id": "napa",
           "index": 9,
-          "textRangeCount": 28,
+          "textRangeCount": 26,
           "hidden": [],
           "clipping": [],
           "overlaps": [],
@@ -12051,18 +11739,6 @@
               "opacity": 1,
               "example": "Пейж, Маск хоёрын маргаан",
               "element": "h2.title"
-            },
-            {
-              "ratio": 5.328,
-              "foreground": "rgb(100, 107, 125)",
-              "background": [
-                255,
-                255,
-                255
-              ],
-              "opacity": 1,
-              "example": "Stansfield PL, CC BY-SA 3.0",
-              "element": "figcaption"
             },
             {
               "ratio": 8.652,
@@ -12104,7 +11780,7 @@
           "activeAnimations": 0,
           "stageScale": 0.203125,
           "fit": "1",
-          "lowestText": 907.484375,
+          "lowestText": 880.484375,
           "differences": []
         },
         {
@@ -12359,7 +12035,7 @@
         {
           "id": "ch2",
           "index": 13,
-          "textRangeCount": 15,
+          "textRangeCount": 14,
           "hidden": [],
           "clipping": [],
           "overlaps": [],
@@ -12423,30 +12099,18 @@
               "opacity": 1,
               "example": "\"Устөрөгчид хангалттай хугацаа өгвөл хүн болж хувирдаг.\"",
               "element": "div.epigraph"
-            },
-            {
-              "ratio": 7.87,
-              "foreground": "rgb(255, 255, 255)",
-              "background": [
-                78.60000000000001,
-                81.48,
-                90.12
-              ],
-              "opacity": 1,
-              "example": "Intel 80486 процессорын цөм, 1.2 сая транзистортой",
-              "element": "figcaption"
             }
           ],
           "activeAnimations": 0,
           "stageScale": 0.203125,
           "fit": "1",
-          "lowestText": 936,
+          "lowestText": 866.890625,
           "differences": []
         },
         {
           "id": "intel",
           "index": 14,
-          "textRangeCount": 32,
+          "textRangeCount": 31,
           "hidden": [],
           "clipping": [],
           "overlaps": [],
@@ -12503,7 +12167,7 @@
           "activeAnimations": 0,
           "stageScale": 0.203125,
           "fit": "1",
-          "lowestText": 914,
+          "lowestText": 682.5,
           "differences": []
         },
         {
@@ -12584,7 +12248,7 @@
         {
           "id": "memory",
           "index": 16,
-          "textRangeCount": 29,
+          "textRangeCount": 28,
           "hidden": [],
           "clipping": [],
           "overlaps": [],
@@ -12636,30 +12300,18 @@
               "opacity": 1,
               "example": "Хэд хэдэн тогтвортой төлөвтэй аливаа зүйл мэдээлэл хадгалж чадна. Хоёр хотгортой",
               "element": "p"
-            },
-            {
-              "ratio": 5.328,
-              "foreground": "rgb(100, 107, 125)",
-              "background": [
-                255,
-                255,
-                255
-              ],
-              "opacity": 1,
-              "example": "Jay Dixit, CC BY-SA 4.0",
-              "element": "figcaption"
             }
           ],
           "activeAnimations": 0,
           "stageScale": 0.203125,
           "fit": "1",
-          "lowestText": 894.796875,
+          "lowestText": 779.796875,
           "differences": []
         },
         {
           "id": "compute",
           "index": 17,
-          "textRangeCount": 38,
+          "textRangeCount": 37,
           "hidden": [],
           "clipping": [],
           "overlaps": [],
@@ -12764,13 +12416,13 @@
           "activeAnimations": 0,
           "stageScale": 0.203125,
           "fit": "1",
-          "lowestText": 757.296875,
+          "lowestText": 730.296875,
           "differences": []
         },
         {
           "id": "learning",
           "index": 18,
-          "textRangeCount": 18,
+          "textRangeCount": 17,
           "hidden": [],
           "clipping": [],
           "overlaps": [],
@@ -12800,18 +12452,6 @@
               "element": "h2.title"
             },
             {
-              "ratio": 5.328,
-              "foreground": "rgb(100, 107, 125)",
-              "background": [
-                255,
-                255,
-                255
-              ],
-              "opacity": 1,
-              "example": "Микроскопоор харсан нейронууд, ManuelSchottdorf, CC BY-SA 4.0",
-              "element": "figcaption"
-            },
-            {
               "ratio": 13.486,
               "foreground": "rgb(19, 41, 107)",
               "background": [
@@ -12839,13 +12479,13 @@
           "activeAnimations": 0,
           "stageScale": 0.203125,
           "fit": "1",
-          "lowestText": 878.796875,
+          "lowestText": 851.796875,
           "differences": []
         },
         {
           "id": "case",
           "index": 19,
-          "textRangeCount": 37,
+          "textRangeCount": 36,
           "hidden": [],
           "clipping": [],
           "overlaps": [],
@@ -12873,18 +12513,6 @@
               "opacity": 1,
               "example": "Ухаалаг гэрлэн дохио",
               "element": "h2.title"
-            },
-            {
-              "ratio": 5.328,
-              "foreground": "rgb(100, 107, 125)",
-              "background": [
-                255,
-                255,
-                255
-              ],
-              "opacity": 1,
-              "example": "Улаанбаатар, Orgio89, CC0",
-              "element": "figcaption"
             },
             {
               "ratio": 9.438,
@@ -12945,12 +12573,24 @@
               "opacity": 1,
               "example": "Хэн ч муу санаагүй. AI хэлснийг нь л хийсэн.",
               "element": "div.case-note"
+            },
+            {
+              "ratio": 5.328,
+              "foreground": "rgb(100, 107, 125)",
+              "background": [
+                255,
+                255,
+                255
+              ],
+              "opacity": 1,
+              "example": "1-р бүлэг",
+              "element": "small"
             }
           ],
           "activeAnimations": 0,
           "stageScale": 0.203125,
           "fit": "1",
-          "lowestText": 768.984375,
+          "lowestText": 741.984375,
           "differences": []
         },
         {
@@ -16307,7 +15947,7 @@
         {
           "id": "consciousness-03",
           "index": 69,
-          "textRangeCount": 8,
+          "textRangeCount": 7,
           "hidden": [],
           "clipping": [],
           "overlaps": [],
@@ -16335,18 +15975,6 @@
               "opacity": 1,
               "example": "Тархи биднийг хуурдаг уу?",
               "element": "h2.title"
-            },
-            {
-              "ratio": 5.328,
-              "foreground": "rgb(100, 107, 125)",
-              "background": [
-                255,
-                255,
-                255
-              ],
-              "opacity": 1,
-              "example": "Зураг 8.4, «Амьдрал 3.0»",
-              "element": "figcaption"
             },
             {
               "ratio": 9.438,
@@ -16736,23 +16364,11 @@
         {
           "id": "thanks",
           "index": 76,
-          "textRangeCount": 11,
+          "textRangeCount": 3,
           "hidden": [],
           "clipping": [],
           "overlaps": [],
           "contrast": [
-            {
-              "ratio": 6.48,
-              "foreground": "rgb(44, 85, 200)",
-              "background": [
-                255,
-                255,
-                255
-              ],
-              "opacity": 1,
-              "example": "◆",
-              "element": "span"
-            },
             {
               "ratio": 18.194,
               "foreground": "rgb(17, 21, 34)",
@@ -16776,60 +16392,12 @@
               "opacity": 1,
               "example": "баярлалаа",
               "element": "em"
-            },
-            {
-              "ratio": 9.438,
-              "foreground": "rgb(62, 70, 89)",
-              "background": [
-                255,
-                255,
-                255
-              ],
-              "opacity": 1,
-              "example": "Ирээдүйг хамтдаа бүтээнэ.",
-              "element": "div.closing-message"
-            },
-            {
-              "ratio": 13.486,
-              "foreground": "rgb(255, 255, 255)",
-              "background": [
-                19,
-                41,
-                107
-              ],
-              "opacity": 1,
-              "example": "Мэдлэгээ бататгая",
-              "element": "small"
-            },
-            {
-              "ratio": 5.328,
-              "foreground": "rgb(100, 107, 125)",
-              "background": [
-                255,
-                255,
-                255
-              ],
-              "opacity": 1,
-              "example": "/ajilbar",
-              "element": "span.closing-shorturl"
-            },
-            {
-              "ratio": 18.077,
-              "foreground": "rgb(255, 255, 255)",
-              "background": [
-                7,
-                22,
-                45
-              ],
-              "opacity": 1,
-              "example": "Хүн · Оюун ухаан · Ирээдүй",
-              "element": "span.closing-art-caption"
             }
           ],
           "activeAnimations": 0,
           "stageScale": 0.203125,
           "fit": "1",
-          "lowestText": 885,
+          "lowestText": 676.765625,
           "differences": []
         }
       ]
@@ -16976,23 +16544,11 @@
         {
           "id": "author",
           "index": 1,
-          "textRangeCount": 24,
+          "textRangeCount": 23,
           "hidden": [],
           "clipping": [],
           "overlaps": [],
           "contrast": [
-            {
-              "ratio": 5.328,
-              "foreground": "rgb(100, 107, 125)",
-              "background": [
-                255,
-                255,
-                255
-              ],
-              "opacity": 1,
-              "example": "Зураг: Web Summit, CC BY 4.0",
-              "element": "figcaption"
-            },
             {
               "ratio": 6.48,
               "foreground": "rgb(44, 85, 200)",
@@ -17028,12 +16584,24 @@
               "opacity": 1,
               "example": "Швед гаралтай Америкийн физикч. Анх сансар судлаач байсан ч сүүлийн жилүүдэд хий",
               "element": "div.sub"
+            },
+            {
+              "ratio": 5.328,
+              "foreground": "rgb(100, 107, 125)",
+              "background": [
+                255,
+                255,
+                255
+              ],
+              "opacity": 1,
+              "example": "Төрсөн",
+              "element": "span"
             }
           ],
           "activeAnimations": 0,
           "stageScale": 0.36111106872558596,
           "fit": "1",
-          "lowestText": 931.0000623262919,
+          "lowestText": 907.0469908549371,
           "differences": []
         },
         {
@@ -17225,7 +16793,7 @@
         {
           "id": "ch1",
           "index": 4,
-          "textRangeCount": 12,
+          "textRangeCount": 11,
           "hidden": [],
           "clipping": [],
           "overlaps": [],
@@ -17277,46 +16845,22 @@
               "opacity": 1,
               "example": "Welcome to the Most Important Conversation of Our Time",
               "element": "div.div-en"
-            },
-            {
-              "ratio": 7.87,
-              "foreground": "rgb(255, 255, 255)",
-              "background": [
-                78.60000000000001,
-                81.48,
-                90.12
-              ],
-              "opacity": 1,
-              "example": "Hubble Ultra Deep Field, NASA/ESA",
-              "element": "figcaption"
             }
           ],
           "activeAnimations": 0,
           "stageScale": 0.36111106872558596,
           "fit": "1",
-          "lowestText": 936.0001098632941,
+          "lowestText": 819.1875398122394,
           "differences": []
         },
         {
           "id": "history",
           "index": 5,
-          "textRangeCount": 23,
+          "textRangeCount": 22,
           "hidden": [],
           "clipping": [],
           "overlaps": [],
           "contrast": [
-            {
-              "ratio": 5.328,
-              "foreground": "rgb(100, 107, 125)",
-              "background": [
-                255,
-                255,
-                255
-              ],
-              "opacity": 1,
-              "example": "Аполло 17-оос авсан зураг, NASA",
-              "element": "figcaption"
-            },
             {
               "ratio": 6.48,
               "foreground": "rgb(44, 85, 200)",
@@ -17393,13 +16937,13 @@
           "activeAnimations": 0,
           "stageScale": 0.36111106872558596,
           "fit": "1",
-          "lowestText": 824.5001061659717,
+          "lowestText": 800.3906907760256,
           "differences": []
         },
         {
           "id": "stages",
           "index": 6,
-          "textRangeCount": 32,
+          "textRangeCount": 29,
           "hidden": [],
           "clipping": [],
           "overlaps": [],
@@ -17441,18 +16985,6 @@
               "element": "div.sub"
             },
             {
-              "ratio": 5.328,
-              "foreground": "rgb(100, 107, 125)",
-              "background": [
-                255,
-                255,
-                255
-              ],
-              "opacity": 1,
-              "example": "E. coli бактери, USDA",
-              "element": "figcaption"
-            },
-            {
               "ratio": 13.486,
               "foreground": "rgb(19, 41, 107)",
               "background": [
@@ -17463,12 +16995,24 @@
               "opacity": 1,
               "example": "Амьдрал 1.0",
               "element": "h3"
+            },
+            {
+              "ratio": 5.328,
+              "foreground": "rgb(100, 107, 125)",
+              "background": [
+                255,
+                255,
+                255
+              ],
+              "opacity": 1,
+              "example": "Хувьслаар",
+              "element": "b"
             }
           ],
           "activeAnimations": 0,
           "stageScale": 0.36111106872558596,
           "fit": "1",
-          "lowestText": 883.234459889862,
+          "lowestText": 856.2344567207285,
           "differences": []
         },
         {
@@ -17636,7 +17180,7 @@
         {
           "id": "napa",
           "index": 9,
-          "textRangeCount": 28,
+          "textRangeCount": 26,
           "hidden": [],
           "clipping": [],
           "overlaps": [],
@@ -17664,18 +17208,6 @@
               "opacity": 1,
               "example": "Пейж, Маск хоёрын маргаан",
               "element": "h2.title"
-            },
-            {
-              "ratio": 5.328,
-              "foreground": "rgb(100, 107, 125)",
-              "background": [
-                255,
-                255,
-                255
-              ],
-              "opacity": 1,
-              "example": "Stansfield PL, CC BY-SA 3.0",
-              "element": "figcaption"
             },
             {
               "ratio": 8.652,
@@ -17717,7 +17249,7 @@
           "activeAnimations": 0,
           "stageScale": 0.36111106872558596,
           "fit": "1",
-          "lowestText": 907.484500296314,
+          "lowestText": 880.4844971271805,
           "differences": []
         },
         {
@@ -17972,7 +17504,7 @@
         {
           "id": "ch2",
           "index": 13,
-          "textRangeCount": 15,
+          "textRangeCount": 14,
           "hidden": [],
           "clipping": [],
           "overlaps": [],
@@ -18036,30 +17568,18 @@
               "opacity": 1,
               "example": "\"Устөрөгчид хангалттай хугацаа өгвөл хүн болж хувирдаг.\"",
               "element": "div.epigraph"
-            },
-            {
-              "ratio": 7.87,
-              "foreground": "rgb(255, 255, 255)",
-              "background": [
-                78.60000000000001,
-                81.48,
-                90.12
-              ],
-              "opacity": 1,
-              "example": "Intel 80486 процессорын цөм, 1.2 сая транзистортой",
-              "element": "figcaption"
             }
           ],
           "activeAnimations": 0,
           "stageScale": 0.36111106872558596,
           "fit": "1",
-          "lowestText": 936.0001098632941,
+          "lowestText": 866.8906891914589,
           "differences": []
         },
         {
           "id": "intel",
           "index": 14,
-          "textRangeCount": 32,
+          "textRangeCount": 31,
           "hidden": [],
           "clipping": [],
           "overlaps": [],
@@ -18116,7 +17636,7 @@
           "activeAnimations": 0,
           "stageScale": 0.36111106872558596,
           "fit": "1",
-          "lowestText": 914.0000697209366,
+          "lowestText": 682.5000660236142,
           "differences": []
         },
         {
@@ -18197,7 +17717,7 @@
         {
           "id": "memory",
           "index": 16,
-          "textRangeCount": 29,
+          "textRangeCount": 28,
           "hidden": [],
           "clipping": [],
           "overlaps": [],
@@ -18249,30 +17769,18 @@
               "opacity": 1,
               "example": "Хэд хэдэн тогтвортой төлөвтэй аливаа зүйл мэдээлэл хадгалж чадна. Хоёр хотгортой",
               "element": "p"
-            },
-            {
-              "ratio": 5.328,
-              "foreground": "rgb(100, 107, 125)",
-              "background": [
-                255,
-                255,
-                255
-              ],
-              "opacity": 1,
-              "example": "Jay Dixit, CC BY-SA 4.0",
-              "element": "figcaption"
             }
           ],
           "activeAnimations": 0,
           "stageScale": 0.36111106872558596,
           "fit": "1",
-          "lowestText": 894.7969800270644,
+          "lowestText": 779.7969853089535,
           "differences": []
         },
         {
           "id": "compute",
           "index": 17,
-          "textRangeCount": 38,
+          "textRangeCount": 37,
           "hidden": [],
           "clipping": [],
           "overlaps": [],
@@ -18377,13 +17885,13 @@
           "activeAnimations": 0,
           "stageScale": 0.36111106872558596,
           "fit": "1",
-          "lowestText": 757.2969826680089,
+          "lowestText": 730.2969794988754,
           "differences": []
         },
         {
           "id": "learning",
           "index": 18,
-          "textRangeCount": 18,
+          "textRangeCount": 17,
           "hidden": [],
           "clipping": [],
           "overlaps": [],
@@ -18413,18 +17921,6 @@
               "element": "h2.title"
             },
             {
-              "ratio": 5.328,
-              "foreground": "rgb(100, 107, 125)",
-              "background": [
-                255,
-                255,
-                255
-              ],
-              "opacity": 1,
-              "example": "Микроскопоор харсан нейронууд, ManuelSchottdorf, CC BY-SA 4.0",
-              "element": "figcaption"
-            },
-            {
               "ratio": 13.486,
               "foreground": "rgb(19, 41, 107)",
               "background": [
@@ -18452,13 +17948,13 @@
           "activeAnimations": 0,
           "stageScale": 0.36111106872558596,
           "fit": "1",
-          "lowestText": 878.7969969291096,
+          "lowestText": 851.7969937599761,
           "differences": []
         },
         {
           "id": "case",
           "index": 19,
-          "textRangeCount": 37,
+          "textRangeCount": 36,
           "hidden": [],
           "clipping": [],
           "overlaps": [],
@@ -18486,18 +17982,6 @@
               "opacity": 1,
               "example": "Ухаалаг гэрлэн дохио",
               "element": "h2.title"
-            },
-            {
-              "ratio": 5.328,
-              "foreground": "rgb(100, 107, 125)",
-              "background": [
-                255,
-                255,
-                255
-              ],
-              "opacity": 1,
-              "example": "Улаанбаатар, Orgio89, CC0",
-              "element": "figcaption"
             },
             {
               "ratio": 9.438,
@@ -18558,12 +18042,24 @@
               "opacity": 1,
               "example": "Хэн ч муу санаагүй. AI хэлснийг нь л хийсэн.",
               "element": "div.case-note"
+            },
+            {
+              "ratio": 5.328,
+              "foreground": "rgb(100, 107, 125)",
+              "background": [
+                255,
+                255,
+                255
+              ],
+              "opacity": 1,
+              "example": "1-р бүлэг",
+              "element": "small"
             }
           ],
           "activeAnimations": 0,
           "stageScale": 0.36111106872558596,
           "fit": "1",
-          "lowestText": 768.9844089196317,
+          "lowestText": 741.9844902607246,
           "differences": []
         },
         {
@@ -21920,7 +21416,7 @@
         {
           "id": "consciousness-03",
           "index": 69,
-          "textRangeCount": 8,
+          "textRangeCount": 7,
           "hidden": [],
           "clipping": [],
           "overlaps": [],
@@ -21948,18 +21444,6 @@
               "opacity": 1,
               "example": "Тархи биднийг хуурдаг уу?",
               "element": "h2.title"
-            },
-            {
-              "ratio": 5.328,
-              "foreground": "rgb(100, 107, 125)",
-              "background": [
-                255,
-                255,
-                255
-              ],
-              "opacity": 1,
-              "example": "Зураг 8.4, «Амьдрал 3.0»",
-              "element": "figcaption"
             },
             {
               "ratio": 9.438,
@@ -22349,23 +21833,11 @@
         {
           "id": "thanks",
           "index": 76,
-          "textRangeCount": 11,
+          "textRangeCount": 3,
           "hidden": [],
           "clipping": [],
           "overlaps": [],
           "contrast": [
-            {
-              "ratio": 6.48,
-              "foreground": "rgb(44, 85, 200)",
-              "background": [
-                255,
-                255,
-                255
-              ],
-              "opacity": 1,
-              "example": "◆",
-              "element": "span"
-            },
             {
               "ratio": 18.194,
               "foreground": "rgb(17, 21, 34)",
@@ -22389,60 +21861,12 @@
               "opacity": 1,
               "example": "баярлалаа",
               "element": "em"
-            },
-            {
-              "ratio": 9.438,
-              "foreground": "rgb(62, 70, 89)",
-              "background": [
-                255,
-                255,
-                255
-              ],
-              "opacity": 1,
-              "example": "Ирээдүйг хамтдаа бүтээнэ.",
-              "element": "div.closing-message"
-            },
-            {
-              "ratio": 13.486,
-              "foreground": "rgb(255, 255, 255)",
-              "background": [
-                19,
-                41,
-                107
-              ],
-              "opacity": 1,
-              "example": "Мэдлэгээ бататгая",
-              "element": "small"
-            },
-            {
-              "ratio": 5.328,
-              "foreground": "rgb(100, 107, 125)",
-              "background": [
-                255,
-                255,
-                255
-              ],
-              "opacity": 1,
-              "example": "/ajilbar",
-              "element": "span.closing-shorturl"
-            },
-            {
-              "ratio": 18.077,
-              "foreground": "rgb(255, 255, 255)",
-              "background": [
-                7,
-                22,
-                45
-              ],
-              "opacity": 1,
-              "example": "Хүн · Оюун ухаан · Ирээдүй",
-              "element": "span.closing-art-caption"
             }
           ],
           "activeAnimations": 0,
           "stageScale": 0.36111106872558596,
           "fit": "1",
-          "lowestText": 885.0000475370023,
+          "lowestText": 676.7657091305905,
           "differences": []
         }
       ]

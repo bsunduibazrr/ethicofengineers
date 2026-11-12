@@ -79,7 +79,6 @@ export function Author() {
         alt="Макс Тегмарк"
         className="author-photo"
         pos="50% 20%"
-        credit="Зураг: Web Summit, CC BY 4.0"
       />
       <div className="author-body">
         <Header

@@ -17,7 +17,6 @@ export function Ch2Divider() {
       }}
       pills={["Оюун ухаан", "Санах ой", "Тооцоолол", "Суралцах"]}
       img="/img/chip-die.jpg"
-      credit="Intel 80486 процессорын цөм, 1.2 сая транзистортой"
     />
   );
 }
@@ -73,7 +72,6 @@ export function Intelligence() {
           alt="Deep Blue"
           className="intel-photo"
           pos="50% 40%"
-          credit="IBM Deep Blue, Anton Chiang, CC BY 2.0"
         />
         <Group className="intel-cols">
           <R className="col">
@@ -305,7 +303,6 @@ export function Memory() {
               alt="Жон Хопфилд"
               className="hop-photo"
               pos="50% 20%"
-              credit="Jay Dixit, CC BY-SA 4.0"
             />
             <R className="hop-text">
               Тархины энэ төрлийн санах ойг <b>Жон Хопфилд</b> 1982 онд нейрон
@@ -422,7 +419,6 @@ export function Computation() {
               alt="Алан Тьюринг"
               className="turing-photo"
               pos="50% 25%"
-              credit="Elliott & Fry, 1951"
             />
             <R className="turing-text">
               <span className="label">1936 он</span>
@@ -459,7 +455,6 @@ export function Learning() {
           src="/img/neurons.jpg"
           alt="Нейронууд"
           className="learn-photo"
-          credit="Микроскопоор харсан нейронууд, ManuelSchottdorf, CC BY-SA 4.0"
         />
         <Group className="numlist">
           <R className="num-item">

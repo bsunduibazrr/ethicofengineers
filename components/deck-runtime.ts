@@ -94,8 +94,6 @@ const REVEAL = [
   ".xasks > *",
   ".xgrid4 > *",
   ".closing > *",
-  ".closing-copy > *",
-  ".closing-art",
   ".xfull .xfig",
   ".xart",
   ".kg",

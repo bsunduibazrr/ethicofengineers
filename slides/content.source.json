@@ -35,7 +35,6 @@
     "title": "Макс Тегмарк",
     "subtitle": "Швед гаралтай Америкийн физикч. Анх сансар судлаач байсан ч сүүлийн жилүүдэд хиймэл оюун ухааны аюулгүй байдлын талаар хамгийн их ярьдаг эрдэмтдийн нэг болсон.",
     "body": [
-      "Зураг: Web Summit, CC BY 4.0",
       "1967 онд Шведийн Стокгольм хотод",
       "Стокгольмд эдийн засаг, физик сурч, 1994 онд UC Berkeley-д доктор хамгаалсан",
       "2004 оноос MIT-д физикийн профессороор ажиллаж байна",
@@ -53,9 +52,8 @@
     ],
     "quote": "",
     "notes": "1967 онд Шведэд төрсөн, MIT-ийн физикийн профессор. Анх сансар судлаач байсан, сүүлийн жилүүдэд AI судалгаа руу орсон. 2014 онд Future of Life Institute-ийг хамтран байгуулсан. 2023 онд TIME AI салбарын нөлөөтэй 100 хүний нэгээр нэрлэсэн.",
-    "html": "<div class=\"author\"><figure class=\"photo author-photo\"><div class=\"photo-frame photo-hover\"><img src=\"/img/tegmark.jpg\" alt=\"Макс Тегмарк\" style=\"object-fit:cover;object-position:50% 20%\" draggable=\"false\"/></div><figcaption>Зураг: Web Summit, CC BY 4.0</figcaption></figure><div class=\"author-body\"><div class=\"header\"><div class=\"kicker-wrapper\"><div class=\"kicker-pill\"><span class=\"kicker-diamond\">◆</span><span class=\"kicker-label\">Зохиолч</span></div></div><div><h2 class=\"title\">Макс Тегмарк</h2></div><div class=\"sub\">Швед гаралтай Америкийн физикч. Анх сансар судлаач байсан ч сүүлийн жилүүдэд хиймэл оюун ухааны аюулгүй байдлын талаар хамгийн их ярьдаг эрдэмтдийн нэг болсон.</div></div><div class=\"dl\"><div class=\"dl-row\"><span>Төрсөн</span><p>1967 онд Шведийн Стокгольм хотод</p></div><div class=\"dl-row\"><span>Боловсрол</span><p>Стокгольмд эдийн засаг, физик сурч, 1994 онд UC Berkeley-д доктор хамгаалсан</p></div><div class=\"dl-row\"><span>Ажил</span><p>2004 оноос MIT-д физикийн профессороор ажиллаж байна</p></div><div class=\"dl-row\"><span>Байгууллага</span><p>2014 онд Future of Life Institute-ийг хамтран байгуулж, ерөнхийлөгч нь болсон</p></div><div class=\"dl-row\"><span>Шагнал</span><p>TIME сэтгүүлийн AI салбарын нөлөөтэй 100 хүн (2023), Шведийн Инженерийн ШУА-ийн алтан медаль (2019)</p></div></div><div class=\"author-books\"><img src=\"/img/cover-omu.jpg\" alt=\"Our Mathematical Universe\"/><img src=\"/img/cover-us-2017.jpg\" alt=\"Life 3.0\"/><div><span class=\"label\">Бичсэн номууд</span><p><i>Our Mathematical Universe</i>, 2014 он</p><p><i>Life 3.0</i>, 2017 он</p></div></div></div></div>",
+    "html": "<div class=\"author\"><figure class=\"photo author-photo\"><div class=\"photo-frame photo-hover\"><img src=\"/img/tegmark.jpg\" alt=\"Макс Тегмарк\" style=\"object-fit:cover;object-position:50% 20%\" draggable=\"false\"/></div></figure><div class=\"author-body\"><div class=\"header\"><div class=\"kicker-wrapper\"><div class=\"kicker-pill\"><span class=\"kicker-diamond\">◆</span><span class=\"kicker-label\">Зохиолч</span></div></div><div><h2 class=\"title\">Макс Тегмарк</h2></div><div class=\"sub\">Швед гаралтай Америкийн физикч. Анх сансар судлаач байсан ч сүүлийн жилүүдэд хиймэл оюун ухааны аюулгүй байдлын талаар хамгийн их ярьдаг эрдэмтдийн нэг болсон.</div></div><div class=\"dl\"><div class=\"dl-row\"><span>Төрсөн</span><p>1967 онд Шведийн Стокгольм хотод</p></div><div class=\"dl-row\"><span>Боловсрол</span><p>Стокгольмд эдийн засаг, физик сурч, 1994 онд UC Berkeley-д доктор хамгаалсан</p></div><div class=\"dl-row\"><span>Ажил</span><p>2004 оноос MIT-д физикийн профессороор ажиллаж байна</p></div><div class=\"dl-row\"><span>Байгууллага</span><p>2014 онд Future of Life Institute-ийг хамтран байгуулж, ерөнхийлөгч нь болсон</p></div><div class=\"dl-row\"><span>Шагнал</span><p>TIME сэтгүүлийн AI салбарын нөлөөтэй 100 хүн (2023), Шведийн Инженерийн ШУА-ийн алтан медаль (2019)</p></div></div><div class=\"author-books\"><img src=\"/img/cover-omu.jpg\" alt=\"Our Mathematical Universe\"/><img src=\"/img/cover-us-2017.jpg\" alt=\"Life 3.0\"/><div><span class=\"label\">Бичсэн номууд</span><p><i>Our Mathematical Universe</i>, 2014 он</p><p><i>Life 3.0</i>, 2017 он</p></div></div></div></div>",
     "textNodes": [
-      "Зураг: Web Summit, CC BY 4.0",
       "◆",
       "Зохиолч",
       "Макс Тегмарк",
@@ -76,8 +74,8 @@
       "Life 3.0",
       ", 2017 он"
     ],
-    "text": "Зураг: Web Summit, CC BY 4.0◆ЗохиолчМакс ТегмаркШвед гаралтай Америкийн физикч. Анх сансар судлаач байсан ч сүүлийн жилүүдэд хиймэл оюун ухааны аюулгүй байдлын талаар хамгийн их ярьдаг эрдэмтдийн нэг болсон.Төрсөн1967 онд Шведийн Стокгольм хотодБоловсролСтокгольмд эдийн засаг, физик сурч, 1994 онд UC Berkeley-д доктор хамгаалсанАжил2004 оноос MIT-д физикийн профессороор ажиллаж байнаБайгууллага2014 онд Future of Life Institute-ийг хамтран байгуулж, ерөнхийлөгч нь болсонШагналTIME сэтгүүлийн AI салбарын нөлөөтэй 100 хүн (2023), Шведийн Инженерийн ШУА-ийн алтан медаль (2019)Бичсэн номуудOur Mathematical Universe, 2014 онLife 3.0, 2017 он",
-    "sha256": "f054c5d4cba9bafc8066780eca96a28cad3a5138d36afcc71ac0649b60357059"
+    "text": "◆ЗохиолчМакс ТегмаркШвед гаралтай Америкийн физикч. Анх сансар судлаач байсан ч сүүлийн жилүүдэд хиймэл оюун ухааны аюулгүй байдлын талаар хамгийн их ярьдаг эрдэмтдийн нэг болсон.Төрсөн1967 онд Шведийн Стокгольм хотодБоловсролСтокгольмд эдийн засаг, физик сурч, 1994 онд UC Berkeley-д доктор хамгаалсанАжил2004 оноос MIT-д физикийн профессороор ажиллаж байнаБайгууллага2014 онд Future of Life Institute-ийг хамтран байгуулж, ерөнхийлөгч нь болсонШагналTIME сэтгүүлийн AI салбарын нөлөөтэй 100 хүн (2023), Шведийн Инженерийн ШУА-ийн алтан медаль (2019)Бичсэн номуудOur Mathematical Universe, 2014 онLife 3.0, 2017 он",
+    "sha256": "d397673ea5566b0c9e5e6975c9b244704a6f5104077baf46a332fe69ce3063a4"
   },
   {
     "id": "book",
@@ -194,13 +192,11 @@
     "type": "Section divider",
     "title": "Бидний цаг үеийн хамгийн чухал яриа",
     "subtitle": "",
-    "body": [
-      "Hubble Ultra Deep Field, NASA/ESA"
-    ],
+    "body": [],
     "list": [],
     "quote": "",
     "notes": "1-р бүлэг. Гурван зүйл ярина: амьдралын гурван үе шат, AI-ийн талаарх маргаан, түгээмэл буруу ойлголтууд.",
-    "html": "<div class=\"divider\"><div class=\"div-body\"><div class=\"div-num\">01</div><div class=\"kicker\">1-р бүлэг</div><div><h2 class=\"div-title\">Бидний цаг үеийн хамгийн чухал яриа</h2></div><div class=\"div-en\">Welcome to the Most Important Conversation of Our Time</div><div class=\"div-list\"><div class=\"div-item\"><b>1</b>Амьдралын гурван үе шат</div><div class=\"div-item\"><b>2</b>AI-ийн талаарх маргаан</div><div class=\"div-item\"><b>3</b>Түгээмэл буруу ойлголтууд</div></div></div><figure class=\"photo div-photo\"><div class=\"photo-frame photo-hover\"><img src=\"/img/deep-field.jpg\" alt=\"\" style=\"object-fit:cover\" draggable=\"false\"/></div><figcaption>Hubble Ultra Deep Field, NASA/ESA</figcaption></figure></div>",
+    "html": "<div class=\"divider\"><div class=\"div-body\"><div class=\"div-num\">01</div><div class=\"kicker\">1-р бүлэг</div><div><h2 class=\"div-title\">Бидний цаг үеийн хамгийн чухал яриа</h2></div><div class=\"div-en\">Welcome to the Most Important Conversation of Our Time</div><div class=\"div-list\"><div class=\"div-item\"><b>1</b>Амьдралын гурван үе шат</div><div class=\"div-item\"><b>2</b>AI-ийн талаарх маргаан</div><div class=\"div-item\"><b>3</b>Түгээмэл буруу ойлголтууд</div></div></div><figure class=\"photo div-photo\"><div class=\"photo-frame photo-hover\"><img src=\"/img/deep-field.jpg\" alt=\"\" style=\"object-fit:cover\" draggable=\"false\"/></div></figure></div>",
     "textNodes": [
       "01",
       "1-р бүлэг",
@@ -211,11 +207,10 @@
       "2",
       "AI-ийн талаарх маргаан",
       "3",
-      "Түгээмэл буруу ойлголтууд",
-      "Hubble Ultra Deep Field, NASA/ESA"
+      "Түгээмэл буруу ойлголтууд"
     ],
-    "text": "011-р бүлэгБидний цаг үеийн хамгийн чухал яриаWelcome to the Most Important Conversation of Our Time1Амьдралын гурван үе шат2AI-ийн талаарх маргаан3Түгээмэл буруу ойлголтуудHubble Ultra Deep Field, NASA/ESA",
-    "sha256": "93baab794eeca848c9b0afee381f804e8ed5b0eb7a8554432776d546eecff617"
+    "text": "011-р бүлэгБидний цаг үеийн хамгийн чухал яриаWelcome to the Most Important Conversation of Our Time1Амьдралын гурван үе шат2AI-ийн талаарх маргаан3Түгээмэл буруу ойлголтууд",
+    "sha256": "2e7842533d35dfe4a547a68c35785f389d84491588d9cdd3ec9df493e2d5c7ec"
   },
   {
     "id": "history",
@@ -225,15 +220,13 @@
     "title": "Их тэсрэлтээс өнөөдрийг хүртэл",
     "subtitle": "Тегмарк номоо орчлонгийн түүхээс эхэлдэг. Түүний бодлоор 13.8 тэрбум жилийн дараа орчлон өөрийгөө танин мэдэх чадвартай амьтдыг бий болгосон, тэр нь бид.",
     "body": [
-      "Аполло 17-оос авсан зураг, NASA",
       "Тегмаркийн тодорхойлсноор амьдрал бол өөрийн бүтцийг хадгалж, үржиж чаддаг процесс. Үүнийг бие (hardware) ба мэдлэг, чадвар (software) гэж хоёр хувааж үздэг."
     ],
     "list": [],
     "quote": "",
     "notes": "Тегмарк Их тэсрэлтээс эхэлдэг. Орчлон 13.8 тэрбум жилийн дараа өөрийгөө танин мэдэх амьтдыг бий болгосон, тэр нь бид. Амьдралыг бие (hardware), мэдлэг (software) гэж хувааж үздэг. Энэ нь дараагийн слайдад хэрэг болно.",
-    "html": "<div class=\"history\"><figure class=\"photo history-photo\"><div class=\"photo-frame photo-hover\"><img src=\"/img/earth.jpg\" alt=\"Дэлхий\" style=\"object-fit:cover\" draggable=\"false\"/></div><figcaption>Аполло 17-оос авсан зураг, NASA</figcaption></figure><div><div class=\"header\"><div class=\"kicker-wrapper\"><div class=\"kicker-pill\"><span class=\"kicker-diamond\">◆</span><span class=\"kicker-label\">1-р бүлэг</span></div></div><div><h2 class=\"title\">Их тэсрэлтээс өнөөдрийг хүртэл</h2></div><div class=\"sub\">Тегмарк номоо орчлонгийн түүхээс эхэлдэг. Түүний бодлоор 13.8 тэрбум жилийн дараа орчлон өөрийгөө танин мэдэх чадвартай амьтдыг бий болгосон, тэр нь бид.</div></div><div class=\"vtl\"><i class=\"vtl-line\"></i><div><div class=\"vtl-item\"><b>13.8 тэрбум жилийн өмнө</b><span>Их тэсрэлт болж, орчлон үүссэн</span></div><div class=\"vtl-item\"><b>Дараа нь</b><span>Атом, од, галактик бий болсон</span></div><div class=\"vtl-item\"><b>≈ 4 тэрбум жилийн өмнө</b><span>Дэлхий дээр анхны амьдрал</span></div><div class=\"vtl-item\"><b>≈ 300 000 жилийн өмнө</b><span>Хомо сапиенс, хэл ба соёл</span></div><div class=\"vtl-item now\"><b>Өнөөдөр</b><span>Технологи, хиймэл оюун ухаан</span></div></div></div><div class=\"definition\"><span class=\"label\">Амьдрал гэж юу вэ?</span><p>Тегмаркийн тодорхойлсноор амьдрал бол өөрийн бүтцийг хадгалж, үржиж чаддаг процесс. Үүнийг <b>бие</b> (hardware) ба <b>мэдлэг, чадвар</b> (software) гэж хоёр хувааж үздэг.</p></div></div></div>",
+    "html": "<div class=\"history\"><figure class=\"photo history-photo\"><div class=\"photo-frame photo-hover\"><img src=\"/img/earth.jpg\" alt=\"Дэлхий\" style=\"object-fit:cover\" draggable=\"false\"/></div></figure><div><div class=\"header\"><div class=\"kicker-wrapper\"><div class=\"kicker-pill\"><span class=\"kicker-diamond\">◆</span><span class=\"kicker-label\">1-р бүлэг</span></div></div><div><h2 class=\"title\">Их тэсрэлтээс өнөөдрийг хүртэл</h2></div><div class=\"sub\">Тегмарк номоо орчлонгийн түүхээс эхэлдэг. Түүний бодлоор 13.8 тэрбум жилийн дараа орчлон өөрийгөө танин мэдэх чадвартай амьтдыг бий болгосон, тэр нь бид.</div></div><div class=\"vtl\"><i class=\"vtl-line\"></i><div><div class=\"vtl-item\"><b>13.8 тэрбум жилийн өмнө</b><span>Их тэсрэлт болж, орчлон үүссэн</span></div><div class=\"vtl-item\"><b>Дараа нь</b><span>Атом, од, галактик бий болсон</span></div><div class=\"vtl-item\"><b>≈ 4 тэрбум жилийн өмнө</b><span>Дэлхий дээр анхны амьдрал</span></div><div class=\"vtl-item\"><b>≈ 300 000 жилийн өмнө</b><span>Хомо сапиенс, хэл ба соёл</span></div><div class=\"vtl-item now\"><b>Өнөөдөр</b><span>Технологи, хиймэл оюун ухаан</span></div></div></div><div class=\"definition\"><span class=\"label\">Амьдрал гэж юу вэ?</span><p>Тегмаркийн тодорхойлсноор амьдрал бол өөрийн бүтцийг хадгалж, үржиж чаддаг процесс. Үүнийг <b>бие</b> (hardware) ба <b>мэдлэг, чадвар</b> (software) гэж хоёр хувааж үздэг.</p></div></div></div>",
     "textNodes": [
-      "Аполло 17-оос авсан зураг, NASA",
       "◆",
       "1-р бүлэг",
       "Их тэсрэлтээс өнөөдрийг хүртэл",
@@ -255,8 +248,8 @@
       "мэдлэг, чадвар",
       " (software) гэж хоёр хувааж үздэг."
     ],
-    "text": "Аполло 17-оос авсан зураг, NASA◆1-р бүлэгИх тэсрэлтээс өнөөдрийг хүртэлТегмарк номоо орчлонгийн түүхээс эхэлдэг. Түүний бодлоор 13.8 тэрбум жилийн дараа орчлон өөрийгөө танин мэдэх чадвартай амьтдыг бий болгосон, тэр нь бид.13.8 тэрбум жилийн өмнөИх тэсрэлт болж, орчлон үүссэнДараа ньАтом, од, галактик бий болсон≈ 4 тэрбум жилийн өмнөДэлхий дээр анхны амьдрал≈ 300 000 жилийн өмнөХомо сапиенс, хэл ба соёлӨнөөдөрТехнологи, хиймэл оюун ухаанАмьдрал гэж юу вэ?Тегмаркийн тодорхойлсноор амьдрал бол өөрийн бүтцийг хадгалж, үржиж чаддаг процесс. Үүнийг бие (hardware) ба мэдлэг, чадвар (software) гэж хоёр хувааж үздэг.",
-    "sha256": "e58b751e64920e7353e8c7a58444df70889eb44a371aa422de315824fc238416"
+    "text": "◆1-р бүлэгИх тэсрэлтээс өнөөдрийг хүртэлТегмарк номоо орчлонгийн түүхээс эхэлдэг. Түүний бодлоор 13.8 тэрбум жилийн дараа орчлон өөрийгөө танин мэдэх чадвартай амьтдыг бий болгосон, тэр нь бид.13.8 тэрбум жилийн өмнөИх тэсрэлт болж, орчлон үүссэнДараа ньАтом, од, галактик бий болсон≈ 4 тэрбум жилийн өмнөДэлхий дээр анхны амьдрал≈ 300 000 жилийн өмнөХомо сапиенс, хэл ба соёлӨнөөдөрТехнологи, хиймэл оюун ухаанАмьдрал гэж юу вэ?Тегмаркийн тодорхойлсноор амьдрал бол өөрийн бүтцийг хадгалж, үржиж чаддаг процесс. Үүнийг бие (hardware) ба мэдлэг, чадвар (software) гэж хоёр хувааж үздэг.",
+    "sha256": "a4631d784cb6fac819aaec8000c8741bac05a098b3771fb8a942cb5bcf845ed2"
   },
   {
     "id": "stages",
@@ -265,21 +258,16 @@
     "type": "Comparison",
     "title": "Амьдралын гурван үе шат",
     "subtitle": "Номын нэр эндээс гаралтай. Тегмарк хошигнож бид одоо Амьдрал 2.1 гэдэг, учир нь хиймэл шүд, зүрхний аппарат зэргээр биеэ бага зэрэг сайжруулж эхэлсэн.",
-    "body": [
-      "E. coli бактери, USDA",
-      "Зураг: Widad.sirkhotte, CC BY 4.0",
-      "ASIMO робот, Vanillase, CC BY-SA 3.0"
-    ],
+    "body": [],
     "list": [],
     "quote": "",
     "notes": "1.0: бактери, бүх юм хувьслаар. 2.0: бид, биеэ сонгохгүй ч мэдлэгээ сурдаг. 3.0: биеэ ч, оюунаа ч өөрөө бүтээнэ, одоогоор байхгүй. Бид 2.1 гэж хошигнодог: хиймэл шүд, зүрхний аппарат.",
-    "html": "<div class=\"stages\"><div class=\"header\"><div class=\"kicker-wrapper\"><div class=\"kicker-pill\"><span class=\"kicker-diamond\">◆</span><span class=\"kicker-label\">1-р бүлэг</span></div></div><div><h2 class=\"title\">Амьдралын гурван үе шат</h2></div><div class=\"sub\">Номын нэр эндээс гаралтай. Тегмарк хошигнож бид одоо Амьдрал 2.1 гэдэг, учир нь хиймэл шүд, зүрхний аппарат зэргээр биеэ бага зэрэг сайжруулж эхэлсэн.</div></div><div class=\"stage-cols\"><div class=\"stage-col\"><figure class=\"photo stage-photo\"><div class=\"photo-frame photo-hover\"><img src=\"/img/life1-ecoli.jpg\" alt=\"Биологийн\" style=\"object-fit:cover;object-position:50% 35%\" draggable=\"false\"/></div><figcaption>E. coli бактери, USDA</figcaption></figure><div class=\"stage-head\"><h3>Амьдрал 1.0</h3><span>Биологийн</span></div><div class=\"stage-rows\"><div><span>Бие</span><b class=\"\">Хувьслаар</b></div><div><span>Мэдлэг, чадвар</span><b class=\"\">Хувьслаар</b></div></div><div class=\"stage-d\">Бактери насан туршдаа шинэ юм сурдаггүй. Өөрчлөгдөх ганц арга нь олон үе дамжсан хувьсал.</div></div><div class=\"stage-col\"><figure class=\"photo stage-photo\"><div class=\"photo-frame photo-hover\"><img src=\"/img/life2-child.jpg\" alt=\"Соёлын\" style=\"object-fit:cover;object-position:50% 35%\" draggable=\"false\"/></div><figcaption>Зураг: Widad.sirkhotte, CC BY 4.0</figcaption></figure><div class=\"stage-head\"><h3>Амьдрал 2.0</h3><span>Соёлын</span></div><div class=\"stage-rows\"><div><span>Бие</span><b class=\"\">Хувьслаар</b></div><div><span>Мэдлэг, чадвар</span><b class=\"self\">Өөрөө сурна</b></div></div><div class=\"stage-d\">Бие нь хувьслаар заяадаг ч хэл, мэдлэг, ур чадвараа хүн өөрөө сурч эзэмшдэг.</div></div><div class=\"stage-col\"><figure class=\"photo stage-photo\"><div class=\"photo-frame photo-hover\"><img src=\"/img/life3-asimo.jpg\" alt=\"Технологийн\" style=\"object-fit:cover;object-position:50% 35%\" draggable=\"false\"/></div><figcaption>ASIMO робот, Vanillase, CC BY-SA 3.0</figcaption></figure><div class=\"stage-head\"><h3>Амьдрал 3.0</h3><span>Технологийн</span></div><div class=\"stage-rows\"><div><span>Бие</span><b class=\"self\">Өөрөө бүтээнэ</b></div><div><span>Мэдлэг, чадвар</span><b class=\"self\">Өөрөө сурна</b></div></div><div class=\"stage-d\">Биеэ ч, оюун ухаанаа ч өөрөө зохион бүтээнэ. Одоогоор ийм амьдрал байхгүй.</div></div></div></div>",
+    "html": "<div class=\"stages\"><div class=\"header\"><div class=\"kicker-wrapper\"><div class=\"kicker-pill\"><span class=\"kicker-diamond\">◆</span><span class=\"kicker-label\">1-р бүлэг</span></div></div><div><h2 class=\"title\">Амьдралын гурван үе шат</h2></div><div class=\"sub\">Номын нэр эндээс гаралтай. Тегмарк хошигнож бид одоо Амьдрал 2.1 гэдэг, учир нь хиймэл шүд, зүрхний аппарат зэргээр биеэ бага зэрэг сайжруулж эхэлсэн.</div></div><div class=\"stage-cols\"><div class=\"stage-col\"><figure class=\"photo stage-photo\"><div class=\"photo-frame photo-hover\"><img src=\"/img/life1-ecoli.jpg\" alt=\"Биологийн\" style=\"object-fit:cover;object-position:50% 35%\" draggable=\"false\"/></div></figure><div class=\"stage-head\"><h3>Амьдрал 1.0</h3><span>Биологийн</span></div><div class=\"stage-rows\"><div><span>Бие</span><b class=\"\">Хувьслаар</b></div><div><span>Мэдлэг, чадвар</span><b class=\"\">Хувьслаар</b></div></div><div class=\"stage-d\">Бактери насан туршдаа шинэ юм сурдаггүй. Өөрчлөгдөх ганц арга нь олон үе дамжсан хувьсал.</div></div><div class=\"stage-col\"><figure class=\"photo stage-photo\"><div class=\"photo-frame photo-hover\"><img src=\"/img/life2-child.jpg\" alt=\"Соёлын\" style=\"object-fit:cover;object-position:50% 35%\" draggable=\"false\"/></div></figure><div class=\"stage-head\"><h3>Амьдрал 2.0</h3><span>Соёлын</span></div><div class=\"stage-rows\"><div><span>Бие</span><b class=\"\">Хувьслаар</b></div><div><span>Мэдлэг, чадвар</span><b class=\"self\">Өөрөө сурна</b></div></div><div class=\"stage-d\">Бие нь хувьслаар заяадаг ч хэл, мэдлэг, ур чадвараа хүн өөрөө сурч эзэмшдэг.</div></div><div class=\"stage-col\"><figure class=\"photo stage-photo\"><div class=\"photo-frame photo-hover\"><img src=\"/img/life3-asimo.jpg\" alt=\"Технологийн\" style=\"object-fit:cover;object-position:50% 35%\" draggable=\"false\"/></div></figure><div class=\"stage-head\"><h3>Амьдрал 3.0</h3><span>Технологийн</span></div><div class=\"stage-rows\"><div><span>Бие</span><b class=\"self\">Өөрөө бүтээнэ</b></div><div><span>Мэдлэг, чадвар</span><b class=\"self\">Өөрөө сурна</b></div></div><div class=\"stage-d\">Биеэ ч, оюун ухаанаа ч өөрөө зохион бүтээнэ. Одоогоор ийм амьдрал байхгүй.</div></div></div></div>",
     "textNodes": [
       "◆",
       "1-р бүлэг",
       "Амьдралын гурван үе шат",
       "Номын нэр эндээс гаралтай. Тегмарк хошигнож бид одоо Амьдрал 2.1 гэдэг, учир нь хиймэл шүд, зүрхний аппарат зэргээр биеэ бага зэрэг сайжруулж эхэлсэн.",
-      "E. coli бактери, USDA",
       "Амьдрал 1.0",
       "Биологийн",
       "Бие",
@@ -287,7 +275,6 @@
       "Мэдлэг, чадвар",
       "Хувьслаар",
       "Бактери насан туршдаа шинэ юм сурдаггүй. Өөрчлөгдөх ганц арга нь олон үе дамжсан хувьсал.",
-      "Зураг: Widad.sirkhotte, CC BY 4.0",
       "Амьдрал 2.0",
       "Соёлын",
       "Бие",
@@ -295,7 +282,6 @@
       "Мэдлэг, чадвар",
       "Өөрөө сурна",
       "Бие нь хувьслаар заяадаг ч хэл, мэдлэг, ур чадвараа хүн өөрөө сурч эзэмшдэг.",
-      "ASIMO робот, Vanillase, CC BY-SA 3.0",
       "Амьдрал 3.0",
       "Технологийн",
       "Бие",
@@ -304,8 +290,8 @@
       "Өөрөө сурна",
       "Биеэ ч, оюун ухаанаа ч өөрөө зохион бүтээнэ. Одоогоор ийм амьдрал байхгүй."
     ],
-    "text": "◆1-р бүлэгАмьдралын гурван үе шатНомын нэр эндээс гаралтай. Тегмарк хошигнож бид одоо Амьдрал 2.1 гэдэг, учир нь хиймэл шүд, зүрхний аппарат зэргээр биеэ бага зэрэг сайжруулж эхэлсэн.E. coli бактери, USDAАмьдрал 1.0БиологийнБиеХувьслаарМэдлэг, чадварХувьслаарБактери насан туршдаа шинэ юм сурдаггүй. Өөрчлөгдөх ганц арга нь олон үе дамжсан хувьсал.Зураг: Widad.sirkhotte, CC BY 4.0Амьдрал 2.0СоёлынБиеХувьслаарМэдлэг, чадварӨөрөө сурнаБие нь хувьслаар заяадаг ч хэл, мэдлэг, ур чадвараа хүн өөрөө сурч эзэмшдэг.ASIMO робот, Vanillase, CC BY-SA 3.0Амьдрал 3.0ТехнологийнБиеӨөрөө бүтээнэМэдлэг, чадварӨөрөө сурнаБиеэ ч, оюун ухаанаа ч өөрөө зохион бүтээнэ. Одоогоор ийм амьдрал байхгүй.",
-    "sha256": "7c2bd7928a870bc80b89b5e99548874f2497ad7750d7d3a3e3dd2db5994cc886"
+    "text": "◆1-р бүлэгАмьдралын гурван үе шатНомын нэр эндээс гаралтай. Тегмарк хошигнож бид одоо Амьдрал 2.1 гэдэг, учир нь хиймэл шүд, зүрхний аппарат зэргээр биеэ бага зэрэг сайжруулж эхэлсэн.Амьдрал 1.0БиологийнБиеХувьслаарМэдлэг, чадварХувьслаарБактери насан туршдаа шинэ юм сурдаггүй. Өөрчлөгдөх ганц арга нь олон үе дамжсан хувьсал.Амьдрал 2.0СоёлынБиеХувьслаарМэдлэг, чадварӨөрөө сурнаБие нь хувьслаар заяадаг ч хэл, мэдлэг, ур чадвараа хүн өөрөө сурч эзэмшдэг.Амьдрал 3.0ТехнологийнБиеӨөрөө бүтээнэМэдлэг, чадварӨөрөө сурнаБиеэ ч, оюун ухаанаа ч өөрөө зохион бүтээнэ. Одоогоор ийм амьдрал байхгүй.",
+    "sha256": "5cad325209343ff9dddb5e3439acc8109e7bc43b377b07f1601c07775acebe9f"
   },
   {
     "id": "why2",
@@ -402,22 +388,17 @@
     "type": "Quote",
     "title": "Пейж, Маск хоёрын маргаан",
     "subtitle": "",
-    "body": [
-      "Stansfield PL, CC BY-SA 3.0",
-      "Gage Skidmore, CC BY-SA 4.0"
-    ],
+    "body": [],
     "list": [],
     "quote": "",
     "notes": "2015 онд Маскийн төрсөн өдөр дээр Пейж, Маск хоёр маргалдсан. Пейж Маскыг speciesist гэж нэрлэсэн. Ийм маргаан нэг үгийг өөр ойлгосноос болдог тул Тегмарк нэр томьёогоо эхлээд тодорхойлдог.",
-    "html": "<div class=\"napa\"><div class=\"header\"><div class=\"kicker-wrapper\"><div class=\"kicker-pill\"><span class=\"kicker-diamond\">◆</span><span class=\"kicker-label\">1-р бүлэг · 2015 он, Калифорни</span></div></div><div><h2 class=\"title\">Пейж, Маск хоёрын маргаан</h2></div></div><div class=\"napa-grid\"><div class=\"debate\"><div class=\"debate-people\"><div class=\"person\"><figure class=\"photo person-photo\"><div class=\"photo-frame photo-hover\"><img src=\"/img/larry-page.jpg\" alt=\"Ларри Пейж\" style=\"object-fit:cover;object-position:50% 25%\" draggable=\"false\"/></div><figcaption>Stansfield PL, CC BY-SA 3.0</figcaption></figure><div class=\"person-q\"><b>Ларри Пейж</b>Дижитал амьдрал бол хувьслын дараагийн шат. Түүнийг хязгаарлах шаардлагагүй.</div></div><div class=\"person\"><figure class=\"photo person-photo\"><div class=\"photo-frame photo-hover\"><img src=\"/img/elon-musk.jpg\" alt=\"Илон Маск\" style=\"object-fit:cover;object-position:50% 25%\" draggable=\"false\"/></div><figcaption>Gage Skidmore, CC BY-SA 4.0</figcaption></figure><div class=\"person-q\"><b>Илон Маск</b>Тэгвэл хүн төрөлхтөн яах вэ? Эрсдэлийг нь урьдчилж бодох ёстой.</div></div></div><div class=\"debate-end\">Маргааны үеэр Пейж Маскыг &quot;speciesist&quot; буюу зөвхөн хүн төрөлхтнийг илүүд үздэг хүн гэж нэрлэсэн гэдэг.</div></div><div class=\"terms\"><div class=\"terms-head\">Ийм маргаан ихэнхдээ хүмүүс нэг үгийг өөр өөрөөр ойлгосноос үүсдэг. Тиймээс Тегмарк нэр томьёогоо эхлээд тодорхойлдог.</div><div class=\"terms-list\"><div class=\"term\"><b>Оюун ухаан</b><span>Нарийн төвөгтэй зорилгод хүрэх чадвар</span></div><div class=\"term\"><b>Нарийн AI</b><span>Ганц ажилд сайн, жишээ нь шатар тоглох</span></div><div class=\"term\"><b>AGI</b><span>Бараг бүх ажлыг хүн шиг хийж чадах AI</span></div><div class=\"term\"><b>Супер оюун ухаан</b><span>Хүнээс хамаагүй илүү ухаантай AI</span></div><div class=\"term\"><b>Найрсаг AI</b><span>Зорилго нь хүний зорилготой нийцдэг AI</span></div><div class=\"term\"><b>Ухамсар</b><span>Ямар нэг юмыг өөрөө мэдэрч, туулах</span></div></div></div></div></div>",
+    "html": "<div class=\"napa\"><div class=\"header\"><div class=\"kicker-wrapper\"><div class=\"kicker-pill\"><span class=\"kicker-diamond\">◆</span><span class=\"kicker-label\">1-р бүлэг · 2015 он, Калифорни</span></div></div><div><h2 class=\"title\">Пейж, Маск хоёрын маргаан</h2></div></div><div class=\"napa-grid\"><div class=\"debate\"><div class=\"debate-people\"><div class=\"person\"><figure class=\"photo person-photo\"><div class=\"photo-frame photo-hover\"><img src=\"/img/larry-page.jpg\" alt=\"Ларри Пейж\" style=\"object-fit:cover;object-position:50% 25%\" draggable=\"false\"/></div></figure><div class=\"person-q\"><b>Ларри Пейж</b>Дижитал амьдрал бол хувьслын дараагийн шат. Түүнийг хязгаарлах шаардлагагүй.</div></div><div class=\"person\"><figure class=\"photo person-photo\"><div class=\"photo-frame photo-hover\"><img src=\"/img/elon-musk.jpg\" alt=\"Илон Маск\" style=\"object-fit:cover;object-position:50% 25%\" draggable=\"false\"/></div></figure><div class=\"person-q\"><b>Илон Маск</b>Тэгвэл хүн төрөлхтөн яах вэ? Эрсдэлийг нь урьдчилж бодох ёстой.</div></div></div><div class=\"debate-end\">Маргааны үеэр Пейж Маскыг &quot;speciesist&quot; буюу зөвхөн хүн төрөлхтнийг илүүд үздэг хүн гэж нэрлэсэн гэдэг.</div></div><div class=\"terms\"><div class=\"terms-head\">Ийм маргаан ихэнхдээ хүмүүс нэг үгийг өөр өөрөөр ойлгосноос үүсдэг. Тиймээс Тегмарк нэр томьёогоо эхлээд тодорхойлдог.</div><div class=\"terms-list\"><div class=\"term\"><b>Оюун ухаан</b><span>Нарийн төвөгтэй зорилгод хүрэх чадвар</span></div><div class=\"term\"><b>Нарийн AI</b><span>Ганц ажилд сайн, жишээ нь шатар тоглох</span></div><div class=\"term\"><b>AGI</b><span>Бараг бүх ажлыг хүн шиг хийж чадах AI</span></div><div class=\"term\"><b>Супер оюун ухаан</b><span>Хүнээс хамаагүй илүү ухаантай AI</span></div><div class=\"term\"><b>Найрсаг AI</b><span>Зорилго нь хүний зорилготой нийцдэг AI</span></div><div class=\"term\"><b>Ухамсар</b><span>Ямар нэг юмыг өөрөө мэдэрч, туулах</span></div></div></div></div></div>",
     "textNodes": [
       "◆",
       "1-р бүлэг · 2015 он, Калифорни",
       "Пейж, Маск хоёрын маргаан",
-      "Stansfield PL, CC BY-SA 3.0",
       "Ларри Пейж",
       "Дижитал амьдрал бол хувьслын дараагийн шат. Түүнийг хязгаарлах шаардлагагүй.",
-      "Gage Skidmore, CC BY-SA 4.0",
       "Илон Маск",
       "Тэгвэл хүн төрөлхтөн яах вэ? Эрсдэлийг нь урьдчилж бодох ёстой.",
       "Маргааны үеэр Пейж Маскыг \"speciesist\" буюу зөвхөн хүн төрөлхтнийг илүүд үздэг хүн гэж нэрлэсэн гэдэг.",
@@ -435,8 +416,8 @@
       "Ухамсар",
       "Ямар нэг юмыг өөрөө мэдэрч, туулах"
     ],
-    "text": "◆1-р бүлэг · 2015 он, КалифорниПейж, Маск хоёрын маргаанStansfield PL, CC BY-SA 3.0Ларри ПейжДижитал амьдрал бол хувьслын дараагийн шат. Түүнийг хязгаарлах шаардлагагүй.Gage Skidmore, CC BY-SA 4.0Илон МаскТэгвэл хүн төрөлхтөн яах вэ? Эрсдэлийг нь урьдчилж бодох ёстой.Маргааны үеэр Пейж Маскыг \"speciesist\" буюу зөвхөн хүн төрөлхтнийг илүүд үздэг хүн гэж нэрлэсэн гэдэг.Ийм маргаан ихэнхдээ хүмүүс нэг үгийг өөр өөрөөр ойлгосноос үүсдэг. Тиймээс Тегмарк нэр томьёогоо эхлээд тодорхойлдог.Оюун ухаанНарийн төвөгтэй зорилгод хүрэх чадварНарийн AIГанц ажилд сайн, жишээ нь шатар тоглохAGIБараг бүх ажлыг хүн шиг хийж чадах AIСупер оюун ухаанХүнээс хамаагүй илүү ухаантай AIНайрсаг AIЗорилго нь хүний зорилготой нийцдэг AIУхамсарЯмар нэг юмыг өөрөө мэдэрч, туулах",
-    "sha256": "d5e1c66d37071fc1b0db5afcdf8d6d216c675f9446adb412f2058d7296ed1320"
+    "text": "◆1-р бүлэг · 2015 он, КалифорниПейж, Маск хоёрын маргаанЛарри ПейжДижитал амьдрал бол хувьслын дараагийн шат. Түүнийг хязгаарлах шаардлагагүй.Илон МаскТэгвэл хүн төрөлхтөн яах вэ? Эрсдэлийг нь урьдчилж бодох ёстой.Маргааны үеэр Пейж Маскыг \"speciesist\" буюу зөвхөн хүн төрөлхтнийг илүүд үздэг хүн гэж нэрлэсэн гэдэг.Ийм маргаан ихэнхдээ хүмүүс нэг үгийг өөр өөрөөр ойлгосноос үүсдэг. Тиймээс Тегмарк нэр томьёогоо эхлээд тодорхойлдог.Оюун ухаанНарийн төвөгтэй зорилгод хүрэх чадварНарийн AIГанц ажилд сайн, жишээ нь шатар тоглохAGIБараг бүх ажлыг хүн шиг хийж чадах AIСупер оюун ухаанХүнээс хамаагүй илүү ухаантай AIНайрсаг AIЗорилго нь хүний зорилготой нийцдэг AIУхамсарЯмар нэг юмыг өөрөө мэдэрч, туулах",
+    "sha256": "14b6c85e0dbec057f330803215486f7e20d872f555c8315e4ccc4c179122bcde"
   },
   {
     "id": "myths1",
@@ -577,13 +558,11 @@
     "type": "Section divider",
     "title": "Матери ухаалаг болох нь",
     "subtitle": "",
-    "body": [
-      "Intel 80486 процессорын цөм, 1.2 сая транзистортой"
-    ],
+    "body": [],
     "list": [],
     "quote": "",
     "notes": "2-р бүлэг. Харрисоны ишлэлийг уншина. Гол асуулт: атомаас бүтсэн юм яаж ухаантай болдог вэ? Дөрвөн хэсэг: оюун ухаан, санах ой, тооцоолол, суралцах.",
-    "html": "<div class=\"divider\"><div class=\"div-body\"><div class=\"div-num\">02</div><div class=\"kicker\">2-р бүлэг</div><div><h2 class=\"div-title\">Матери ухаалаг болох нь</h2></div><div class=\"div-en\">Matter Turns Intelligent</div><div class=\"epigraph\">&quot;Устөрөгчид хангалттай хугацаа өгвөл хүн болж хувирдаг.&quot;<small>Эдвард Роберт Харрисон</small></div><div class=\"div-list\"><div class=\"div-item\"><b>1</b>Оюун ухаан</div><div class=\"div-item\"><b>2</b>Санах ой</div><div class=\"div-item\"><b>3</b>Тооцоолол</div><div class=\"div-item\"><b>4</b>Суралцах</div></div></div><figure class=\"photo div-photo\"><div class=\"photo-frame photo-hover\"><img src=\"/img/chip-die.jpg\" alt=\"\" style=\"object-fit:cover\" draggable=\"false\"/></div><figcaption>Intel 80486 процессорын цөм, 1.2 сая транзистортой</figcaption></figure></div>",
+    "html": "<div class=\"divider\"><div class=\"div-body\"><div class=\"div-num\">02</div><div class=\"kicker\">2-р бүлэг</div><div><h2 class=\"div-title\">Матери ухаалаг болох нь</h2></div><div class=\"div-en\">Matter Turns Intelligent</div><div class=\"epigraph\">&quot;Устөрөгчид хангалттай хугацаа өгвөл хүн болж хувирдаг.&quot;<small>Эдвард Роберт Харрисон</small></div><div class=\"div-list\"><div class=\"div-item\"><b>1</b>Оюун ухаан</div><div class=\"div-item\"><b>2</b>Санах ой</div><div class=\"div-item\"><b>3</b>Тооцоолол</div><div class=\"div-item\"><b>4</b>Суралцах</div></div></div><figure class=\"photo div-photo\"><div class=\"photo-frame photo-hover\"><img src=\"/img/chip-die.jpg\" alt=\"\" style=\"object-fit:cover\" draggable=\"false\"/></div></figure></div>",
     "textNodes": [
       "02",
       "2-р бүлэг",
@@ -598,11 +577,10 @@
       "3",
       "Тооцоолол",
       "4",
-      "Суралцах",
-      "Intel 80486 процессорын цөм, 1.2 сая транзистортой"
+      "Суралцах"
     ],
-    "text": "022-р бүлэгМатери ухаалаг болох ньMatter Turns Intelligent\"Устөрөгчид хангалттай хугацаа өгвөл хүн болж хувирдаг.\"Эдвард Роберт Харрисон1Оюун ухаан2Санах ой3Тооцоолол4СуралцахIntel 80486 процессорын цөм, 1.2 сая транзистортой",
-    "sha256": "1d70e8b552e788955ea960a1207e5e3f7b8fde33aafa9b2b2daa61a32cb75ba0"
+    "text": "022-р бүлэгМатери ухаалаг болох ньMatter Turns Intelligent\"Устөрөгчид хангалттай хугацаа өгвөл хүн болж хувирдаг.\"Эдвард Роберт Харрисон1Оюун ухаан2Санах ой3Тооцоолол4Суралцах",
+    "sha256": "2d3997879cc98cb9e9b96a574810e12fff41bdc1bd30710877ad18de3772747b"
   },
   {
     "id": "intel",
@@ -612,7 +590,6 @@
     "title": "Оюун ухаан гэж юу вэ?",
     "subtitle": "Тегмарк үүнийг нарийн төвөгтэй зорилгод хүрэх чадвар гэж маш өргөн утгаар тодорхойлдог. Ингэхээр хүн, амьтан, машин бүгд хамаарна.",
     "body": [
-      "IBM Deep Blue, Anton Chiang, CC BY 2.0",
       "Тооцоолуур биднээс хурдан тоо боддог ч өөр юу ч чаддаггүй. Оюун ухаан олон төрлийн чадвараас бүрддэг.",
       "Deep Blue 1997 онд Каспаровыг хожсон. Гэхдээ шатраас өөр юм мэддэггүй байсан.",
       "Шинэ зүйл сурахыг оролцуулаад бараг ямар ч ажлыг хүнээс дутахгүй хийж чадах AI."
@@ -620,7 +597,7 @@
     "list": [],
     "quote": "",
     "notes": "Оюун ухаан = нарийн төвөгтэй зорилгод хүрэх чадвар. IQ-гээр хэмжихгүй. Тооцоолуур, Deep Blue хоёр нарийн. AGI бол бараг бүх ажлыг хүн шиг хийдэг ерөнхий оюун ухаан.",
-    "html": "<div class=\"intel\"><div class=\"header\"><div class=\"kicker-wrapper\"><div class=\"kicker-pill\"><span class=\"kicker-diamond\">◆</span><span class=\"kicker-label\">2-р бүлэг</span></div></div><div><h2 class=\"title\">Оюун ухаан гэж юу вэ?</h2></div><div class=\"sub\">Тегмарк үүнийг нарийн төвөгтэй зорилгод хүрэх чадвар гэж маш өргөн утгаар тодорхойлдог. Ингэхээр хүн, амьтан, машин бүгд хамаарна.</div></div><div class=\"spectrum\"><div class=\"spec-ends\"><span>← Нарийн</span><span>Өргөн →</span></div><div class=\"spec-track\"><div class=\"spec-fill\"></div><div class=\"spec-mark\" style=\"left:5%;x:-50%\"><i></i><b>Тооцоолуур</b><small>зөвхөн тоо боддог</small></div><div class=\"spec-mark\" style=\"left:32%;x:-50%\"><i></i><b>Deep Blue</b><small>зөвхөн шатар</small></div><div class=\"spec-mark\" style=\"left:62%;x:-50%\"><i></i><b>Хүн</b><small>олон зүйл чаддаг</small></div><div class=\"spec-mark hot\" style=\"left:93%;x:-50%\"><i></i><b>AGI</b><small>бараг бүгдийг</small></div></div></div><div class=\"intel-grid\"><figure class=\"photo intel-photo\"><div class=\"photo-frame photo-hover\"><img src=\"/img/deep-blue.jpg\" alt=\"Deep Blue\" style=\"object-fit:cover;object-position:50% 40%\" draggable=\"false\"/></div><figcaption>IBM Deep Blue, Anton Chiang, CC BY 2.0</figcaption></figure><div class=\"intel-cols\"><div class=\"col\"><span class=\"label\">IQ хангалтгүй</span><h3>Нэг тоогоор хэмжихгүй</h3><p>Тооцоолуур биднээс хурдан тоо боддог ч өөр юу ч чаддаггүй. Оюун ухаан олон төрлийн чадвараас бүрддэг.</p></div><div class=\"col\"><span class=\"label\">Нарийн AI</span><h3>Ганц ажилд л сайн</h3><p>Deep Blue 1997 онд Каспаровыг хожсон. Гэхдээ шатраас өөр юм мэддэггүй байсан.</p></div><div class=\"col accent\"><span class=\"label\">AGI</span><h3>Ерөнхий оюун ухаан</h3><p>Шинэ зүйл сурахыг оролцуулаад бараг ямар ч ажлыг хүнээс дутахгүй хийж чадах AI.</p></div></div></div></div>",
+    "html": "<div class=\"intel\"><div class=\"header\"><div class=\"kicker-wrapper\"><div class=\"kicker-pill\"><span class=\"kicker-diamond\">◆</span><span class=\"kicker-label\">2-р бүлэг</span></div></div><div><h2 class=\"title\">Оюун ухаан гэж юу вэ?</h2></div><div class=\"sub\">Тегмарк үүнийг нарийн төвөгтэй зорилгод хүрэх чадвар гэж маш өргөн утгаар тодорхойлдог. Ингэхээр хүн, амьтан, машин бүгд хамаарна.</div></div><div class=\"spectrum\"><div class=\"spec-ends\"><span>← Нарийн</span><span>Өргөн →</span></div><div class=\"spec-track\"><div class=\"spec-fill\"></div><div class=\"spec-mark\" style=\"left:5%;x:-50%\"><i></i><b>Тооцоолуур</b><small>зөвхөн тоо боддог</small></div><div class=\"spec-mark\" style=\"left:32%;x:-50%\"><i></i><b>Deep Blue</b><small>зөвхөн шатар</small></div><div class=\"spec-mark\" style=\"left:62%;x:-50%\"><i></i><b>Хүн</b><small>олон зүйл чаддаг</small></div><div class=\"spec-mark hot\" style=\"left:93%;x:-50%\"><i></i><b>AGI</b><small>бараг бүгдийг</small></div></div></div><div class=\"intel-grid\"><figure class=\"photo intel-photo\"><div class=\"photo-frame photo-hover\"><img src=\"/img/deep-blue.jpg\" alt=\"Deep Blue\" style=\"object-fit:cover;object-position:50% 40%\" draggable=\"false\"/></div></figure><div class=\"intel-cols\"><div class=\"col\"><span class=\"label\">IQ хангалтгүй</span><h3>Нэг тоогоор хэмжихгүй</h3><p>Тооцоолуур биднээс хурдан тоо боддог ч өөр юу ч чаддаггүй. Оюун ухаан олон төрлийн чадвараас бүрддэг.</p></div><div class=\"col\"><span class=\"label\">Нарийн AI</span><h3>Ганц ажилд л сайн</h3><p>Deep Blue 1997 онд Каспаровыг хожсон. Гэхдээ шатраас өөр юм мэддэггүй байсан.</p></div><div class=\"col accent\"><span class=\"label\">AGI</span><h3>Ерөнхий оюун ухаан</h3><p>Шинэ зүйл сурахыг оролцуулаад бараг ямар ч ажлыг хүнээс дутахгүй хийж чадах AI.</p></div></div></div></div>",
     "textNodes": [
       "◆",
       "2-р бүлэг",
@@ -636,7 +613,6 @@
       "олон зүйл чаддаг",
       "AGI",
       "бараг бүгдийг",
-      "IBM Deep Blue, Anton Chiang, CC BY 2.0",
       "IQ хангалтгүй",
       "Нэг тоогоор хэмжихгүй",
       "Тооцоолуур биднээс хурдан тоо боддог ч өөр юу ч чаддаггүй. Оюун ухаан олон төрлийн чадвараас бүрддэг.",
@@ -647,8 +623,8 @@
       "Ерөнхий оюун ухаан",
       "Шинэ зүйл сурахыг оролцуулаад бараг ямар ч ажлыг хүнээс дутахгүй хийж чадах AI."
     ],
-    "text": "◆2-р бүлэгОюун ухаан гэж юу вэ?Тегмарк үүнийг нарийн төвөгтэй зорилгод хүрэх чадвар гэж маш өргөн утгаар тодорхойлдог. Ингэхээр хүн, амьтан, машин бүгд хамаарна.← НарийнӨргөн →Тооцоолуурзөвхөн тоо боддогDeep Blueзөвхөн шатарХүнолон зүйл чаддагAGIбараг бүгдийгIBM Deep Blue, Anton Chiang, CC BY 2.0IQ хангалтгүйНэг тоогоор хэмжихгүйТооцоолуур биднээс хурдан тоо боддог ч өөр юу ч чаддаггүй. Оюун ухаан олон төрлийн чадвараас бүрддэг.Нарийн AIГанц ажилд л сайнDeep Blue 1997 онд Каспаровыг хожсон. Гэхдээ шатраас өөр юм мэддэггүй байсан.AGIЕрөнхий оюун ухаанШинэ зүйл сурахыг оролцуулаад бараг ямар ч ажлыг хүнээс дутахгүй хийж чадах AI.",
-    "sha256": "c22332ec723d830ebe1216c5f9f35c89040c8eaef74052018a1c22c64cbc10ae"
+    "text": "◆2-р бүлэгОюун ухаан гэж юу вэ?Тегмарк үүнийг нарийн төвөгтэй зорилгод хүрэх чадвар гэж маш өргөн утгаар тодорхойлдог. Ингэхээр хүн, амьтан, машин бүгд хамаарна.← НарийнӨргөн →Тооцоолуурзөвхөн тоо боддогDeep Blueзөвхөн шатарХүнолон зүйл чаддагAGIбараг бүгдийгIQ хангалтгүйНэг тоогоор хэмжихгүйТооцоолуур биднээс хурдан тоо боддог ч өөр юу ч чаддаггүй. Оюун ухаан олон төрлийн чадвараас бүрддэг.Нарийн AIГанц ажилд л сайнDeep Blue 1997 онд Каспаровыг хожсон. Гэхдээ шатраас өөр юм мэддэггүй байсан.AGIЕрөнхий оюун ухаанШинэ зүйл сурахыг оролцуулаад бараг ямар ч ажлыг хүнээс дутахгүй хийж чадах AI.",
+    "sha256": "bac732830bd8efe4f672d554c86bd0b1c83478b106b82e65069ea49def37c554"
   },
   {
     "id": "landscape",
@@ -698,13 +674,12 @@
     "body": [
       "Хэд хэдэн тогтвортой төлөвтэй аливаа зүйл мэдээлэл хадгалж чадна. Хоёр хотгортой гадаргуу дээрх бөмбөг гэхэд л 1 бит хадгална.",
       "\"2048 дугаар хаягт юу байна?\" гэж асууна.",
-      "Дууны эхний мөрийг сонсоход үргэлжлэл нь өөрөө санаанд ордог.",
-      "Jay Dixit, CC BY-SA 4.0"
+      "Дууны эхний мөрийг сонсоход үргэлжлэл нь өөрөө санаанд ордог."
     ],
     "list": [],
     "quote": "",
     "notes": "Хэд хэдэн тогтвортой төлөвтэй юм бүхэн санах ой болно, бөмбөгний жишээ. Мэдээлэл материалаас хамаардаггүй. Компьютер хаягаар, тархи холбоогоор санадаг. Хопфилд 1982, Нобель 2024.",
-    "html": "<div class=\"memory\"><div class=\"header\"><div class=\"kicker-wrapper\"><div class=\"kicker-pill\"><span class=\"kicker-diamond\">◆</span><span class=\"kicker-label\">2-р бүлэг</span></div></div><div><h2 class=\"title\">Санах ой</h2></div></div><div class=\"mem-grid\"><div class=\"panel mem-well\"><span class=\"label\">Санах ой гэж юу вэ?</span><svg viewBox=\"0 0 500 250\" width=\"500\" height=\"250\"><path d=\"M0 60 C 60 60, 70 200, 140 200 C 210 200, 210 90, 250 90 C 290 90, 290 200, 360 200 C 430 200, 440 60, 500 60\" fill=\"none\" stroke=\"#13296b\" stroke-width=\"3\"></path><circle r=\"15\" fill=\"#2c55c8\"></circle><text x=\"140\" y=\"240\" text-anchor=\"middle\" class=\"bit-t\">0</text><text x=\"360\" y=\"240\" text-anchor=\"middle\" class=\"bit-t\">1</text></svg><p>Хэд хэдэн тогтвортой төлөвтэй аливаа зүйл мэдээлэл хадгалж чадна. Хоёр хотгортой гадаргуу дээрх бөмбөг гэхэд л 1 бит хадгална.</p></div><div class=\"mem-right\"><div class=\"panel\"><span class=\"label\">Материал нь хамаагүй</span><h3>Нэг мэдээллийг юун дээр ч хадгалж болно</h3><div class=\"tags\"><span>Чулуу</span><span>Цаас</span><span>Хатуу диск</span><span>Флаш</span><span>ДНХ</span><span>Тархины синапс</span></div></div><div class=\"panel mem-compare\"><div><span class=\"label\">Компьютер</span><h3>Хаягаар хайдаг</h3><p>&quot;2048 дугаар хаягт юу байна?&quot; гэж асууна.</p></div><div><span class=\"label\">Тархи</span><h3>Холбоогоор санадаг</h3><p>Дууны эхний мөрийг сонсоход үргэлжлэл нь өөрөө санаанд ордог.</p></div></div><div class=\"hopfield\"><figure class=\"photo hop-photo\"><div class=\"photo-frame photo-hover\"><img src=\"/img/hopfield.jpg\" alt=\"Жон Хопфилд\" style=\"object-fit:cover;object-position:50% 20%\" draggable=\"false\"/></div><figcaption>Jay Dixit, CC BY-SA 4.0</figcaption></figure><div class=\"hop-text\">Тархины энэ төрлийн санах ойг <b>Жон Хопфилд</b> 1982 онд нейрон сүлжээгээр загварчилсан. Энэ ажлаараа 2024 онд физикийн Нобелийн шагнал авсан.</div></div></div></div></div>",
+    "html": "<div class=\"memory\"><div class=\"header\"><div class=\"kicker-wrapper\"><div class=\"kicker-pill\"><span class=\"kicker-diamond\">◆</span><span class=\"kicker-label\">2-р бүлэг</span></div></div><div><h2 class=\"title\">Санах ой</h2></div></div><div class=\"mem-grid\"><div class=\"panel mem-well\"><span class=\"label\">Санах ой гэж юу вэ?</span><svg viewBox=\"0 0 500 250\" width=\"500\" height=\"250\"><path d=\"M0 60 C 60 60, 70 200, 140 200 C 210 200, 210 90, 250 90 C 290 90, 290 200, 360 200 C 430 200, 440 60, 500 60\" fill=\"none\" stroke=\"#13296b\" stroke-width=\"3\"></path><circle r=\"15\" fill=\"#2c55c8\"></circle><text x=\"140\" y=\"240\" text-anchor=\"middle\" class=\"bit-t\">0</text><text x=\"360\" y=\"240\" text-anchor=\"middle\" class=\"bit-t\">1</text></svg><p>Хэд хэдэн тогтвортой төлөвтэй аливаа зүйл мэдээлэл хадгалж чадна. Хоёр хотгортой гадаргуу дээрх бөмбөг гэхэд л 1 бит хадгална.</p></div><div class=\"mem-right\"><div class=\"panel\"><span class=\"label\">Материал нь хамаагүй</span><h3>Нэг мэдээллийг юун дээр ч хадгалж болно</h3><div class=\"tags\"><span>Чулуу</span><span>Цаас</span><span>Хатуу диск</span><span>Флаш</span><span>ДНХ</span><span>Тархины синапс</span></div></div><div class=\"panel mem-compare\"><div><span class=\"label\">Компьютер</span><h3>Хаягаар хайдаг</h3><p>&quot;2048 дугаар хаягт юу байна?&quot; гэж асууна.</p></div><div><span class=\"label\">Тархи</span><h3>Холбоогоор санадаг</h3><p>Дууны эхний мөрийг сонсоход үргэлжлэл нь өөрөө санаанд ордог.</p></div></div><div class=\"hopfield\"><figure class=\"photo hop-photo\"><div class=\"photo-frame photo-hover\"><img src=\"/img/hopfield.jpg\" alt=\"Жон Хопфилд\" style=\"object-fit:cover;object-position:50% 20%\" draggable=\"false\"/></div></figure><div class=\"hop-text\">Тархины энэ төрлийн санах ойг <b>Жон Хопфилд</b> 1982 онд нейрон сүлжээгээр загварчилсан. Энэ ажлаараа 2024 онд физикийн Нобелийн шагнал авсан.</div></div></div></div></div>",
     "textNodes": [
       "◆",
       "2-р бүлэг",
@@ -727,13 +702,12 @@
       "Тархи",
       "Холбоогоор санадаг",
       "Дууны эхний мөрийг сонсоход үргэлжлэл нь өөрөө санаанд ордог.",
-      "Jay Dixit, CC BY-SA 4.0",
       "Тархины энэ төрлийн санах ойг ",
       "Жон Хопфилд",
       " 1982 онд нейрон сүлжээгээр загварчилсан. Энэ ажлаараа 2024 онд физикийн Нобелийн шагнал авсан."
     ],
-    "text": "◆2-р бүлэгСанах ойСанах ой гэж юу вэ?01Хэд хэдэн тогтвортой төлөвтэй аливаа зүйл мэдээлэл хадгалж чадна. Хоёр хотгортой гадаргуу дээрх бөмбөг гэхэд л 1 бит хадгална.Материал нь хамаагүйНэг мэдээллийг юун дээр ч хадгалж болноЧулууЦаасХатуу дискФлашДНХТархины синапсКомпьютерХаягаар хайдаг\"2048 дугаар хаягт юу байна?\" гэж асууна.ТархиХолбоогоор санадагДууны эхний мөрийг сонсоход үргэлжлэл нь өөрөө санаанд ордог.Jay Dixit, CC BY-SA 4.0Тархины энэ төрлийн санах ойг Жон Хопфилд 1982 онд нейрон сүлжээгээр загварчилсан. Энэ ажлаараа 2024 онд физикийн Нобелийн шагнал авсан.",
-    "sha256": "aab9886e40bfde1befe2f30efd57d7688df4075f2784026bf0c433c25ce6a5fd"
+    "text": "◆2-р бүлэгСанах ойСанах ой гэж юу вэ?01Хэд хэдэн тогтвортой төлөвтэй аливаа зүйл мэдээлэл хадгалж чадна. Хоёр хотгортой гадаргуу дээрх бөмбөг гэхэд л 1 бит хадгална.Материал нь хамаагүйНэг мэдээллийг юун дээр ч хадгалж болноЧулууЦаасХатуу дискФлашДНХТархины синапсКомпьютерХаягаар хайдаг\"2048 дугаар хаягт юу байна?\" гэж асууна.ТархиХолбоогоор санадагДууны эхний мөрийг сонсоход үргэлжлэл нь өөрөө санаанд ордог.Тархины энэ төрлийн санах ойг Жон Хопфилд 1982 онд нейрон сүлжээгээр загварчилсан. Энэ ажлаараа 2024 онд физикийн Нобелийн шагнал авсан.",
+    "sha256": "adae21c33c8cbd789032e2d448099d13f404a26ae2b83a45866d10dc1b5ec263"
   },
   {
     "id": "compute",
@@ -744,14 +718,13 @@
     "subtitle": "",
     "body": [
       "Ийм энгийн хаалгыг олноор нь холбоод ямар ч тооцоолол хийж болно.",
-      "Elliott & Fry, 1951",
       "Хангалттай санах ой, хугацаа өгвөл ямар ч тооцоо хийж чадах машин бүтээж болохыг баталсан. Тегмарк ийм чадвартай материйг \"компьютрониум\" гэж нэрлэдэг.",
       "Долгион усанд ч, агаарт ч адилхан тархдаг. Үүнтэй адил тооцоолол цахиур дээр ч, тархинд ч хийгдэж болно."
     ],
     "list": [],
     "quote": "",
     "notes": "Тооцоолол бол нэг төлөвийг нөгөөд хувиргах. Бүх тооцоог NAND хаалгаар бүтээж болно. Тьюринг 1936. Гол санаа: тооцоолол материалаас хамаардаггүй, тиймээс цахиур дээр ч оюун ухаан бий болж болно.",
-    "html": "<div class=\"compute\"><div class=\"header\"><div class=\"kicker-wrapper\"><div class=\"kicker-pill\"><span class=\"kicker-diamond\">◆</span><span class=\"kicker-label\">2-р бүлэг</span></div></div><div><h2 class=\"title\">Тооцоолол</h2></div></div><div class=\"comp-grid\"><div class=\"panel nand\"><span class=\"label\">NAND хаалга</span><div class=\"nand-body\"><svg viewBox=\"0 0 260 160\" width=\"260\" height=\"160\"><line x1=\"10\" y1=\"55\" x2=\"70\" y2=\"55\" stroke=\"#13296b\" stroke-width=\"3\"></line><line x1=\"10\" y1=\"105\" x2=\"70\" y2=\"105\" stroke=\"#13296b\" stroke-width=\"3\"></line><path d=\"M70 25 H130 A55 55 0 0 1 130 135 H70 Z\" fill=\"#ffffff\" stroke=\"#13296b\" stroke-width=\"3\"></path><circle cx=\"196\" cy=\"80\" r=\"9\" fill=\"#fff\" stroke=\"#13296b\" stroke-width=\"3\"></circle><line x1=\"205\" y1=\"80\" x2=\"250\" y2=\"80\" stroke=\"#13296b\" stroke-width=\"3\"></line><text x=\"104\" y=\"87\" text-anchor=\"middle\" class=\"gate-t\">NAND</text><text x=\"2\" y=\"47\" class=\"io-t\">A</text><text x=\"2\" y=\"97\" class=\"io-t\">B</text></svg><table class=\"truth\"><thead><tr><th>A</th><th>B</th><th>Гаралт</th></tr></thead><tbody><tr style=\"animation-delay:1.2s\"><td>0</td><td>0</td><td><b>1</b></td></tr><tr style=\"animation-delay:2.1s\"><td>0</td><td>1</td><td><b>1</b></td></tr><tr style=\"animation-delay:3s\"><td>1</td><td>0</td><td><b>1</b></td></tr><tr style=\"animation-delay:3.9000000000000004s\"><td>1</td><td>1</td><td><b>0</b></td></tr></tbody></table></div><p>Ийм энгийн хаалгыг олноор нь холбоод <b>ямар ч</b> тооцоолол хийж болно.</p><div class=\"def-line\">Тооцоолол гэдэг нь нэг төлөвийг нөгөөд хувиргах, өөрөөр хэлбэл оролтоос гаралт гаргах үйл явц.</div></div><div class=\"comp-right\"><div class=\"turing\"><figure class=\"photo turing-photo\"><div class=\"photo-frame photo-hover\"><img src=\"/img/turing.jpg\" alt=\"Алан Тьюринг\" style=\"object-fit:cover;object-position:50% 25%\" draggable=\"false\"/></div><figcaption>Elliott &amp; Fry, 1951</figcaption></figure><div class=\"turing-text\"><span class=\"label\">1936 он</span><h3>Алан Тьюринг</h3><p>Хангалттай санах ой, хугацаа өгвөл ямар ч тооцоо хийж чадах машин бүтээж болохыг баталсан. Тегмарк ийм чадвартай материйг &quot;компьютрониум&quot; гэж нэрлэдэг.</p></div></div><div class=\"panel accent\"><span class=\"label\">Хамгийн гол санаа</span><h3>Тооцоолол материалаас хамаардаггүй</h3><p>Долгион усанд ч, агаарт ч адилхан тархдаг. Үүнтэй адил тооцоолол цахиур дээр ч, тархинд ч хийгдэж болно.</p></div></div></div></div>",
+    "html": "<div class=\"compute\"><div class=\"header\"><div class=\"kicker-wrapper\"><div class=\"kicker-pill\"><span class=\"kicker-diamond\">◆</span><span class=\"kicker-label\">2-р бүлэг</span></div></div><div><h2 class=\"title\">Тооцоолол</h2></div></div><div class=\"comp-grid\"><div class=\"panel nand\"><span class=\"label\">NAND хаалга</span><div class=\"nand-body\"><svg viewBox=\"0 0 260 160\" width=\"260\" height=\"160\"><line x1=\"10\" y1=\"55\" x2=\"70\" y2=\"55\" stroke=\"#13296b\" stroke-width=\"3\"></line><line x1=\"10\" y1=\"105\" x2=\"70\" y2=\"105\" stroke=\"#13296b\" stroke-width=\"3\"></line><path d=\"M70 25 H130 A55 55 0 0 1 130 135 H70 Z\" fill=\"#ffffff\" stroke=\"#13296b\" stroke-width=\"3\"></path><circle cx=\"196\" cy=\"80\" r=\"9\" fill=\"#fff\" stroke=\"#13296b\" stroke-width=\"3\"></circle><line x1=\"205\" y1=\"80\" x2=\"250\" y2=\"80\" stroke=\"#13296b\" stroke-width=\"3\"></line><text x=\"104\" y=\"87\" text-anchor=\"middle\" class=\"gate-t\">NAND</text><text x=\"2\" y=\"47\" class=\"io-t\">A</text><text x=\"2\" y=\"97\" class=\"io-t\">B</text></svg><table class=\"truth\"><thead><tr><th>A</th><th>B</th><th>Гаралт</th></tr></thead><tbody><tr style=\"animation-delay:1.2s\"><td>0</td><td>0</td><td><b>1</b></td></tr><tr style=\"animation-delay:2.1s\"><td>0</td><td>1</td><td><b>1</b></td></tr><tr style=\"animation-delay:3s\"><td>1</td><td>0</td><td><b>1</b></td></tr><tr style=\"animation-delay:3.9000000000000004s\"><td>1</td><td>1</td><td><b>0</b></td></tr></tbody></table></div><p>Ийм энгийн хаалгыг олноор нь холбоод <b>ямар ч</b> тооцоолол хийж болно.</p><div class=\"def-line\">Тооцоолол гэдэг нь нэг төлөвийг нөгөөд хувиргах, өөрөөр хэлбэл оролтоос гаралт гаргах үйл явц.</div></div><div class=\"comp-right\"><div class=\"turing\"><figure class=\"photo turing-photo\"><div class=\"photo-frame photo-hover\"><img src=\"/img/turing.jpg\" alt=\"Алан Тьюринг\" style=\"object-fit:cover;object-position:50% 25%\" draggable=\"false\"/></div></figure><div class=\"turing-text\"><span class=\"label\">1936 он</span><h3>Алан Тьюринг</h3><p>Хангалттай санах ой, хугацаа өгвөл ямар ч тооцоо хийж чадах машин бүтээж болохыг баталсан. Тегмарк ийм чадвартай материйг &quot;компьютрониум&quot; гэж нэрлэдэг.</p></div></div><div class=\"panel accent\"><span class=\"label\">Хамгийн гол санаа</span><h3>Тооцоолол материалаас хамаардаггүй</h3><p>Долгион усанд ч, агаарт ч адилхан тархдаг. Үүнтэй адил тооцоолол цахиур дээр ч, тархинд ч хийгдэж болно.</p></div></div></div></div>",
     "textNodes": [
       "◆",
       "2-р бүлэг",
@@ -779,7 +752,6 @@
       "ямар ч",
       " тооцоолол хийж болно.",
       "Тооцоолол гэдэг нь нэг төлөвийг нөгөөд хувиргах, өөрөөр хэлбэл оролтоос гаралт гаргах үйл явц.",
-      "Elliott & Fry, 1951",
       "1936 он",
       "Алан Тьюринг",
       "Хангалттай санах ой, хугацаа өгвөл ямар ч тооцоо хийж чадах машин бүтээж болохыг баталсан. Тегмарк ийм чадвартай материйг \"компьютрониум\" гэж нэрлэдэг.",
@@ -787,8 +759,8 @@
       "Тооцоолол материалаас хамаардаггүй",
       "Долгион усанд ч, агаарт ч адилхан тархдаг. Үүнтэй адил тооцоолол цахиур дээр ч, тархинд ч хийгдэж болно."
     ],
-    "text": "◆2-р бүлэгТооцоололNAND хаалгаNANDABABГаралт001011101110Ийм энгийн хаалгыг олноор нь холбоод ямар ч тооцоолол хийж болно.Тооцоолол гэдэг нь нэг төлөвийг нөгөөд хувиргах, өөрөөр хэлбэл оролтоос гаралт гаргах үйл явц.Elliott & Fry, 19511936 онАлан ТьюрингХангалттай санах ой, хугацаа өгвөл ямар ч тооцоо хийж чадах машин бүтээж болохыг баталсан. Тегмарк ийм чадвартай материйг \"компьютрониум\" гэж нэрлэдэг.Хамгийн гол санааТооцоолол материалаас хамаардаггүйДолгион усанд ч, агаарт ч адилхан тархдаг. Үүнтэй адил тооцоолол цахиур дээр ч, тархинд ч хийгдэж болно.",
-    "sha256": "ed119f6fc761ff2b7da4d171644af54b3ddff4be3a4d7b3a05c252b2dd583932"
+    "text": "◆2-р бүлэгТооцоололNAND хаалгаNANDABABГаралт001011101110Ийм энгийн хаалгыг олноор нь холбоод ямар ч тооцоолол хийж болно.Тооцоолол гэдэг нь нэг төлөвийг нөгөөд хувиргах, өөрөөр хэлбэл оролтоос гаралт гаргах үйл явц.1936 онАлан ТьюрингХангалттай санах ой, хугацаа өгвөл ямар ч тооцоо хийж чадах машин бүтээж болохыг баталсан. Тегмарк ийм чадвартай материйг \"компьютрониум\" гэж нэрлэдэг.Хамгийн гол санааТооцоолол материалаас хамаардаггүйДолгион усанд ч, агаарт ч адилхан тархдаг. Үүнтэй адил тооцоолол цахиур дээр ч, тархинд ч хийгдэж болно.",
+    "sha256": "e244f5ac122e22298182d8de6ddade7dabef0007e231a52fa255fb43c05d8b68"
   },
   {
     "id": "learning",
@@ -798,7 +770,6 @@
     "title": "Суралцах",
     "subtitle": "",
     "body": [
-      "Микроскопоор харсан нейронууд, ManuelSchottdorf, CC BY-SA 4.0",
       "Хамт идэвхждэг нейронуудын холбоо улам хүчтэй болдог. Тархи ингэж суралцдаг.",
       "Тус бүр нь мянга орчим бусад нейронтой холбогддог.",
       "Холбоосоо тохируулж суралцдаг. Хангалттай том бол бараг ямар ч функцийг сурч чадна.",
@@ -807,12 +778,11 @@
     "list": [],
     "quote": "",
     "notes": "Хеббийн дүрэм: хамт идэвхждэг нейронууд холбогддог. 100 тэрбум нейрон. Хиймэл сүлжээ ч ингэж суралцдаг. Тооцоолол хямдарсаар. Дүгнэлт: оюун ухаан зөвхөн хүнд байх албагүй.",
-    "html": "<div class=\"learning\"><div class=\"header\"><div class=\"kicker-wrapper\"><div class=\"kicker-pill\"><span class=\"kicker-diamond\">◆</span><span class=\"kicker-label\">2-р бүлэг</span></div></div><div><h2 class=\"title\">Суралцах</h2></div></div><div class=\"learn-grid\"><figure class=\"photo learn-photo\"><div class=\"photo-frame photo-hover\"><img src=\"/img/neurons.jpg\" alt=\"Нейронууд\" style=\"object-fit:cover\" draggable=\"false\"/></div><figcaption>Микроскопоор харсан нейронууд, ManuelSchottdorf, CC BY-SA 4.0</figcaption></figure><div class=\"numlist\"><div class=\"num-item\"><b>1</b><div><h3>Хеббийн дүрэм</h3><p>Хамт идэвхждэг нейронуудын холбоо улам хүчтэй болдог. Тархи ингэж суралцдаг.</p></div></div><div class=\"num-item\"><b>2</b><div><h3>100 тэрбум орчим нейрон</h3><p>Тус бүр нь мянга орчим бусад нейронтой холбогддог.</p></div></div><div class=\"num-item\"><b>3</b><div><h3>Хиймэл нейрон сүлжээ</h3><p>Холбоосоо тохируулж суралцдаг. Хангалттай том бол бараг ямар ч функцийг сурч чадна.</p></div></div><div class=\"num-item\"><b>4</b><div><h3>Тооцоолол хямдарсаар</h3><p>Мурын хуулиар тооцооллын өртөг хоёр жил орчимд хоёр дахин буурдаг.</p></div></div></div></div><div class=\"footnote summary\"><b>Бүлгийн дүгнэлт:</b> санах ой, тооцоолол, суралцах гурвын аль нь ч биологиос хамаардаггүй. Тиймээс оюун ухаан зөвхөн хүнд байх албагүй.</div></div>",
+    "html": "<div class=\"learning\"><div class=\"header\"><div class=\"kicker-wrapper\"><div class=\"kicker-pill\"><span class=\"kicker-diamond\">◆</span><span class=\"kicker-label\">2-р бүлэг</span></div></div><div><h2 class=\"title\">Суралцах</h2></div></div><div class=\"learn-grid\"><figure class=\"photo learn-photo\"><div class=\"photo-frame photo-hover\"><img src=\"/img/neurons.jpg\" alt=\"Нейронууд\" style=\"object-fit:cover\" draggable=\"false\"/></div></figure><div class=\"numlist\"><div class=\"num-item\"><b>1</b><div><h3>Хеббийн дүрэм</h3><p>Хамт идэвхждэг нейронуудын холбоо улам хүчтэй болдог. Тархи ингэж суралцдаг.</p></div></div><div class=\"num-item\"><b>2</b><div><h3>100 тэрбум орчим нейрон</h3><p>Тус бүр нь мянга орчим бусад нейронтой холбогддог.</p></div></div><div class=\"num-item\"><b>3</b><div><h3>Хиймэл нейрон сүлжээ</h3><p>Холбоосоо тохируулж суралцдаг. Хангалттай том бол бараг ямар ч функцийг сурч чадна.</p></div></div><div class=\"num-item\"><b>4</b><div><h3>Тооцоолол хямдарсаар</h3><p>Мурын хуулиар тооцооллын өртөг хоёр жил орчимд хоёр дахин буурдаг.</p></div></div></div></div><div class=\"footnote summary\"><b>Бүлгийн дүгнэлт:</b> санах ой, тооцоолол, суралцах гурвын аль нь ч биологиос хамаардаггүй. Тиймээс оюун ухаан зөвхөн хүнд байх албагүй.</div></div>",
     "textNodes": [
       "◆",
       "2-р бүлэг",
       "Суралцах",
-      "Микроскопоор харсан нейронууд, ManuelSchottdorf, CC BY-SA 4.0",
       "1",
       "Хеббийн дүрэм",
       "Хамт идэвхждэг нейронуудын холбоо улам хүчтэй болдог. Тархи ингэж суралцдаг.",
@@ -828,8 +798,8 @@
       "Бүлгийн дүгнэлт:",
       " санах ой, тооцоолол, суралцах гурвын аль нь ч биологиос хамаардаггүй. Тиймээс оюун ухаан зөвхөн хүнд байх албагүй."
     ],
-    "text": "◆2-р бүлэгСуралцахМикроскопоор харсан нейронууд, ManuelSchottdorf, CC BY-SA 4.01Хеббийн дүрэмХамт идэвхждэг нейронуудын холбоо улам хүчтэй болдог. Тархи ингэж суралцдаг.2100 тэрбум орчим нейронТус бүр нь мянга орчим бусад нейронтой холбогддог.3Хиймэл нейрон сүлжээХолбоосоо тохируулж суралцдаг. Хангалттай том бол бараг ямар ч функцийг сурч чадна.4Тооцоолол хямдарсаарМурын хуулиар тооцооллын өртөг хоёр жил орчимд хоёр дахин буурдаг.Бүлгийн дүгнэлт: санах ой, тооцоолол, суралцах гурвын аль нь ч биологиос хамаардаггүй. Тиймээс оюун ухаан зөвхөн хүнд байх албагүй.",
-    "sha256": "1f9099fe9e025ab1350f3a2bca2734618c296ec5a2209d3e783252788599ad81"
+    "text": "◆2-р бүлэгСуралцах1Хеббийн дүрэмХамт идэвхждэг нейронуудын холбоо улам хүчтэй болдог. Тархи ингэж суралцдаг.2100 тэрбум орчим нейронТус бүр нь мянга орчим бусад нейронтой холбогддог.3Хиймэл нейрон сүлжээХолбоосоо тохируулж суралцдаг. Хангалттай том бол бараг ямар ч функцийг сурч чадна.4Тооцоолол хямдарсаарМурын хуулиар тооцооллын өртөг хоёр жил орчимд хоёр дахин буурдаг.Бүлгийн дүгнэлт: санах ой, тооцоолол, суралцах гурвын аль нь ч биологиос хамаардаггүй. Тиймээс оюун ухаан зөвхөн хүнд байх албагүй.",
+    "sha256": "b7aed11c6ab7fbc1444584e601bda362f34c4f4dfd8ae779e6c47b30408559b7"
   },
   {
     "id": "case",
@@ -839,7 +809,6 @@
     "title": "Ухаалаг гэрлэн дохио",
     "subtitle": "",
     "body": [
-      "Улаанбаатар, Orgio89, CC0",
       "Улаанбаатар хот гэрлэн дохиогоо AI-аар удирдуулахаар болжээ. Инженерүүд системд ганцхан зорилго өгсөн:",
       "Дундаж зорчих хугацаа 23%-иар буурсан. Зорилго биелсэн.",
       "Сургуулийн хажуугийн жижиг гудамжаар машин урсгаж эхэлсэн.",
@@ -862,12 +831,11 @@
     ],
     "quote": "",
     "notes": "Зохиомол кейс гэдгийг хэлэх. Ганц зорилго өгсөн, зорилго биелсэн, гэхдээ сургууль, явган хүн, түргэн тусламж хохирсон. Хэн ч муу санаагүй. Яг шоргоолжны жишээ шиг.",
-    "html": "<div class=\"case\"><div class=\"header\"><div class=\"kicker-wrapper\"><div class=\"kicker-pill\"><span class=\"kicker-diamond\">◆</span><span class=\"kicker-label\">Кейс · Зохиомол жишээ</span></div></div><div><h2 class=\"title\">Ухаалаг гэрлэн дохио</h2></div></div><div class=\"case-grid\"><div class=\"case-col\"><figure class=\"photo case-photo\"><div class=\"photo-frame photo-hover\"><img src=\"/img/ub-traffic.jpg\" alt=\"Улаанбаатарын замын хөдөлгөөн\" style=\"object-fit:cover;object-position:50% 70%\" draggable=\"false\"/></div><figcaption>Улаанбаатар, Orgio89, CC0</figcaption></figure><div class=\"case-p\">Улаанбаатар хот гэрлэн дохиогоо AI-аар удирдуулахаар болжээ. Инженерүүд системд <b>ганцхан</b> зорилго өгсөн:</div><div class=\"goal\">Машинуудын дундаж зорчих хугацааг 20%-иар бууруулах.</div></div><div class=\"case-col\"><div class=\"col-h\">Гурван сарын дараа</div><div class=\"outcome ok\"><i>✓</i><p>Дундаж зорчих хугацаа 23%-иар буурсан. Зорилго биелсэн.</p></div><div class=\"outcome\"><i>!</i><p>Сургуулийн хажуугийн жижиг гудамжаар машин урсгаж эхэлсэн.</p></div><div class=\"outcome\"><i>!</i><p>Явган хүний ногоон гэрэл 12 секунд болж, хүлээх хугацаа 3 минут хүрсэн.</p></div><div class=\"outcome\"><i>!</i><p>Түргэн тусламжийн машиныг бусад машинтай адил хүлээлгэсэн.</p></div><div class=\"case-note\">Хэн ч муу санаагүй. AI хэлснийг нь л хийсэн.</div></div><div class=\"case-col\"><div class=\"col-h\">Номтой холбоо</div><div class=\"link-row\"><small>1-р бүлэг</small><h3>Шоргоолжны жишээ</h3><p>Хор санаагүй ч хохирол учруулсан</p></div><div class=\"link-row\"><small>1-р бүлэг</small><h3>Муу санаа биш, чадвар</h3><p>Зорилго нь бидний хүсэлтэй зөрсөн</p></div><div class=\"link-row\"><small>1-р бүлэг</small><h3>Робот хэрэггүй</h3><p>Гэрлэн дохиог удирдахад л хангалттай</p></div><div class=\"link-row\"><small>2-р бүлэг</small><h3>Оюун ухааны тодорхойлолт</h3><p>Нарийн AI ч зорилгодоо хүрч чадна</p></div></div></div></div>",
+    "html": "<div class=\"case\"><div class=\"header\"><div class=\"kicker-wrapper\"><div class=\"kicker-pill\"><span class=\"kicker-diamond\">◆</span><span class=\"kicker-label\">Кейс · Зохиомол жишээ</span></div></div><div><h2 class=\"title\">Ухаалаг гэрлэн дохио</h2></div></div><div class=\"case-grid\"><div class=\"case-col\"><figure class=\"photo case-photo\"><div class=\"photo-frame photo-hover\"><img src=\"/img/ub-traffic.jpg\" alt=\"Улаанбаатарын замын хөдөлгөөн\" style=\"object-fit:cover;object-position:50% 70%\" draggable=\"false\"/></div></figure><div class=\"case-p\">Улаанбаатар хот гэрлэн дохиогоо AI-аар удирдуулахаар болжээ. Инженерүүд системд <b>ганцхан</b> зорилго өгсөн:</div><div class=\"goal\">Машинуудын дундаж зорчих хугацааг 20%-иар бууруулах.</div></div><div class=\"case-col\"><div class=\"col-h\">Гурван сарын дараа</div><div class=\"outcome ok\"><i>✓</i><p>Дундаж зорчих хугацаа 23%-иар буурсан. Зорилго биелсэн.</p></div><div class=\"outcome\"><i>!</i><p>Сургуулийн хажуугийн жижиг гудамжаар машин урсгаж эхэлсэн.</p></div><div class=\"outcome\"><i>!</i><p>Явган хүний ногоон гэрэл 12 секунд болж, хүлээх хугацаа 3 минут хүрсэн.</p></div><div class=\"outcome\"><i>!</i><p>Түргэн тусламжийн машиныг бусад машинтай адил хүлээлгэсэн.</p></div><div class=\"case-note\">Хэн ч муу санаагүй. AI хэлснийг нь л хийсэн.</div></div><div class=\"case-col\"><div class=\"col-h\">Номтой холбоо</div><div class=\"link-row\"><small>1-р бүлэг</small><h3>Шоргоолжны жишээ</h3><p>Хор санаагүй ч хохирол учруулсан</p></div><div class=\"link-row\"><small>1-р бүлэг</small><h3>Муу санаа биш, чадвар</h3><p>Зорилго нь бидний хүсэлтэй зөрсөн</p></div><div class=\"link-row\"><small>1-р бүлэг</small><h3>Робот хэрэггүй</h3><p>Гэрлэн дохиог удирдахад л хангалттай</p></div><div class=\"link-row\"><small>2-р бүлэг</small><h3>Оюун ухааны тодорхойлолт</h3><p>Нарийн AI ч зорилгодоо хүрч чадна</p></div></div></div></div>",
     "textNodes": [
       "◆",
       "Кейс · Зохиомол жишээ",
       "Ухаалаг гэрлэн дохио",
-      "Улаанбаатар, Orgio89, CC0",
       "Улаанбаатар хот гэрлэн дохиогоо AI-аар удирдуулахаар болжээ. Инженерүүд системд ",
       "ганцхан",
       " зорилго өгсөн:",
@@ -896,8 +864,8 @@
       "Оюун ухааны тодорхойлолт",
       "Нарийн AI ч зорилгодоо хүрч чадна"
     ],
-    "text": "◆Кейс · Зохиомол жишээУхаалаг гэрлэн дохиоУлаанбаатар, Orgio89, CC0Улаанбаатар хот гэрлэн дохиогоо AI-аар удирдуулахаар болжээ. Инженерүүд системд ганцхан зорилго өгсөн:Машинуудын дундаж зорчих хугацааг 20%-иар бууруулах.Гурван сарын дараа✓Дундаж зорчих хугацаа 23%-иар буурсан. Зорилго биелсэн.!Сургуулийн хажуугийн жижиг гудамжаар машин урсгаж эхэлсэн.!Явган хүний ногоон гэрэл 12 секунд болж, хүлээх хугацаа 3 минут хүрсэн.!Түргэн тусламжийн машиныг бусад машинтай адил хүлээлгэсэн.Хэн ч муу санаагүй. AI хэлснийг нь л хийсэн.Номтой холбоо1-р бүлэгШоргоолжны жишээХор санаагүй ч хохирол учруулсан1-р бүлэгМуу санаа биш, чадварЗорилго нь бидний хүсэлтэй зөрсөн1-р бүлэгРобот хэрэггүйГэрлэн дохиог удирдахад л хангалттай2-р бүлэгОюун ухааны тодорхойлолтНарийн AI ч зорилгодоо хүрч чадна",
-    "sha256": "4e8788e8da4a33130c775d1f699dcb1dee01bee007902feb8d47780870b0fde4"
+    "text": "◆Кейс · Зохиомол жишээУхаалаг гэрлэн дохиоУлаанбаатар хот гэрлэн дохиогоо AI-аар удирдуулахаар болжээ. Инженерүүд системд ганцхан зорилго өгсөн:Машинуудын дундаж зорчих хугацааг 20%-иар бууруулах.Гурван сарын дараа✓Дундаж зорчих хугацаа 23%-иар буурсан. Зорилго биелсэн.!Сургуулийн хажуугийн жижиг гудамжаар машин урсгаж эхэлсэн.!Явган хүний ногоон гэрэл 12 секунд болж, хүлээх хугацаа 3 минут хүрсэн.!Түргэн тусламжийн машиныг бусад машинтай адил хүлээлгэсэн.Хэн ч муу санаагүй. AI хэлснийг нь л хийсэн.Номтой холбоо1-р бүлэгШоргоолжны жишээХор санаагүй ч хохирол учруулсан1-р бүлэгМуу санаа биш, чадварЗорилго нь бидний хүсэлтэй зөрсөн1-р бүлэгРобот хэрэггүйГэрлэн дохиог удирдахад л хангалттай2-р бүлэгОюун ухааны тодорхойлолтНарийн AI ч зорилгодоо хүрч чадна",
+    "sha256": "23e19838a4deda193132628f8b6019ec157776862e12f52d561384637227f870"
   },
   {
     "id": "qa",
@@ -17687,7 +17655,6 @@
     "subtitle": "",
     "body": [
       "Тархи биднийг хуурдаг уу?",
-      "Зураг 8.4, «Амьдрал 3.0»",
       "А ба Б нүдний аль нь илүү бараан бэ?",
       "Мэдрэмж ≠ бодит байдал: тархи ухамсаргүйгээр засвар хийдэг",
       "32 × 17 хэд вэ?"
@@ -17695,7 +17662,7 @@
     "list": [],
     "quote": "",
     "notes": "Хариулуулсны дараа: хоёр нүд яг адил өнгөтэй. Бидний мэдрэмж бодит байдлаас ялгаатай, тархи ухамсаргүйгээр өөрөө засвар хийдэг.",
-    "html": "<div class=\"chapter3-canvas\"><div class=\"canvas-ambient-glow\"></div><div class=\"canvas-grid-pattern\"></div><div class=\"chapter3-node chapter3-text is-heading\" style=\"position:absolute;left:96px;top:57.6px;width:1728px;height:163.20000000000002px;display:flex;flex-direction:column;justify-content:center;padding-left:0;padding-right:0;padding-top:0;padding-bottom:0;overflow:hidden;transform-origin:left top;font-family:var(--serif), Georgia, serif;font-size:48px;font-weight:700;line-height:1.18;letter-spacing:-0.015em\"><div class=\"kicker-wrapper\" style=\"margin-bottom:12px\"><div class=\"kicker-pill\"><span class=\"kicker-diamond\">◆</span><span class=\"kicker-label\">8-р бүлэг · Ухамсар</span></div></div><div class=\"chapter3-text-content\" style=\"width:100%;transform-origin:left top\"><div class=\"chapter3-paragraph\" style=\"text-align:left;margin-left:0;text-indent:0;margin-bottom:8px;position:relative\"><span class=\"chapter3-heading-run\" style=\"font-family:var(--serif), Georgia, serif;font-weight:700;color:var(--text)\">Тархи биднийг </span><span class=\"chapter3-heading-run\" style=\"font-family:var(--serif), Georgia, serif;font-weight:700;color:var(--text)\">хуурдаг </span><span class=\"chapter3-heading-run\" style=\"font-family:var(--serif), Georgia, serif;font-weight:700;color:var(--text)\">уу</span><span class=\"chapter3-heading-run\" style=\"font-family:var(--serif), Georgia, serif;font-weight:700;color:var(--text)\">?</span></div></div></div><div class=\"chapter3-node chapter3-text\" style=\"position:absolute;left:96px;top:806.4px;width:1152px;height:57.6px;display:flex;flex-direction:column;justify-content:center;padding-left:0;padding-right:0;padding-top:0;padding-bottom:0;overflow:hidden;transform-origin:left top;font-family:var(--sans), sans-serif;font-size:20px;font-weight:400;line-height:1.45;letter-spacing:normal\"><div class=\"chapter3-text-content\" style=\"width:100%;transform-origin:left top\"><div class=\"chapter3-paragraph\" style=\"text-align:left;margin-left:0;text-indent:0;margin-bottom:8px;position:relative\"><span class=\"chapter3-body-run\" style=\"font-family:var(--sans), sans-serif;color:#fbbf24\">Зураг 8.4, «Амьдрал 3.0»</span></div></div></div><div class=\"chapter3-node chapter3-text\" style=\"position:absolute;left:1305.6000000000001px;top:295.82215223097114px;width:518.4px;height:268.8px;display:flex;flex-direction:column;justify-content:flex-start;padding-left:0;padding-right:0;padding-top:0;padding-bottom:0;overflow:hidden;transform-origin:left top;font-family:var(--sans), sans-serif;font-size:23px;font-weight:400;line-height:1.45;letter-spacing:normal\"><div class=\"chapter3-text-content\" style=\"width:100%;transform-origin:left top\"><div class=\"chapter3-paragraph\" style=\"text-align:left;margin-left:0;text-indent:0;margin-bottom:8px;position:relative\"><span class=\"chapter3-body-run\" style=\"font-family:var(--sans), sans-serif;font-weight:700;color:var(--text-secondary)\">А ба Б нүдний аль нь илүү бараан бэ?</span></div></div></div><div class=\"chapter3-node chapter3-shape\" style=\"position:absolute;left:1305.6000000000001px;top:556.8000000000001px;width:518.4px;height:230.4px;background:linear-gradient(135deg, rgba(14, 20, 36, 0.72) 0%, rgba(8, 12, 24, 0.82) 100%);border:1px solid rgba(255, 255, 255, 0.09);box-shadow:0 20px 48px -12px rgba(0, 0, 0, 0.8), 0 0 30px -5px rgba(0, 240, 255, 0.06), inset 0 1px 0 0 rgba(255, 255, 255, 0.14);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-radius:16px\"></div><div class=\"chapter3-node chapter3-text\" style=\"position:absolute;left:96px;top:902.4px;width:1651.2px;height:96px;display:flex;flex-direction:column;justify-content:center;padding-left:0;padding-right:0;padding-top:0;padding-bottom:0;overflow:hidden;transform-origin:left top;font-family:var(--sans), sans-serif;font-size:25px;font-weight:400;line-height:1.45;letter-spacing:normal\"><div class=\"chapter3-text-content\" style=\"width:100%;transform-origin:left top\"><div class=\"chapter3-paragraph\" style=\"text-align:left;margin-left:0;text-indent:0;margin-bottom:8px;position:relative\"><span class=\"chapter3-body-run\" style=\"font-family:var(--sans), sans-serif;color:var(--text)\">Мэдрэмж ≠ бодит байдал: тархи ухамсаргүйгээр засвар хийдэг</span></div></div></div><div class=\"chapter3-node chapter3-image-node\" style=\"position:absolute;left:69.87863517060367px;top:286.9228346456693px;width:1204.2425196850395px;height:519.4771653543307px\"><img src=\"/slides/imported/consciousness/image2-3217.jpeg\" alt=\"C:\\Users\\Direkttek\\Pictures\\ijil ungu.jfif\" draggable=\"false\" style=\"object-fit:cover;object-position:50.0% 50.0%\"/></div><div class=\"chapter3-node chapter3-text\" style=\"position:absolute;left:1305.6000000000001px;top:595.2px;width:518.4px;height:268.8px;display:flex;flex-direction:column;justify-content:flex-start;padding-left:0;padding-right:0;padding-top:0;padding-bottom:0;overflow:hidden;transform-origin:left top;font-family:var(--sans), sans-serif;font-size:23px;font-weight:400;line-height:1.45;letter-spacing:normal\"><div class=\"chapter3-text-content\" style=\"width:100%;transform-origin:left top\"><div class=\"chapter3-paragraph\" style=\"text-align:left;margin-left:0;text-indent:0;margin-bottom:8px;position:relative\"><span class=\"chapter3-body-run\" style=\"font-family:var(--sans), sans-serif;font-weight:700;color:var(--text-secondary)\">32 × 17 хэд вэ?</span></div></div></div></div>",
+    "html": "<div class=\"chapter3-canvas\"><div class=\"canvas-ambient-glow\"></div><div class=\"canvas-grid-pattern\"></div><div class=\"chapter3-node chapter3-text is-heading\" style=\"position:absolute;left:96px;top:57.6px;width:1728px;height:163.20000000000002px;display:flex;flex-direction:column;justify-content:center;padding-left:0;padding-right:0;padding-top:0;padding-bottom:0;overflow:hidden;transform-origin:left top;font-family:var(--serif), Georgia, serif;font-size:48px;font-weight:700;line-height:1.18;letter-spacing:-0.015em\"><div class=\"kicker-wrapper\" style=\"margin-bottom:12px\"><div class=\"kicker-pill\"><span class=\"kicker-diamond\">◆</span><span class=\"kicker-label\">8-р бүлэг · Ухамсар</span></div></div><div class=\"chapter3-text-content\" style=\"width:100%;transform-origin:left top\"><div class=\"chapter3-paragraph\" style=\"text-align:left;margin-left:0;text-indent:0;margin-bottom:8px;position:relative\"><span class=\"chapter3-heading-run\" style=\"font-family:var(--serif), Georgia, serif;font-weight:700;color:var(--text)\">Тархи биднийг </span><span class=\"chapter3-heading-run\" style=\"font-family:var(--serif), Georgia, serif;font-weight:700;color:var(--text)\">хуурдаг </span><span class=\"chapter3-heading-run\" style=\"font-family:var(--serif), Georgia, serif;font-weight:700;color:var(--text)\">уу</span><span class=\"chapter3-heading-run\" style=\"font-family:var(--serif), Georgia, serif;font-weight:700;color:var(--text)\">?</span></div></div></div><div class=\"chapter3-node chapter3-text\" style=\"position:absolute;left:1305.6000000000001px;top:295.82215223097114px;width:518.4px;height:268.8px;display:flex;flex-direction:column;justify-content:flex-start;padding-left:0;padding-right:0;padding-top:0;padding-bottom:0;overflow:hidden;transform-origin:left top;font-family:var(--sans), sans-serif;font-size:23px;font-weight:400;line-height:1.45;letter-spacing:normal\"><div class=\"chapter3-text-content\" style=\"width:100%;transform-origin:left top\"><div class=\"chapter3-paragraph\" style=\"text-align:left;margin-left:0;text-indent:0;margin-bottom:8px;position:relative\"><span class=\"chapter3-body-run\" style=\"font-family:var(--sans), sans-serif;font-weight:700;color:var(--text-secondary)\">А ба Б нүдний аль нь илүү бараан бэ?</span></div></div></div><div class=\"chapter3-node chapter3-shape\" style=\"position:absolute;left:1305.6000000000001px;top:556.8000000000001px;width:518.4px;height:230.4px;background:linear-gradient(135deg, rgba(14, 20, 36, 0.72) 0%, rgba(8, 12, 24, 0.82) 100%);border:1px solid rgba(255, 255, 255, 0.09);box-shadow:0 20px 48px -12px rgba(0, 0, 0, 0.8), 0 0 30px -5px rgba(0, 240, 255, 0.06), inset 0 1px 0 0 rgba(255, 255, 255, 0.14);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-radius:16px\"></div><div class=\"chapter3-node chapter3-text\" style=\"position:absolute;left:96px;top:902.4px;width:1651.2px;height:96px;display:flex;flex-direction:column;justify-content:center;padding-left:0;padding-right:0;padding-top:0;padding-bottom:0;overflow:hidden;transform-origin:left top;font-family:var(--sans), sans-serif;font-size:25px;font-weight:400;line-height:1.45;letter-spacing:normal\"><div class=\"chapter3-text-content\" style=\"width:100%;transform-origin:left top\"><div class=\"chapter3-paragraph\" style=\"text-align:left;margin-left:0;text-indent:0;margin-bottom:8px;position:relative\"><span class=\"chapter3-body-run\" style=\"font-family:var(--sans), sans-serif;color:var(--text)\">Мэдрэмж ≠ бодит байдал: тархи ухамсаргүйгээр засвар хийдэг</span></div></div></div><div class=\"chapter3-node chapter3-image-node\" style=\"position:absolute;left:69.87863517060367px;top:286.9228346456693px;width:1204.2425196850395px;height:519.4771653543307px\"><img src=\"/slides/imported/consciousness/image2-3217.jpeg\" alt=\"C:\\Users\\Direkttek\\Pictures\\ijil ungu.jfif\" draggable=\"false\" style=\"object-fit:cover;object-position:50.0% 50.0%\"/></div><div class=\"chapter3-node chapter3-text\" style=\"position:absolute;left:1305.6000000000001px;top:595.2px;width:518.4px;height:268.8px;display:flex;flex-direction:column;justify-content:flex-start;padding-left:0;padding-right:0;padding-top:0;padding-bottom:0;overflow:hidden;transform-origin:left top;font-family:var(--sans), sans-serif;font-size:23px;font-weight:400;line-height:1.45;letter-spacing:normal\"><div class=\"chapter3-text-content\" style=\"width:100%;transform-origin:left top\"><div class=\"chapter3-paragraph\" style=\"text-align:left;margin-left:0;text-indent:0;margin-bottom:8px;position:relative\"><span class=\"chapter3-body-run\" style=\"font-family:var(--sans), sans-serif;font-weight:700;color:var(--text-secondary)\">32 × 17 хэд вэ?</span></div></div></div></div>",
     "textNodes": [
       "◆",
       "8-р бүлэг · Ухамсар",
@@ -17703,13 +17670,12 @@
       "хуурдаг ",
       "уу",
       "?",
-      "Зураг 8.4, «Амьдрал 3.0»",
       "А ба Б нүдний аль нь илүү бараан бэ?",
       "Мэдрэмж ≠ бодит байдал: тархи ухамсаргүйгээр засвар хийдэг",
       "32 × 17 хэд вэ?"
     ],
-    "text": "◆8-р бүлэг · УхамсарТархи биднийг хуурдаг уу?Зураг 8.4, «Амьдрал 3.0»А ба Б нүдний аль нь илүү бараан бэ?Мэдрэмж ≠ бодит байдал: тархи ухамсаргүйгээр засвар хийдэг32 × 17 хэд вэ?",
-    "sha256": "2baf255bb6ff6c43cda72f0255850a53721e62b3eedb77328721fd818bd6ecce",
+    "text": "◆8-р бүлэг · УхамсарТархи биднийг хуурдаг уу?А ба Б нүдний аль нь илүү бараан бэ?Мэдрэмж ≠ бодит байдал: тархи ухамсаргүйгээр засвар хийдэг32 × 17 хэд вэ?",
+    "sha256": "8f3bb724f07a7959ea738408e5e9fabe16c5d6d0494bfc26ab831dc83fa427ae",
     "nodes": [
       {
         "kind": "text",
@@ -17776,45 +17742,6 @@
           ]
         },
         "id": "consciousness-2-text",
-        "rotation": null
-      },
-      {
-        "kind": "text",
-        "rect": {
-          "x": 96,
-          "y": 806.4,
-          "w": 1152,
-          "h": 57.6
-        },
-        "text": {
-          "body": {
-            "paddingLeft": 0,
-            "paddingRight": 0,
-            "paddingTop": 0,
-            "paddingBottom": 0,
-            "anchor": "middle",
-            "autoFit": false
-          },
-          "paragraphs": [
-            {
-              "align": "left",
-              "marginLeft": 0,
-              "indent": 0,
-              "bullet": "",
-              "runs": [
-                {
-                  "text": "Зураг 8.4, «Амьдрал 3.0»",
-                  "style": {
-                    "fontFamily": "IBM Plex Sans",
-                    "color": "#FBBF24",
-                    "fontSize": 0.01
-                  }
-                }
-              ]
-            }
-          ]
-        },
-        "id": "consciousness-4-text",
         "rotation": null
       },
       {
@@ -20002,21 +19929,13 @@
     "list": [],
     "quote": "",
     "notes": "Анхаарал хандуулсанд баярлалаа. Амьдрал 3.0 номын агуулгыг бататгах хоёр үгийн сүлжээг /ajilbar хуудаснаас бөглөөрэй. Сүлжээ бүр хөндлөн гурван, босоо гурван үгтэй.",
-    "html": "<div class=\"closing-slide\"><div class=\"closing-copy\"><div class=\"closing-eyebrow\"><span aria-hidden=\"true\">◆</span> Амьдрал 3.0</div><div><h2 class=\"closing-title\">Анхаарал <br/>хандуулсанд <br/><em>баярлалаа</em></h2></div><div class=\"closing-message\">Ирээдүйг хамтдаа бүтээнэ.</div><div class=\"closing-activity\"><a href=\"/ajilbar\" class=\"closing-link\"><span><small>Мэдлэгээ бататгая</small><b>Үгийн сүлжээ бөглөх</b></span><span class=\"closing-link-arrow\" aria-hidden=\"true\">↗</span></a><span class=\"closing-shorturl\">/ajilbar</span></div></div><div class=\"closing-art\"><img src=\"/img/closing-life3.png\" alt=\"Дэлхийн дээгүүр гэрэлт бөмбөрцөг рүү тэмүүлэх хүний болон хиймэл оюуны гар\" draggable=\"false\"/><span class=\"closing-art-caption\">Хүн · Оюун ухаан · Ирээдүй</span></div></div>",
+    "html": "<div class=\"closing-slide\"><div><h2 class=\"closing-title\">Анхаарал <br/>хандуулсанд <br/><em>баярлалаа</em></h2></div></div>",
     "textNodes": [
-      "◆",
-      " Амьдрал 3.0",
       "Анхаарал ",
       "хандуулсанд ",
-      "баярлалаа",
-      "Ирээдүйг хамтдаа бүтээнэ.",
-      "Мэдлэгээ бататгая",
-      "Үгийн сүлжээ бөглөх",
-      "↗",
-      "/ajilbar",
-      "Хүн · Оюун ухаан · Ирээдүй"
+      "баярлалаа"
     ],
-    "text": "◆ Амьдрал 3.0Анхаарал хандуулсанд баярлалааИрээдүйг хамтдаа бүтээнэ.Мэдлэгээ бататгаяҮгийн сүлжээ бөглөх↗/ajilbarХүн · Оюун ухаан · Ирээдүй",
-    "sha256": "5429b70391d4c8e19a80dfd7b35eda3886a82bc62c1705ffbe4079b17821249a"
+    "text": "Анхаарал хандуулсанд баярлалаа",
+    "sha256": "a425d1f23cde739f0242bdd7c1a8417a450da4de27cc42ca65405b58e0e4a326"
   }
 ]

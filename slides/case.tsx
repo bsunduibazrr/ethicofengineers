@@ -31,7 +31,6 @@ export function Case() {
             alt="Улаанбаатарын замын хөдөлгөөн"
             className="case-photo"
             pos="50% 70%"
-            credit="Улаанбаатар, Orgio89, CC0"
           />
           <R className="case-p">
             Улаанбаатар хот гэрлэн дохиогоо AI-аар удирдуулахаар болжээ.

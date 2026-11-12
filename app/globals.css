@@ -3449,32 +3449,11 @@ sup {
 
 /* Төгсгөлийн слайд */
 .closing-slide {
-  display: grid;
-  grid-template-columns: 790px 1fr;
-  align-items: center;
-  gap: 70px;
-}
-
-.closing-copy {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.closing-eyebrow {
   display: flex;
   align-items: center;
-  gap: 13px;
-  margin-bottom: 42px;
-  color: var(--blue);
-  font-size: 18px;
-  font-weight: 600;
-  letter-spacing: .18em;
-  text-transform: uppercase;
-}
-
-.closing-eyebrow > span {
-  font-size: 11px;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
 }
 
 .closing-title {
@@ -3489,101 +3468,6 @@ sup {
 .closing-title em {
   color: var(--navy);
   font-weight: 400;
-}
-
-.closing-message {
-  margin-top: 34px;
-  font-size: 24px;
-  line-height: 1.5;
-  color: var(--ink2);
-}
-
-.closing-activity {
-  margin-top: 56px;
-  width: 550px;
-}
-
-.closing-link {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 24px;
-  width: 100%;
-  padding: 22px 26px;
-  color: #fff;
-  background: var(--navy);
-  text-decoration: none;
-  transition: background .2s, transform .2s;
-}
-
-.closing-link:hover {
-  background: #2346a2;
-  transform: translateY(-3px);
-}
-
-.closing-link:focus-visible {
-  outline: 3px solid var(--blue);
-  outline-offset: 5px;
-}
-
-.closing-link small {
-  display: block;
-  margin-bottom: 5px;
-  font-size: 15px;
-  letter-spacing: .06em;
-}
-
-.closing-link b {
-  color: inherit;
-  font-size: 24px;
-  font-weight: 600;
-}
-
-.closing-link-arrow {
-  font-size: 37px;
-  line-height: 1;
-}
-
-.closing-shorturl {
-  display: block;
-  margin-top: 14px;
-  color: var(--muted);
-  font-family: var(--sans);
-  font-size: 18px;
-  letter-spacing: .05em;
-}
-
-.closing-art {
-  position: relative;
-  height: 812px;
-  overflow: hidden;
-  background: #07162d;
-  box-shadow: 0 20px 60px rgba(19, 41, 107, .12);
-}
-
-.closing-art::after {
-  position: absolute;
-  inset: 60% 0 0;
-  content: "";
-  background: linear-gradient(transparent, rgba(3, 12, 28, .88));
-  pointer-events: none;
-}
-
-.closing-art img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: 51% 50%;
-}
-
-.closing-art-caption {
-  position: absolute;
-  z-index: 1;
-  left: 35px;
-  bottom: 32px;
-  color: #fff;
-  font-size: 16px;
-  letter-spacing: .12em;
 }
 
 /* 3-р бүлгийн нэмэлт судалгаа, дүгнэлт */
