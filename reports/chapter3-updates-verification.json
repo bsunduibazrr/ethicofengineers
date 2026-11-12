@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-12",
+  "passed": true,
+  "slideCount": 77,
+  "checkedAgainst": "User-supplied screenshots; exact text nodes, including source spelling and punctuation",
+  "slides": [
+    {
+      "order": 33,
+      "id": "ch3-research",
+      "verifiedTextNodes": 8
+    },
+    {
+      "order": 34,
+      "id": "ch3-conclusion",
+      "verifiedTextNodes": 11
+    }
+  ],
+  "nextChapterOrder": 35,
+  "finalSlideOrder": 77
+}

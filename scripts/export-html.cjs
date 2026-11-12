@@ -7,7 +7,7 @@ const root = path.resolve(__dirname, '..');
 const read = name => fs.readFileSync(path.join(root, name), 'utf8');
 const design = JSON.parse(read('slides/design.json'));
 const content = JSON.parse(read('slides/content.source.json')).map(slide => (design[slide.id] ? { ...slide, html: design[slide.id] } : slide));
-if (content.length !== 71) throw new Error('The source must contain 71 slides.');
+if (!content.length) throw new Error('The source must contain at least one slide.');
 const assets = new Map();
 function embed(url) {
   if (!url.startsWith('/') || url.startsWith('//')) throw new Error(`Unexpected asset: ${url}`);
@@ -32,4 +32,4 @@ const json = JSON.stringify(slides).replace(/</g, '\\u003c').replace(/\u2028/g, 
 const html = `<!doctype html><html lang="mn"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#ffffff"><title>life3.0</title><style>${fonts}\n${read('app/globals.css')}</style></head><body><main class="deck-root" aria-label="Амьдрал 3.0"></main><script id="slide-source" type="application/json">${json}</script><script>(()=>{const exports={};\n${runtime}\nexports.mountDeck(document.querySelector('main'),JSON.parse(document.getElementById('slide-source').textContent));})();</script></body></html>`;
 fs.mkdirSync(path.join(root, 'dist'), { recursive: true });
 fs.writeFileSync(path.join(root, 'dist/life3.html'), html);
-console.log(`dist/life3.html: 71 slides, ${assets.size} embedded assets, ${(Buffer.byteLength(html) / 1024 / 1024).toFixed(2)} MB; no external dependencies.`);
+console.log(`dist/life3.html: ${content.length} slides, ${assets.size} embedded assets, ${(Buffer.byteLength(html) / 1024 / 1024).toFixed(2)} MB; no external dependencies.`);

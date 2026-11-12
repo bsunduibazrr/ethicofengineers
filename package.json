@@ -8,6 +8,8 @@
     "start": "next start",
     "export:html": "node scripts/extract-content.cjs --check && node scripts/build-design.cjs && node scripts/export-html.cjs",
     "verify:content": "node scripts/extract-content.cjs --check",
+    "verify:crosswords": "node scripts/verify-crosswords.cjs",
+    "verify:chapter4": "python3 scripts/verify-chapter4.py",
     "verify:browser": "node scripts/verify-browser.cjs",
     "design": "node scripts/build-design.cjs"
   },

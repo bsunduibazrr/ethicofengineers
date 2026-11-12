@@ -107,12 +107,27 @@ async function goto(page, n) {
   await settle(page, n);
 }
 
+function auditNavigationAndStage() {
+  const removedElements = [...document.querySelectorAll('.hud-nav,.hud-counter,.deck-hud button,[data-action="previous"],[data-action="next"],[data-action="overview"],[data-action="notes"],[data-action="fullscreen"]')]
+    .map(el => `${el.tagName.toLowerCase()}.${[...el.classList].join('.')}${el.dataset.action ? `[data-action="${el.dataset.action}"]` : ''}`);
+  const r = document.querySelector('.stage').getBoundingClientRect();
+  const expectedWidth = Math.min(innerWidth, innerHeight * 16 / 9);
+  const expectedHeight = expectedWidth * 9 / 16;
+  return {
+    navAbsent: removedElements.length === 0,
+    removedElements,
+    stageInsideViewport: r.left >= -.5 && r.top >= -.5 && r.right <= innerWidth + .5 && r.bottom <= innerHeight + .5,
+    stageUsesAvailableSpace: Math.abs(r.width - expectedWidth) <= 1 && Math.abs(r.height - expectedHeight) <= 1,
+    stageCentered: Math.abs((r.left + r.right) / 2 - innerWidth / 2) <= 1 && Math.abs((r.top + r.bottom) / 2 - innerHeight / 2) <= 1,
+  };
+}
+
 async function auditViewport(browser, viewport, capture = false) {
   const page = await browser.newPage({ viewport, reducedMotion: 'reduce', hasTouch: viewport.width < 1000 });
   const pageErrors = [];
   page.on('pageerror', error => pageErrors.push(error.message));
   await page.goto(target, { waitUntil: 'domcontentloaded' }); await settle(page, 0);
-  const slides = [], representative = new Set([1, 2, 4, 7, 10, 16, 17, 18, 21, 24, 27, 35, 50, 71]);
+  const slides = [], representative = new Set([1, 2, 4, 7, 10, 16, 17, 18, 21, 24, 27, 33, 34, 35, ...Array.from({ length: 13 }, (_, index) => 36 + index), 50, 55, 71, source.length]);
   for (let i = 0; i < source.length; i++) {
     if (i) await goto(page, i);
     const result = await page.evaluate(auditDocument);
@@ -144,11 +159,12 @@ async function auditViewport(browser, viewport, capture = false) {
   const index = () => page.locator(active).getAttribute('data-index');
   const expectIndex = async n => { await settle(page, n); const actual = await index(); if (actual !== String(n)) throw new Error(`Expected ${n}, got ${actual}`); };
   await page.evaluate(() => document.activeElement?.blur());
-  await assert('Home and first-slide boundary', async () => { await page.keyboard.press('Home'); await expectIndex(0); await page.keyboard.press('ArrowLeft'); await expectIndex(0); return page.locator('[data-action="previous"]').isDisabled(); });
+  await assert('Home and first-slide boundary', async () => { await page.keyboard.press('Home'); await expectIndex(0); await page.keyboard.press('ArrowLeft'); await expectIndex(0); });
   await assert('ArrowRight, Space, Shift+Space, ArrowLeft', async () => { await page.keyboard.press('ArrowRight'); await expectIndex(1); await page.keyboard.press('Space'); await expectIndex(2); await page.keyboard.press('Shift+Space'); await expectIndex(1); await page.keyboard.press('ArrowLeft'); await expectIndex(0); });
-  await assert('End and final-slide boundary', async () => { await page.keyboard.press('End'); await expectIndex(70); await page.keyboard.press('ArrowRight'); await expectIndex(70); if (!(await page.locator('[data-action="next"]').isDisabled())) throw new Error('Final next button enabled'); });
-  await assert('Escape overview, all 71 entries, direct jump', async () => { await page.keyboard.press('Escape'); if (!(await page.locator('.overview').evaluate(el => el.open))) throw new Error('Overview not open'); if (await page.locator('.overview-card').count() !== 71) throw new Error('Overview count'); await page.locator('[data-slide="34"]').click(); await expectIndex(34); if (await page.locator('.overview').evaluate(el => el.open)) throw new Error('Overview still open'); });
-  await assert('Escape closes overview and restores focus', async () => { await page.locator('[data-action="overview"]').focus(); await page.keyboard.press('Escape'); await page.keyboard.press('Escape'); if (await page.locator('.overview').evaluate(el => el.open)) throw new Error('Overview not closed'); if (!(await page.locator('[data-action="overview"]').evaluate(el => el === document.activeElement))) throw new Error('Focus not restored'); });
+  await assert('End and final-slide boundary', async () => { await page.keyboard.press('End'); await expectIndex(source.length - 1); await page.keyboard.press('ArrowRight'); await expectIndex(source.length - 1); });
+  await assert(`Escape overview, all ${source.length} entries, direct jump`, async () => { await page.keyboard.press('Escape'); if (!(await page.locator('.overview').evaluate(el => el.open))) throw new Error('Overview not open'); if (await page.locator('.overview-card').count() !== source.length) throw new Error('Overview count'); await page.locator('[data-slide="34"]').click(); await expectIndex(34); if (await page.locator('.overview').evaluate(el => el.open)) throw new Error('Overview still open'); });
+  await assert('Escape closes overview and restores focus', async () => { await page.locator('main.deck-root').focus(); await page.keyboard.press('Escape'); if (!(await page.locator('.overview').evaluate(el => el.open))) throw new Error('Overview not open'); await page.keyboard.press('Escape'); if (await page.locator('.overview').evaluate(el => el.open)) throw new Error('Overview not closed'); if (!(await page.locator('main.deck-root').evaluate(el => el === document.activeElement))) throw new Error('Focus not restored to the deck'); });
+  await assert('Overview close button restores deck focus', async () => { await page.locator('main.deck-root').focus(); await page.keyboard.press('Escape'); await page.locator('[data-action="close-overview"]').click(); if (await page.locator('.overview').evaluate(el => el.open)) throw new Error('Overview not closed'); if (!(await page.locator('main.deck-root').evaluate(el => el === document.activeElement))) throw new Error('Focus not restored after closing overview'); });
   await assert('Hash direct jump', async () => { await goto(page, 16); if (!(await page.evaluate(() => location.hash === '#17'))) throw new Error('Hash not synchronized'); });
   await assert('N notes exact and toggled', async () => { await page.keyboard.press('n'); if (await page.locator('.speaker-notes').evaluate(el => el.hidden)) throw new Error('Notes hidden'); if (await page.locator('.speaker-notes').textContent() !== source[16].notes) throw new Error('Notes changed'); await page.keyboard.press('n'); if (!(await page.locator('.speaker-notes').evaluate(el => el.hidden))) throw new Error('Notes not hidden'); });
   await assert('F fullscreen toggles', async () => { await page.keyboard.press('f'); await page.waitForFunction(() => Boolean(document.fullscreenElement), null, { timeout: 3000 }); await page.keyboard.press('f'); await page.waitForFunction(() => !document.fullscreenElement, null, { timeout: 3000 }); });
@@ -158,28 +174,28 @@ async function auditViewport(browser, viewport, capture = false) {
     const swipe = async (start, end) => { await client.send('Input.dispatchTouchEvent', { type: 'touchStart', touchPoints: [{ x: start, y }] }); await client.send('Input.dispatchTouchEvent', { type: 'touchMove', touchPoints: [{ x: end, y }] }); await client.send('Input.dispatchTouchEvent', { type: 'touchEnd', touchPoints: [] }); };
     await swipe(x1, x2); await expectIndex(1); await swipe(x2, x1); await expectIndex(0); await client.detach();
   });
-  if (viewport.width < 1000) await assert('Cancelled touch and subsequent HUD touch do not navigate', async () => {
-    await goto(page, 10);
+  if (viewport.width < 1000) await assert('Cancelled touch and subsequent interactive touch do not navigate', async () => {
+    await goto(page, 20);
     await page.evaluate(() => {
-      const viewport = document.querySelector('.viewport'), hud = document.querySelector('[data-action="notes"]');
+      const viewport = document.querySelector('.viewport'), card = document.querySelector('.slide:not(.is-exiting) .qa-card');
       const send = (target, type, x) => target.dispatchEvent(new PointerEvent(type, { bubbles: true, pointerType: 'touch', pointerId: 4, clientX: x, clientY: innerHeight / 2 }));
-      send(viewport, 'pointerdown', 300); send(viewport, 'pointercancel', 300); send(hud, 'pointerup', 100);
+      send(viewport, 'pointerdown', 300); send(viewport, 'pointercancel', 300); send(card, 'pointerup', 100);
     });
-    await expectIndex(10);
+    await expectIndex(20);
     await page.evaluate(() => {
-      const viewport = document.querySelector('.viewport'), hud = document.querySelector('[data-action="notes"]');
+      const viewport = document.querySelector('.viewport'), card = document.querySelector('.slide:not(.is-exiting) .qa-card');
       const send = (target, type, x) => target.dispatchEvent(new PointerEvent(type, { bubbles: true, pointerType: 'touch', pointerId: 5, clientX: x, clientY: innerHeight / 2 }));
-      send(viewport, 'pointerdown', 300); send(hud, 'pointerdown', 300); send(hud, 'pointerup', 100);
+      send(viewport, 'pointerdown', 300); send(card, 'pointerdown', 300); send(card, 'pointerup', 100);
     });
-    await expectIndex(10);
-    const rect = await page.locator('.stage').boundingBox(), y = rect.y + rect.height * .5;
+    await expectIndex(20);
+    const rect = await page.locator('.stage').boundingBox(), y = rect.y + rect.height * .07;
     const client = await page.context().newCDPSession(page);
     await client.send('Input.dispatchTouchEvent', { type: 'touchStart', touchPoints: [{ x: rect.x + rect.width * .75, y }] });
     await client.send('Input.dispatchTouchEvent', { type: 'touchMove', touchPoints: [{ x: rect.x + rect.width * .25, y }] });
     await client.send('Input.dispatchTouchEvent', { type: 'touchEnd', touchPoints: [] });
-    await expectIndex(11); await client.detach();
+    await expectIndex(21); await client.detach();
   });
-  const controls = await page.locator('.deck-hud button').evaluateAll(buttons => buttons.map(button => { const r = button.getBoundingClientRect(); return { action: button.dataset.action, left: r.left, top: r.top, right: r.right, bottom: r.bottom, width: r.width, height: r.height, insideViewport: r.left >= -.5 && r.top >= -.5 && r.right <= innerWidth + .5 && r.bottom <= innerHeight + .5 }; }));
+  const controls = await page.evaluate(auditNavigationAndStage);
   const summary = {
     slideCount: slides.length, textOrNotesDifferences: slides.filter(x => x.differences.length).length,
     clippingIssues: slides.reduce((s, x) => s + x.clipping.length, 0), hiddenTextIssues: slides.reduce((s, x) => s + x.hidden.length, 0),
@@ -195,9 +211,9 @@ async function auditViewport(browser, viewport, capture = false) {
 async function verifyCompactControls(browser) {
   const page = await browser.newPage({ viewport: { width: 320, height: 568 }, reducedMotion: 'reduce', hasTouch: true });
   await page.goto(target, { waitUntil: 'domcontentloaded' }); await settle(page, 0);
-  const controls = await page.locator('.deck-hud button').evaluateAll(buttons => buttons.map(button => { const r = button.getBoundingClientRect(); return { action: button.dataset.action, left: r.left, right: r.right, width: r.width, height: r.height, insideViewport: r.left >= -.5 && r.top >= -.5 && r.right <= innerWidth + .5 && r.bottom <= innerHeight + .5 }; }));
+  const controls = await page.evaluate(auditNavigationAndStage);
   await page.screenshot({ path: path.join(screenshots, '320x568-01.png') });
-  await page.close(); return { viewport: { width: 320, height: 568 }, controls, passed: controls.every(c => c.insideViewport && c.width >= 44 && c.height >= 44) };
+  await page.close(); return { viewport: { width: 320, height: 568 }, controls, passed: controls.navAbsent && controls.stageInsideViewport && controls.stageUsesAvailableSpace && controls.stageCentered };
 }
 
 async function verifyOffline(browser) {
@@ -208,7 +224,8 @@ async function verifyOffline(browser) {
   const diffs = [];
   for (let i = 0; i < source.length; i++) { if (i) await goto(page, i); else await settle(page, 0); const result = await page.evaluate(() => { const el = document.querySelector('.slide:not(.is-exiting) .slide-surface'); return { text: el.textContent, notes: document.querySelector('.speaker-notes').textContent }; }); const want = design[source[i].id] ? await page.evaluate(html => { const t = document.createElement('template'); t.innerHTML = html; return t.content.textContent; }, design[source[i].id]) : source[i].text; if (result.text !== want || result.notes !== source[i].notes) diffs.push(i + 1); }
   const imageFailures = await page.locator('img').evaluateAll(els => els.filter(el => !el.complete || !el.naturalWidth).map(el => el.alt));
-  await page.close(); return { slideCount: source.length, differences: diffs, externalRequests: network, imageFailures };
+  const controls = await page.evaluate(auditNavigationAndStage);
+  await page.close(); return { slideCount: source.length, differences: diffs, externalRequests: network, imageFailures, controls };
 }
 
 (async () => {
@@ -220,14 +237,14 @@ async function verifyOffline(browser) {
   }
   const browser = await chromium.launch({ headless: true, executablePath });
   try {
-    const report = { date: '2026-11-11', target, sourceCount: source.length, contrastMethod: 'Computed CSS text color or SVG text fill, alpha-composited ancestor backgrounds. Existing image pixels and decorative SVG backgrounds are not treated as DOM text.', inputSha256: Object.fromEntries(['slides/content.source.json', 'app/globals.css', 'slides/design.json', 'components/deck-runtime.ts', 'dist/life3.html'].map(file => [file, sha(fs.readFileSync(path.join(root, file)))])), checks: [], screenshotDirectory: screenshots };
+    const report = { date: '2026-11-12', target, sourceCount: source.length, contrastMethod: 'Computed CSS text color or SVG text fill, alpha-composited ancestor backgrounds. Existing image pixels and decorative SVG backgrounds are not treated as DOM text.', inputSha256: Object.fromEntries(['slides/content.source.json', 'app/globals.css', 'slides/design.json', 'components/deck-runtime.ts', 'dist/life3.html'].map(file => [file, sha(fs.readFileSync(path.join(root, file)))])), checks: [], screenshotDirectory: screenshots };
     for (const viewport of [{ width: 1920, height: 1080 }, { width: 1366, height: 768 }, { width: 390, height: 844 }, { width: 844, height: 390 }]) {
       report.checks.push(await auditViewport(browser, viewport, true));
       fs.writeFileSync(reportPath, JSON.stringify(report, null, 2) + '\n');
     }
     report.compactControls = await verifyCompactControls(browser);
     report.offline = await verifyOffline(browser);
-    report.passed = report.checks.every(({ summary: s, qaExpanded: q }) => !s.textOrNotesDifferences && !s.clippingIssues && !s.hiddenTextIssues && !s.overlapIssues && !s.lowContrastColors.length && !s.activeReducedMotionAnimations && !s.interactionFailures.length && !s.pageErrors.length && s.controls.every(c => c.insideViewport) && !q.differences.length && !q.clipping.length && !q.overlaps.length && !q.hidden.length) && report.compactControls.passed && !report.offline.differences.length && !report.offline.externalRequests.length && !report.offline.imageFailures.length;
+    report.passed = report.checks.every(({ summary: s, qaExpanded: q }) => !s.textOrNotesDifferences && !s.clippingIssues && !s.hiddenTextIssues && !s.overlapIssues && !s.lowContrastColors.length && !s.activeReducedMotionAnimations && !s.interactionFailures.length && !s.pageErrors.length && s.controls.navAbsent && s.controls.stageInsideViewport && s.controls.stageUsesAvailableSpace && s.controls.stageCentered && !q.differences.length && !q.clipping.length && !q.overlaps.length && !q.hidden.length) && report.compactControls.passed && !report.offline.differences.length && !report.offline.externalRequests.length && !report.offline.imageFailures.length && report.offline.controls.navAbsent;
     fs.writeFileSync(reportPath, JSON.stringify(report, null, 2) + '\n');
     console.log(JSON.stringify({ report: reportPath, passed: report.passed, offline: report.offline, compactControls: report.compactControls }));
     if (!report.passed) process.exitCode = 1;

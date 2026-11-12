@@ -6,10 +6,6 @@ export type SourceSlide = {
 };
 
 const paths: Record<string, string> = {
-  previous: '<path d="M15 6l-6 6 6 6"/>', next: '<path d="M9 6l6 6-6 6"/>',
-  overview: '<rect x="4" y="4" width="6.5" height="6.5" rx="1"/><rect x="13.5" y="4" width="6.5" height="6.5" rx="1"/><rect x="4" y="13.5" width="6.5" height="6.5" rx="1"/><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1"/>',
-  fullscreen: '<path d="M9 4H4v5m11-5h5v5M4 15v5h5m11-5v5h-5"/>',
-  notes: '<path d="M6 4h9l3 3v13H6z"/><path d="M9 10h6M9 13.5h6M9 17h4"/>',
   close: '<path d="m6 6 12 12M6 18 18 6"/>',
 };
 const icon = (name: string) => `<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${paths[name]}</svg>`;
@@ -26,14 +22,16 @@ const REVEAL = [
   ".ag-head", ".ag-row", ".xmedia-grid > *", ".blist > li", ".xtable tbody tr", ".xtable thead", ".pillar", ".dmd-item",
   ".xpanel", ".xcol", ".xlead", ".xflow > *", ".xpair > *", ".xchain", ".xconclusion", ".xfinal", ".xnote",
   ".xstats > *", ".xstep", ".xdl > div", ".xquote > *", ".xequation", ".xcompare > *", ".xasks > *", ".xgrid4 > *",
-  ".closing > *", ".xfull .xfig", ".xart", ".kg",
+  ".closing > *", ".closing-copy > *", ".closing-art", ".xfull .xfig", ".xart", ".kg",
+  ".chapter3-research > :first-child", ".chapter3-study", ".chapter3-conclusion > :first-child",
+  ".chapter3-conclusion-copy > *", ".chapter3-conclusion-art", ".chapter3-conclusion-sources",
 ].join(",");
 
 const EASE = "cubic-bezier(.77,0,.18,1)";
 const EASE_OUT = "cubic-bezier(.16,1,.3,1)";
 
 export function mountDeck(root: HTMLElement, slides: SourceSlide[]) {
-  if (slides.length !== 71) throw new Error(`Expected 71 slides, received ${slides.length}`);
+  if (!slides.length) throw new Error("The presentation must contain at least one slide.");
   const total = slides.length;
   const pad = (n: number) => String(n).padStart(2, "0");
   const reduced = window.matchMedia("(prefers-reduced-motion: reduce)");
@@ -48,13 +46,13 @@ export function mountDeck(root: HTMLElement, slides: SourceSlide[]) {
     timers.add(timer);
   };
 
-  root.innerHTML = `<div class="viewport"><div class="stage"><div class="slide-host"></div><div class="curtain" aria-hidden="true"><div class="curtain-in"><span class="curtain-num"></span><span class="curtain-label"></span></div></div><footer class="deck-hud"><div class="hud-brand"><i>Амьдрал 3.0</i><span class="hud-section"></span></div><div class="hud-progress" role="progressbar" aria-label="Слайдын явц" aria-valuemin="1" aria-valuemax="${total}"><i></i></div><div class="hud-nav"><button class="hud-btn" data-action="overview" aria-label="Слайдын жагсаалт" title="Esc">${icon("overview")}</button><button class="hud-btn" data-action="notes" aria-label="Илтгэгчийн тэмдэглэл" aria-pressed="false" title="N">${icon("notes")}</button><button class="hud-btn" data-action="fullscreen" aria-label="Бүтэн дэлгэц" aria-pressed="false" title="F">${icon("fullscreen")}</button><span class="hud-sep" aria-hidden="true"></span><button class="hud-btn" data-action="previous" aria-label="Өмнөх слайд" title="←">${icon("previous")}</button><span class="hud-counter" aria-live="polite" aria-atomic="true"><b>01</b><span>/ ${total}</span></span><button class="hud-btn" data-action="next" aria-label="Дараагийн слайд" title="→ / Space">${icon("next")}</button></div></footer></div><aside class="speaker-notes" hidden></aside><dialog class="overview" aria-label="Слайдын жагсаалт"><button class="overview-close hud-btn" data-action="close-overview" aria-label="Хаах">${icon("close")}</button><div class="overview-grid"></div></dialog></div>`;
+  root.tabIndex = -1;
+  root.innerHTML = `<div class="viewport"><div class="stage"><div class="slide-host"></div><div class="curtain" aria-hidden="true"><div class="curtain-in"><span class="curtain-num"></span><span class="curtain-label"></span></div></div><footer class="deck-hud"><div class="hud-brand"><i>Амьдрал 3.0</i><span class="hud-section"></span></div><div class="hud-progress" role="progressbar" aria-label="Слайдын явц" aria-valuemin="1" aria-valuemax="${total}"><i></i></div></footer></div><aside class="speaker-notes" hidden></aside><dialog class="overview" aria-label="Слайдын жагсаалт"><button class="overview-close hud-btn" data-action="close-overview" aria-label="Хаах">${icon("close")}</button><div class="overview-grid"></div></dialog></div>`;
   const get = <T extends HTMLElement = HTMLElement>(q: string) => root.querySelector<T>(q)!;
-  const viewport = get(".viewport"), stage = get(".stage"), host = get(".slide-host"), hud = get(".deck-hud");
-  const progress = get(".hud-progress"), fill = get(".hud-progress i"), counter = get(".hud-counter b"), sectionLabel = get(".hud-section");
+  const viewport = get(".viewport"), stage = get(".stage"), host = get(".slide-host");
+  const progress = get(".hud-progress"), fill = get(".hud-progress i"), sectionLabel = get(".hud-section");
   const curtain = get(".curtain"), curtainNum = get(".curtain-num"), curtainLabel = get(".curtain-label");
-  const previous = get<HTMLButtonElement>('[data-action="previous"]'), next = get<HTMLButtonElement>('[data-action="next"]');
-  const notes = get(".speaker-notes"), notesButton = get('[data-action="notes"]'), fullscreenButton = get('[data-action="fullscreen"]');
+  const notes = get(".speaker-notes");
   const overview = get<HTMLDialogElement>(".overview"), grid = get(".overview-grid");
 
   let lastSection = "";
@@ -80,15 +78,10 @@ export function mountDeck(root: HTMLElement, slides: SourceSlide[]) {
   };
 
   function resize() {
-    const compact = viewport.clientWidth <= 700 || (viewport.clientWidth <= 960 && viewport.clientHeight <= 600);
-    const availableHeight = viewport.clientHeight - (compact ? 88 : 0);
-    const scale = Math.min(viewport.clientWidth / 1920, availableHeight / 1080);
+    const scale = Math.min(viewport.clientWidth / 1920, viewport.clientHeight / 1080);
     stage.style.transform = `translate(-50%, -50%) scale(${scale})`;
-    stage.style.top = compact ? `${availableHeight / 2}px` : "50%";
+    stage.style.top = "50%";
     viewport.dataset.portrait = String(viewport.clientHeight > viewport.clientWidth);
-    viewport.dataset.compact = String(compact);
-    const hudParent = compact ? viewport : stage;
-    if (hud.parentElement !== hudParent) hudParent.append(hud);
   }
 
   function fitContent(slide: HTMLElement) {
@@ -154,7 +147,6 @@ export function mountDeck(root: HTMLElement, slides: SourceSlide[]) {
 
     index = n; current = slide;
     viewport.dataset.cover = String(n === 0); viewport.dataset.type = source.type;
-    counter.textContent = pad(n + 1); previous.disabled = n === 0; next.disabled = n === total - 1;
     progress.setAttribute("aria-valuenow", String(n + 1)); fill.style.transform = `scaleX(${(n + 1) / total})`;
     sectionLabel.textContent = source.section;
     notes.textContent = source.notes;
@@ -223,26 +215,26 @@ export function mountDeck(root: HTMLElement, slides: SourceSlide[]) {
     root.dispatchEvent(new CustomEvent("deck:change", { detail: { index: n, id: source.id } }));
   }
 
-  function closeOverview() { overview.close(); returnFocus?.focus(); }
+  function closeOverview() {
+    overview.close();
+    (returnFocus?.isConnected ? returnFocus : root).focus({ preventScroll: true });
+  }
   function toggleOverview() {
     if (overview.open) { closeOverview(); return; }
-    returnFocus = document.activeElement as HTMLElement; overview.showModal();
+    returnFocus = document.activeElement instanceof HTMLElement && root.contains(document.activeElement) ? document.activeElement : root;
+    overview.showModal();
     const active = cards[index]; active.focus(); active.scrollIntoView({ block: "center", behavior: "instant" });
   }
   async function toggleFullscreen() {
     try {
       if (document.fullscreenElement) await document.exitFullscreen(); else if (root.requestFullscreen) await root.requestFullscreen();
-    } catch { fullscreenButton.setAttribute("aria-pressed", "false"); }
+    } catch { /* Fullscreen may be unavailable in an embedded browser. */ }
   }
-  function toggleNotes() { notes.hidden = !notes.hidden; notesButton.setAttribute("aria-pressed", String(!notes.hidden)); }
+  function toggleNotes() { notes.hidden = !notes.hidden; }
   function onClick(event: MouseEvent) {
     const target = event.target as Element, jump = target.closest<HTMLElement>("[data-slide]");
     if (jump) { goTo(Number(jump.dataset.slide)); closeOverview(); return; }
-    switch (target.closest<HTMLElement>("[data-action]")?.dataset.action) {
-      case "previous": goTo(index - 1); break; case "next": goTo(index + 1); break;
-      case "overview": toggleOverview(); break; case "close-overview": closeOverview(); break;
-      case "fullscreen": void toggleFullscreen(); break; case "notes": toggleNotes(); break;
-    }
+    if (target.closest<HTMLElement>("[data-action]")?.dataset.action === "close-overview") closeOverview();
   }
   function onKey(event: KeyboardEvent) {
     if (event.ctrlKey || event.metaKey || event.altKey) return;
@@ -259,10 +251,10 @@ export function mountDeck(root: HTMLElement, slides: SourceSlide[]) {
     }
   }
   function onHash() { const n = parseInt(location.hash.slice(1), 10); if (Number.isFinite(n)) goTo(n - 1, false); }
-  function onFullscreen() { fullscreenButton.setAttribute("aria-pressed", String(Boolean(document.fullscreenElement))); resize(); }
+  function onFullscreen() { resize(); }
   function onDown(event: PointerEvent) {
     touch = null;
-    if (event.pointerType === "touch" && !(event.target as Element).closest("button,dialog,aside")) touch = { x: event.clientX, y: event.clientY };
+    if (event.pointerType === "touch" && !(event.target as Element).closest("a,button,dialog,aside")) touch = { x: event.clientX, y: event.clientY };
   }
   function onPointerCancel() { touch = null; }
   function onUp(event: PointerEvent) {

@@ -260,11 +260,6 @@ export function Structure({ activeChapter = "1" }: { activeChapter?: string }) {
             >
               <span className="toc-n">{p.n}</span>
               <span className="toc-t">{p.t}</span>
-              {isPresented && (
-                <span className={`toc-tag${isActive ? " is-current" : ""}`}>
-                  Өнөөдөр
-                </span>
-              )}
             </R>
           );
         })}

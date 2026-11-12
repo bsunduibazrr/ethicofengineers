@@ -1,0 +1,60 @@
+{
+  "date": "2026-11-12",
+  "passed": true,
+  "checks": [
+    {
+      "puzzle": "big-questions",
+      "entries": 6,
+      "cells": 37,
+      "typing": true,
+      "autoAdvance": true,
+      "checkWrongAndCorrect": true,
+      "directionSwitch": true,
+      "reset": true,
+      "solve": true
+    },
+    {
+      "puzzle": "thinking-machines",
+      "entries": 6,
+      "cells": 35,
+      "typing": true,
+      "autoAdvance": true,
+      "checkWrongAndCorrect": true,
+      "directionSwitch": true,
+      "reset": true,
+      "solve": true
+    }
+  ],
+  "responsive": [
+    {
+      "width": 390,
+      "puzzle": "big-questions",
+      "horizontalOverflow": false,
+      "scrollable": true
+    },
+    {
+      "width": 390,
+      "puzzle": "thinking-machines",
+      "horizontalOverflow": false,
+      "scrollable": true
+    },
+    {
+      "width": 320,
+      "puzzle": "big-questions",
+      "horizontalOverflow": false,
+      "scrollable": true
+    },
+    {
+      "width": 320,
+      "puzzle": "thinking-machines",
+      "horizontalOverflow": false,
+      "scrollable": true
+    }
+  ],
+  "storageRestored": true,
+  "revealAndReset": true,
+  "stateIsolated": true,
+  "finalSlideReturn": true,
+  "finalSlideOrder": 74,
+  "pageErrors": []
+}
