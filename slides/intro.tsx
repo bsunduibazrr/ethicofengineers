@@ -26,10 +26,10 @@ export function Cover() {
           </R>
           <R>
             <small>Сэдэв</small>
-            <b>Номын 1, 2-р бүлэг</b>
+            <b>Номын 1, 2, 3, 4, 6, 8-р бүлэг</b>
           </R>
           <R>
-            <small>Илтгэгч</small>
+            <small> </small>
             <b>{PRESENTER}</b>
           </R>
         </Group>
