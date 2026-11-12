@@ -35,7 +35,7 @@ export const crosswords: CrosswordPuzzle[] = [
   {
     id: "easy",
     title: "Амьдрал 3.0",
-    subtitle: "6 амархан үг, бүгд номтой холбоотой.",
+    subtitle: " ",
     rows: 7,
     cols: 8,
     entries: [
