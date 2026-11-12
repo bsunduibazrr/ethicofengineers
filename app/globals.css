@@ -848,9 +848,12 @@ sup {
 
 .structure {
   display: grid;
-  grid-template-columns: 1fr 760px;
-  gap: 100px;
-  align-items: center;
+  place-items: center;
+}
+
+.structure .toc {
+  width: 1160px;
+  max-width: 100%;
 }
 
 .big-question {
@@ -866,14 +869,9 @@ sup {
   color: var(--navy);
 }
 
-.structure .sub {
-  margin-top: 34px;
-  font-size: 22px;
-}
-
 .toc-head {
-  padding-bottom: 12px;
-  font-size: 15px;
+  padding: 0 24px 20px;
+  font-size: 18px;
   font-weight: 600;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -881,35 +879,27 @@ sup {
 }
 
 .toc-row {
-  display: flex;
+  display: grid;
+  grid-template-columns: 46px minmax(0, 1fr);
   align-items: center;
-  gap: 16px;
-  padding: 13px 14px;
+  gap: 20px;
+  min-height: 64px;
+  padding: 15px 24px;
   border-top: 1px solid var(--rule);
-  font-size: 21px;
-  color: var(--ink2);
-}
-
-.toc-n {
-  width: 30px;
-  font-family: var(--serif);
-  font-size: 22px;
-  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.3;
   color: var(--muted);
 }
 
-.toc-t {
-  flex: 1;
+.toc-n {
+  font-family: var(--serif);
+  font-size: 26px;
+  font-variant-numeric: tabular-nums;
+  color: inherit;
 }
 
-.toc-row.hl {
-  background: var(--tint);
-  color: var(--ink);
-  font-weight: 600;
-}
-
-.toc-row.hl .toc-n {
-  color: var(--navy);
+.toc-row.is-bookend {
+  font-size: 22px;
 }
 
 /* ───────────── Бүлгийн нүүр ───────────── */
@@ -1357,66 +1347,79 @@ sup {
 
 /* ───────────── 11–12. Домог ───────────── */
 
+.myths-slide {
+  display: flex;
+  flex-direction: column;
+}
+
 .myths-slide .header {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
-.mrow {
+.myth-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 70px;
-  padding: 38px 0;
-  border-top: 1px solid var(--rule);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 56px;
+  flex: 1;
 }
 
-.mrow.mhead {
-  padding: 0 0 12px;
-  border-top: none;
-  font-size: 14px;
+.myth-item {
+  padding-top: 20px;
+  border-top: 2px solid var(--navy);
+}
+
+.myth-topic {
+  font-size: 15px;
   font-weight: 600;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
+  color: var(--blue);
 }
 
-.mhead span:first-child {
-  color: var(--red);
-}
-
-.mhead span:last-child {
-  color: var(--navy);
-}
-
-.mrow p {
-  position: relative;
-  padding-left: 34px;
+.myth-misconception {
+  min-height: 112px;
+  margin-top: 28px;
   font-size: 26px;
   line-height: 1.45;
+  color: var(--muted);
 }
 
-.mrow p::before {
-  position: absolute;
-  left: 0;
-  top: 0;
-  font-weight: 700;
+.myth-verdict {
+  margin-top: 24px;
+  font-family: var(--serif);
+  font-size: 36px;
+  line-height: 1.24;
+  color: var(--navy);
+  text-wrap: balance;
 }
 
-.mrow p.m {
+.myth-explanation {
+  margin-top: 18px;
+  font-size: 23px;
+  line-height: 1.5;
   color: var(--ink2);
 }
 
-.mrow p.m::before {
-  content: "✕";
-  color: var(--red);
+.myth-takeaway {
+  display: flex;
+  align-items: baseline;
+  gap: 32px;
+  margin-top: 36px;
+  padding-top: 24px;
+  border-top: 1px solid var(--rule);
 }
 
-.mrow p.f {
-  color: var(--ink);
-  font-weight: 500;
+.myth-takeaway > span {
+  flex: none;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--blue);
 }
 
-.mrow p.f::before {
-  content: "✓";
-  color: var(--navy);
+.myth-takeaway p {
+  font-family: var(--serif);
+  font-size: 28px;
+  line-height: 1.4;
 }
 
 .footnote {
@@ -1563,20 +1566,26 @@ sup {
 /* ───────────── 15. Ландшафт ───────────── */
 
 .land .header {
-  margin-bottom: 14px;
+  margin-bottom: 40px;
+}
+
+.land-grid {
+  display: grid;
+  grid-template-columns: 1120px 1fr;
+  gap: 64px;
+  align-items: center;
 }
 
 .land-wrap svg {
-  overflow: visible;
   display: block;
-  width: 1680px;
-  height: 580px;
+  width: 1120px;
+  height: 520px;
 }
 
 .peak-t {
-  font-size: 20px;
-  font-weight: 600;
-  fill: var(--ink);
+  font-size: 23px;
+  font-weight: 500;
+  fill: var(--navy);
   paint-order: stroke;
   stroke: #fff;
   stroke-width: 6px;
@@ -1584,25 +1593,58 @@ sup {
 
 .peak-t.flag {
   font-family: var(--serif);
-  font-size: 24px;
-  font-weight: 700;
-  fill: var(--red);
-}
-
-.water-t {
-  font-size: 17px;
+  font-size: 29px;
   font-weight: 700;
   fill: var(--navy);
 }
 
-.land-notes {
-  display: flex;
-  gap: 50px;
-  margin-top: 16px;
-  padding-top: 16px;
-  border-top: 1px solid var(--rule);
+.water-t {
   font-size: 21px;
+  font-weight: 600;
+  fill: var(--navy);
+}
+
+.land-axis {
+  font-size: 19px;
+  fill: var(--ink2);
+}
+
+.land-reading {
+  padding-left: 32px;
+  border-left: 2px solid var(--navy);
+}
+
+.land-reading .label {
+  margin-bottom: 20px;
+  font-size: 14px;
+  letter-spacing: 0.07em;
+}
+
+.land-reading h3 {
+  font-family: var(--serif);
+  font-size: 37px;
+  line-height: 1.25;
+  text-wrap: balance;
+}
+
+.land-reading p {
+  margin-top: 24px;
+  font-size: 24px;
+  line-height: 1.5;
   color: var(--ink2);
+}
+
+.land-reading .land-implication {
+  font-size: 22px;
+  color: var(--navy);
+}
+
+.land-caption {
+  margin-top: 20px;
+  padding-top: 18px;
+  border-top: 1px solid var(--rule);
+  font-size: 17px;
+  color: var(--muted);
 }
 
 /* ───────────── 16. Санах ой ───────────── */
@@ -1617,6 +1659,42 @@ sup {
 .mem-well svg {
   display: block;
   margin: 18px auto 10px;
+}
+
+.mem-ball {
+  animation: memory-bit 3.6s linear infinite alternate;
+}
+
+@keyframes memory-bit {
+  0%,
+  18% {
+    transform: translate(0, 0);
+  }
+  26% {
+    transform: translate(41.094px, -17.188px);
+  }
+  34% {
+    transform: translate(66.25px, -55px);
+  }
+  42% {
+    transform: translate(85.781px, -92.813px);
+  }
+  50% {
+    transform: translate(110px, -110px);
+  }
+  58% {
+    transform: translate(134.219px, -92.813px);
+  }
+  66% {
+    transform: translate(153.75px, -55px);
+  }
+  74% {
+    transform: translate(178.906px, -17.188px);
+  }
+  82%,
+  100% {
+    transform: translate(220px, 0);
+  }
 }
 
 .mem-well p {
@@ -2059,49 +2137,24 @@ sup {
 }
 
 /* ═══════════════════════════════════════════════════════
-   Бүлэг бүрийн эхлэл — «Ном юуны тухай вэ?»
+   Бүлэг бүрийн эхлэл — агуулга дээрх одоогийн бүлэг
    ═══════════════════════════════════════════════════════ */
-
-.structure {
-  position: relative;
-  grid-template-columns: 1fr 800px;
-}
-
-.structure > * {
-  position: relative;
-  z-index: 1;
-}
-
-.structure[data-chapter]::before {
-  content: attr(data-chapter);
-  position: absolute;
-  left: -18px;
-  bottom: -70px;
-  z-index: 0;
-  font-family: var(--serif);
-  font-size: 420px;
-  font-weight: 700;
-  line-height: 1;
-  color: var(--tint);
-  pointer-events: none;
-}
 
 .toc-row {
   transition: color 0.3s;
 }
 
-.toc-row:not(.hl) {
-  color: var(--muted);
-}
-
-.toc-row.hl {
-  background: transparent;
-}
-
 .toc-row.is-active {
+  border-top-color: transparent;
+  border-radius: 6px;
   background: var(--navy) linear-gradient(var(--navy), var(--navy)) left / 100%
     100% no-repeat;
   color: #fff;
+  font-weight: 600;
+}
+
+.toc-row.is-active + .toc-row {
+  border-top-color: transparent;
 }
 
 .toc-row.is-active .toc-n {
@@ -3461,7 +3514,7 @@ sup {
   font-size: 91px;
   font-weight: 400;
   line-height: 1.16;
-  letter-spacing: -.045em;
+  letter-spacing: -0.045em;
   color: var(--ink);
 }
 
@@ -3483,7 +3536,7 @@ sup {
   font-size: 62px;
   font-weight: 700;
   line-height: 1.18;
-  letter-spacing: -.03em;
+  letter-spacing: -0.03em;
 }
 
 .chapter3-studies {
@@ -3516,7 +3569,7 @@ sup {
   font-family: var(--serif);
   font-size: 61px;
   line-height: 1;
-  letter-spacing: -.055em;
+  letter-spacing: -0.055em;
 }
 
 .chapter3-study ul {
@@ -3554,7 +3607,7 @@ sup {
   font-size: 19px;
   font-weight: 600;
   line-height: 1.4;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
 }
 
 .chapter3-conclusion-points {
@@ -3642,7 +3695,7 @@ sup {
   font-size: 18px;
   font-weight: 600;
   line-height: 1.4;
-  letter-spacing: .075em;
+  letter-spacing: 0.075em;
 }
 
 .ch4-title {
@@ -3653,7 +3706,7 @@ sup {
   font-size: 58px;
   font-weight: 700;
   line-height: 1.15;
-  letter-spacing: -.025em;
+  letter-spacing: -0.025em;
 }
 
 .ch4-body {
@@ -3719,7 +3772,7 @@ sup {
   font-size: 18px;
   font-weight: 500;
   line-height: 1.35;
-  letter-spacing: .035em;
+  letter-spacing: 0.035em;
 }
 
 .ch4-footer > span:last-child {
@@ -3895,7 +3948,7 @@ sup {
   font-size: 24px;
   font-weight: 600;
   line-height: 1.4;
-  letter-spacing: .06em;
+  letter-spacing: 0.06em;
 }
 
 .ch4-final-footers {

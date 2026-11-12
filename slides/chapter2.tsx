@@ -107,118 +107,60 @@ export function Intelligence() {
 /* ───────────── 15. Моравецын ландшафт ───────────── */
 
 const peaks = [
-  { x: 120, y: 470, t: "Арифметик" },
-  { x: 285, y: 486, t: "Шатар" },
-  { x: 430, y: 455, t: "Го" },
-  { x: 575, y: 476, t: "Яриа таних" },
-  { x: 740, y: 352, t: "Жолоодлого" },
-  { x: 905, y: 372, t: "Орчуулга" },
-  { x: 1070, y: 228, t: "Программчлал" },
-  { x: 1215, y: 262, t: "Ном бичих" },
-  { x: 1385, y: 92, t: "AI дизайн", flag: true },
-  { x: 1540, y: 212, t: "Шинжлэх ухаан" },
+  { x: 155, y: 410, t: "Арифметик" },
+  { x: 290, y: 420, t: "Шатар" },
+  { x: 420, y: 388, t: "Го" },
+  { x: 590, y: 286, t: "Орчуулга" },
+  { x: 750, y: 216, t: "Программчлал" },
+  { x: 935, y: 102, t: "AI хөгжүүлэх", flag: true },
 ];
 
 const MOUNTAIN =
-  "M0 600 L0 505 C 60 470, 150 470, 210 492 C 250 506, 300 510, 340 492 C 380 474, 400 455, 440 460 " +
-  "C 490 466, 520 492, 570 484 C 630 474, 660 380, 720 366 C 770 354, 800 392, 850 392 C 890 392, 900 380, 930 384 " +
-  "C 990 392, 1010 262, 1070 244 C 1120 230, 1150 282, 1210 278 C 1260 274, 1320 112, 1380 102 " +
-  "C 1430 94, 1470 200, 1520 222 C 1570 244, 1610 290, 1640 300 L1640 600 Z";
+  "M70 462 V430 C110 410, 135 404, 155 410 " +
+  "C210 426, 260 426, 290 420 C350 409, 386 388, 420 388 " +
+  "C490 388, 540 288, 590 286 C650 284, 690 216, 750 216 " +
+  "C820 216, 875 102, 935 102 C990 102, 1035 254, 1110 280 V462 Z";
 
 export function Landscape() {
   return (
     <div className="land">
       <Header
-        kicker="2-р бүлэг · Ханс Моравецын санаа"
-        title="Хүний чадварын ландшафт"
-        sub="Уул өндөр байх тусам тэр ажил машинд хэцүү. Ус бол өнөөгийн AI-н түвшин, жил ирэх тусам нэмэгдсээр байна."
+        kicker="2-р бүлэг · Ханс Моравецын зүйрлэл"
+        title="AI бүх чадварыг зэрэг эзэмшихгүй"
+        sub="Усны түвшин дээшлэх бүрд AI-ийн хийж чадах ажлын хүрээ тэлнэ."
       />
-      <R className="land-wrap">
-        <svg viewBox="0 0 1640 600" width="1640" height="520">
-          <defs>
-            <pattern
-              id="hatch"
-              width="8"
-              height="8"
-              patternUnits="userSpaceOnUse"
-              patternTransform="rotate(45)"
-            >
-              <line
-                x1="0"
-                y1="0"
-                x2="0"
-                y2="8"
-                stroke="#d9dee9"
-                strokeWidth="2"
-              />
-            </pattern>
-          </defs>
-          <path
-            d={MOUNTAIN}
-            fill="url(#hatch)"
-            stroke="#13296b"
-            strokeWidth="2.5"
-          />
-          {peaks.map((p) => (
-            <g key={p.t}>
-              <circle cx={p.x} cy={p.y} r="5" fill="#13296b" />
-              {p.flag && (
-                <g>
-                  <line
-                    x1={p.x}
-                    y1={p.y}
-                    x2={p.x}
-                    y2={p.y - 64}
-                    stroke="#13296b"
-                    strokeWidth="2.5"
-                  />
-                  <path
-                    d={`M${p.x} ${p.y - 64} L${p.x + 40} ${p.y - 53} L${p.x} ${p.y - 42} Z`}
-                    fill="#b4233c"
-                  />
-                </g>
-              )}
-              <text
-                x={p.x}
-                y={p.y - (p.flag ? 76 : 16)}
-                textAnchor="middle"
-                className={`peak-t${p.flag ? " flag" : ""}`}
-              >
-                {p.t}
-              </text>
-            </g>
-          ))}
-          <motion.g
-            initial={{ y: 170 }}
-            animate={{ y: 0 }}
-            transition={{ delay: 1, duration: 3, ease: [0.33, 1, 0.68, 1] }}
-          >
-            <g className="wave">
-              <path
-                d="M-200 440 q 50 -12 100 0 t 100 0 t 100 0 t 100 0 t 100 0 t 100 0 t 100 0 t 100 0 t 100 0 t 100 0 t 100 0 t 100 0 t 100 0 t 100 0 t 100 0 t 100 0 t 100 0 t 100 0 t 100 0 t 100 0 V 700 H -200 Z"
-                fill="#2c55c8"
-                fillOpacity=".28"
-                stroke="#2c55c8"
-                strokeWidth="2"
-              />
-            </g>
-            <text x="24" y="585" className="water-t">
-              AI-н түвшин, 2017 он
-            </text>
-          </motion.g>
-        </svg>
+      <div className="land-grid">
+        <R className="land-wrap">
+          <svg viewBox="0 0 1120 520" width="1120" height="520" role="img" aria-label="Усанд автсан нам дор газрууд нь AI-ийн эзэмшсэн чадварууд; өндөр оргилууд нь машинд илүү хэцүү ажлууд.">
+            <path d={MOUNTAIN} fill="#f3f5fa" />
+            <rect x="70" y="350" width="1040" height="112" fill="#e5ecfa" />
+            <path d={MOUNTAIN} fill="none" stroke="#13296b" strokeWidth="2.5" />
+            <path d="M40 462 V65 M33 75 L40 65 L47 75" fill="none" stroke="#646b7d" strokeWidth="2" />
+            <text x="70" y="38" className="land-axis">Машинд гүйцэтгэхэд хэцүү ↑</text>
+            <line x1="70" y1="350" x2="1110" y2="350" stroke="#2c55c8" strokeWidth="2" strokeDasharray="8 6" />
+            <text x="86" y="330" className="water-t">AI-ийн хүрсэн түвшин</text>
+            {peaks.map((p) => (
+              <g key={p.t}>
+                {p.flag && <circle cx={p.x} cy={p.y} r="13" fill="#fff" stroke="#13296b" strokeWidth="2" />}
+                <circle cx={p.x} cy={p.y} r="5" fill="#13296b" />
+                <text x={p.x} y={p.y - (p.flag ? 28 : 22)} textAnchor="middle" className={`peak-t${p.flag ? " flag" : ""}`}>
+                  {p.t}
+                </text>
+              </g>
+            ))}
+            <text x="86" y="502" className="land-axis">Усанд орсон хэсэг = AI-ийн хийж чаддаг ажил</text>
+          </svg>
+        </R>
+        <R className="land-reading">
+          <span className="label">Яагаад энэ оргил чухал вэ?</span>
+          <h3>AI өөрөө AI хөгжүүлж чадвал?</h3>
+          <p>Дараагийн хувилбараа сайжруулах ажилд AI өөрөө оролцож эхэлнэ.</p>
+          <p className="land-implication">Тэгвэл хөгжлийн хурд улам нэмэгдэж болохыг Тегмарк онцолдог.</p>
+        </R>
+      </div>
+      <R className="land-caption">
+        Чадваруудын байрлал нь номын 2017 оны зүйрлэл; өнөөгийн AI-ийн үнэлгээ биш.
       </R>
-      <Group className="land-notes">
-        <R>
-          <b>Аль хэдийн усанд автсан:</b> арифметик, шатар, Го, яриа таних
-        </R>
-        <R>
-          <b>Тегмаркийн зөвлөгөө:</b> эрэг орчмын мэргэжлээс болгоомжил
-        </R>
-        <R>
-          <b>Ус "AI дизайн"-д хүрвэл</b> AI өөрийгөө сайжруулж эхэлнэ
-        </R>
-      </Group>
     </div>
   );
 }
@@ -239,20 +181,12 @@ export function Memory() {
               stroke="#13296b"
               strokeWidth="3"
             />
-            <motion.circle
+            <circle
+              className="mem-ball"
+              cx="140"
+              cy="185"
               r="15"
               fill="#2c55c8"
-              initial={{ cx: 250, cy: 74 }}
-              animate={{
-                cx: [250, 200, 140, 140, 200, 250, 300, 360, 360, 300, 250],
-                cy: [74, 132, 185, 185, 132, 74, 132, 185, 185, 132, 74],
-              }}
-              transition={{
-                duration: 6,
-                repeat: Infinity,
-                ease: "easeInOut",
-                delay: 1.2,
-              }}
             />
             <text x="140" y="240" textAnchor="middle" className="bit-t">
               0

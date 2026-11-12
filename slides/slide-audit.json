@@ -76,7 +76,7 @@
       "id": "structure",
       "order": 4,
       "section": "Номын бүтэц",
-      "title": "Ном юуны тухай вэ?",
+      "title": "Агуулга",
       "type": "Section divider"
     },
     {
@@ -125,21 +125,21 @@
       "id": "myths1",
       "order": 11,
       "section": "1-р бүлэг",
-      "title": "Түгээмэл буруу ойлголтууд",
+      "title": "AI-ийн тухай юуг андуурдаг вэ?",
       "type": "Comparison"
     },
     {
       "id": "myths2",
       "order": 12,
       "section": "1-р бүлэг",
-      "title": "Түгээмэл буруу ойлголтууд (үргэлжлэл)",
+      "title": "AI-д бие, сэтгэл хөдлөл хэрэгтэй юу?",
       "type": "Comparison"
     },
     {
       "id": "structure-ch2",
       "order": 13,
       "section": "2-р бүлэг",
-      "title": "Ном юуны тухай вэ?",
+      "title": "Агуулга",
       "type": "Section divider"
     },
     {
@@ -160,7 +160,7 @@
       "id": "landscape",
       "order": 16,
       "section": "2-р бүлэг",
-      "title": "Хүний чадварын ландшафт",
+      "title": "AI бүх чадварыг зэрэг эзэмшихгүй",
       "type": "Two columns"
     },
     {
@@ -188,21 +188,21 @@
       "id": "case",
       "order": 20,
       "section": "Кейс",
-      "title": "Ухаалаг гэрлэн дохио",
+      "title": "Гэрлэн дохиог AI-д даатгавал",
       "type": "Comparison"
     },
     {
       "id": "qa",
       "order": 21,
       "section": "Хэлэлцүүлэг",
-      "title": "Та юу гэж бодож байна?",
+      "title": "Та энэ шийдлийг зөвшөөрөх үү?",
       "type": "Conclusion"
     },
     {
       "id": "structure-ch3",
       "order": 22,
       "section": "3-р бүлэг",
-      "title": "Ном юуны тухай вэ?",
+      "title": "Агуулга",
       "type": "Section divider"
     },
     {
@@ -293,7 +293,7 @@
       "id": "structure-ch4",
       "order": 35,
       "section": "4-р бүлэг",
-      "title": "Ном юуны тухай вэ?",
+      "title": "Агуулга",
       "type": "Section divider"
     },
     {
@@ -391,7 +391,7 @@
       "id": "structure-ch6",
       "order": 49,
       "section": "6-р бүлэг",
-      "title": "Ном юуны тухай вэ?",
+      "title": "Агуулга",
       "type": "Section divider"
     },
     {
@@ -517,7 +517,7 @@
       "id": "structure-ch8",
       "order": 67,
       "section": "Ухамсар",
-      "title": "Ном юуны тухай вэ?",
+      "title": "Агуулга",
       "type": "Section divider"
     },
     {

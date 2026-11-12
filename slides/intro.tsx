@@ -130,13 +130,13 @@ const editions = [
   {
     src: "/img/cover-us-2018.jpg",
     y: "2018",
-    t: "Зөөлөн хавтас",
+    t: " ",
     d: "Vintage, АНУ",
   },
   {
     src: "/img/cover-uk-2018.jpg",
     y: "2018",
-    t: "Зөөлөн хавтас",
+    t: " ",
     d: "Penguin, Их Британи",
   },
 ];
@@ -145,7 +145,7 @@ const mnInfo = [
   { k: "Орчуулсан", v: "Г. Үүрдмандах" },
   { k: "Редактор", v: "М. Бямбасайхан" },
   { k: "Хэвлэлийн газар", v: "Монсудар" },
-  { k: "Хэмжээ", v: "356 хуудас" },
+  { k: " ", v: " " },
 ];
 
 const reception = [
@@ -172,9 +172,7 @@ export function Book() {
         <Header kicker="Ном" title="Номын хэвлэлүүд" />
 
         <R className="ed-mn">
-          <p className="ed-mn-title">
-            «Амьдрал 3.0: Хиймэл оюуны эринд хүн байхуй»
-          </p>
+          <p className="ed-mn-title"></p>
           <dl className="ed-mn-info">
             {mnInfo.map((f) => (
               <div key={f.k}>
@@ -231,30 +229,16 @@ const parts = [
   { n: "", t: "Төгсгөл. FLI багийн түүх" },
 ];
 
-const presentedChapters = ["1", "2", "3", "4", "6", "8"];
-
 export function Structure({ activeChapter = "1" }: { activeChapter?: string }) {
   return (
     <div className="structure">
-      <div>
-        <Header kicker="Номын бүтэц" title="Ном юуны тухай вэ?" />
-        <R className="big-question">
-          Хиймэл оюун ухаан бидний ирээдүйг яаж өөрчлөх вэ? Бид өөрсдөө{" "}
-          <em>ямар ирээдүйг хүсэж байна</em> вэ?
-        </R>
-        <R className="sub">
-          Ном бүхэлдээ энэ хоёр асуултын тухай. Тегмарк ирээдүйг зүгээр хүлээж
-          суух биш, одооноос ярилцаж шийдэх ёстой зүйл гэж үздэг.
-        </R>
-      </div>
       <Group className="toc">
-        <R className="toc-head">Агуулга</R>
+        <h2 className="toc-head">Агуулга</h2>
         {parts.map((p, i) => {
-          const isPresented = presentedChapters.includes(p.n);
           const isActive = p.n === activeChapter;
           return (
             <R
-              className={`toc-row${isPresented ? " hl" : ""}${isActive ? " is-active" : ""}`}
+              className={`toc-row${isActive ? " hl is-active" : ""}${p.n ? "" : " is-bookend"}`}
               key={i}
             >
               <span className="toc-n">{p.n}</span>
