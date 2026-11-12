@@ -133,7 +133,6 @@ export function Group({ children, className, style }: BoxProps) {
 export function Photo({
   src,
   alt,
-  credit,
   className,
   style,
   pos,
@@ -141,7 +140,6 @@ export function Photo({
 }: {
   src: string;
   alt: string;
-  credit?: string;
   className?: string;
   style?: CSSProperties;
   pos?: string;
@@ -163,7 +161,6 @@ export function Photo({
           draggable={false}
         />
       </motion.div>
-      {credit && <figcaption>{credit}</figcaption>}
     </figure>
   );
 }

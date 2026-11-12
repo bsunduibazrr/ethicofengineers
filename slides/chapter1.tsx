@@ -13,7 +13,6 @@ export function Divider({
   epigraph,
   pills,
   img,
-  credit,
 }: {
   num: string;
   label: string;
@@ -22,7 +21,6 @@ export function Divider({
   epigraph?: { text: string; who: string };
   pills: string[];
   img: string;
-  credit: string;
 }) {
   return (
     <div className="divider">
@@ -47,7 +45,7 @@ export function Divider({
           ))}
         </Group>
       </div>
-      <Photo src={img} alt="" className="div-photo" credit={credit} />
+      <Photo src={img} alt="" className="div-photo" />
     </div>
   );
 }
@@ -65,7 +63,6 @@ export function Ch1Divider() {
         "Түгээмэл буруу ойлголтууд",
       ]}
       img="/img/deep-field.jpg"
-      credit="Hubble Ultra Deep Field, NASA/ESA"
     />
   );
 }
@@ -87,7 +84,6 @@ export function History() {
         src="/img/earth.jpg"
         alt="Дэлхий"
         className="history-photo"
-        credit="Аполло 17-оос авсан зураг, NASA"
       />
       <div>
         <Header
@@ -134,7 +130,6 @@ const stages = [
     v: "1.0",
     name: "Биологийн",
     img: "/img/life1-ecoli.jpg",
-    credit: "E. coli бактери, USDA",
     hw: false,
     sw: false,
     d: "Бактери насан туршдаа шинэ юм сурдаггүй. Өөрчлөгдөх ганц арга нь олон үе дамжсан хувьсал.",
@@ -143,7 +138,6 @@ const stages = [
     v: "2.0",
     name: "Соёлын",
     img: "/img/life2-child.jpg",
-    credit: "Зураг: Widad.sirkhotte, CC BY 4.0",
     hw: false,
     sw: true,
     d: "Бие нь хувьслаар заяадаг ч хэл, мэдлэг, ур чадвараа хүн өөрөө сурч эзэмшдэг.",
@@ -152,7 +146,6 @@ const stages = [
     v: "3.0",
     name: "Технологийн",
     img: "/img/life3-asimo.jpg",
-    credit: "ASIMO робот, Vanillase, CC BY-SA 3.0",
     hw: true,
     sw: true,
     d: "Биеэ ч, оюун ухаанаа ч өөрөө зохион бүтээнэ. Одоогоор ийм амьдрал байхгүй.",
@@ -174,7 +167,6 @@ export function ThreeStages() {
               src={s.img}
               alt={s.name}
               className="stage-photo"
-              credit={s.credit}
               pos="50% 35%"
             />
             <R className="stage-head">
@@ -439,7 +431,6 @@ export function Napa() {
                 alt="Ларри Пейж"
                 className="person-photo"
                 pos="50% 25%"
-                credit="Stansfield PL, CC BY-SA 3.0"
               />
               <R className="person-q">
                 <b>Ларри Пейж</b>
@@ -453,7 +444,6 @@ export function Napa() {
                 alt="Илон Маск"
                 className="person-photo"
                 pos="50% 25%"
-                credit="Gage Skidmore, CC BY-SA 4.0"
               />
               <R className="person-q">
                 <b>Илон Маск</b>
