@@ -129,7 +129,7 @@ const layouts = {
 
   'chapter3-04': ({ P, IMG }) => `<div class="xmedia">${header(S3.kicker, P(0), { caps: true })}<div class="xmedia-grid right"><div class="xmedia-body">${list([P(1), P(2), P(3), P(4)], 'big')}</div>${figure(IMG('image7.png'), { cls: 'wide' })}</div></div>`,
 
-  'chapter3-05': ({ P }) => `<div class="xtable-slide">${header(S3.kicker, P(12), { caps: true })}<table class="xtable"><thead><tr><th>${P(0)}</th><th>${P(1)}</th><th>${P(2)}</th></tr></thead><tbody>${[[3, 4, 5], [6, 7, 8], [9, 10, 11]].map(([a, b, c]) => `<tr><td class="yr">${P(a)}</td><td class="ex">${P(b)}</td><td>${P(c)}</td></tr>`).join('')}</tbody></table></div>`,
+  'chapter3-05': ({ P }) => `<div class="xtable-slide">${header(S3.kicker, P(9), { caps: true })}<table class="xtable"><thead><tr><th>${P(0)}</th><th>${P(1)}</th><th>${P(2)}</th></tr></thead><tbody>${[[3, 4, 5], [6, 7, 8]].map(([a, b, c]) => `<tr><td class="yr">${P(a)}</td><td class="ex">${P(b)}</td><td>${P(c)}</td></tr>`).join('')}</tbody></table></div>`,
 
   'chapter3-06': ({ P }) => {
     const ring = q => `<svg viewBox="0 0 120 120" class="ring" aria-hidden="true"><circle cx="60" cy="60" r="52"/><circle cx="60" cy="60" r="52" class="arc" pathLength="100" stroke-dasharray="${q} 100"/></svg>`;

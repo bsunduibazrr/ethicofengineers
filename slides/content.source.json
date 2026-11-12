@@ -10,7 +10,7 @@
     "list": [],
     "quote": "",
     "notes": "Сайн байна уу. Өнөөдөр Макс Тегмаркийн Амьдрал 3.0 номын эхний хоёр бүлгийг танилцуулна. Ном хиймэл оюун ухаан хүн төрөлхтөнд юу авчрах вэ гэдгийг асуудаг.  тэй шууд холбоотой гэж бодоод сонгосон.",
-    "html": "<div class=\"cover\"><div class=\"cover-text\"><div class=\"kicker\"> </div><div><h1 class=\"cover-title\">Амьдрал <span>3.0</span></h1></div><div class=\"cover-sub\">Хиймэл оюуны эринд хүн байхуй</div><div class=\"cover-en\">Life 3.0: Being Human in the Age of Artificial Intelligence</div><div class=\"cover-meta\"><div><small>Зохиолч</small><b>Макс Тегмарк</b></div><div><small>Сэдэв</small><b>Номын 1, 2, 3, 4, 6, 8-р бүлэг</b></div><div><small>  </small><b> </b></div></div></div><div class=\"cover-books\"><img src=\"/img/cover-us-2017.jpg\" alt=\"Life 3.0, анхны хэвлэл\" class=\"book-cover cb-back\" style=\"rotate:-5px\" draggable=\"false\"/><img src=\"/img/cover-mn.jpg\" alt=\"Амьдрал 3.0, монгол хэвлэл\" class=\"book-cover cb-front\" style=\"rotate:4px\" draggable=\"false\"/></div></div>",
+    "html": "<div class=\"cover\"><div class=\"cover-text\"><div class=\"kicker\"> </div><div><h1 class=\"cover-title\">Амьдрал <span>3.0</span></h1></div><div class=\"cover-sub\">Хиймэл оюуны эринд хүн байхуй</div><div class=\"cover-en\">Life 3.0: Being Human in the Age of Artificial Intelligence</div><div class=\"cover-meta\"><div><small>Зохиолч</small><b>Макс Тегмарк</b></div><div><small>Сэдэв</small><b>Номын 1, 2, 3, 4, 6, 8-р бүлэг</b></div><div><small> </small><b> </b></div></div></div><div class=\"cover-books\"><img src=\"/img/cover-us-2017.jpg\" alt=\"Life 3.0, анхны хэвлэл\" class=\"book-cover cb-back\" style=\"rotate:-5px\" draggable=\"false\"/><img src=\"/img/cover-mn.jpg\" alt=\"Амьдрал 3.0, монгол хэвлэл\" class=\"book-cover cb-front\" style=\"rotate:4px\" draggable=\"false\"/></div></div>",
     "textNodes": [
       " ",
       "Амьдрал ",
@@ -21,11 +21,11 @@
       "Макс Тегмарк",
       "Сэдэв",
       "Номын 1, 2, 3, 4, 6, 8-р бүлэг",
-      "  ",
+      " ",
       " "
     ],
-    "text": " Амьдрал 3.0Хиймэл оюуны эринд хүн байхуйLife 3.0: Being Human in the Age of Artificial IntelligenceЗохиолчМакс ТегмаркСэдэвНомын 1, 2, 3, 4, 6, 8-р бүлэг   ",
-    "sha256": "acd2c521464e1a7b2255954e0098c1fc70281668da0e3ecaebc7baf61d468475"
+    "text": " Амьдрал 3.0Хиймэл оюуны эринд хүн байхуйLife 3.0: Being Human in the Age of Artificial IntelligenceЗохиолчМакс ТегмаркСэдэвНомын 1, 2, 3, 4, 6, 8-р бүлэг  ",
+    "sha256": "e76dde5247c3fb0f39d8cdc956ff6c714e38505ed16cc963d7fd22081e5e57a9"
   },
   {
     "id": "author",
@@ -86,7 +86,9 @@
     "type": "Timeline",
     "title": "Номын хэвлэлүүд",
     "subtitle": "",
-    "body": ["«Амьдрал 3.0: Хиймэл оюуны эринд хүн байхуй»"],
+    "body": [
+      "«Амьдрал 3.0: Хиймэл оюуны эринд хүн байхуй»"
+    ],
     "list": [],
     "quote": "",
     "notes": "2017 онд Knopf-оос анх гарсан, 2018 онд зөөлөн хавтастай нь гарсан. NYT бестселлер, Обама жагсаалтдаа оруулсан, Маск зөвлөсөн. Монгол хувилбарыг Г. Үүрдмандах орчуулж, Монсудар хэвлэсэн.",
@@ -192,7 +194,9 @@
     "type": "Section divider",
     "title": "Бидний цаг үеийн хамгийн чухал яриа",
     "subtitle": "",
-    "body": ["Hubble Ultra Deep Field, NASA/ESA"],
+    "body": [
+      "Hubble Ultra Deep Field, NASA/ESA"
+    ],
     "list": [],
     "quote": "",
     "notes": "1-р бүлэг. Гурван зүйл ярина: амьдралын гурван үе шат, AI-ийн талаарх маргаан, түгээмэл буруу ойлголтууд.",
@@ -398,7 +402,10 @@
     "type": "Quote",
     "title": "Пейж, Маск хоёрын маргаан",
     "subtitle": "",
-    "body": ["Stansfield PL, CC BY-SA 3.0", "Gage Skidmore, CC BY-SA 4.0"],
+    "body": [
+      "Stansfield PL, CC BY-SA 3.0",
+      "Gage Skidmore, CC BY-SA 4.0"
+    ],
     "list": [],
     "quote": "",
     "notes": "2015 онд Маскийн төрсөн өдөр дээр Пейж, Маск хоёр маргалдсан. Пейж Маскыг speciesist гэж нэрлэсэн. Ийм маргаан нэг үгийг өөр ойлгосноос болдог тул Тегмарк нэр томьёогоо эхлээд тодорхойлдог.",
@@ -570,7 +577,9 @@
     "type": "Section divider",
     "title": "Матери ухаалаг болох нь",
     "subtitle": "",
-    "body": ["Intel 80486 процессорын цөм, 1.2 сая транзистортой"],
+    "body": [
+      "Intel 80486 процессорын цөм, 1.2 сая транзистортой"
+    ],
     "list": [],
     "quote": "",
     "notes": "2-р бүлэг. Харрисоны ишлэлийг уншина. Гол асуулт: атомаас бүтсэн юм яаж ухаантай болдог вэ? Дөрвөн хэсэг: оюун ухаан, санах ой, тооцоолол, суралцах.",
@@ -1984,517 +1993,8 @@
     ]
   },
   {
-    "id": "chapter3-05",
-    "order": 27,
-    "section": "3-р бүлэг",
-    "type": "Comparison",
-    "title": "КОДЫН АЛДААНЫ ЭСРЭГ НАЙДВАРТАЙ ХИЙМЭЛ ОЮУН",
-    "subtitle": "",
-    "body": ["КОДЫН АЛДААНЫ ЭСРЭГ НАЙДВАРТАЙ ХИЙМЭЛ ОЮУН"],
-    "list": [],
-    "quote": "",
-    "notes": "",
-    "html": "<div class=\"chapter3-canvas\"><div class=\"canvas-ambient-glow\"></div><div class=\"canvas-grid-pattern\"></div><div class=\"chapter3-node chapter3-image-node\" style=\"position:absolute;left:82.28094488188977px;top:296.0272965879265px;width:733.6994225721785px;height:587.4390551181102px\"><img src=\"/slides/imported/chapter3/image8.png\" alt=\"Freeform 2\" draggable=\"false\" style=\"object-fit:cover;object-position:50% 50%\"/></div><div class=\"chapter3-node chapter3-image-node\" style=\"position:absolute;left:1484.0940682414698px;top:-227.10078740157482px;width:694.3610498687665px;height:592.2056692913386px\"><img src=\"/slides/imported/chapter3/image9.png\" alt=\"Freeform 3\" draggable=\"false\" style=\"object-fit:cover;object-position:50% 50%\"/></div><div class=\"chapter3-node chapter3-table\" style=\"position:absolute;left:849.5209448818898px;top:472.83590551181106px;width:1034.9821522309712px;height:511.1202099737533px\"><div class=\"chapter3-table-row\" style=\"top:0;height:0.010217201589958735px\"><div class=\"chapter3-table-cell\" style=\"left:0;width:0.01919042166973223px;height:0.010217201589958735px;background:var(--accent-bright)\"><div style=\"text-align:justify\"><span style=\"font-family:var(--sans), sans-serif;font-size:14px;color:var(--text)\">Он</span></div></div><div class=\"chapter3-table-cell\" style=\"left:0.01919042166973223px;width:0.03283801020935375px;height:0.010217201589958735px;background:var(--accent-bright)\"><div style=\"text-align:justify\"><span style=\"font-family:var(--sans), sans-serif;font-size:14px;color:var(--text)\">Жишээ</span></div></div><div class=\"chapter3-table-cell\" style=\"left:0.052028431879085985px;width:0.05663111166222333px;height:0.010217201589958735px;background:var(--accent-bright)\"><div style=\"text-align:justify\"><span style=\"font-family:var(--sans), sans-serif;font-size:14px;color:var(--text)\">Үр дагавар</span></div></div></div><div class=\"chapter3-table-row\" style=\"top:0.010217201589958735px;height:0.010217201589958735px\"><div class=\"chapter3-table-cell\" style=\"left:0;width:0.01919042166973223px;height:0.010217201589958735px;background:rgba(59, 130, 246, 0.16)\"><div style=\"text-align:justify\"><span style=\"font-family:var(--sans), sans-serif;font-size:14px;color:var(--text)\">1996</span></div></div><div class=\"chapter3-table-cell\" style=\"left:0.01919042166973223px;width:0.03283801020935375px;height:0.010217201589958735px;background:rgba(59, 130, 246, 0.16)\"><div style=\"text-align:justify\"><span style=\"font-family:var(--sans), sans-serif;font-size:14px;color:var(--text)\">Ariena 5 фуужин</span></div></div><div class=\"chapter3-table-cell\" style=\"left:0.052028431879085985px;width:0.05663111166222333px;height:0.010217201589958735px;background:rgba(59, 130, 246, 0.16)\"><div style=\"text-align:justify\"><span style=\"font-family:var(--sans), sans-serif;font-size:14px;color:var(--text)\">Хөөрснөөс 37с дараа сүйрсэн</span></div></div></div><div class=\"chapter3-table-row\" style=\"top:0.02043440317991747px;height:0.01911217475768285px\"><div class=\"chapter3-table-cell\" style=\"left:0;width:0.01919042166973223px;height:0.01911217475768285px;background:rgba(59, 130, 246, 0.16)\"><div style=\"text-align:justify\"><span style=\"font-family:var(--sans), sans-serif;font-size:14px;color:var(--text)\">2012</span></div></div><div class=\"chapter3-table-cell\" style=\"left:0.01919042166973223px;width:0.03283801020935375px;height:0.01911217475768285px;background:rgba(59, 130, 246, 0.16)\"><div style=\"text-align:justify\"><span style=\"font-family:var(--sans), sans-serif;font-size:14px;color:var(--text)\">Kngiht Capital</span></div></div><div class=\"chapter3-table-cell\" style=\"left:0.052028431879085985px;width:0.05663111166222333px;height:0.01911217475768285px;background:rgba(59, 130, 246, 0.16)\"><div style=\"text-align:justify\"><span style=\"font-family:var(--sans), sans-serif;font-size:14px;color:var(--text)\">45м-нд 440 сая ам.долларын алдагдал</span></div></div></div><div class=\"chapter3-table-row\" style=\"top:0.039546577937600316px;height:0.010217201589958735px\"><div class=\"chapter3-table-cell\" style=\"left:0;width:0.01919042166973223px;height:0.010217201589958735px;background:rgba(59, 130, 246, 0.16)\"><div style=\"text-align:justify\"><span style=\"font-family:var(--sans), sans-serif;font-size:14px;color:var(--text)\">2009</span></div></div><div class=\"chapter3-table-cell\" style=\"left:0.01919042166973223px;width:0.03283801020935375px;height:0.010217201589958735px;background:rgba(59, 130, 246, 0.16)\"><div style=\"text-align:justify\"><span style=\"font-family:var(--sans), sans-serif;font-size:14px;color:var(--text)\">Air France 447</span></div></div><div class=\"chapter3-table-cell\" style=\"left:0.052028431879085985px;width:0.05663111166222333px;height:0.010217201589958735px;background:rgba(59, 130, 246, 0.16)\"><div style=\"text-align:justify\"><span style=\"font-family:var(--sans), sans-serif;font-size:14px;color:var(--text)\">228 хүн амь үрэгдсэн</span></div></div></div></div><div class=\"chapter3-node chapter3-text is-heading\" style=\"position:absolute;left:548.6628871391076px;top:86.7589501312336px;width:935.4311811023622px;height:310.2px;display:flex;flex-direction:column;justify-content:flex-start;padding-left:0;padding-right:0;padding-top:0;padding-bottom:0;overflow:hidden;transform-origin:left top;font-family:var(--serif), Georgia, serif;font-size:58px;font-weight:700;line-height:1.18;letter-spacing:-0.015em\"><div class=\"kicker-wrapper\" style=\"margin-bottom:12px\"><div class=\"kicker-pill\"><span class=\"kicker-diamond\">◆</span><span class=\"kicker-label\">3-р бүлэг · Ойрын ирээдүй</span></div></div><div class=\"chapter3-text-content\" style=\"width:100%;transform-origin:left top\"><div class=\"chapter3-paragraph\" style=\"text-align:left;margin-left:0;text-indent:0;margin-bottom:8px;position:relative\"><span class=\"chapter3-heading-run\" style=\"font-family:var(--serif), Georgia, serif;font-weight:700;color:var(--text)\">КОДЫН АЛДААНЫ ЭСРЭГ НАЙДВАРТАЙ ХИЙМЭЛ ОЮУН</span></div></div></div></div>",
-    "textNodes": [
-      "Он",
-      "Жишээ",
-      "Үр дагавар",
-      "1996",
-      "Ariena 5 фуужин",
-      "Хөөрснөөс 37с дараа сүйрсэн",
-      "2012",
-      "Kngiht Capital",
-      "45м-нд 440 сая ам.долларын алдагдал",
-      "2009",
-      "Air France 447",
-      "228 хүн амь үрэгдсэн",
-      "◆",
-      "3-р бүлэг · Ойрын ирээдүй",
-      "КОДЫН АЛДААНЫ ЭСРЭГ НАЙДВАРТАЙ ХИЙМЭЛ ОЮУН"
-    ],
-    "text": "ОнЖишээҮр дагавар1996Ariena 5 фуужинХөөрснөөс 37с дараа сүйрсэн2012Kngiht Capital45м-нд 440 сая ам.долларын алдагдал2009Air France 447228 хүн амь үрэгдсэн◆3-р бүлэг · Ойрын ирээдүйКОДЫН АЛДААНЫ ЭСРЭГ НАЙДВАРТАЙ ХИЙМЭЛ ОЮУН",
-    "sha256": "21d140a1fd9936d31b6b8f75781e925e8f7f48d9e8917c2a66726c586a8c899a",
-    "nodes": [
-      {
-        "kind": "image",
-        "rect": {
-          "x": 82.28094488188977,
-          "y": 296.0272965879265,
-          "w": 733.6994225721785,
-          "h": 587.4390551181102
-        },
-        "src": "/slides/imported/chapter3/image8.png",
-        "id": "chapter3-2-image",
-        "alt": "Freeform 2",
-        "fit": "cover",
-        "objectPosition": "50% 50%",
-        "rotation": null
-      },
-      {
-        "kind": "image",
-        "rect": {
-          "x": 1484.0940682414698,
-          "y": -227.10078740157482,
-          "w": 694.3610498687665,
-          "h": 592.2056692913386
-        },
-        "src": "/slides/imported/chapter3/image9.png",
-        "id": "chapter3-3-image",
-        "alt": "Freeform 3",
-        "fit": "cover",
-        "objectPosition": "50% 50%",
-        "rotation": null
-      },
-      {
-        "kind": "table",
-        "rect": {
-          "x": 849.5209448818898,
-          "y": 472.83590551181106,
-          "w": 1034.9821522309712,
-          "h": 511.1202099737533
-        },
-        "cols": [0.01919042166973223, 0.03283801020935375, 0.05663111166222333],
-        "rows": [
-          {
-            "h": 0.010217201589958735,
-            "cells": [
-              {
-                "text": {
-                  "body": {
-                    "paddingLeft": 0,
-                    "paddingRight": 0,
-                    "paddingTop": 0,
-                    "paddingBottom": 0,
-                    "anchor": "top",
-                    "autoFit": false
-                  },
-                  "paragraphs": [
-                    {
-                      "align": "justify",
-                      "marginLeft": 0,
-                      "indent": 0,
-                      "bullet": "",
-                      "runs": [
-                        {
-                          "text": "Он",
-                          "style": {
-                            "fontFamily": "IBM Plex Sans",
-                            "color": "#E8EDF5",
-                            "fontSize": 0.01
-                          }
-                        }
-                      ]
-                    }
-                  ]
-                },
-                "fill": "#BB99FF"
-              },
-              {
-                "text": {
-                  "body": {
-                    "paddingLeft": 0,
-                    "paddingRight": 0,
-                    "paddingTop": 0,
-                    "paddingBottom": 0,
-                    "anchor": "top",
-                    "autoFit": false
-                  },
-                  "paragraphs": [
-                    {
-                      "align": "justify",
-                      "marginLeft": 0,
-                      "indent": 0,
-                      "bullet": "",
-                      "runs": [
-                        {
-                          "text": "Жишээ",
-                          "style": {
-                            "fontFamily": "IBM Plex Sans",
-                            "color": "#E8EDF5",
-                            "fontSize": 0.01
-                          }
-                        }
-                      ]
-                    }
-                  ]
-                },
-                "fill": "#BB99FF"
-              },
-              {
-                "text": {
-                  "body": {
-                    "paddingLeft": 0,
-                    "paddingRight": 0,
-                    "paddingTop": 0,
-                    "paddingBottom": 0,
-                    "anchor": "top",
-                    "autoFit": false
-                  },
-                  "paragraphs": [
-                    {
-                      "align": "justify",
-                      "marginLeft": 0,
-                      "indent": 0,
-                      "bullet": "",
-                      "runs": [
-                        {
-                          "text": "Үр дагавар",
-                          "style": {
-                            "fontFamily": "IBM Plex Sans",
-                            "color": "#E8EDF5",
-                            "fontSize": 0.01
-                          }
-                        }
-                      ]
-                    }
-                  ]
-                },
-                "fill": "#BB99FF"
-              }
-            ]
-          },
-          {
-            "h": 0.010217201589958735,
-            "cells": [
-              {
-                "text": {
-                  "body": {
-                    "paddingLeft": 0,
-                    "paddingRight": 0,
-                    "paddingTop": 0,
-                    "paddingBottom": 0,
-                    "anchor": "top",
-                    "autoFit": false
-                  },
-                  "paragraphs": [
-                    {
-                      "align": "justify",
-                      "marginLeft": 0,
-                      "indent": 0,
-                      "bullet": "",
-                      "runs": [
-                        {
-                          "text": "1996",
-                          "style": {
-                            "fontFamily": "IBM Plex Sans",
-                            "color": "#E8EDF5",
-                            "fontSize": 0.01
-                          }
-                        }
-                      ]
-                    }
-                  ]
-                },
-                "fill": "#DECDFF"
-              },
-              {
-                "text": {
-                  "body": {
-                    "paddingLeft": 0,
-                    "paddingRight": 0,
-                    "paddingTop": 0,
-                    "paddingBottom": 0,
-                    "anchor": "top",
-                    "autoFit": false
-                  },
-                  "paragraphs": [
-                    {
-                      "align": "justify",
-                      "marginLeft": 0,
-                      "indent": 0,
-                      "bullet": "",
-                      "runs": [
-                        {
-                          "text": "Ariena 5 фуужин",
-                          "style": {
-                            "fontFamily": "IBM Plex Sans",
-                            "color": "#E8EDF5",
-                            "fontSize": 0.01
-                          }
-                        }
-                      ]
-                    }
-                  ]
-                },
-                "fill": "#ECE3FF"
-              },
-              {
-                "text": {
-                  "body": {
-                    "paddingLeft": 0,
-                    "paddingRight": 0,
-                    "paddingTop": 0,
-                    "paddingBottom": 0,
-                    "anchor": "top",
-                    "autoFit": false
-                  },
-                  "paragraphs": [
-                    {
-                      "align": "justify",
-                      "marginLeft": 0,
-                      "indent": 0,
-                      "bullet": "",
-                      "runs": [
-                        {
-                          "text": "Хөөрснөөс 37с дараа сүйрсэн",
-                          "style": {
-                            "fontFamily": "IBM Plex Sans",
-                            "color": "#E8EDF5",
-                            "fontSize": 0.01
-                          }
-                        }
-                      ]
-                    }
-                  ]
-                },
-                "fill": "#ECE3FF"
-              }
-            ]
-          },
-          {
-            "h": 0.01911217475768285,
-            "cells": [
-              {
-                "text": {
-                  "body": {
-                    "paddingLeft": 0,
-                    "paddingRight": 0,
-                    "paddingTop": 0,
-                    "paddingBottom": 0,
-                    "anchor": "top",
-                    "autoFit": false
-                  },
-                  "paragraphs": [
-                    {
-                      "align": "justify",
-                      "marginLeft": 0,
-                      "indent": 0,
-                      "bullet": "",
-                      "runs": [
-                        {
-                          "text": "2012",
-                          "style": {
-                            "fontFamily": "IBM Plex Sans",
-                            "color": "#E8EDF5",
-                            "fontSize": 0.01
-                          }
-                        }
-                      ]
-                    }
-                  ]
-                },
-                "fill": "#DECDFF"
-              },
-              {
-                "text": {
-                  "body": {
-                    "paddingLeft": 0,
-                    "paddingRight": 0,
-                    "paddingTop": 0,
-                    "paddingBottom": 0,
-                    "anchor": "top",
-                    "autoFit": false
-                  },
-                  "paragraphs": [
-                    {
-                      "align": "justify",
-                      "marginLeft": 0,
-                      "indent": 0,
-                      "bullet": "",
-                      "runs": [
-                        {
-                          "text": "Kngiht Capital",
-                          "style": {
-                            "fontFamily": "IBM Plex Sans",
-                            "color": "#E8EDF5",
-                            "fontSize": 0.01
-                          }
-                        }
-                      ]
-                    }
-                  ]
-                },
-                "fill": "#ECE3FF"
-              },
-              {
-                "text": {
-                  "body": {
-                    "paddingLeft": 0,
-                    "paddingRight": 0,
-                    "paddingTop": 0,
-                    "paddingBottom": 0,
-                    "anchor": "top",
-                    "autoFit": false
-                  },
-                  "paragraphs": [
-                    {
-                      "align": "justify",
-                      "marginLeft": 0,
-                      "indent": 0,
-                      "bullet": "",
-                      "runs": [
-                        {
-                          "text": "45м-нд 440 сая ам.долларын алдагдал",
-                          "style": {
-                            "fontFamily": "IBM Plex Sans",
-                            "color": "#E8EDF5",
-                            "fontSize": 0.01
-                          }
-                        }
-                      ]
-                    }
-                  ]
-                },
-                "fill": "#ECE3FF"
-              }
-            ]
-          },
-          {
-            "h": 0.010217201589958735,
-            "cells": [
-              {
-                "text": {
-                  "body": {
-                    "paddingLeft": 0,
-                    "paddingRight": 0,
-                    "paddingTop": 0,
-                    "paddingBottom": 0,
-                    "anchor": "top",
-                    "autoFit": false
-                  },
-                  "paragraphs": [
-                    {
-                      "align": "justify",
-                      "marginLeft": 0,
-                      "indent": 0,
-                      "bullet": "",
-                      "runs": [
-                        {
-                          "text": "2009",
-                          "style": {
-                            "fontFamily": "IBM Plex Sans",
-                            "color": "#E8EDF5",
-                            "fontSize": 0.01
-                          }
-                        }
-                      ]
-                    }
-                  ]
-                },
-                "fill": "#DECDFF"
-              },
-              {
-                "text": {
-                  "body": {
-                    "paddingLeft": 0,
-                    "paddingRight": 0,
-                    "paddingTop": 0,
-                    "paddingBottom": 0,
-                    "anchor": "top",
-                    "autoFit": false
-                  },
-                  "paragraphs": [
-                    {
-                      "align": "justify",
-                      "marginLeft": 0,
-                      "indent": 0,
-                      "bullet": "",
-                      "runs": [
-                        {
-                          "text": "Air France 447",
-                          "style": {
-                            "fontFamily": "IBM Plex Sans",
-                            "color": "#E8EDF5",
-                            "fontSize": 0.01
-                          }
-                        }
-                      ]
-                    }
-                  ]
-                },
-                "fill": "#ECE3FF"
-              },
-              {
-                "text": {
-                  "body": {
-                    "paddingLeft": 0,
-                    "paddingRight": 0,
-                    "paddingTop": 0,
-                    "paddingBottom": 0,
-                    "anchor": "top",
-                    "autoFit": false
-                  },
-                  "paragraphs": [
-                    {
-                      "align": "justify",
-                      "marginLeft": 0,
-                      "indent": 0,
-                      "bullet": "",
-                      "runs": [
-                        {
-                          "text": "228 хүн амь үрэгдсэн",
-                          "style": {
-                            "fontFamily": "IBM Plex Sans",
-                            "color": "#E8EDF5",
-                            "fontSize": 0.01
-                          }
-                        }
-                      ]
-                    }
-                  ]
-                },
-                "fill": "#ECE3FF"
-              }
-            ]
-          }
-        ],
-        "id": "chapter3-table-2"
-      },
-      {
-        "kind": "text",
-        "rect": {
-          "x": 548.6628871391076,
-          "y": 86.7589501312336,
-          "w": 935.4311811023622,
-          "h": 310.2
-        },
-        "text": {
-          "body": {
-            "paddingLeft": 0,
-            "paddingRight": 0,
-            "paddingTop": 0,
-            "paddingBottom": 0,
-            "anchor": "top",
-            "autoFit": true
-          },
-          "paragraphs": [
-            {
-              "align": "left",
-              "marginLeft": 0,
-              "indent": 0,
-              "bullet": "",
-              "runs": [
-                {
-                  "text": "КОДЫН АЛДААНЫ ЭСРЭГ НАЙДВАРТАЙ ХИЙМЭЛ ОЮУН",
-                  "style": {
-                    "fontFamily": "IBM Plex Sans",
-                    "color": "#0A0F1E",
-                    "fontSize": 0.01,
-                    "fontWeight": 700
-                  }
-                }
-              ]
-            }
-          ]
-        },
-        "id": "chapter3-5-text",
-        "rotation": null
-      }
-    ]
-  },
-  {
     "id": "chapter3-06",
-    "order": 28,
+    "order": 27,
     "section": "3-р бүлэг",
     "type": "Two columns",
     "title": "НАЙДВАРТАЙ СИСТЕМ БҮТЭЭХ ДӨРВӨН СОРИЛТ",
@@ -3038,6 +2538,420 @@
           ]
         },
         "id": "chapter3-20-text",
+        "rotation": null
+      }
+    ]
+  },
+  {
+    "id": "chapter3-05",
+    "order": 28,
+    "section": "3-р бүлэг",
+    "type": "Comparison",
+    "title": "КОДЫН АЛДААНЫ ЭСРЭГ НАЙДВАРТАЙ ХИЙМЭЛ ОЮУН",
+    "subtitle": "",
+    "body": [
+      "КОДЫН АЛДААНЫ ЭСРЭГ НАЙДВАРТАЙ ХИЙМЭЛ ОЮУН"
+    ],
+    "list": [],
+    "quote": "",
+    "notes": "",
+    "html": "<div class=\"chapter3-canvas\"><div class=\"canvas-ambient-glow\"></div><div class=\"canvas-grid-pattern\"></div><div class=\"chapter3-node chapter3-image-node\" style=\"position:absolute;left:82.28094488188977px;top:296.0272965879265px;width:733.6994225721785px;height:587.4390551181102px\"><img src=\"/slides/imported/chapter3/image8.png\" alt=\"Freeform 2\" draggable=\"false\" style=\"object-fit:cover;object-position:50% 50%\"/></div><div class=\"chapter3-node chapter3-image-node\" style=\"position:absolute;left:1484.0940682414698px;top:-227.10078740157482px;width:694.3610498687665px;height:592.2056692913386px\"><img src=\"/slides/imported/chapter3/image9.png\" alt=\"Freeform 3\" draggable=\"false\" style=\"object-fit:cover;object-position:50% 50%\"/></div><div class=\"chapter3-node chapter3-table\" style=\"position:absolute;left:849.5209448818898px;top:472.83590551181106px;width:1034.9821522309712px;height:511.1202099737533px\"><div class=\"chapter3-table-row\" style=\"top:0;height:0.010217201589958735px\"><div class=\"chapter3-table-cell\" style=\"left:0;width:0.01919042166973223px;height:0.010217201589958735px;background:var(--accent-bright)\"><div style=\"text-align:justify\"><span style=\"font-family:var(--sans), sans-serif;font-size:14px;color:var(--text)\">Он</span></div></div><div class=\"chapter3-table-cell\" style=\"left:0.01919042166973223px;width:0.03283801020935375px;height:0.010217201589958735px;background:var(--accent-bright)\"><div style=\"text-align:justify\"><span style=\"font-family:var(--sans), sans-serif;font-size:14px;color:var(--text)\">Жишээ</span></div></div><div class=\"chapter3-table-cell\" style=\"left:0.052028431879085985px;width:0.05663111166222333px;height:0.010217201589958735px;background:var(--accent-bright)\"><div style=\"text-align:justify\"><span style=\"font-family:var(--sans), sans-serif;font-size:14px;color:var(--text)\">Үр дагавар</span></div></div></div><div class=\"chapter3-table-row\" style=\"top:0.010217201589958735px;height:0.010217201589958735px\"><div class=\"chapter3-table-cell\" style=\"left:0;width:0.01919042166973223px;height:0.010217201589958735px;background:rgba(59, 130, 246, 0.16)\"><div style=\"text-align:justify\"><span style=\"font-family:var(--sans), sans-serif;font-size:14px;color:var(--text)\">1996</span></div></div><div class=\"chapter3-table-cell\" style=\"left:0.01919042166973223px;width:0.03283801020935375px;height:0.010217201589958735px;background:rgba(59, 130, 246, 0.16)\"><div style=\"text-align:justify\"><span style=\"font-family:var(--sans), sans-serif;font-size:14px;color:var(--text)\">Ariena 5 пуужин</span></div></div><div class=\"chapter3-table-cell\" style=\"left:0.052028431879085985px;width:0.05663111166222333px;height:0.010217201589958735px;background:rgba(59, 130, 246, 0.16)\"><div style=\"text-align:justify\"><span style=\"font-family:var(--sans), sans-serif;font-size:14px;color:var(--text)\">Хөөрснөөс 37с дараа сүйрсэн</span></div></div></div><div class=\"chapter3-table-row\" style=\"top:0.02043440317991747px;height:0.01911217475768285px\"><div class=\"chapter3-table-cell\" style=\"left:0;width:0.01919042166973223px;height:0.01911217475768285px;background:rgba(59, 130, 246, 0.16)\"><div style=\"text-align:justify\"><span style=\"font-family:var(--sans), sans-serif;font-size:14px;color:var(--text)\">2012</span></div></div><div class=\"chapter3-table-cell\" style=\"left:0.01919042166973223px;width:0.03283801020935375px;height:0.01911217475768285px;background:rgba(59, 130, 246, 0.16)\"><div style=\"text-align:justify\"><span style=\"font-family:var(--sans), sans-serif;font-size:14px;color:var(--text)\">Knight Capital</span></div></div><div class=\"chapter3-table-cell\" style=\"left:0.052028431879085985px;width:0.05663111166222333px;height:0.01911217475768285px;background:rgba(59, 130, 246, 0.16)\"><div style=\"text-align:justify\"><span style=\"font-family:var(--sans), sans-serif;font-size:14px;color:var(--text)\">45м-нд 440 сая ам.долларын алдагдал</span></div></div></div></div><div class=\"chapter3-node chapter3-text is-heading\" style=\"position:absolute;left:548.6628871391076px;top:86.7589501312336px;width:935.4311811023622px;height:310.2px;display:flex;flex-direction:column;justify-content:flex-start;padding-left:0;padding-right:0;padding-top:0;padding-bottom:0;overflow:hidden;transform-origin:left top;font-family:var(--serif), Georgia, serif;font-size:58px;font-weight:700;line-height:1.18;letter-spacing:-0.015em\"><div class=\"kicker-wrapper\" style=\"margin-bottom:12px\"><div class=\"kicker-pill\"><span class=\"kicker-diamond\">◆</span><span class=\"kicker-label\">3-р бүлэг · Ойрын ирээдүй</span></div></div><div class=\"chapter3-text-content\" style=\"width:100%;transform-origin:left top\"><div class=\"chapter3-paragraph\" style=\"text-align:left;margin-left:0;text-indent:0;margin-bottom:8px;position:relative\"><span class=\"chapter3-heading-run\" style=\"font-family:var(--serif), Georgia, serif;font-weight:700;color:var(--text)\">КОДЫН АЛДААНЫ ЭСРЭГ НАЙДВАРТАЙ ХИЙМЭЛ ОЮУН</span></div></div></div></div>",
+    "textNodes": [
+      "Он",
+      "Жишээ",
+      "Үр дагавар",
+      "1996",
+      "Ariena 5 пуужин",
+      "Хөөрснөөс 37с дараа сүйрсэн",
+      "2012",
+      "Knight Capital",
+      "45м-нд 440 сая ам.долларын алдагдал",
+      "◆",
+      "3-р бүлэг · Ойрын ирээдүй",
+      "КОДЫН АЛДААНЫ ЭСРЭГ НАЙДВАРТАЙ ХИЙМЭЛ ОЮУН"
+    ],
+    "text": "ОнЖишээҮр дагавар1996Ariena 5 пуужинХөөрснөөс 37с дараа сүйрсэн2012Knight Capital45м-нд 440 сая ам.долларын алдагдал◆3-р бүлэг · Ойрын ирээдүйКОДЫН АЛДААНЫ ЭСРЭГ НАЙДВАРТАЙ ХИЙМЭЛ ОЮУН",
+    "sha256": "06fa85d7743072ba227b2f36357303df0e821fa2d39d5fd3431a39c6a3221ab9",
+    "nodes": [
+      {
+        "kind": "image",
+        "rect": {
+          "x": 82.28094488188977,
+          "y": 296.0272965879265,
+          "w": 733.6994225721785,
+          "h": 587.4390551181102
+        },
+        "src": "/slides/imported/chapter3/image8.png",
+        "id": "chapter3-2-image",
+        "alt": "Freeform 2",
+        "fit": "cover",
+        "objectPosition": "50% 50%",
+        "rotation": null
+      },
+      {
+        "kind": "image",
+        "rect": {
+          "x": 1484.0940682414698,
+          "y": -227.10078740157482,
+          "w": 694.3610498687665,
+          "h": 592.2056692913386
+        },
+        "src": "/slides/imported/chapter3/image9.png",
+        "id": "chapter3-3-image",
+        "alt": "Freeform 3",
+        "fit": "cover",
+        "objectPosition": "50% 50%",
+        "rotation": null
+      },
+      {
+        "kind": "table",
+        "rect": {
+          "x": 849.5209448818898,
+          "y": 472.83590551181106,
+          "w": 1034.9821522309712,
+          "h": 511.1202099737533
+        },
+        "cols": [
+          0.01919042166973223,
+          0.03283801020935375,
+          0.05663111166222333
+        ],
+        "rows": [
+          {
+            "h": 0.010217201589958735,
+            "cells": [
+              {
+                "text": {
+                  "body": {
+                    "paddingLeft": 0,
+                    "paddingRight": 0,
+                    "paddingTop": 0,
+                    "paddingBottom": 0,
+                    "anchor": "top",
+                    "autoFit": false
+                  },
+                  "paragraphs": [
+                    {
+                      "align": "justify",
+                      "marginLeft": 0,
+                      "indent": 0,
+                      "bullet": "",
+                      "runs": [
+                        {
+                          "text": "Он",
+                          "style": {
+                            "fontFamily": "IBM Plex Sans",
+                            "color": "#E8EDF5",
+                            "fontSize": 0.01
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "fill": "#BB99FF"
+              },
+              {
+                "text": {
+                  "body": {
+                    "paddingLeft": 0,
+                    "paddingRight": 0,
+                    "paddingTop": 0,
+                    "paddingBottom": 0,
+                    "anchor": "top",
+                    "autoFit": false
+                  },
+                  "paragraphs": [
+                    {
+                      "align": "justify",
+                      "marginLeft": 0,
+                      "indent": 0,
+                      "bullet": "",
+                      "runs": [
+                        {
+                          "text": "Жишээ",
+                          "style": {
+                            "fontFamily": "IBM Plex Sans",
+                            "color": "#E8EDF5",
+                            "fontSize": 0.01
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "fill": "#BB99FF"
+              },
+              {
+                "text": {
+                  "body": {
+                    "paddingLeft": 0,
+                    "paddingRight": 0,
+                    "paddingTop": 0,
+                    "paddingBottom": 0,
+                    "anchor": "top",
+                    "autoFit": false
+                  },
+                  "paragraphs": [
+                    {
+                      "align": "justify",
+                      "marginLeft": 0,
+                      "indent": 0,
+                      "bullet": "",
+                      "runs": [
+                        {
+                          "text": "Үр дагавар",
+                          "style": {
+                            "fontFamily": "IBM Plex Sans",
+                            "color": "#E8EDF5",
+                            "fontSize": 0.01
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "fill": "#BB99FF"
+              }
+            ]
+          },
+          {
+            "h": 0.010217201589958735,
+            "cells": [
+              {
+                "text": {
+                  "body": {
+                    "paddingLeft": 0,
+                    "paddingRight": 0,
+                    "paddingTop": 0,
+                    "paddingBottom": 0,
+                    "anchor": "top",
+                    "autoFit": false
+                  },
+                  "paragraphs": [
+                    {
+                      "align": "justify",
+                      "marginLeft": 0,
+                      "indent": 0,
+                      "bullet": "",
+                      "runs": [
+                        {
+                          "text": "1996",
+                          "style": {
+                            "fontFamily": "IBM Plex Sans",
+                            "color": "#E8EDF5",
+                            "fontSize": 0.01
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "fill": "#DECDFF"
+              },
+              {
+                "text": {
+                  "body": {
+                    "paddingLeft": 0,
+                    "paddingRight": 0,
+                    "paddingTop": 0,
+                    "paddingBottom": 0,
+                    "anchor": "top",
+                    "autoFit": false
+                  },
+                  "paragraphs": [
+                    {
+                      "align": "justify",
+                      "marginLeft": 0,
+                      "indent": 0,
+                      "bullet": "",
+                      "runs": [
+                        {
+                          "text": "Ariena 5 пуужин",
+                          "style": {
+                            "fontFamily": "IBM Plex Sans",
+                            "color": "#E8EDF5",
+                            "fontSize": 0.01
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "fill": "#ECE3FF"
+              },
+              {
+                "text": {
+                  "body": {
+                    "paddingLeft": 0,
+                    "paddingRight": 0,
+                    "paddingTop": 0,
+                    "paddingBottom": 0,
+                    "anchor": "top",
+                    "autoFit": false
+                  },
+                  "paragraphs": [
+                    {
+                      "align": "justify",
+                      "marginLeft": 0,
+                      "indent": 0,
+                      "bullet": "",
+                      "runs": [
+                        {
+                          "text": "Хөөрснөөс 37с дараа сүйрсэн",
+                          "style": {
+                            "fontFamily": "IBM Plex Sans",
+                            "color": "#E8EDF5",
+                            "fontSize": 0.01
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "fill": "#ECE3FF"
+              }
+            ]
+          },
+          {
+            "h": 0.01911217475768285,
+            "cells": [
+              {
+                "text": {
+                  "body": {
+                    "paddingLeft": 0,
+                    "paddingRight": 0,
+                    "paddingTop": 0,
+                    "paddingBottom": 0,
+                    "anchor": "top",
+                    "autoFit": false
+                  },
+                  "paragraphs": [
+                    {
+                      "align": "justify",
+                      "marginLeft": 0,
+                      "indent": 0,
+                      "bullet": "",
+                      "runs": [
+                        {
+                          "text": "2012",
+                          "style": {
+                            "fontFamily": "IBM Plex Sans",
+                            "color": "#E8EDF5",
+                            "fontSize": 0.01
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "fill": "#DECDFF"
+              },
+              {
+                "text": {
+                  "body": {
+                    "paddingLeft": 0,
+                    "paddingRight": 0,
+                    "paddingTop": 0,
+                    "paddingBottom": 0,
+                    "anchor": "top",
+                    "autoFit": false
+                  },
+                  "paragraphs": [
+                    {
+                      "align": "justify",
+                      "marginLeft": 0,
+                      "indent": 0,
+                      "bullet": "",
+                      "runs": [
+                        {
+                          "text": "Knight Capital",
+                          "style": {
+                            "fontFamily": "IBM Plex Sans",
+                            "color": "#E8EDF5",
+                            "fontSize": 0.01
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "fill": "#ECE3FF"
+              },
+              {
+                "text": {
+                  "body": {
+                    "paddingLeft": 0,
+                    "paddingRight": 0,
+                    "paddingTop": 0,
+                    "paddingBottom": 0,
+                    "anchor": "top",
+                    "autoFit": false
+                  },
+                  "paragraphs": [
+                    {
+                      "align": "justify",
+                      "marginLeft": 0,
+                      "indent": 0,
+                      "bullet": "",
+                      "runs": [
+                        {
+                          "text": "45м-нд 440 сая ам.долларын алдагдал",
+                          "style": {
+                            "fontFamily": "IBM Plex Sans",
+                            "color": "#E8EDF5",
+                            "fontSize": 0.01
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "fill": "#ECE3FF"
+              }
+            ]
+          }
+        ],
+        "id": "chapter3-table-2"
+      },
+      {
+        "kind": "text",
+        "rect": {
+          "x": 548.6628871391076,
+          "y": 86.7589501312336,
+          "w": 935.4311811023622,
+          "h": 310.2
+        },
+        "text": {
+          "body": {
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "anchor": "top",
+            "autoFit": true
+          },
+          "paragraphs": [
+            {
+              "align": "left",
+              "marginLeft": 0,
+              "indent": 0,
+              "bullet": "",
+              "runs": [
+                {
+                  "text": "КОДЫН АЛДААНЫ ЭСРЭГ НАЙДВАРТАЙ ХИЙМЭЛ ОЮУН",
+                  "style": {
+                    "fontFamily": "IBM Plex Sans",
+                    "color": "#0A0F1E",
+                    "fontSize": 0.01,
+                    "fontWeight": 700
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "id": "chapter3-5-text",
         "rotation": null
       }
     ]
@@ -11563,12 +11477,18 @@
     "type": "Timeline",
     "title": "Дайсон",
     "subtitle": "",
-    "body": ["Дайсон"],
+    "body": [
+      "Дайсон"
+    ],
     "list": [],
     "quote": "",
     "notes": "",
     "html": "<div class=\"chapter3-canvas\"><div class=\"canvas-ambient-glow\"></div><div class=\"canvas-grid-pattern\"></div><div class=\"chapter3-node chapter3-text is-heading\" style=\"position:absolute;left:100.8px;top:57.599999999999994px;width:1713.6px;height:144px;display:flex;flex-direction:column;justify-content:center;padding-left:0;padding-right:0;padding-top:0;padding-bottom:0;overflow:hidden;transform-origin:left top;font-family:var(--serif), Georgia, serif;font-size:48px;font-weight:700;line-height:1.18;letter-spacing:-0.015em\"><div class=\"kicker-wrapper\" style=\"margin-bottom:12px\"><div class=\"kicker-pill\"><span class=\"kicker-diamond\">◆</span><span class=\"kicker-label\">6-р бүлэг · Дараагийн тэрбум жил</span></div></div><div class=\"chapter3-text-content\" style=\"width:100%;transform-origin:left top\"><div class=\"chapter3-paragraph\" style=\"text-align:left;margin-left:0;text-indent:0;margin-bottom:8px;position:relative\"><span class=\"chapter3-heading-run\" style=\"font-family:var(--serif), Georgia, serif;font-weight:700;color:var(--text)\">Дайсон</span></div></div></div><div class=\"chapter3-node chapter3-image-node\" style=\"position:absolute;left:100.8px;top:330.40708661417324px;width:1713.6px;height:548.7858267716535px\"><img src=\"/slides/imported/chapter6/image2.png\" alt=\"Дайсоны цагираг, сүрэг, бөмбөрцөг, бүрхүүлийн зураглал\" draggable=\"false\" style=\"object-fit:cover;object-position:50% 50%\"/></div></div>",
-    "textNodes": ["◆", "6-р бүлэг · Дараагийн тэрбум жил", "Дайсон"],
+    "textNodes": [
+      "◆",
+      "6-р бүлэг · Дараагийн тэрбум жил",
+      "Дайсон"
+    ],
     "text": "◆6-р бүлэг · Дараагийн тэрбум жилДайсон",
     "sha256": "f86dd06ad4e123b0a4eef3cd4786e17c12a1c896b5f380f940a43c5fba2fb76d",
     "nodes": [

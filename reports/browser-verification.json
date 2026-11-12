@@ -4,11 +4,11 @@
   "sourceCount": 77,
   "contrastMethod": "Computed CSS text color or SVG text fill, alpha-composited ancestor backgrounds. Existing image pixels and decorative SVG backgrounds are not treated as DOM text.",
   "inputSha256": {
-    "slides/content.source.json": "e85297ca2e39d806d4166802ea1befc10ea08f41004366731717717778524526",
-    "app/globals.css": "d2e85b22271bb18a2206e07e650388e190d6d446947cce1b5b1bde15754201f6",
-    "slides/design.json": "436618ea03157910889c8ce8e023be9157eb70c79281f5698a7837f69a20409a",
-    "components/deck-runtime.ts": "2cec897af7d8d5a90dc40b879a9ea35a14bc48d9fd555c89bcf8d645c08f5f89",
-    "dist/life3.html": "13d33ade51894927f9edc6acc6047fba94613dcc370e5708d581a9eb6c85e5ff"
+    "slides/content.source.json": "80ffcfef7481c8247e8b73806f0095d3e1ac1f7cf7a0de18f3bb24e9f2064736",
+    "app/globals.css": "70bf42138b93d67752ced493dedfceb2af48deb323aa86be563c23c67616fdbe",
+    "slides/design.json": "bb7f8d3f263fd137ce6613d96a0dbe0d450dcf348d7db9090edc1947b89b174a",
+    "components/deck-runtime.ts": "7a0d69b8f9eaf982c52b19090f7b5daf83df4993c1ad0c57f80c16440953b303",
+    "dist/life3.html": "26dbcf3d3eede3af6f5165787f8e788e8b16a06bca1a83e09cf376f13db77e0d"
   },
   "checks": [
     {
@@ -82,23 +82,11 @@
         {
           "id": "cover",
           "index": 0,
-          "textRangeCount": 11,
+          "textRangeCount": 8,
           "hidden": [],
           "clipping": [],
           "overlaps": [],
           "contrast": [
-            {
-              "ratio": 6.48,
-              "foreground": "rgb(44, 85, 200)",
-              "background": [
-                255,
-                255,
-                255
-              ],
-              "opacity": 1,
-              "example": "Инженерийн ёс зүй",
-              "element": "div.kicker"
-            },
             {
               "ratio": 13.486,
               "foreground": "rgb(19, 41, 107)",
@@ -110,6 +98,18 @@
               "opacity": 1,
               "example": "Амьдрал ",
               "element": "h1.cover-title"
+            },
+            {
+              "ratio": 6.48,
+              "foreground": "rgb(44, 85, 200)",
+              "background": [
+                255,
+                255,
+                255
+              ],
+              "opacity": 1,
+              "example": "3.0",
+              "element": "span"
             },
             {
               "ratio": 18.194,
@@ -139,7 +139,7 @@
           "activeAnimations": 0,
           "stageScale": 1,
           "fit": "1",
-          "lowestText": 740.5,
+          "lowestText": 731,
           "differences": []
         },
         {
@@ -2042,9 +2042,72 @@
           "differences": []
         },
         {
-          "id": "chapter3-05",
+          "id": "chapter3-06",
           "index": 26,
           "textRangeCount": 15,
+          "hidden": [],
+          "clipping": [],
+          "overlaps": [],
+          "contrast": [
+            {
+              "ratio": 6.48,
+              "foreground": "rgb(44, 85, 200)",
+              "background": [
+                255,
+                255,
+                255
+              ],
+              "opacity": 1,
+              "example": "◆",
+              "element": "span.kicker-diamond"
+            },
+            {
+              "ratio": 18.194,
+              "foreground": "rgb(17, 21, 34)",
+              "background": [
+                255,
+                255,
+                255
+              ],
+              "opacity": 1,
+              "example": "НАЙДВАРТАЙ СИСТЕМ БҮТЭЭХ ДӨРВӨН СОРИЛТ",
+              "element": "h2.title.caps"
+            },
+            {
+              "ratio": 13.486,
+              "foreground": "rgb(19, 41, 107)",
+              "background": [
+                255,
+                255,
+                255
+              ],
+              "opacity": 1,
+              "example": "01",
+              "element": "span.pillar-n"
+            },
+            {
+              "ratio": 5.328,
+              "foreground": "rgb(100, 107, 125)",
+              "background": [
+                255,
+                255,
+                255
+              ],
+              "opacity": 1,
+              "example": "(Verification)",
+              "element": "small"
+            }
+          ],
+          "activeAnimations": 0,
+          "stageScale": 1,
+          "fit": "1",
+          "lowestText": 741.84375,
+          "differences": []
+        },
+        {
+          "id": "chapter3-05",
+          "index": 27,
+          "textRangeCount": 12,
           "hidden": [],
           "clipping": [],
           "overlaps": [],
@@ -2113,70 +2176,7 @@
           "activeAnimations": 0,
           "stageScale": 1,
           "fit": "1",
-          "lowestText": 811.796875,
-          "differences": []
-        },
-        {
-          "id": "chapter3-06",
-          "index": 27,
-          "textRangeCount": 15,
-          "hidden": [],
-          "clipping": [],
-          "overlaps": [],
-          "contrast": [
-            {
-              "ratio": 6.48,
-              "foreground": "rgb(44, 85, 200)",
-              "background": [
-                255,
-                255,
-                255
-              ],
-              "opacity": 1,
-              "example": "◆",
-              "element": "span.kicker-diamond"
-            },
-            {
-              "ratio": 18.194,
-              "foreground": "rgb(17, 21, 34)",
-              "background": [
-                255,
-                255,
-                255
-              ],
-              "opacity": 1,
-              "example": "НАЙДВАРТАЙ СИСТЕМ БҮТЭЭХ ДӨРВӨН СОРИЛТ",
-              "element": "h2.title.caps"
-            },
-            {
-              "ratio": 13.486,
-              "foreground": "rgb(19, 41, 107)",
-              "background": [
-                255,
-                255,
-                255
-              ],
-              "opacity": 1,
-              "example": "01",
-              "element": "span.pillar-n"
-            },
-            {
-              "ratio": 5.328,
-              "foreground": "rgb(100, 107, 125)",
-              "background": [
-                255,
-                255,
-                255
-              ],
-              "opacity": 1,
-              "example": "(Verification)",
-              "element": "small"
-            }
-          ],
-          "activeAnimations": 0,
-          "stageScale": 1,
-          "fit": "1",
-          "lowestText": 741.84375,
+          "lowestText": 722.09375,
           "differences": []
         },
         {
@@ -5687,23 +5687,11 @@
         {
           "id": "cover",
           "index": 0,
-          "textRangeCount": 11,
+          "textRangeCount": 8,
           "hidden": [],
           "clipping": [],
           "overlaps": [],
           "contrast": [
-            {
-              "ratio": 6.48,
-              "foreground": "rgb(44, 85, 200)",
-              "background": [
-                255,
-                255,
-                255
-              ],
-              "opacity": 1,
-              "example": "Инженерийн ёс зүй",
-              "element": "div.kicker"
-            },
             {
               "ratio": 13.486,
               "foreground": "rgb(19, 41, 107)",
@@ -5715,6 +5703,18 @@
               "opacity": 1,
               "example": "Амьдрал ",
               "element": "h1.cover-title"
+            },
+            {
+              "ratio": 6.48,
+              "foreground": "rgb(44, 85, 200)",
+              "background": [
+                255,
+                255,
+                255
+              ],
+              "opacity": 1,
+              "example": "3.0",
+              "element": "span"
             },
             {
               "ratio": 18.194,
@@ -5744,7 +5744,7 @@
           "activeAnimations": 0,
           "stageScale": 0.7111111958821614,
           "fit": "1",
-          "lowestText": 740.4999708533322,
+          "lowestText": 730.9998880624905,
           "differences": []
         },
         {
@@ -7647,9 +7647,72 @@
           "differences": []
         },
         {
-          "id": "chapter3-05",
+          "id": "chapter3-06",
           "index": 26,
           "textRangeCount": 15,
+          "hidden": [],
+          "clipping": [],
+          "overlaps": [],
+          "contrast": [
+            {
+              "ratio": 6.48,
+              "foreground": "rgb(44, 85, 200)",
+              "background": [
+                255,
+                255,
+                255
+              ],
+              "opacity": 1,
+              "example": "◆",
+              "element": "span.kicker-diamond"
+            },
+            {
+              "ratio": 18.194,
+              "foreground": "rgb(17, 21, 34)",
+              "background": [
+                255,
+                255,
+                255
+              ],
+              "opacity": 1,
+              "example": "НАЙДВАРТАЙ СИСТЕМ БҮТЭЭХ ДӨРВӨН СОРИЛТ",
+              "element": "h2.title.caps"
+            },
+            {
+              "ratio": 13.486,
+              "foreground": "rgb(19, 41, 107)",
+              "background": [
+                255,
+                255,
+                255
+              ],
+              "opacity": 1,
+              "example": "01",
+              "element": "span.pillar-n"
+            },
+            {
+              "ratio": 5.328,
+              "foreground": "rgb(100, 107, 125)",
+              "background": [
+                255,
+                255,
+                255
+              ],
+              "opacity": 1,
+              "example": "(Verification)",
+              "element": "small"
+            }
+          ],
+          "activeAnimations": 0,
+          "stageScale": 0.7111111958821614,
+          "fit": "1",
+          "lowestText": 741.8436501212537,
+          "differences": []
+        },
+        {
+          "id": "chapter3-05",
+          "index": 27,
+          "textRangeCount": 12,
           "hidden": [],
           "clipping": [],
           "overlaps": [],
@@ -7718,70 +7781,7 @@
           "activeAnimations": 0,
           "stageScale": 0.7111111958821614,
           "fit": "1",
-          "lowestText": 811.7967686895408,
-          "differences": []
-        },
-        {
-          "id": "chapter3-06",
-          "index": 27,
-          "textRangeCount": 15,
-          "hidden": [],
-          "clipping": [],
-          "overlaps": [],
-          "contrast": [
-            {
-              "ratio": 6.48,
-              "foreground": "rgb(44, 85, 200)",
-              "background": [
-                255,
-                255,
-                255
-              ],
-              "opacity": 1,
-              "example": "◆",
-              "element": "span.kicker-diamond"
-            },
-            {
-              "ratio": 18.194,
-              "foreground": "rgb(17, 21, 34)",
-              "background": [
-                255,
-                255,
-                255
-              ],
-              "opacity": 1,
-              "example": "НАЙДВАРТАЙ СИСТЕМ БҮТЭЭХ ДӨРВӨН СОРИЛТ",
-              "element": "h2.title.caps"
-            },
-            {
-              "ratio": 13.486,
-              "foreground": "rgb(19, 41, 107)",
-              "background": [
-                255,
-                255,
-                255
-              ],
-              "opacity": 1,
-              "example": "01",
-              "element": "span.pillar-n"
-            },
-            {
-              "ratio": 5.328,
-              "foreground": "rgb(100, 107, 125)",
-              "background": [
-                255,
-                255,
-                255
-              ],
-              "opacity": 1,
-              "example": "(Verification)",
-              "element": "small"
-            }
-          ],
-          "activeAnimations": 0,
-          "stageScale": 0.7111111958821614,
-          "fit": "1",
-          "lowestText": 741.8436501212537,
+          "lowestText": 722.0936677344242,
           "differences": []
         },
         {
@@ -11300,23 +11300,11 @@
         {
           "id": "cover",
           "index": 0,
-          "textRangeCount": 11,
+          "textRangeCount": 8,
           "hidden": [],
           "clipping": [],
           "overlaps": [],
           "contrast": [
-            {
-              "ratio": 6.48,
-              "foreground": "rgb(44, 85, 200)",
-              "background": [
-                255,
-                255,
-                255
-              ],
-              "opacity": 1,
-              "example": "Инженерийн ёс зүй",
-              "element": "div.kicker"
-            },
             {
               "ratio": 13.486,
               "foreground": "rgb(19, 41, 107)",
@@ -11328,6 +11316,18 @@
               "opacity": 1,
               "example": "Амьдрал ",
               "element": "h1.cover-title"
+            },
+            {
+              "ratio": 6.48,
+              "foreground": "rgb(44, 85, 200)",
+              "background": [
+                255,
+                255,
+                255
+              ],
+              "opacity": 1,
+              "example": "3.0",
+              "element": "span"
             },
             {
               "ratio": 18.194,
@@ -11357,7 +11357,7 @@
           "activeAnimations": 0,
           "stageScale": 0.203125,
           "fit": "1",
-          "lowestText": 740.5,
+          "lowestText": 731,
           "differences": []
         },
         {
@@ -13260,9 +13260,72 @@
           "differences": []
         },
         {
-          "id": "chapter3-05",
+          "id": "chapter3-06",
           "index": 26,
           "textRangeCount": 15,
+          "hidden": [],
+          "clipping": [],
+          "overlaps": [],
+          "contrast": [
+            {
+              "ratio": 6.48,
+              "foreground": "rgb(44, 85, 200)",
+              "background": [
+                255,
+                255,
+                255
+              ],
+              "opacity": 1,
+              "example": "◆",
+              "element": "span.kicker-diamond"
+            },
+            {
+              "ratio": 18.194,
+              "foreground": "rgb(17, 21, 34)",
+              "background": [
+                255,
+                255,
+                255
+              ],
+              "opacity": 1,
+              "example": "НАЙДВАРТАЙ СИСТЕМ БҮТЭЭХ ДӨРВӨН СОРИЛТ",
+              "element": "h2.title.caps"
+            },
+            {
+              "ratio": 13.486,
+              "foreground": "rgb(19, 41, 107)",
+              "background": [
+                255,
+                255,
+                255
+              ],
+              "opacity": 1,
+              "example": "01",
+              "element": "span.pillar-n"
+            },
+            {
+              "ratio": 5.328,
+              "foreground": "rgb(100, 107, 125)",
+              "background": [
+                255,
+                255,
+                255
+              ],
+              "opacity": 1,
+              "example": "(Verification)",
+              "element": "small"
+            }
+          ],
+          "activeAnimations": 0,
+          "stageScale": 0.203125,
+          "fit": "1",
+          "lowestText": 741.84375,
+          "differences": []
+        },
+        {
+          "id": "chapter3-05",
+          "index": 27,
+          "textRangeCount": 12,
           "hidden": [],
           "clipping": [],
           "overlaps": [],
@@ -13331,70 +13394,7 @@
           "activeAnimations": 0,
           "stageScale": 0.203125,
           "fit": "1",
-          "lowestText": 811.796875,
-          "differences": []
-        },
-        {
-          "id": "chapter3-06",
-          "index": 27,
-          "textRangeCount": 15,
-          "hidden": [],
-          "clipping": [],
-          "overlaps": [],
-          "contrast": [
-            {
-              "ratio": 6.48,
-              "foreground": "rgb(44, 85, 200)",
-              "background": [
-                255,
-                255,
-                255
-              ],
-              "opacity": 1,
-              "example": "◆",
-              "element": "span.kicker-diamond"
-            },
-            {
-              "ratio": 18.194,
-              "foreground": "rgb(17, 21, 34)",
-              "background": [
-                255,
-                255,
-                255
-              ],
-              "opacity": 1,
-              "example": "НАЙДВАРТАЙ СИСТЕМ БҮТЭЭХ ДӨРВӨН СОРИЛТ",
-              "element": "h2.title.caps"
-            },
-            {
-              "ratio": 13.486,
-              "foreground": "rgb(19, 41, 107)",
-              "background": [
-                255,
-                255,
-                255
-              ],
-              "opacity": 1,
-              "example": "01",
-              "element": "span.pillar-n"
-            },
-            {
-              "ratio": 5.328,
-              "foreground": "rgb(100, 107, 125)",
-              "background": [
-                255,
-                255,
-                255
-              ],
-              "opacity": 1,
-              "example": "(Verification)",
-              "element": "small"
-            }
-          ],
-          "activeAnimations": 0,
-          "stageScale": 0.203125,
-          "fit": "1",
-          "lowestText": 741.84375,
+          "lowestText": 722.09375,
           "differences": []
         },
         {
@@ -16913,23 +16913,11 @@
         {
           "id": "cover",
           "index": 0,
-          "textRangeCount": 11,
+          "textRangeCount": 8,
           "hidden": [],
           "clipping": [],
           "overlaps": [],
           "contrast": [
-            {
-              "ratio": 6.48,
-              "foreground": "rgb(44, 85, 200)",
-              "background": [
-                255,
-                255,
-                255
-              ],
-              "opacity": 1,
-              "example": "Инженерийн ёс зүй",
-              "element": "div.kicker"
-            },
             {
               "ratio": 13.486,
               "foreground": "rgb(19, 41, 107)",
@@ -16941,6 +16929,18 @@
               "opacity": 1,
               "example": "Амьдрал ",
               "element": "h1.cover-title"
+            },
+            {
+              "ratio": 6.48,
+              "foreground": "rgb(44, 85, 200)",
+              "background": [
+                255,
+                255,
+                255
+              ],
+              "opacity": 1,
+              "example": "3.0",
+              "element": "span"
             },
             {
               "ratio": 18.194,
@@ -16970,7 +16970,7 @@
           "activeAnimations": 0,
           "stageScale": 0.36111106872558596,
           "fit": "1",
-          "lowestText": 740.5000681363699,
+          "lowestText": 731.0001045814049,
           "differences": []
         },
         {
@@ -18873,9 +18873,72 @@
           "differences": []
         },
         {
-          "id": "chapter3-05",
+          "id": "chapter3-06",
           "index": 26,
           "textRangeCount": 15,
+          "hidden": [],
+          "clipping": [],
+          "overlaps": [],
+          "contrast": [
+            {
+              "ratio": 6.48,
+              "foreground": "rgb(44, 85, 200)",
+              "background": [
+                255,
+                255,
+                255
+              ],
+              "opacity": 1,
+              "example": "◆",
+              "element": "span.kicker-diamond"
+            },
+            {
+              "ratio": 18.194,
+              "foreground": "rgb(17, 21, 34)",
+              "background": [
+                255,
+                255,
+                255
+              ],
+              "opacity": 1,
+              "example": "НАЙДВАРТАЙ СИСТЕМ БҮТЭЭХ ДӨРВӨН СОРИЛТ",
+              "element": "h2.title.caps"
+            },
+            {
+              "ratio": 13.486,
+              "foreground": "rgb(19, 41, 107)",
+              "background": [
+                255,
+                255,
+                255
+              ],
+              "opacity": 1,
+              "example": "01",
+              "element": "span.pillar-n"
+            },
+            {
+              "ratio": 5.328,
+              "foreground": "rgb(100, 107, 125)",
+              "background": [
+                255,
+                255,
+                255
+              ],
+              "opacity": 1,
+              "example": "(Verification)",
+              "element": "small"
+            }
+          ],
+          "activeAnimations": 0,
+          "stageScale": 0.36111106872558596,
+          "fit": "1",
+          "lowestText": 741.8438652442187,
+          "differences": []
+        },
+        {
+          "id": "chapter3-05",
+          "index": 27,
+          "textRangeCount": 12,
           "hidden": [],
           "clipping": [],
           "overlaps": [],
@@ -18944,70 +19007,7 @@
           "activeAnimations": 0,
           "stageScale": 0.36111106872558596,
           "fit": "1",
-          "lowestText": 811.7969515048629,
-          "differences": []
-        },
-        {
-          "id": "chapter3-06",
-          "index": 27,
-          "textRangeCount": 15,
-          "hidden": [],
-          "clipping": [],
-          "overlaps": [],
-          "contrast": [
-            {
-              "ratio": 6.48,
-              "foreground": "rgb(44, 85, 200)",
-              "background": [
-                255,
-                255,
-                255
-              ],
-              "opacity": 1,
-              "example": "◆",
-              "element": "span.kicker-diamond"
-            },
-            {
-              "ratio": 18.194,
-              "foreground": "rgb(17, 21, 34)",
-              "background": [
-                255,
-                255,
-                255
-              ],
-              "opacity": 1,
-              "example": "НАЙДВАРТАЙ СИСТЕМ БҮТЭЭХ ДӨРВӨН СОРИЛТ",
-              "element": "h2.title.caps"
-            },
-            {
-              "ratio": 13.486,
-              "foreground": "rgb(19, 41, 107)",
-              "background": [
-                255,
-                255,
-                255
-              ],
-              "opacity": 1,
-              "example": "01",
-              "element": "span.pillar-n"
-            },
-            {
-              "ratio": 5.328,
-              "foreground": "rgb(100, 107, 125)",
-              "background": [
-                255,
-                255,
-                255
-              ],
-              "opacity": 1,
-              "example": "(Verification)",
-              "element": "small"
-            }
-          ],
-          "activeAnimations": 0,
-          "stageScale": 0.36111106872558596,
-          "fit": "1",
-          "lowestText": 741.8438652442187,
+          "lowestText": 722.0938253659557,
           "differences": []
         },
         {

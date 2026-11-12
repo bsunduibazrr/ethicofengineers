@@ -234,18 +234,18 @@
       "type": "Two columns"
     },
     {
-      "id": "chapter3-05",
-      "order": 27,
-      "section": "3-р бүлэг",
-      "title": "КОДЫН АЛДААНЫ ЭСРЭГ НАЙДВАРТАЙ ХИЙМЭЛ ОЮУН",
-      "type": "Comparison"
-    },
-    {
       "id": "chapter3-06",
-      "order": 28,
+      "order": 27,
       "section": "3-р бүлэг",
       "title": "НАЙДВАРТАЙ СИСТЕМ БҮТЭЭХ ДӨРВӨН СОРИЛТ",
       "type": "Two columns"
+    },
+    {
+      "id": "chapter3-05",
+      "order": 28,
+      "section": "3-р бүлэг",
+      "title": "КОДЫН АЛДААНЫ ЭСРЭГ НАЙДВАРТАЙ ХИЙМЭЛ ОЮУН",
+      "type": "Comparison"
     },
     {
       "id": "chapter3-07",

@@ -203,7 +203,11 @@ export const slides: SlideDef[] = [
     notes:
       "3-р бүлэг рүү шилжиж байна: Ойрын ирээдүй: нээлт, алдаа, хууль, зэвсэг, ажил.",
   },
-  ...importedChapter3Slides,
+  // chapter3-06 (дөрвөн сорилт) нь chapter3-05 (кодын алдааны хүснэгт)-ээс өмнө орно.
+  ...importedChapter3Slides.slice(0, 4),
+  importedChapter3Slides[5],
+  importedChapter3Slides[4],
+  ...importedChapter3Slides.slice(6),
   {
     id: "ch3-research",
     section: "3-р бүлэг",
