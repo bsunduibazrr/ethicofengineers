@@ -4,11 +4,11 @@
   "sourceCount": 77,
   "contrastMethod": "Computed CSS text color or SVG text fill, alpha-composited ancestor backgrounds. Existing image pixels and decorative SVG backgrounds are not treated as DOM text.",
   "inputSha256": {
-    "slides/content.source.json": "80ffcfef7481c8247e8b73806f0095d3e1ac1f7cf7a0de18f3bb24e9f2064736",
+    "slides/content.source.json": "9733df2f9cd05802ce228d0e236218a5656d5a3b9732df815943c3a0778d3aa1",
     "app/globals.css": "70bf42138b93d67752ced493dedfceb2af48deb323aa86be563c23c67616fdbe",
-    "slides/design.json": "bb7f8d3f263fd137ce6613d96a0dbe0d450dcf348d7db9090edc1947b89b174a",
+    "slides/design.json": "b9cf7317f7fee6f39f9c4dc6cf4688ad081f78895adf3048e0dbda50dda9d30b",
     "components/deck-runtime.ts": "7a0d69b8f9eaf982c52b19090f7b5daf83df4993c1ad0c57f80c16440953b303",
-    "dist/life3.html": "26dbcf3d3eede3af6f5165787f8e788e8b16a06bca1a83e09cf376f13db77e0d"
+    "dist/life3.html": "437d2f291e36affdbbb7094fe37d8951a806719da526e606a2d5e06e12f9fd60"
   },
   "checks": [
     {
@@ -5089,7 +5089,7 @@
         {
           "id": "consciousness-03",
           "index": 69,
-          "textRangeCount": 9,
+          "textRangeCount": 8,
           "hidden": [],
           "clipping": [],
           "overlaps": [],
@@ -10694,7 +10694,7 @@
         {
           "id": "consciousness-03",
           "index": 69,
-          "textRangeCount": 9,
+          "textRangeCount": 8,
           "hidden": [],
           "clipping": [],
           "overlaps": [],
@@ -16307,7 +16307,7 @@
         {
           "id": "consciousness-03",
           "index": 69,
-          "textRangeCount": 9,
+          "textRangeCount": 8,
           "hidden": [],
           "clipping": [],
           "overlaps": [],
@@ -21920,7 +21920,7 @@
         {
           "id": "consciousness-03",
           "index": 69,
-          "textRangeCount": 9,
+          "textRangeCount": 8,
           "hidden": [],
           "clipping": [],
           "overlaps": [],

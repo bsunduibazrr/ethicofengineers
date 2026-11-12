@@ -258,7 +258,7 @@ const layouts = {
 
   'consciousness-02': ({ P }) => `<div class="xsense">${header(S8.kicker, P(0))}<div class="xequation">${P(1)}</div><div class="xcols three">${[[2, 3, 'eye'], [4, 5, 'music'], [6, 7, 'pulse']].map(([a, b, ic]) => `<div class="xcol icon">${ICON[ic]}<h3>${P(a)}</h3><p>${P(b)}</p></div>`).join('')}</div></div>`,
 
-  'consciousness-03': ({ P, IMG }) => `<div class="xmedia">${header(S8.kicker, P(0))}<div class="xmedia-grid left wide">${figure(IMG('image2.jpeg'), { cls: 'contain', cap: P(1) })}<div class="xmedia-body"><div class="xq"><i aria-hidden="true"></i><p>${P(2)}</p></div><div class="xq"><i aria-hidden="true"></i><p>${P(4)} ${P(5)}</p></div></div></div><div class="xnote">${P(3)}</div></div>`,
+  'consciousness-03': ({ P, IMG }) => `<div class="xmedia">${header(S8.kicker, P(0))}<div class="xmedia-grid left wide">${figure(IMG('image2-3217.jpeg'), { cls: 'contain', cap: P(1) })}<div class="xmedia-body"><div class="xq"><i aria-hidden="true"></i><p>${P(2)}</p></div><div class="xq"><i aria-hidden="true"></i><p>${P(4)}</p></div></div></div><div class="xnote">${P(3)}</div></div>`,
 
   'consciousness-04': ({ P, IMG }) => `<div class="xmedia">${header(S8.kicker, P(0))}<div class="xmedia-grid left wide">${figure(IMG('image3.jpeg'))}<div class="xmedia-body center"><blockquote class="xpull">${P(1)}</blockquote></div></div></div>`,
 
