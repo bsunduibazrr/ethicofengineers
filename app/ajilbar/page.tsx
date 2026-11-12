@@ -3,12 +3,15 @@ import content from "@/slides/content.source.json";
 import CrosswordExercise from "./CrosswordExercise";
 
 export const metadata: Metadata = {
-  title: "Үгийн сүлжээ · Амьдрал 3.0",
-  description:
-    "Амьдрал 3.0 илтгэлийн нэр томьёо, эрдэмтдийн нэрийг бататгах хоёр үгийн сүлжээ. Сүлжээ бүр хөндлөн 3, босоо 3 үгтэй.",
+  title: "life3.0",
+  description: "life3.0",
 };
 
 export default function AjilbarPage() {
   const closingSlide = content.find((slide) => slide.id === "thanks");
-  return <CrosswordExercise backHref={`/#${closingSlide?.order ?? content.length}`} />;
+  return (
+    <CrosswordExercise
+      backHref={`/#${closingSlide?.order ?? content.length}`}
+    />
+  );
 }

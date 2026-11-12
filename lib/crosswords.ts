@@ -19,132 +19,79 @@ export type CrosswordPuzzle = {
   entries: CrosswordEntry[];
 };
 
-// Coordinates are zero-based. Entries sharing a starting cell share its number.
-// All answers come from slides/content.source.json; spaces are omitted in the grid.
+/*
+  Схем (7 мөр × 8 багана):
+
+     0 1 2 3 4 5 6 7
+  0        Т А Р Х И
+  1  Р       М   Ү
+  2  О       Ь   Н
+  3  Б И Е   Д
+  4  О       Р
+  5  Т Е Г М А Р К
+  6          Л
+*/
 export const crosswords: CrosswordPuzzle[] = [
   {
-    id: "big-questions",
-    title: "ЖИШЭЭ 1",
-    subtitle: " ",
-    rows: 10,
-    cols: 9,
+    id: "easy",
+    title: "Амьдрал 3.0",
+    subtitle: "6 амархан үг, бүгд номтой холбоотой.",
+    rows: 7,
+    cols: 8,
     entries: [
       {
-        id: "questions-1-down",
+        id: "1-across",
         number: 1,
-        direction: "down",
-        row: 0,
-        col: 4,
-        answer: "ЗОРИЛГО",
-        clue: "Оюун ухааны тодорхойлолтод дурддаг, хүрэхээр тэмүүлж буй үр дүн.",
-      },
-      {
-        id: "questions-2-across",
-        number: 2,
         direction: "across",
-        row: 2,
-        col: 0,
-        answer: "МАТЕРИ",
-        clue: "Номын 2-р бүлгийн нэр: «___ ухаалаг болох нь».",
+        row: 0,
+        col: 3,
+        answer: "ТАРХИ",
+        clue: "Бодож сэтгэдэг эрхтэн",
       },
       {
-        id: "questions-2-down",
-        number: 2,
-        direction: "down",
-        row: 2,
-        col: 0,
-        answer: "МЭДЭЭЛЭЛ",
-        clue: "Чулуу, цаас, хатуу диск, ДНХ зэрэг өөр өөр орчинд хадгалж болдог зүйл.",
-      },
-      {
-        id: "questions-3-down",
-        number: 3,
-        direction: "down",
+        id: "5-across",
+        number: 5,
+        direction: "across",
         row: 3,
-        col: 6,
-        answer: "УХАМСАР",
-        clue: "Номын 8-р бүлгийн сэдэв; өөрийн дотоод туршлага, мэдрэмжтэй холбоотой ойлголт.",
+        col: 0,
+        answer: "БИЕ",
+        clue: "Толгой, гар, хөлтэй хэсэг",
       },
       {
-        id: "questions-4-across",
-        number: 4,
-        direction: "across",
-        row: 5,
-        col: 2,
-        answer: "ТЕГМАРК",
-        clue: "«Амьдрал 3.0» номын зохиолч Максын овог.",
-      },
-      {
-        id: "questions-5-across",
-        number: 5,
-        direction: "across",
-        row: 9,
-        col: 2,
-        answer: "АМЬДРАЛ",
-        clue: "Өөрийн бүтцийг хадгалж, үржиж чаддаг процессыг номд юу гэж тодорхойлсон бэ?",
-      },
-    ],
-  },
-  {
-    id: "thinking-machines",
-    title: "ЖИШЭЭ 2",
-    subtitle: " ",
-    rows: 9,
-    cols: 11,
-    entries: [
-      {
-        id: "machines-1-down",
-        number: 1,
-        direction: "down",
-        row: 0,
-        col: 2,
-        answer: "ХЕББ",
-        clue: "«Хамт идэвхждэг мэдрэлийн эсүүдийн холбоо хүчтэй болдог» дүрэм хэний нэрээр нэрлэгдсэн бэ?",
-      },
-      {
-        id: "machines-2-down",
-        number: 2,
-        direction: "down",
-        row: 0,
-        col: 5,
-        answer: "ТООЦООЛОЛ",
-        clue: "Нэг төлөвийг нөгөөд хувиргаж, оролтоос гаралт гаргах үйл явц.",
-      },
-      {
-        id: "machines-3-down",
-        number: 3,
-        direction: "down",
-        row: 0,
-        col: 8,
-        answer: "ТЬЮРИНГ",
-        clue: "1936 онд хангалттай хугацаа, хадгалах багтаамжтай машин ямар ч тооцоо хийж чадна гэж баталсан Аланы овог.",
-      },
-      {
-        id: "machines-4-across",
-        number: 4,
-        direction: "across",
-        row: 1,
-        col: 1,
-        answer: "НЕЙРОН",
-        clue: " ",
-      },
-      {
-        id: "machines-5-across",
-        number: 5,
-        direction: "across",
-        row: 4,
-        col: 4,
-        answer: "ХОПФИЛД",
-        clue: "1982 онд тархины холбоогоор санах чадварыг сүлжээгээр загварчилсан Жоны овог.",
-      },
-      {
-        id: "machines-6-across",
+        id: "6-across",
         number: 6,
         direction: "across",
-        row: 7,
+        row: 5,
         col: 0,
-        answer: "САНАХОЙ",
-        clue: "Хэд хэдэн тогтвортой төлөв ашиглан өгөгдөл хадгалдаг чадвар. (Хоёр үг, зайгүй бичнэ.)",
+        answer: "ТЕГМАРК",
+        clue: "«Life 3.0» номыг бичсэн Макс ...",
+      },
+      {
+        id: "2-down",
+        number: 2,
+        direction: "down",
+        row: 0,
+        col: 4,
+        answer: "АМЬДРАЛ",
+        clue: "Номын нэр: «... 3.0»",
+      },
+      {
+        id: "3-down",
+        number: 3,
+        direction: "down",
+        row: 0,
+        col: 6,
+        answer: "ХҮН",
+        clue: "Бид бүгд юу вэ? (Амьдрал 2.0)",
+      },
+      {
+        id: "4-down",
+        number: 4,
+        direction: "down",
+        row: 1,
+        col: 0,
+        answer: "РОБОТ",
+        clue: "ASIMO шиг хүн хэлбэрийн машин",
       },
     ],
   },
