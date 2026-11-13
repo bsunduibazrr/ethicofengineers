@@ -64,7 +64,7 @@ export const crosswords: CrosswordPuzzle[] = [
         row: 5,
         col: 0,
         answer: "ТЕГМАРК",
-        clue: "«Life 3.0» номыг бичсэн Макс ...",
+        clue: "Life 3.0 номыг бичсэн Макс ...",
       },
       {
         id: "2-down",
@@ -73,7 +73,7 @@ export const crosswords: CrosswordPuzzle[] = [
         row: 0,
         col: 4,
         answer: "АМЬДРАЛ",
-        clue: "Номын нэр: «... 3.0»",
+        clue: "Номын нэр: ... 3.0",
       },
       {
         id: "3-down",

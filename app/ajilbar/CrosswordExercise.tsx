@@ -165,7 +165,7 @@ export default function CrosswordExercise({ backHref }: { backHref: string }) {
     );
     setChecked(true);
     setMessage(
-      "Хариунуудыг харууллаа. «Дахин эхлэх» товчоор дахин оролдоорой.",
+      "Хариунуудыг харууллаа. Дахин эхлэх товчоор дахин оролдоорой.",
     );
   }
 
