@@ -33,7 +33,7 @@ export function Divider({
         <R className="div-en">{en}</R>
         {epigraph && (
           <R className="epigraph">
-            "{epigraph.text}"<small>{epigraph.who}</small>
+            {epigraph.text}<small>{epigraph.who}</small>
           </R>
         )}
         <Group className="div-list">
@@ -452,7 +452,7 @@ export function Napa() {
             </div>
           </div>
           <R className="debate-end">
-            Маргааны үеэр Пейж Маскыг "speciesist" буюу зөвхөн хүн төрөлхтнийг
+            Маргааны үеэр Пейж Маскыг speciesist буюу зөвхөн хүн төрөлхтнийг
             илүүд үздэг хүн гэж нэрлэсэн гэдэг.
           </R>
         </div>
@@ -485,7 +485,7 @@ function MythCards({ rows }: { rows: Myth[] }) {
       {rows.map((r, i) => (
         <R className="myth-item" key={r.topic}>
           <span className="myth-topic">0{i + 1} · {r.topic}</span>
-          <p className="myth-misconception">«{r.m}»</p>
+          <p className="myth-misconception">{r.m}</p>
           <h3 className="myth-verdict">{r.f}</h3>
           {r.detail && <p className="myth-explanation">{r.detail}</p>}
         </R>
