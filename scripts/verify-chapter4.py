@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Compare chapter 4 text independently with the supplied PowerPoint XML.
 
-Uses only Python's standard library. No whitespace, punctuation, case, or Unicode
-normalization is applied to source paragraphs or their imported/rendered copies.
+Uses only Python's standard library. The requested quotation-mark removal is
+applied only to the raw source expected text. All other punctuation, whitespace,
+case, Unicode characters, paragraph order, and run boundaries remain exact.
 """
 
 from __future__ import annotations
@@ -20,6 +21,8 @@ import zipfile
 
 ROOT = Path(__file__).resolve().parent.parent
 SOURCE_SHA256 = "9f5f41cd28ef54658b571a057e8094b8dde5e80616c66da0d0c4928204ed9360"
+REMOVED_QUOTATION_MARKS = '«»“”„‟‹›"'
+QUOTATION_REMOVAL = str.maketrans("", "", REMOVED_QUOTATION_MARKS)
 NS = {
     "p": "http://schemas.openxmlformats.org/presentationml/2006/main",
     "a": "http://schemas.openxmlformats.org/drawingml/2006/main",
@@ -260,8 +263,16 @@ def main() -> int:
     slides = []
     for index, raw_slide in enumerate(raw):
         slide_id = f"chapter4-{index + 1:02d}"
-        expected = [paragraph["text"] for paragraph in raw_slide["paragraphs"]]
-        expected_runs = [paragraph["runs"] for paragraph in raw_slide["paragraphs"]]
+        # Only source quotation marks may differ; preserve each source run and
+        # paragraph boundary, including runs made empty by quotation removal.
+        expected = [
+            paragraph["text"].translate(QUOTATION_REMOVAL)
+            for paragraph in raw_slide["paragraphs"]
+        ]
+        expected_runs = [
+            [run.translate(QUOTATION_REMOVAL) for run in paragraph["runs"]]
+            for paragraph in raw_slide["paragraphs"]
+        ]
         actual = imported_paragraphs(imported[index]) if index < len(imported) else []
         frozen_slide = frozen_by_id.get(slide_id, {})
         exported_slide = exported_by_id.get(slide_id, {})
@@ -288,9 +299,9 @@ def main() -> int:
             "sourceFieldCount": raw_slide["fieldCount"],
             "sourceTableCount": raw_slide["tableCount"],
             "sourceNotesPartCount": len(raw_slide["notes"]),
-            "importedParagraphsExactlyMatch": imported_text_exact,
-            "importedRunBoundariesAndWhitespaceExactlyMatch": imported_runs_exact,
-            "frozenReferenceParagraphsExactlyMatch": actual_reference == expected,
+            "importedParagraphsMatchAfterQuotationRemoval": imported_text_exact,
+            "importedRunBoundariesAndWhitespaceMatchAfterQuotationRemoval": imported_runs_exact,
+            "frozenReferenceParagraphsMatchAfterQuotationRemoval": actual_reference == expected,
             "notesExactlyMatch": notes_unchanged,
             "design": design_result,
             "export": export_result,
@@ -322,7 +333,8 @@ def main() -> int:
         "originalFileSha256": original_sha256,
         "expectedOriginalFileSha256": SOURCE_SHA256,
         "originalFileExactlyMatches": original_sha256 == SOURCE_SHA256,
-        "comparison": "Independent raw ZIP/XML extraction in presentation relationship order. Exact Unicode strings and run boundaries; no whitespace, punctuation, case, or Unicode normalization. Blank source paragraphs contain no visible text and are excluded only after extraction.",
+        "comparison": "Independent raw ZIP/XML extraction in presentation relationship order. Only the listed quotation marks are removed from raw source expected text. All remaining Unicode characters, punctuation, whitespace, case, paragraph order, and run boundaries must match exactly. Blank source paragraphs contain no visible text and are excluded only after extraction.",
+        "permittedSourceQuotationRemoval": REMOVED_QUOTATION_MARKS,
         "structure": structure,
         "duplicateFooterOnFinalSourceSlide": duplicate_footer,
         "slides": slides,

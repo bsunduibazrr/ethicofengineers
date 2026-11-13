@@ -221,7 +221,7 @@ export function Memory() {
             <div>
               <span className="label">Компьютер</span>
               <h3>Хаягаар хайдаг</h3>
-              <p>"2048 дугаар хаягт юу байна?" гэж асууна.</p>
+              <p>2048 дугаар хаягт юу байна? гэж асууна.</p>
             </div>
             <div>
               <span className="label">Тархи</span>
@@ -250,130 +250,80 @@ export function Memory() {
   );
 }
 
-/* ───────────── 17. Тооцоолол ───────────── */
-
-const nandRows = [
-  [0, 0, 1],
-  [0, 1, 1],
-  [1, 0, 1],
-  [1, 1, 0],
-];
+/* ───────────── 18. Тооцоолол ───────────── */
 
 export function Computation() {
   return (
-    <div className="compute">
-      <Header kicker="2-р бүлэг" title="Тооцоолол" />
-      <div className="comp-grid">
-        <R className="panel nand">
-          <span className="label">NAND хаалга</span>
-          <div className="nand-body">
-            <svg viewBox="0 0 260 160" width="260" height="160">
-              <line
-                x1="10"
-                y1="55"
-                x2="70"
-                y2="55"
-                stroke="#13296b"
-                strokeWidth="3"
-              />
-              <line
-                x1="10"
-                y1="105"
-                x2="70"
-                y2="105"
-                stroke="#13296b"
-                strokeWidth="3"
-              />
-              <path
-                d="M70 25 H130 A55 55 0 0 1 130 135 H70 Z"
-                fill="#ffffff"
-                stroke="#13296b"
-                strokeWidth="3"
-              />
-              <circle
-                cx="196"
-                cy="80"
-                r="9"
-                fill="#fff"
-                stroke="#13296b"
-                strokeWidth="3"
-              />
-              <line
-                x1="205"
-                y1="80"
-                x2="250"
-                y2="80"
-                stroke="#13296b"
-                strokeWidth="3"
-              />
-              <text x="104" y="87" textAnchor="middle" className="gate-t">
-                NAND
-              </text>
-              <text x="2" y="47" className="io-t">
-                A
-              </text>
-              <text x="2" y="97" className="io-t">
-                B
-              </text>
-            </svg>
-            <table className="truth">
-              <thead>
-                <tr>
-                  <th>A</th>
-                  <th>B</th>
-                  <th>Гаралт</th>
-                </tr>
-              </thead>
-              <tbody>
-                {nandRows.map((r, i) => (
-                  <tr key={i} style={{ animationDelay: `${1.2 + i * 0.9}s` }}>
-                    <td>{r[0]}</td>
-                    <td>{r[1]}</td>
-                    <td>
-                      <b>{r[2]}</b>
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-          <p>
-            Ийм энгийн хаалгыг олноор нь холбоод <b>ямар ч</b> тооцоолол хийж
-            болно.
-          </p>
-          <div className="def-line">
-            Тооцоолол гэдэг нь нэг төлөвийг нөгөөд хувиргах, өөрөөр хэлбэл
-            оролтоос гаралт гаргах үйл явц.
-          </div>
-        </R>
-        <div className="comp-right">
-          <div className="turing">
-            <Photo
-              src="/img/turing.jpg"
-              alt="Алан Тьюринг"
-              className="turing-photo"
-              pos="50% 25%"
-            />
-            <R className="turing-text">
-              <span className="label">1936 он</span>
-              <h3>Алан Тьюринг</h3>
-              <p>
-                Хангалттай санах ой, хугацаа өгвөл ямар ч тооцоо хийж чадах
-                машин бүтээж болохыг баталсан. Тегмарк ийм чадвартай материйг
-                "компьютрониум" гэж нэрлэдэг.
-              </p>
-            </R>
-          </div>
-          <R className="panel accent">
-            <span className="label">Хамгийн гол санаа</span>
-            <h3>Тооцоолол материалаас хамаардаггүй</h3>
-            <p>
-              Долгион усанд ч, агаарт ч адилхан тархдаг. Үүнтэй адил тооцоолол
-              цахиур дээр ч, тархинд ч хийгдэж болно.
-            </p>
-          </R>
-        </div>
-      </div>
+    <div className="computation-visual">
+      <h2 className="computation-keyword computation-input">Оролт</h2>
+      <h2 className="computation-keyword computation-output">Гаралт</h2>
+      <svg
+        className="computation-diagram"
+        viewBox="0 0 1640 680"
+        role="img"
+        aria-label="Тооцоолол: оролтын төлөв өөр гаралтын төлөвт хувирна. Ижил үйлдлийг цахиурын хэлхээ эсвэл мэдрэлийн сүлжээгээр хэрэгжүүлж болохыг хоёр замаар дүрсэлсэн зүйрлэл."
+      >
+        <g fill="none" stroke="#cbd6ed" strokeWidth="5" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M344 350H476M476 350V234Q476 210 500 210H700M476 350V476Q476 500 500 500H700" />
+          <path d="M940 210H1140Q1164 210 1164 234V350M940 500H1140Q1164 500 1164 476V350M1164 350H1296" />
+        </g>
+        <g fill="none" stroke="#2c55c8" strokeWidth="5" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M612 198L626 210L612 222M612 488L626 500L612 512" />
+          <path d="M1040 198L1054 210L1040 222M1040 488L1054 500L1040 512M1230 338L1244 350L1230 362" />
+        </g>
+        <g fill="#2c55c8">
+          <circle cx="476" cy="350" r="8" />
+          <circle cx="1164" cy="350" r="8" />
+        </g>
+
+        <rect x="102" y="244" width="242" height="212" rx="30" fill="#f3f5fa" />
+        <g stroke="#2c55c8" strokeWidth="4">
+          <circle cx="174" cy="304" r="27" fill="#2c55c8" />
+          <circle cx="272" cy="304" r="27" fill="#fff" />
+          <circle cx="174" cy="402" r="27" fill="#2c55c8" />
+          <circle cx="272" cy="402" r="27" fill="#2c55c8" />
+        </g>
+
+        <rect x="700" y="100" width="240" height="220" rx="34" fill="#f3f5fa" />
+        <g fill="none" stroke="#9aabd3" strokeWidth="4" strokeLinecap="round">
+          <path d="M735 167H754M735 195H754M735 223H754M735 251H754M886 167H905M886 195H905M886 223H905M886 251H905" />
+          <path d="M778 123V143M806 123V143M834 123V143M862 123V143M778 277V297M806 277V297M834 277V297M862 277V297" />
+        </g>
+        <rect x="754" y="143" width="132" height="134" rx="22" fill="#fff" stroke="#13296b" strokeWidth="4" />
+        <g fill="none" stroke="#2c55c8" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M774 177H787Q800 177 800 190T787 203H774Z" />
+          <circle cx="805" cy="190" r="4" fill="#fff" />
+          <path d="M809 190H824V217H839M762 184H774M762 196H774" />
+          <path d="M839 204H850Q863 204 863 217T850 230H839Z" />
+          <circle cx="868" cy="217" r="4" fill="#fff" />
+          <path d="M872 217H882M785 251H824V224H839" />
+        </g>
+
+        <circle cx="820" cy="500" r="120" fill="#f3f5fa" />
+        <g fill="#fff" stroke="#13296b" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M820 432C806 414 780 418 772 437C749 433 732 453 740 475C722 489 727 514 745 521C739 545 755 562 775 560C784 580 807 578 820 563Z" />
+          <path d="M820 432C834 414 860 418 868 437C891 433 908 453 900 475C918 489 913 514 895 521C901 545 885 562 865 560C856 580 833 578 820 563Z" />
+        </g>
+        <g fill="none" stroke="#2c55c8" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M772 438C770 453 780 461 792 460M741 476C756 467 772 478 772 490M746 521C757 508 774 510 781 522M775 560C770 543 781 533 794 536" />
+          <path d="M868 438C870 453 860 461 848 460M899 476C884 467 868 478 868 490M894 521C883 508 866 510 859 522M865 560C870 543 859 533 846 536" />
+          <path d="M795 481L808 500L795 519M845 481L832 500L845 519" />
+        </g>
+        <g fill="#2c55c8">
+          <circle cx="795" cy="481" r="5" />
+          <circle cx="795" cy="519" r="5" />
+          <circle cx="845" cy="481" r="5" />
+          <circle cx="845" cy="519" r="5" />
+        </g>
+
+        <rect x="1296" y="244" width="242" height="212" rx="30" fill="#f3f5fa" />
+        <g stroke="#2c55c8" strokeWidth="4">
+          <circle cx="1368" cy="304" r="27" fill="#fff" />
+          <circle cx="1466" cy="304" r="27" fill="#2c55c8" />
+          <circle cx="1368" cy="402" r="27" fill="#2c55c8" />
+          <circle cx="1466" cy="402" r="27" fill="#fff" />
+        </g>
+      </svg>
     </div>
   );
 }

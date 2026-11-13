@@ -149,11 +149,14 @@ async function auditViewport(browser, viewport, capture = false) {
     if (differences.length || result.clipping.length || result.hidden.length || result.overlaps.length) console.log(JSON.stringify({ viewport, slide: i + 1, id: result.id, differences, clipping: result.clipping.length, hidden: result.hidden.length, overlaps: result.overlaps.length, first: result.clipping[0] || result.overlaps[0] }));
   }
   await goto(page, 20);
-  for (const card of await page.locator(`${active} .qa-card`).all()) await card.click();
+  const qaTextField = source[20].expandedTextNodes ? 'expandedTextNodes' : 'textNodes';
+  if (qaTextField === 'expandedTextNodes') {
+    for (const card of await page.locator(`${active} .qa-card`).all()) await card.click();
+  }
   await settle(page, 20);
   const qa = await page.evaluate(auditDocument);
-  const qaExpanded = { differences: JSON.stringify(qa.textNodes) === JSON.stringify(source[20].expandedTextNodes) ? [] : ['expandedTextNodes'], clipping: qa.clipping, overlaps: qa.overlaps, hidden: qa.hidden };
-  if (capture) await page.screenshot({ path: path.join(screenshots, `${viewport.width}x${viewport.height}-21-expanded.png`) });
+  const qaExpanded = { differences: JSON.stringify(qa.textNodes) === JSON.stringify(source[20][qaTextField]) ? [] : [qaTextField], clipping: qa.clipping, overlaps: qa.overlaps, hidden: qa.hidden };
+  if (capture) await page.screenshot({ path: path.join(screenshots, `${viewport.width}x${viewport.height}-21-${qaTextField === 'expandedTextNodes' ? 'expanded' : 'static'}.png`) });
   const interactions = [];
   const assert = async (name, fn) => { try { const detail = await fn(); interactions.push({ name, passed: true, detail }); } catch (error) { interactions.push({ name, passed: false, error: error.message }); } };
   const index = () => page.locator(active).getAttribute('data-index');
@@ -176,18 +179,22 @@ async function auditViewport(browser, viewport, capture = false) {
   });
   if (viewport.width < 1000) await assert('Cancelled touch and subsequent interactive touch do not navigate', async () => {
     await goto(page, 20);
+    await page.keyboard.press('n');
+    if (await page.locator('.speaker-notes').evaluate(el => el.hidden)) throw new Error('Notes hidden during interactive touch check');
     await page.evaluate(() => {
-      const viewport = document.querySelector('.viewport'), card = document.querySelector('.slide:not(.is-exiting) .qa-card');
+      const viewport = document.querySelector('.viewport'), notes = document.querySelector('.speaker-notes');
       const send = (target, type, x) => target.dispatchEvent(new PointerEvent(type, { bubbles: true, pointerType: 'touch', pointerId: 4, clientX: x, clientY: innerHeight / 2 }));
-      send(viewport, 'pointerdown', 300); send(viewport, 'pointercancel', 300); send(card, 'pointerup', 100);
+      send(viewport, 'pointerdown', 300); send(viewport, 'pointercancel', 300); send(notes, 'pointerup', 100);
     });
     await expectIndex(20);
     await page.evaluate(() => {
-      const viewport = document.querySelector('.viewport'), card = document.querySelector('.slide:not(.is-exiting) .qa-card');
+      const viewport = document.querySelector('.viewport'), notes = document.querySelector('.speaker-notes');
       const send = (target, type, x) => target.dispatchEvent(new PointerEvent(type, { bubbles: true, pointerType: 'touch', pointerId: 5, clientX: x, clientY: innerHeight / 2 }));
-      send(viewport, 'pointerdown', 300); send(card, 'pointerdown', 300); send(card, 'pointerup', 100);
+      send(viewport, 'pointerdown', 300); send(notes, 'pointerdown', 300); send(notes, 'pointerup', 100);
     });
     await expectIndex(20);
+    await page.keyboard.press('n');
+    if (!(await page.locator('.speaker-notes').evaluate(el => el.hidden))) throw new Error('Notes not hidden before stage swipe');
     const rect = await page.locator('.stage').boundingBox(), y = rect.y + rect.height * .07;
     const client = await page.context().newCDPSession(page);
     await client.send('Input.dispatchTouchEvent', { type: 'touchStart', touchPoints: [{ x: rect.x + rect.width * .75, y }] });
