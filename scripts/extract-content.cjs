@@ -152,7 +152,7 @@ const extracted = slides.map((slide, index) => {
     sha256: sha(JSON.stringify({ id: slide.id, textNodes: tokens, notes: slide.notes })),
     ...(sourceNodes ? { nodes: sourceNodes } : {}),
   };
-  if (slide.id === 'qa') {
+  if (slide.id === 'qa' && all.some((node) => hasClass(node, 'qa-card'))) {
     snapshot.expandedHtml = staticHtml(slide.Component, true);
     const expandedTree = parseHtml(snapshot.expandedHtml);
     snapshot.expandedTextNodes = textNodes(expandedTree);
