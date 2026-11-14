@@ -701,10 +701,10 @@
             "w": 607.5043569553806,
             "h": 371.51485564304465
           },
-          "src": "/slides/imported/chapter3/image7.png",
+          "src": "/img/hel.jpeg",
           "id": "chapter3-8-image",
-          "alt": "Freeform 8",
-          "fit": "cover",
+          "alt": "Олон хэлний үсэг, тэмдэг дүрсэлсэн хүний тархи",
+          "fit": "contain",
           "objectPosition": "50% 50%",
           "rotation": null
         },
@@ -15095,7 +15095,7 @@
                 "bullet": "",
                 "runs": [
                   {
-                    "text": "Таны ухамсар хормын дөрөвний нэг секундээр хоцорч байна. Одоо та үнэхээр одоо-г биш, саяхан-ийг мэдэрч байна.",
+                    "text": "Таны ухамсар хормын дөрөвний нэг секундээр хоцорч байдаг. Одоо та үнэхээр одоо-г биш, саяхан-ийг мэдэрч байна гэсэн үг.",
                     "style": {
                       "fontFamily": "IBM Plex Sans",
                       "color": "#E8EDF5"
@@ -15116,10 +15116,10 @@
             "w": 1356.0,
             "h": 612.3651443569554
           },
-          "src": "/slides/imported/consciousness/image3.jpeg",
+          "src": "/img/jujig.png",
           "id": "consciousness-6",
-          "alt": "C:\\Users\\Direkttek\\Downloads\\jolooch.jfif",
-          "fit": "cover",
+          "alt": "Тайзан дээр жүжиглэж буй гурван хүн",
+          "fit": "contain",
           "objectPosition": "50.0% 50.0%",
           "rotation": null
         }
