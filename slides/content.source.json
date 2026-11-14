@@ -84,9 +84,7 @@
     "type": "Timeline",
     "title": "Номын хэвлэлүүд",
     "subtitle": "",
-    "body": [
-      " "
-    ],
+    "body": [" "],
     "list": [],
     "quote": "",
     "notes": "2017 онд Knopf-оос анх гарсан, 2018 онд  тай нь гарсан. NYT бестселлер, Обама жагсаалтдаа оруулсан, Маск зөвлөсөн. Монгол хувилбарыг Г. Үүрдмандах орчуулж, Монсудар хэвлэсэн.",
@@ -248,41 +246,29 @@
     "section": "1-р бүлэг",
     "type": "Comparison",
     "title": "Амьдралын гурван үе шат",
-    "subtitle": "Номын нэр эндээс гаралтай. Тегмарк хошигнож бид одоо Амьдрал 2.1 гэдэг, учир нь хиймэл шүд, зүрхний аппарат зэргээр биеэ бага зэрэг сайжруулж эхэлсэн.",
-    "body": [],
+    "subtitle": "",
+    "body": [
+      "Бие, мэдлэг нь хувьслаар өөрчлөгдөнө.",
+      "Бие нь удамшина. Мэдлэгээ өөрөө сурна.",
+      "Биеэ ч, оюун ухаанаа ч өөрөө бүтээнэ."
+    ],
     "list": [],
     "quote": "",
     "notes": "1.0: бактери, бүх юм хувьслаар. 2.0: бид, биеэ сонгохгүй ч мэдлэгээ сурдаг. 3.0: биеэ ч, оюунаа ч өөрөө бүтээнэ, одоогоор байхгүй. Бид 2.1 гэж хошигнодог: хиймэл шүд, зүрхний аппарат.",
-    "html": "<div class=\"stages\"><div class=\"header\"><div class=\"kicker-wrapper\"><div class=\"kicker-pill\"><span class=\"kicker-diamond\">◆</span><span class=\"kicker-label\">1-р бүлэг</span></div></div><div><h2 class=\"title\">Амьдралын гурван үе шат</h2></div><div class=\"sub\">Номын нэр эндээс гаралтай. Тегмарк хошигнож бид одоо Амьдрал 2.1 гэдэг, учир нь хиймэл шүд, зүрхний аппарат зэргээр биеэ бага зэрэг сайжруулж эхэлсэн.</div></div><div class=\"stage-cols\"><div class=\"stage-col\"><figure class=\"photo stage-photo\"><div class=\"photo-frame photo-hover\"><img src=\"/img/life1-ecoli.jpg\" alt=\"Биологийн\" style=\"object-fit:cover;object-position:50% 35%\" draggable=\"false\"/></div></figure><div class=\"stage-head\"><h3>Амьдрал 1.0</h3><span>Биологийн</span></div><div class=\"stage-rows\"><div><span>Бие</span><b class=\"\">Хувьслаар</b></div><div><span>Мэдлэг, чадвар</span><b class=\"\">Хувьслаар</b></div></div><div class=\"stage-d\">Бактери насан туршдаа шинэ юм сурдаггүй. Өөрчлөгдөх ганц арга нь олон үе дамжсан хувьсал.</div></div><div class=\"stage-col\"><figure class=\"photo stage-photo\"><div class=\"photo-frame photo-hover\"><img src=\"/img/life2-child.jpg\" alt=\"Соёлын\" style=\"object-fit:cover;object-position:50% 35%\" draggable=\"false\"/></div></figure><div class=\"stage-head\"><h3>Амьдрал 2.0</h3><span>Соёлын</span></div><div class=\"stage-rows\"><div><span>Бие</span><b class=\"\">Хувьслаар</b></div><div><span>Мэдлэг, чадвар</span><b class=\"self\">Өөрөө сурна</b></div></div><div class=\"stage-d\">Бие нь хувьслаар заяадаг ч хэл, мэдлэг, ур чадвараа хүн өөрөө сурч эзэмшдэг.</div></div><div class=\"stage-col\"><figure class=\"photo stage-photo\"><div class=\"photo-frame photo-hover\"><img src=\"/img/life3-asimo.jpg\" alt=\"Технологийн\" style=\"object-fit:cover;object-position:50% 35%\" draggable=\"false\"/></div></figure><div class=\"stage-head\"><h3>Амьдрал 3.0</h3><span>Технологийн</span></div><div class=\"stage-rows\"><div><span>Бие</span><b class=\"self\">Өөрөө бүтээнэ</b></div><div><span>Мэдлэг, чадвар</span><b class=\"self\">Өөрөө сурна</b></div></div><div class=\"stage-d\">Биеэ ч, оюун ухаанаа ч өөрөө зохион бүтээнэ. Одоогоор ийм амьдрал байхгүй.</div></div></div></div>",
+    "html": "<div class=\"ch1-minimal ch1-evolution\"><div class=\"ch1-three-grid\"><article class=\"ch1-evolution-item\"><h2 class=\"ch1-version\">Амьдрал 1.0</h2><figure class=\"ch1-evolution-photo\"><img src=\"/img/life1-ecoli.jpg\" alt=\"Биологийн амьдралыг төлөөлсөн бактери\" draggable=\"false\" style=\"object-position:50% 35%\"/></figure><h3 class=\"ch1-keyword\">Хувьсал</h3><p class=\"ch1-support\">Бие, мэдлэг нь хувьслаар өөрчлөгдөнө.</p></article><article class=\"ch1-evolution-item\"><h2 class=\"ch1-version\">Амьдрал 2.0</h2><figure class=\"ch1-evolution-photo\"><img src=\"/img/life2-child.jpg\" alt=\"Суралцах чадвартай хүнийг төлөөлсөн хүүхэд\" draggable=\"false\" style=\"object-position:50% 35%\"/></figure><h3 class=\"ch1-keyword\">Суралцах</h3><p class=\"ch1-support\">Бие нь удамшина. Мэдлэгээ өөрөө сурна.</p></article><article class=\"ch1-evolution-item\"><h2 class=\"ch1-version\">Амьдрал 3.0</h2><figure class=\"ch1-evolution-photo\"><img src=\"/img/life3-asimo.jpg\" alt=\"Технологийн амьдралын санааг төлөөлсөн робот\" draggable=\"false\" style=\"object-position:50% 35%\"/></figure><h3 class=\"ch1-keyword\">Бүтээх</h3><p class=\"ch1-support\">Биеэ ч, оюун ухаанаа ч өөрөө бүтээнэ.</p></article></div></div>",
     "textNodes": [
-      "◆",
-      "1-р бүлэг",
-      "Амьдралын гурван үе шат",
-      "Номын нэр эндээс гаралтай. Тегмарк хошигнож бид одоо Амьдрал 2.1 гэдэг, учир нь хиймэл шүд, зүрхний аппарат зэргээр биеэ бага зэрэг сайжруулж эхэлсэн.",
       "Амьдрал 1.0",
-      "Биологийн",
-      "Бие",
-      "Хувьслаар",
-      "Мэдлэг, чадвар",
-      "Хувьслаар",
-      "Бактери насан туршдаа шинэ юм сурдаггүй. Өөрчлөгдөх ганц арга нь олон үе дамжсан хувьсал.",
+      "Хувьсал",
+      "Бие, мэдлэг нь хувьслаар өөрчлөгдөнө.",
       "Амьдрал 2.0",
-      "Соёлын",
-      "Бие",
-      "Хувьслаар",
-      "Мэдлэг, чадвар",
-      "Өөрөө сурна",
-      "Бие нь хувьслаар заяадаг ч хэл, мэдлэг, ур чадвараа хүн өөрөө сурч эзэмшдэг.",
+      "Суралцах",
+      "Бие нь удамшина. Мэдлэгээ өөрөө сурна.",
       "Амьдрал 3.0",
-      "Технологийн",
-      "Бие",
-      "Өөрөө бүтээнэ",
-      "Мэдлэг, чадвар",
-      "Өөрөө сурна",
-      "Биеэ ч, оюун ухаанаа ч өөрөө зохион бүтээнэ. Одоогоор ийм амьдрал байхгүй."
+      "Бүтээх",
+      "Биеэ ч, оюун ухаанаа ч өөрөө бүтээнэ."
     ],
-    "text": "◆1-р бүлэгАмьдралын гурван үе шатНомын нэр эндээс гаралтай. Тегмарк хошигнож бид одоо Амьдрал 2.1 гэдэг, учир нь хиймэл шүд, зүрхний аппарат зэргээр биеэ бага зэрэг сайжруулж эхэлсэн.Амьдрал 1.0БиологийнБиеХувьслаарМэдлэг, чадварХувьслаарБактери насан туршдаа шинэ юм сурдаггүй. Өөрчлөгдөх ганц арга нь олон үе дамжсан хувьсал.Амьдрал 2.0СоёлынБиеХувьслаарМэдлэг, чадварӨөрөө сурнаБие нь хувьслаар заяадаг ч хэл, мэдлэг, ур чадвараа хүн өөрөө сурч эзэмшдэг.Амьдрал 3.0ТехнологийнБиеӨөрөө бүтээнэМэдлэг, чадварӨөрөө сурнаБиеэ ч, оюун ухаанаа ч өөрөө зохион бүтээнэ. Одоогоор ийм амьдрал байхгүй.",
-    "sha256": "5cad325209343ff9dddb5e3439acc8109e7bc43b377b07f1601c07775acebe9f"
+    "text": "Амьдрал 1.0ХувьсалБие, мэдлэг нь хувьслаар өөрчлөгдөнө.Амьдрал 2.0СуралцахБие нь удамшина. Мэдлэгээ өөрөө сурна.Амьдрал 3.0БүтээхБиеэ ч, оюун ухаанаа ч өөрөө бүтээнэ.",
+    "sha256": "d64cfca3e7983dd4b42e7a91ac5643580d5d82fd6550a5dbb22e517c522272f6"
   },
   {
     "id": "why2",
@@ -292,43 +278,21 @@
     "title": "Суралцах чадвар яагаад чухал вэ?",
     "subtitle": "",
     "body": [
-      "ДНХ-д хадгалагддаг мэдээлэл",
-      "Тархины синапсуудад хадгалагддаг мэдээлэл",
-      "Шинэ зан төлөв гарахын тулд олон мянган үе солигдох хэрэгтэй.",
-      "Бид шинэ нөхцөлд хурдан дасаж, насан туршдаа суралцдаг.",
-      "Хэл, ном, сургууль, интернэтээр дараагийн үедээ өвлүүлдэг.",
-      "Тархины хэмжээ, наслалтаа бид сонгож чадахгүй. Амьдрал 3.0-д ийм хязгаар байхгүй."
+      "ДНХ-д удамшсан мэдээлэл хадгалагдана.",
+      "Мэдлэгээ насан туршдаа сурч, бусдад дамжуулна."
     ],
     "list": [],
     "quote": "",
     "notes": "ДНХ ≈ 1 ГБ, синапс ≈ 100 ТБ. Мэдлэгийн ихэнхийг төрсний дараа сурсан. Бактери ингэж чадахгүй. Мэдлэгээ хэл, номоор дамжуулдаг. Гэхдээ тархи, наслалт хязгаартай, Амьдрал 3.0-д ийм хязгаар байхгүй.",
-    "html": "<div class=\"why2\"><div class=\"header\"><div class=\"kicker-wrapper\"><div class=\"kicker-pill\"><span class=\"kicker-diamond\">◆</span><span class=\"kicker-label\">1-р бүлэг</span></div></div><div><h2 class=\"title\">Суралцах чадвар яагаад чухал вэ?</h2></div></div><div class=\"why2-grid\"><div class=\"stats\"><div class=\"stat\"><span class=\"label\">Төрөхөөсөө авч ирдэг</span><div class=\"stat-n\">≈ 1 ГБ</div><p>ДНХ-д хадгалагддаг мэдээлэл</p><div class=\"bar\"><i></i></div></div><div class=\"stat\"><span class=\"label\">Амьдралынхаа туршид сурдаг</span><div class=\"stat-n\">≈ 100 ТБ</div><p>Тархины синапсуудад хадгалагддаг мэдээлэл</p><div class=\"bar\"><i></i></div></div><div class=\"stat-note\">Бидний мэддэг зүйлсийн ихэнхийг төрснийхөө дараа сурсан гэсэн үг.</div></div><div class=\"numlist\"><div class=\"num-item\"><b>1</b><div><h3>Бактери сурч чаддаггүй</h3><p>Шинэ зан төлөв гарахын тулд олон мянган үе солигдох хэрэгтэй.</p></div></div><div class=\"num-item\"><b>2</b><div><h3>Хүн хэлгүй төрөөд хэл сурдаг</h3><p>Бид шинэ нөхцөлд хурдан дасаж, насан туршдаа суралцдаг.</p></div></div><div class=\"num-item\"><b>3</b><div><h3>Мэдлэгээ дамжуулдаг</h3><p>Хэл, ном, сургууль, интернэтээр дараагийн үедээ өвлүүлдэг.</p></div></div><div class=\"num-item\"><b>4</b><div><h3>Гэхдээ бие хязгаартай</h3><p>Тархины хэмжээ, наслалтаа бид сонгож чадахгүй. Амьдрал 3.0-д ийм хязгаар байхгүй.</p></div></div></div></div></div>",
+    "html": "<div class=\"ch1-minimal ch1-learning\"><div class=\"ch1-pair-head\"><h2 class=\"ch1-pair-keyword\">Удамшил</h2><h2 class=\"ch1-pair-keyword\">Суралцах</h2></div><svg class=\"ch1-wide-diagram\" viewBox=\"0 0 1640 640\" role=\"img\" aria-label=\"ДНХ нь удамшлын мэдээллийг, тархи болон нээлттэй ном нь амьдралын турш суралцаж олж авах мэдлэгийг төлөөлнө.\"><circle cx=\"420\" cy=\"320\" r=\"218\" fill=\"#f3f5fa\"></circle><circle cx=\"1210\" cy=\"292\" r=\"210\" fill=\"#f3f5fa\"></circle><g transform=\"translate(420 320)\"><g fill=\"none\" stroke=\"#c1cfee\" stroke-width=\"6\" stroke-linecap=\"round\"><path d=\"M-68-170H68M-47-150H47M-47-90H47M-70-60H70M-47-30H47M-47 30H47M-70 60H70M-47 90H47M-47 150H47M-68 170H68\"></path></g><path d=\"M-70-180C-70-120 70-120 70-60S-70 0-70 60S70 120 70 180\" fill=\"none\" stroke=\"#13296b\" stroke-width=\"11\" stroke-linecap=\"round\"></path><path d=\"M70-180C70-120-70-120-70-60S70 0 70 60S-70 120-70 180\" fill=\"none\" stroke=\"#2c55c8\" stroke-width=\"11\" stroke-linecap=\"round\"></path><g fill=\"#fff\" stroke-width=\"5\"><circle cx=\"-70\" cy=\"-180\" r=\"10\" stroke=\"#13296b\"></circle><circle cx=\"70\" cy=\"-180\" r=\"10\" stroke=\"#2c55c8\"></circle><circle cx=\"70\" cy=\"180\" r=\"10\" stroke=\"#13296b\"></circle><circle cx=\"-70\" cy=\"180\" r=\"10\" stroke=\"#2c55c8\"></circle></g></g><path d=\"M718 320H906M886 300L906 320L886 340\" fill=\"none\" stroke=\"#c1cfee\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path><g transform=\"translate(1210 272)\"><g fill=\"#fff\" stroke=\"#13296b\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M0-112C-22-141-66-137-80-104C-117-108-143-77-130-43C-160-19-151 20-122 32C-132 69-108 98-75 94C-60 125-21 123 0 99Z\"></path><path d=\"M0-112C22-141 66-137 80-104C117-108 143-77 130-43C160-19 151 20 122 32C132 69 108 98 75 94C60 125 21 123 0 99Z\"></path></g><g fill=\"none\" stroke=\"#2c55c8\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M-80-103C-84-79-65-65-45-69M-130-42C-102-56-78-37-78-18M-122 32C-101 10-72 15-62 35M-75 94C-84 67-66 50-43 55\"></path><path d=\"M80-103C84-79 65-65 45-69M130-42C102-56 78-37 78-18M122 32C101 10 72 15 62 35M75 94C84 67 66 50 43 55\"></path><path d=\"M-43-37L-20-7L-43 24M43-37L20-7L43 24\"></path></g><g fill=\"#2c55c8\"><circle cx=\"-43\" cy=\"-37\" r=\"7\"></circle><circle cx=\"-43\" cy=\"24\" r=\"7\"></circle><circle cx=\"43\" cy=\"-37\" r=\"7\"></circle><circle cx=\"43\" cy=\"24\" r=\"7\"></circle></g></g><path d=\"M1210 444V470\" stroke=\"#c1cfee\" stroke-width=\"4\" stroke-linecap=\"round\"></path><g fill=\"#fff\" stroke=\"#13296b\" stroke-width=\"4\" stroke-linejoin=\"round\"><path d=\"M1210 490C1182 471 1139 468 1109 480V572C1143 559 1182 561 1210 579Z\"></path><path d=\"M1210 490C1238 471 1281 468 1311 480V572C1277 559 1238 561 1210 579Z\"></path></g><g fill=\"none\" stroke=\"#c1cfee\" stroke-width=\"4\" stroke-linecap=\"round\"><path d=\"M1133 504C1152 501 1170 504 1187 512M1133 526C1152 523 1170 526 1187 534M1233 512C1250 504 1268 501 1287 504M1233 534C1250 526 1268 523 1287 526\"></path></g></svg><div class=\"ch1-learning-captions\"><p class=\"ch1-support\">ДНХ-д удамшсан мэдээлэл хадгалагдана.</p><p class=\"ch1-support\">Мэдлэгээ насан туршдаа сурч, бусдад дамжуулна.</p></div></div>",
     "textNodes": [
-      "◆",
-      "1-р бүлэг",
-      "Суралцах чадвар яагаад чухал вэ?",
-      "Төрөхөөсөө авч ирдэг",
-      "≈ 1 ГБ",
-      "ДНХ-д хадгалагддаг мэдээлэл",
-      "Амьдралынхаа туршид сурдаг",
-      "≈ 100 ТБ",
-      "Тархины синапсуудад хадгалагддаг мэдээлэл",
-      "Бидний мэддэг зүйлсийн ихэнхийг төрснийхөө дараа сурсан гэсэн үг.",
-      "1",
-      "Бактери сурч чаддаггүй",
-      "Шинэ зан төлөв гарахын тулд олон мянган үе солигдох хэрэгтэй.",
-      "2",
-      "Хүн хэлгүй төрөөд хэл сурдаг",
-      "Бид шинэ нөхцөлд хурдан дасаж, насан туршдаа суралцдаг.",
-      "3",
-      "Мэдлэгээ дамжуулдаг",
-      "Хэл, ном, сургууль, интернэтээр дараагийн үедээ өвлүүлдэг.",
-      "4",
-      "Гэхдээ бие хязгаартай",
-      "Тархины хэмжээ, наслалтаа бид сонгож чадахгүй. Амьдрал 3.0-д ийм хязгаар байхгүй."
+      "Удамшил",
+      "Суралцах",
+      "ДНХ-д удамшсан мэдээлэл хадгалагдана.",
+      "Мэдлэгээ насан туршдаа сурч, бусдад дамжуулна."
     ],
-    "text": "◆1-р бүлэгСуралцах чадвар яагаад чухал вэ?Төрөхөөсөө авч ирдэг≈ 1 ГБДНХ-д хадгалагддаг мэдээлэлАмьдралынхаа туршид сурдаг≈ 100 ТБТархины синапсуудад хадгалагддаг мэдээлэлБидний мэддэг зүйлсийн ихэнхийг төрснийхөө дараа сурсан гэсэн үг.1Бактери сурч чаддаггүйШинэ зан төлөв гарахын тулд олон мянган үе солигдох хэрэгтэй.2Хүн хэлгүй төрөөд хэл сурдагБид шинэ нөхцөлд хурдан дасаж, насан туршдаа суралцдаг.3Мэдлэгээ дамжуулдагХэл, ном, сургууль, интернэтээр дараагийн үедээ өвлүүлдэг.4Гэхдээ бие хязгаартайТархины хэмжээ, наслалтаа бид сонгож чадахгүй. Амьдрал 3.0-д ийм хязгаар байхгүй.",
-    "sha256": "47b9f09069ec03fe88da268d59afb0c04cc054726a55a24fcd473809c0e17d91"
+    "text": "УдамшилСуралцахДНХ-д удамшсан мэдээлэл хадгалагдана.Мэдлэгээ насан туршдаа сурч, бусдад дамжуулна.",
+    "sha256": "b5090bfa8d5798aa5bfa56abd3504420fe0e99d37bc426949491457b125bbab6"
   },
   {
     "id": "camps",
@@ -338,39 +302,36 @@
     "title": "AGI-ийн талаарх гурван байр суурь",
     "subtitle": "",
     "body": [
-      "AGI удахгүй бий болно, үр дүн нь ч сайн байна гэж үздэг.",
-      "Хүн шиг AI хэдэн зуун жилийн дараа ч гарахгүй, одоо санаа зовох хэрэггүй гэдэг.",
-      "Энэ зуунд бий болж магадгүй. Сайн үр дүн өөрөө ирэхгүй тул аюулгүй байдлыг одооноос судлах хэрэгтэй гэдэг."
+      "Larry Page",
+      "Ray Kurzweil · Hans Moravec",
+      "AGI удахгүй бий болж, сайн үр дүн авчирна.",
+      "Andrew Ng",
+      "Rodney Brooks",
+      "Хүн шиг AI ойрын үед бий болохгүй.",
+      "Stewart Russell",
+      "Макс Тегмарк",
+      "Аюулгүй AI-д одооноос бэлдэх хэрэгтэй."
     ],
     "list": [],
     "quote": "",
     "notes": "AGI хэзээ, сайн уу муу юу? Утопистууд: удахгүй, сайн (Пейж). Скептикүүд: олон зуун жил, санаа зовох хэрэггүй (Нг: Ангараг дээрх хүн амын хэт өсөлт). Ашигтай AI: энэ зуунд байж магадгүй, одооноос бэлдэх ёстой (Рассел, Тегмарк).",
-    "html": "<div class=\"camps\"><div class=\"header\"><div class=\"kicker-wrapper\"><div class=\"kicker-pill\"><span class=\"kicker-diamond\">◆</span><span class=\"kicker-label\">1-р бүлэг</span></div></div><div><h2 class=\"title\">AGI-ийн талаарх гурван байр суурь</h2></div></div><div class=\"camps-grid\"><div><svg viewBox=\"0 0 640 520\" width=\"640\" height=\"520\" class=\"campmap\"><rect x=\"60\" y=\"20\" width=\"560\" height=\"440\" fill=\"#f6f7fa\"></rect><line x1=\"60\" y1=\"240\" x2=\"620\" y2=\"240\" stroke=\"#d5d9e2\" stroke-dasharray=\"4 6\"></line><line x1=\"340\" y1=\"20\" x2=\"340\" y2=\"460\" stroke=\"#d5d9e2\" stroke-dasharray=\"4 6\"></line><text x=\"62\" y=\"490\" class=\"axis-t\">Удахгүй</text><text x=\"618\" y=\"490\" text-anchor=\"end\" class=\"axis-t\">Хэзээ ч үгүй</text><text x=\"340\" y=\"515\" text-anchor=\"middle\" class=\"axis-h\">AGI хэзээ бий болох вэ? →</text><text x=\"36\" y=\"24\" class=\"axis-t\" transform=\"rotate(-90 36 24)\" text-anchor=\"end\">Сайн</text><text x=\"36\" y=\"460\" class=\"axis-t\" transform=\"rotate(-90 36 460)\">Муу</text><g style=\"transform-origin:190px 110px;transform-box:view-box\"><circle cx=\"190\" cy=\"110\" r=\"72\" fill=\"#13296b\" fill-opacity=\".1\" stroke=\"#13296b\" stroke-width=\"2\"></circle><text x=\"190\" y=\"117\" text-anchor=\"middle\" class=\"bubble-t\" fill=\"#13296b\">Утопистууд</text></g><g style=\"transform-origin:235px 262px;transform-box:view-box\"><circle cx=\"235\" cy=\"262\" r=\"84\" fill=\"#2c55c8\" fill-opacity=\".1\" stroke=\"#2c55c8\" stroke-width=\"2\"></circle><text x=\"235\" y=\"269\" text-anchor=\"middle\" class=\"bubble-t\" fill=\"#2c55c8\">Ашигтай AI</text></g><g style=\"transform-origin:500px 175px;transform-box:view-box\"><circle cx=\"500\" cy=\"175\" r=\"80\" fill=\"#6b7896\" fill-opacity=\".1\" stroke=\"#6b7896\" stroke-width=\"2\"></circle><text x=\"500\" y=\"182\" text-anchor=\"middle\" class=\"bubble-t\" fill=\"#6b7896\">Скептикүүд</text></g><g style=\"transform-origin:180px 392px;transform-box:view-box\"><circle cx=\"180\" cy=\"392\" r=\"64\" fill=\"#b4233c\" fill-opacity=\".1\" stroke=\"#b4233c\" stroke-width=\"2\"></circle><text x=\"180\" y=\"399\" text-anchor=\"middle\" class=\"bubble-t\" fill=\"#b4233c\">Луддитууд</text></g></svg></div><div class=\"camp-list\"><div class=\"camp camp-u\"><img src=\"/img/larry-page.jpg\" alt=\"Ларри Пейж, Рэй Курцвейл, Ханс Моравек\"/><div><h3>Дижитал утопистууд</h3><p>AGI удахгүй бий болно, үр дүн нь ч сайн байна гэж үздэг.</p><small>Ларри Пейж, Рэй Курцвейл, Ханс Моравек</small></div></div><div class=\"camp camp-s\"><img src=\"/img/andrew-ng.jpg\" alt=\"Эндрю Нг, Родни Брукс\"/><div><h3>Техно-скептикүүд</h3><p>Хүн шиг AI хэдэн зуун жилийн дараа ч гарахгүй, одоо санаа зовох хэрэггүй гэдэг.</p><small>Эндрю Нг, Родни Брукс</small></div></div><div class=\"camp camp-b\"><img src=\"/img/stuart-russell.jpg\" alt=\"Стюарт Рассел, Макс Тегмарк\"/><div><h3>Ашигтай AI хөдөлгөөн</h3><p>Энэ зуунд бий болж магадгүй. Сайн үр дүн өөрөө ирэхгүй тул аюулгүй байдлыг одооноос судлах хэрэгтэй гэдэг.</p><small>Стюарт Рассел, Макс Тегмарк</small></div></div></div></div></div>",
+    "html": "<div class=\"ch1-minimal ch1-camps\"><div class=\"ch1-three-grid\"><article class=\"ch1-camp-item\"><h2 class=\"ch1-keyword\">Утопистууд</h2><figure class=\"ch1-camp-portrait\"><img class=\"ch1-camp-photo\" src=\"/img/larry-page.jpg\" alt=\"Larry Page\" style=\"object-position:50% 25%\" draggable=\"false\"/><svg class=\"ch1-camp-symbol\" viewBox=\"0 0 88 88\" aria-hidden=\"true\"><circle cx=\"44\" cy=\"44\" r=\"41\" fill=\"#fff\" stroke=\"#e3e6ed\" stroke-width=\"2\"></circle><g fill=\"none\" stroke=\"#2c55c8\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M44 20L50 38L68 44L50 50L44 68L38 50L20 44L38 38Z\"></path><path d=\"M62 22V30M58 26H66\"></path></g></svg></figure><div class=\"ch1-camp-caption\"><p class=\"ch1-person-name\">Larry Page</p><p class=\"ch1-other-names\">Ray Kurzweil · Hans Moravec</p><p class=\"ch1-support\">AGI удахгүй бий болж, сайн үр дүн авчирна.</p></div></article><article class=\"ch1-camp-item\"><h2 class=\"ch1-keyword\">Скептикүүд</h2><figure class=\"ch1-camp-portrait\"><img class=\"ch1-camp-photo\" src=\"/img/andrew-ng.jpg\" alt=\"Andrew Ng\" style=\"object-position:50% 25%\" draggable=\"false\"/><svg class=\"ch1-camp-symbol\" viewBox=\"0 0 88 88\" aria-hidden=\"true\"><circle cx=\"44\" cy=\"44\" r=\"41\" fill=\"#fff\" stroke=\"#e3e6ed\" stroke-width=\"2\"></circle><g fill=\"none\" stroke=\"#2c55c8\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"44\" cy=\"44\" r=\"23\"></circle><path d=\"M44 28V44L55 51\"></path></g></svg></figure><div class=\"ch1-camp-caption\"><p class=\"ch1-person-name\">Andrew Ng</p><p class=\"ch1-other-names\">Rodney Brooks</p><p class=\"ch1-support\">Хүн шиг AI ойрын үед бий болохгүй.</p></div></article><article class=\"ch1-camp-item\"><h2 class=\"ch1-keyword\">Ашигтай AI</h2><figure class=\"ch1-camp-portrait\"><img class=\"ch1-camp-photo\" src=\"/img/stuart-russell.jpg\" alt=\"Stewart Russell\" style=\"object-position:50% 25%\" draggable=\"false\"/><svg class=\"ch1-camp-symbol\" viewBox=\"0 0 88 88\" aria-hidden=\"true\"><circle cx=\"44\" cy=\"44\" r=\"41\" fill=\"#fff\" stroke=\"#e3e6ed\" stroke-width=\"2\"></circle><g fill=\"none\" stroke=\"#2c55c8\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M44 20L65 28V44C65 58 44 69 44 69S23 58 23 44V28Z\"></path><path d=\"M33 44L41 52L56 36\"></path></g></svg></figure><div class=\"ch1-camp-caption\"><p class=\"ch1-person-name\">Stewart Russell</p><p class=\"ch1-other-names\">Макс Тегмарк</p><p class=\"ch1-support\">Аюулгүй AI-д одооноос бэлдэх хэрэгтэй.</p></div></article></div></div>",
     "textNodes": [
-      "◆",
-      "1-р бүлэг",
-      "AGI-ийн талаарх гурван байр суурь",
-      "Удахгүй",
-      "Хэзээ ч үгүй",
-      "AGI хэзээ бий болох вэ? →",
-      "Сайн",
-      "Муу",
       "Утопистууд",
-      "Ашигтай AI",
+      "Larry Page",
+      "Ray Kurzweil · Hans Moravec",
+      "AGI удахгүй бий болж, сайн үр дүн авчирна.",
       "Скептикүүд",
-      "Луддитууд",
-      "Дижитал утопистууд",
-      "AGI удахгүй бий болно, үр дүн нь ч сайн байна гэж үздэг.",
-      "Ларри Пейж, Рэй Курцвейл, Ханс Моравек",
-      "Техно-скептикүүд",
-      "Хүн шиг AI хэдэн зуун жилийн дараа ч гарахгүй, одоо санаа зовох хэрэггүй гэдэг.",
-      "Эндрю Нг, Родни Брукс",
-      "Ашигтай AI хөдөлгөөн",
-      "Энэ зуунд бий болж магадгүй. Сайн үр дүн өөрөө ирэхгүй тул аюулгүй байдлыг одооноос судлах хэрэгтэй гэдэг.",
-      "Стюарт Рассел, Макс Тегмарк"
+      "Andrew Ng",
+      "Rodney Brooks",
+      "Хүн шиг AI ойрын үед бий болохгүй.",
+      "Ашигтай AI",
+      "Stewart Russell",
+      "Макс Тегмарк",
+      "Аюулгүй AI-д одооноос бэлдэх хэрэгтэй."
     ],
-    "text": "◆1-р бүлэгAGI-ийн талаарх гурван байр суурьУдахгүйХэзээ ч үгүйAGI хэзээ бий болох вэ? →СайнМууУтопистуудАшигтай AIСкептикүүдЛуддитуудДижитал утопистуудAGI удахгүй бий болно, үр дүн нь ч сайн байна гэж үздэг.Ларри Пейж, Рэй Курцвейл, Ханс МоравекТехно-скептикүүдХүн шиг AI хэдэн зуун жилийн дараа ч гарахгүй, одоо санаа зовох хэрэггүй гэдэг.Эндрю Нг, Родни БруксАшигтай AI хөдөлгөөнЭнэ зуунд бий болж магадгүй. Сайн үр дүн өөрөө ирэхгүй тул аюулгүй байдлыг одооноос судлах хэрэгтэй гэдэг.Стюарт Рассел, Макс Тегмарк",
-    "sha256": "2143e0e62f818c39742268ec0146b06874342de8374f11f5fb3e5a9441a99b45"
+    "text": "УтопистуудLarry PageRay Kurzweil · Hans MoravecAGI удахгүй бий болж, сайн үр дүн авчирна.СкептикүүдAndrew NgRodney BrooksХүн шиг AI ойрын үед бий болохгүй.Ашигтай AIStewart RussellМакс ТегмаркАюулгүй AI-д одооноос бэлдэх хэрэгтэй.",
+    "sha256": "f11634e402e5fbf136d515a52cf808442c0a875fe890118883bf8c3a5fd4d74d"
   },
   {
     "id": "napa",
@@ -379,36 +340,28 @@
     "type": "Quote",
     "title": "Пейж, Маск хоёрын маргаан",
     "subtitle": "",
-    "body": [],
+    "body": [
+      "Larry PageДижитал амьдрал — хувьслын дараагийн шат.",
+      "Larry Page",
+      "Дижитал амьдрал — хувьслын дараагийн шат.",
+      "Илон МаскХүн төрөлхтний эрсдэлийг урьдчилж тооцох ёстой.",
+      "Илон Маск",
+      "Хүн төрөлхтний эрсдэлийг урьдчилж тооцох ёстой."
+    ],
     "list": [],
     "quote": "",
     "notes": "2015 онд Маскийн төрсөн өдөр дээр Пейж, Маск хоёр маргалдсан. Пейж Маскыг speciesist гэж нэрлэсэн. Ийм маргаан нэг үгийг өөр ойлгосноос болдог тул Тегмарк нэр томьёогоо эхлээд тодорхойлдог.",
-    "html": "<div class=\"napa\"><div class=\"header\"><div class=\"kicker-wrapper\"><div class=\"kicker-pill\"><span class=\"kicker-diamond\">◆</span><span class=\"kicker-label\">1-р бүлэг · 2015 он, Калифорни</span></div></div><div><h2 class=\"title\">Пейж, Маск хоёрын маргаан</h2></div></div><div class=\"napa-grid\"><div class=\"debate\"><div class=\"debate-people\"><div class=\"person\"><figure class=\"photo person-photo\"><div class=\"photo-frame photo-hover\"><img src=\"/img/larry-page.jpg\" alt=\"Ларри Пейж\" style=\"object-fit:cover;object-position:50% 25%\" draggable=\"false\"/></div></figure><div class=\"person-q\"><b>Ларри Пейж</b>Дижитал амьдрал бол хувьслын дараагийн шат. Түүнийг хязгаарлах шаардлагагүй.</div></div><div class=\"person\"><figure class=\"photo person-photo\"><div class=\"photo-frame photo-hover\"><img src=\"/img/elon-musk.jpg\" alt=\"Илон Маск\" style=\"object-fit:cover;object-position:50% 25%\" draggable=\"false\"/></div></figure><div class=\"person-q\"><b>Илон Маск</b>Тэгвэл хүн төрөлхтөн яах вэ? Эрсдэлийг нь урьдчилж бодох ёстой.</div></div></div><div class=\"debate-end\">Маргааны үеэр Пейж Маскыг speciesist буюу зөвхөн хүн төрөлхтнийг илүүд үздэг хүн гэж нэрлэсэн гэдэг.</div></div><div class=\"terms\"><div class=\"terms-head\">Ийм маргаан ихэнхдээ хүмүүс нэг үгийг өөр өөрөөр ойлгосноос үүсдэг. Тиймээс Тегмарк нэр томьёогоо эхлээд тодорхойлдог.</div><div class=\"terms-list\"><div class=\"term\"><b>Оюун ухаан</b><span>Нарийн төвөгтэй зорилгод хүрэх чадвар</span></div><div class=\"term\"><b>Нарийн AI</b><span>Ганц ажилд сайн, жишээ нь шатар тоглох</span></div><div class=\"term\"><b>AGI</b><span>Бараг бүх ажлыг хүн шиг хийж чадах AI</span></div><div class=\"term\"><b>Супер оюун ухаан</b><span>Хүнээс хамаагүй илүү ухаантай AI</span></div><div class=\"term\"><b>Найрсаг AI</b><span>Зорилго нь хүний зорилготой нийцдэг AI</span></div><div class=\"term\"><b>Ухамсар</b><span>Ямар нэг юмыг өөрөө мэдэрч, туулах</span></div></div></div></div></div>",
+    "html": "<div class=\"ch1-minimal ch1-debate\"><div class=\"ch1-pair-head\"><h2 class=\"ch1-pair-keyword\">Боломж</h2><h2 class=\"ch1-pair-keyword\">Эрсдэл</h2></div><div class=\"ch1-debate-grid\"><figure class=\"ch1-debate-person\"><img class=\"ch1-debate-photo\" src=\"/img/larry-page.jpg\" alt=\"Larry Page\" style=\"object-position:50% 25%\" draggable=\"false\"/><figcaption class=\"ch1-debate-caption\"><p class=\"ch1-person-name\">Larry Page</p><p class=\"ch1-support\">Дижитал амьдрал — хувьслын дараагийн шат.</p></figcaption></figure><svg class=\"ch1-debate-bridge\" viewBox=\"0 0 200 480\" role=\"img\" aria-label=\"Хиймэл оюуны боломж ба эрсдэлийг өөр өөрөөр үнэлсэн хоёр байр суурь\"><path d=\"M12 240H49M151 240H188\" fill=\"none\" stroke=\"#c8d3eb\" stroke-width=\"3\"></path><circle cx=\"100\" cy=\"240\" r=\"51\" fill=\"#f3f5fa\"></circle><g fill=\"none\" stroke=\"#9aabd3\" stroke-width=\"2.5\" stroke-linecap=\"round\"><path d=\"M62 225H73M62 240H73M62 255H73M127 225H138M127 240H138M127 255H138\"></path><path d=\"M85 202V213M100 202V213M115 202V213M85 267V278M100 267V278M115 267V278\"></path></g><rect x=\"73\" y=\"213\" width=\"54\" height=\"54\" rx=\"11\" fill=\"#fff\" stroke=\"#13296b\" stroke-width=\"3\"></rect><path d=\"M88 229L112 251M88 251L112 229M88 229V251M112 229V251\" fill=\"none\" stroke=\"#2c55c8\" stroke-width=\"2\"></path><g fill=\"#13296b\"><circle cx=\"88\" cy=\"229\" r=\"3.5\"></circle><circle cx=\"112\" cy=\"229\" r=\"3.5\"></circle><circle cx=\"88\" cy=\"251\" r=\"3.5\"></circle><circle cx=\"112\" cy=\"251\" r=\"3.5\"></circle></g><path d=\"M100 174V125M100 306V355\" fill=\"none\" stroke=\"#e3e6ed\" stroke-width=\"2\"></path><circle cx=\"100\" cy=\"116\" r=\"5\" fill=\"#2c55c8\"></circle><circle cx=\"100\" cy=\"364\" r=\"5\" fill=\"#b64d4d\"></circle></svg><figure class=\"ch1-debate-person\"><img class=\"ch1-debate-photo\" src=\"/img/elon-musk.jpg\" alt=\"Илон Маск\" style=\"object-position:50% 25%\" draggable=\"false\"/><figcaption class=\"ch1-debate-caption\"><p class=\"ch1-person-name\">Илон Маск</p><p class=\"ch1-support\">Хүн төрөлхтний эрсдэлийг урьдчилж тооцох ёстой.</p></figcaption></figure></div></div>",
     "textNodes": [
-      "◆",
-      "1-р бүлэг · 2015 он, Калифорни",
-      "Пейж, Маск хоёрын маргаан",
-      "Ларри Пейж",
-      "Дижитал амьдрал бол хувьслын дараагийн шат. Түүнийг хязгаарлах шаардлагагүй.",
+      "Боломж",
+      "Эрсдэл",
+      "Larry Page",
+      "Дижитал амьдрал — хувьслын дараагийн шат.",
       "Илон Маск",
-      "Тэгвэл хүн төрөлхтөн яах вэ? Эрсдэлийг нь урьдчилж бодох ёстой.",
-      "Маргааны үеэр Пейж Маскыг speciesist буюу зөвхөн хүн төрөлхтнийг илүүд үздэг хүн гэж нэрлэсэн гэдэг.",
-      "Ийм маргаан ихэнхдээ хүмүүс нэг үгийг өөр өөрөөр ойлгосноос үүсдэг. Тиймээс Тегмарк нэр томьёогоо эхлээд тодорхойлдог.",
-      "Оюун ухаан",
-      "Нарийн төвөгтэй зорилгод хүрэх чадвар",
-      "Нарийн AI",
-      "Ганц ажилд сайн, жишээ нь шатар тоглох",
-      "AGI",
-      "Бараг бүх ажлыг хүн шиг хийж чадах AI",
-      "Супер оюун ухаан",
-      "Хүнээс хамаагүй илүү ухаантай AI",
-      "Найрсаг AI",
-      "Зорилго нь хүний зорилготой нийцдэг AI",
-      "Ухамсар",
-      "Ямар нэг юмыг өөрөө мэдэрч, туулах"
+      "Хүн төрөлхтний эрсдэлийг урьдчилж тооцох ёстой."
     ],
-    "text": "◆1-р бүлэг · 2015 он, КалифорниПейж, Маск хоёрын маргаанЛарри ПейжДижитал амьдрал бол хувьслын дараагийн шат. Түүнийг хязгаарлах шаардлагагүй.Илон МаскТэгвэл хүн төрөлхтөн яах вэ? Эрсдэлийг нь урьдчилж бодох ёстой.Маргааны үеэр Пейж Маскыг speciesist буюу зөвхөн хүн төрөлхтнийг илүүд үздэг хүн гэж нэрлэсэн гэдэг.Ийм маргаан ихэнхдээ хүмүүс нэг үгийг өөр өөрөөр ойлгосноос үүсдэг. Тиймээс Тегмарк нэр томьёогоо эхлээд тодорхойлдог.Оюун ухаанНарийн төвөгтэй зорилгод хүрэх чадварНарийн AIГанц ажилд сайн, жишээ нь шатар тоглохAGIБараг бүх ажлыг хүн шиг хийж чадах AIСупер оюун ухаанХүнээс хамаагүй илүү ухаантай AIНайрсаг AIЗорилго нь хүний зорилготой нийцдэг AIУхамсарЯмар нэг юмыг өөрөө мэдэрч, туулах",
-    "sha256": "5dc98f552e686b7754de26e1f2bce371931235e114c895d1ee54fd79b7374bb3"
+    "text": "БоломжЭрсдэлLarry PageДижитал амьдрал — хувьслын дараагийн шат.Илон МаскХүн төрөлхтний эрсдэлийг урьдчилж тооцох ёстой.",
+    "sha256": "fd992bd089a5e73dfed2eba9c55500d0775a1b1c8f2084fafde348b7b3636542"
   },
   {
     "id": "myths1",
@@ -418,39 +371,24 @@
     "title": "AI-ийн тухай юуг андуурдаг вэ?",
     "subtitle": "",
     "body": [
-      "Супер AI хэзээ бий болохыг мэднэ.",
-      "Таамаг бол баталгаа биш.",
-      "Технологиос айдаг хүмүүс л санаа зовдог.",
-      "Эрсдэлийг тооцох нь судалгааны нэг хэсэг.",
-      "AI муу санаатай болбол л аюултай.",
-      "Чадвартай байх нь аюулгүй гэсэн үг биш.",
-      "AI юу чадах вэ? Тэр чадварыг ямар зорилгод ашиглах вэ?"
+      "Супер AI хэзээ бий болох нь тодорхойгүй.",
+      "Судлаачид ч AI-ийн эрсдэлд санаа зовдог.",
+      "Аюул нь муу санаанаас бус, зөрсөн зорилгоос үүсэж болно."
     ],
     "list": [],
     "quote": "",
     "notes": "Хэзээ бий болохыг хэн ч мэдэхгүй, 2015 оны санал асуулгаар медиан 2055. Тэргүүлэх судлаачид өөрсдөө санаа зовдог. Хамгийн чухал нь гурав дахь: аюул нь муу санаа биш, зөрсөн зорилго.",
-    "html": "<div class=\"myths-slide\"><div class=\"header\"><div class=\"kicker-wrapper\"><div class=\"kicker-pill\"><span class=\"kicker-diamond\">◆</span><span class=\"kicker-label\">1-р бүлэг · Буруу ойлголтууд</span></div></div><div><h2 class=\"title\">AI-ийн тухай юуг андуурдаг вэ?</h2></div></div><div class=\"myth-grid\"><div class=\"myth-item\"><span class=\"myth-topic\">01 · Хугацаа</span><p class=\"myth-misconception\">Супер AI хэзээ бий болохыг мэднэ.</p><h3 class=\"myth-verdict\">Хугацаа нь тодорхойгүй.</h3><p class=\"myth-explanation\">Таамаг бол баталгаа биш.</p></div><div class=\"myth-item\"><span class=\"myth-topic\">02 · Эрсдэл</span><p class=\"myth-misconception\">Технологиос айдаг хүмүүс л санаа зовдог.</p><h3 class=\"myth-verdict\">Судлаачид ч санаа зовдог.</h3><p class=\"myth-explanation\">Эрсдэлийг тооцох нь судалгааны нэг хэсэг.</p></div><div class=\"myth-item\"><span class=\"myth-topic\">03 · Зорилго</span><p class=\"myth-misconception\">AI муу санаатай болбол л аюултай.</p><h3 class=\"myth-verdict\">Зорилго зөрөхөд л хор хүрч болно.</h3><p class=\"myth-explanation\">Чадвартай байх нь аюулгүй гэсэн үг биш.</p></div></div><div class=\"myth-takeaway\"><span>Гол асуулт</span><p>AI юу чадах вэ? Тэр чадварыг ямар зорилгод ашиглах вэ?</p></div></div>",
+    "html": "<div class=\"ch1-minimal ch1-myths\"><div class=\"ch1-three-grid\"><article class=\"ch1-concept\"><h2 class=\"ch1-keyword\">Хугацаа</h2><svg class=\"ch1-concept-diagram\" viewBox=\"0 0 440 470\" role=\"img\" aria-label=\"AI-ийн хөгжлийн яг хугацаа тодорхойгүйг нээлттэй, цэгэн хүрээтэй цагаар дүрсэлсэн.\"><circle cx=\"220\" cy=\"234\" r=\"174\" fill=\"#f3f5fa\"></circle><g fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M308 146A124 124 0 1 0 308 322\" stroke=\"#13296b\" stroke-width=\"6\"></path><path d=\"M308 146A124 124 0 0 1 308 322\" stroke=\"#c8d3eb\" stroke-width=\"6\" stroke-dasharray=\"4 15\"></path><path d=\"M220 131V146M117 234H132M220 337V322\" stroke=\"#c8d3eb\" stroke-width=\"5\"></path><path d=\"M220 167V234L269 267\" stroke=\"#2c55c8\" stroke-width=\"8\"></path><circle cx=\"220\" cy=\"234\" r=\"11\" fill=\"#13296b\" stroke=\"none\"></circle><circle cx=\"345\" cy=\"177\" r=\"5\" fill=\"#c8d3eb\" stroke=\"none\"></circle><circle cx=\"361\" cy=\"234\" r=\"5\" fill=\"#c8d3eb\" stroke=\"none\"></circle><circle cx=\"345\" cy=\"291\" r=\"5\" fill=\"#c8d3eb\" stroke=\"none\"></circle></g></svg><p class=\"ch1-support\">Супер AI хэзээ бий болох нь тодорхойгүй.</p></article><article class=\"ch1-concept\"><h2 class=\"ch1-keyword\">Эрсдэл</h2><svg class=\"ch1-concept-diagram\" viewBox=\"0 0 440 470\" role=\"img\" aria-label=\"Судлаачид ч AI-ийн эрсдэлийг судалж, аюулгүй байдлын талаар санаа тавьдаг.\"><circle cx=\"220\" cy=\"234\" r=\"174\" fill=\"#f3f5fa\"></circle><g stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M96 331V253C96 206 133 188 171 188C209 188 246 206 246 253V331Z\" fill=\"#dbe7ff\" stroke=\"#13296b\" stroke-width=\"5\"></path><path d=\"M171 197L149 244L171 265L193 244Z\" fill=\"#fff\" stroke=\"#13296b\" stroke-width=\"4\"></path><path d=\"M139 219L124 263L151 277M203 219L218 263L191 277M171 266V331\" fill=\"none\" stroke=\"#2c55c8\" stroke-width=\"4\"></path><path d=\"M130 124C130 76 212 76 212 124V151C212 206 130 206 130 151Z\" fill=\"#fff\" stroke=\"#13296b\" stroke-width=\"5\"></path><path d=\"M130 127C139 101 161 107 176 108C191 109 200 100 205 96\" fill=\"none\" stroke=\"#13296b\" stroke-width=\"5\"></path><g fill=\"none\" stroke=\"#2c55c8\" stroke-width=\"4\"><circle cx=\"151\" cy=\"143\" r=\"12\"></circle><circle cx=\"192\" cy=\"143\" r=\"12\"></circle><path d=\"M163 143H180M130 139H139M204 139H212\"></path></g><path d=\"M284 196L350 220V279C350 327 284 365 284 365S218 327 218 279V220Z\" fill=\"#fff\" stroke=\"#13296b\" stroke-width=\"5\"></path><path d=\"M284 220L329 237V277C329 308 284 339 284 339S239 308 239 277V237Z\" fill=\"#f3f5fa\"></path><path d=\"M263 280L279 296L309 260\" fill=\"none\" stroke=\"#2c55c8\" stroke-width=\"6\"></path></g></svg><p class=\"ch1-support\">Судлаачид ч AI-ийн эрсдэлд санаа зовдог.</p></article><article class=\"ch1-concept\"><h2 class=\"ch1-keyword\">Зорилго</h2><svg class=\"ch1-concept-diagram\" viewBox=\"0 0 440 470\" role=\"img\" aria-label=\"Зорилго зөрөхөд муу санаагүй систем ч хор хүргэж болохыг чиглэлээс хазайсан сумаар дүрсэлсэн.\"><circle cx=\"220\" cy=\"234\" r=\"174\" fill=\"#f3f5fa\"></circle><g fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"211\" cy=\"225\" r=\"111\" fill=\"#fff\" stroke=\"#13296b\" stroke-width=\"5\"></circle><circle cx=\"211\" cy=\"225\" r=\"72\" stroke=\"#c8d3eb\" stroke-width=\"5\"></circle><circle cx=\"211\" cy=\"225\" r=\"34\" stroke=\"#2c55c8\" stroke-width=\"5\"></circle><circle cx=\"211\" cy=\"225\" r=\"8\" fill=\"#2c55c8\" stroke=\"none\"></circle><path d=\"M80 366L170 276\" stroke=\"#2c55c8\" stroke-width=\"7\"></path><path d=\"M148 276H170V298\" stroke=\"#2c55c8\" stroke-width=\"6\"></path><path d=\"M166 280C214 332 285 345 353 314\" stroke=\"#b64d4d\" stroke-width=\"6\"></path><path d=\"M334 306L356 312L345 332\" stroke=\"#b64d4d\" stroke-width=\"5\"></path><path d=\"M233 203L281 155\" stroke=\"#c8d3eb\" stroke-width=\"4\" stroke-dasharray=\"4 9\"></path></g></svg><p class=\"ch1-support\">Аюул нь муу санаанаас бус, зөрсөн зорилгоос үүсэж болно.</p></article></div></div>",
     "textNodes": [
-      "◆",
-      "1-р бүлэг · Буруу ойлголтууд",
-      "AI-ийн тухай юуг андуурдаг вэ?",
-      "01 · Хугацаа",
-      "Супер AI хэзээ бий болохыг мэднэ.",
-      "Хугацаа нь тодорхойгүй.",
-      "Таамаг бол баталгаа биш.",
-      "02 · Эрсдэл",
-      "Технологиос айдаг хүмүүс л санаа зовдог.",
-      "Судлаачид ч санаа зовдог.",
-      "Эрсдэлийг тооцох нь судалгааны нэг хэсэг.",
-      "03 · Зорилго",
-      "AI муу санаатай болбол л аюултай.",
-      "Зорилго зөрөхөд л хор хүрч болно.",
-      "Чадвартай байх нь аюулгүй гэсэн үг биш.",
-      "Гол асуулт",
-      "AI юу чадах вэ? Тэр чадварыг ямар зорилгод ашиглах вэ?"
+      "Хугацаа",
+      "Супер AI хэзээ бий болох нь тодорхойгүй.",
+      "Эрсдэл",
+      "Судлаачид ч AI-ийн эрсдэлд санаа зовдог.",
+      "Зорилго",
+      "Аюул нь муу санаанаас бус, зөрсөн зорилгоос үүсэж болно."
     ],
-    "text": "◆1-р бүлэг · Буруу ойлголтуудAI-ийн тухай юуг андуурдаг вэ?01 · ХугацааСупер AI хэзээ бий болохыг мэднэ.Хугацаа нь тодорхойгүй.Таамаг бол баталгаа биш.02 · ЭрсдэлТехнологиос айдаг хүмүүс л санаа зовдог.Судлаачид ч санаа зовдог.Эрсдэлийг тооцох нь судалгааны нэг хэсэг.03 · ЗорилгоAI муу санаатай болбол л аюултай.Зорилго зөрөхөд л хор хүрч болно.Чадвартай байх нь аюулгүй гэсэн үг биш.Гол асуултAI юу чадах вэ? Тэр чадварыг ямар зорилгод ашиглах вэ?",
-    "sha256": "214d99dd5793e5defb086f7b4d0eef993f20cdc38550e3868d094a1bd23f4d3a"
+    "text": "ХугацааСупер AI хэзээ бий болох нь тодорхойгүй.ЭрсдэлСудлаачид ч AI-ийн эрсдэлд санаа зовдог.ЗорилгоАюул нь муу санаанаас бус, зөрсөн зорилгоос үүсэж болно.",
+    "sha256": "06594e8e6215a42ca708d7fe2c24c8f23d47c0e80c125385905b2d6381a1d80c"
   },
   {
     "id": "myths2",
@@ -460,33 +398,24 @@
     "title": "AI-д бие, сэтгэл хөдлөл хэрэгтэй юу?",
     "subtitle": "",
     "body": [
-      "Аюултай AI заавал робот байна.",
-      "AI хүнийг удирдаж чадахгүй.",
-      "Машин зорилготой байж чадахгүй.",
-      "Бид шоргоолжийг үзэн ядаагүй ч үүрийг нь сүйтгэж болно."
+      "AI-д роботын бие заавал хэрэггүй.",
+      "Давуу тал нь хүчнээс илүү оюун ухаан.",
+      "Зорилгоо биелүүлэхэд мэдрэмж заавал хэрэггүй."
     ],
     "list": [],
     "quote": "",
     "notes": "AI-д роботын бие заавал хэрэггүй. Хүн барыг хүчээр биш, арга хэрэгслээр хянадаг. Пуужин мэдрэмжгүй ч байгаа онилдог. Шоргоолжны жишээ: станц барихад үүр нь сүйдвэл хэн ч тэднийг үзэн ядаагүй ч хохирол учирна. Дараах гэрлэн дохионы кейстэй холбоно.",
-    "html": "<div class=\"myths-slide\"><div class=\"header\"><div class=\"kicker-wrapper\"><div class=\"kicker-pill\"><span class=\"kicker-diamond\">◆</span><span class=\"kicker-label\">1-р бүлэг · Буруу ойлголтууд</span></div></div><div><h2 class=\"title\">AI-д бие, сэтгэл хөдлөл хэрэгтэй юу?</h2></div></div><div class=\"myth-grid\"><div class=\"myth-item\"><span class=\"myth-topic\">01 · Бие</span><p class=\"myth-misconception\">Аюултай AI заавал робот байна.</p><h3 class=\"myth-verdict\">Программ ч нөлөө үзүүлж чадна.</h3></div><div class=\"myth-item\"><span class=\"myth-topic\">02 · Хяналт</span><p class=\"myth-misconception\">AI хүнийг удирдаж чадахгүй.</p><h3 class=\"myth-verdict\">Давуу тал нь оюун ухаан.</h3></div><div class=\"myth-item\"><span class=\"myth-topic\">03 · Даалгавар</span><p class=\"myth-misconception\">Машин зорилготой байж чадахгүй.</p><h3 class=\"myth-verdict\">Зорилготой ажиллахад мэдрэмж хэрэггүй.</h3></div></div><div class=\"myth-takeaway\"><span>Шоргоолжны жишээ</span><p>Бид шоргоолжийг үзэн ядаагүй ч үүрийг нь сүйтгэж болно.</p></div></div>",
+    "html": "<div class=\"ch1-minimal ch1-myths\"><div class=\"ch1-three-grid\"><article class=\"ch1-concept\"><h2 class=\"ch1-keyword\">Программ</h2><svg class=\"ch1-concept-diagram\" viewBox=\"0 0 440 470\" role=\"img\" aria-label=\"AI-д роботын бие заавал хэрэггүй. Программ сүлжээ, төхөөрөмжөөр дамжин нөлөө үзүүлж чадна.\"><circle cx=\"220\" cy=\"234\" r=\"174\" fill=\"#f3f5fa\"></circle><g stroke-linecap=\"round\" stroke-linejoin=\"round\"><g fill=\"none\" stroke=\"#c8d3eb\" stroke-width=\"4\"><path d=\"M145 178H94V121M295 178H346V121M220 294V348\"></path><path d=\"M176 129V109M205 129V109M235 129V109M264 129V109M127 193H107M127 221H107M313 193H333M313 221H333\"></path></g><rect x=\"127\" y=\"129\" width=\"186\" height=\"165\" rx=\"28\" fill=\"#fff\" stroke=\"#13296b\" stroke-width=\"5\"></rect><path d=\"M183 183L156 211L183 239M257 183L284 211L257 239M233 172L207 250\" fill=\"none\" stroke=\"#2c55c8\" stroke-width=\"6\"></path><g fill=\"#fff\" stroke=\"#13296b\" stroke-width=\"4\"><rect x=\"66\" y=\"72\" width=\"56\" height=\"49\" rx=\"10\"></rect><rect x=\"318\" y=\"72\" width=\"56\" height=\"49\" rx=\"10\"></rect><circle cx=\"220\" cy=\"365\" r=\"32\"></circle></g><path d=\"M78 88H110M78 104H99M331 89L342 101L361 82\" fill=\"none\" stroke=\"#2c55c8\" stroke-width=\"4\"></path><circle cx=\"220\" cy=\"365\" r=\"10\" fill=\"#2c55c8\"></circle><path d=\"M220 343V349M220 381V387M198 365H204M236 365H242\" fill=\"none\" stroke=\"#2c55c8\" stroke-width=\"3\"></path></g></svg><p class=\"ch1-support\">AI-д роботын бие заавал хэрэггүй.</p></article><article class=\"ch1-concept\"><h2 class=\"ch1-keyword\">Оюун ухаан</h2><svg class=\"ch1-concept-diagram\" viewBox=\"0 0 440 470\" role=\"img\" aria-label=\"Оюун ухаан нь төлөвлөх, зохицуулах, хэрэгсэл ашиглах боломж өгдгийг хяналтын холбоосоор харуулсан.\"><circle cx=\"220\" cy=\"234\" r=\"174\" fill=\"#f3f5fa\"></circle><g stroke-linecap=\"round\" stroke-linejoin=\"round\"><g fill=\"none\" stroke=\"#c8d3eb\" stroke-width=\"4\"><path d=\"M169 178L108 117M271 178L332 117M220 304V361\"></path><path d=\"M144 153L157 155L155 142M296 153L283 155L285 142M212 337L220 346L228 337\" stroke=\"#2c55c8\"></path></g><circle cx=\"220\" cy=\"234\" r=\"87\" fill=\"#fff\" stroke=\"#13296b\" stroke-width=\"5\"></circle><g fill=\"none\" stroke=\"#2c55c8\" stroke-width=\"4\"><path d=\"M220 175C202 158 177 172 180 193C159 193 151 219 166 233C153 253 169 274 187 273C191 294 210 301 220 285Z\"></path><path d=\"M220 175C238 158 263 172 260 193C281 193 289 219 274 233C287 253 271 274 253 273C249 294 230 301 220 285Z\"></path><path d=\"M181 194L200 211L188 234M166 233L190 246M260 194L240 211L252 234M274 233L250 246M200 266L220 253L240 266\"></path></g><g fill=\"#fff\" stroke=\"#13296b\" stroke-width=\"4\"><circle cx=\"91\" cy=\"100\" r=\"38\"></circle><circle cx=\"349\" cy=\"100\" r=\"38\"></circle><rect x=\"183\" y=\"361\" width=\"74\" height=\"58\" rx=\"14\"></rect></g><circle cx=\"91\" cy=\"93\" r=\"9\" fill=\"#2c55c8\"></circle><path d=\"M74 119C74 99 108 99 108 119\" fill=\"#2c55c8\"></path><path d=\"M331 91H367M331 107H367M342 83V115M356 83V115M197 390H243\" fill=\"none\" stroke=\"#2c55c8\" stroke-width=\"4\"></path><circle cx=\"220\" cy=\"390\" r=\"7\" fill=\"#2c55c8\"></circle></g></svg><p class=\"ch1-support\">Давуу тал нь хүчнээс илүү оюун ухаан.</p></article><article class=\"ch1-concept\"><h2 class=\"ch1-keyword\">Даалгавар</h2><svg class=\"ch1-concept-diagram\" viewBox=\"0 0 440 470\" role=\"img\" aria-label=\"Зорилгоо биелүүлэх явцад бусдын хэрэгцээг орхигдуулбал хор учирч болдгийг шоргоолжны жишээгээр дүрсэлсэн.\"><circle cx=\"220\" cy=\"234\" r=\"174\" fill=\"#f3f5fa\"></circle><g stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"297\" cy=\"143\" r=\"64\" fill=\"#fff\" stroke=\"#13296b\" stroke-width=\"5\"></circle><circle cx=\"297\" cy=\"143\" r=\"39\" fill=\"none\" stroke=\"#c8d3eb\" stroke-width=\"4\"></circle><circle cx=\"297\" cy=\"143\" r=\"15\" fill=\"#2c55c8\"></circle><path d=\"M83 369L290 161\" fill=\"none\" stroke=\"#2c55c8\" stroke-width=\"8\"></path><path d=\"M267 161H290V184\" fill=\"none\" stroke=\"#2c55c8\" stroke-width=\"6\"></path><ellipse cx=\"221\" cy=\"292\" rx=\"97\" ry=\"67\" fill=\"#fff\" stroke=\"#b64d4d\" stroke-width=\"3\" stroke-dasharray=\"5 9\"></ellipse><g fill=\"#b64d4d\" stroke=\"#b64d4d\" stroke-width=\"3\"><g transform=\"translate(186 295) rotate(-22)\"><ellipse cx=\"-11\" rx=\"8\" ry=\"6\"></ellipse><circle r=\"6\"></circle><circle cx=\"11\" r=\"5\"></circle><path d=\"M-8-5L-14-13M0-5L-2-14M7-4L12-12M-8 5L-14 13M0 5L-2 14M7 4L12 12M14-2L21-8M14 2L21 8\" fill=\"none\"></path></g><g transform=\"translate(248 316) rotate(20)\"><ellipse cx=\"-11\" rx=\"8\" ry=\"6\"></ellipse><circle r=\"6\"></circle><circle cx=\"11\" r=\"5\"></circle><path d=\"M-8-5L-14-13M0-5L-2-14M7-4L12-12M-8 5L-14 13M0 5L-2 14M7 4L12 12M14-2L21-8M14 2L21 8\" fill=\"none\"></path></g></g><path d=\"M114 390L145 378M304 284L329 270\" fill=\"none\" stroke=\"#c8d3eb\" stroke-width=\"4\" stroke-dasharray=\"3 9\"></path></g></svg><p class=\"ch1-support\">Зорилгоо биелүүлэхэд мэдрэмж заавал хэрэггүй.</p></article></div></div>",
     "textNodes": [
-      "◆",
-      "1-р бүлэг · Буруу ойлголтууд",
-      "AI-д бие, сэтгэл хөдлөл хэрэгтэй юу?",
-      "01 · Бие",
-      "Аюултай AI заавал робот байна.",
-      "Программ ч нөлөө үзүүлж чадна.",
-      "02 · Хяналт",
-      "AI хүнийг удирдаж чадахгүй.",
-      "Давуу тал нь оюун ухаан.",
-      "03 · Даалгавар",
-      "Машин зорилготой байж чадахгүй.",
-      "Зорилготой ажиллахад мэдрэмж хэрэггүй.",
-      "Шоргоолжны жишээ",
-      "Бид шоргоолжийг үзэн ядаагүй ч үүрийг нь сүйтгэж болно."
+      "Программ",
+      "AI-д роботын бие заавал хэрэггүй.",
+      "Оюун ухаан",
+      "Давуу тал нь хүчнээс илүү оюун ухаан.",
+      "Даалгавар",
+      "Зорилгоо биелүүлэхэд мэдрэмж заавал хэрэггүй."
     ],
-    "text": "◆1-р бүлэг · Буруу ойлголтуудAI-д бие, сэтгэл хөдлөл хэрэгтэй юу?01 · БиеАюултай AI заавал робот байна.Программ ч нөлөө үзүүлж чадна.02 · ХяналтAI хүнийг удирдаж чадахгүй.Давуу тал нь оюун ухаан.03 · ДаалгаварМашин зорилготой байж чадахгүй.Зорилготой ажиллахад мэдрэмж хэрэггүй.Шоргоолжны жишээБид шоргоолжийг үзэн ядаагүй ч үүрийг нь сүйтгэж болно.",
-    "sha256": "a7208832b02637cce03e8fad6ae462b9b69fb6d8bade692670a646e66a5fdd91"
+    "text": "ПрограммAI-д роботын бие заавал хэрэггүй.Оюун ухаанДавуу тал нь хүчнээс илүү оюун ухаан.ДаалгаварЗорилгоо биелүүлэхэд мэдрэмж заавал хэрэггүй.",
+    "sha256": "9b638ebf1a98537df7b4ea74b905b26564f9e0fd8fde72efa24863dec4cd302f"
   },
   {
     "id": "structure-ch2",
@@ -705,10 +634,7 @@
     "quote": "",
     "notes": "Оролтын мэдээллийг боловсруулж гаралт гаргахыг тооцоолол гэнэ. Зурагт өөрчлөгдсөн цэгүүд нь мэдээллийн төлөв хувирсныг харуулна. Дээд салаа нь цахиурын хэлхээ, доод салаа нь нейрон сүлжээ: ижил үйлдлийг өөр өөр бүтэц дээр хэрэгжүүлж болно. Энэ нь тархи, чипийн бүх чадвар ижил гэсэн үг биш. NAND хаалгуудыг холбоод тооцооллын хэлхээ бүтээдэг. Тьюрингийн 1936 оны ажлыг холбоно. Гол санаа: тооцоолол зөвхөн нэг материалаар хязгаарлагдахгүй.",
     "html": "<div class=\"computation-visual\"><h2 class=\"computation-keyword computation-input\">Оролт</h2><h2 class=\"computation-keyword computation-output\">Гаралт</h2><svg class=\"computation-diagram\" viewBox=\"0 0 1640 680\" role=\"img\" aria-label=\"Тооцоолол: оролтын төлөв өөр гаралтын төлөвт хувирна. Ижил үйлдлийг цахиурын хэлхээ эсвэл мэдрэлийн сүлжээгээр хэрэгжүүлж болохыг хоёр замаар дүрсэлсэн зүйрлэл.\"><g fill=\"none\" stroke=\"#cbd6ed\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M344 350H476M476 350V234Q476 210 500 210H700M476 350V476Q476 500 500 500H700\"></path><path d=\"M940 210H1140Q1164 210 1164 234V350M940 500H1140Q1164 500 1164 476V350M1164 350H1296\"></path></g><g fill=\"none\" stroke=\"#2c55c8\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M612 198L626 210L612 222M612 488L626 500L612 512\"></path><path d=\"M1040 198L1054 210L1040 222M1040 488L1054 500L1040 512M1230 338L1244 350L1230 362\"></path></g><g fill=\"#2c55c8\"><circle cx=\"476\" cy=\"350\" r=\"8\"></circle><circle cx=\"1164\" cy=\"350\" r=\"8\"></circle></g><rect x=\"102\" y=\"244\" width=\"242\" height=\"212\" rx=\"30\" fill=\"#f3f5fa\"></rect><g stroke=\"#2c55c8\" stroke-width=\"4\"><circle cx=\"174\" cy=\"304\" r=\"27\" fill=\"#2c55c8\"></circle><circle cx=\"272\" cy=\"304\" r=\"27\" fill=\"#fff\"></circle><circle cx=\"174\" cy=\"402\" r=\"27\" fill=\"#2c55c8\"></circle><circle cx=\"272\" cy=\"402\" r=\"27\" fill=\"#2c55c8\"></circle></g><rect x=\"700\" y=\"100\" width=\"240\" height=\"220\" rx=\"34\" fill=\"#f3f5fa\"></rect><g fill=\"none\" stroke=\"#9aabd3\" stroke-width=\"4\" stroke-linecap=\"round\"><path d=\"M735 167H754M735 195H754M735 223H754M735 251H754M886 167H905M886 195H905M886 223H905M886 251H905\"></path><path d=\"M778 123V143M806 123V143M834 123V143M862 123V143M778 277V297M806 277V297M834 277V297M862 277V297\"></path></g><rect x=\"754\" y=\"143\" width=\"132\" height=\"134\" rx=\"22\" fill=\"#fff\" stroke=\"#13296b\" stroke-width=\"4\"></rect><g fill=\"none\" stroke=\"#2c55c8\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M774 177H787Q800 177 800 190T787 203H774Z\"></path><circle cx=\"805\" cy=\"190\" r=\"4\" fill=\"#fff\"></circle><path d=\"M809 190H824V217H839M762 184H774M762 196H774\"></path><path d=\"M839 204H850Q863 204 863 217T850 230H839Z\"></path><circle cx=\"868\" cy=\"217\" r=\"4\" fill=\"#fff\"></circle><path d=\"M872 217H882M785 251H824V224H839\"></path></g><circle cx=\"820\" cy=\"500\" r=\"120\" fill=\"#f3f5fa\"></circle><g fill=\"#fff\" stroke=\"#13296b\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M820 432C806 414 780 418 772 437C749 433 732 453 740 475C722 489 727 514 745 521C739 545 755 562 775 560C784 580 807 578 820 563Z\"></path><path d=\"M820 432C834 414 860 418 868 437C891 433 908 453 900 475C918 489 913 514 895 521C901 545 885 562 865 560C856 580 833 578 820 563Z\"></path></g><g fill=\"none\" stroke=\"#2c55c8\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M772 438C770 453 780 461 792 460M741 476C756 467 772 478 772 490M746 521C757 508 774 510 781 522M775 560C770 543 781 533 794 536\"></path><path d=\"M868 438C870 453 860 461 848 460M899 476C884 467 868 478 868 490M894 521C883 508 866 510 859 522M865 560C870 543 859 533 846 536\"></path><path d=\"M795 481L808 500L795 519M845 481L832 500L845 519\"></path></g><g fill=\"#2c55c8\"><circle cx=\"795\" cy=\"481\" r=\"5\"></circle><circle cx=\"795\" cy=\"519\" r=\"5\"></circle><circle cx=\"845\" cy=\"481\" r=\"5\"></circle><circle cx=\"845\" cy=\"519\" r=\"5\"></circle></g><rect x=\"1296\" y=\"244\" width=\"242\" height=\"212\" rx=\"30\" fill=\"#f3f5fa\"></rect><g stroke=\"#2c55c8\" stroke-width=\"4\"><circle cx=\"1368\" cy=\"304\" r=\"27\" fill=\"#fff\"></circle><circle cx=\"1466\" cy=\"304\" r=\"27\" fill=\"#2c55c8\"></circle><circle cx=\"1368\" cy=\"402\" r=\"27\" fill=\"#2c55c8\"></circle><circle cx=\"1466\" cy=\"402\" r=\"27\" fill=\"#fff\"></circle></g></svg></div>",
-    "textNodes": [
-      "Оролт",
-      "Гаралт"
-    ],
+    "textNodes": ["Оролт", "Гаралт"],
     "text": "ОролтГаралт",
     "sha256": "dae1decfd9ca2a7ea615229250b1f6e239860ff1bcf057791923099237429a19"
   },
@@ -763,10 +689,7 @@
     "quote": "",
     "notes": "Энэ бол зохиомол туршилт. Машины зорчих хугацаа 23 хувиар багассан ч явган зорчигч, түргэн тусламжийн хэрэгцээ даалгаварт ороогүй. Зорилгыг ганц үзүүлэлтээр тодорхойлсноос ямар үр дагавар гарсныг тайлбарлана. Шоргоолжны жишээтэй холбож, муу санаагүй ч хохирол учирч болохыг ярилцана.",
     "html": "<div class=\"case-visual\"><h2 class=\"case-keyword case-speed\">Хурд</h2><h2 class=\"case-keyword case-safety\">Аюулгүй байдал</h2><svg class=\"case-intersection\" viewBox=\"0 0 1640 680\" role=\"img\" aria-label=\"Зохиомол кейс: AI гэрлэн дохиог удирдан машинуудад ногоон гэрэл өгчээ. Харин явган зорчигчид, хүүхэд болон түргэн тусламж улаан гэрэл дээр хүлээж байна.\"><defs><g id=\"case-car\"><rect x=\"15\" y=\"-3\" width=\"23\" height=\"9\" rx=\"3\" fill=\"#13296b\"></rect><rect x=\"15\" y=\"54\" width=\"23\" height=\"9\" rx=\"3\" fill=\"#13296b\"></rect><rect x=\"82\" y=\"-3\" width=\"23\" height=\"9\" rx=\"3\" fill=\"#13296b\"></rect><rect x=\"82\" y=\"54\" width=\"23\" height=\"9\" rx=\"3\" fill=\"#13296b\"></rect><rect width=\"124\" height=\"60\" rx=\"22\" fill=\"#2c55c8\"></rect><path d=\"M37 9H79L91 16V44L79 51H37L29 43V17Z\" fill=\"#dbe7ff\"></path><path d=\"M43 10H74V50H43Z\" fill=\"#2c55c8\"></path><path d=\"M112 15V24M112 36V45\" stroke=\"#fff\" stroke-width=\"5\" stroke-linecap=\"round\"></path></g><g id=\"case-person\" fill=\"none\" stroke=\"#13296b\" stroke-width=\"6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cy=\"-27\" r=\"9\" fill=\"#13296b\" stroke=\"none\"></circle><path d=\"M0-10V20M-17 8L0-7L17 8M0 20L-12 44M0 20L12 44\"></path></g><g id=\"case-pedestrian-light\"><rect width=\"43\" height=\"72\" rx=\"12\" fill=\"#13296b\"></rect><circle cx=\"21.5\" cy=\"22\" r=\"13\" fill=\"#b64d4d\"></circle><circle cx=\"21.5\" cy=\"52\" r=\"10\" fill=\"#354474\"></circle><path d=\"M21.5 72V103\" stroke=\"#13296b\" stroke-width=\"5\"></path></g></defs><path d=\"M1140 40V640H1360V40\" fill=\"#f3f5fa\"></path><rect x=\"40\" y=\"230\" width=\"1560\" height=\"230\" rx=\"10\" fill=\"#f3f5fa\"></rect><path d=\"M40 230H1140V40M1360 40V230H1600M40 460H1140V640M1360 640V460H1600\" fill=\"none\" stroke=\"#dce2ef\" stroke-width=\"3\"></path><path d=\"M40 345H960M1420 345H1600M1250 40V185M1250 530V640\" fill=\"none\" stroke=\"#fff\" stroke-width=\"5\" stroke-dasharray=\"25 24\"></path><path d=\"M105 292H145M122 280L139 292L122 304M420 292H460M437 280L454 292L437 304M700 292H740M717 280L734 292L717 304M1430 402H1470M1453 390L1436 402L1453 414\" fill=\"none\" stroke=\"#9baddd\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path><path d=\"M162 275H208M149 288H198M168 301H208M460 383H502M450 396H492M464 409H502M742 275H784M732 288H774M746 301H784\" stroke=\"#b9c8ea\" stroke-width=\"4\" stroke-linecap=\"round\"></path><use href=\"#case-car\" transform=\"translate(225 262)\"></use><use href=\"#case-car\" transform=\"translate(520 375) rotate(180 62 30)\"></use><use href=\"#case-car\" transform=\"translate(800 262)\"></use><use href=\"#case-car\" transform=\"translate(1390 262)\"></use><g fill=\"#fff\"><rect x=\"1000\" y=\"240\" width=\"80\" height=\"13\" rx=\"2\"></rect><rect x=\"1000\" y=\"274\" width=\"80\" height=\"13\" rx=\"2\"></rect><rect x=\"1000\" y=\"308\" width=\"80\" height=\"13\" rx=\"2\"></rect><rect x=\"1000\" y=\"342\" width=\"80\" height=\"13\" rx=\"2\"></rect><rect x=\"1000\" y=\"376\" width=\"80\" height=\"13\" rx=\"2\"></rect><rect x=\"1000\" y=\"410\" width=\"80\" height=\"13\" rx=\"2\"></rect><rect x=\"1000\" y=\"444\" width=\"80\" height=\"13\" rx=\"2\"></rect></g><path d=\"M984 221H1095M1148 482H1352\" stroke=\"#b64d4d\" stroke-width=\"6\"></path><path d=\"M993 130C993 104 1017 89 1046 89H1080\" fill=\"none\" stroke=\"#ead3d3\" stroke-width=\"2\"></path><use href=\"#case-person\" transform=\"translate(994 151)\"></use><use href=\"#case-person\" transform=\"translate(1046 159) scale(.68)\"></use><use href=\"#case-person\" transform=\"translate(1091 151)\"></use><use href=\"#case-pedestrian-light\" transform=\"translate(1130 125)\"></use><g transform=\"translate(1207 515)\"><rect x=\"-4\" y=\"19\" width=\"8\" height=\"22\" rx=\"3\" fill=\"#13296b\"></rect><rect x=\"-4\" y=\"82\" width=\"8\" height=\"22\" rx=\"3\" fill=\"#13296b\"></rect><rect x=\"81\" y=\"19\" width=\"8\" height=\"22\" rx=\"3\" fill=\"#13296b\"></rect><rect x=\"81\" y=\"82\" width=\"8\" height=\"22\" rx=\"3\" fill=\"#13296b\"></rect><rect width=\"85\" height=\"125\" rx=\"20\" fill=\"#fff\" stroke=\"#13296b\" stroke-width=\"3\"></rect><path d=\"M11 17Q42.5 6 74 17V35H11Z\" fill=\"#dbe7ff\"></path><path d=\"M3 46H82\" stroke=\"#b64d4d\" stroke-width=\"6\"></path><rect x=\"28\" y=\"5\" width=\"29\" height=\"6\" rx=\"3\" fill=\"#b64d4d\"></rect><path d=\"M42.5 67V101M25.5 84H59.5\" stroke=\"#b64d4d\" stroke-width=\"11\"></path><path d=\"M14 114H24M61 114H71\" stroke=\"#b64d4d\" stroke-width=\"4\" stroke-linecap=\"round\"></path></g><use href=\"#case-pedestrian-light\" transform=\"translate(1394 507)\"></use><g transform=\"translate(705 69)\"><path d=\"M-17 18H0M-17 39H0M-17 60H0M84 18H101M84 39H101M84 60H101M20-17V0M42-17V0M64-17V0M20 78V95M42 78V95M64 78V95\" fill=\"none\" stroke=\"#9aabd3\" stroke-width=\"3\" stroke-linecap=\"round\"></path><rect width=\"84\" height=\"78\" rx=\"18\" fill=\"#fff\" stroke=\"#13296b\" stroke-width=\"3\"></rect><path d=\"M26 25L58 53M26 53L58 25M26 25V53M58 25V53\" fill=\"none\" stroke=\"#2c55c8\" stroke-width=\"2\"></path><g fill=\"#13296b\"><circle cx=\"26\" cy=\"25\" r=\"5\"></circle><circle cx=\"58\" cy=\"25\" r=\"5\"></circle><circle cx=\"26\" cy=\"53\" r=\"5\"></circle><circle cx=\"58\" cy=\"53\" r=\"5\"></circle></g></g><path d=\"M695 108H642Q626 108 626 124V169M800 108H1108Q1151 108 1151 125\" fill=\"none\" stroke=\"#ccd6ea\" stroke-width=\"2\"></path><g transform=\"translate(604 163)\"><rect width=\"44\" height=\"74\" rx=\"13\" fill=\"#13296b\"></rect><circle cx=\"22\" cy=\"17\" r=\"9\" fill=\"#354474\"></circle><circle cx=\"22\" cy=\"37\" r=\"9\" fill=\"#354474\"></circle><circle class=\"case-go-light\" cx=\"22\" cy=\"58\" r=\"11\" fill=\"#3a8a73\"></circle></g><path d=\"M1152 124H1389Q1415 124 1415 150V507\" fill=\"none\" stroke=\"#ead3d3\" stroke-width=\"2\" stroke-dasharray=\"5 7\"></path></svg></div>",
-    "textNodes": [
-      "Хурд",
-      "Аюулгүй байдал"
-    ],
+    "textNodes": ["Хурд", "Аюулгүй байдал"],
     "text": "ХурдАюулгүй байдал",
     "sha256": "d1bab9f9545360102889486e629e668decdd6416aca7a2e0f98fe69894ab5c37"
   },
@@ -782,10 +705,7 @@
     "quote": "",
     "notes": "Кейсийн дараах хэлэлцүүлэг: шийдвэр ба хариуцлага. Зураг дахь захиалагч, инженер, ашиглагчийн оролцоог ярилцаж, асуулт бүрээр 2–3 хүний санал сонсоно. 1. Энэ системийг амжилттай гэж үзэх үү? Зорчих хугацаа багассан ч явган зорчигч, түргэн тусламж хохирсон. Ганц үзүүлэлтээр нийт үр дүнг дүгнэхэд учир дутагдалтай. 2. Алдаа нь AI-д байсан уу, даалгаварт байсан уу? Систем өгсөн зорилгоо биелүүлсэн. Харин аюулгүй гарц, яаралтай тусламжийн хэрэгцээг зорилгод нь тусгаагүй. 3. Та инженер нь байсан бол юуг өөрчлөх вэ? Явган хүний гарах хугацаа, түргэн тусламжийн давуу эрхийг заавал хангах нөхцөл болгоно. Үүний хүрээнд зорчих хугацааг багасгана. 4. Ийм системийн хариуцлагыг хэн хүлээх вэ? Захиалагч ямар зорилго тавьсан, инженер яаж туршсан, ашиглагч хэрхэн хянасныг хамт авч үзнэ. AI-д даатгасан ч хүний хариуцлага үлдэнэ. Дараа нь 3-р бүлэг рүү шилжинэ.",
     "html": "<div class=\"discussion-visual\"><h2 class=\"discussion-keyword discussion-decision\">Шийдвэр</h2><h2 class=\"discussion-keyword discussion-accountability\">Хариуцлага</h2><svg class=\"discussion-diagram\" viewBox=\"0 0 1640 680\" role=\"img\" aria-label=\"Хотын захиргаа, инженер, ашиглагч хүн AI гэрлэн дохионы зорилго, шийдвэр, хяналтыг хамт хариуцна. AI-д даатгасан ч хүний хариуцлага үлдэнэ.\"><path d=\"M465 340H632M968 295C1050 295 1054 180 1168 180M968 385C1050 385 1054 510 1168 510\" fill=\"none\" stroke=\"#c8d3eb\" stroke-width=\"4\"></path><path d=\"M595 326L611 340L595 354M1110 166L1126 180L1110 194M1110 496L1126 510L1110 524\" fill=\"none\" stroke=\"#2c55c8\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path><path d=\"M1295 306V384\" stroke=\"#dce3f0\" stroke-width=\"3\" stroke-dasharray=\"6 10\"></path><circle cx=\"315\" cy=\"340\" r=\"150\" fill=\"#f3f5fa\"></circle><g fill=\"none\" stroke=\"#13296b\" stroke-width=\"4\" stroke-linejoin=\"round\"><path d=\"M216 300L315 244L414 300Z\" fill=\"#fff\"></path><path d=\"M229 314H401M221 415H409M211 432H419\"></path><path d=\"M245 320V402M290 320V402M340 320V402M385 320V402\" stroke-width=\"11\"></path><path d=\"M315 244V215H348L337 229H315\" fill=\"#2c55c8\"></path></g><circle cx=\"428\" cy=\"444\" r=\"41\" fill=\"#fff\" stroke=\"#dce3f0\" stroke-width=\"3\"></circle><circle cx=\"428\" cy=\"433\" r=\"10\" fill=\"#13296b\"></circle><path d=\"M409 465V457C409 443 447 443 447 457V465\" fill=\"#2c55c8\"></path><circle cx=\"800\" cy=\"340\" r=\"168\" fill=\"#f3f5fa\"></circle><circle cx=\"800\" cy=\"340\" r=\"145\" fill=\"#fff\" stroke=\"#dce3f0\" stroke-width=\"2\"></circle><g transform=\"translate(727 223)\"><rect width=\"91\" height=\"226\" rx=\"26\" fill=\"#13296b\"></rect><circle cx=\"45.5\" cy=\"45\" r=\"25\" fill=\"#354474\"></circle><circle cx=\"45.5\" cy=\"113\" r=\"25\" fill=\"#354474\"></circle><circle cx=\"45.5\" cy=\"181\" r=\"25\" fill=\"#3a8a73\"></circle><path d=\"M45.5 226V265M18 266H73\" fill=\"none\" stroke=\"#13296b\" stroke-width=\"6\" stroke-linecap=\"round\"></path></g><g transform=\"translate(849 293)\"><path d=\"M-12 17H0M-12 38H0M68 17H80M68 38H80M19-12V0M48-12V0M19 65V77M48 65V77\" fill=\"none\" stroke=\"#9aabd3\" stroke-width=\"3\" stroke-linecap=\"round\"></path><rect width=\"68\" height=\"65\" rx=\"14\" fill=\"#fff\" stroke=\"#13296b\" stroke-width=\"3\"></rect><path d=\"M20 20L48 45M20 45L48 20M20 20V45M48 20V45\" fill=\"none\" stroke=\"#2c55c8\" stroke-width=\"2\"></path><g fill=\"#13296b\"><circle cx=\"20\" cy=\"20\" r=\"4\"></circle><circle cx=\"48\" cy=\"20\" r=\"4\"></circle><circle cx=\"20\" cy=\"45\" r=\"4\"></circle><circle cx=\"48\" cy=\"45\" r=\"4\"></circle></g></g><path d=\"M818 336H837\" fill=\"none\" stroke=\"#c8d3eb\" stroke-width=\"3\"></path><circle cx=\"1295\" cy=\"180\" r=\"125\" fill=\"#f3f5fa\"></circle><g transform=\"translate(1295 174)\"><path d=\"M-36-39C-36-84 36-84 36-39\" fill=\"#fff\" stroke=\"#13296b\" stroke-width=\"4\"></path><path d=\"M-44-39H44M-10-79V-39M10-79V-39\" fill=\"none\" stroke=\"#2c55c8\" stroke-width=\"5\" stroke-linecap=\"round\"></path><path d=\"M-29-30V-14C-29 21 29 21 29-14V-30\" fill=\"none\" stroke=\"#13296b\" stroke-width=\"4\"></path><path d=\"M-63 60V47C-63 5 63 5 63 47V60\" fill=\"#dbe7ff\" stroke=\"#13296b\" stroke-width=\"4\"></path><path d=\"M-55 29H55L47 84H-47Z\" fill=\"#fff\" stroke=\"#13296b\" stroke-width=\"4\" stroke-linejoin=\"round\"></path><path d=\"M-69 85H69\" stroke=\"#13296b\" stroke-width=\"4\" stroke-linecap=\"round\"></path><path d=\"M-17 48L-29 59L-17 70M17 48L29 59L17 70M5 45L-5 73\" fill=\"none\" stroke=\"#2c55c8\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></g><circle cx=\"1295\" cy=\"510\" r=\"125\" fill=\"#f3f5fa\"></circle><g transform=\"translate(1295 505)\"><circle cy=\"-52\" r=\"26\" fill=\"#fff\" stroke=\"#13296b\" stroke-width=\"4\"></circle><path d=\"M-32-55C-32-95 32-95 32-55M-32-55V-40M32-55V-40M32-41H43V-22H14\" fill=\"none\" stroke=\"#2c55c8\" stroke-width=\"4\" stroke-linecap=\"round\"></path><path d=\"M-56 17C-56-22 56-22 56 17V53H-56Z\" fill=\"#dbe7ff\" stroke=\"#13296b\" stroke-width=\"4\"></path><rect x=\"-75\" y=\"12\" width=\"150\" height=\"69\" rx=\"12\" fill=\"#fff\" stroke=\"#13296b\" stroke-width=\"4\"></rect><path d=\"M-48 35H-7M-48 58H-7M18 32V62M48 32V62\" fill=\"none\" stroke=\"#c8d3eb\" stroke-width=\"4\" stroke-linecap=\"round\"></path><circle cx=\"-24\" cy=\"35\" r=\"6\" fill=\"#2c55c8\"></circle><circle cx=\"-36\" cy=\"58\" r=\"6\" fill=\"#2c55c8\"></circle><circle cx=\"18\" cy=\"43\" r=\"6\" fill=\"#3a8a73\"></circle><circle cx=\"48\" cy=\"55\" r=\"6\" fill=\"#b64d4d\"></circle></g></svg></div>",
-    "textNodes": [
-      "Шийдвэр",
-      "Хариуцлага"
-    ],
+    "textNodes": ["Шийдвэр", "Хариуцлага"],
     "text": "ШийдвэрХариуцлага",
     "sha256": "51efcc49ed5e54a6c0d892a4f2c58926ff3e0dc0b97d253a1d6304ff0a77381e"
   },
@@ -1580,7 +1500,7 @@
     "list": [],
     "quote": "",
     "notes": "",
-    "html": "<div class=\"chapter3-canvas\"><div class=\"canvas-ambient-glow\"></div><div class=\"canvas-grid-pattern\"></div><div class=\"chapter3-node chapter3-image-node\" style=\"position:absolute;left:0.7868766404199475px;top:0;width:1920px;height:1080px\"><img src=\"/slides/imported/chapter3/image1.png\" alt=\"Freeform 2\" draggable=\"false\" style=\"object-fit:cover;object-position:50% 50%\"/></div><div class=\"chapter3-node chapter3-image-node\" style=\"position:absolute;left:-94.13942257217847px;top:135.53774278215224px;width:601.1694488188976px;height:262.5589501312336px\"><img src=\"/slides/imported/chapter3/image4.png\" alt=\"Freeform 2\" draggable=\"false\" style=\"object-fit:cover;object-position:50% 50%\"/></div><div class=\"chapter3-node chapter3-image-node\" style=\"position:absolute;left:1147.0794750656169px;top:594.2582677165354px;width:716.006719160105px;height:612.7118110236221px\"><img src=\"/slides/imported/chapter3/image5.png\" alt=\"Freeform 7\" draggable=\"false\" style=\"object-fit:cover;object-position:50% 50%\"/></div><div class=\"chapter3-node chapter3-image-node\" style=\"position:absolute;left:1261.5784776902888px;top:194.92199475065618px;width:607.5043569553806px;height:371.51485564304465px\"><img src=\"/slides/imported/chapter3/image7.png\" alt=\"Freeform 8\" draggable=\"false\" style=\"object-fit:cover;object-position:50% 50%\"/></div><div class=\"chapter3-node chapter3-text is-heading\" style=\"position:absolute;left:535.7076115485564px;top:89.61102362204724px;width:697.193280839895px;height:310.2px;display:flex;flex-direction:column;justify-content:flex-start;padding-left:0;padding-right:0;padding-top:0;padding-bottom:0;overflow:hidden;transform-origin:left top;font-family:var(--serif), Georgia, serif;font-size:58px;font-weight:700;line-height:1.18;letter-spacing:-0.015em\"><div class=\"kicker-wrapper\" style=\"margin-bottom:12px\"><div class=\"kicker-pill\"><span class=\"kicker-diamond\">◆</span><span class=\"kicker-label\">3-р бүлэг · Ойрын ирээдүй</span></div></div><div class=\"chapter3-text-content\" style=\"width:100%;transform-origin:left top\"><div class=\"chapter3-paragraph\" style=\"text-align:left;margin-left:0;text-indent:0;margin-bottom:8px;position:relative\"><span class=\"chapter3-heading-run\" style=\"font-family:var(--serif), Georgia, serif;font-weight:700;color:var(--text)\">ЧУХАЛ ОЛОЛТ — ХЭЛ БОЛОВСРУУЛАЛТ</span></div></div></div><div class=\"chapter3-node chapter3-text\" style=\"position:absolute;left:177.07275590551183px;top:547.7793175853019px;width:1070.1669291338583px;height:348.9750131233596px;display:flex;flex-direction:column;justify-content:flex-start;padding-left:0;padding-right:0;padding-top:0;padding-bottom:0;overflow:hidden;transform-origin:left top;font-family:var(--sans), sans-serif;font-size:25px;font-weight:400;line-height:1.45;letter-spacing:normal\"><div class=\"chapter3-text-content\" style=\"width:100%;transform-origin:left top\"><div class=\"chapter3-paragraph\" style=\"text-align:left;margin-left:0.007559055118110236px;text-indent:-0.007559055118110236px;margin-bottom:8px;position:relative\"><span class=\"kicker-diamond\" aria-hidden=\"true\" style=\"display:inline-block;margin-right:10px;font-size:10px;vertical-align:middle\">◆</span><span class=\"chapter3-body-run\" style=\"font-family:var(--sans), sans-serif;color:var(--text)\">Google Translate — 2016</span></div><div class=\"chapter3-paragraph\" style=\"text-align:left;margin-left:0.007559055118110236px;text-indent:-0.007559055118110236px;margin-bottom:8px;position:relative\"><span class=\"kicker-diamond\" aria-hidden=\"true\" style=\"display:inline-block;margin-right:10px;font-size:10px;vertical-align:middle\">◆</span><span class=\"chapter3-body-run\" style=\"font-family:var(--sans), sans-serif;color:var(--text)\">Гүн мэдрэлийн сүлжээ</span></div><div class=\"chapter3-paragraph\" style=\"text-align:left;margin-left:0.007559055118110236px;text-indent:-0.007559055118110236px;margin-bottom:8px;position:relative\"><span class=\"kicker-diamond\" aria-hidden=\"true\" style=\"display:inline-block;margin-right:10px;font-size:10px;vertical-align:middle\">◆</span><span class=\"chapter3-body-run\" style=\"font-family:var(--sans), sans-serif;color:var(--text)\">Winograd Schema </span><span class=\"chapter3-body-run\" style=\"font-family:var(--sans), sans-serif;color:var(--text)\">сорилт</span></div><div class=\"chapter3-paragraph\" style=\"text-align:left;margin-left:0.007559055118110236px;text-indent:-0.007559055118110236px;margin-bottom:8px;position:relative\"><span class=\"kicker-diamond\" aria-hidden=\"true\" style=\"display:inline-block;margin-right:10px;font-size:10px;vertical-align:middle\">◆</span><span class=\"chapter3-body-run\" style=\"font-family:var(--sans), sans-serif;color:var(--text)\">Мэдээлэл боловсруулах ба ойлгох</span></div></div></div></div>",
+    "html": "<div class=\"chapter3-canvas\"><div class=\"canvas-ambient-glow\"></div><div class=\"canvas-grid-pattern\"></div><div class=\"chapter3-node chapter3-image-node\" style=\"position:absolute;left:0.7868766404199475px;top:0;width:1920px;height:1080px\"><img src=\"/slides/imported/chapter3/image1.png\" alt=\"Freeform 2\" draggable=\"false\" style=\"object-fit:cover;object-position:50% 50%\"/></div><div class=\"chapter3-node chapter3-image-node\" style=\"position:absolute;left:-94.13942257217847px;top:135.53774278215224px;width:601.1694488188976px;height:262.5589501312336px\"><img src=\"/slides/imported/chapter3/image4.png\" alt=\"Freeform 2\" draggable=\"false\" style=\"object-fit:cover;object-position:50% 50%\"/></div><div class=\"chapter3-node chapter3-image-node\" style=\"position:absolute;left:1147.0794750656169px;top:594.2582677165354px;width:716.006719160105px;height:612.7118110236221px\"><img src=\"/slides/imported/chapter3/image5.png\" alt=\"Freeform 7\" draggable=\"false\" style=\"object-fit:cover;object-position:50% 50%\"/></div><div class=\"chapter3-node chapter3-image-node\" style=\"position:absolute;left:1261.5784776902888px;top:194.92199475065618px;width:607.5043569553806px;height:371.51485564304465px\"><img src=\"/img/hel.jpeg\" alt=\"Олон хэлний үсэг, тэмдэг дүрсэлсэн хүний тархи\" draggable=\"false\" style=\"object-fit:contain;object-position:50% 50%\"/></div><div class=\"chapter3-node chapter3-text is-heading\" style=\"position:absolute;left:535.7076115485564px;top:89.61102362204724px;width:697.193280839895px;height:310.2px;display:flex;flex-direction:column;justify-content:flex-start;padding-left:0;padding-right:0;padding-top:0;padding-bottom:0;overflow:hidden;transform-origin:left top;font-family:var(--serif), Georgia, serif;font-size:58px;font-weight:700;line-height:1.18;letter-spacing:-0.015em\"><div class=\"kicker-wrapper\" style=\"margin-bottom:12px\"><div class=\"kicker-pill\"><span class=\"kicker-diamond\">◆</span><span class=\"kicker-label\">3-р бүлэг · Ойрын ирээдүй</span></div></div><div class=\"chapter3-text-content\" style=\"width:100%;transform-origin:left top\"><div class=\"chapter3-paragraph\" style=\"text-align:left;margin-left:0;text-indent:0;margin-bottom:8px;position:relative\"><span class=\"chapter3-heading-run\" style=\"font-family:var(--serif), Georgia, serif;font-weight:700;color:var(--text)\">ЧУХАЛ ОЛОЛТ — ХЭЛ БОЛОВСРУУЛАЛТ</span></div></div></div><div class=\"chapter3-node chapter3-text\" style=\"position:absolute;left:177.07275590551183px;top:547.7793175853019px;width:1070.1669291338583px;height:348.9750131233596px;display:flex;flex-direction:column;justify-content:flex-start;padding-left:0;padding-right:0;padding-top:0;padding-bottom:0;overflow:hidden;transform-origin:left top;font-family:var(--sans), sans-serif;font-size:25px;font-weight:400;line-height:1.45;letter-spacing:normal\"><div class=\"chapter3-text-content\" style=\"width:100%;transform-origin:left top\"><div class=\"chapter3-paragraph\" style=\"text-align:left;margin-left:0.007559055118110236px;text-indent:-0.007559055118110236px;margin-bottom:8px;position:relative\"><span class=\"kicker-diamond\" aria-hidden=\"true\" style=\"display:inline-block;margin-right:10px;font-size:10px;vertical-align:middle\">◆</span><span class=\"chapter3-body-run\" style=\"font-family:var(--sans), sans-serif;color:var(--text)\">Google Translate — 2016</span></div><div class=\"chapter3-paragraph\" style=\"text-align:left;margin-left:0.007559055118110236px;text-indent:-0.007559055118110236px;margin-bottom:8px;position:relative\"><span class=\"kicker-diamond\" aria-hidden=\"true\" style=\"display:inline-block;margin-right:10px;font-size:10px;vertical-align:middle\">◆</span><span class=\"chapter3-body-run\" style=\"font-family:var(--sans), sans-serif;color:var(--text)\">Гүн мэдрэлийн сүлжээ</span></div><div class=\"chapter3-paragraph\" style=\"text-align:left;margin-left:0.007559055118110236px;text-indent:-0.007559055118110236px;margin-bottom:8px;position:relative\"><span class=\"kicker-diamond\" aria-hidden=\"true\" style=\"display:inline-block;margin-right:10px;font-size:10px;vertical-align:middle\">◆</span><span class=\"chapter3-body-run\" style=\"font-family:var(--sans), sans-serif;color:var(--text)\">Winograd Schema </span><span class=\"chapter3-body-run\" style=\"font-family:var(--sans), sans-serif;color:var(--text)\">сорилт</span></div><div class=\"chapter3-paragraph\" style=\"text-align:left;margin-left:0.007559055118110236px;text-indent:-0.007559055118110236px;margin-bottom:8px;position:relative\"><span class=\"kicker-diamond\" aria-hidden=\"true\" style=\"display:inline-block;margin-right:10px;font-size:10px;vertical-align:middle\">◆</span><span class=\"chapter3-body-run\" style=\"font-family:var(--sans), sans-serif;color:var(--text)\">Мэдээлэл боловсруулах ба ойлгох</span></div></div></div></div>",
     "textNodes": [
       "◆",
       "3-р бүлэг · Ойрын ирээдүй",
@@ -1651,10 +1571,10 @@
           "w": 607.5043569553806,
           "h": 371.51485564304465
         },
-        "src": "/slides/imported/chapter3/image7.png",
+        "src": "/img/hel.jpeg",
         "id": "chapter3-8-image",
-        "alt": "Freeform 8",
-        "fit": "cover",
+        "alt": "Олон хэлний үсэг, тэмдэг дүрсэлсэн хүний тархи",
+        "fit": "contain",
         "objectPosition": "50% 50%",
         "rotation": null
       },
@@ -2352,9 +2272,7 @@
     "type": "Comparison",
     "title": "КОДЫН АЛДААНЫ ЭСРЭГ НАЙДВАРТАЙ ХИЙМЭЛ ОЮУН",
     "subtitle": "",
-    "body": [
-      "КОДЫН АЛДААНЫ ЭСРЭГ НАЙДВАРТАЙ ХИЙМЭЛ ОЮУН"
-    ],
+    "body": ["КОДЫН АЛДААНЫ ЭСРЭГ НАЙДВАРТАЙ ХИЙМЭЛ ОЮУН"],
     "list": [],
     "quote": "",
     "notes": "",
@@ -2414,11 +2332,7 @@
           "w": 1034.9821522309712,
           "h": 511.1202099737533
         },
-        "cols": [
-          0.01919042166973223,
-          0.03283801020935375,
-          0.05663111166222333
-        ],
+        "cols": [0.01919042166973223, 0.03283801020935375, 0.05663111166222333],
         "rows": [
           {
             "h": 0.010217201589958735,
@@ -11262,18 +11176,12 @@
     "type": "Timeline",
     "title": "Дайсон",
     "subtitle": "",
-    "body": [
-      "Дайсон"
-    ],
+    "body": ["Дайсон"],
     "list": [],
     "quote": "",
     "notes": "",
     "html": "<div class=\"chapter3-canvas\"><div class=\"canvas-ambient-glow\"></div><div class=\"canvas-grid-pattern\"></div><div class=\"chapter3-node chapter3-text is-heading\" style=\"position:absolute;left:100.8px;top:57.599999999999994px;width:1713.6px;height:144px;display:flex;flex-direction:column;justify-content:center;padding-left:0;padding-right:0;padding-top:0;padding-bottom:0;overflow:hidden;transform-origin:left top;font-family:var(--serif), Georgia, serif;font-size:48px;font-weight:700;line-height:1.18;letter-spacing:-0.015em\"><div class=\"kicker-wrapper\" style=\"margin-bottom:12px\"><div class=\"kicker-pill\"><span class=\"kicker-diamond\">◆</span><span class=\"kicker-label\">6-р бүлэг · Дараагийн тэрбум жил</span></div></div><div class=\"chapter3-text-content\" style=\"width:100%;transform-origin:left top\"><div class=\"chapter3-paragraph\" style=\"text-align:left;margin-left:0;text-indent:0;margin-bottom:8px;position:relative\"><span class=\"chapter3-heading-run\" style=\"font-family:var(--serif), Georgia, serif;font-weight:700;color:var(--text)\">Дайсон</span></div></div></div><div class=\"chapter3-node chapter3-image-node\" style=\"position:absolute;left:100.8px;top:330.40708661417324px;width:1713.6px;height:548.7858267716535px\"><img src=\"/slides/imported/chapter6/image2.png\" alt=\"Дайсоны цагираг, сүрэг, бөмбөрцөг, бүрхүүлийн зураглал\" draggable=\"false\" style=\"object-fit:cover;object-position:50% 50%\"/></div></div>",
-    "textNodes": [
-      "◆",
-      "6-р бүлэг · Дараагийн тэрбум жил",
-      "Дайсон"
-    ],
+    "textNodes": ["◆", "6-р бүлэг · Дараагийн тэрбум жил", "Дайсон"],
     "text": "◆6-р бүлэг · Дараагийн тэрбум жилДайсон",
     "sha256": "f86dd06ad4e123b0a4eef3cd4786e17c12a1c896b5f380f940a43c5fba2fb76d",
     "nodes": [
@@ -17710,12 +17618,12 @@
     "subtitle": "",
     "body": [
       "Ухамсар хэзээ байдаг вэ?",
-      "Таны ухамсар хормын дөрөвний нэг секундээр хоцорч байна. Одоо та үнэхээр одоо-г биш, саяхан-ийг мэдэрч байна."
+      "Таны ухамсар хормын дөрөвний нэг секундээр хоцорч байдаг. Одоо та үнэхээр одоо-г биш, саяхан-ийг мэдэрч байна гэсэн үг."
     ],
     "list": [],
     "quote": "",
     "notes": "Захирал бүх ажлыг мэддэггүй, зөвхөн чухал дүгнэлтийг авдаг. Бага тархи мэдрэлийн эсийн ихэнхийг агуулсан ч ухамсаргүй.",
-    "html": "<div class=\"chapter3-canvas\"><div class=\"canvas-ambient-glow\"></div><div class=\"canvas-grid-pattern\"></div><div class=\"chapter3-node chapter3-text is-heading\" style=\"position:absolute;left:96px;top:57.6px;width:1728px;height:163.20000000000002px;display:flex;flex-direction:column;justify-content:center;padding-left:0;padding-right:0;padding-top:0;padding-bottom:0;overflow:hidden;transform-origin:left top;font-family:var(--serif), Georgia, serif;font-size:48px;font-weight:700;line-height:1.18;letter-spacing:-0.015em\"><div class=\"kicker-wrapper\" style=\"margin-bottom:12px\"><div class=\"kicker-pill\"><span class=\"kicker-diamond\">◆</span><span class=\"kicker-label\">8-р бүлэг · Ухамсар</span></div></div><div class=\"chapter3-text-content\" style=\"width:100%;transform-origin:left top\"><div class=\"chapter3-paragraph\" style=\"text-align:left;margin-left:0;text-indent:0;margin-bottom:8px;position:relative\"><span class=\"chapter3-heading-run\" style=\"font-family:var(--serif), Georgia, serif;font-weight:700;color:var(--text)\">Ухамсар </span><span class=\"chapter3-heading-run\" style=\"font-family:var(--serif), Georgia, serif;font-weight:700;color:var(--text)\">хэзээ</span><span class=\"chapter3-heading-run\" style=\"font-family:var(--serif), Georgia, serif;font-weight:700;color:var(--text)\"> </span><span class=\"chapter3-heading-run\" style=\"font-family:var(--serif), Georgia, serif;font-weight:700;color:var(--text)\">байдаг вэ?</span></div></div></div><div class=\"chapter3-node chapter3-text\" style=\"position:absolute;left:207.0259317585302px;top:242.01595800524936px;width:1409.9479265091863px;height:193.8750656167979px;display:flex;flex-direction:column;justify-content:flex-start;padding-left:0;padding-right:0;padding-top:0;padding-bottom:0;overflow:hidden;transform-origin:left top;font-family:var(--sans), sans-serif;font-size:25px;font-weight:400;line-height:1.45;letter-spacing:normal\"><div class=\"chapter3-text-content\" style=\"width:100%;transform-origin:left top\"><div class=\"chapter3-paragraph\" style=\"text-align:left;margin-left:0;text-indent:0;margin-bottom:8px;position:relative\"><span class=\"chapter3-body-run\" style=\"font-family:var(--sans), sans-serif;color:var(--text)\">Таны ухамсар хормын дөрөвний нэг секундээр хоцорч байна. Одоо та үнэхээр одоо-г биш, саяхан-ийг мэдэрч байна.</span></div></div></div><div class=\"chapter3-node chapter3-image-node\" style=\"position:absolute;left:207.0259317585302px;top:435.89102362204727px;width:1356px;height:612.3651443569554px\"><img src=\"/slides/imported/consciousness/image3.jpeg\" alt=\"C:\\Users\\Direkttek\\Downloads\\jolooch.jfif\" draggable=\"false\" style=\"object-fit:cover;object-position:50.0% 50.0%\"/></div></div>",
+    "html": "<div class=\"chapter3-canvas\"><div class=\"canvas-ambient-glow\"></div><div class=\"canvas-grid-pattern\"></div><div class=\"chapter3-node chapter3-text is-heading\" style=\"position:absolute;left:96px;top:57.6px;width:1728px;height:163.20000000000002px;display:flex;flex-direction:column;justify-content:center;padding-left:0;padding-right:0;padding-top:0;padding-bottom:0;overflow:hidden;transform-origin:left top;font-family:var(--serif), Georgia, serif;font-size:48px;font-weight:700;line-height:1.18;letter-spacing:-0.015em\"><div class=\"kicker-wrapper\" style=\"margin-bottom:12px\"><div class=\"kicker-pill\"><span class=\"kicker-diamond\">◆</span><span class=\"kicker-label\">8-р бүлэг · Ухамсар</span></div></div><div class=\"chapter3-text-content\" style=\"width:100%;transform-origin:left top\"><div class=\"chapter3-paragraph\" style=\"text-align:left;margin-left:0;text-indent:0;margin-bottom:8px;position:relative\"><span class=\"chapter3-heading-run\" style=\"font-family:var(--serif), Georgia, serif;font-weight:700;color:var(--text)\">Ухамсар </span><span class=\"chapter3-heading-run\" style=\"font-family:var(--serif), Georgia, serif;font-weight:700;color:var(--text)\">хэзээ</span><span class=\"chapter3-heading-run\" style=\"font-family:var(--serif), Georgia, serif;font-weight:700;color:var(--text)\"> </span><span class=\"chapter3-heading-run\" style=\"font-family:var(--serif), Georgia, serif;font-weight:700;color:var(--text)\">байдаг вэ?</span></div></div></div><div class=\"chapter3-node chapter3-text\" style=\"position:absolute;left:207.0259317585302px;top:242.01595800524936px;width:1409.9479265091863px;height:193.8750656167979px;display:flex;flex-direction:column;justify-content:flex-start;padding-left:0;padding-right:0;padding-top:0;padding-bottom:0;overflow:hidden;transform-origin:left top;font-family:var(--sans), sans-serif;font-size:25px;font-weight:400;line-height:1.45;letter-spacing:normal\"><div class=\"chapter3-text-content\" style=\"width:100%;transform-origin:left top\"><div class=\"chapter3-paragraph\" style=\"text-align:left;margin-left:0;text-indent:0;margin-bottom:8px;position:relative\"><span class=\"chapter3-body-run\" style=\"font-family:var(--sans), sans-serif;color:var(--text)\">Таны ухамсар хормын дөрөвний нэг секундээр хоцорч байдаг. Одоо та үнэхээр одоо-г биш, саяхан-ийг мэдэрч байна гэсэн үг.</span></div></div></div><div class=\"chapter3-node chapter3-image-node\" style=\"position:absolute;left:207.0259317585302px;top:435.89102362204727px;width:1356px;height:612.3651443569554px\"><img src=\"/img/jujig.png\" alt=\"Тайзан дээр жүжиглэж буй гурван хүн\" draggable=\"false\" style=\"object-fit:contain;object-position:50.0% 50.0%\"/></div></div>",
     "textNodes": [
       "◆",
       "8-р бүлэг · Ухамсар",
@@ -17723,9 +17631,9 @@
       "хэзээ",
       " ",
       "байдаг вэ?",
-      "Таны ухамсар хормын дөрөвний нэг секундээр хоцорч байна. Одоо та үнэхээр одоо-г биш, саяхан-ийг мэдэрч байна."
+      "Таны ухамсар хормын дөрөвний нэг секундээр хоцорч байдаг. Одоо та үнэхээр одоо-г биш, саяхан-ийг мэдэрч байна гэсэн үг."
     ],
-    "text": "◆8-р бүлэг · УхамсарУхамсар хэзээ байдаг вэ?Таны ухамсар хормын дөрөвний нэг секундээр хоцорч байна. Одоо та үнэхээр одоо-г биш, саяхан-ийг мэдэрч байна.",
+    "text": "◆8-р бүлэг · УхамсарУхамсар хэзээ байдаг вэ?Таны ухамсар хормын дөрөвний нэг секундээр хоцорч байдаг. Одоо та үнэхээр одоо-г биш, саяхан-ийг мэдэрч байна гэсэн үг.",
     "sha256": "4a1033e849c184cfae790aada7d6019dcf85e64e0821ac2c379280bdc38dacc5",
     "nodes": [
       {
@@ -17814,7 +17722,7 @@
               "bullet": "",
               "runs": [
                 {
-                  "text": "Таны ухамсар хормын дөрөвний нэг секундээр хоцорч байна. Одоо та үнэхээр одоо-г биш, саяхан-ийг мэдэрч байна.",
+                  "text": "Таны ухамсар хормын дөрөвний нэг секундээр хоцорч байдаг. Одоо та үнэхээр одоо-г биш, саяхан-ийг мэдэрч байна гэсэн үг.",
                   "style": {
                     "fontFamily": "IBM Plex Sans",
                     "color": "#E8EDF5"
@@ -17835,10 +17743,10 @@
           "w": 1356,
           "h": 612.3651443569554
         },
-        "src": "/slides/imported/consciousness/image3.jpeg",
+        "src": "/img/jujig.png",
         "id": "consciousness-6",
-        "alt": "C:\\Users\\Direkttek\\Downloads\\jolooch.jfif",
-        "fit": "cover",
+        "alt": "Тайзан дээр жүжиглэж буй гурван хүн",
+        "fit": "contain",
         "objectPosition": "50.0% 50.0%",
         "rotation": null
       }
@@ -19737,11 +19645,7 @@
     "quote": "",
     "notes": "Анхаарал хандуулсанд баярлалаа. Амьдрал 3.0 номын агуулгыг бататгах хоёр үгийн сүлжээг /ajilbar хуудаснаас бөглөөрэй. Сүлжээ бүр хөндлөн гурван, босоо гурван үгтэй.",
     "html": "<div class=\"closing-slide\"><div><h2 class=\"closing-title\">Анхаарал <br/>хандуулсанд <br/><em>баярлалаа</em></h2></div></div>",
-    "textNodes": [
-      "Анхаарал ",
-      "хандуулсанд ",
-      "баярлалаа"
-    ],
+    "textNodes": ["Анхаарал ", "хандуулсанд ", "баярлалаа"],
     "text": "Анхаарал хандуулсанд баярлалаа",
     "sha256": "a425d1f23cde739f0242bdd7c1a8417a450da4de27cc42ca65405b58e0e4a326"
   }

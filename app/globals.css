@@ -1434,6 +1434,218 @@ sup {
   color: var(--navy);
 }
 
+/* ───────────── 7–12. Түлхүүр үгс ───────────── */
+
+.ch1-minimal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 28px;
+}
+
+.ch1-three-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 64px;
+  align-items: center;
+}
+
+.ch1-evolution-item,
+.ch1-camp-item,
+.ch1-concept {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  min-width: 0;
+}
+
+.ch1-version,
+.ch1-keyword,
+.ch1-pair-keyword {
+  font-family: var(--serif);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+  color: var(--navy);
+}
+
+.ch1-version {
+  font-size: 56px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.ch1-keyword {
+  font-size: 52px;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.ch1-evolution-photo,
+.ch1-camp-portrait {
+  position: relative;
+  width: 100%;
+  max-width: 470px;
+  height: 360px;
+  overflow: hidden;
+  background: var(--tint);
+}
+
+.ch1-evolution-photo img,
+.ch1-camp-photo,
+.ch1-debate-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ch1-camp-portrait {
+  max-width: 440px;
+  height: 340px;
+}
+
+.ch1-camp-symbol {
+  position: absolute;
+  right: 18px;
+  bottom: 18px;
+  width: 88px;
+  height: 88px;
+}
+
+.ch1-pair-head {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  min-height: 110px;
+}
+
+.ch1-pair-keyword {
+  font-size: 68px;
+}
+
+.ch1-pair-keyword:first-child {
+  padding-left: 48px;
+}
+
+.ch1-pair-keyword:last-child {
+  padding-right: 48px;
+  text-align: right;
+}
+
+.ch1-wide-diagram {
+  display: block;
+  width: 100%;
+  height: 520px;
+}
+
+.ch1-debate-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 200px minmax(0, 1fr);
+  gap: 48px;
+  align-items: center;
+  height: auto;
+}
+
+.ch1-debate-person {
+  width: 100%;
+  max-width: 620px;
+  height: auto;
+  margin: 0 auto;
+  overflow: visible;
+  background: transparent;
+}
+
+.ch1-debate-photo {
+  height: 360px;
+}
+
+.ch1-debate-bridge {
+  display: block;
+  width: 200px;
+  height: 480px;
+}
+
+.ch1-concept {
+  gap: 24px;
+}
+
+.ch1-concept-diagram {
+  display: block;
+  width: 440px;
+  max-width: 100%;
+  height: 390px;
+}
+
+.ch1-support {
+  max-width: 470px;
+  font-size: 27px;
+  font-weight: 400;
+  line-height: 1.45;
+  text-align: center;
+  text-wrap: pretty;
+  color: var(--ink2);
+}
+
+.ch1-evolution-item .ch1-support {
+  min-height: 80px;
+}
+
+.ch1-concept .ch1-support {
+  min-height: 118px;
+}
+
+.ch1-learning-captions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  padding: 0 48px;
+}
+
+.ch1-learning-captions .ch1-support {
+  max-width: 580px;
+  margin: 0 auto;
+}
+
+.ch1-camp-caption,
+.ch1-debate-caption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.ch1-person-name {
+  font-size: 31px;
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--navy);
+}
+
+.ch1-other-names {
+  font-size: 23px;
+  line-height: 1.4;
+  color: var(--muted);
+}
+
+.ch1-camp-caption .ch1-support {
+  margin-top: 10px;
+  min-height: 76px;
+  font-size: 26px;
+}
+
+.ch1-debate-caption {
+  padding-top: 20px;
+}
+
+.ch1-debate-caption .ch1-support {
+  max-width: 570px;
+}
+
 .pull-quote {
   margin-top: 30px;
   padding-left: 30px;

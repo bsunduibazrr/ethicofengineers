@@ -127,7 +127,7 @@ const layouts = {
 
   'chapter3-03': ({ P, IMG }) => `<div class="xmedia">${header(S3.kicker, P(0), { caps: true })}<div class="xmedia-grid right"><div class="xmedia-body">${list([P(1), P(2), P(3), P(4)], 'big')}</div>${figure(IMG('image7.png'), { cls: 'wide' })}</div></div>`,
 
-  'chapter3-04': ({ P, IMG }) => `<div class="xmedia">${header(S3.kicker, P(0), { caps: true })}<div class="xmedia-grid right"><div class="xmedia-body">${list([P(1), P(2), P(3), P(4)], 'big')}</div>${figure(IMG('image7.png'), { cls: 'wide' })}</div></div>`,
+  'chapter3-04': ({ P, IMG }) => `<div class="xmedia">${header(S3.kicker, P(0), { caps: true })}<div class="xmedia-grid right"><div class="xmedia-body">${list([P(1), P(2), P(3), P(4)], 'big')}</div>${figure(IMG('hel.jpeg'), { cls: 'wide contain' })}</div></div>`,
 
   'chapter3-05': ({ P }) => `<div class="xtable-slide">${header(S3.kicker, P(9), { caps: true })}<table class="xtable"><thead><tr><th>${P(0)}</th><th>${P(1)}</th><th>${P(2)}</th></tr></thead><tbody>${[[3, 4, 5], [6, 7, 8]].map(([a, b, c]) => `<tr><td class="yr">${P(a)}</td><td class="ex">${P(b)}</td><td>${P(c)}</td></tr>`).join('')}</tbody></table></div>`,
 
@@ -260,7 +260,7 @@ const layouts = {
 
   'consciousness-03': ({ P, IMG }) => `<div class="xmedia">${header(S8.kicker, P(0))}<div class="xmedia-grid left wide">${figure(IMG('image2-3217.jpeg'), { cls: 'contain' })}<div class="xmedia-body"><div class="xq"><i aria-hidden="true"></i><p>${P(1)}</p></div><div class="xq"><i aria-hidden="true"></i><p>${P(3)}</p></div></div></div><div class="xnote">${P(2)}</div></div>`,
 
-  'consciousness-04': ({ P, IMG }) => `<div class="xmedia">${header(S8.kicker, P(0))}<div class="xmedia-grid left wide">${figure(IMG('image3.jpeg'))}<div class="xmedia-body center"><blockquote class="xpull">${P(1)}</blockquote></div></div></div>`,
+  'consciousness-04': ({ P, IMG }) => `<div class="xmedia">${header(S8.kicker, P(0))}<div class="xmedia-grid left wide">${figure(IMG('jujig.png'), { cls: 'contain' })}<div class="xmedia-body center"><blockquote class="xpull">${P(1)}</blockquote></div></div></div>`,
 
   'consciousness-05': ({ P, IMG }) => `<div class="xmedia">${header(S8.kicker, P(0))}<div class="xmedia-grid left">${figure(IMG('image4.jpeg'), { cls: 'contain' })}<div class="xmedia-body"><div class="xeyebrow">${P(1)}</div><div class="xcard accent"><h3>${P(2)}</h3><p>${P(3)}</p></div><div class="xbadge">${P(4)}</div></div></div></div>`,
 
