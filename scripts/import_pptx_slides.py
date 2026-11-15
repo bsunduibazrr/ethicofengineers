@@ -192,6 +192,16 @@ def fill_style(parent: ET.Element | None, usage: str) -> str | None:
     return None
 
 
+def image_opacity(blip_fill: ET.Element | None) -> float:
+    """Transparent picture fills also occur behind ordinary PowerPoint text."""
+    if blip_fill is None:
+        return 1.0
+    opacity = 1.0
+    for effect in blip_fill.findall("a:blip/a:alphaModFix", NS):
+        opacity *= int(effect.attrib.get("amt", "100000")) / 100000
+    return max(0.0, min(1.0, opacity))
+
+
 def transform_from_xfrm(xfrm: ET.Element | None, scale_x: float, scale_y: float, offset_x: float, offset_y: float) -> tuple[dict, float, float]:
     if xfrm is None:
         return {"x": 0, "y": 0, "w": 0, "h": 0}, scale_x, scale_y
@@ -448,9 +458,10 @@ class DeckConverter:
         if blip_fill is not None:
             blip = blip_fill.find("a:blip", NS)
             src_part = relationship_image(relations, blip.attrib.get(f"{{{R}}}embed") if blip is not None else None)
-            if src_part:
+            opacity = image_opacity(blip_fill)
+            if src_part and opacity > 0:
                 fit, pos = image_crop(blip_fill)
-                nodes.append({"kind": "image", "rect": local_rect, "src": self.extract_image(src_part), "id": f"{self.deck_id}-{shape_id}-image", "alt": name, "fit": fit, "objectPosition": pos, "rotation": local_rect.get("rotation")})
+                nodes.append({"kind": "image", "rect": local_rect, "src": self.extract_image(src_part), "id": f"{self.deck_id}-{shape_id}-image", "alt": name, "fit": fit, "objectPosition": pos, "rotation": local_rect.get("rotation"), **({"opacity": opacity} if opacity < 1 else {})})
         elif fill:
             nodes.append({"kind": "shape", "rect": local_rect, "preset": preset, "fill": fill, "stroke": stroke, "strokeWidth": round(stroke_width, 2), "id": f"{self.deck_id}-{shape_id}"})
         tx_body = sp.find("p:txBody", NS)
@@ -470,10 +481,11 @@ class DeckConverter:
         blip_fill = pic.find("p:blipFill", NS)
         blip = blip_fill.find("a:blip", NS) if blip_fill is not None else None
         src_part = relationship_image(relations, blip.attrib.get(f"{{{R}}}embed") if blip is not None else None)
-        if not src_part or not rect["w"] or not rect["h"]:
+        opacity = image_opacity(blip_fill)
+        if not src_part or not rect["w"] or not rect["h"] or opacity == 0:
             return
         fit, pos = image_crop(blip_fill)
-        nodes.append({"kind": "image", "rect": rect, "src": self.extract_image(src_part), "id": f"{self.deck_id}-{shape_id}", "alt": alt or name, "fit": fit, "objectPosition": pos, "rotation": rect.get("rotation")})
+        nodes.append({"kind": "image", "rect": rect, "src": self.extract_image(src_part), "id": f"{self.deck_id}-{shape_id}", "alt": alt or name, "fit": fit, "objectPosition": pos, "rotation": rect.get("rotation"), **({"opacity": opacity} if opacity < 1 else {})})
 
     def parse_graphic_frame(self, frame: ET.Element, nodes: list, ox: float, oy: float, gx: float, gy: float):
         table = frame.find(".//a:tbl", NS)
@@ -529,13 +541,38 @@ class DeckConverter:
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--chapter3", type=Path, required=True)
-    parser.add_argument("--chapter4", type=Path, required=True)
-    parser.add_argument("--chapter6", type=Path, required=True)
-    parser.add_argument("--consciousness", type=Path, required=True)
+    parser.add_argument("--chapter3", type=Path)
+    parser.add_argument("--chapter4", type=Path)
+    parser.add_argument("--chapter6", type=Path)
+    parser.add_argument("--consciousness", type=Path)
+    parser.add_argument("--replace-chapter4", type=Path, help="Replace only chapter 4 in the existing imported data; preserve other chapters and assets.")
     parser.add_argument("--output", type=Path, default=Path("slides/imported-pptx.json"))
     parser.add_argument("--assets", type=Path, default=Path("public/slides/imported"))
     args = parser.parse_args()
+
+    if args.replace_chapter4:
+        existing = args.output.read_text(encoding="utf-8")
+        data = json.loads(existing)
+        converter = DeckConverter("chapter4", "4-р бүлэг", args.replace_chapter4, args.assets, 1, None)
+        try:
+            data["chapter4"] = converter.convert()
+        finally:
+            converter.archive.close()
+        chapter = re.search(r'"chapter4"\s*:\s*', existing)
+        if chapter is None:
+            parser.error("existing imported data has no chapter4 entry")
+        start = chapter.end()
+        _, end = json.JSONDecoder().raw_decode(existing, start)
+        if "\n" in existing:
+            replacement = "\n  ".join(json.dumps(data["chapter4"], ensure_ascii=False, indent=2).splitlines())
+        else:
+            replacement = json.dumps(data["chapter4"], ensure_ascii=False, separators=(",", ":"))
+        args.output.write_text(existing[:start] + replacement + existing[end:], encoding="utf-8")
+        print("Replaced chapter 4 with", len(data["chapter4"]), "slides in", args.output)
+        return
+
+    if not all((args.chapter3, args.chapter4, args.chapter6, args.consciousness)):
+        parser.error("provide all four chapter files, or use --replace-chapter4")
 
     decks = [
         ("chapter3", "3-р бүлэг", args.chapter3, 1, 10),

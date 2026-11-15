@@ -1,28 +1,29 @@
 #!/usr/bin/env python3
 """Compare chapter 4 text independently with the supplied PowerPoint XML.
 
-Uses only Python's standard library. The requested quotation-mark removal is
-applied only to the raw source expected text. All other punctuation, whitespace,
-case, Unicode characters, paragraph order, and run boundaries remain exact.
+Uses only Python's standard library. Source text, quotation marks, whitespace,
+paragraph order, run boundaries, presenter notes, and visible artwork are
+compared with the new nine-slide PowerPoint without editing its copy.
 """
 
 from __future__ import annotations
 
 import argparse
+import base64
+from collections import Counter
 import hashlib
 from html.parser import HTMLParser
 import json
 from pathlib import Path
 import posixpath
+import re
 import sys
 from xml.etree import ElementTree as ET
 import zipfile
 
 
 ROOT = Path(__file__).resolve().parent.parent
-SOURCE_SHA256 = "9f5f41cd28ef54658b571a057e8094b8dde5e80616c66da0d0c4928204ed9360"
-REMOVED_QUOTATION_MARKS = '«»“”„‟‹›"'
-QUOTATION_REMOVAL = str.maketrans("", "", REMOVED_QUOTATION_MARKS)
+SOURCE_SHA256 = "28abf3f8cea8f1ef59537d2536197c8d0e41b77c6c267b088465c065a3b2f786"
 NS = {
     "p": "http://schemas.openxmlformats.org/presentationml/2006/main",
     "a": "http://schemas.openxmlformats.org/drawingml/2006/main",
@@ -86,16 +87,51 @@ def raw_slides(pptx: Path) -> list[dict]:
         for index, slide_id in enumerate(presentation.findall("p:sldIdLst/p:sldId", NS)):
             rid = slide_id.attrib[f"{{{NS['r']}}}id"]
             part = presentation_rels[rid]["target"]
-            slide = raw_xml_text(archive.read(part))
+            xml = archive.read(part)
+            slide = raw_xml_text(xml)
             rel_part = posixpath.join(
                 posixpath.dirname(part), "_rels", posixpath.basename(part) + ".rels"
             )
-            notes = [
-                {"xmlPart": rel["target"], **raw_xml_text(archive.read(rel["target"]))}
-                for rel in relationships(archive, rel_part).values()
-                if rel["type"].endswith("/notesSlide") and not rel["external"]
-            ]
-            slide.update(order=index + 1, xmlPart=part, notes=notes)
+            rels = relationships(archive, rel_part)
+            notes = []
+            for rel in rels.values():
+                if not rel["type"].endswith("/notesSlide") or rel["external"]:
+                    continue
+                note_xml = archive.read(rel["target"])
+                note_tree = ET.fromstring(note_xml)
+                body = []
+                for shape in note_tree.findall(".//p:sp", NS):
+                    placeholder = shape.find(".//p:ph", NS)
+                    if placeholder is None or placeholder.get("type") != "body":
+                        continue
+                    for paragraph in shape.findall("p:txBody/a:p", NS):
+                        text = "".join(node.text or "" for node in paragraph.findall(".//a:t", NS)).strip()
+                        if text and not re.fullmatch(r"\d+", text):
+                            body.append(text)
+                notes.append({"xmlPart": rel["target"], **raw_xml_text(note_xml), "bodyText": "\n".join(body)})
+            images = []
+            transparent_fills = 0
+            for blip in ET.fromstring(xml).findall(".//a:blip", NS):
+                if any(effect.get("amt") == "0" for effect in blip.findall("a:alphaModFix", NS)):
+                    transparent_fills += 1
+                    continue
+                rid = blip.get(f"{{{NS['r']}}}embed")
+                image_rel = rels.get(rid)
+                if not image_rel or image_rel["external"]:
+                    continue
+                image_part = image_rel["target"]
+                data = archive.read(image_part)
+                suffix = Path(image_part).suffix.lower()
+                mime = {".png": "image/png", ".jpeg": "image/jpeg", ".jpg": "image/jpeg"}[suffix]
+                images.append({
+                    "xmlPart": image_part,
+                    "src": f"/slides/imported/chapter4/{Path(image_part).name}",
+                    "sha256": hashlib.sha256(data).hexdigest(),
+                    "dataURI": f"data:{mime};base64,{base64.b64encode(data).decode()}",
+                })
+            slide.update(order=index + 1, xmlPart=part, notes=notes,
+                         notesText="\n".join(note["bodyText"] for note in notes),
+                         images=images, ignoredTransparentImageFillCount=transparent_fills)
             slides.append(slide)
     return slides
 
@@ -198,6 +234,49 @@ class EmbeddedSlidesParser(HTMLParser):
             self.parts.append(data)
 
 
+class ImageHTMLParser(HTMLParser):
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.sources = []
+
+    def handle_starttag(self, tag, attrs):
+        if tag == "img":
+            self.sources.append(dict(attrs).get("src", ""))
+
+    def handle_startendtag(self, tag, attrs):
+        self.handle_starttag(tag, attrs)
+
+
+def artwork_check(raw_slide: dict, imported_slide: dict, design_html: str, exported_html: str) -> dict:
+    expected = raw_slide["images"]
+    expected_sources = Counter(image["src"] for image in expected)
+    imported_sources = Counter(node["src"] for node in imported_slide.get("nodes", []) if node["kind"] == "image")
+    design_images = ImageHTMLParser()
+    design_images.feed(design_html)
+    exported_images = ImageHTMLParser()
+    exported_images.feed(exported_html)
+    assets = []
+    for image in {item["src"]: item for item in expected}.values():
+        asset = ROOT / "public" / image["src"].lstrip("/")
+        actual_hash = hashlib.sha256(asset.read_bytes()).hexdigest() if asset.exists() else None
+        assets.append({"sourceXmlPart": image["xmlPart"], "asset": image["src"],
+                       "sha256": actual_hash, "sourceSha256": image["sha256"],
+                       "exactSourceBytes": actual_hash == image["sha256"]})
+    result = {
+        "sourceVisibleImageCount": len(expected),
+        "ignoredTransparentImageFillCount": raw_slide["ignoredTransparentImageFillCount"],
+        "importedVisibleImageOccurrencesExactlyMatch": imported_sources == expected_sources,
+        "designedVisibleImageOccurrencesExactlyMatch": Counter(design_images.sources) == expected_sources,
+        "offlineImagesEmbedExactSourceBytes": Counter(exported_images.sources) == Counter(image["dataURI"] for image in expected),
+        "assets": assets,
+    }
+    result["passed"] = (result["importedVisibleImageOccurrencesExactlyMatch"]
+                        and result["designedVisibleImageOccurrencesExactlyMatch"]
+                        and result["offlineImagesEmbedExactSourceBytes"]
+                        and all(asset["exactSourceBytes"] for asset in assets))
+    return result
+
+
 def rendered_check(html: str, expected: list[str]) -> dict:
     parser = ParagraphHTMLParser()
     parser.feed(html)
@@ -227,7 +306,7 @@ def rendered_check(html: str, expected: list[str]) -> dict:
 
 def main() -> int:
     cli = argparse.ArgumentParser(description=__doc__)
-    cli.add_argument("--pptx", type=Path, default=ROOT / "slides/sources/Life_3.0_Chapter_4_Presentation.pptx")
+    cli.add_argument("--pptx", type=Path, default=ROOT / "slides/sources/Life3_Chapter4_Art.pptx")
     args = cli.parse_args()
     original_sha256 = hashlib.sha256(args.pptx.read_bytes()).hexdigest()
     raw = raw_slides(args.pptx)
@@ -238,7 +317,7 @@ def main() -> int:
     export_parser.feed((ROOT / "dist/life3.html").read_text())
     exported = json.loads("".join(export_parser.parts))
 
-    expected_ids = [f"chapter4-{number:02d}" for number in range(1, 14)]
+    expected_ids = [f"chapter4-{number:02d}" for number in range(1, len(raw) + 1)]
     frozen_by_id = {slide["id"]: slide for slide in frozen}
     exported_by_id = {slide["id"]: slide for slide in exported}
     structure = {
@@ -246,33 +325,27 @@ def main() -> int:
         "importedSlideCount": len(imported),
         "deckSlideCount": len(frozen),
         "exportedSlideCount": len(exported),
-        "chapter4IdsAtPositions36Through48": [slide["id"] for slide in frozen[35:48]],
-        "exportedIdsAtPositions36Through48": [slide["id"] for slide in exported[35:48]],
+        "chapter4IdsAtPositions36Through44": [slide["id"] for slide in frozen[35:35 + len(raw)]],
+        "exportedIdsAtPositions36Through44": [slide["id"] for slide in exported[35:35 + len(raw)]],
         "allChapter4Ids": [slide["id"] for slide in frozen if slide["id"].startswith("chapter4-")],
         "allDesignedChapter4Ids": sorted(key for key in design if key.startswith("chapter4-")),
     }
     structure["passed"] = (
-        len(raw) == len(imported) == 13
-        and len(frozen) == len(exported) == 77
-        and structure["chapter4IdsAtPositions36Through48"] == expected_ids
-        and structure["exportedIdsAtPositions36Through48"] == expected_ids
+        len(raw) == len(imported) == 9
+        and len(frozen) == len(exported) == 73
+        and structure["chapter4IdsAtPositions36Through44"] == expected_ids
+        and structure["exportedIdsAtPositions36Through44"] == expected_ids
         and structure["allChapter4Ids"] == expected_ids
         and structure["allDesignedChapter4Ids"] == expected_ids
+        and all(slide["order"] == index + 1 for index, slide in enumerate(frozen))
+        and all(slide["order"] == index + 1 for index, slide in enumerate(exported))
     )
 
     slides = []
     for index, raw_slide in enumerate(raw):
         slide_id = f"chapter4-{index + 1:02d}"
-        # Only source quotation marks may differ; preserve each source run and
-        # paragraph boundary, including runs made empty by quotation removal.
-        expected = [
-            paragraph["text"].translate(QUOTATION_REMOVAL)
-            for paragraph in raw_slide["paragraphs"]
-        ]
-        expected_runs = [
-            [run.translate(QUOTATION_REMOVAL) for run in paragraph["runs"]]
-            for paragraph in raw_slide["paragraphs"]
-        ]
+        expected = [paragraph["text"] for paragraph in raw_slide["paragraphs"]]
+        expected_runs = [paragraph["runs"] for paragraph in raw_slide["paragraphs"]]
         actual = imported_paragraphs(imported[index]) if index < len(imported) else []
         frozen_slide = frozen_by_id.get(slide_id, {})
         exported_slide = exported_by_id.get(slide_id, {})
@@ -283,10 +356,12 @@ def main() -> int:
         imported_runs_exact = [paragraph["runs"] for paragraph in actual] == expected_runs
         design_result = rendered_check(design.get(slide_id, ""), expected)
         export_result = rendered_check(exported_slide.get("html", ""), expected)
-        notes_unchanged = not raw_slide["notes"] and (
+        notes_unchanged = (
             imported[index].get("notes", "") == frozen_slide.get("notes", "")
-            == exported_slide.get("notes", "") == ""
+            == exported_slide.get("notes", "") == raw_slide["notesText"]
         ) if index < len(imported) else False
+        artwork = artwork_check(raw_slide, imported[index] if index < len(imported) else {},
+                                design.get(slide_id, ""), exported_slide.get("html", ""))
         check = {
             "id": slide_id,
             "sourceOrder": index + 1,
@@ -299,10 +374,12 @@ def main() -> int:
             "sourceFieldCount": raw_slide["fieldCount"],
             "sourceTableCount": raw_slide["tableCount"],
             "sourceNotesPartCount": len(raw_slide["notes"]),
-            "importedParagraphsMatchAfterQuotationRemoval": imported_text_exact,
-            "importedRunBoundariesAndWhitespaceMatchAfterQuotationRemoval": imported_runs_exact,
-            "frozenReferenceParagraphsMatchAfterQuotationRemoval": actual_reference == expected,
+            "importedParagraphsExactlyMatch": imported_text_exact,
+            "importedRunBoundariesAndWhitespaceExactlyMatch": imported_runs_exact,
+            "frozenReferenceParagraphsExactlyMatch": actual_reference == expected,
             "notesExactlyMatch": notes_unchanged,
+            "sourceNotesSha256": hashlib.sha256(raw_slide["notesText"].encode()).hexdigest(),
+            "artwork": artwork,
             "design": design_result,
             "export": export_result,
             "designAndExportFullTextExactlyMatch": design_result["fullTextSha256"] == export_result["fullTextSha256"],
@@ -311,38 +388,28 @@ def main() -> int:
             check["importedParagraphDifferences"] = {"expected": expected, "actual": [p["text"] for p in actual]}
         check["passed"] = all([
             imported_text_exact, imported_runs_exact, actual_reference == expected,
-            notes_unchanged, design_result["passed"], export_result["passed"],
+            notes_unchanged, artwork["passed"], design_result["passed"], export_result["passed"],
             check["designAndExportFullTextExactlyMatch"],
         ])
         slides.append(check)
 
-    last_text = [paragraph["text"] for paragraph in raw[-1]["paragraphs"]] if raw else []
-    duplicate_footer = {
-        "sourceFooterLabelOccurrences": last_text.count("LIFE 3.0  •  4-Р БҮЛЭГ"),
-        "sourcePage13Occurrences": last_text.count("13"),
-        "preservedByParagraphChecks": bool(slides and slides[-1]["passed"]),
-    }
-    duplicate_footer["passed"] = (
-        duplicate_footer["sourceFooterLabelOccurrences"] == 2
-        and duplicate_footer["sourcePage13Occurrences"] == 2
-        and duplicate_footer["preservedByParagraphChecks"]
-    )
     report = {
-        "date": "2026-11-12",
+        "date": "2026-11-15",
         "sourceFile": str(args.pptx),
         "originalFileSha256": original_sha256,
         "expectedOriginalFileSha256": SOURCE_SHA256,
         "originalFileExactlyMatches": original_sha256 == SOURCE_SHA256,
-        "comparison": "Independent raw ZIP/XML extraction in presentation relationship order. Only the listed quotation marks are removed from raw source expected text. All remaining Unicode characters, punctuation, whitespace, case, paragraph order, and run boundaries must match exactly. Blank source paragraphs contain no visible text and are excluded only after extraction.",
-        "permittedSourceQuotationRemoval": REMOVED_QUOTATION_MARKS,
+        "comparison": "Independent raw ZIP/XML extraction in presentation relationship order. All Unicode characters, quotation marks, punctuation, whitespace, case, paragraph order, and run boundaries must match exactly. Empty source paragraphs are excluded only after extraction; whitespace-only paragraphs remain. Presenter notes use body-placeholder paragraphs, excluding blank and numeric-only page labels. Visible artwork must preserve source bytes and occurrences; fully transparent image fills are excluded.",
         "structure": structure,
-        "duplicateFooterOnFinalSourceSlide": duplicate_footer,
+        "sourceVisibleImageCount": sum(len(slide["images"]) for slide in raw),
+        "sourceUniqueVisibleImageCount": len({image["src"] for slide in raw for image in slide["images"]}),
         "slides": slides,
     }
     report["passed"] = (
         report["originalFileExactlyMatches"] and structure["passed"]
-        and len(slides) == 13 and all(slide["passed"] for slide in slides)
-        and duplicate_footer["passed"]
+        and len(slides) == 9 and all(slide["passed"] for slide in slides)
+        and report["sourceVisibleImageCount"] == 7
+        and report["sourceUniqueVisibleImageCount"] == 6
     )
     report_path = ROOT / "reports/chapter4-source-verification.json"
     report_path.parent.mkdir(parents=True, exist_ok=True)

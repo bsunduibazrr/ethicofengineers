@@ -3,6 +3,7 @@
  * Frozen source extraction. Never edits or normalizes slide copy.
  * node scripts/extract-content.cjs          Creates a snapshot once.
  * node scripts/extract-content.cjs --check  Compares all content and order.
+ * --update-chapter4 replaces that chapter while preserving every other snapshot.
  * Existing snapshots are never silently overwritten.
  */
 const fs = require('node:fs');
@@ -107,7 +108,7 @@ const explicitTypes = {
   landscape: 'Two columns', memory: 'Comparison', compute: 'Two columns', learning: 'Conclusion',
   case: 'Comparison', qa: 'Conclusion', thanks: 'Conclusion',
   'ch3-research': 'Title + list', 'ch3-conclusion': 'Conclusion',
-  'chapter4-13': 'Conclusion',
+  'chapter4-09': 'Conclusion',
 };
 function classify(slide, title, nodes) {
   if (explicitTypes[slide.id]) return explicitTypes[slide.id];
@@ -142,7 +143,7 @@ const extracted = slides.map((slide, index) => {
   if (deckKey) sourceNodes = imported[deckKey][Number(slide.id.slice(-2)) - 1].nodes;
   if (deckKey === 'chapter4') {
     const paragraphs = sourceNodes.filter(node => node.kind === 'text').flatMap(node => node.text.paragraphs.map(paragraph => paragraph.runs.map(run => run.text).join('')));
-    title = slide.id === 'chapter4-01' ? paragraphs.slice(1, 3).join(' ') : paragraphs[1];
+    title = slide.id === 'chapter4-08' ? paragraphs[2].trim() : paragraphs[1];
   }
   const snapshot = {
     id: slide.id, order: index + 1, section: slide.section,
@@ -182,20 +183,41 @@ const audit = { count: extracted.length, source: 'slides/content.source.json', t
   slides: extracted.map(({ id, order, section, title, type }) => ({ id, order, section, title, type })),
 };
 
-if (process.argv.includes('--check')) {
+if (process.argv.includes('--check') || process.argv.includes('--check-chapter4')) {
   const frozen = JSON.parse(fs.readFileSync(outputPath, 'utf8'));
+  const chapter4Only = process.argv.includes('--check-chapter4');
+  const expectedSlides = chapter4Only ? frozen.filter(slide => slide.id.startsWith('chapter4-')) : frozen;
+  const actualSlides = chapter4Only ? extracted.filter(slide => slide.id.startsWith('chapter4-')) : extracted;
   const differences = [];
-  if (frozen.length !== slides.length) differences.push(`Frozen count is ${frozen.length}; expected ${slides.length}`);
-  for (let index = 0; index < Math.max(frozen.length, extracted.length); index++) {
-    const expected = frozen[index]; const actual = extracted[index];
+  if (expectedSlides.length !== actualSlides.length) differences.push(`Frozen count is ${expectedSlides.length}; expected ${actualSlides.length}`);
+  for (let index = 0; index < Math.max(expectedSlides.length, actualSlides.length); index++) {
+    const expected = expectedSlides[index]; const actual = actualSlides[index];
     if (!expected || !actual) { differences.push(`Missing slide ${index + 1}`); continue; }
     for (const field of ['id', 'html', 'textNodes', 'notes', 'expandedHtml', 'expandedTextNodes', 'interactions', 'nodes']) {
       if (JSON.stringify(expected[field]) !== JSON.stringify(actual[field])) differences.push(`${index + 1} (${actual.id}): ${field}`);
     }
   }
-  console.log(JSON.stringify({ count: extracted.length, differences: differences.length, details: differences,
+  console.log(JSON.stringify({ count: actualSlides.length, differences: differences.length, details: differences,
     contentSha256: sha(JSON.stringify(frozen.map(({ id, sha256 }) => ({ id, sha256 })))) }, null, 2));
   if (differences.length) process.exitCode = 1;
+} else if (process.argv.includes('--update-chapter4')) {
+  const frozen = JSON.parse(fs.readFileSync(outputPath, 'utf8'));
+  const isChapter4 = slide => slide.id.startsWith('chapter4-');
+  const previousOther = frozen.filter(slide => !isChapter4(slide));
+  const nextOther = extracted.filter(slide => !isChapter4(slide));
+  if (JSON.stringify(previousOther.map(slide => slide.id)) !== JSON.stringify(nextOther.map(slide => slide.id))) {
+    throw new Error('Chapter 4 replacement would change another chapter’s slide order. Source snapshot was not updated.');
+  }
+  // Retain the existing snapshots for every other chapter, updating slide numbers only.
+  const previousById = new Map(previousOther.map(slide => [slide.id, slide]));
+  const updated = extracted.map(slide => isChapter4(slide) ? slide : { ...previousById.get(slide.id), order: slide.order });
+  fs.writeFileSync(outputPath, JSON.stringify(updated, null, 2) + '\n');
+  const updatedAudit = { ...audit,
+    counts: Object.fromEntries(templates.map(({ type }) => [type, updated.filter(slide => slide.type === type).length])),
+    slides: updated.map(({ id, order, section, title, type }) => ({ id, order, section, title, type })),
+  };
+  fs.writeFileSync(auditPath, JSON.stringify(updatedAudit, null, 2) + '\n');
+  console.log(JSON.stringify({ count: updated.length, chapter4: updated.filter(isChapter4).length, otherSlidesPreserved: nextOther.length }, null, 2));
 } else {
   if (fs.existsSync(outputPath)) throw new Error('Frozen snapshot already exists. Use --check; never silently replace the source.');
   fs.writeFileSync(outputPath, JSON.stringify(extracted, null, 2) + '\n');
