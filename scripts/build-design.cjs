@@ -8,6 +8,7 @@
  * Elements marked data-chrome (section kicker) are design labels, not copy.
  *
  *   node scripts/build-design.cjs   → slides/design.json
+ *   --update-chapter4 preserves the existing layouts for every other chapter.
  */
 const fs = require('node:fs');
 const path = require('node:path');
@@ -88,36 +89,9 @@ const ART = {
 
 /* ───────────── Slide layouts ───────────── */
 
-const S3 = SECTION.chapter3, S4 = SECTION.chapter4, S6 = SECTION.chapter6, S8 = SECTION.consciousness;
+const S3 = SECTION.chapter3, S6 = SECTION.chapter6, S8 = SECTION.consciousness;
 
-// Preserve each chapter 4 source paragraph verbatim, including repeated footers.
-const ch4Copy = ({ R }) => i => `<span data-source-paragraph="${i}">${R(i).join('')}</span>`;
-const ch4Footer = (C, label = 2, number = 3) => `<footer class="ch4-footer"><span>${C(label)}</span><span>${C(number)}</span></footer>`;
-const CH4_ICONS = {
-  brain: '<path d="M12 5c-2-4-7-1-6 2-4 0-4 6-1 7-2 4 4 7 7 3m0-12c2-4 7-1 6 2 4 0 4 6 1 7 2 4-4 7-7 3V5Zm-4 5 2 2m-3 3 3-1m6-4-2 2m3 3-3-1"/>',
-  shield: '<path d="M12 3 4 6v6c0 5 8 9 8 9s8-4 8-9V6l-8-3Z"/><path d="m8 12 3 3 5-6"/>',
-  eye: '<path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/>',
-  lock: '<rect x="5" y="10" width="14" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3m-4 5v2"/>',
-  network: '<circle cx="12" cy="12" r="3"/><circle cx="4" cy="4" r="2"/><circle cx="20" cy="4" r="2"/><circle cx="4" cy="20" r="2"/><circle cx="20" cy="20" r="2"/><path d="m6 6 4 4m4 4 4 4m0-12-4 4m-4 4-4 4"/>',
-  circuit: '<rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2v4m6-4v4M9 18v4m6-4v4M2 9h4m-4 6h4m12-6h4m-4 6h4"/><rect x="10" y="10" width="4" height="4"/>',
-  balance: '<path d="M12 3v18M5 7h14M7 21h10M3 15l3-8 3 8m6 0 3-8 3 8"/><path d="M2 15c0 4 8 4 8 0H2Zm12 0c0 4 8 4 8 0h-8Z"/>',
-  cyborg: '<path d="M12 3a8 8 0 0 0-8 8v5l3 2v3h10v-3l3-2v-5a8 8 0 0 0-8-8Zm0 0v18"/><path d="M7 10h2m6-1h3m-3 6h3M7 15h2"/><circle cx="16" cy="12" r="2"/>',
-  upload: '<path d="M8 17H6a4 4 0 0 1-1-8 7 7 0 0 1 13-2 5 5 0 0 1 0 10h-2M12 21V11m-4 4 4-4 4 4"/>',
-  compass: '<circle cx="12" cy="12" r="9"/><path d="m16 8-2 6-6 2 2-6 6-2Z"/>',
-  target: '<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/>',
-  human: '<circle cx="12" cy="6" r="3"/><path d="M5 21v-3a7 7 0 0 1 14 0v3"/>',
-  heart: '<path d="M12 21 3 12C-2 5 7-1 12 6c5-7 14-1 9 6l-9 9Z"/>',
-  clock: '<circle cx="12" cy="12" r="9"/><path d="M12 6v6l4 3"/>',
-  bolt: '<path d="m14 2-9 12h6l-1 8 9-12h-6l1-8Z"/>',
-  globe: '<circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18M5 7h14M5 17h14"/>',
-};
-const ch4Icon = name => `<svg class="ch4-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${CH4_ICONS[name] || CH4_ICONS.brain}</svg>`;
-const CH4_COVER_IMAGE = { src: '/img/ch4-intelligence.png', alt: 'Хүний сэтгэхүй болон хиймэл оюуны гэрэлт холбоос' };
-const ch4Header = (C, icon = 'brain') => `<header class="ch4-header"><div class="ch4-heading-copy"><div class="ch4-kicker">${C(0)}</div><h2 class="ch4-title">${C(1)}</h2></div><span class="ch4-heading-icon" aria-hidden="true">${ch4Icon(icon)}</span></header>`;
-const ch4Frame = (C, body, variant = '', { icon = 'brain' } = {}) => `<div class="ch4-slide ${variant}">${ch4Header(C, icon)}<div class="ch4-content"><div class="ch4-body">${body}</div></div>${ch4Footer(C)}</div>`;
-const ch4Cards = (C, indices, cls = '', icons = []) => `<div class="ch4-cards ${cls}">${indices.map((i, n) => `<div class="ch4-card">${icons[n] ? `<span class="ch4-card-icon" aria-hidden="true">${ch4Icon(icons[n])}</span>` : ''}<p>${C(i)}</p></div>`).join('')}</div>`;
-const ch4Rows = (C, indices, cls = '', icons = []) => `<div class="ch4-rows ${cls}">${indices.map((i, n) => `<div class="ch4-row">${icons[n] ? `<span class="ch4-row-icon" aria-hidden="true">${ch4Icon(icons[n])}</span>` : '<i aria-hidden="true"></i>'}<p>${C(i)}</p></div>`).join('')}</div>`;
-const ch4Takeaway = (C, i, cls = '') => `<div class="ch4-takeaway ${cls}"><p>${C(i)}</p></div>`;
+const { chapter4Layouts } = require('./chapter4-design.cjs');
 
 const layouts = {
   /* —— 3-р бүлэг —— */
@@ -148,71 +122,8 @@ const layouts = {
 
   'chapter3-10': ({ P }) => `<div class="xcols-slide">${header(S3.kicker, P(0), { caps: true })}<div class="xcols">${`<div class="xcol"><span class="xcol-n">${P(1)}</span><h3>${P(2)}</h3><p>${P(3)}</p></div><div class="xcol"><span class="xcol-n">${P(4)}</span><h3>${P(6)}</h3></div><div class="xcol"><span class="xcol-n">${P(5)}</span><h3>${P(7)}</h3></div>`}</div></div>`,
 
-  /* —— 4-р бүлэг —— */
-  'chapter4-01': ctx => {
-    const C = ch4Copy(ctx);
-    return opener({ num: S4.num, label: `<div class="kicker">${C(3)}</div>`, title: `${C(1)}${C(2)}`, caps: true, extra: `<p class="ch4-cover-author">${C(0)}</p><p class="ch4-cover-topics">${C(4)}</p>${ch4Footer(C, 5, 6)}`, image: CH4_COVER_IMAGE, className: 'ch4-shared-opener' });
-  },
-
-  'chapter4-02': ctx => {
-    const C = ch4Copy(ctx);
-    return ch4Frame(C, `<div class="ch4-questions"><p>${C(4)}</p><p>${C(5)}</p></div><p class="ch4-note">${C(6)}</p>${ch4Takeaway(C, 7)}`, 'ch4-opening-question', { icon: 'brain' });
-  },
-
-  'chapter4-03': ctx => {
-    const C = ch4Copy(ctx);
-    return ch4Frame(C, `${ch4Rows(C, [4, 5, 6, 7], '', ['eye', 'network', 'shield', 'lock'])}${ch4Takeaway(C, 8)}`, 'ch4-system', { icon: 'eye' });
-  },
-
-  'chapter4-04': ctx => {
-    const C = ch4Copy(ctx);
-    return ch4Frame(C, `${ch4Cards(C, [4, 5, 6], 'ch4-three', ['circuit', 'target', 'shield'])}${ch4Takeaway(C, 7)}`, 'ch4-authority', { icon: 'shield' });
-  },
-
-  'chapter4-05': ctx => {
-    const C = ch4Copy(ctx);
-    return ch4Frame(C, `${ch4Cards(C, [4, 5, 6, 7], 'ch4-two', ['brain', 'human', 'lock', 'target'])}${ch4Takeaway(C, 8)}`, 'ch4-motivation', { icon: 'lock' });
-  },
-
-  'chapter4-06': ctx => {
-    const C = ch4Copy(ctx);
-    return ch4Frame(C, `${ch4Rows(C, [4, 5, 6, 7], '', ['heart', 'lock', 'circuit', 'network'])}${ch4Takeaway(C, 8)}`, 'ch4-escape', { icon: 'lock' });
-  },
-
-  'chapter4-07': ctx => {
-    const C = ch4Copy(ctx);
-    return ch4Frame(C, `${ch4Cards(C, [4, 5, 6, 7], 'ch4-two', ['network', 'globe', 'clock', 'target'])}${ch4Takeaway(C, 8)}`, 'ch4-network', { icon: 'network' });
-  },
-
-  'chapter4-08': ctx => {
-    const C = ch4Copy(ctx);
-    return ch4Frame(C, `${ch4Cards(C, [4, 5], 'ch4-two ch4-comparison', ['bolt', 'clock'])}${ch4Rows(C, [6, 7], 'ch4-compact', ['globe', 'balance'])}${ch4Takeaway(C, 8)}`, 'ch4-takeoff', { icon: 'clock' });
-  },
-
-  'chapter4-09': ctx => {
-    const C = ch4Copy(ctx);
-    return ch4Frame(C, `${ch4Cards(C, [4, 5, 6, 7], 'ch4-two', ['network', 'balance', 'shield', 'target'])}${ch4Takeaway(C, 8)}`, 'ch4-balance', { icon: 'balance' });
-  },
-
-  'chapter4-10': ctx => {
-    const C = ch4Copy(ctx);
-    return ch4Frame(C, `<p class="ch4-lead">${C(4)}</p>${ch4Cards(C, [5, 6, 7], 'ch4-three', ['heart', 'circuit', 'brain'])}${ch4Takeaway(C, 8)}`, 'ch4-cyborg', { icon: 'cyborg' });
-  },
-
-  'chapter4-11': ctx => {
-    const C = ch4Copy(ctx);
-    return ch4Frame(C, `<p class="ch4-lead">${C(4)}</p>${ch4Cards(C, [5, 6], 'ch4-two', ['upload', 'human'])}<p class="ch4-note">${C(7)}</p>${ch4Takeaway(C, 8)}`, 'ch4-mind', { icon: 'upload' });
-  },
-
-  'chapter4-12': ctx => {
-    const C = ch4Copy(ctx);
-    return ch4Frame(C, `${ch4Rows(C, [4, 5, 6, 7], '', ['compass', 'circuit', 'bolt', 'target'])}${ch4Takeaway(C, 8)}`, 'ch4-future', { icon: 'compass' });
-  },
-
-  'chapter4-13': ctx => {
-    const C = ch4Copy(ctx);
-    return `<div class="ch4-slide ch4-final">${ch4Header(C, 'target')}<div class="ch4-content"><div class="ch4-body"><div class="ch4-final-statement"><p>${C(4)}</p><p>${C(5)}</p><p>${C(6)}</p></div><p class="ch4-final-thanks">${C(7)}</p></div></div><div class="ch4-final-footers">${ch4Footer(C)}${ch4Footer(C, 8, 9)}</div></div>`;
-  },
+  /* —— 4-р бүлэг · шинэ эх PPTX-ийн 9 слайд —— */
+  ...chapter4Layouts,
 
   /* —— 6-р бүлэг —— */
   'chapter6-01': ({ P }) => opener({ num: S6.num, label: `<div class="kicker">${P(0)}</div>`, title: P(1), caps: true, image: { src: '/img/shibo.png', alt: 'Нар болон гурван гаргийн тойрог замын зураг' } }),
@@ -295,6 +206,8 @@ const ICON = {
 /* ───────────── Build + verify ───────────── */
 
 const decks = [['chapter3', 'chapter3'], ['chapter4', 'chapter4'], ['chapter6', 'chapter6'], ['consciousness', 'consciousness']];
+const designPath = path.join(root, 'slides/design.json');
+const preserved = process.argv.includes('--update-chapter4') ? JSON.parse(fs.readFileSync(designPath, 'utf8')) : null;
 const out = {};
 const norm = s => s.replace(/\s+/g, ' ').trim();
 const decode = s => s.replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&amp;/g, '&');
@@ -320,6 +233,11 @@ let total = 0;
 for (const [key, prefix] of decks) {
   pptx[key].forEach((slide, n) => {
     const id = `${prefix}-${String(n + 1).padStart(2, '0')}`;
+    if (preserved && key !== 'chapter4') {
+      if (!preserved[id]) throw new Error(`No existing layout to preserve for ${id}`);
+      out[id] = preserved[id];
+      return;
+    }
     const layout = layouts[id];
     if (!layout) throw new Error(`No layout for ${id}`);
     const c = context(slide, id);
@@ -338,5 +256,5 @@ for (const [key, prefix] of decks) {
     total++;
   });
 }
-fs.writeFileSync(path.join(root, 'slides/design.json'), JSON.stringify(out, null, 1) + '\n');
-console.log(`slides/design.json: ${total} imported slides re-laid out; every source paragraph used once, characters identical.`);
+fs.writeFileSync(designPath, JSON.stringify(out, null, 1) + '\n');
+console.log(`slides/design.json: ${total} imported slides re-laid out; every source paragraph used once, characters identical.${preserved ? ' Other chapter layouts preserved.' : ''}`);

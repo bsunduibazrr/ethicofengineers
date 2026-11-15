@@ -1,16 +1,16 @@
 {
-  "date": "2026-11-12",
-  "sourceFile": "/Users/macbookairm4/Desktop/wazari/ethicofengineer/slides/sources/Life_3.0_Chapter_4_Presentation.pptx",
-  "originalFileSha256": "9f5f41cd28ef54658b571a057e8094b8dde5e80616c66da0d0c4928204ed9360",
-  "expectedOriginalFileSha256": "9f5f41cd28ef54658b571a057e8094b8dde5e80616c66da0d0c4928204ed9360",
+  "date": "2026-11-15",
+  "sourceFile": "/Users/macbookairm4/Desktop/wazari/ethicofengineer/slides/sources/Life3_Chapter4_Art.pptx",
+  "originalFileSha256": "28abf3f8cea8f1ef59537d2536197c8d0e41b77c6c267b088465c065a3b2f786",
+  "expectedOriginalFileSha256": "28abf3f8cea8f1ef59537d2536197c8d0e41b77c6c267b088465c065a3b2f786",
   "originalFileExactlyMatches": true,
-  "comparison": "Independent raw ZIP/XML extraction in presentation relationship order. Exact Unicode strings and run boundaries; no whitespace, punctuation, case, or Unicode normalization. Blank source paragraphs contain no visible text and are excluded only after extraction.",
+  "comparison": "Independent raw ZIP/XML extraction in presentation relationship order. All Unicode characters, quotation marks, punctuation, whitespace, case, paragraph order, and run boundaries must match exactly. Empty source paragraphs are excluded only after extraction; whitespace-only paragraphs remain. Presenter notes use body-placeholder paragraphs, excluding blank and numeric-only page labels. Visible artwork must preserve source bytes and occurrences; fully transparent image fills are excluded.",
   "structure": {
-    "rawSlideCount": 13,
-    "importedSlideCount": 13,
-    "deckSlideCount": 77,
-    "exportedSlideCount": 77,
-    "chapter4IdsAtPositions36Through48": [
+    "rawSlideCount": 9,
+    "importedSlideCount": 9,
+    "deckSlideCount": 73,
+    "exportedSlideCount": 73,
+    "chapter4IdsAtPositions36Through44": [
       "chapter4-01",
       "chapter4-02",
       "chapter4-03",
@@ -19,13 +19,9 @@
       "chapter4-06",
       "chapter4-07",
       "chapter4-08",
-      "chapter4-09",
-      "chapter4-10",
-      "chapter4-11",
-      "chapter4-12",
-      "chapter4-13"
+      "chapter4-09"
     ],
-    "exportedIdsAtPositions36Through48": [
+    "exportedIdsAtPositions36Through44": [
       "chapter4-01",
       "chapter4-02",
       "chapter4-03",
@@ -34,11 +30,7 @@
       "chapter4-06",
       "chapter4-07",
       "chapter4-08",
-      "chapter4-09",
-      "chapter4-10",
-      "chapter4-11",
-      "chapter4-12",
-      "chapter4-13"
+      "chapter4-09"
     ],
     "allChapter4Ids": [
       "chapter4-01",
@@ -49,11 +41,7 @@
       "chapter4-06",
       "chapter4-07",
       "chapter4-08",
-      "chapter4-09",
-      "chapter4-10",
-      "chapter4-11",
-      "chapter4-12",
-      "chapter4-13"
+      "chapter4-09"
     ],
     "allDesignedChapter4Ids": [
       "chapter4-01",
@@ -64,54 +52,64 @@
       "chapter4-06",
       "chapter4-07",
       "chapter4-08",
-      "chapter4-09",
-      "chapter4-10",
-      "chapter4-11",
-      "chapter4-12",
-      "chapter4-13"
+      "chapter4-09"
     ],
     "passed": true
   },
-  "duplicateFooterOnFinalSourceSlide": {
-    "sourceFooterLabelOccurrences": 2,
-    "sourcePage13Occurrences": 2,
-    "preservedByParagraphChecks": true,
-    "passed": true
-  },
+  "sourceVisibleImageCount": 7,
+  "sourceUniqueVisibleImageCount": 6,
   "slides": [
     {
       "id": "chapter4-01",
       "sourceOrder": 1,
       "deckOrder": 36,
       "sourceXmlPart": "ppt/slides/slide1.xml",
-      "sourceParagraphCountIncludingEmpty": 10,
-      "sourceNonemptyParagraphCount": 7,
-      "sourceTextElementCount": 7,
+      "sourceParagraphCountIncludingEmpty": 4,
+      "sourceNonemptyParagraphCount": 4,
+      "sourceTextElementCount": 5,
       "sourceBreakCount": 0,
       "sourceFieldCount": 0,
       "sourceTableCount": 0,
-      "sourceNotesPartCount": 0,
+      "sourceNotesPartCount": 1,
       "importedParagraphsExactlyMatch": true,
       "importedRunBoundariesAndWhitespaceExactlyMatch": true,
       "frozenReferenceParagraphsExactlyMatch": true,
       "notesExactlyMatch": true,
+      "sourceNotesSha256": "2a0a900927721f64989a330add579d12cacb73a1995631826076f3ed20aa3932",
+      "artwork": {
+        "sourceVisibleImageCount": 1,
+        "ignoredTransparentImageFillCount": 2,
+        "importedVisibleImageOccurrencesExactlyMatch": true,
+        "designedVisibleImageOccurrencesExactlyMatch": true,
+        "offlineImagesEmbedExactSourceBytes": true,
+        "assets": [
+          {
+            "sourceXmlPart": "ppt/media/image1.png",
+            "asset": "/slides/imported/chapter4/image1.png",
+            "sha256": "115fadf802a0dce8285919a1f3af696dd1fdb724296070aea927e11e1accbff6",
+            "sourceSha256": "115fadf802a0dce8285919a1f3af696dd1fdb724296070aea927e11e1accbff6",
+            "exactSourceBytes": true
+          }
+        ],
+        "passed": true
+      },
       "design": {
         "passed": true,
-        "paragraphCount": 7,
+        "paragraphCount": 4,
         "eachSourceParagraphExactlyOnce": true,
         "differences": [],
         "parserErrors": [],
         "additionalUnwrappedCopy": [],
-        "fullTextSha256": "9c981d2b65ee6a9732a2b4fa6f2a4f0c32f9c4701013f9aacc2fd712c2f274c9"
+        "fullTextSha256": "18ecb538d370e91ec39494c26f9c4b77c60ce916230c176deea339ae4faef1e9"
       },
       "export": {
         "passed": true,
-        "paragraphCount": 7,
+        "paragraphCount": 4,
         "eachSourceParagraphExactlyOnce": true,
         "differences": [],
         "parserErrors": [],
         "additionalUnwrappedCopy": [],
-        "fullTextSha256": "9c981d2b65ee6a9732a2b4fa6f2a4f0c32f9c4701013f9aacc2fd712c2f274c9"
+        "fullTextSha256": "18ecb538d370e91ec39494c26f9c4b77c60ce916230c176deea339ae4faef1e9"
       },
       "designAndExportFullTextExactlyMatch": true,
       "passed": true
@@ -121,34 +119,44 @@
       "sourceOrder": 2,
       "deckOrder": 37,
       "sourceXmlPart": "ppt/slides/slide2.xml",
-      "sourceParagraphCountIncludingEmpty": 13,
-      "sourceNonemptyParagraphCount": 8,
-      "sourceTextElementCount": 8,
+      "sourceParagraphCountIncludingEmpty": 18,
+      "sourceNonemptyParagraphCount": 16,
+      "sourceTextElementCount": 16,
       "sourceBreakCount": 0,
       "sourceFieldCount": 0,
       "sourceTableCount": 0,
-      "sourceNotesPartCount": 0,
+      "sourceNotesPartCount": 1,
       "importedParagraphsExactlyMatch": true,
       "importedRunBoundariesAndWhitespaceExactlyMatch": true,
       "frozenReferenceParagraphsExactlyMatch": true,
       "notesExactlyMatch": true,
+      "sourceNotesSha256": "3e22da971292320af5f40fe7cfd6c9aec6b6e7975238ff6687f50d06d4c4d350",
+      "artwork": {
+        "sourceVisibleImageCount": 0,
+        "ignoredTransparentImageFillCount": 10,
+        "importedVisibleImageOccurrencesExactlyMatch": true,
+        "designedVisibleImageOccurrencesExactlyMatch": true,
+        "offlineImagesEmbedExactSourceBytes": true,
+        "assets": [],
+        "passed": true
+      },
       "design": {
         "passed": true,
-        "paragraphCount": 8,
+        "paragraphCount": 16,
         "eachSourceParagraphExactlyOnce": true,
         "differences": [],
         "parserErrors": [],
         "additionalUnwrappedCopy": [],
-        "fullTextSha256": "dab4ff345b6df65fe4dae7dbb90a6fd3b7bed9471330ea4fcc7ade4e935165a6"
+        "fullTextSha256": "36f39bd0280de8a0080dca571e7b94cda70ac8350e30507c0b7a5625d8914ffc"
       },
       "export": {
         "passed": true,
-        "paragraphCount": 8,
+        "paragraphCount": 16,
         "eachSourceParagraphExactlyOnce": true,
         "differences": [],
         "parserErrors": [],
         "additionalUnwrappedCopy": [],
-        "fullTextSha256": "dab4ff345b6df65fe4dae7dbb90a6fd3b7bed9471330ea4fcc7ade4e935165a6"
+        "fullTextSha256": "36f39bd0280de8a0080dca571e7b94cda70ac8350e30507c0b7a5625d8914ffc"
       },
       "designAndExportFullTextExactlyMatch": true,
       "passed": true
@@ -158,17 +166,35 @@
       "sourceOrder": 3,
       "deckOrder": 38,
       "sourceXmlPart": "ppt/slides/slide3.xml",
-      "sourceParagraphCountIncludingEmpty": 15,
+      "sourceParagraphCountIncludingEmpty": 10,
       "sourceNonemptyParagraphCount": 9,
       "sourceTextElementCount": 9,
       "sourceBreakCount": 0,
       "sourceFieldCount": 0,
       "sourceTableCount": 0,
-      "sourceNotesPartCount": 0,
+      "sourceNotesPartCount": 1,
       "importedParagraphsExactlyMatch": true,
       "importedRunBoundariesAndWhitespaceExactlyMatch": true,
       "frozenReferenceParagraphsExactlyMatch": true,
       "notesExactlyMatch": true,
+      "sourceNotesSha256": "f0a6fffc105672b9ca18489b2f49d029f8ccadefeba1b3b2a8827b622fc4b4c9",
+      "artwork": {
+        "sourceVisibleImageCount": 1,
+        "ignoredTransparentImageFillCount": 6,
+        "importedVisibleImageOccurrencesExactlyMatch": true,
+        "designedVisibleImageOccurrencesExactlyMatch": true,
+        "offlineImagesEmbedExactSourceBytes": true,
+        "assets": [
+          {
+            "sourceXmlPart": "ppt/media/image3.png",
+            "asset": "/slides/imported/chapter4/image3.png",
+            "sha256": "412ed27d8fb9a0483c9d31dc1989806edeff1e84b43392006dd2034537ed0144",
+            "sourceSha256": "412ed27d8fb9a0483c9d31dc1989806edeff1e84b43392006dd2034537ed0144",
+            "exactSourceBytes": true
+          }
+        ],
+        "passed": true
+      },
       "design": {
         "passed": true,
         "paragraphCount": 9,
@@ -176,7 +202,7 @@
         "differences": [],
         "parserErrors": [],
         "additionalUnwrappedCopy": [],
-        "fullTextSha256": "f79c87f230d590b5ca8805519662a42023222bb6d2317d1d6b40267503d43388"
+        "fullTextSha256": "aa357d982218ca135ee8e3afeebc5a0aa7fe8259aa1e8ca813520ef9792a1390"
       },
       "export": {
         "passed": true,
@@ -185,7 +211,7 @@
         "differences": [],
         "parserErrors": [],
         "additionalUnwrappedCopy": [],
-        "fullTextSha256": "f79c87f230d590b5ca8805519662a42023222bb6d2317d1d6b40267503d43388"
+        "fullTextSha256": "aa357d982218ca135ee8e3afeebc5a0aa7fe8259aa1e8ca813520ef9792a1390"
       },
       "designAndExportFullTextExactlyMatch": true,
       "passed": true
@@ -195,17 +221,35 @@
       "sourceOrder": 4,
       "deckOrder": 39,
       "sourceXmlPart": "ppt/slides/slide4.xml",
-      "sourceParagraphCountIncludingEmpty": 13,
+      "sourceParagraphCountIncludingEmpty": 8,
       "sourceNonemptyParagraphCount": 8,
       "sourceTextElementCount": 8,
       "sourceBreakCount": 0,
       "sourceFieldCount": 0,
       "sourceTableCount": 0,
-      "sourceNotesPartCount": 0,
+      "sourceNotesPartCount": 1,
       "importedParagraphsExactlyMatch": true,
       "importedRunBoundariesAndWhitespaceExactlyMatch": true,
       "frozenReferenceParagraphsExactlyMatch": true,
       "notesExactlyMatch": true,
+      "sourceNotesSha256": "7db778d9c270158f167112b7f5a76043aecd9e31ebf4d2e472a7159ace568ce2",
+      "artwork": {
+        "sourceVisibleImageCount": 1,
+        "ignoredTransparentImageFillCount": 6,
+        "importedVisibleImageOccurrencesExactlyMatch": true,
+        "designedVisibleImageOccurrencesExactlyMatch": true,
+        "offlineImagesEmbedExactSourceBytes": true,
+        "assets": [
+          {
+            "sourceXmlPart": "ppt/media/image4.png",
+            "asset": "/slides/imported/chapter4/image4.png",
+            "sha256": "216611467a83e6058b0d361bef109b38b79089f50695f4c34ee77f5051bd682e",
+            "sourceSha256": "216611467a83e6058b0d361bef109b38b79089f50695f4c34ee77f5051bd682e",
+            "exactSourceBytes": true
+          }
+        ],
+        "passed": true
+      },
       "design": {
         "passed": true,
         "paragraphCount": 8,
@@ -213,7 +257,7 @@
         "differences": [],
         "parserErrors": [],
         "additionalUnwrappedCopy": [],
-        "fullTextSha256": "4dd1d71343daf696eb6ae34cafe73b33194568205ccd8927052917f8102552e4"
+        "fullTextSha256": "2ce9a9685cd874b4d096f2c374f93cbcb7f8ab332d6213802e7bc915c80e9100"
       },
       "export": {
         "passed": true,
@@ -222,7 +266,7 @@
         "differences": [],
         "parserErrors": [],
         "additionalUnwrappedCopy": [],
-        "fullTextSha256": "4dd1d71343daf696eb6ae34cafe73b33194568205ccd8927052917f8102552e4"
+        "fullTextSha256": "2ce9a9685cd874b4d096f2c374f93cbcb7f8ab332d6213802e7bc915c80e9100"
       },
       "designAndExportFullTextExactlyMatch": true,
       "passed": true
@@ -232,34 +276,52 @@
       "sourceOrder": 5,
       "deckOrder": 40,
       "sourceXmlPart": "ppt/slides/slide5.xml",
-      "sourceParagraphCountIncludingEmpty": 15,
-      "sourceNonemptyParagraphCount": 9,
-      "sourceTextElementCount": 9,
+      "sourceParagraphCountIncludingEmpty": 19,
+      "sourceNonemptyParagraphCount": 15,
+      "sourceTextElementCount": 20,
       "sourceBreakCount": 0,
       "sourceFieldCount": 0,
       "sourceTableCount": 0,
-      "sourceNotesPartCount": 0,
+      "sourceNotesPartCount": 1,
       "importedParagraphsExactlyMatch": true,
       "importedRunBoundariesAndWhitespaceExactlyMatch": true,
       "frozenReferenceParagraphsExactlyMatch": true,
       "notesExactlyMatch": true,
+      "sourceNotesSha256": "6fdf152a735b2110b0da32a0cc33c008128e32b50f293a81748f63e25054c59a",
+      "artwork": {
+        "sourceVisibleImageCount": 2,
+        "ignoredTransparentImageFillCount": 15,
+        "importedVisibleImageOccurrencesExactlyMatch": true,
+        "designedVisibleImageOccurrencesExactlyMatch": true,
+        "offlineImagesEmbedExactSourceBytes": true,
+        "assets": [
+          {
+            "sourceXmlPart": "ppt/media/image5.png",
+            "asset": "/slides/imported/chapter4/image5.png",
+            "sha256": "9c564670cc415ff0204e802db88662b688d5a33a98b1867e12ca1065b07a0cc5",
+            "sourceSha256": "9c564670cc415ff0204e802db88662b688d5a33a98b1867e12ca1065b07a0cc5",
+            "exactSourceBytes": true
+          }
+        ],
+        "passed": true
+      },
       "design": {
         "passed": true,
-        "paragraphCount": 9,
+        "paragraphCount": 15,
         "eachSourceParagraphExactlyOnce": true,
         "differences": [],
         "parserErrors": [],
         "additionalUnwrappedCopy": [],
-        "fullTextSha256": "9b135af99ea4189afa9497e38808dc4e6951baaa446db58eee07d6b9ef0a65fe"
+        "fullTextSha256": "5eda2332de96793e8df9dea8080abfdd00a29b11e726417762c7841577e2ef8d"
       },
       "export": {
         "passed": true,
-        "paragraphCount": 9,
+        "paragraphCount": 15,
         "eachSourceParagraphExactlyOnce": true,
         "differences": [],
         "parserErrors": [],
         "additionalUnwrappedCopy": [],
-        "fullTextSha256": "9b135af99ea4189afa9497e38808dc4e6951baaa446db58eee07d6b9ef0a65fe"
+        "fullTextSha256": "5eda2332de96793e8df9dea8080abfdd00a29b11e726417762c7841577e2ef8d"
       },
       "designAndExportFullTextExactlyMatch": true,
       "passed": true
@@ -270,33 +332,51 @@
       "deckOrder": 41,
       "sourceXmlPart": "ppt/slides/slide6.xml",
       "sourceParagraphCountIncludingEmpty": 15,
-      "sourceNonemptyParagraphCount": 9,
-      "sourceTextElementCount": 9,
+      "sourceNonemptyParagraphCount": 15,
+      "sourceTextElementCount": 15,
       "sourceBreakCount": 0,
       "sourceFieldCount": 0,
       "sourceTableCount": 0,
-      "sourceNotesPartCount": 0,
+      "sourceNotesPartCount": 1,
       "importedParagraphsExactlyMatch": true,
       "importedRunBoundariesAndWhitespaceExactlyMatch": true,
       "frozenReferenceParagraphsExactlyMatch": true,
       "notesExactlyMatch": true,
+      "sourceNotesSha256": "3e22da971292320af5f40fe7cfd6c9aec6b6e7975238ff6687f50d06d4c4d350",
+      "artwork": {
+        "sourceVisibleImageCount": 1,
+        "ignoredTransparentImageFillCount": 12,
+        "importedVisibleImageOccurrencesExactlyMatch": true,
+        "designedVisibleImageOccurrencesExactlyMatch": true,
+        "offlineImagesEmbedExactSourceBytes": true,
+        "assets": [
+          {
+            "sourceXmlPart": "ppt/media/image6.png",
+            "asset": "/slides/imported/chapter4/image6.png",
+            "sha256": "cb78f528cef94c43d07f05603642576d4a259c339050ec578d45214d0bcb4299",
+            "sourceSha256": "cb78f528cef94c43d07f05603642576d4a259c339050ec578d45214d0bcb4299",
+            "exactSourceBytes": true
+          }
+        ],
+        "passed": true
+      },
       "design": {
         "passed": true,
-        "paragraphCount": 9,
+        "paragraphCount": 15,
         "eachSourceParagraphExactlyOnce": true,
         "differences": [],
         "parserErrors": [],
         "additionalUnwrappedCopy": [],
-        "fullTextSha256": "fdf4dd1549538ec651ecffa42714224543ad60751c4df616571e12247dbd0087"
+        "fullTextSha256": "74b5a3d9c8ec2d04d4d2214d24dee72dd93fd0cad2ecd047613ac3085e4739aa"
       },
       "export": {
         "passed": true,
-        "paragraphCount": 9,
+        "paragraphCount": 15,
         "eachSourceParagraphExactlyOnce": true,
         "differences": [],
         "parserErrors": [],
         "additionalUnwrappedCopy": [],
-        "fullTextSha256": "fdf4dd1549538ec651ecffa42714224543ad60751c4df616571e12247dbd0087"
+        "fullTextSha256": "74b5a3d9c8ec2d04d4d2214d24dee72dd93fd0cad2ecd047613ac3085e4739aa"
       },
       "designAndExportFullTextExactlyMatch": true,
       "passed": true
@@ -306,34 +386,52 @@
       "sourceOrder": 7,
       "deckOrder": 42,
       "sourceXmlPart": "ppt/slides/slide7.xml",
-      "sourceParagraphCountIncludingEmpty": 15,
-      "sourceNonemptyParagraphCount": 9,
-      "sourceTextElementCount": 9,
+      "sourceParagraphCountIncludingEmpty": 12,
+      "sourceNonemptyParagraphCount": 11,
+      "sourceTextElementCount": 11,
       "sourceBreakCount": 0,
       "sourceFieldCount": 0,
       "sourceTableCount": 0,
-      "sourceNotesPartCount": 0,
+      "sourceNotesPartCount": 1,
       "importedParagraphsExactlyMatch": true,
       "importedRunBoundariesAndWhitespaceExactlyMatch": true,
       "frozenReferenceParagraphsExactlyMatch": true,
       "notesExactlyMatch": true,
+      "sourceNotesSha256": "3e22da971292320af5f40fe7cfd6c9aec6b6e7975238ff6687f50d06d4c4d350",
+      "artwork": {
+        "sourceVisibleImageCount": 1,
+        "ignoredTransparentImageFillCount": 8,
+        "importedVisibleImageOccurrencesExactlyMatch": true,
+        "designedVisibleImageOccurrencesExactlyMatch": true,
+        "offlineImagesEmbedExactSourceBytes": true,
+        "assets": [
+          {
+            "sourceXmlPart": "ppt/media/image7.png",
+            "asset": "/slides/imported/chapter4/image7.png",
+            "sha256": "58e373a661bc5d66ed1ae19b2a722d2244c61ced09d5d67b597bfdd0b15e1b38",
+            "sourceSha256": "58e373a661bc5d66ed1ae19b2a722d2244c61ced09d5d67b597bfdd0b15e1b38",
+            "exactSourceBytes": true
+          }
+        ],
+        "passed": true
+      },
       "design": {
         "passed": true,
-        "paragraphCount": 9,
+        "paragraphCount": 11,
         "eachSourceParagraphExactlyOnce": true,
         "differences": [],
         "parserErrors": [],
         "additionalUnwrappedCopy": [],
-        "fullTextSha256": "3828777649b21c33120f330638278b5340effa766527ae085ca788f942e9df0e"
+        "fullTextSha256": "01924bd6366d3c7aa69803fdeabad9cea6ebc648463d91de9ec2c1385e57cca8"
       },
       "export": {
         "passed": true,
-        "paragraphCount": 9,
+        "paragraphCount": 11,
         "eachSourceParagraphExactlyOnce": true,
         "differences": [],
         "parserErrors": [],
         "additionalUnwrappedCopy": [],
-        "fullTextSha256": "3828777649b21c33120f330638278b5340effa766527ae085ca788f942e9df0e"
+        "fullTextSha256": "01924bd6366d3c7aa69803fdeabad9cea6ebc648463d91de9ec2c1385e57cca8"
       },
       "designAndExportFullTextExactlyMatch": true,
       "passed": true
@@ -344,33 +442,43 @@
       "deckOrder": 43,
       "sourceXmlPart": "ppt/slides/slide8.xml",
       "sourceParagraphCountIncludingEmpty": 15,
-      "sourceNonemptyParagraphCount": 9,
-      "sourceTextElementCount": 9,
+      "sourceNonemptyParagraphCount": 14,
+      "sourceTextElementCount": 15,
       "sourceBreakCount": 0,
       "sourceFieldCount": 0,
       "sourceTableCount": 0,
-      "sourceNotesPartCount": 0,
+      "sourceNotesPartCount": 1,
       "importedParagraphsExactlyMatch": true,
       "importedRunBoundariesAndWhitespaceExactlyMatch": true,
       "frozenReferenceParagraphsExactlyMatch": true,
       "notesExactlyMatch": true,
+      "sourceNotesSha256": "3e22da971292320af5f40fe7cfd6c9aec6b6e7975238ff6687f50d06d4c4d350",
+      "artwork": {
+        "sourceVisibleImageCount": 0,
+        "ignoredTransparentImageFillCount": 7,
+        "importedVisibleImageOccurrencesExactlyMatch": true,
+        "designedVisibleImageOccurrencesExactlyMatch": true,
+        "offlineImagesEmbedExactSourceBytes": true,
+        "assets": [],
+        "passed": true
+      },
       "design": {
         "passed": true,
-        "paragraphCount": 9,
+        "paragraphCount": 14,
         "eachSourceParagraphExactlyOnce": true,
         "differences": [],
         "parserErrors": [],
         "additionalUnwrappedCopy": [],
-        "fullTextSha256": "b3dcd51df18fa76e4ad4c3837d636b52dc494cb53a82bed611a28714f1685d09"
+        "fullTextSha256": "9186e62b31817e90151b933d4d4e5712de0f56a82930e0c76e41c2328f2a1303"
       },
       "export": {
         "passed": true,
-        "paragraphCount": 9,
+        "paragraphCount": 14,
         "eachSourceParagraphExactlyOnce": true,
         "differences": [],
         "parserErrors": [],
         "additionalUnwrappedCopy": [],
-        "fullTextSha256": "b3dcd51df18fa76e4ad4c3837d636b52dc494cb53a82bed611a28714f1685d09"
+        "fullTextSha256": "9186e62b31817e90151b933d4d4e5712de0f56a82930e0c76e41c2328f2a1303"
       },
       "designAndExportFullTextExactlyMatch": true,
       "passed": true
@@ -380,182 +488,44 @@
       "sourceOrder": 9,
       "deckOrder": 44,
       "sourceXmlPart": "ppt/slides/slide9.xml",
-      "sourceParagraphCountIncludingEmpty": 15,
-      "sourceNonemptyParagraphCount": 9,
-      "sourceTextElementCount": 9,
-      "sourceBreakCount": 0,
-      "sourceFieldCount": 0,
-      "sourceTableCount": 0,
-      "sourceNotesPartCount": 0,
-      "importedParagraphsExactlyMatch": true,
-      "importedRunBoundariesAndWhitespaceExactlyMatch": true,
-      "frozenReferenceParagraphsExactlyMatch": true,
-      "notesExactlyMatch": true,
-      "design": {
-        "passed": true,
-        "paragraphCount": 9,
-        "eachSourceParagraphExactlyOnce": true,
-        "differences": [],
-        "parserErrors": [],
-        "additionalUnwrappedCopy": [],
-        "fullTextSha256": "f604e73ba2dd36507fa96034853c26938ca6e7a9e03c13e726d8b637f3c7669d"
-      },
-      "export": {
-        "passed": true,
-        "paragraphCount": 9,
-        "eachSourceParagraphExactlyOnce": true,
-        "differences": [],
-        "parserErrors": [],
-        "additionalUnwrappedCopy": [],
-        "fullTextSha256": "f604e73ba2dd36507fa96034853c26938ca6e7a9e03c13e726d8b637f3c7669d"
-      },
-      "designAndExportFullTextExactlyMatch": true,
-      "passed": true
-    },
-    {
-      "id": "chapter4-10",
-      "sourceOrder": 10,
-      "deckOrder": 45,
-      "sourceXmlPart": "ppt/slides/slide10.xml",
-      "sourceParagraphCountIncludingEmpty": 15,
-      "sourceNonemptyParagraphCount": 9,
-      "sourceTextElementCount": 9,
-      "sourceBreakCount": 0,
-      "sourceFieldCount": 0,
-      "sourceTableCount": 0,
-      "sourceNotesPartCount": 0,
-      "importedParagraphsExactlyMatch": true,
-      "importedRunBoundariesAndWhitespaceExactlyMatch": true,
-      "frozenReferenceParagraphsExactlyMatch": true,
-      "notesExactlyMatch": true,
-      "design": {
-        "passed": true,
-        "paragraphCount": 9,
-        "eachSourceParagraphExactlyOnce": true,
-        "differences": [],
-        "parserErrors": [],
-        "additionalUnwrappedCopy": [],
-        "fullTextSha256": "fa1c3607a044433e7d6bcaa16b100ec9946927e5caed9f9165a62b1bea5398c9"
-      },
-      "export": {
-        "passed": true,
-        "paragraphCount": 9,
-        "eachSourceParagraphExactlyOnce": true,
-        "differences": [],
-        "parserErrors": [],
-        "additionalUnwrappedCopy": [],
-        "fullTextSha256": "fa1c3607a044433e7d6bcaa16b100ec9946927e5caed9f9165a62b1bea5398c9"
-      },
-      "designAndExportFullTextExactlyMatch": true,
-      "passed": true
-    },
-    {
-      "id": "chapter4-11",
-      "sourceOrder": 11,
-      "deckOrder": 46,
-      "sourceXmlPart": "ppt/slides/slide11.xml",
-      "sourceParagraphCountIncludingEmpty": 15,
-      "sourceNonemptyParagraphCount": 9,
-      "sourceTextElementCount": 9,
-      "sourceBreakCount": 0,
-      "sourceFieldCount": 0,
-      "sourceTableCount": 0,
-      "sourceNotesPartCount": 0,
-      "importedParagraphsExactlyMatch": true,
-      "importedRunBoundariesAndWhitespaceExactlyMatch": true,
-      "frozenReferenceParagraphsExactlyMatch": true,
-      "notesExactlyMatch": true,
-      "design": {
-        "passed": true,
-        "paragraphCount": 9,
-        "eachSourceParagraphExactlyOnce": true,
-        "differences": [],
-        "parserErrors": [],
-        "additionalUnwrappedCopy": [],
-        "fullTextSha256": "0fe2e0c2810b46326df8a587b56d688c3454ea971fd02fab969d80c8fb089d30"
-      },
-      "export": {
-        "passed": true,
-        "paragraphCount": 9,
-        "eachSourceParagraphExactlyOnce": true,
-        "differences": [],
-        "parserErrors": [],
-        "additionalUnwrappedCopy": [],
-        "fullTextSha256": "0fe2e0c2810b46326df8a587b56d688c3454ea971fd02fab969d80c8fb089d30"
-      },
-      "designAndExportFullTextExactlyMatch": true,
-      "passed": true
-    },
-    {
-      "id": "chapter4-12",
-      "sourceOrder": 12,
-      "deckOrder": 47,
-      "sourceXmlPart": "ppt/slides/slide12.xml",
-      "sourceParagraphCountIncludingEmpty": 15,
-      "sourceNonemptyParagraphCount": 9,
-      "sourceTextElementCount": 9,
-      "sourceBreakCount": 0,
-      "sourceFieldCount": 0,
-      "sourceTableCount": 0,
-      "sourceNotesPartCount": 0,
-      "importedParagraphsExactlyMatch": true,
-      "importedRunBoundariesAndWhitespaceExactlyMatch": true,
-      "frozenReferenceParagraphsExactlyMatch": true,
-      "notesExactlyMatch": true,
-      "design": {
-        "passed": true,
-        "paragraphCount": 9,
-        "eachSourceParagraphExactlyOnce": true,
-        "differences": [],
-        "parserErrors": [],
-        "additionalUnwrappedCopy": [],
-        "fullTextSha256": "3e0e75817f4706cd383bb61c3e7acd36123d2e0d3a4b111850daf5a502286742"
-      },
-      "export": {
-        "passed": true,
-        "paragraphCount": 9,
-        "eachSourceParagraphExactlyOnce": true,
-        "differences": [],
-        "parserErrors": [],
-        "additionalUnwrappedCopy": [],
-        "fullTextSha256": "3e0e75817f4706cd383bb61c3e7acd36123d2e0d3a4b111850daf5a502286742"
-      },
-      "designAndExportFullTextExactlyMatch": true,
-      "passed": true
-    },
-    {
-      "id": "chapter4-13",
-      "sourceOrder": 13,
-      "deckOrder": 48,
-      "sourceXmlPart": "ppt/slides/slide13.xml",
       "sourceParagraphCountIncludingEmpty": 12,
-      "sourceNonemptyParagraphCount": 10,
-      "sourceTextElementCount": 10,
+      "sourceNonemptyParagraphCount": 12,
+      "sourceTextElementCount": 12,
       "sourceBreakCount": 0,
       "sourceFieldCount": 0,
       "sourceTableCount": 0,
-      "sourceNotesPartCount": 0,
+      "sourceNotesPartCount": 1,
       "importedParagraphsExactlyMatch": true,
       "importedRunBoundariesAndWhitespaceExactlyMatch": true,
       "frozenReferenceParagraphsExactlyMatch": true,
       "notesExactlyMatch": true,
+      "sourceNotesSha256": "ed17de59b19901075a8bdf7f0f49b45b49efb0a0b19e9fea4b8e7cf6bdd15112",
+      "artwork": {
+        "sourceVisibleImageCount": 0,
+        "ignoredTransparentImageFillCount": 8,
+        "importedVisibleImageOccurrencesExactlyMatch": true,
+        "designedVisibleImageOccurrencesExactlyMatch": true,
+        "offlineImagesEmbedExactSourceBytes": true,
+        "assets": [],
+        "passed": true
+      },
       "design": {
         "passed": true,
-        "paragraphCount": 10,
+        "paragraphCount": 12,
         "eachSourceParagraphExactlyOnce": true,
         "differences": [],
         "parserErrors": [],
         "additionalUnwrappedCopy": [],
-        "fullTextSha256": "5d66348eacabeabd03bfd7421c678052de377a6164a0fe0655db18a46ff69c31"
+        "fullTextSha256": "db4425b6b171acb09d49813fe54587aafc8970b3c58a115a801de8c683680989"
       },
       "export": {
         "passed": true,
-        "paragraphCount": 10,
+        "paragraphCount": 12,
         "eachSourceParagraphExactlyOnce": true,
         "differences": [],
         "parserErrors": [],
         "additionalUnwrappedCopy": [],
-        "fullTextSha256": "5d66348eacabeabd03bfd7421c678052de377a6164a0fe0655db18a46ff69c31"
+        "fullTextSha256": "db4425b6b171acb09d49813fe54587aafc8970b3c58a115a801de8c683680989"
       },
       "designAndExportFullTextExactlyMatch": true,
       "passed": true
