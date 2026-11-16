@@ -164,9 +164,7 @@ export default function CrosswordExercise({ backHref }: { backHref: string }) {
       Object.fromEntries([...cells].map(([key, cell]) => [key, cell.answer])),
     );
     setChecked(true);
-    setMessage(
-      "Хариунуудыг харууллаа. Дахин эхлэх товчоор дахин оролдоорой.",
-    );
+    setMessage("Хариунуудыг харууллаа. Дахин эхлэх товчоор дахин оролдоорой.");
   }
 
   function reset() {
@@ -180,9 +178,6 @@ export default function CrosswordExercise({ backHref }: { backHref: string }) {
     <main className={styles.page}>
       <div className={styles.shell}>
         <nav className={styles.topbar} aria-label="Хуудасны навигац">
-          <a href={backHref} className={styles.brand}>
-            Амьдрал <span>3.0</span>
-          </a>
           <a href={backHref} className={styles.backLink}>
             <Arrow back /> Слайд руу буцах
           </a>
