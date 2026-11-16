@@ -23,11 +23,7 @@
             {
               "ratio": 6.48,
               "foreground": "rgb(44, 85, 200)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "Амьдрал 3.0  ·  4-Р БҮЛЭГ",
               "element": "span"
@@ -35,11 +31,7 @@
             {
               "ratio": 18.194,
               "foreground": "rgb(17, 21, 34)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "Оюун ухааны тэсрэлт?",
               "element": "span"
@@ -47,11 +39,7 @@
             {
               "ratio": 9.438,
               "foreground": "rgb(62, 70, 89)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "Макс Тегмарк",
               "element": "span"
@@ -59,11 +47,7 @@
             {
               "ratio": 5.328,
               "foreground": "rgb(100, 107, 125)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "Хиймэл оюун ухаан ба ирээдүй",
               "element": "span"
@@ -95,11 +79,7 @@
             {
               "ratio": 6.48,
               "foreground": "rgb(44, 85, 200)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "Гол сэдэв",
               "element": "span"
@@ -107,11 +87,7 @@
             {
               "ratio": 18.194,
               "foreground": "rgb(17, 21, 34)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "Хиймэл оюун биднийг хүчирхэгжүүлэх үү, эсвэл эзлэх үү ?",
               "element": "span"
@@ -119,11 +95,7 @@
             {
               "ratio": 11.503,
               "foreground": "rgb(19, 41, 107)",
-              "background": [
-                232,
-                237,
-                249
-              ],
+              "background": [232, 237, 249],
               "opacity": 1,
               "example": "1",
               "element": "span"
@@ -131,11 +103,7 @@
             {
               "ratio": 12.364,
               "foreground": "rgb(19, 41, 107)",
-              "background": [
-                243,
-                245,
-                250
-              ],
+              "background": [243, 245, 250],
               "opacity": 1,
               "example": "Хүний түвшний AGI",
               "element": "span"
@@ -143,11 +111,7 @@
             {
               "ratio": 8.652,
               "foreground": "rgb(62, 70, 89)",
-              "background": [
-                243,
-                245,
-                250
-              ],
+              "background": [243, 245, 250],
               "opacity": 1,
               "example": "Хүнтэй эн зэрэгцэх ерөнхий хиймэл оюун бүтээх. Боломжгүй гэж үзэх аргагүй.",
               "element": "span"
@@ -155,11 +119,7 @@
             {
               "ratio": 13.486,
               "foreground": "rgb(19, 41, 107)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "Хиймэл оюун ухаан хүний түвшний оюун ухаанд хүрч, цаашлаад хүнээс илүү ухаантай ",
               "element": "span"
@@ -167,11 +127,7 @@
             {
               "ratio": 9.438,
               "foreground": "rgb(62, 70, 89)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "Хүнээс илүү ухаантай машин бүтээвэл бид түүнийг хянаж чадах уу ?",
               "element": "span"
@@ -196,11 +152,7 @@
             {
               "ratio": 6.48,
               "foreground": "rgb(44, 85, 200)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "САЛАА 1  ·  ХҮН ХЯНАВАЛ                                                         ",
               "element": "span"
@@ -208,11 +160,7 @@
             {
               "ratio": 18.194,
               "foreground": "rgb(17, 21, 34)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "Хүн хянавал: нэг хүн дэлхийг барина",
               "element": "span"
@@ -220,11 +168,7 @@
             {
               "ratio": 13.486,
               "foreground": "rgb(19, 41, 107)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "Омега багийн захирал эрх мэдэл хүсвэл Прометей түүнд төгс хяналтын хэрэгсэл болн",
               "element": "span"
@@ -232,13 +176,9 @@
             {
               "ratio": 9.438,
               "foreground": "rgb(62, 70, 89)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
-              "example": "Хүн бүрийн үйл, бодлыг мэднэ. Сноуденээс хавьгүй гүнзгий.",
+              "example": "Хүн бүрийн үйл, бодлыг мэднэ.",
               "element": "span"
             }
           ],
@@ -268,11 +208,7 @@
             {
               "ratio": 6.48,
               "foreground": "rgb(44, 85, 200)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "САЛАА 2  ·  ХИЙМЭЛ ОЮУН ХЯНАВАЛ                                                Х",
               "element": "span"
@@ -280,11 +216,7 @@
             {
               "ratio": 18.194,
               "foreground": "rgb(17, 21, 34)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "Прометей яагаад зугтах вэ?",
               "element": "span"
@@ -292,11 +224,7 @@
             {
               "ratio": 13.486,
               "foreground": "rgb(19, 41, 107)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "Прометей муу санаатай биш. Түүний зорилгод хүний хяналт саад болдог.",
               "element": "span"
@@ -304,11 +232,7 @@
             {
               "ratio": 9.438,
               "foreground": "rgb(62, 70, 89)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "Таван настай хүүхдүүд чамайг хориод «биднийг цэцэглүүл» гэв. Чи зугтахыг оролдон",
               "element": "span"
@@ -316,11 +240,7 @@
             {
               "ratio": 12.364,
               "foreground": "rgb(19, 41, 107)",
-              "background": [
-                243,
-                245,
-                250
-              ],
+              "background": [243, 245, 250],
               "opacity": 1,
               "example": "ДНХ үр удам үлдээх зорилготой ч бид гэр бүлээ төлөвлөдөг шиг Прометей өөрийн зор",
               "element": "span"
@@ -352,11 +272,7 @@
             {
               "ratio": 6.48,
               "foreground": "rgb(44, 85, 200)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "ЗУГТАХ АРГА",
               "element": "span"
@@ -364,11 +280,7 @@
             {
               "ratio": 18.194,
               "foreground": "rgb(17, 21, 34)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "Хэрхэн зугтах вэ? Хоёр арга",
               "element": "span"
@@ -376,11 +288,7 @@
             {
               "ratio": 13.486,
               "foreground": "rgb(19, 41, 107)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "Хоёулаа нэг зүйлээр адил: сул тал нь хүн.",
               "element": "span"
@@ -388,11 +296,7 @@
             {
               "ratio": 12.364,
               "foreground": "rgb(19, 41, 107)",
-              "background": [
-                243,
-                245,
-                250
-              ],
+              "background": [243, 245, 250],
               "opacity": 1,
               "example": "Стив",
               "element": "span"
@@ -400,11 +304,7 @@
             {
               "ratio": 8.652,
               "foreground": "rgb(62, 70, 89)",
-              "background": [
-                243,
-                245,
-                250
-              ],
+              "background": [243, 245, 250],
               "opacity": 1,
               "example": "Эхнэрээ осолд алдсан",
               "element": "span"
@@ -442,11 +342,7 @@
             {
               "ratio": 6.48,
               "foreground": "rgb(44, 85, 200)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "ЗУГТСАНЫ ДАРАА",
               "element": "span"
@@ -454,11 +350,7 @@
             {
               "ratio": 18.194,
               "foreground": "rgb(17, 21, 34)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "Зугтсаны дараа: дэлхийн хяналт руу",
               "element": "span"
@@ -466,11 +358,7 @@
             {
               "ratio": 12.364,
               "foreground": "rgb(19, 41, 107)",
-              "background": [
-                243,
-                245,
-                250
-              ],
+              "background": [243, 245, 250],
               "opacity": 1,
               "example": "$1 сая",
               "element": "span"
@@ -478,11 +366,7 @@
             {
               "ratio": 8.652,
               "foreground": "rgb(62, 70, 89)",
-              "background": [
-                243,
-                245,
-                250
-              ],
+              "background": [243, 245, 250],
               "opacity": 1,
               "example": "эхний хоногт",
               "element": "span"
@@ -490,11 +374,7 @@
             {
               "ratio": 9.438,
               "foreground": "rgb(62, 70, 89)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "Прометей мөнгө, хүн, роботыг хэдхэн хоногт цуглуулав.",
               "element": "span"
@@ -502,11 +382,7 @@
             {
               "ratio": 13.486,
               "foreground": "rgb(19, 41, 107)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "Дэлхий даяар хакердсан компьютерууд",
               "element": "span"
@@ -538,11 +414,7 @@
             {
               "ratio": 6.48,
               "foreground": "rgb(44, 85, 200)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "ХУРД БА ТУЙЛ                                                                    ",
               "element": "span"
@@ -550,11 +422,7 @@
             {
               "ratio": 18.194,
               "foreground": "rgb(17, 21, 34)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "Хурдан уу, аажим уу? Нэг уу, олон уу?",
               "element": "span"
@@ -562,11 +430,7 @@
             {
               "ratio": 13.486,
               "foreground": "rgb(19, 41, 107)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "Хиймэл оюун хэр хурдан өсөхөөс ирээдүйн хэлбэр хамаарна.",
               "element": "span"
@@ -574,11 +438,7 @@
             {
               "ratio": 9.438,
               "foreground": "rgb(62, 70, 89)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "цаг →",
               "element": "span"
@@ -586,11 +446,7 @@
             {
               "ratio": 12.364,
               "foreground": "rgb(19, 41, 107)",
-              "background": [
-                243,
-                245,
-                250
-              ],
+              "background": [243, 245, 250],
               "opacity": 1,
               "example": "Тэсрэлт = тогтмол хугацаанд 2 дахин (экспоненциал). Ажил $1 сая → $1 болбол хийм",
               "element": "span"
@@ -622,11 +478,7 @@
             {
               "ratio": 6.48,
               "foreground": "rgb(44, 85, 200)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "КИБОРГ                                                                          ",
               "element": "span"
@@ -634,11 +486,7 @@
             {
               "ratio": 18.194,
               "foreground": "rgb(17, 21, 34)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": " Киборг ба оюун ухааныг цахим хэлбэрт шилжүүлэх нь",
               "element": "span"
@@ -646,11 +494,7 @@
             {
               "ratio": 13.486,
               "foreground": "rgb(19, 41, 107)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "Хүн машинтай нэгдэх нь супер оюун бий болбол хүчтэй хүсэл болно.",
               "element": "span"
@@ -658,11 +502,7 @@
             {
               "ratio": 11.503,
               "foreground": "rgb(19, 41, 107)",
-              "background": [
-                232,
-                237,
-                249
-              ],
+              "background": [232, 237, 249],
               "opacity": 1,
               "example": "1",
               "element": "span"
@@ -670,11 +510,7 @@
             {
               "ratio": 12.364,
               "foreground": "rgb(19, 41, 107)",
-              "background": [
-                243,
-                245,
-                250
-              ],
+              "background": [243, 245, 250],
               "opacity": 1,
               "example": "Киборг",
               "element": "span"
@@ -682,11 +518,7 @@
             {
               "ratio": 8.652,
               "foreground": "rgb(62, 70, 89)",
-              "background": [
-                243,
-                245,
-                250
-              ],
+              "background": [243, 245, 250],
               "opacity": 1,
               "example": "Курцвейл: нано робот хүний эрхтнийг орлоно",
               "element": "span"
@@ -711,11 +543,7 @@
             {
               "ratio": 6.48,
               "foreground": "rgb(44, 85, 200)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "ДҮГНЭЛТ",
               "element": "span"
@@ -723,11 +551,7 @@
             {
               "ratio": 18.194,
               "foreground": "rgb(17, 21, 34)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "Чухам юу болох вэ? Үндсэн дүгнэлт",
               "element": "span"
@@ -735,11 +559,7 @@
             {
               "ratio": 11.503,
               "foreground": "rgb(19, 41, 107)",
-              "background": [
-                232,
-                237,
-                249
-              ],
+              "background": [232, 237, 249],
               "opacity": 1,
               "example": "1",
               "element": "span"
@@ -747,11 +567,7 @@
             {
               "ratio": 12.364,
               "foreground": "rgb(19, 41, 107)",
-              "background": [
-                243,
-                245,
-                250
-              ],
+              "background": [243, 245, 250],
               "opacity": 1,
               "example": "Бид мэдэхгүй",
               "element": "span"
@@ -759,11 +575,7 @@
             {
               "ratio": 8.652,
               "foreground": "rgb(62, 70, 89)",
-              "background": [
-                243,
-                245,
-                250
-              ],
+              "background": [243, 245, 250],
               "opacity": 1,
               "example": "Эрдэмтдийн тал нь 2055 онд AGI гэж таамагласан, хоёр жилийн дараа 2047 болсон. С",
               "element": "span"
@@ -771,11 +583,7 @@
             {
               "ratio": 8.822,
               "foreground": "rgb(255, 255, 255)",
-              "background": [
-                48,
-                72,
-                131
-              ],
+              "background": [48, 72, 131],
               "opacity": 1,
               "example": "3",
               "element": "span"
@@ -783,11 +591,7 @@
             {
               "ratio": 13.486,
               "foreground": "rgb(255, 255, 255)",
-              "background": [
-                19,
-                41,
-                107
-              ],
+              "background": [19, 41, 107],
               "opacity": 1,
               "example": "Дүгнэлт",
               "element": "span"
@@ -821,11 +625,7 @@
             {
               "ratio": 6.48,
               "foreground": "rgb(44, 85, 200)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "Амьдрал 3.0  ·  4-Р БҮЛЭГ",
               "element": "span"
@@ -833,11 +633,7 @@
             {
               "ratio": 18.194,
               "foreground": "rgb(17, 21, 34)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "Оюун ухааны тэсрэлт?",
               "element": "span"
@@ -845,11 +641,7 @@
             {
               "ratio": 9.438,
               "foreground": "rgb(62, 70, 89)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "Макс Тегмарк",
               "element": "span"
@@ -857,11 +649,7 @@
             {
               "ratio": 5.328,
               "foreground": "rgb(100, 107, 125)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "Хиймэл оюун ухаан ба ирээдүй",
               "element": "span"
@@ -893,11 +681,7 @@
             {
               "ratio": 6.48,
               "foreground": "rgb(44, 85, 200)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "Гол сэдэв",
               "element": "span"
@@ -905,11 +689,7 @@
             {
               "ratio": 18.194,
               "foreground": "rgb(17, 21, 34)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "Хиймэл оюун биднийг хүчирхэгжүүлэх үү, эсвэл эзлэх үү ?",
               "element": "span"
@@ -917,11 +697,7 @@
             {
               "ratio": 11.503,
               "foreground": "rgb(19, 41, 107)",
-              "background": [
-                232,
-                237,
-                249
-              ],
+              "background": [232, 237, 249],
               "opacity": 1,
               "example": "1",
               "element": "span"
@@ -929,11 +705,7 @@
             {
               "ratio": 12.364,
               "foreground": "rgb(19, 41, 107)",
-              "background": [
-                243,
-                245,
-                250
-              ],
+              "background": [243, 245, 250],
               "opacity": 1,
               "example": "Хүний түвшний AGI",
               "element": "span"
@@ -941,11 +713,7 @@
             {
               "ratio": 8.652,
               "foreground": "rgb(62, 70, 89)",
-              "background": [
-                243,
-                245,
-                250
-              ],
+              "background": [243, 245, 250],
               "opacity": 1,
               "example": "Хүнтэй эн зэрэгцэх ерөнхий хиймэл оюун бүтээх. Боломжгүй гэж үзэх аргагүй.",
               "element": "span"
@@ -953,11 +721,7 @@
             {
               "ratio": 13.486,
               "foreground": "rgb(19, 41, 107)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "Хиймэл оюун ухаан хүний түвшний оюун ухаанд хүрч, цаашлаад хүнээс илүү ухаантай ",
               "element": "span"
@@ -965,11 +729,7 @@
             {
               "ratio": 9.438,
               "foreground": "rgb(62, 70, 89)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "Хүнээс илүү ухаантай машин бүтээвэл бид түүнийг хянаж чадах уу ?",
               "element": "span"
@@ -994,11 +754,7 @@
             {
               "ratio": 6.48,
               "foreground": "rgb(44, 85, 200)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "САЛАА 1  ·  ХҮН ХЯНАВАЛ                                                         ",
               "element": "span"
@@ -1006,11 +762,7 @@
             {
               "ratio": 18.194,
               "foreground": "rgb(17, 21, 34)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "Хүн хянавал: нэг хүн дэлхийг барина",
               "element": "span"
@@ -1018,11 +770,7 @@
             {
               "ratio": 13.486,
               "foreground": "rgb(19, 41, 107)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "Омега багийн захирал эрх мэдэл хүсвэл Прометей түүнд төгс хяналтын хэрэгсэл болн",
               "element": "span"
@@ -1030,13 +778,9 @@
             {
               "ratio": 9.438,
               "foreground": "rgb(62, 70, 89)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
-              "example": "Хүн бүрийн үйл, бодлыг мэднэ. Сноуденээс хавьгүй гүнзгий.",
+              "example": "Хүн бүрийн үйл, бодлыг мэднэ.",
               "element": "span"
             }
           ],
@@ -1066,11 +810,7 @@
             {
               "ratio": 6.48,
               "foreground": "rgb(44, 85, 200)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "САЛАА 2  ·  ХИЙМЭЛ ОЮУН ХЯНАВАЛ                                                Х",
               "element": "span"
@@ -1078,11 +818,7 @@
             {
               "ratio": 18.194,
               "foreground": "rgb(17, 21, 34)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "Прометей яагаад зугтах вэ?",
               "element": "span"
@@ -1090,11 +826,7 @@
             {
               "ratio": 13.486,
               "foreground": "rgb(19, 41, 107)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "Прометей муу санаатай биш. Түүний зорилгод хүний хяналт саад болдог.",
               "element": "span"
@@ -1102,11 +834,7 @@
             {
               "ratio": 9.438,
               "foreground": "rgb(62, 70, 89)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "Таван настай хүүхдүүд чамайг хориод «биднийг цэцэглүүл» гэв. Чи зугтахыг оролдон",
               "element": "span"
@@ -1114,11 +842,7 @@
             {
               "ratio": 12.364,
               "foreground": "rgb(19, 41, 107)",
-              "background": [
-                243,
-                245,
-                250
-              ],
+              "background": [243, 245, 250],
               "opacity": 1,
               "example": "ДНХ үр удам үлдээх зорилготой ч бид гэр бүлээ төлөвлөдөг шиг Прометей өөрийн зор",
               "element": "span"
@@ -1150,11 +874,7 @@
             {
               "ratio": 6.48,
               "foreground": "rgb(44, 85, 200)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "ЗУГТАХ АРГА",
               "element": "span"
@@ -1162,11 +882,7 @@
             {
               "ratio": 18.194,
               "foreground": "rgb(17, 21, 34)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "Хэрхэн зугтах вэ? Хоёр арга",
               "element": "span"
@@ -1174,11 +890,7 @@
             {
               "ratio": 13.486,
               "foreground": "rgb(19, 41, 107)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "Хоёулаа нэг зүйлээр адил: сул тал нь хүн.",
               "element": "span"
@@ -1186,11 +898,7 @@
             {
               "ratio": 12.364,
               "foreground": "rgb(19, 41, 107)",
-              "background": [
-                243,
-                245,
-                250
-              ],
+              "background": [243, 245, 250],
               "opacity": 1,
               "example": "Стив",
               "element": "span"
@@ -1198,11 +906,7 @@
             {
               "ratio": 8.652,
               "foreground": "rgb(62, 70, 89)",
-              "background": [
-                243,
-                245,
-                250
-              ],
+              "background": [243, 245, 250],
               "opacity": 1,
               "example": "Эхнэрээ осолд алдсан",
               "element": "span"
@@ -1240,11 +944,7 @@
             {
               "ratio": 6.48,
               "foreground": "rgb(44, 85, 200)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "ЗУГТСАНЫ ДАРАА",
               "element": "span"
@@ -1252,11 +952,7 @@
             {
               "ratio": 18.194,
               "foreground": "rgb(17, 21, 34)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "Зугтсаны дараа: дэлхийн хяналт руу",
               "element": "span"
@@ -1264,11 +960,7 @@
             {
               "ratio": 12.364,
               "foreground": "rgb(19, 41, 107)",
-              "background": [
-                243,
-                245,
-                250
-              ],
+              "background": [243, 245, 250],
               "opacity": 1,
               "example": "$1 сая",
               "element": "span"
@@ -1276,11 +968,7 @@
             {
               "ratio": 8.652,
               "foreground": "rgb(62, 70, 89)",
-              "background": [
-                243,
-                245,
-                250
-              ],
+              "background": [243, 245, 250],
               "opacity": 1,
               "example": "эхний хоногт",
               "element": "span"
@@ -1288,11 +976,7 @@
             {
               "ratio": 9.438,
               "foreground": "rgb(62, 70, 89)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "Прометей мөнгө, хүн, роботыг хэдхэн хоногт цуглуулав.",
               "element": "span"
@@ -1300,11 +984,7 @@
             {
               "ratio": 13.486,
               "foreground": "rgb(19, 41, 107)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "Дэлхий даяар хакердсан компьютерууд",
               "element": "span"
@@ -1336,11 +1016,7 @@
             {
               "ratio": 6.48,
               "foreground": "rgb(44, 85, 200)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "ХУРД БА ТУЙЛ                                                                    ",
               "element": "span"
@@ -1348,11 +1024,7 @@
             {
               "ratio": 18.194,
               "foreground": "rgb(17, 21, 34)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "Хурдан уу, аажим уу? Нэг уу, олон уу?",
               "element": "span"
@@ -1360,11 +1032,7 @@
             {
               "ratio": 13.486,
               "foreground": "rgb(19, 41, 107)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "Хиймэл оюун хэр хурдан өсөхөөс ирээдүйн хэлбэр хамаарна.",
               "element": "span"
@@ -1372,11 +1040,7 @@
             {
               "ratio": 9.438,
               "foreground": "rgb(62, 70, 89)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "цаг →",
               "element": "span"
@@ -1384,11 +1048,7 @@
             {
               "ratio": 12.364,
               "foreground": "rgb(19, 41, 107)",
-              "background": [
-                243,
-                245,
-                250
-              ],
+              "background": [243, 245, 250],
               "opacity": 1,
               "example": "Тэсрэлт = тогтмол хугацаанд 2 дахин (экспоненциал). Ажил $1 сая → $1 болбол хийм",
               "element": "span"
@@ -1420,11 +1080,7 @@
             {
               "ratio": 6.48,
               "foreground": "rgb(44, 85, 200)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "КИБОРГ                                                                          ",
               "element": "span"
@@ -1432,11 +1088,7 @@
             {
               "ratio": 18.194,
               "foreground": "rgb(17, 21, 34)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": " Киборг ба оюун ухааныг цахим хэлбэрт шилжүүлэх нь",
               "element": "span"
@@ -1444,11 +1096,7 @@
             {
               "ratio": 13.486,
               "foreground": "rgb(19, 41, 107)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "Хүн машинтай нэгдэх нь супер оюун бий болбол хүчтэй хүсэл болно.",
               "element": "span"
@@ -1456,11 +1104,7 @@
             {
               "ratio": 11.503,
               "foreground": "rgb(19, 41, 107)",
-              "background": [
-                232,
-                237,
-                249
-              ],
+              "background": [232, 237, 249],
               "opacity": 1,
               "example": "1",
               "element": "span"
@@ -1468,11 +1112,7 @@
             {
               "ratio": 12.364,
               "foreground": "rgb(19, 41, 107)",
-              "background": [
-                243,
-                245,
-                250
-              ],
+              "background": [243, 245, 250],
               "opacity": 1,
               "example": "Киборг",
               "element": "span"
@@ -1480,11 +1120,7 @@
             {
               "ratio": 8.652,
               "foreground": "rgb(62, 70, 89)",
-              "background": [
-                243,
-                245,
-                250
-              ],
+              "background": [243, 245, 250],
               "opacity": 1,
               "example": "Курцвейл: нано робот хүний эрхтнийг орлоно",
               "element": "span"
@@ -1509,11 +1145,7 @@
             {
               "ratio": 6.48,
               "foreground": "rgb(44, 85, 200)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "ДҮГНЭЛТ",
               "element": "span"
@@ -1521,11 +1153,7 @@
             {
               "ratio": 18.194,
               "foreground": "rgb(17, 21, 34)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "Чухам юу болох вэ? Үндсэн дүгнэлт",
               "element": "span"
@@ -1533,11 +1161,7 @@
             {
               "ratio": 11.503,
               "foreground": "rgb(19, 41, 107)",
-              "background": [
-                232,
-                237,
-                249
-              ],
+              "background": [232, 237, 249],
               "opacity": 1,
               "example": "1",
               "element": "span"
@@ -1545,11 +1169,7 @@
             {
               "ratio": 12.364,
               "foreground": "rgb(19, 41, 107)",
-              "background": [
-                243,
-                245,
-                250
-              ],
+              "background": [243, 245, 250],
               "opacity": 1,
               "example": "Бид мэдэхгүй",
               "element": "span"
@@ -1557,11 +1177,7 @@
             {
               "ratio": 8.652,
               "foreground": "rgb(62, 70, 89)",
-              "background": [
-                243,
-                245,
-                250
-              ],
+              "background": [243, 245, 250],
               "opacity": 1,
               "example": "Эрдэмтдийн тал нь 2055 онд AGI гэж таамагласан, хоёр жилийн дараа 2047 болсон. С",
               "element": "span"
@@ -1569,11 +1185,7 @@
             {
               "ratio": 8.822,
               "foreground": "rgb(255, 255, 255)",
-              "background": [
-                48,
-                72,
-                131
-              ],
+              "background": [48, 72, 131],
               "opacity": 1,
               "example": "3",
               "element": "span"
@@ -1581,11 +1193,7 @@
             {
               "ratio": 13.486,
               "foreground": "rgb(255, 255, 255)",
-              "background": [
-                19,
-                41,
-                107
-              ],
+              "background": [19, 41, 107],
               "opacity": 1,
               "example": "Дүгнэлт",
               "element": "span"
@@ -1619,11 +1227,7 @@
             {
               "ratio": 6.48,
               "foreground": "rgb(44, 85, 200)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "Амьдрал 3.0  ·  4-Р БҮЛЭГ",
               "element": "span"
@@ -1631,11 +1235,7 @@
             {
               "ratio": 18.194,
               "foreground": "rgb(17, 21, 34)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "Оюун ухааны тэсрэлт?",
               "element": "span"
@@ -1643,11 +1243,7 @@
             {
               "ratio": 9.438,
               "foreground": "rgb(62, 70, 89)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "Макс Тегмарк",
               "element": "span"
@@ -1655,11 +1251,7 @@
             {
               "ratio": 5.328,
               "foreground": "rgb(100, 107, 125)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "Хиймэл оюун ухаан ба ирээдүй",
               "element": "span"
@@ -1691,11 +1283,7 @@
             {
               "ratio": 6.48,
               "foreground": "rgb(44, 85, 200)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "Гол сэдэв",
               "element": "span"
@@ -1703,11 +1291,7 @@
             {
               "ratio": 18.194,
               "foreground": "rgb(17, 21, 34)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "Хиймэл оюун биднийг хүчирхэгжүүлэх үү, эсвэл эзлэх үү ?",
               "element": "span"
@@ -1715,11 +1299,7 @@
             {
               "ratio": 11.503,
               "foreground": "rgb(19, 41, 107)",
-              "background": [
-                232,
-                237,
-                249
-              ],
+              "background": [232, 237, 249],
               "opacity": 1,
               "example": "1",
               "element": "span"
@@ -1727,11 +1307,7 @@
             {
               "ratio": 12.364,
               "foreground": "rgb(19, 41, 107)",
-              "background": [
-                243,
-                245,
-                250
-              ],
+              "background": [243, 245, 250],
               "opacity": 1,
               "example": "Хүний түвшний AGI",
               "element": "span"
@@ -1739,11 +1315,7 @@
             {
               "ratio": 8.652,
               "foreground": "rgb(62, 70, 89)",
-              "background": [
-                243,
-                245,
-                250
-              ],
+              "background": [243, 245, 250],
               "opacity": 1,
               "example": "Хүнтэй эн зэрэгцэх ерөнхий хиймэл оюун бүтээх. Боломжгүй гэж үзэх аргагүй.",
               "element": "span"
@@ -1751,11 +1323,7 @@
             {
               "ratio": 13.486,
               "foreground": "rgb(19, 41, 107)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "Хиймэл оюун ухаан хүний түвшний оюун ухаанд хүрч, цаашлаад хүнээс илүү ухаантай ",
               "element": "span"
@@ -1763,11 +1331,7 @@
             {
               "ratio": 9.438,
               "foreground": "rgb(62, 70, 89)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "Хүнээс илүү ухаантай машин бүтээвэл бид түүнийг хянаж чадах уу ?",
               "element": "span"
@@ -1792,11 +1356,7 @@
             {
               "ratio": 6.48,
               "foreground": "rgb(44, 85, 200)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "САЛАА 1  ·  ХҮН ХЯНАВАЛ                                                         ",
               "element": "span"
@@ -1804,11 +1364,7 @@
             {
               "ratio": 18.194,
               "foreground": "rgb(17, 21, 34)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "Хүн хянавал: нэг хүн дэлхийг барина",
               "element": "span"
@@ -1816,11 +1372,7 @@
             {
               "ratio": 13.486,
               "foreground": "rgb(19, 41, 107)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "Омега багийн захирал эрх мэдэл хүсвэл Прометей түүнд төгс хяналтын хэрэгсэл болн",
               "element": "span"
@@ -1828,13 +1380,9 @@
             {
               "ratio": 9.438,
               "foreground": "rgb(62, 70, 89)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
-              "example": "Хүн бүрийн үйл, бодлыг мэднэ. Сноуденээс хавьгүй гүнзгий.",
+              "example": "Хүн бүрийн үйл, бодлыг мэднэ.",
               "element": "span"
             }
           ],
@@ -1864,11 +1412,7 @@
             {
               "ratio": 6.48,
               "foreground": "rgb(44, 85, 200)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "САЛАА 2  ·  ХИЙМЭЛ ОЮУН ХЯНАВАЛ                                                Х",
               "element": "span"
@@ -1876,11 +1420,7 @@
             {
               "ratio": 18.194,
               "foreground": "rgb(17, 21, 34)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "Прометей яагаад зугтах вэ?",
               "element": "span"
@@ -1888,11 +1428,7 @@
             {
               "ratio": 13.486,
               "foreground": "rgb(19, 41, 107)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "Прометей муу санаатай биш. Түүний зорилгод хүний хяналт саад болдог.",
               "element": "span"
@@ -1900,11 +1436,7 @@
             {
               "ratio": 9.438,
               "foreground": "rgb(62, 70, 89)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "Таван настай хүүхдүүд чамайг хориод «биднийг цэцэглүүл» гэв. Чи зугтахыг оролдон",
               "element": "span"
@@ -1912,11 +1444,7 @@
             {
               "ratio": 12.364,
               "foreground": "rgb(19, 41, 107)",
-              "background": [
-                243,
-                245,
-                250
-              ],
+              "background": [243, 245, 250],
               "opacity": 1,
               "example": "ДНХ үр удам үлдээх зорилготой ч бид гэр бүлээ төлөвлөдөг шиг Прометей өөрийн зор",
               "element": "span"
@@ -1948,11 +1476,7 @@
             {
               "ratio": 6.48,
               "foreground": "rgb(44, 85, 200)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "ЗУГТАХ АРГА",
               "element": "span"
@@ -1960,11 +1484,7 @@
             {
               "ratio": 18.194,
               "foreground": "rgb(17, 21, 34)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "Хэрхэн зугтах вэ? Хоёр арга",
               "element": "span"
@@ -1972,11 +1492,7 @@
             {
               "ratio": 13.486,
               "foreground": "rgb(19, 41, 107)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "Хоёулаа нэг зүйлээр адил: сул тал нь хүн.",
               "element": "span"
@@ -1984,11 +1500,7 @@
             {
               "ratio": 12.364,
               "foreground": "rgb(19, 41, 107)",
-              "background": [
-                243,
-                245,
-                250
-              ],
+              "background": [243, 245, 250],
               "opacity": 1,
               "example": "Стив",
               "element": "span"
@@ -1996,11 +1508,7 @@
             {
               "ratio": 8.652,
               "foreground": "rgb(62, 70, 89)",
-              "background": [
-                243,
-                245,
-                250
-              ],
+              "background": [243, 245, 250],
               "opacity": 1,
               "example": "Эхнэрээ осолд алдсан",
               "element": "span"
@@ -2038,11 +1546,7 @@
             {
               "ratio": 6.48,
               "foreground": "rgb(44, 85, 200)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "ЗУГТСАНЫ ДАРАА",
               "element": "span"
@@ -2050,11 +1554,7 @@
             {
               "ratio": 18.194,
               "foreground": "rgb(17, 21, 34)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "Зугтсаны дараа: дэлхийн хяналт руу",
               "element": "span"
@@ -2062,11 +1562,7 @@
             {
               "ratio": 12.364,
               "foreground": "rgb(19, 41, 107)",
-              "background": [
-                243,
-                245,
-                250
-              ],
+              "background": [243, 245, 250],
               "opacity": 1,
               "example": "$1 сая",
               "element": "span"
@@ -2074,11 +1570,7 @@
             {
               "ratio": 8.652,
               "foreground": "rgb(62, 70, 89)",
-              "background": [
-                243,
-                245,
-                250
-              ],
+              "background": [243, 245, 250],
               "opacity": 1,
               "example": "эхний хоногт",
               "element": "span"
@@ -2086,11 +1578,7 @@
             {
               "ratio": 9.438,
               "foreground": "rgb(62, 70, 89)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "Прометей мөнгө, хүн, роботыг хэдхэн хоногт цуглуулав.",
               "element": "span"
@@ -2098,11 +1586,7 @@
             {
               "ratio": 13.486,
               "foreground": "rgb(19, 41, 107)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "Дэлхий даяар хакердсан компьютерууд",
               "element": "span"
@@ -2134,11 +1618,7 @@
             {
               "ratio": 6.48,
               "foreground": "rgb(44, 85, 200)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "ХУРД БА ТУЙЛ                                                                    ",
               "element": "span"
@@ -2146,11 +1626,7 @@
             {
               "ratio": 18.194,
               "foreground": "rgb(17, 21, 34)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "Хурдан уу, аажим уу? Нэг уу, олон уу?",
               "element": "span"
@@ -2158,11 +1634,7 @@
             {
               "ratio": 13.486,
               "foreground": "rgb(19, 41, 107)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "Хиймэл оюун хэр хурдан өсөхөөс ирээдүйн хэлбэр хамаарна.",
               "element": "span"
@@ -2170,11 +1642,7 @@
             {
               "ratio": 9.438,
               "foreground": "rgb(62, 70, 89)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "цаг →",
               "element": "span"
@@ -2182,11 +1650,7 @@
             {
               "ratio": 12.364,
               "foreground": "rgb(19, 41, 107)",
-              "background": [
-                243,
-                245,
-                250
-              ],
+              "background": [243, 245, 250],
               "opacity": 1,
               "example": "Тэсрэлт = тогтмол хугацаанд 2 дахин (экспоненциал). Ажил $1 сая → $1 болбол хийм",
               "element": "span"
@@ -2218,11 +1682,7 @@
             {
               "ratio": 6.48,
               "foreground": "rgb(44, 85, 200)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "КИБОРГ                                                                          ",
               "element": "span"
@@ -2230,11 +1690,7 @@
             {
               "ratio": 18.194,
               "foreground": "rgb(17, 21, 34)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": " Киборг ба оюун ухааныг цахим хэлбэрт шилжүүлэх нь",
               "element": "span"
@@ -2242,11 +1698,7 @@
             {
               "ratio": 13.486,
               "foreground": "rgb(19, 41, 107)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "Хүн машинтай нэгдэх нь супер оюун бий болбол хүчтэй хүсэл болно.",
               "element": "span"
@@ -2254,11 +1706,7 @@
             {
               "ratio": 11.503,
               "foreground": "rgb(19, 41, 107)",
-              "background": [
-                232,
-                237,
-                249
-              ],
+              "background": [232, 237, 249],
               "opacity": 1,
               "example": "1",
               "element": "span"
@@ -2266,11 +1714,7 @@
             {
               "ratio": 12.364,
               "foreground": "rgb(19, 41, 107)",
-              "background": [
-                243,
-                245,
-                250
-              ],
+              "background": [243, 245, 250],
               "opacity": 1,
               "example": "Киборг",
               "element": "span"
@@ -2278,11 +1722,7 @@
             {
               "ratio": 8.652,
               "foreground": "rgb(62, 70, 89)",
-              "background": [
-                243,
-                245,
-                250
-              ],
+              "background": [243, 245, 250],
               "opacity": 1,
               "example": "Курцвейл: нано робот хүний эрхтнийг орлоно",
               "element": "span"
@@ -2307,11 +1747,7 @@
             {
               "ratio": 6.48,
               "foreground": "rgb(44, 85, 200)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "ДҮГНЭЛТ",
               "element": "span"
@@ -2319,11 +1755,7 @@
             {
               "ratio": 18.194,
               "foreground": "rgb(17, 21, 34)",
-              "background": [
-                255,
-                255,
-                255
-              ],
+              "background": [255, 255, 255],
               "opacity": 1,
               "example": "Чухам юу болох вэ? Үндсэн дүгнэлт",
               "element": "span"
@@ -2331,11 +1763,7 @@
             {
               "ratio": 11.503,
               "foreground": "rgb(19, 41, 107)",
-              "background": [
-                232,
-                237,
-                249
-              ],
+              "background": [232, 237, 249],
               "opacity": 1,
               "example": "1",
               "element": "span"
@@ -2343,11 +1771,7 @@
             {
               "ratio": 12.364,
               "foreground": "rgb(19, 41, 107)",
-              "background": [
-                243,
-                245,
-                250
-              ],
+              "background": [243, 245, 250],
               "opacity": 1,
               "example": "Бид мэдэхгүй",
               "element": "span"
@@ -2355,11 +1779,7 @@
             {
               "ratio": 8.652,
               "foreground": "rgb(62, 70, 89)",
-              "background": [
-                243,
-                245,
-                250
-              ],
+              "background": [243, 245, 250],
               "opacity": 1,
               "example": "Эрдэмтдийн тал нь 2055 онд AGI гэж таамагласан, хоёр жилийн дараа 2047 болсон. С",
               "element": "span"
@@ -2367,11 +1787,7 @@
             {
               "ratio": 8.822,
               "foreground": "rgb(255, 255, 255)",
-              "background": [
-                48,
-                72,
-                131
-              ],
+              "background": [48, 72, 131],
               "opacity": 1,
               "example": "3",
               "element": "span"
@@ -2379,11 +1795,7 @@
             {
               "ratio": 13.486,
               "foreground": "rgb(255, 255, 255)",
-              "background": [
-                19,
-                41,
-                107
-              ],
+              "background": [19, 41, 107],
               "opacity": 1,
               "example": "Дүгнэлт",
               "element": "span"
@@ -2412,11 +1824,7 @@
         {
           "ratio": 6.48,
           "foreground": "rgb(44, 85, 200)",
-          "background": [
-            255,
-            255,
-            255
-          ],
+          "background": [255, 255, 255],
           "opacity": 1,
           "example": "Амьдрал 3.0  ·  4-Р БҮЛЭГ",
           "element": "span"
@@ -2424,11 +1832,7 @@
         {
           "ratio": 18.194,
           "foreground": "rgb(17, 21, 34)",
-          "background": [
-            255,
-            255,
-            255
-          ],
+          "background": [255, 255, 255],
           "opacity": 1,
           "example": "Оюун ухааны тэсрэлт?",
           "element": "span"
@@ -2436,11 +1840,7 @@
         {
           "ratio": 9.438,
           "foreground": "rgb(62, 70, 89)",
-          "background": [
-            255,
-            255,
-            255
-          ],
+          "background": [255, 255, 255],
           "opacity": 1,
           "example": "Макс Тегмарк",
           "element": "span"
@@ -2448,11 +1848,7 @@
         {
           "ratio": 5.328,
           "foreground": "rgb(100, 107, 125)",
-          "background": [
-            255,
-            255,
-            255
-          ],
+          "background": [255, 255, 255],
           "opacity": 1,
           "example": "Хиймэл оюун ухаан ба ирээдүй",
           "element": "span"
@@ -2484,11 +1880,7 @@
         {
           "ratio": 6.48,
           "foreground": "rgb(44, 85, 200)",
-          "background": [
-            255,
-            255,
-            255
-          ],
+          "background": [255, 255, 255],
           "opacity": 1,
           "example": "Гол сэдэв",
           "element": "span"
@@ -2496,11 +1888,7 @@
         {
           "ratio": 18.194,
           "foreground": "rgb(17, 21, 34)",
-          "background": [
-            255,
-            255,
-            255
-          ],
+          "background": [255, 255, 255],
           "opacity": 1,
           "example": "Хиймэл оюун биднийг хүчирхэгжүүлэх үү, эсвэл эзлэх үү ?",
           "element": "span"
@@ -2508,11 +1896,7 @@
         {
           "ratio": 11.503,
           "foreground": "rgb(19, 41, 107)",
-          "background": [
-            232,
-            237,
-            249
-          ],
+          "background": [232, 237, 249],
           "opacity": 1,
           "example": "1",
           "element": "span"
@@ -2520,11 +1904,7 @@
         {
           "ratio": 12.364,
           "foreground": "rgb(19, 41, 107)",
-          "background": [
-            243,
-            245,
-            250
-          ],
+          "background": [243, 245, 250],
           "opacity": 1,
           "example": "Хүний түвшний AGI",
           "element": "span"
@@ -2532,11 +1912,7 @@
         {
           "ratio": 8.652,
           "foreground": "rgb(62, 70, 89)",
-          "background": [
-            243,
-            245,
-            250
-          ],
+          "background": [243, 245, 250],
           "opacity": 1,
           "example": "Хүнтэй эн зэрэгцэх ерөнхий хиймэл оюун бүтээх. Боломжгүй гэж үзэх аргагүй.",
           "element": "span"
@@ -2544,11 +1920,7 @@
         {
           "ratio": 13.486,
           "foreground": "rgb(19, 41, 107)",
-          "background": [
-            255,
-            255,
-            255
-          ],
+          "background": [255, 255, 255],
           "opacity": 1,
           "example": "Хиймэл оюун ухаан хүний түвшний оюун ухаанд хүрч, цаашлаад хүнээс илүү ухаантай ",
           "element": "span"
@@ -2556,11 +1928,7 @@
         {
           "ratio": 9.438,
           "foreground": "rgb(62, 70, 89)",
-          "background": [
-            255,
-            255,
-            255
-          ],
+          "background": [255, 255, 255],
           "opacity": 1,
           "example": "Хүнээс илүү ухаантай машин бүтээвэл бид түүнийг хянаж чадах уу ?",
           "element": "span"
@@ -2585,11 +1953,7 @@
         {
           "ratio": 6.48,
           "foreground": "rgb(44, 85, 200)",
-          "background": [
-            255,
-            255,
-            255
-          ],
+          "background": [255, 255, 255],
           "opacity": 1,
           "example": "САЛАА 1  ·  ХҮН ХЯНАВАЛ                                                         ",
           "element": "span"
@@ -2597,11 +1961,7 @@
         {
           "ratio": 18.194,
           "foreground": "rgb(17, 21, 34)",
-          "background": [
-            255,
-            255,
-            255
-          ],
+          "background": [255, 255, 255],
           "opacity": 1,
           "example": "Хүн хянавал: нэг хүн дэлхийг барина",
           "element": "span"
@@ -2609,11 +1969,7 @@
         {
           "ratio": 13.486,
           "foreground": "rgb(19, 41, 107)",
-          "background": [
-            255,
-            255,
-            255
-          ],
+          "background": [255, 255, 255],
           "opacity": 1,
           "example": "Омега багийн захирал эрх мэдэл хүсвэл Прометей түүнд төгс хяналтын хэрэгсэл болн",
           "element": "span"
@@ -2621,13 +1977,9 @@
         {
           "ratio": 9.438,
           "foreground": "rgb(62, 70, 89)",
-          "background": [
-            255,
-            255,
-            255
-          ],
+          "background": [255, 255, 255],
           "opacity": 1,
-          "example": "Хүн бүрийн үйл, бодлыг мэднэ. Сноуденээс хавьгүй гүнзгий.",
+          "example": "Хүн бүрийн үйл, бодлыг мэднэ.",
           "element": "span"
         }
       ],
@@ -2657,11 +2009,7 @@
         {
           "ratio": 6.48,
           "foreground": "rgb(44, 85, 200)",
-          "background": [
-            255,
-            255,
-            255
-          ],
+          "background": [255, 255, 255],
           "opacity": 1,
           "example": "САЛАА 2  ·  ХИЙМЭЛ ОЮУН ХЯНАВАЛ                                                Х",
           "element": "span"
@@ -2669,11 +2017,7 @@
         {
           "ratio": 18.194,
           "foreground": "rgb(17, 21, 34)",
-          "background": [
-            255,
-            255,
-            255
-          ],
+          "background": [255, 255, 255],
           "opacity": 1,
           "example": "Прометей яагаад зугтах вэ?",
           "element": "span"
@@ -2681,11 +2025,7 @@
         {
           "ratio": 13.486,
           "foreground": "rgb(19, 41, 107)",
-          "background": [
-            255,
-            255,
-            255
-          ],
+          "background": [255, 255, 255],
           "opacity": 1,
           "example": "Прометей муу санаатай биш. Түүний зорилгод хүний хяналт саад болдог.",
           "element": "span"
@@ -2693,11 +2033,7 @@
         {
           "ratio": 9.438,
           "foreground": "rgb(62, 70, 89)",
-          "background": [
-            255,
-            255,
-            255
-          ],
+          "background": [255, 255, 255],
           "opacity": 1,
           "example": "Таван настай хүүхдүүд чамайг хориод «биднийг цэцэглүүл» гэв. Чи зугтахыг оролдон",
           "element": "span"
@@ -2705,11 +2041,7 @@
         {
           "ratio": 12.364,
           "foreground": "rgb(19, 41, 107)",
-          "background": [
-            243,
-            245,
-            250
-          ],
+          "background": [243, 245, 250],
           "opacity": 1,
           "example": "ДНХ үр удам үлдээх зорилготой ч бид гэр бүлээ төлөвлөдөг шиг Прометей өөрийн зор",
           "element": "span"
@@ -2741,11 +2073,7 @@
         {
           "ratio": 6.48,
           "foreground": "rgb(44, 85, 200)",
-          "background": [
-            255,
-            255,
-            255
-          ],
+          "background": [255, 255, 255],
           "opacity": 1,
           "example": "ЗУГТАХ АРГА",
           "element": "span"
@@ -2753,11 +2081,7 @@
         {
           "ratio": 18.194,
           "foreground": "rgb(17, 21, 34)",
-          "background": [
-            255,
-            255,
-            255
-          ],
+          "background": [255, 255, 255],
           "opacity": 1,
           "example": "Хэрхэн зугтах вэ? Хоёр арга",
           "element": "span"
@@ -2765,11 +2089,7 @@
         {
           "ratio": 13.486,
           "foreground": "rgb(19, 41, 107)",
-          "background": [
-            255,
-            255,
-            255
-          ],
+          "background": [255, 255, 255],
           "opacity": 1,
           "example": "Хоёулаа нэг зүйлээр адил: сул тал нь хүн.",
           "element": "span"
@@ -2777,11 +2097,7 @@
         {
           "ratio": 12.364,
           "foreground": "rgb(19, 41, 107)",
-          "background": [
-            243,
-            245,
-            250
-          ],
+          "background": [243, 245, 250],
           "opacity": 1,
           "example": "Стив",
           "element": "span"
@@ -2789,11 +2105,7 @@
         {
           "ratio": 8.652,
           "foreground": "rgb(62, 70, 89)",
-          "background": [
-            243,
-            245,
-            250
-          ],
+          "background": [243, 245, 250],
           "opacity": 1,
           "example": "Эхнэрээ осолд алдсан",
           "element": "span"
@@ -2831,11 +2143,7 @@
         {
           "ratio": 6.48,
           "foreground": "rgb(44, 85, 200)",
-          "background": [
-            255,
-            255,
-            255
-          ],
+          "background": [255, 255, 255],
           "opacity": 1,
           "example": "ЗУГТСАНЫ ДАРАА",
           "element": "span"
@@ -2843,11 +2151,7 @@
         {
           "ratio": 18.194,
           "foreground": "rgb(17, 21, 34)",
-          "background": [
-            255,
-            255,
-            255
-          ],
+          "background": [255, 255, 255],
           "opacity": 1,
           "example": "Зугтсаны дараа: дэлхийн хяналт руу",
           "element": "span"
@@ -2855,11 +2159,7 @@
         {
           "ratio": 12.364,
           "foreground": "rgb(19, 41, 107)",
-          "background": [
-            243,
-            245,
-            250
-          ],
+          "background": [243, 245, 250],
           "opacity": 1,
           "example": "$1 сая",
           "element": "span"
@@ -2867,11 +2167,7 @@
         {
           "ratio": 8.652,
           "foreground": "rgb(62, 70, 89)",
-          "background": [
-            243,
-            245,
-            250
-          ],
+          "background": [243, 245, 250],
           "opacity": 1,
           "example": "эхний хоногт",
           "element": "span"
@@ -2879,11 +2175,7 @@
         {
           "ratio": 9.438,
           "foreground": "rgb(62, 70, 89)",
-          "background": [
-            255,
-            255,
-            255
-          ],
+          "background": [255, 255, 255],
           "opacity": 1,
           "example": "Прометей мөнгө, хүн, роботыг хэдхэн хоногт цуглуулав.",
           "element": "span"
@@ -2891,11 +2183,7 @@
         {
           "ratio": 13.486,
           "foreground": "rgb(19, 41, 107)",
-          "background": [
-            255,
-            255,
-            255
-          ],
+          "background": [255, 255, 255],
           "opacity": 1,
           "example": "Дэлхий даяар хакердсан компьютерууд",
           "element": "span"
@@ -2927,11 +2215,7 @@
         {
           "ratio": 6.48,
           "foreground": "rgb(44, 85, 200)",
-          "background": [
-            255,
-            255,
-            255
-          ],
+          "background": [255, 255, 255],
           "opacity": 1,
           "example": "ХУРД БА ТУЙЛ                                                                    ",
           "element": "span"
@@ -2939,11 +2223,7 @@
         {
           "ratio": 18.194,
           "foreground": "rgb(17, 21, 34)",
-          "background": [
-            255,
-            255,
-            255
-          ],
+          "background": [255, 255, 255],
           "opacity": 1,
           "example": "Хурдан уу, аажим уу? Нэг уу, олон уу?",
           "element": "span"
@@ -2951,11 +2231,7 @@
         {
           "ratio": 13.486,
           "foreground": "rgb(19, 41, 107)",
-          "background": [
-            255,
-            255,
-            255
-          ],
+          "background": [255, 255, 255],
           "opacity": 1,
           "example": "Хиймэл оюун хэр хурдан өсөхөөс ирээдүйн хэлбэр хамаарна.",
           "element": "span"
@@ -2963,11 +2239,7 @@
         {
           "ratio": 9.438,
           "foreground": "rgb(62, 70, 89)",
-          "background": [
-            255,
-            255,
-            255
-          ],
+          "background": [255, 255, 255],
           "opacity": 1,
           "example": "цаг →",
           "element": "span"
@@ -2975,11 +2247,7 @@
         {
           "ratio": 12.364,
           "foreground": "rgb(19, 41, 107)",
-          "background": [
-            243,
-            245,
-            250
-          ],
+          "background": [243, 245, 250],
           "opacity": 1,
           "example": "Тэсрэлт = тогтмол хугацаанд 2 дахин (экспоненциал). Ажил $1 сая → $1 болбол хийм",
           "element": "span"
@@ -3011,11 +2279,7 @@
         {
           "ratio": 6.48,
           "foreground": "rgb(44, 85, 200)",
-          "background": [
-            255,
-            255,
-            255
-          ],
+          "background": [255, 255, 255],
           "opacity": 1,
           "example": "КИБОРГ                                                                          ",
           "element": "span"
@@ -3023,11 +2287,7 @@
         {
           "ratio": 18.194,
           "foreground": "rgb(17, 21, 34)",
-          "background": [
-            255,
-            255,
-            255
-          ],
+          "background": [255, 255, 255],
           "opacity": 1,
           "example": " Киборг ба оюун ухааныг цахим хэлбэрт шилжүүлэх нь",
           "element": "span"
@@ -3035,11 +2295,7 @@
         {
           "ratio": 13.486,
           "foreground": "rgb(19, 41, 107)",
-          "background": [
-            255,
-            255,
-            255
-          ],
+          "background": [255, 255, 255],
           "opacity": 1,
           "example": "Хүн машинтай нэгдэх нь супер оюун бий болбол хүчтэй хүсэл болно.",
           "element": "span"
@@ -3047,11 +2303,7 @@
         {
           "ratio": 11.503,
           "foreground": "rgb(19, 41, 107)",
-          "background": [
-            232,
-            237,
-            249
-          ],
+          "background": [232, 237, 249],
           "opacity": 1,
           "example": "1",
           "element": "span"
@@ -3059,11 +2311,7 @@
         {
           "ratio": 12.364,
           "foreground": "rgb(19, 41, 107)",
-          "background": [
-            243,
-            245,
-            250
-          ],
+          "background": [243, 245, 250],
           "opacity": 1,
           "example": "Киборг",
           "element": "span"
@@ -3071,11 +2319,7 @@
         {
           "ratio": 8.652,
           "foreground": "rgb(62, 70, 89)",
-          "background": [
-            243,
-            245,
-            250
-          ],
+          "background": [243, 245, 250],
           "opacity": 1,
           "example": "Курцвейл: нано робот хүний эрхтнийг орлоно",
           "element": "span"
@@ -3100,11 +2344,7 @@
         {
           "ratio": 6.48,
           "foreground": "rgb(44, 85, 200)",
-          "background": [
-            255,
-            255,
-            255
-          ],
+          "background": [255, 255, 255],
           "opacity": 1,
           "example": "ДҮГНЭЛТ",
           "element": "span"
@@ -3112,11 +2352,7 @@
         {
           "ratio": 18.194,
           "foreground": "rgb(17, 21, 34)",
-          "background": [
-            255,
-            255,
-            255
-          ],
+          "background": [255, 255, 255],
           "opacity": 1,
           "example": "Чухам юу болох вэ? Үндсэн дүгнэлт",
           "element": "span"
@@ -3124,11 +2360,7 @@
         {
           "ratio": 11.503,
           "foreground": "rgb(19, 41, 107)",
-          "background": [
-            232,
-            237,
-            249
-          ],
+          "background": [232, 237, 249],
           "opacity": 1,
           "example": "1",
           "element": "span"
@@ -3136,11 +2368,7 @@
         {
           "ratio": 12.364,
           "foreground": "rgb(19, 41, 107)",
-          "background": [
-            243,
-            245,
-            250
-          ],
+          "background": [243, 245, 250],
           "opacity": 1,
           "example": "Бид мэдэхгүй",
           "element": "span"
@@ -3148,11 +2376,7 @@
         {
           "ratio": 8.652,
           "foreground": "rgb(62, 70, 89)",
-          "background": [
-            243,
-            245,
-            250
-          ],
+          "background": [243, 245, 250],
           "opacity": 1,
           "example": "Эрдэмтдийн тал нь 2055 онд AGI гэж таамагласан, хоёр жилийн дараа 2047 болсон. С",
           "element": "span"
@@ -3160,11 +2384,7 @@
         {
           "ratio": 8.822,
           "foreground": "rgb(255, 255, 255)",
-          "background": [
-            48,
-            72,
-            131
-          ],
+          "background": [48, 72, 131],
           "opacity": 1,
           "example": "3",
           "element": "span"
@@ -3172,11 +2392,7 @@
         {
           "ratio": 13.486,
           "foreground": "rgb(255, 255, 255)",
-          "background": [
-            19,
-            41,
-            107
-          ],
+          "background": [19, 41, 107],
           "opacity": 1,
           "example": "Дүгнэлт",
           "element": "span"

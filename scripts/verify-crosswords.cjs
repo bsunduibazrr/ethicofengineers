@@ -30,7 +30,7 @@ const entryIds = new Set();
 const answers = new Set();
 
 assert.ok(Array.isArray(crosswords), 'crosswords must be an array');
-assert.equal(crosswords.length, 2, 'Expected exactly two crossword puzzles');
+assert.equal(crosswords.length, 1, 'Expected the single classroom crossword puzzle');
 
 const checks = crosswords.map(puzzle => {
   const label = puzzle.id || '(unnamed puzzle)';
